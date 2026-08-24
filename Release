@@ -1,19 +1,9 @@
-Origin: NTM 越狱源
-Label: NTM Repo
+Origin: Wac Ljcr
+Label: Wac Ljcr
 Suite: stable
 Version: 1.0
 Codename: ios
 Architectures: iphoneos-arm64
 Components: main
-Description: 通知管理 + CarCheckPlugin 越狱源
+Description: Wac Ljcr - CarCheckPlugin 越狱源
 Support: https://github.com/yzdmm2024/repo
-Date: Mon, 24 Aug 2026 14:40:38 +0000
-MD5Sum:
- 6a67ab9e77153f5be1f16d3193e05bf5 560 Packages
- b7aeccbf5f2cca9c30698b9d0400e389 469 Packages.bz2
-SHA1:
- af315f4bc53139385dde59a31f7af55b63a2648b 560 Packages
- 4bfbaf40cddb445f23d24ce44eee586ffbc24e47 469 Packages.bz2
-SHA256:
- 661ae3f98ad962df1b2a4f432b723c45474661eac3ef80915f1b5d1e81dce405 560 Packages
- ef43adfd52d57439fd872fa6f360d25d2af924272ed7cdae20c0908944145eb0 469 Packages.bz2
