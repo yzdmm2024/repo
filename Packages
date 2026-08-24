@@ -1,17 +1,32 @@
 Package: com.ntm.carcheck
 Name: CarCheckPlugin
 Depends: mobilesubstrate
+Version: 1.0.0
+Architecture: iphoneos-arm64
 Description: OpenPilot 车型查询工具 - 悬浮窗口查询车型是否支持
 Maintainer: ntm
 Author: ntm
 Section: Tweaks
 Icon: file:///Library/Application Support/CarCheckPlugin/icon.png
-Architecture: iphoneos-arm64
-Version: 1.0.0
-Installed-Size: 232
 Filename: ./debs/com.ntm.carcheck_1.0.0_iphoneos-arm64.deb
 Size: 45034
 MD5sum: 9b2ae71ab97ca20f639c197146bb2d90
 SHA1: 947ba2cccdf740b04a93de97f8caa245e971a8c2
 SHA256: 2f9b0bee0a44f137131034a02c392046f4aff3953ad666f6b31da6b42802e683
+
+Package: com.ntm.notifymanager
+Name: 通知管理
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Version: 2.2.3
+Architecture: iphoneos-arm64
+Description: 通知管理：注入SpringBoard拦截通知展示，按分类(用户/巨魔/系统)管理每个App通知：总开关+锁定屏幕/通知中心/横幅/声音/标记子开关，所有App支持网络策略(打开wifi/流量/wifi+流量/断网)并同步系统蜂窝设置，支持搜索、批量控制、单应用重置、配置导入导出
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Icon: https://yzdmm2024.github.io/repo/assets/NotifyManager.png
+Filename: ./debs/com.ntm.notifymanager_2.2.3_iphoneos-arm64.deb
+Size: 65676
+MD5sum: dd55841e57f11caa2fb37fcd2335e27c
+SHA1: 0fccf0c406ecad9e214b3c3237e436eab4d94250
+SHA256: f69177f17c2843f18a50083a8d2e04d2f3a33370cddf738ff77c20b22ee39e6e
 
