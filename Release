@@ -7,13 +7,13 @@ Architectures: iphoneos-arm64
 Components: main
 Description: Wac Ljcr - CarCheckPlugin 越狱源
 Support: https://github.com/yzdmm2024/repo
-Date: Tue, 25 Aug 2026 09:06:14 +0000
+Date: Tue, 25 Aug 2026 09:18:45 GMT
 MD5Sum:
- 7ebea620681e215c5e48b6c1bd657567 2023 Packages
- f6f79ff030bb47bdbe671170dcc397ee 1266 Packages.bz2
+ 7b097bc185ebe95b9f6ca51f2c271bd3 2693 Packages
+ 859fbfedfe7a142abb44e1ebd3593394 1448 Packages.bz2
 SHA1:
- 752f22e8ce33b5fcac4f6534e66a0ef8bccaa589 2023 Packages
- afc110ecaabaa9daca929ae038a2121353928cb6 1266 Packages.bz2
+ 26e8b6d61c7bcbf01d1246947eeee18900deeb8e 2693 Packages
+ bb9abd913d417e2be44f793d5bb7dd5c65937398 1448 Packages.bz2
 SHA256:
- 0b12c70decd7c5b8040ab22a764ca82fea8786ce6f62e3431a890706b8951e74 2023 Packages
- 5748b6215c56a443df6101474ef2e0915ba5025413741a0b73e61ec680fb82c8 1266 Packages.bz2
+ 5050923447bd521d8ef12b8cb6309faa37a3a237d793aa981fa5ab99177b8192 2693 Packages
+ be9871fb350e8b592cae02d4927cc9a0ab265742ec9e52066c475f1e9542619e 1448 Packages.bz2
