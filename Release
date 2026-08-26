@@ -7,13 +7,14 @@ Architectures: iphoneos-arm64
 Components: main
 Description: Wac Ljcr - 越狱源
 Support: https://github.com/yzdmm2024/repo
-Date: Wed, 26 Aug 2026 01:44:58 GMT
+Icon: https://yzdmm2024.github.io/repo/CydiaIcon.png
+Date: Wed, 26 Aug 2026 01:48:31 GMT
 MD5Sum:
- 7b8a7ee839d1113cd7fa5a1443326607 10192 Packages
- a0e777834872f2f84dc94f6691f0ba77 3004 Packages.bz2
+ 6eb6a4071e57f8e94d5228d9c7942afd 1771 Packages
+ 1c34d6d6d95e3bef297a19d8b74d5d0b 1236 Packages.bz2
 SHA1:
- 8831e6d95510927b0e7a5deda5d78860c91f5d65 10192 Packages
- 39e6c5e8f3dafc3012f3d1ae7b96d98527c8bcf2 3004 Packages.bz2
+ e1cad214092c26f644c8e185fd35f06a788224cc 1771 Packages
+ edbcccc2c11272b804939de998e67015dd9059a4 1236 Packages.bz2
 SHA256:
- 1626299caebfa43a4ebdaf0b8e90e7b8780147c9446e4dae988a6bbc281732fe 10192 Packages
- 88acc53b30385a23277a51db24e64ae9f0939cc749d4ee158f13cf19d2ba5fae 3004 Packages.bz2
+ acb5d169b24355b188c07ca395a468de566dbe38ef25acdaabe369fd0666dd1e 1771 Packages
+ 0f17cc8d16f76429e44776f554737b9422d7b87ae4da444648a9ef500148b662 1236 Packages.bz2
