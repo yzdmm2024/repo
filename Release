@@ -5,16 +5,15 @@ Version: 1.0
 Codename: ios
 Architectures: iphoneos-arm64
 Components: main
-Description: Wac Ljcr - 越狱源
+Description: Wac Ljcr - CarCheckPlugin 越狱源
 Support: https://github.com/yzdmm2024/repo
-Icon: https://yzdmm2024.github.io/repo/CydiaIcon.png?v=240
-Date: Wed, 26 Aug 2026 01:48:31 GMT
+Date: Wed, 26 Aug 2026 02:01:40 GMT
 MD5Sum:
- 6eb6a4071e57f8e94d5228d9c7942afd 1771 Packages
- 1c34d6d6d95e3bef297a19d8b74d5d0b 1236 Packages.bz2
+ eb2bebf1031d6f52959d7af878313124 11065 Packages
+ ace77d5f577785a4cef8eab3c84d07f8 3259 Packages.bz2
 SHA1:
- e1cad214092c26f644c8e185fd35f06a788224cc 1771 Packages
- edbcccc2c11272b804939de998e67015dd9059a4 1236 Packages.bz2
+ 26d64a937a778d2c0ecc63645bd1ca82cab11206 11065 Packages
+ 4a2a38a1c2ecc31d57e16a1e296dbd8067e16c73 3259 Packages.bz2
 SHA256:
- acb5d169b24355b188c07ca395a468de566dbe38ef25acdaabe369fd0666dd1e 1771 Packages
- 0f17cc8d16f76429e44776f554737b9422d7b87ae4da444648a9ef500148b662 1236 Packages.bz2
+ 46fda6a420440e0b6b6d198ca68f1c47445189dee6950eb9d61bc9ae525740b3 11065 Packages
+ abf8a0db0b9259b55146e0bce09d41e680a4e68b1f8d0713ab78d9ab141054ce 3259 Packages.bz2
