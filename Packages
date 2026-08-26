@@ -298,3 +298,18 @@ Size: 90480
 MD5sum: a041acacb83016b5be0221a7297d27b3
 SHA1: 08ab8df32a09b8334a21fc700e6314a36d38073a
 SHA256: 5f99b05ad9492c97981f748ad8100b716df1d52dd8078a87165e65b9ce709392
+
+Package: com.ntm.batteryanalyzer
+Name: 电池耗电分析
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Version: 1.6.6
+Architecture: iphoneos-arm64
+Description: 电池耗电分析：彻底移除Tweak CPU采样(task_threads/thread_get_state/dladdr在iOS 16.6触发段错误导致安全模式)，Tweak耗电Tab改为仅展示已注入Tweak列表与文件大小；注入SpringBoard监控每App前台/后台运行时间与电量变化，估算每App耗电
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Filename: ./debs/com.ntm.batteryanalyzer_1.6.6_iphoneos-arm64.deb
+Size: 88324
+MD5sum: f6664f5af5dd27e42fd8f95bd648bb10
+SHA1: 508eb3428fbeafb1358110623cdcda28444aab63
+SHA256: 4fb84e4a4ceacd396aa9d2129b8e3f88a7187b4b9824025df7805a34a00a7670
