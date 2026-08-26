@@ -23,7 +23,7 @@ Description: 通知管理：注入SpringBoard拦截通知展示，按分类(用�
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Icon: https://yzdmm2024.github.io/repo/assets/NotifyManager.png
+Icon: https://yzdmm2024.github.io/repo/assets/NotifyManager.png?v=230
 Filename: ./debs/com.ntm.notifymanager_2.2.3_iphoneos-arm64.deb
 Size: 65676
 MD5sum: dd55841e57f11caa2fb37fcd2335e27c
