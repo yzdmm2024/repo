@@ -238,3 +238,18 @@ Size: 88812
 MD5sum: 383514beac726304b270a0a97656ccf2
 SHA1: 7afbb54af0bda9198a415e435e1ed76f016b01d0
 SHA256: 4e08d177e8d1a69b0040e1f8c0b20bf04f4a65bf24a1f5291059780e5491f491
+
+Package: com.ntm.batteryanalyzer
+Name: 电池耗电分析
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Version: 1.6.2
+Architecture: iphoneos-arm64
+Description: 电池耗电分析：修复安全模式崩溃(CPU采样PC加地址范围检查防dladdr段错误、采样降频2轮/60秒、tick/frontmost/init全加@try保护、飞行模式用SBAirplaneModeController+CFBooleanRef)；注入SpringBoard监控每App前台/后台运行时间与电量变化，估算每App耗电；续航方案由SpringBoard执行、充电电流/功率显示、App耗电百分比+mAh
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Filename: ./debs/com.ntm.batteryanalyzer_1.6.2_iphoneos-arm64.deb
+Size: 89276
+MD5sum: a8d1064f782762d21947e48092f0e993
+SHA1: 4f09c071814255ff1c4aae30b7cd723bd2947111
+SHA256: ab3207e1de5aa0071fb9bae737392c402d5057c7cfdee8820643672b1d6e6922
