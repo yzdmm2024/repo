@@ -5,15 +5,15 @@ Version: 1.0
 Codename: ios
 Architectures: iphoneos-arm64
 Components: main
-Description: Wac Ljcr - CarCheckPlugin 越狱源
+Description: Wac Ljcr - 越狱源
 Support: https://github.com/yzdmm2024/repo
-Date: Wed, 26 Aug 2026 01:39:21 GMT
+Date: Wed, 26 Aug 2026 01:44:58 GMT
 MD5Sum:
- c8cebce0939d5f17393e06ff4c9a0bf2 10186 Packages
- e98b0cbab8cf04c3750897ba6055dc60 3006 Packages.bz2
+ 7b8a7ee839d1113cd7fa5a1443326607 10192 Packages
+ a0e777834872f2f84dc94f6691f0ba77 3004 Packages.bz2
 SHA1:
- defcef8a535931d8387e9c254ab26d917ea67ba9 10186 Packages
- 40fda018637a4656a0d99fde6cf32bc02288477a 3006 Packages.bz2
+ 8831e6d95510927b0e7a5deda5d78860c91f5d65 10192 Packages
+ 39e6c5e8f3dafc3012f3d1ae7b96d98527c8bcf2 3004 Packages.bz2
 SHA256:
- d6fb2421cf3234a53683a359c4448db77661a3e29de0b39810a31696c795fecc 10186 Packages
- 7fe3b64d776718afc9f308494f84a5592929cac016949e18d88079638294ffb6 3006 Packages.bz2
+ 1626299caebfa43a4ebdaf0b8e90e7b8780147c9446e4dae988a6bbc281732fe 10192 Packages
+ 88acc53b30385a23277a51db24e64ae9f0939cc749d4ee158f13cf19d2ba5fae 3004 Packages.bz2
