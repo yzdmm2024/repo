@@ -17,18 +17,19 @@ SHA256: 2f9b0bee0a44f137131034a02c392046f4aff3953ad666f6b31da6b42802e683
 Package: com.ntm.notifymanager
 Name: 通知管理
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
-Version: 2.3.0
+Version: 2.2.3
 Architecture: iphoneos-arm64
-Description: 通知管理：注入SpringBoard拦截通知展示，按分类(用户/巨魔/系统)管理每个App通知与网络。总开关+锁定屏幕/通知中心/横幅/声音/标记子开关，增强功能：仅隐藏角标、隐藏预览、后台自动断网、关键词过滤、应用分组、模式快照、拦截日志、筛选；网络策略(打开wifi/流量/wifi+流量/断网)同步系统蜂窝设置，支持搜索、批量控制、单应用重置、配置导入导出、邮件反馈
+Description: 通知管理：注入SpringBoard拦截通知展示，按分类(用户/巨魔/系统)管理每个App通知：总开关+锁定屏幕/通知中心/横幅/声音/标记子开关，所有App支持网络策略(打开wifi/流量/wifi+流量/断网)并同步系统蜂窝设置，支持搜索、批量控制、单应用重置、配置导入导出
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
 Icon: https://yzdmm2024.github.io/repo/assets/NotifyManager.png
-Filename: ./debs/com.ntm.notifymanager_2.3.0_iphoneos-arm64.deb
-Size: 93780
-MD5sum: 7d618c870d9db882f7078aa7bf4687db
-SHA1: ca5d645a851ca2e02fc089a7cf45653403c20cf4
-SHA256: 0a3dd985e95fa189c27f3f3456066f56cd93630eccf2a317f0f65c029edb155a
+Filename: ./debs/com.ntm.notifymanager_2.2.3_iphoneos-arm64.deb
+Size: 65676
+MD5sum: dd55841e57f11caa2fb37fcd2335e27c
+SHA1: 0fccf0c406ecad9e214b3c3237e436eab4d94250
+SHA256: f69177f17c2843f18a50083a8d2e04d2f3a33370cddf738ff77c20b22ee39e6e
+
 
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
@@ -192,3 +193,18 @@ Size: 80984
 MD5sum: 44721b26c70554465d4ee3fe2829e4e7
 SHA1: ec1e00a4b0c0c941381409cf1e6ac188492f57c4
 SHA256: 12fbf196a08ae38c4639bc21079d79da8ffc3b6abd4910f594dd50911bfa7bec
+
+Package: com.ntm.batteryanalyzer
+Name: 电池耗电分析
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Version: 1.5.0
+Architecture: iphoneos-arm64
+Description: 电池耗电分析：注入SpringBoard监控每App前台/后台运行时间与电量变化，估算每App耗电；Tab字体调大、App列表间距优化、修复点击闪退、续航方案改由SpringBoard执行(可正常开关飞行模式/低电量)、UI美化(电量环形进度/分区标题/状态圆点)
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Filename: ./debs/com.ntm.batteryanalyzer_1.5.0_iphoneos-arm64.deb
+Size: 86124
+MD5sum: 8efb8cc8049e91725763a808181e9d6d
+SHA1: 822811d5b3238f8c1c209818192c3958e4f93036
+SHA256: 0a77608789b8c7dadbf204af20fc0aeb29afa43a0d50aee6dd40516502a1838e
