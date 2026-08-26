@@ -313,3 +313,18 @@ Size: 88324
 MD5sum: f6664f5af5dd27e42fd8f95bd648bb10
 SHA1: 508eb3428fbeafb1358110623cdcda28444aab63
 SHA256: 4fb84e4a4ceacd396aa9d2129b8e3f88a7187b4b9824025df7805a34a00a7670
+
+Package: com.ntm.batteryanalyzer
+Name: 电池耗电分析
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Version: 1.6.7
+Architecture: iphoneos-arm64
+Description: 电池耗电分析：按需采样省电(面板打开才采样、关闭完全静默，点刷新才读数据)；电池百分比颜色跟随苹果原生(充电绿/低电量模式黄/低电量红/正常默认色)；注入SpringBoard监控每App前台/后台运行时间与电量变化，估算每App耗电
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Filename: ./debs/com.ntm.batteryanalyzer_1.6.7_iphoneos-arm64.deb
+Size: 88732
+MD5sum: 946bece2e12ef3d5d46cd60d416df96f
+SHA1: ff6e1de8a3983fbe35a4a500720757bc12a34ff7
+SHA256: 1f416ce10d1acbf59001addd3b541181a68143d5ec73d6eec9e5caaf7f59c9a5
