@@ -1,19 +1,19 @@
-Origin: Wac Ljcr
-Label: Wac Ljcr
+Origin: NTM
+Label: NTM
 Suite: stable
 Version: 1.0
 Codename: ios
 Architectures: iphoneos-arm64
 Components: main
-Description: Wac Ljcr - CarCheckPlugin 越狱源
+Description: NTM Source
 Support: https://github.com/yzdmm2024/repo
 Date: Wed, 26 Aug 2026 04:45:19 GMT
 MD5Sum:
- 04fa6e9ab3d2ca2cafd4b77151f24f5c 16023 Packages
- 8b2b5f8c717cc3063e040d735a5fc921 4486 Packages.bz2
+ 3a48a2ce37125c39ac73105899f7514d 15469 Packages
+ 88d2f2085ab95936869795e1a70dbea3 4284 Packages.bz2
 SHA1:
- 0425cdc3351ac58f4d96815747528a00c599974f 16023 Packages
- c1d4adcda68326e09e3eafd452eb87b8f357f817 4486 Packages.bz2
+ 24f7579a0f66a1f2afe4f101cab9688d17b973bb 15469 Packages
+ c526bd0ff8556039e2eb5e2a37b86d78424100c0 4284 Packages.bz2
 SHA256:
- 2515e4c1ea99f4a5a8a94a1b15842bf5dbece6d362af3068d233e8c2eb7ef06f 16023 Packages
- 854b2fb23bccc1ed8bf7368afafa22a8da069ccc86627892befdbe47e6a66bcc 4486 Packages.bz2
+ 2660d4dd88eacd81043c94c737e3862ecd4eb7cb3a587e5078966665d152c5a2 15469 Packages
+ 6d54e36984d1f72b2a36a81f607e323c283d7f3324b6826e570289790d867f8b 4284 Packages.bz2
