@@ -17,19 +17,18 @@ SHA256: 2f9b0bee0a44f137131034a02c392046f4aff3953ad666f6b31da6b42802e683
 Package: com.ntm.notifymanager
 Name: 通知管理
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
-Version: 2.2.3
+Version: 2.3.0
 Architecture: iphoneos-arm64
-Description: 通知管理：注入SpringBoard拦截通知展示，按分类(用户/巨魔/系统)管理每个App通知：总开关+锁定屏幕/通知中心/横幅/声音/标记子开关，所有App支持网络策略(打开wifi/流量/wifi+流量/断网)并同步系统蜂窝设置，支持搜索、批量控制、单应用重置、配置导入导出
+Description: 通知管理：注入SpringBoard拦截通知展示，按分类(用户/巨魔/系统)管理每个App通知与网络。总开关+锁定屏幕/通知中心/横幅/声音/标记子开关，增强功能：仅隐藏角标、隐藏预览、后台自动断网、关键词过滤、应用分组、模式快照、拦截日志、筛选；网络策略(打开wifi/流量/wifi+流量/断网)同步系统蜂窝设置，支持搜索、批量控制、单应用重置、配置导入导出、邮件反馈
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
 Icon: https://yzdmm2024.github.io/repo/assets/NotifyManager.png
-Filename: ./debs/com.ntm.notifymanager_2.2.3_iphoneos-arm64.deb
-Size: 65676
-MD5sum: dd55841e57f11caa2fb37fcd2335e27c
-SHA1: 0fccf0c406ecad9e214b3c3237e436eab4d94250
-SHA256: f69177f17c2843f18a50083a8d2e04d2f3a33370cddf738ff77c20b22ee39e6e
-
+Filename: ./debs/com.ntm.notifymanager_2.3.0_iphoneos-arm64.deb
+Size: 93780
+MD5sum: 7d618c870d9db882f7078aa7bf4687db
+SHA1: ca5d645a851ca2e02fc089a7cf45653403c20cf4
+SHA256: 0a3dd985e95fa189c27f3f3456066f56cd93630eccf2a317f0f65c029edb155a
 
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
