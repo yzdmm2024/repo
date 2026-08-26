@@ -1,19 +1,3 @@
-Package: com.ntm.carcheck
-Name: CarCheckPlugin
-Depends: mobilesubstrate
-Version: 1.0.0
-Architecture: iphoneos-arm64
-Description: OpenPilot 车型查询工具 - 悬浮窗口查询车型是否支持
-Maintainer: ntm
-Author: ntm
-Section: Tweaks
-Icon: file:///Library/Application Support/CarCheckPlugin/icon.png
-Filename: ./debs/com.ntm.carcheck_1.0.0_iphoneos-arm64.deb
-Size: 45034
-MD5sum: 9b2ae71ab97ca20f639c197146bb2d90
-SHA1: 947ba2cccdf740b04a93de97f8caa245e971a8c2
-SHA256: 2f9b0bee0a44f137131034a02c392046f4aff3953ad666f6b31da6b42802e683
-
 Package: com.ntm.notifymanager
 Name: 通知管理
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
