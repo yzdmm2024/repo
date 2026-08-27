@@ -7,16 +7,16 @@ Architectures: iphoneos-arm64
 Components: main
 Description: NTM Source
 Support: https://github.com/yzdmm2024/repo
-Date: Thu, 27 Aug 2026 10:16:05 GMT
+Date: Thu, 27 Aug 2026 10:18:18 GMT
 MD5Sum:
- 1ae49746bb7184176a8206321c210686 18347 Packages
- cb9fe1abcdb7b578961f2c125d51eaec 4365 Packages.gz
- efe50b1ca7ca8d6ff14e5e66a0d138a6 4394 Packages.bz2
+ 1a0e7ade7234ccec57e943706144b917 19173 Packages
+ 2465fbdf90238baecd1bbfebc9582636 4542 Packages.gz
+ e827ed0cc3806a0ef1648e4c687bff75 4554 Packages.bz2
 SHA1:
- e5b2d68c43e962d5a4a7aff933fcfac49b084707 18347 Packages
- 32c76fcdba87bc73761734cf8f4c4b7adc851989 4365 Packages.gz
- da3b7ebd9cfdfdc5abca7f1651bbe5b873c948cc 4394 Packages.bz2
+ afbcf1a287af348cd007b7ae673f85bbdd6f71e1 19173 Packages
+ 7ec492ac9a9eb278ba11d97250671b0ae49424cd 4542 Packages.gz
+ dce358dbf7101d9161d9a01a6a2d25a737572a9d 4554 Packages.bz2
 SHA256:
- 614814bda1283e149d06f8d91a286a4a7f9165e8c1b4049605c0128a6ffa8265 18347 Packages
- 8530bea3920a7176f32ec826bd1d4d7aed29d7753f8291f5a2a7ce0275afccd9 4365 Packages.gz
- fcdf471ef2e63cf3689eaee4a8d09a2e8358d1af4e6c86e1f00bdace32f03c9f 4394 Packages.bz2
+ f5b8f56584f6bf283e68eb2fe49f7bbaeabc1300ae579dd5339d4cfe5b68b511 19173 Packages
+ 9d1bc0fb712f6a9d2ec8d3e40c660d42bc2cc320ac051a133c5ab6af88b5b8e3 4542 Packages.gz
+ a84745371d502d45927e92607aca2ad85682948ded41316cbb10f23d12d858c9 4554 Packages.bz2
