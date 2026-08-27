@@ -142,6 +142,22 @@ MD5sum: eaa8e84d45574030cd49522f6b37ed11
 SHA1: d3508118e777b1d8efc8c6196c1eb351b7628a17
 SHA256: d508f154b3e948bd698c2caa8cdc26131826993d59a63483b2c84927d95d88ab
 
+Package: com.axs.snapper3zhext
+Name: SN3延伸板
+Description: [v2.0.0] 独立插件：截屏弹出浮动菜单，OCR/翻译/AI/长截图/自由截图/保存/复制/分享/悬浮贴图
+Depends: mobilesubstrate, firmware(>=14.0)
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 2.0.0-1
+Installed-Size: 332
+Filename: debs/com.axs.snapper3zhext_2.0.0-1_iphoneos-arm64.deb
+Size: 51104
+MD5sum: bd3687b257ba348ea79377e1620ccd5d
+SHA1: 58ac20146c5f0699c10a3f9d0a88b60eb0a19d49
+SHA256: 69a51d4e53f6b949591d57ab5f1afcaadd864920a2e085a81b6a4b9254525fdf
+
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
 Version: 1.6.7
