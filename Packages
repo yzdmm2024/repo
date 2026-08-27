@@ -126,6 +126,22 @@ MD5sum: 1e2fe4b2be65742716f03ac48e3bd72d
 SHA1: 2918f94213e182fbf1085683bbc5b5d2aa60b6c7
 SHA256: 6c4fc9878a06b17eb7732e552ee32d97a7314dbb01fc773cbb6557efd051edc1
 
+Package: com.axs.snapper3zhext
+Name: SN3延伸板
+Description: [v1.2.3] 纯UITableView——添加forwardInvocation消息转发，处理所有框架调用。
+Depends: mobilesubstrate, preferenceloader, firmware(>=14.0)
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 1.2.3-1
+Installed-Size: 528
+Filename: debs/com.axs.snapper3zhext_1.2.3-1_iphoneos-arm64.deb
+Size: 58708
+MD5sum: eaa8e84d45574030cd49522f6b37ed11
+SHA1: d3508118e777b1d8efc8c6196c1eb351b7628a17
+SHA256: d508f154b3e948bd698c2caa8cdc26131826993d59a63483b2c84927d95d88ab
+
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
 Version: 1.6.7
