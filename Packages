@@ -62,6 +62,22 @@ MD5sum: c6f553cffad4b20bf4b18d4816676f69
 SHA1: 1d3903882ee8d431f6c21ca88bcaf20696099f70
 SHA256: 37dfaf009dee04dafaaa77bf6c8e8f48a376090b002780e11436f758741e2a98
 
+Package: com.axs.snapper3zhext
+Name: SN3延伸板
+Description: [v1.1.9] 修复面板空白——改用 objc_msgSend 调用 setSpecifiers:。Frida 确认 performSelector 无效。Snapper3 功能扩展（中文优化），功能：本地中文OCR / 翻译 / 长截图 / 问AI。
+Depends: mobilesubstrate, preferenceloader, firmware(>=14.0)
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 1.1.9-1
+Installed-Size: 456
+Filename: debs/com.axs.snapper3zhext_1.1.9-1_iphoneos-arm64.deb
+Size: 43240
+MD5sum: dca3204905b310ecc46adbc610f183de
+SHA1: 20c2c29af98aac13f4b3f1031736935d1919e12d
+SHA256: 5176dfa0b6a05826cbff5f4df910dfe7bd495500a02ed4af53fd19ad52919ea6
+
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
 Version: 1.6.7
