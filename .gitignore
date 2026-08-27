@@ -1,0 +1,2 @@
+# Theos build working copy checked out by the CI job must not be committed as a gitlink/submodule
+SN3extension/
