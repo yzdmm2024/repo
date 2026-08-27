@@ -29,6 +29,18 @@ jobs:
           brew install xz ldid >/dev/null 2>&1 || true
           git clone --depth=1 --recursive https://github.com/theos/theos "$HOME/theos"
 
+      - name: Build prefs executable & inject into layout
+        working-directory: SN3extension/PreferenceBundles/Snapper3ZhExtPrefs
+        env:
+          THEOS: /Users/runner/theos
+          THEOS_PACKAGE_SCHEME: rootless
+        run: |
+          make
+          B="../../layout/Library/PreferenceBundles/Snapper3ZhExtPrefs.bundle"
+          mkdir -p "$B"
+          cp -f .theos/obj/Snapper3ZhExtPrefs.dylib "$B/Snapper3ZhExtPrefs"
+          ls -la "$B"
+
       - name: Build package
         working-directory: SN3extension
         env:
