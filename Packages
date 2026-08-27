@@ -27,10 +27,10 @@ Version: 1.1.4-1
 Installed-Size: 456
 
 Filename: ./debs/com.axs.snapper3zhext_1.1.4-1_iphoneos-arm64.deb
-Size: 43002
-MD5sum: 76c13ac5afadffa7bb88d16eb1436ff7
-SHA1: f44d0f966418150a0520af50d3260d0cba42756a
-SHA256: e283b5e9445372f379cd38194c1435b1d2f4971de843abb9ef7210014ca425ad
+Size: 43042
+MD5sum: b74a42878241d57183553367ace8c33d
+SHA1: b5ed3ebd76882a5270d659376c10be691aadf1d6
+SHA256: f447a24196d3bb70b5288a519c8fa26fcc00f8d124b6c62b7f30d0e5db1f8d20
 
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
