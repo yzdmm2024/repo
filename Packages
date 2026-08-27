@@ -110,6 +110,22 @@ MD5sum: 2ae521d9626441e7fa6d2b74f89769fc
 SHA1: 797fbf18864d9280a7d92e163d76daf7acfac865
 SHA256: ae5fe98ec1bd16d548c29c1e9e41a32a8adb50969bb6ab83cc361e2562377211
 
+Package: com.axs.snapper3zhext
+Name: SN3延伸板
+Description: [v1.2.2] 纯UITableView——添加PSListController兼容桩方法，修复闪退。
+Depends: mobilesubstrate, preferenceloader, firmware(>=14.0)
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 1.2.2-1
+Installed-Size: 524
+Filename: debs/com.axs.snapper3zhext_1.2.2-1_iphoneos-arm64.deb
+Size: 56450
+MD5sum: 1e2fe4b2be65742716f03ac48e3bd72d
+SHA1: 2918f94213e182fbf1085683bbc5b5d2aa60b6c7
+SHA256: 6c4fc9878a06b17eb7732e552ee32d97a7314dbb01fc773cbb6557efd051edc1
+
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
 Version: 1.6.7
