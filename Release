@@ -1,11 +1,11 @@
-Origin: NTM
-Label: NTM
+Origin: Yzdmm
+Label: Yzdmm
 Suite: stable
 Version: 1.0
 Codename: ios
 Architectures: iphoneos-arm64
 Components: main
-Description: NTM Source
+Description: Yzdmm Source
 Support: https://github.com/yzdmm2024/repo
 Date: Thu, 27 Aug 2026 10:18:18 GMT
 MD5Sum:
