@@ -35,7 +35,7 @@ jobs:
           THEOS: /Users/runner/theos
           THEOS_PACKAGE_SCHEME: rootless
         run: |
-          make
+          make TARGET="iphone:clang:latest:14.0"
           B="../../layout/Library/PreferenceBundles/Snapper3ZhExtPrefs.bundle"
           mkdir -p "$B"
           cp -f .theos/obj/Snapper3ZhExtPrefs.dylib "$B/Snapper3ZhExtPrefs"
