@@ -35,7 +35,7 @@ jobs:
           THEOS: /Users/runner/theos
           THEOS_PACKAGE_SCHEME: rootless
         run: |
-          make clean package TARGET="iphone:clang:latest:14.0"
+          make clean package FINALPACKAGE=1 TARGET="iphone:clang:latest:14.0"
 
       - name: Stage deb & regenerate metadata
         run: |
