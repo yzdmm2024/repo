@@ -6,14 +6,14 @@ Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
 Architecture: iphoneos-arm64
-Version: 1.1.0-1-1+debug
-Installed-Size: 452
+Version: 1.1.0-1
+Installed-Size: 292
 
-Filename: ./debs/com.axs.snapper3zhext_1.1.0-1-1+debug_iphoneos-arm64.deb
-Size: 62316
-MD5sum: ed8c058402642679e5e504e1eeb2f6af
-SHA1: cc0a61fe573dd7e793304aef9fcea6eb015c3bfd
-SHA256: 2aea92acc4569eaa98d9be3b59831a80287db005eb569369bfcbf98d640c59a7
+Filename: ./debs/com.axs.snapper3zhext_1.1.0-1_iphoneos-arm64.deb
+Size: 39490
+MD5sum: 3436a7dec96dfb7f7d2ef3abb95ff16b
+SHA1: ce2bd9254b9396a55575c63df1808652307d1dd0
+SHA256: 1f6982c634ac7227f7fc4cb10f296825936ed4460a7133b5bd3428469d51e1f7
 
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
