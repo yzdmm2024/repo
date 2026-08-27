@@ -40,6 +40,7 @@ jobs:
           mkdir -p "$B"
           DYLIB=$(find .theos . -path ./.git -prune -o -name "Snapper3ZhExtPrefs" -type f -print 2>/dev/null | head -1)
           [ -n "$DYLIB" ] || DYLIB=$(find .theos . -path ./.git -prune -o -name "Snapper3ZhExtPrefs.dylib" -print 2>/dev/null | head -1)
+          [ -n "$DYLIB" ] || DYLIB=$(find .theos . -path ./.git -prune -o -name "libSnapper3ZhExtPrefs.dylib" -print 2>/dev/null | head -1)
           echo "found: $DYLIB"
           cp -f "$DYLIB" "$B/Snapper3ZhExtPrefs"
           ls -la "$B"
