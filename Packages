@@ -1,22 +1,5 @@
 Package: com.axs.snapper3zhext
 Name: SN3延伸板
-Description: [设置面板重建] Snapper3 功能扩展（中文优化）。功能：本地中文OCR(点框复制) / 翻译(多目标语言) / 长截图(预览保存,可调参数) / 问AI(多轮对话)。1.1.2 补上 Prefs bundle 可执行文件；1.1.3 重建发布，确保 Prefs bundle 完整，设置入口可用并可配置 API 密钥与参数。
-Depends: mobilesubstrate, preferenceloader, firmware(>=14.0)
-Maintainer: yzdmm2024
-Author: yzdmm2024
-Section: Tweaks
-Architecture: iphoneos-arm64
-Version: 1.1.3-1
-Installed-Size: 456
-
-Filename: ./debs/com.axs.snapper3zhext_1.1.3-1_iphoneos-arm64.deb
-Size: 42118
-MD5sum: ffe26aa357a3ddbdd081a9414a9abb37
-SHA1: 2f1e77f3acd38c769ef3742c58ee22c23df20e14
-SHA256: bd2cf8ece749f76c8b61bd10832bd8424a9f5f2dbb6067dfff3056789044f25d
-
-Package: com.axs.snapper3zhext
-Name: SN3延伸板
 Description: 修复设置面板空白问题。Snapper3 功能扩展（中文优化）。功能：本地中文OCR(点框复制) / 翻译(多目标语言) / 长截图(预览保存,可调参数) / 问AI(多轮对话)。
 Depends: mobilesubstrate, preferenceloader, firmware(>=14.0)
 Maintainer: yzdmm2024
@@ -25,8 +8,7 @@ Section: Tweaks
 Architecture: iphoneos-arm64
 Version: 1.1.4-1
 Installed-Size: 456
-
-Filename: ./debs/com.axs.snapper3zhext_1.1.4-1_iphoneos-arm64.deb
+Filename: debs/com.axs.snapper3zhext_1.1.4-1_iphoneos-arm64.deb
 Size: 43042
 MD5sum: b74a42878241d57183553367ace8c33d
 SHA1: b5ed3ebd76882a5270d659376c10be691aadf1d6
@@ -41,9 +23,7 @@ Author: yzdmm2024
 Section: Tweaks
 Description: 电池耗电分析：注入SpringBoard监控每App前台/后台运行时间与电量变化，估算每App耗电，显示电量历史与本次耗电统计
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
-
-
-Filename: ./debs/com.ntm.batteryanalyzer_1.6.7_iphoneos-arm64.deb
+Filename: debs/com.ntm.batteryanalyzer_1.6.7_iphoneos-arm64.deb
 Size: 88732
 MD5sum: 946bece2e12ef3d5d46cd60d416df96f
 SHA1: ff6e1de8a3983fbe35a4a500720757bc12a34ff7
@@ -58,8 +38,7 @@ Author: yzdmm2024
 Section: Tweaks
 Description: 通知管理：注入SpringBoard拦截通知展示，按分类(用户/巨魔/系统)管理每个App通知与网络。总开关+锁定屏幕/通知中心/横幅/声音/标记子开关，增强功能：仅隐藏角标、隐藏预览、后台自动断网、关键词过滤、应用分组、模式快照、拦截日志、筛选；网络策略(打开wifi/流量/wifi+流量/断网)同步系统蜂窝设置，支持搜索、批量控制、单应用重置、配置导入导出、邮件反馈
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
-
-Filename: ./debs/com.ntm.notifymanager_2.3.1_iphoneos-arm64.deb
+Filename: debs/com.ntm.notifymanager_2.3.1_iphoneos-arm64.deb
 Size: 94112
 MD5sum: 2d420843898288c3a27d611bf1504006
 SHA1: 2ea4ecc5f2f80c3a9c1b492390e0379732838702
