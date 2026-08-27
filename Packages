@@ -32,6 +32,23 @@ MD5sum: 06a5fcf72671eb39b74c3be1d0e32907
 SHA1: bc36b866c64aacc6a39c24fe5c4629b0b5a1a273
 SHA256: 0589c279627ed52a5ea20ae4ed8ac801ef3f64e5b2256ae0dd28e3fdef9acb12
 
+Package: com.axs.snapper3zhext
+Name: SN3延伸板
+Description: [设置面板修复] Snapper3 功能扩展（中文优化）。功能：本地中文OCR(点框复制) / 翻译(多目标语言) / 长截图(预览保存,可调参数) / 问AI(多轮对话)。1.1.1 加入注册异常兜底防安全模式；1.1.2 修复设置面板——补上 Prefs bundle 可执行文件，使其真正出现在“设置”里并可配置（OCR/翻译/长截图/AI 的参数与密钥）。
+Depends: mobilesubstrate, preferenceloader, firmware(>=14.0)
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 1.1.2-1
+Installed-Size: 276
+
+Filename: ./debs/com.axs.snapper3zhext_1.1.2-1_iphoneos-arm64.deb
+Size: 38820
+MD5sum: c931da486c5125fbb6a3908dc6d09408
+SHA1: 4387a510c393b67ce5fc2496305d366c6be37c50
+SHA256: 8697cc3a14cc418c79242e6a8bca502aa16eb07390d33060791c417d06edd674
+
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
 Version: 1.0.2
