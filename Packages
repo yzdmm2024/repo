@@ -41,10 +41,10 @@ Architecture: iphoneos-arm64
 Version: 1.1.7-1
 Installed-Size: 460
 Filename: debs/com.axs.snapper3zhext_1.1.7-1_iphoneos-arm64.deb
-Size: 43346
-MD5sum: 1bdf2084fd38339dee7220c5d57e6d1c
-SHA1: 2fa796ec5adeddcbc5ce8fee26f1a5f13fc09872
-SHA256: 56e1f3ce43cd86ef63fd8895c6fdde7fccf1eff54f458f78dfaac45e9e2a002b
+Size: 43328
+MD5sum: 911671d6c0ac1615791f458871c8407e
+SHA1: fbf12aaf4f00ab541f4e1c8b0e530f9d2d787186
+SHA256: aa011c9e265d34f724ecfe51f3fce765b8305747d105dab42e4606652ac451e8
 
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
