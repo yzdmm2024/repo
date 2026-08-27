@@ -31,8 +31,8 @@ SHA1: b80ab5e543349db571e7966639bc3ab17f0d76bc
 SHA256: 8d92d93f455af62ca89a93061393d30b3a707efd6f5565f2d8e31e17c8de2444
 
 Package: com.axs.snapper3zhext
-Name: SN3延伸板
-Description: [修复面板空白 v2] Snapper3 功能扩展（中文优化）。功能：本地中文OCR(点框复制) / 翻译(多目标语言) / 长截图(预览保存,可调参数) / 问AI(多轮对话)。1.1.7 修复：改用 KVC 调用 PSListController 的 setSpecifiers: 方法，比直接操作 ivar 更可靠。
+Name: SN3???
+Description: [?????? v2] Snapper3 ??????????????????OCR(????) / ??(?????) / ???(????,????) / ?AI(????)?1.1.7 ????? KVC ?? PSListController ? setSpecifiers: ???????? ivar ????
 Depends: mobilesubstrate, preferenceloader, firmware(>=14.0)
 Maintainer: yzdmm2024
 Author: yzdmm2024
@@ -41,10 +41,10 @@ Architecture: iphoneos-arm64
 Version: 1.1.7-1
 Installed-Size: 460
 Filename: debs/com.axs.snapper3zhext_1.1.7-1_iphoneos-arm64.deb
-Size: 43328
-MD5sum: 911671d6c0ac1615791f458871c8407e
-SHA1: fbf12aaf4f00ab541f4e1c8b0e530f9d2d787186
-SHA256: aa011c9e265d34f724ecfe51f3fce765b8305747d105dab42e4606652ac451e8
+Size: 43130
+MD5sum: c95585f17036db7b53159a38ec8b3117
+SHA1: 144dc7bc1dfc213e58933fc33d7ffb7f7fcccf97
+SHA256: 24e3d9ee0b7ff42e43529baffd30452ca6afb979a15ba309bd9cf9248362b666
 
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
