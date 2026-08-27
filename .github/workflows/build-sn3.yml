@@ -1,7 +1,7 @@
 # Build SN3extension on GitHub's macOS runner, then update this source's
 # Packages/Release metadata and push back so GitHub Pages refreshes the repo.
 #
-# Trigger: manual only (workflow_dispatch). 避免自动 push 引发循环。
+# Trigger: manual only (workflow_dispatch).
 name: Build SN3extension & update source
 
 on:
@@ -28,22 +28,6 @@ jobs:
         run: |
           brew install xz ldid >/dev/null 2>&1 || true
           git clone --depth=1 --recursive https://github.com/theos/theos "$HOME/theos"
-
-      - name: Build prefs executable & inject into layout
-        working-directory: SN3extension/PreferenceBundles/Snapper3ZhExtPrefs
-        env:
-          THEOS: /Users/runner/theos
-          THEOS_PACKAGE_SCHEME: rootless
-        run: |
-          make TARGET="iphone:clang:latest:14.0"
-          B="../../layout/Library/PreferenceBundles/Snapper3ZhExtPrefs.bundle"
-          mkdir -p "$B"
-          DYLIB=$(find .theos . -path ./.git -prune -o -name "Snapper3ZhExtPrefs" -type f -print 2>/dev/null | head -1)
-          [ -n "$DYLIB" ] || DYLIB=$(find .theos . -path ./.git -prune -o -name "Snapper3ZhExtPrefs.dylib" -print 2>/dev/null | head -1)
-          [ -n "$DYLIB" ] || DYLIB=$(find .theos . -path ./.git -prune -o -name "libSnapper3ZhExtPrefs.dylib" -print 2>/dev/null | head -1)
-          echo "found: $DYLIB"
-          cp -f "$DYLIB" "$B/Snapper3ZhExtPrefs"
-          ls -la "$B"
 
       - name: Build package
         working-directory: SN3extension
