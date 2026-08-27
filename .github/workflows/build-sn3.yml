@@ -32,7 +32,7 @@ jobs:
       - name: Build package
         working-directory: SN3extension
         env:
-          THEOS: "$HOME/theos"
+          THEOS: /Users/runner/theos
           THEOS_PACKAGE_SCHEME: rootless
         run: |
           make clean package
