@@ -78,6 +78,22 @@ MD5sum: dca3204905b310ecc46adbc610f183de
 SHA1: 20c2c29af98aac13f4b3f1031736935d1919e12d
 SHA256: 5176dfa0b6a05826cbff5f4df910dfe7bd495500a02ed4af53fd19ad52919ea6
 
+Package: com.axs.snapper3zhext
+Name: SN3延伸板
+Description: [v1.2.0] 纯UITableView重写，不依赖PSListController。手动解析Root.plist直接渲染设置项。Snapper3 功能扩展（中文优化），功能：本地中文OCR / 翻译 / 长截图 / 问AI。
+Depends: mobilesubstrate, preferenceloader, firmware(>=14.0)
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 1.2.0-1
+Installed-Size: 500
+Filename: debs/com.axs.snapper3zhext_1.2.0-1_iphoneos-arm64.deb
+Size: 55164
+MD5sum: 5d3d25f05cc910b8bcabbfc8afd14072
+SHA1: 4c84325333cafb8d63d9463fd656ae8d4ff2bb9e
+SHA256: 108336f37b3c5b4509e71b381c3f8b4f36a25d289bb3728fb7078b0ee1b8af67
+
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
 Version: 1.6.7
