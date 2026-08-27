@@ -8,11 +8,12 @@ Section: Tweaks
 Architecture: iphoneos-arm64
 Version: 1.1.3-1
 Installed-Size: 456
-Filename: debs/com.axs.snapper3zhext_1.1.3-1_iphoneos-arm64.deb
-Size: 41830
-MD5sum: 5876d93c352ca51cb90082ba36b54afa
-SHA1: 867fbbe53d8b29ef28d559120a2d695106cbf2d3
-SHA256: 8a616803271bb1a21ed47366e24dfc8fb4a7ea6906fb4842bca0006e98f58d8c
+
+Filename: ./debs/com.axs.snapper3zhext_1.1.3-1_iphoneos-arm64.deb
+Size: 42118
+MD5sum: ffe26aa357a3ddbdd081a9414a9abb37
+SHA1: 2f1e77f3acd38c769ef3742c58ee22c23df20e14
+SHA256: bd2cf8ece749f76c8b61bd10832bd8424a9f5f2dbb6067dfff3056789044f25d
 
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
@@ -23,7 +24,9 @@ Author: yzdmm2024
 Section: Tweaks
 Description: 电池耗电分析：注入SpringBoard监控每App前台/后台运行时间与电量变化，估算每App耗电，显示电量历史与本次耗电统计
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
-Filename: debs/com.ntm.batteryanalyzer_1.6.7_iphoneos-arm64.deb
+
+
+Filename: ./debs/com.ntm.batteryanalyzer_1.6.7_iphoneos-arm64.deb
 Size: 88732
 MD5sum: 946bece2e12ef3d5d46cd60d416df96f
 SHA1: ff6e1de8a3983fbe35a4a500720757bc12a34ff7
@@ -38,7 +41,8 @@ Author: yzdmm2024
 Section: Tweaks
 Description: 通知管理：注入SpringBoard拦截通知展示，按分类(用户/巨魔/系统)管理每个App通知与网络。总开关+锁定屏幕/通知中心/横幅/声音/标记子开关，增强功能：仅隐藏角标、隐藏预览、后台自动断网、关键词过滤、应用分组、模式快照、拦截日志、筛选；网络策略(打开wifi/流量/wifi+流量/断网)同步系统蜂窝设置，支持搜索、批量控制、单应用重置、配置导入导出、邮件反馈
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
-Filename: debs/com.ntm.notifymanager_2.3.1_iphoneos-arm64.deb
+
+Filename: ./debs/com.ntm.notifymanager_2.3.1_iphoneos-arm64.deb
 Size: 94112
 MD5sum: 2d420843898288c3a27d611bf1504006
 SHA1: 2ea4ecc5f2f80c3a9c1b492390e0379732838702
