@@ -108,8 +108,10 @@ def build_entry(control_text, filename, size, md5, sha1, sha256):
         heads = line.split(":", 1)[0] if line else ""
         if heads.strip().lower() in skip:
             continue
+        if not line.strip():          # 跳过空行，防止把 Filename 段拆成独立段落
+            continue
         keep.append(line.rstrip())
-    keep.append("Filename: ./debs/%s" % os.path.basename(filename))
+    keep.append("Filename: debs/%s" % os.path.basename(filename))
     keep.append("Size: %d" % size)
     keep.append("MD5sum: %s" % md5)
     keep.append("SHA1: %s" % sha1)
