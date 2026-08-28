@@ -462,6 +462,22 @@ MD5sum: 7fb0dbd352dc470f269cf4b12d7d7c25
 SHA1: f4dbb110ec6709696e4c7cee7f5812822aa62aa5
 SHA256: 61eca037106e7480007f6dfc54a7cec35dbada015e05c8f6e22af7fbf52b5d14
 
+Package: com.axs.snapper3zhext
+Name: SN3延伸板
+Description: [v3.13] 修两个硬伤:①点CC后先关闭控制中心(SBControlCenterController dismissAnimated:)再延迟截屏→截图不再是控制中心界面;②自由截图安全模式消除(CC收起后才弹裁剪窗口,消除窗口层级冲突)。长截图重做为真·滚动拼接:注入所有进程,选择器点长截图→通知前台App进程自动滚动逐屏拼接成长图。App内物理截图不再弹菜单(避免双UI)。
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 3.13
+Installed-Size: 728
+Filename: debs/com.axs.snapper3zhext_3.13_iphoneos-arm64.deb
+Size: 80608
+MD5sum: acb00d94309cdb3b86a2e4871d73d59e
+SHA1: 83a91f71ba67ca3984b9d7495495b45bad52e00c
+SHA256: f404c4271fb81757062ea576523d399846cabb9be6d2b06526915bbae8aeafeb
+
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
 Version: 1.6.7
