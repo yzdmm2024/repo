@@ -398,6 +398,22 @@ MD5sum: 1e7f0e5c33f12729bce5598184ca9886
 SHA1: 9bc74bd101fee7b45b7170e690bbeedec5c6a92f
 SHA256: 44a910bbc11b6e57e47f90f8c7b1cfafb47840907ece2bffe0a7c3aa05ba6778
 
+Package: com.axs.snapper3zhext
+Name: SN3延伸板
+Description: [v3.09] 控制中心图标修复(覆盖glyphImageForState:+SF Symbol/CoreGraphics兜底, 解决iconGlyph只读导致空白/点不动); 设置面板空白已修(3.08); 截屏浮动菜单+总开关
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 3.09
+Installed-Size: 584
+Filename: debs/com.axs.snapper3zhext_3.09_iphoneos-arm64.deb
+Size: 31296
+MD5sum: 20904e2f42d2be8bb3707f2ab312385e
+SHA1: f01fe3b863dcb1c813e7e056a6a196c74913444f
+SHA256: 501f214aeff5e675eabda99ca828ae1096b20f544bbfe429ec7a1a54b36eb0f7
+
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
 Version: 1.6.7
