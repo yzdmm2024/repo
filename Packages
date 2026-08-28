@@ -366,6 +366,22 @@ MD5sum: 4ddf9fb070cc63ca4b27e230de306671
 SHA1: a3aeac20bcdd02bd016f39ef48a1d18dd70d11a3
 SHA256: 69f21487c8806fb91f8ef5f5601a4cf73920704c98ed85b795a10f74e79922b2
 
+Package: com.axs.snapper3zhext
+Name: SN3延伸板
+Description: [v3.07] 修复控制中心模块安全模式崩溃(子类不再重复声明selected属性, setSelected只发通知交还父类视觉); 设置面板+截屏浮动菜单+总开关
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 3.07
+Installed-Size: 584
+Filename: debs/com.axs.snapper3zhext_3.07_iphoneos-arm64.deb
+Size: 30958
+MD5sum: e8399e84f1988ca59b2ad093a96dd75e
+SHA1: 0e190c5cc13c55b291bbdfa35e1b081c4f45ed2a
+SHA256: d56518a06627456ed028887a3c646c5cab141662ecf5b6852ecb446ad77adb0a
+
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
 Version: 1.6.7
