@@ -48,15 +48,15 @@ SHA256: 747c70d8d28164d54e8e3456f5a3519351e68813d15b4e870e0225f26d76b5cd
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 4.9
+Version: 5.0
 Architecture: iphoneos-arm64
-Description: [v4.9] 长截图拼接重写：相邻两帧底部vs顶部条带做 NCC 归一化互相关系数比对（参考 Picsew/screen-stitch/FSCapture 开源方案），粗→细两层搜索精修重叠、强置信门限，匹配不可靠直接跳过该帧，彻底消除重复/乱拼；未滑动不采集、不计数。局部截图：拖框松手后功能面板挂独立窗口【同步立即】渲染（零延迟、无闪现），后台抓屏裁剪，OCR/翻译/识码/复制/保存/分享/更多均原地处理；正常截图仿系统电源+音量键截整屏直接存相册「SN3截图」不弹编辑。两套窗口彻底分离、退出必销毁置空。
+Description: [v5.0] 长截图：VNTranslationalImageRegistrationRequest 做帧间平移配准主检测，直接算垂直位移换算重叠；NCC 仅作 Vision 失败/离谱结果时的校验兜底，删除低 NCC 时「整帧拼入」分支，匹配不可靠直接跳帧；加时间先验（EMA）约束，防止重复纹理界面错配；修复滑动检测 _lastAddedTile 被跳过帧污染。局部截图：拖框松手后功能面板挂独立窗口同步渲染（零延迟）；正常截图仿系统电源+音量键截整屏直接存相册「SN3截图」不弹编辑。两套窗口彻底分离、退出必销毁置空。
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_4.9_iphoneos-arm64.deb
-Size: 111744
-MD5sum: 8d144f9e57cee850b9d6ef95af252c6f
-SHA1: 566ec69be74d189b515e2e438fbd6440163188fb
-SHA256: ef79d02be3168753f65c2259032192aed32b010ccb3b603ce5d80b9f2e696b46
+Filename: ./debs/com.axs.snapper3zhext_5.0_iphoneos-arm64.deb
+Size: 111384
+MD5sum: 51634c380ee2bd86689d4b38032e902e
+SHA1: 49f8b8fdb5e151342c9c419c2b508efcf755224c
+SHA256: 11111c9fde16a50df04757ebd62b6c89468e64f3b344df64ec4ccfce5d97a418
