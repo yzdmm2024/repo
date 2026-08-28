@@ -542,6 +542,22 @@ MD5sum: 26ca0c6b87b7f7056ef07fe22790e067
 SHA1: eb0e8bad9a40a248a1df0331b01fe93d06b78641
 SHA256: c2d14f97781db8f687c27c530419f8c310050683c9db9669d6bb1f26157f7f25
 
+Package: com.axs.snapper3zhext
+Name: 超级截图
+Description: [v4.0 骨架] 控制中心「超级截图」点按→窗口A遮罩镂空框选(底部:长截图/正常截图/取消);正常截图=隐藏遮罩抓屏按选区裁剪→窗口B两排工具栏(OCR/翻译/画图/识码/打码/复制/贴图/保存/分享/更多);长截图=手动采集下一屏×N→Vision配准拼接;更多二级(导出PDF/压缩/去状态栏/取色器)。两套窗口彻底分离、截图前必隐藏遮罩、退出必销毁置空。
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 4.0
+Installed-Size: 724
+Filename: debs/com.axs.snapper3zhext_4.0_iphoneos-arm64.deb
+Size: 75904
+MD5sum: 5ef22e2a7294e494176859fd2756a1d3
+SHA1: d1ae4eaec2bfb7add6926169a7267d9e7fdb3030
+SHA256: 7aabcb2367f520ea1136d67b386b8394828ecbf4d5215edfce43ff532bd9919b
+
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
 Version: 1.6.7
