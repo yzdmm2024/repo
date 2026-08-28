@@ -48,15 +48,15 @@ SHA256: 747c70d8d28164d54e8e3456f5a3519351e68813d15b4e870e0225f26d76b5cd
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.5
+Version: 5.6
 Architecture: iphoneos-arm64
-Description: [v5.5] ①长截图提速降重叠：自动滚动步进 92%→97%（相邻帧重叠仅~3%）、间隔 0.55→0.42s，新增「快速模式」开关更激进；②编辑工具栏改为三排平铺，删除「更多」二级菜单，直接展示 OCR/翻译/画图/识码/打码/复制/贴图/保存/分享/加壳/PDF/压缩/去状态栏/取色/还原 共 15 项；③画图改用自绘 CoreGraphics 画布（弃用 PencilKit），修复在 SpringBoard 点击画图进入安全模式；④翻译改用百度翻译 API（读取设置里的 APP ID/KEY，国内可用），未填密钥才回退免费接口。
+Description: [v5.6] 局部截图选框可自由调整：去掉「松手即弹面板」，改为画完框后保留选区并显示 8 个缩放手柄（4 角 + 4 边），可拖动平移 / 拉角拉边缩放；新增「✓完成」按钮确认后才弹功能面板；面板「✕」关闭后保留选区可继续微调，彻底解决「只能重新截图」的痛点。（含 v5.5：长截图提速降重叠、三排工具栏、画图自绘修复安全模式、翻译改百度 API）
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.5_iphoneos-arm64.deb
-Size: 122356
-MD5sum: aacb8c5ce90aeb4fd8f1ae73cd95a241
-SHA1: 542d292b5ef18d0830fcc17b3fab665fb0d5d13d
-SHA256: c5b832e530a30772cc9e642f241cfbef0c69f048cac1557f3aad5fb57609b169
+Filename: ./debs/com.axs.snapper3zhext_5.6_iphoneos-arm64.deb
+Size: 124020
+MD5sum: d521c4fde6a73896791ee14392e32165
+SHA1: 0c9c2fef2363d0f55755b13cd38cb9913fdc8e53
+SHA256: 02381fca8952de46bdcbb27ca38059f7eddfc71ef34c1b3c7456deff6a274d52
