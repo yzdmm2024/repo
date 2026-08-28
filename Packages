@@ -414,6 +414,22 @@ MD5sum: 20904e2f42d2be8bb3707f2ab312385e
 SHA1: f01fe3b863dcb1c813e7e056a6a196c74913444f
 SHA256: 501f214aeff5e675eabda99ca828ae1096b20f544bbfe429ec7a1a54b36eb0f7
 
+Package: com.axs.snapper3zhext
+Name: SN3延伸板
+Description: [v3.10] 修控制中心点按无反应:浮动菜单/裁剪/悬浮窗创建UIWindow时挂载windowScene(iOS13+不挂则不显示);截屏改优先UIGetScreenImage抓真实整屏
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 3.10
+Installed-Size: 600
+Filename: debs/com.axs.snapper3zhext_3.10_iphoneos-arm64.deb
+Size: 32348
+MD5sum: 970c312f56b7ca6848e5c07d0e13355b
+SHA1: abedb9d3d12243da124154f5724e4ca9d3e04fc5
+SHA256: 778f2af5901014c48ef88b3450410a1a28a635c9eb5a3683503e5c29a5024f6c
+
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
 Version: 1.6.7
