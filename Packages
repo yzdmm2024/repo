@@ -587,3 +587,20 @@ Size: 94112
 MD5sum: 2d420843898288c3a27d611bf1504006
 SHA1: 2ea4ecc5f2f80c3a9c1b492390e0379732838702
 SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
+
+Package: com.axs.snapper3zhext
+Name: 超级截图
+Version: 4.1
+Architecture: iphoneos-arm64
+Description: [v4.0 骨架] 控制中心「超级截图」点按→窗口A遮罩镂空框选(底部:长截图/正常截图/取消);正常截图=隐藏遮罩抓屏按选区裁剪→窗口B两排工具栏(OCR/翻译/画图/识码/打码/复制/贴图/保存/分享/更多);长截图=手动采集下一屏×N→Vision配准拼接;更多二级(导出PDF/压缩/去状态栏/取色器)。两套窗口彻底分离、截图前必隐藏遮罩、退出必销毁置空。
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+
+
+Filename: ./debs/com.axs.snapper3zhext_4.1_iphoneos-arm64.deb
+Size: 98160
+MD5sum: 6b5b8c95fc83063a9b8355e91b0f39e4
+SHA1: f6a948ae857ecfe75d9245a6cabf720cdca94128
+SHA256: cd2a88e68080571215833c514b8e9f2dc62e17fca6294fc5b683a94e1626aec5
