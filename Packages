@@ -478,6 +478,22 @@ MD5sum: acb00d94309cdb3b86a2e4871d73d59e
 SHA1: 83a91f71ba67ca3984b9d7495495b45bad52e00c
 SHA256: f404c4271fb81757062ea576523d399846cabb9be6d2b06526915bbae8aeafeb
 
+Package: com.axs.snapper3zhext
+Name: SN3延伸板
+Description: [v3.14] 修自由截图确认时闪退:cc.capture通知只由SpringBoard响应(App进程不再弹窗,消除双进程窗口冲突);裁剪确认/弹窗全程@try兜底+CGImage检查。选择器两个图标再改小(26×26,卡片250×118)。
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 3.14
+Installed-Size: 728
+Filename: debs/com.axs.snapper3zhext_3.14_iphoneos-arm64.deb
+Size: 81972
+MD5sum: 3d3a1410153ad591cc09c1a3355dae24
+SHA1: 79253b280e60dbe47d6dec16f3551bdda1a67510
+SHA256: 8aff3f2670607b0bb1cf017b968cde899e5a11a1fd46cad61f70178be4fd7ab1
+
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
 Version: 1.6.7
