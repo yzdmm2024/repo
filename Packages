@@ -48,15 +48,15 @@ SHA256: 747c70d8d28164d54e8e3456f5a3519351e68813d15b4e870e0225f26d76b5cd
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 4.3
+Version: 4.4
 Architecture: iphoneos-arm64
-Description: [v4.3] 正常截图默认截取整屏全屏(仿系统电源+音量键)，拖框选为可选局部截取；两种截图均销毁遮罩后必弹窗口B两排工具栏(OCR/翻译/画图/识码/打码/复制/贴图/保存/分享/更多)；长截图拼接改用像素灰度相关法检测帧间重叠并裁掉重复画面，输出连贯长图(Vision失效时兜底)；更多二级(导出PDF/压缩/去状态栏/取色器)。两套窗口彻底分离、截图前必隐藏遮罩、退出必销毁置空。
+Description: [v4.4] 正常/局部截图均销毁遮罩后必弹窗口B两排工具栏(裁剪失败也兜底用整屏图)；捕获重构(UIGetScreenImage 退化时合成全场景 window 兜底，避免白底/裁区无效)；长截图拼接重叠检测改用 RGBA 亮度+宽搜索带+SAD 置信度门限，去重更稳、杜绝整帧堆叠与左上角截断，失败回退 50% 重叠；更多二级(导出PDF/压缩/去状态栏/取色器)。两套窗口彻底分离、截图前必隐藏遮罩、退出必销毁置空。
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_4.3_iphoneos-arm64.deb
-Size: 103324
-MD5sum: 836d600d8af69646f46bb02b01dcde73
-SHA1: bd807706569b6b3625933ba595eb73235294a85d
-SHA256: 6f5961f598a119372f438f645823f2f7745ddb4451d1d8bf5b9bac2e8801f25f
+Filename: ./debs/com.axs.snapper3zhext_4.4_iphoneos-arm64.deb
+Size: 104148
+MD5sum: 290b1c3562ecdb02bbbd61522b558469
+SHA1: 92fa065cc9d6826ecf5c4fe3b12cfba86407cf89
+SHA256: c983dd4415931f7ab595c351ae1c20e99b3371e49f72445d34290fee364845ce
