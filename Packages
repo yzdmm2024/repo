@@ -613,8 +613,6 @@ Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-
-
 Filename: ./debs/com.axs.snapper3zhext_4.2_iphoneos-arm64.deb
 Size: 98716
 MD5sum: 176f4cc7f76761c7616cd5d68e6c9294
@@ -627,3 +625,8 @@ MD5sum: 176f4cc7f76761c7616cd5d68e6c9294
 SHA1: 213277e2ac56d1a7f5b34392342e750307ebc10d
 SHA256: 747c70d8d28164d54e8e3456f5a3519351e68813d15b4e870e0225f26d76b5cd
 
+Filename: ./debs/com.axs.snapper3zhext_4.2_iphoneos-arm64.deb
+Size: 98716
+MD5sum: 176f4cc7f76761c7616cd5d68e6c9294
+SHA1: 213277e2ac56d1a7f5b34392342e750307ebc10d
+SHA256: 747c70d8d28164d54e8e3456f5a3519351e68813d15b4e870e0225f26d76b5cd
