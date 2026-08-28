@@ -48,15 +48,15 @@ SHA256: 747c70d8d28164d54e8e3456f5a3519351e68813d15b4e870e0225f26d76b5cd
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.1
+Version: 5.2
 Architecture: iphoneos-arm64
-Description: [v5.1] 长截图拼接重写：删除在 SpringBoard 内调不动的 Vision 主检测与过严 NCC 阈值（导致后续帧全被跳过、只剩首帧）；改用 160 宽灰度 SAD 模板匹配找相邻帧接缝（绝对差 refMAD*0.6 且 <50 接受），连续 ≥5 帧配准失败但内容在变则安全阀强制保守重叠拼入，杜绝「整段只留首帧」；绝不回退整帧拼入/固定比例重叠，从根上消除重复堆叠。局部截图：拖框松手功能面板独立窗口同步渲染（零延迟）；正常截图仿系统电源+音量键截整屏直接存相册「SN3截图」不弹编辑。两套窗口彻底分离、退出必销毁置空。
+Description: [v5.2] 长截图双重增强：①自动模式放宽聊天等重复纹理的 SAD 判定（次优接近且最佳差已很低时不拒绝），安全阀强制重叠从 35% 降到 25%，大幅减少跳帧导致的重复块；②新增「手动长截图」模式（框左上角切「模式:手动」，滑完一屏点【下一屏】精确采集，绕过自动配准）。超长内容不再压缩每帧高度，改为整体降分辨率拼接（放宽硬上限到 60k px、内存预算 120MB），从根本上消除叠影。局部/正常截图交互不变。
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.1_iphoneos-arm64.deb
-Size: 108344
-MD5sum: 1daf73aa87ee49c68d6f65b108662c8b
-SHA1: 55822e12ac1f42964713af0594d0f61f83fd2d3c
-SHA256: c2aaedcb0218c181c0f4059eefc52801b61dde42059f8566511dbfa20010b3a0
+Filename: ./debs/com.axs.snapper3zhext_5.2_iphoneos-arm64.deb
+Size: 110452
+MD5sum: 1cb281a678faf07a5ab847daab96619b
+SHA1: e74474d2eb502387b629a35c570bbfec0c60bd6a
+SHA256: 890139bcf36e4f8f1f0c87ccc747d818262a7169d30863d6b11ae6bd1a5dafbf
