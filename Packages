@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.15
+Version: 5.16
 Architecture: iphoneos-arm64
-Description: [v5.15] ①修复贴图拖动画面抖动/卡顿、关闭按钮偶发无效（改为窗口中心拖动+尺寸缩放，去掉逐帧重绘）。②局部截图框选/面板阶段支持双指捏合等比缩放选区。③百度OCR失败时明确弹出错误码与配置核对提示（不再无声无息回退）。④设置面板新增「从剪贴板一键粘贴密钥」按钮（解决微信输入法在设置里弹不出），并修复从其他app切回设置后偶发空白。
+Description: [v5.16] ①设置菜单入口改名「超级截图」，并从其他app切回时不再白屏（每次返回自动重建列表，已填密钥不丢失）。②「打开API开通页面」列表改为可点击按钮（原来PSLinkCell灰色点不了），点行直接跳Safari。③长截图默认改为「自动(SAD)」模式：打开即自动采集当前画面，直接向下滑动页面即可，无需先滚顶/点开始/切模式。④OCR/翻译仍用你填的百度智能云API Key+Secret Key（对应应用令牌），失败会弹具体错误码。
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.15_iphoneos-arm64.deb
-Size: 162480
-MD5sum: 301da84f9f09f461b34f992ab85de66d
-SHA1: 035535fb180464812987646c7d9656d180a94bde
-SHA256: d151619891e7e07c44bc02c121f06563f6bbe189c12c2defcb9e7987098d479f
+Filename: ./debs/com.axs.snapper3zhext_5.16_iphoneos-arm64.deb
+Size: 161356
+MD5sum: 391b2e4399ffe612aebd9c1c19e20707
+SHA1: 65b2497b27a70749eb9d3a958206357658ab7e4e
+SHA256: bd80150114a459a9fd6ddd1bd30907dfaabc035c2435eb3325c5722df877aacb
