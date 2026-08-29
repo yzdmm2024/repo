@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.25.5
+Version: 5.25.6
 Architecture: iphoneos-arm64
-Description: [v5.25.5] UI 优化. 1) 控制中心模块图标改 SF Symbol 优先(glyphImageForState: 永远返回 camera.viewfinder, 修「控制中心图标空白/不显示」, 不再依赖可能缺失或损坏的自定义 PNG). 2) 框选底部「正常截图/长截图/取消」改为紧凑图标按钮(84×58)并整体居中(不再全宽拉满、不再超大字). 3) 主工具栏新增「AI对话」(弹小窗自由对话, 后台把截图 OCR 成文字注入上下文; 接豆包只需在「设置→超级截图→AI/大模型」填 Ark 的 OpenAI 兼容端点) 与「旋转」(当前编辑图顺时针 90°). 4) 工具栏默认两排每行 5 个; 单排模式下支持左右循环滑动.
+Description: [v5.25.6] 修「OCR/翻译结果弹窗出现后, 局部截图/工具栏无法关闭、悬浮窗卡死在屏幕上」. 根因: v5.25.4 把工具栏窗口层级设为 Alert+200(2200) 高于系统 alert(2000), 为让弹窗可见又加「把弹窗窗口硬抬到 2250」的 hack; 该被抬高的 alert 窗口 dismiss 后残留 2250 盖住全屏, 导致工具栏「关闭」按钮点不到、整个界面关不掉. 根治: 工具栏窗口层级降到 Alert-10(1990), 仍高于所有 app 内容(盖住截图背景), 但低于系统 alert(2000), 于是 OCR/翻译/识别/错误弹窗由系统自然浮在工具栏之上, 且 dismiss 后正常清理、无残留; 并删除 Common.present/sn3AlertError 里的抬层 hack. (沿用 v5.25.5 全部 UI 优化: 控制中心图标、紧凑底部条、AI对话、旋转、两排×5 工具栏)
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.25.5_iphoneos-arm64.deb
-Size: 172252
-MD5sum: 01546d9fd123e9e5fb7e51c52f3fd017
-SHA1: 397a0739e359865936cd5423eb27507bcfacddca
-SHA256: 00bed88950a89ee894e76787c7841ec3e9e1e890c6817d6aa98903df9d049de9
+Filename: ./debs/com.axs.snapper3zhext_5.25.6_iphoneos-arm64.deb
+Size: 171752
+MD5sum: 833991929a5dbaa7026e31c1a7f08299
+SHA1: 0a412d625bf347af515dc2b44b8e43df5e4bab52
+SHA256: b0942534b87113b5bcc5213602d5aa54e4a4c7eb46bb863807e8d45fb8c58ccb
