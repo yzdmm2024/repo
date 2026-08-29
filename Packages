@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.25.2
+Version: 5.25.3
 Architecture: iphoneos-arm64
-Description: [v5.25.2] 修「设置 → 超级截图」不显示的真正根因（真机 dlopen 实测确认）. prefs bundle 可执行文件里存在未定义符号 _OBJC_CLASS_$_AskAIEngine: v5.23.0 加的「测试连接」按钮在 Snapper3ZhExtPrefs.m 里调用了 AskAIEngine, 但 AskAIEngine.m 只编进了 tweak dylib, 而 tweak 的 Filter 是 springboard / QQ / 微信, 不含 com.apple.Preferences, 设置进程里根本没有这个类; 又因链接带了 -undefined,dynamic_lookup, 符号解析被推迟到运行时, dlopen 直接失败并报 "symbol not found in flat namespace '_OBJC_CLASS_$_AskAIEngine'" → PreferenceLoader 拿不到 SN3PrefsController → 面板不显示. 设备实测: 同机 12 个 prefs bundle 里只有本插件加载失败, 其余 11 个全部成功. 修复: 把 src/AskAIEngine.m 加进 Snapper3ZhExtPrefs_FILES, 让 bundle 自包含, 不再依赖 tweak 是否注入. 另新增 tools/check_undef_symbols.py 并接入 CI, 以后 bundle 再引用只存在于 dylib 的自有类会直接构建失败.
+Description: [v5.25.3] 修「智谱 API Key 填了也不生效」的键名错配. Common.h 里 XZ_KEY_AI_BASEURL / _KEY / _MODEL / _PROMPT 被定义了两次: 一次指向 BigModel_* (OCR 段), 一次指向 AskAI_* (问 AI 段). C 预处理器取最后一次定义, 结果 OCR 主流程 (SuperTools.ocrViaBigModel) 和设置面板的「粘贴 API Key」「测试连接」两个按钮全都去读 AskAI_APIKey, 而 Root.plist 里用户实际填写的那一栏 key 是 BigModel_APIKey —— 两边对不上, 填了也永远是空的, OCR 只会报「未配置智谱 API Key」, 测试连接也只会报「未配置 API Key」. 修复: 把 OCR 段拆成独立的 XZ_KEY_BM_* 前缀, 与问 AI 段的 XZ_KEY_AI_* 互不干扰; 改 SuperTools.m 与 Snapper3ZhExtPrefs.m 的读取键. 现在只需在「设置→超级截图→识别引擎(智谱 BigModel)」里填 API Key 即可, Base URL 与模型名已有默认值 (https://open.bigmodel.cn/api/paas/v4 + glm-4v-flash, 注册送 2000 万 tokens 永久免费), 填完点「测试连接」可验证。
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.25.2_iphoneos-arm64.deb
-Size: 170812
-MD5sum: 3098047c480e4994c216716e990fb8a7
-SHA1: 5694e3e0a2263fd63866c8c96f18219476412938
-SHA256: 19dc758c9828ecbef5d4fbe08ba4a293b3535bc638745a445314bf6f82d5c4b6
+Filename: ./debs/com.axs.snapper3zhext_5.25.3_iphoneos-arm64.deb
+Size: 170260
+MD5sum: 8ed5d3fcb7da75aa8fca7351053aa897
+SHA1: 36c638e0935d2006c25f6de12d70b6aa2c4256f7
+SHA256: 6bff94462e9da8d0048abee590876633a56d5cac8e3f36ff0551fab773d32ba5
