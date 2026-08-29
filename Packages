@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.20
+Version: 5.21
 Architecture: iphoneos-arm64
-Description: [v5.20] ①彻底修「未能载入软件包」: 从 plist 移除崩溃的 SN3ToolbarController 子页, 保留开关入口, Preferences.app 可正常载入. ②局部截图pinch/pan 真正共存: 在 pan 手势 Began/Changed 中加 pan.numberOfTouches>1 提前return, 把双指让给 pinch, 避免 pan 退化用质心loc把 _cropRect 重置成 0,0 导致 pinch 拿到 hasSelection=NO. ③同时识别代理已加 (v5.19).
+Description: [v5.21] ①OCR 引擎三选一: 设置→OCR 引擎(本地/百度/大模型), 顶部 PSSegmentCell 切换, 配置缺失 toast 提示. ②SN3LinksController 新增 AI Studio Access Token + 模型库 + 火山方舟 + 阿里百炼入口(用户说"还是百度的"指 OCR 引擎这里之前没有显式选择). ③局部截图面板: 单排滑动=开 → UIScrollView 横向, 末尾接回开头循环(KVO 监听 contentOffset 跳变), 实时读偏好不用重启. ④kHandleHit 22→30, 四边四角手柄命中更宽松. ⑤框选+画新框重选逻辑原本就有, 验证.
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.20_iphoneos-arm64.deb
-Size: 166464
-MD5sum: acdc55eafb125c709d8e28ead11a20e1
-SHA1: a055a5e6cfc68fa88f8ee5ad1ede614f60aebcd2
-SHA256: ce969461b14e6866af46116c2b6ab67847b2a08aa02ec8775f32ec2b0a3f199c
+Filename: ./debs/com.axs.snapper3zhext_5.21_iphoneos-arm64.deb
+Size: 171808
+MD5sum: d5c91c114f45703e6760c12c1f022680
+SHA1: 1238eba7e4694c07e91d5df479bcc8dde06263cc
+SHA256: ca2d2513599cd2898d43210e201e5f49c315e0923ed8ba77c8dee2a619be331c
