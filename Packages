@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.18
+Version: 5.19
 Architecture: iphoneos-arm64
-Description: [v5.18] ①局部截图pan限定单指，双指捏合/拖动改范围不再被抢。②OCR默认Apple照片同款本地模型(免费离线),翻译仍走百度;大模型OCR需手动开。③设置新增「工具栏按钮」页(排序+启用)+单排/双排切换。④设置白屏三层兜底:viewWillAppear强制重建+UIApplicationDidBecomeActive监听+prefsChanged通知。⑤长截图「步进比例」改为可调滑杆(60-95%,默认82%),完成时打印拼接日志方便定位。
+Description: [v5.19] ①局部截图双指缩放/单指拖动同时识别(关键修复：移除错误的 pan.maxNumberOfTouches=1 限制,加 gestureRecognizer 同时识别代理,让 pan 与 pinch 共存)。②设置面板空白根本修复：viewWillAppear 的重建推到下一 runloop,加 try/catch,避免 iOS 14 PSListController 同帧改 specifiers 触发空白。③工具栏开关的 disabled 集合改为字符串 tag,修 setEnabledValue 不生效的 bug。
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.18_iphoneos-arm64.deb
-Size: 170476
-MD5sum: b5434f1a114215c09ee2d7019554d7f0
-SHA1: 575ae78a6726544e1ae8becb401aa4aa69bce625
-SHA256: 047600c5bd53463fd8421263b1e9477745e2b825764c91dadb236cba094304e8
+Filename: ./debs/com.axs.snapper3zhext_5.19_iphoneos-arm64.deb
+Size: 172824
+MD5sum: 8498c4c55abcfccedc55d878518ab327
+SHA1: f3e2587ff0a5561a63a83019cf87c59ca8d1759b
+SHA256: 9fab3dd4bbfcd72da190340762a4aa19f75191848b40518c6dd5a98d470062ca
