@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.21
+Version: 5.22.1
 Architecture: iphoneos-arm64
-Description: [v5.21] ①OCR 引擎三选一: 设置→OCR 引擎(本地/百度/大模型), 顶部 PSSegmentCell 切换, 配置缺失 toast 提示. ②SN3LinksController 新增 AI Studio Access Token + 模型库 + 火山方舟 + 阿里百炼入口(用户说"还是百度的"指 OCR 引擎这里之前没有显式选择). ③局部截图面板: 单排滑动=开 → UIScrollView 横向, 末尾接回开头循环(KVO 监听 contentOffset 跳变), 实时读偏好不用重启. ④kHandleHit 22→30, 四边四角手柄命中更宽松. ⑤框选+画新框重选逻辑原本就有, 验证.
+Description: [v5.22.1] ①翻译失败/识别结果/分享/复制弹窗的宿主从 `(_panelWin ?: _win)` 改为 `_win` —— `_panelWin` 是 XZPassThroughWindow(hit-test 穿透), 把 alert/share sheet 挂上去按钮 touch 会穿到下层 App, 表现为「知道了」按不动. OCR 段顺序、PSSegmentCell 单排段控同 v5.22.
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.21_iphoneos-arm64.deb
-Size: 171808
-MD5sum: d5c91c114f45703e6760c12c1f022680
-SHA1: 1238eba7e4694c07e91d5df479bcc8dde06263cc
-SHA256: ca2d2513599cd2898d43210e201e5f49c315e0923ed8ba77c8dee2a619be331c
+Filename: ./debs/com.axs.snapper3zhext_5.22.1_iphoneos-arm64.deb
+Size: 172836
+MD5sum: 72b39d7de2786663984520a99bb7e254
+SHA1: aacbedba6bd1a6e1eaabf6b754dfd1d80c913b72
+SHA256: db40ff0ac7f1ff3b7f3190e62ac7965422426410e8ceb1af1e685f87edb54c06
