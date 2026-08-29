@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.23.0
+Version: 5.23.1
 Architecture: iphoneos-arm64
-Description: [v5.23.0] OCR 整块重做, 砍掉百度 OCR / Apple Vision / AI Studio 三档引擎选择, 只保留智谱 BigModel glm-4v-flash (OpenAI 兼容协议). ①Common.h 删 OCR_Engine/百度键, 新增 BigModel_BaseURL/Key/Model/Prompt. ②SuperTools.m 删 ocrVisionChain/ocrViaBaidu/ocrViaLLM 三档分支, 新增 ocrViaBigModel 单路, 失败弹 alert 不静默不fallback. ③Root.plist 删 PSSegmentCell识别引擎/百度双Key/AI Studio链接/LLM_OCR开关, 增 BaseURL/Key/Model/Prompt 输入+粘贴按钮+测试连接按钮. ④SN3LinksController 删百度OCR段, AI Studio 段改为智谱 BigModel 段. ⑤新 Common.h/m 加 sn3AlertError: 弹 alert 工具. 智谱注册送 2000 万 tokens 永久免费, 截图 OCR 个人用不完.
+Description: [v5.23.1] 修 v5.23.0 整块重做后新发现的 bug: 局部截图功能菜单「在那但点不动/看着不显」. 真因: _panelWin 是 XZPassThroughWindow, init 时 passthrough=YES + gateInteractive=YES, hitTest 中所有未在 _interactiveViews 白名单的 view 全部返回 nil(穿透下层), 但 buildLocalPanelOnOwnWindowWithRect 从未把 panel 视图 addInteractiveView 到白名单, 整个 panel 的 touch 全部穿透给下层 App. 修复: 在创建 panel 后 [_panelWin addInteractiveView:panel] 把它加入白名单, hitTest isDescendantOfInteractive 沿 superview 链会命中 panel 自身, 按钮就能响应. 此 bug 在 v5.22.1 改 alert 宿主页时就存在, 但因为 alert 走 _win 不经过 _panelWin, 没暴露; v5.23.0 也没动这块, 但因为改了 OCR 路径分散了注意力. 顺手验证: v5.23.0 装的包菜单触摸 100% 失效, 升级 v5.23.1 即可恢复.
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.23.0_iphoneos-arm64.deb
-Size: 166880
-MD5sum: 6d34b1aa44096335e016347c526eb7fe
-SHA1: 73662ac0f34b1e64c585a05b6cc8f1e5b235d7bd
-SHA256: dc413f69a7cf4b5e20c579c34808045f0d6fccc389cdbb991d5c52806b10f309
+Filename: ./debs/com.axs.snapper3zhext_5.23.1_iphoneos-arm64.deb
+Size: 167136
+MD5sum: 29f07e454e3b995114dfa67da6a628ca
+SHA1: c36429fa61c5387f76171c068ef3257f79d21915
+SHA256: 4ad9165a0de29054ec4e1ad7b373353fc62cb370a61666f662af21cb00ccdbb6
