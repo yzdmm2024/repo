@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.16
+Version: 5.17
 Architecture: iphoneos-arm64
-Description: [v5.16] ①设置菜单入口改名「超级截图」，并从其他app切回时不再白屏（每次返回自动重建列表，已填密钥不丢失）。②「打开API开通页面」列表改为可点击按钮（原来PSLinkCell灰色点不了），点行直接跳Safari。③长截图默认改为「自动(SAD)」模式：打开即自动采集当前画面，直接向下滑动页面即可，无需先滚顶/点开始/切模式。④OCR/翻译仍用你填的百度智能云API Key+Secret Key（对应应用令牌），失败会弹具体错误码。
+Description: [v5.17] ①新增免费大模型OCR（AI Studio/火山方舟/豆包等，OpenAI兼容）：设置「AI 提问」填接口/令牌/模型，开「大模型OCR」开关即用你自己的模型识别中文，不用百度付费；未配或失败自动回退本地Vision。②长截图默认改回「自动滚动」(精确)模式：微信/QQ 长图零重叠不重复，其它App可切换「自动(SAD)」；每帧间隔设置真正生效(下限0.1s防帧过密重复)。③修复设置面板从其它App切回后白屏(重建specifiers+强制刷新表格)。
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.16_iphoneos-arm64.deb
-Size: 161356
-MD5sum: 391b2e4399ffe612aebd9c1c19e20707
-SHA1: 65b2497b27a70749eb9d3a958206357658ab7e4e
-SHA256: bd80150114a459a9fd6ddd1bd30907dfaabc035c2435eb3325c5722df877aacb
+Filename: ./debs/com.axs.snapper3zhext_5.17_iphoneos-arm64.deb
+Size: 164972
+MD5sum: 37c95364a89293cd09cd8695c544f6cc
+SHA1: bb4a4469697667527012fc932f05026967c23d64
+SHA256: 76d6f6c0fa68783b9846a17dd384f6eebbddfb4a332f2b4a10ac8064ffabb5ab
