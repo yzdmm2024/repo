@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.25.0
+Version: 5.25.1
 Architecture: iphoneos-arm64
-Description: [v5.25.0] 3 个问题修复. ①设置面板「未能载入软件包」真凶: Root.plist 用了 PSLinkCell+detail=类名, iOS 14+ PSListController 把 detail 当 plist 文件名 (找不到 SN3LinksController.plist) → 装载时抛错, 整个 prefs bundle 标记为损坏. 改用 PSButtonCell+action=openBigModelAPIPage/openAPIPage, Snapper3ZhExtPrefs.m 加两个 action 直接 [[UIApplication sharedApplication] openURL:]. ②「滑动菜单后不能调范围」真凶: 单排 sv 的 KVO 监听 contentOffset 在拖动中重设 offset, 触发 _contentView 的 pan 状态混乱, 让 resize 路径失效. 改成拖动中直接 return, 抬手后用 scrollViewDidEndDecelerating 对齐 (循环暂时不完美, 但不影响功能). ③「取消按钮不好按」: 把 ✕ 从 panel 内的 30x28 移到 _panelWin 上的 44x44, 位置在 panel 右侧外面 (CGRectGetMaxX(panel)-6, midY-22), 红色 xmark.circle.fill.
+Description: [v5.25.1] 修 v5.25.0 仍未修复的「设置面板空」真凶. 100% 确认: Root.plist PSSegmentCell Toolbar_Layout 缺 `validValues` 数组 (PSSegmentCell 必须 validTitles + validValues + default 三件套, 缺任何一个 iOS 14+ PSListController 装配时抛错, 整个 prefs bundle 标记为损坏 → 进设置报「未能载入软件包」). v5.25.0 改 PSLinkCell 为 PSButtonCell 没修到这一条, 因为 v5.21 引入 Toolbar_Layout PSSegmentCell 时只写了 validTitles 没写 validValues, 雷点埋了 5 个版本. 加 validValues=[0, 1] (对应 validTitles=[双排, 单排滑动]).
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.25.0_iphoneos-arm64.deb
-Size: 167240
-MD5sum: 318e547ab62e277a780edfdc93940cfa
-SHA1: b6e90ff126d44421cffbb9d37b510b9ef06110c8
-SHA256: d1bbda9c4051cae9312138bc7d8067f393c4c128c20c3df86d3734e181a4df08
+Filename: ./debs/com.axs.snapper3zhext_5.25.1_iphoneos-arm64.deb
+Size: 166932
+MD5sum: 53160ffc03080ae364f5fcc6c0ea6334
+SHA1: 93eb30a8c5902af68ae88d1f4b7f0cbad6580008
+SHA256: 6d04d6e71578ba78081ca3b98b399461ea978bd509119e3a8fc6a11a2d7b6ad1
