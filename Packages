@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.22.1
+Version: 5.22.2
 Architecture: iphoneos-arm64
-Description: [v5.22.1] ①翻译失败/识别结果/分享/复制弹窗的宿主从 `(_panelWin ?: _win)` 改为 `_win` —— `_panelWin` 是 XZPassThroughWindow(hit-test 穿透), 把 alert/share sheet 挂上去按钮 touch 会穿到下层 App, 表现为「知道了」按不动. OCR 段顺序、PSSegmentCell 单排段控同 v5.22.
+Description: [v5.22.2] ①修 v5.22.1 设置面板空白的真凶: Root.plist「识别引擎」分组 PSGroupCell 的 footerText 缺 <string> 节点(我之前 Edit 改 OCR 段时只写了 <key>footerText</key> 没接值), plist 解析到那行抛错, 整 panel 跳空 → iOS 显示无任何设置项. 已补 footerText 文字+plistlib 解析验证通过. ②同 v5.22.1: 弹窗宿主从 _panelWin 改 _win 修"知道了"按不动.
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.22.1_iphoneos-arm64.deb
-Size: 172836
-MD5sum: 72b39d7de2786663984520a99bb7e254
-SHA1: aacbedba6bd1a6e1eaabf6b754dfd1d80c913b72
-SHA256: db40ff0ac7f1ff3b7f3190e62ac7965422426410e8ceb1af1e685f87edb54c06
+Filename: ./debs/com.axs.snapper3zhext_5.22.2_iphoneos-arm64.deb
+Size: 173096
+MD5sum: 55b5eddd8ed8db6e51e5ca79293b8e68
+SHA1: 7aee6a6a1d01cc6cb8e9ba1d8a49649b177c59c9
+SHA256: 967a43ead191df84aa6216223506742b9b3100abc043050cf137ae3952642987
