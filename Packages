@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.19
+Version: 5.20
 Architecture: iphoneos-arm64
-Description: [v5.19] ①局部截图双指缩放/单指拖动同时识别(关键修复：移除错误的 pan.maxNumberOfTouches=1 限制,加 gestureRecognizer 同时识别代理,让 pan 与 pinch 共存)。②设置面板空白根本修复：viewWillAppear 的重建推到下一 runloop,加 try/catch,避免 iOS 14 PSListController 同帧改 specifiers 触发空白。③工具栏开关的 disabled 集合改为字符串 tag,修 setEnabledValue 不生效的 bug。
+Description: [v5.20] ①彻底修「未能载入软件包」: 从 plist 移除崩溃的 SN3ToolbarController 子页, 保留开关入口, Preferences.app 可正常载入. ②局部截图pinch/pan 真正共存: 在 pan 手势 Began/Changed 中加 pan.numberOfTouches>1 提前return, 把双指让给 pinch, 避免 pan 退化用质心loc把 _cropRect 重置成 0,0 导致 pinch 拿到 hasSelection=NO. ③同时识别代理已加 (v5.19).
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.19_iphoneos-arm64.deb
-Size: 172824
-MD5sum: 8498c4c55abcfccedc55d878518ab327
-SHA1: f3e2587ff0a5561a63a83019cf87c59ca8d1759b
-SHA256: 9fab3dd4bbfcd72da190340762a4aa19f75191848b40518c6dd5a98d470062ca
+Filename: ./debs/com.axs.snapper3zhext_5.20_iphoneos-arm64.deb
+Size: 166464
+MD5sum: acdc55eafb125c709d8e28ead11a20e1
+SHA1: a055a5e6cfc68fa88f8ee5ad1ede614f60aebcd2
+SHA256: ce969461b14e6866af46116c2b6ab67847b2a08aa02ec8775f32ec2b0a3f199c
