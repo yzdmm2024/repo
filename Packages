@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.25.1
+Version: 5.25.2
 Architecture: iphoneos-arm64
-Description: [v5.25.1] 修 v5.25.0 仍未修复的「设置面板空」真凶. 100% 确认: Root.plist PSSegmentCell Toolbar_Layout 缺 `validValues` 数组 (PSSegmentCell 必须 validTitles + validValues + default 三件套, 缺任何一个 iOS 14+ PSListController 装配时抛错, 整个 prefs bundle 标记为损坏 → 进设置报「未能载入软件包」). v5.25.0 改 PSLinkCell 为 PSButtonCell 没修到这一条, 因为 v5.21 引入 Toolbar_Layout PSSegmentCell 时只写了 validTitles 没写 validValues, 雷点埋了 5 个版本. 加 validValues=[0, 1] (对应 validTitles=[双排, 单排滑动]).
+Description: [v5.25.2] 修「设置 → 超级截图」不显示的真正根因（真机 dlopen 实测确认）. prefs bundle 可执行文件里存在未定义符号 _OBJC_CLASS_$_AskAIEngine: v5.23.0 加的「测试连接」按钮在 Snapper3ZhExtPrefs.m 里调用了 AskAIEngine, 但 AskAIEngine.m 只编进了 tweak dylib, 而 tweak 的 Filter 是 springboard / QQ / 微信, 不含 com.apple.Preferences, 设置进程里根本没有这个类; 又因链接带了 -undefined,dynamic_lookup, 符号解析被推迟到运行时, dlopen 直接失败并报 "symbol not found in flat namespace '_OBJC_CLASS_$_AskAIEngine'" → PreferenceLoader 拿不到 SN3PrefsController → 面板不显示. 设备实测: 同机 12 个 prefs bundle 里只有本插件加载失败, 其余 11 个全部成功. 修复: 把 src/AskAIEngine.m 加进 Snapper3ZhExtPrefs_FILES, 让 bundle 自包含, 不再依赖 tweak 是否注入. 另新增 tools/check_undef_symbols.py 并接入 CI, 以后 bundle 再引用只存在于 dylib 的自有类会直接构建失败.
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.25.1_iphoneos-arm64.deb
-Size: 166932
-MD5sum: 53160ffc03080ae364f5fcc6c0ea6334
-SHA1: 93eb30a8c5902af68ae88d1f4b7f0cbad6580008
-SHA256: 6d04d6e71578ba78081ca3b98b399461ea978bd509119e3a8fc6a11a2d7b6ad1
+Filename: ./debs/com.axs.snapper3zhext_5.25.2_iphoneos-arm64.deb
+Size: 170812
+MD5sum: 3098047c480e4994c216716e990fb8a7
+SHA1: 5694e3e0a2263fd63866c8c96f18219476412938
+SHA256: 19dc758c9828ecbef5d4fbe08ba4a293b3535bc638745a445314bf6f82d5c4b6
