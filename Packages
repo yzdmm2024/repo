@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.23.1
+Version: 5.23.2
 Architecture: iphoneos-arm64
-Description: [v5.23.1] 修 v5.23.0 整块重做后新发现的 bug: 局部截图功能菜单「在那但点不动/看着不显」. 真因: _panelWin 是 XZPassThroughWindow, init 时 passthrough=YES + gateInteractive=YES, hitTest 中所有未在 _interactiveViews 白名单的 view 全部返回 nil(穿透下层), 但 buildLocalPanelOnOwnWindowWithRect 从未把 panel 视图 addInteractiveView 到白名单, 整个 panel 的 touch 全部穿透给下层 App. 修复: 在创建 panel 后 [_panelWin addInteractiveView:panel] 把它加入白名单, hitTest isDescendantOfInteractive 沿 superview 链会命中 panel 自身, 按钮就能响应. 此 bug 在 v5.22.1 改 alert 宿主页时就存在, 但因为 alert 走 _win 不经过 _panelWin, 没暴露; v5.23.0 也没动这块, 但因为改了 OCR 路径分散了注意力. 顺手验证: v5.23.0 装的包菜单触摸 100% 失效, 升级 v5.23.1 即可恢复.
+Description: [v5.23.2] 修 v5.23.1 进设置报「未能载入软件包 Snapper3ZhExtPrefs.bundle」的真凶. ①Root.plist 两个 PSLinkCell 引用 SN3LinksController 子页, 同时含 isController=true 字段 → iOS 14+ PSListController 把 detail 解释为 plist 文件名(非类名), 试图在 bundle 根目录找 SN3LinksController.plist (不存在), 加载失败导致整个 preference bundle 被标记为损坏. 删 isController=true 字段, 让 iOS 把 detail 当类名 alloc-init. ②plutil 重新序列化 Root.plist, 统一缩进为 1 tab 一层, 消除混合 v5.22.2 残留 + v5.23.0 新增时的缩进不一致, 避免 Preferences framework 装配 specifier 异常. ③顺手改一行残留 footerText「OCR 用百度智能云 PaddleOCR」→「OCR 用智谱 BigModel glm-4v-flash」, 跟实际实现一致.
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.23.1_iphoneos-arm64.deb
-Size: 167136
-MD5sum: 29f07e454e3b995114dfa67da6a628ca
-SHA1: c36429fa61c5387f76171c068ef3257f79d21915
-SHA256: 4ad9165a0de29054ec4e1ad7b373353fc62cb370a61666f662af21cb00ccdbb6
+Filename: ./debs/com.axs.snapper3zhext_5.23.2_iphoneos-arm64.deb
+Size: 167804
+MD5sum: a600592f9b8293db0c1fec5f21e45e26
+SHA1: 158fc03ce6b46c41fa882d03fd0f6ffc5a1bc811
+SHA256: b996655832e5f98fd3eb214d405af747b6be6a6895fe8e6b6c8ffbf29e2a7611
