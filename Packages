@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.17
+Version: 5.18
 Architecture: iphoneos-arm64
-Description: [v5.17] ①新增免费大模型OCR（AI Studio/火山方舟/豆包等，OpenAI兼容）：设置「AI 提问」填接口/令牌/模型，开「大模型OCR」开关即用你自己的模型识别中文，不用百度付费；未配或失败自动回退本地Vision。②长截图默认改回「自动滚动」(精确)模式：微信/QQ 长图零重叠不重复，其它App可切换「自动(SAD)」；每帧间隔设置真正生效(下限0.1s防帧过密重复)。③修复设置面板从其它App切回后白屏(重建specifiers+强制刷新表格)。
+Description: [v5.18] ①局部截图pan限定单指，双指捏合/拖动改范围不再被抢。②OCR默认Apple照片同款本地模型(免费离线),翻译仍走百度;大模型OCR需手动开。③设置新增「工具栏按钮」页(排序+启用)+单排/双排切换。④设置白屏三层兜底:viewWillAppear强制重建+UIApplicationDidBecomeActive监听+prefsChanged通知。⑤长截图「步进比例」改为可调滑杆(60-95%,默认82%),完成时打印拼接日志方便定位。
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.17_iphoneos-arm64.deb
-Size: 164972
-MD5sum: 37c95364a89293cd09cd8695c544f6cc
-SHA1: bb4a4469697667527012fc932f05026967c23d64
-SHA256: 76d6f6c0fa68783b9846a17dd384f6eebbddfb4a332f2b4a10ac8064ffabb5ab
+Filename: ./debs/com.axs.snapper3zhext_5.18_iphoneos-arm64.deb
+Size: 170476
+MD5sum: b5434f1a114215c09ee2d7019554d7f0
+SHA1: 575ae78a6726544e1ae8becb401aa4aa69bce625
+SHA256: 047600c5bd53463fd8421263b1e9477745e2b825764c91dadb236cba094304e8
