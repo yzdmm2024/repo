@@ -710,6 +710,22 @@ SHA256: 11111c9fde16a50df04757ebd62b6c89468e64f3b344df64ec4ccfce5d97a418
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
+Description: [v5.10 修复] ①局部截图拖选松手【直接】弹功能面板（无需再点「✓完成」），面板弹出后仍可拖动/缩放选框，选框移动功能面板跟着挪并重新裁剪。②OCR 结果转中文内置英文模型重试，识别率提升。③画图：新增 8 色颜色选择（替代原「换色」循环）、马克笔半透明/不透明滑动条，「取消」并入画笔面板内部（撤销/取消/完成一排）。④打码：轻/中/重马赛克块差异拉大（50/22/9 颗粒）+高斯「模糊」档，参照 QQ/微信风格，工具条重排不再怪异。⑤贴图：拖动改挂到图片本体 + 左上角新增「大头针」（拖大头针或图片都能移动整张贴图），修正原拖不动问题。⑥识码：优先 CoreImage 扫二维码 + 回退 Vision 扫各类条码/二维码，识别成功。⑦长截图重叠优先信任像素级SAD真实重叠。
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Architecture: iphoneos-arm64
+Version: 5.10
+Installed-Size: 956
+Filename: debs/com.axs.snapper3zhext_5.10_iphoneos-arm64.deb
+Size: 135428
+MD5sum: bd5e7bca4cf8de61201b77849ec32d68
+SHA1: e82c5cf6a1862073ffe2adb258c25737595110b8
+SHA256: c4a9289c2a91f47764c9dcc86abe4b0b40cc74d9ce7f0512e5ef9740d2a0adea
+
+Package: com.axs.snapper3zhext
+Name: 超级截图
 Version: 5.1
 Architecture: iphoneos-arm64
 Description: [v5.1] 长截图拼接重写：删除在 SpringBoard 内调不动的 Vision 主检测与过严 NCC 阈值（导致后续帧全被跳过、只剩首帧）；改用 160 宽灰度 SAD 模板匹配找相邻帧接缝（绝对差 refMAD*0.6 且 <50 接受），连续 ≥5 帧配准失败但内容在变则安全阀强制保守重叠拼入，杜绝「整段只留首帧」；绝不回退整帧拼入/固定比例重叠，从根上消除重复堆叠。局部截图：拖框松手功能面板独立窗口同步渲染（零延迟）；正常截图仿系统电源+音量键截整屏直接存相册「SN3截图」不弹编辑。两套窗口彻底分离、退出必销毁置空。
