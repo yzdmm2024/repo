@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.23.2
+Version: 5.24.0
 Architecture: iphoneos-arm64
-Description: [v5.23.2] 修 v5.23.1 进设置报「未能载入软件包 Snapper3ZhExtPrefs.bundle」的真凶. ①Root.plist 两个 PSLinkCell 引用 SN3LinksController 子页, 同时含 isController=true 字段 → iOS 14+ PSListController 把 detail 解释为 plist 文件名(非类名), 试图在 bundle 根目录找 SN3LinksController.plist (不存在), 加载失败导致整个 preference bundle 被标记为损坏. 删 isController=true 字段, 让 iOS 把 detail 当类名 alloc-init. ②plutil 重新序列化 Root.plist, 统一缩进为 1 tab 一层, 消除混合 v5.22.2 残留 + v5.23.0 新增时的缩进不一致, 避免 Preferences framework 装配 specifier 异常. ③顺手改一行残留 footerText「OCR 用百度智能云 PaddleOCR」→「OCR 用智谱 BigModel glm-4v-flash」, 跟实际实现一致.
+Description: [v5.24.0] 改局部截图拖动手势设计 (用户最新需求). 之前 v5.22.x~v5.23.x 实现的是「框内平移 / 框外重选」, 用户新需求: 框外任意点拖动 = 整体平移 (不是重选), 边/角 = 改尺寸. 实现: handleCropPan 删掉「框外重选」分支, 改为 [self hasSelection] 时统一进 XZDragMove; 没选过时仍走 XZDragDraw 画新框 (但只触发一次). 关键: 框外拖动时旧版用「手指落点 -> 框左上角」做 _panGrab, 框会瞬移, 改为「手指落点 -> 框中心」做 _panGrab, XZDragMove Changed 时 newCenter = loc - _panGrab, 框中心跟手指走 (macOS/iOS 拖窗口行为). 第一次画完抬手弹菜单, 之后所有拖动 = 平移.
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.23.2_iphoneos-arm64.deb
-Size: 167804
-MD5sum: a600592f9b8293db0c1fec5f21e45e26
-SHA1: 158fc03ce6b46c41fa882d03fd0f6ffc5a1bc811
-SHA256: b996655832e5f98fd3eb214d405af747b6be6a6895fe8e6b6c8ffbf29e2a7611
+Filename: ./debs/com.axs.snapper3zhext_5.24.0_iphoneos-arm64.deb
+Size: 167100
+MD5sum: 3d4830d432a4d28f203ae7d999c94769
+SHA1: 8443f609fc9993bcc1b2b4e81e5f4c9daa12b91b
+SHA256: 751c2cc9bc60358eb2f8ddd9dc89153b9665b02448e47bec84abfb3fa85a74c5
