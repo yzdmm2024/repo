@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.14
+Version: 5.15
 Architecture: iphoneos-arm64
-Description: [v5.14] ①OCR改百度云端优先+本地Vision兜底，中文识别大幅提升。②翻译链打通(OCR→百度翻译，Google兜底)，设置面板可填百度OCR/翻译密钥。③长截图自适应抓帧间隔修卡顿丢帧+底部末尾补抓不裁。④贴图支持双指捏合缩放(自由拖动+缩放)。⑤局部截图面板右上角✕直接关闭不再退回再次编辑；拖动选框即可实时调整裁剪范围。
+Description: [v5.15] ①修复贴图拖动画面抖动/卡顿、关闭按钮偶发无效（改为窗口中心拖动+尺寸缩放，去掉逐帧重绘）。②局部截图框选/面板阶段支持双指捏合等比缩放选区。③百度OCR失败时明确弹出错误码与配置核对提示（不再无声无息回退）。④设置面板新增「从剪贴板一键粘贴密钥」按钮（解决微信输入法在设置里弹不出），并修复从其他app切回设置后偶发空白。
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.14_iphoneos-arm64.deb
-Size: 157708
-MD5sum: 1cf75e1568c7b4b01fd6f2661093fff4
-SHA1: 2a71521e0f8720ad87abed0fe827d3890195d19f
-SHA256: 0cd1da89a541701eb6abd2722ea6f1ea0e2b4e98d3ee3d19cf663fd77ddcbbb1
+Filename: ./debs/com.axs.snapper3zhext_5.15_iphoneos-arm64.deb
+Size: 162480
+MD5sum: 301da84f9f09f461b34f992ab85de66d
+SHA1: 035535fb180464812987646c7d9656d180a94bde
+SHA256: d151619891e7e07c44bc02c121f06563f6bbe189c12c2defcb9e7987098d479f
