@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.25.3
+Version: 5.25.5
 Architecture: iphoneos-arm64
-Description: [v5.25.3] 修「智谱 API Key 填了也不生效」的键名错配. Common.h 里 XZ_KEY_AI_BASEURL / _KEY / _MODEL / _PROMPT 被定义了两次: 一次指向 BigModel_* (OCR 段), 一次指向 AskAI_* (问 AI 段). C 预处理器取最后一次定义, 结果 OCR 主流程 (SuperTools.ocrViaBigModel) 和设置面板的「粘贴 API Key」「测试连接」两个按钮全都去读 AskAI_APIKey, 而 Root.plist 里用户实际填写的那一栏 key 是 BigModel_APIKey —— 两边对不上, 填了也永远是空的, OCR 只会报「未配置智谱 API Key」, 测试连接也只会报「未配置 API Key」. 修复: 把 OCR 段拆成独立的 XZ_KEY_BM_* 前缀, 与问 AI 段的 XZ_KEY_AI_* 互不干扰; 改 SuperTools.m 与 Snapper3ZhExtPrefs.m 的读取键. 现在只需在「设置→超级截图→识别引擎(智谱 BigModel)」里填 API Key 即可, Base URL 与模型名已有默认值 (https://open.bigmodel.cn/api/paas/v4 + glm-4v-flash, 注册送 2000 万 tokens 永久免费), 填完点「测试连接」可验证。
+Description: [v5.25.5] UI 优化. 1) 控制中心模块图标改 SF Symbol 优先(glyphImageForState: 永远返回 camera.viewfinder, 修「控制中心图标空白/不显示」, 不再依赖可能缺失或损坏的自定义 PNG). 2) 框选底部「正常截图/长截图/取消」改为紧凑图标按钮(84×58)并整体居中(不再全宽拉满、不再超大字). 3) 主工具栏新增「AI对话」(弹小窗自由对话, 后台把截图 OCR 成文字注入上下文; 接豆包只需在「设置→超级截图→AI/大模型」填 Ark 的 OpenAI 兼容端点) 与「旋转」(当前编辑图顺时针 90°). 4) 工具栏默认两排每行 5 个; 单排模式下支持左右循环滑动.
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.25.3_iphoneos-arm64.deb
-Size: 170260
-MD5sum: 8ed5d3fcb7da75aa8fca7351053aa897
-SHA1: 36c638e0935d2006c25f6de12d70b6aa2c4256f7
-SHA256: 6bff94462e9da8d0048abee590876633a56d5cac8e3f36ff0551fab773d32ba5
+Filename: ./debs/com.axs.snapper3zhext_5.25.5_iphoneos-arm64.deb
+Size: 172252
+MD5sum: 01546d9fd123e9e5fb7e51c52f3fd017
+SHA1: 397a0739e359865936cd5423eb27507bcfacddca
+SHA256: 00bed88950a89ee894e76787c7841ec3e9e1e890c6817d6aa98903df9d049de9
