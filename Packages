@@ -48,15 +48,15 @@ SHA256: 747c70d8d28164d54e8e3456f5a3519351e68813d15b4e870e0225f26d76b5cd
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.7
+Version: 5.8
 Architecture: iphoneos-arm64
-Description: [v5.7] ①长截图重叠修复：自动滚动步进下调到 82%（重叠~18%>常见导航条高度），后续帧顶部导航条整段丢弃、仅首帧保留一次；底部输入条靠框 inset 排除，彻底消除每帧重复。②打码去掉「智能脱敏」（无法实现），仅保留手动马赛克涂抹。③识码（Vision 扫码）显式指定二维码/常用条码 symbologies，修复扫不到码。④贴图按所选拖选框等大定位，不再固定小图。⑤分享用独立顶层窗口弹出，功能菜单主动避让不再遮挡。⑥局部截图选框顶部约束到安全区，手柄不被状态栏遮挡；⑦移除局部面板「更多」二级菜单（PDF/压缩/去状态栏/取色/还原 仍可在三排工具栏使用）。
+Description: [v5.8] ①局部截图拖选后松手即弹出功能面板（不再多一次「✓完成」）。②贴图可自由拖动（修复窗口无 superview 导致坐标恒为 0）。③打码马赛克增强：轻/中/重（马赛克块）/模糊（柔化）多档可选，默认「中」更实。④新增「AI/大模型」按钮：先 OCR 图中文字再调起对话窗口，支持 DeepSeek 等 OpenAI 兼容接口（设置填地址/Key/模型）。⑤翻译失败不再静默：显示百度错误码与「核对密钥/未开通/余额」等提示。⑥长截图全自动用像素级 SAD 接缝核对真实重叠，专治聊天 App 预载旧消息导致的重复画面。⑦OCR 多语言无结果时回退英文内置模型。
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.7_iphoneos-arm64.deb
-Size: 123340
-MD5sum: 80df6baac14a7891a17527127409fff5
-SHA1: 0a21cb87d2e636a4b16d7b737cccfc1984c27d33
-SHA256: 0dfde25d7764fabb3d57002ded19f8b887ce84e67e8cde0a30b373001179bb46
+Filename: ./debs/com.axs.snapper3zhext_5.8_iphoneos-arm64.deb
+Size: 141764
+MD5sum: 73467b33e9aa5f872739c6d8f8f388f8
+SHA1: 71b849b2ac55859925d86369a7dfdbb5ff5e3b97
+SHA256: 42eb028b1893067e01815dd7ff6e3ce2de6c34ffb616e484d01dabc0d312425e
