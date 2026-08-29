@@ -28,18 +28,17 @@ MD5sum: 2d420843898288c3a27d611bf1504006
 SHA1: 2ea4ecc5f2f80c3a9c1b492390e0379732838702
 SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
-
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.11
+Version: 5.12
 Architecture: iphoneos-arm64
-Description: [v5.11 修复] ①局部截图功能面板【整块可自由拖动】（拖空白处移动整块面板，按钮触点正常）。②打码简化为 2 档：方形像素马赛克 / 高斯模糊（去掉观感分不清的轻/中/重）。③贴图拖动卡顿修复：贴图显示图按显示尺寸预缩放，拖动顺滑跟手。④长截图移除「手动」模式（只留自动滚动、自动SAD）；App 未注入时静默回退自动SAD，不再弹"无响应已切自动"提示打断操作。
+Description: [v5.12 修复] ①局部截图：拖动选框时功能面板【实时一起移动】（选区+面板整体跟手，无需关闭菜单）。②贴图拖动大头针/图片画面闪动修复（改屏幕固定坐标，跟手不闪）。③长截图：顶部首屏不再丢失(起始完整)、保存/复制前补抓末屏、抓帧频率提升减少丢帧/漏采。④移除打码入口（已有画笔）；局部截图右上角「✓完成」冗余按钮移除（拖选松手直接编辑）。
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.11_iphoneos-arm64.deb
-Size: 151128
-MD5sum: 490c63b6a07bfee2bfe045b9f553c9a1
-SHA1: 7bde477757f93846edd58525bcd6647d3c5bcdc9
-SHA256: e83f34f8d446fde3b2e7f9a8c13c1a2f55a52e054dcd7fd504b1badbb173e8bb
+Filename: ./debs/com.axs.snapper3zhext_5.12_iphoneos-arm64.deb
+Size: 150032
+MD5sum: 1edea1a70e4b75190565a6b8199f142e
+SHA1: dbc699e4302aa8845686d0b3c04639c20a26b09f
+SHA256: d8fadd92e5292f0815e312abaa902a3dbaa61ff2e5dfe811029859457f63f90d
