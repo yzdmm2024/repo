@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 6.18
+Version: 6.19
 Architecture: iphoneos-arm64
-Description: [v6.18] 五项修复：①控制中心图标缺失已根治——模块改读本 bundle 内 PNG 模板图标（白底透明、由控制中心自动染色），不再依赖 iOS16 取不到的 SF Symbol；并新增「控制中心图标」五选一（相机/剪刀/闪电/文档/星星）。②「测试 PaddleOCR 连接」闪退已修——测试改为全程主线程更新 UI、主队列递归轮询、单一收尾守卫，杜绝后台线程改动已消失弹窗导致的崩溃。③移除「音量+电源键触发超级截图」（实验性不稳定，按用户要求撤销）。④移除「套壳」companion App（主屏图标/URL Scheme 方案撤销）。控制中心按钮仍经 notify_post 唤醒 Tweak 拉起截图浮层。升级后需 killall SpringBoard 让控制中心重新扫描模块 bundle。
+Description: 一款 iOS 越狱截图增强插件。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_6.18_iphoneos-arm64.deb
-Size: 271640
-MD5sum: 308bafa6bb3bf49473cfa41546f7fe28
-SHA1: bca9705ef94d166682f6847faefa6def71dc36ae
-SHA256: bdffb0e15715219af5f46fcc64388655ffb4c25bd0b6c7a9db762819becf8405
+Filename: ./debs/com.axs.snapper3zhext_6.19_iphoneos-arm64.deb
+Size: 271904
+MD5sum: 0b7aa0b63c5ab5b7c0e2890345a0a60b
+SHA1: 3cfe993fb42a0dbb0e478f891e761066d96a9a03
+SHA256: ea8a0625cf21db2baf278c66a187e0503b15658388fc06c2fc1f97258ecc33fe
