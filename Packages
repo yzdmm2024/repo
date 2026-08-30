@@ -28,22 +28,6 @@ MD5sum: 2d420843898288c3a27d611bf1504006
 SHA1: 2ea4ecc5f2f80c3a9c1b492390e0379732838702
 SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
-Package: com.axs.snapper3zhext
-Name: 超级截图
-Version: 6.20.5
-Architecture: iphoneos-arm64
-Description: 一款 iOS 越狱截图增强插件，已绑定设备 UDID 授权（需解锁码才能使用，在设置「设备授权」里复制 UDID 并发给开发者获取解锁码）。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。OCR 识别结果现按阅读顺序（上→下、同行左→右）重排，复制全部/问AI/翻译不再乱序；PaddleOCR 路径保留文字块坐标后精确排序。新增「看图问AI」按钮：把截图原图作为多模态内容（图片+OCR文字）直接发给所选视觉模型（豆包/智谱 glm-4v/通义 qwen-vl/OpenAI gpt-4o 等 OpenAI 兼容接口）；DeepSeek 等纯文本模型会被提示改用视觉模型。v6.20.5：截图/长截图/编辑保存统一归入专属相册「SN3截图」（兼容 iOS 14+ 限定访问权限，不再只进相机胶卷）；工具栏「去状态栏」按钮由「看图问AI」替代（位置不变）。
-Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
-Maintainer: yzdmm2024
-Author: yzdmm2024
-Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_6.20.5_iphoneos-arm64.deb
-Size: 295704
-MD5sum: e4bd7c797e3f4e4e7141a5e784d13557
-SHA1: 2839a5ae285295e85a55b430e5d4708c6ce68a7c
-SHA256: 18c66ecfc2dd9a5b7370f52c0be8edc7368813d7c2fcf68afab3a5a5005aaf89
-
-
 Package: com.yzdmm.keyboardpluspro
 Name: KeyboardPlusPro
 Version: 1.0.0
@@ -57,3 +41,19 @@ Size: 28744
 MD5sum: 0e5b992bc5671fcb0b407d0c2863f43e
 SHA1: 9b433652a2ac114c8b014c83d15e5b97eb4e8a44
 SHA256: 80a854558c2cf7306fd9f28ede0450077181eb211886d9bb43b8b298ba38ea50
+
+
+Package: com.axs.snapper3zhext
+Name: 超级截图
+Version: 6.20.6
+Architecture: iphoneos-arm64
+Description: 一款 iOS 越狱截图增强插件，已绑定设备 UDID 授权（需解锁码才能使用，在设置「设备授权」里复制 UDID 并发给开发者获取解锁码）。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。OCR 识别结果现按阅读顺序（上→下、同行左→右）重排，复制全部/问AI/翻译不再乱序；PaddleOCR 路径保留文字块坐标后精确排序。新增「看图问AI」按钮：把截图原图作为多模态内容（图片+OCR文字）直接发给所选视觉模型（豆包/智谱 glm-4v/通义 qwen-vl/OpenAI gpt-4o 等 OpenAI 兼容接口）；DeepSeek 等纯文本模型会被提示改用视觉模型。v6.20.5：截图/长截图/编辑保存统一归入专属相册「SN3截图」（兼容 iOS 14+ 限定访问权限，不再只进相机胶卷）；工具栏「去状态栏」按钮由「看图问AI」替代（位置不变）。v6.20.6：修复局部截图工具栏（框选浮层）缺失「看图问AI」按钮——此前该按钮只加到了主编辑工具栏，局部截图工具栏因默认顺序未含此 tag 被隐藏过滤；现已与主工具栏同源补齐（校验模型/拦截 DeepSeek/发图）。
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Filename: ./debs/com.axs.snapper3zhext_6.20.6_iphoneos-arm64.deb
+Size: 295940
+MD5sum: a5a68a79b076658ff44c1334387de4c6
+SHA1: 1c5a0af828951d0c8ce605c2e61a49e12fdba070
+SHA256: 64a6a71e118413b5ddc8c0569abddcb365f4edacbb6e0162d274a9c67bbc9c17
