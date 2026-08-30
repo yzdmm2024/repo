@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 6.13
+Version: 6.14
 Architecture: iphoneos-arm64
-Description: [v6.13] 修复「连接成功但识别为空」真 bug：AI Studio 两种接口格式自动适配（aistudio-app.com 用 {"file",fileType:1}；aistudio-hub.baidu.com 用 {"image":...}），返回解析兼容 ocrResults[].prunedResult.rec_texts / texts / rec_texts 多结构兜底。并把「百度 PaddleOCR (免费)」加入大模型库预设，可在「大模型库→识别引擎」一键导入并选中即生效（API_URL+Token 仍在本页填）。(沿用 v6.12 主线程修复 + v6.11 AI Studio 免费 PaddleOCR + v6.10 内置 PP-OCR + v6.09 安全模式根治 + v6.07 大模型库)
+Description: [v6.14] 让「百度 PaddleOCR (免费)」直接在「识别引擎·使用模型」选择器里可选（无需先导入预设）：OCR 选择器末尾内置一行，选中即走免费通道（API_URL+Token 仍在本页 PPOCR 组填）。保留 v6.13 的两种接口格式适配+多结构解析兜底；保留独立 PPOCR 开关作为备选。(沿用 v6.13 识别空修复 + v6.12 主线程修复 + v6.11 AI Studio 免费 PaddleOCR + v6.07 大模型库)
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_6.13_iphoneos-arm64.deb
-Size: 252844
-MD5sum: b88a41c8e21808d1208733688593eb43
-SHA1: f202b1ec27ef81da3aa1c01fb57de66d6cdc8dda
-SHA256: dc1dd1c1cbdd190aa5a365229edd5b34294e54789771eb722b735438e6665cec
+Filename: ./debs/com.axs.snapper3zhext_6.14_iphoneos-arm64.deb
+Size: 252896
+MD5sum: 95ca7cbd1e27a6d2742ba5f9a81e02de
+SHA1: 1fc9899b75b216071e4b5b5746d0693619dce90a
+SHA256: b4e0cdb271c04d1b8115ffd1904276344fdfa157cfc752818d4cad8679c1e6f5
