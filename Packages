@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 6.15
+Version: 6.16
 Architecture: iphoneos-arm64
-Description: [v6.15] 重写 PaddleOCR 通道以适配 AI Studio v2 异步任务接口（用户实际用的就是它）：multipart 提交任务→轮询 jobId 到 done→取 JSONL 结果，文字解析 result.ocrResults[].prunedResult.rec_texts；鉴权 Bearer；测试连接也改为真实异步流程（旧版只验 errorCode 对 v2 是假成功）。新增「PaddleOCR 模型名」设置项(默认 PP-OCRv6)。保留独立开关与选择器内置项。(沿用 v6.14 选择器内置 + v6.13 识别空修复 + v6.12 主线程修复)
+Description: [v6.16] ①修控制中心图标缺失(bundle 内 icon.png/icon@2x/icon@3x 旧版只占位 97/155/309 字节,iOS 16 控制中心读不到正常图标;现替换为 60/120/180 三档相机主题 PNG,蓝色机身+白色镜头+顶部 viewfinder+反光点,transparent 背景由控制中心自动染色)。②修复「大模型库→识别引擎」picker 切换模型后实际仍走 PaddleOCR 的 bug(根因:PPOCR_Enabled 独立开关锁死优先级,先开过 PPOCR_Enabled 后切大模型也无用;现 picker 选中后自动同步 PPOCR_Enabled,选内置/PPOCR→开开关,选其它大模型→关开关)。①要求 killall SpringBoard 让 CCSupport 重新扫描 bundle;②对历史开过 PPOCR_Enabled 的设备立即生效(下次选任意模型或进一次 picker 即刷新)。PP-OCR v2 异步协议沿用 v6.15。
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_6.15_iphoneos-arm64.deb
-Size: 263924
-MD5sum: 686e625c2a9139ae708072192d2df054
-SHA1: f3eebe50532290f3a5fe490acafc2d19a6b708bb
-SHA256: c95efd47574cfd2ff40d41fdd666757cb44b43d4c0bd5caf9aad38135b423585
+Filename: ./debs/com.axs.snapper3zhext_6.16_iphoneos-arm64.deb
+Size: 266100
+MD5sum: f18e9c8f85269aea483ad3b6de041c28
+SHA1: 6c8276b808a4d292b241c54cc084ad3cdf6f856a
+SHA256: e6c66471debf1456b053d6fbe5d2c2134785ee95368f4b632fe3da090ddd50c8
