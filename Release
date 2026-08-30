@@ -1,11 +1,11 @@
-Origin: Yzdmm
-Label: Yzdmm
+Origin: Acljcr
+Label: Acljcr
 Suite: stable
 Version: 1.0
 Codename: ios
 Architectures: iphoneos-arm64
 Components: main
-Description: Yzdmm Source
+Description: Acljcr Source
 Support: https://github.com/yzdmm2024/repo
 Date: Sun, 30 Aug 2026 09:54:06 GMT
 MD5Sum:
