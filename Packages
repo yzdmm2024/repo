@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.25.6
+Version: 5.25.7
 Architecture: iphoneos-arm64
-Description: [v5.25.6] 修「OCR/翻译结果弹窗出现后, 局部截图/工具栏无法关闭、悬浮窗卡死在屏幕上」. 根因: v5.25.4 把工具栏窗口层级设为 Alert+200(2200) 高于系统 alert(2000), 为让弹窗可见又加「把弹窗窗口硬抬到 2250」的 hack; 该被抬高的 alert 窗口 dismiss 后残留 2250 盖住全屏, 导致工具栏「关闭」按钮点不到、整个界面关不掉. 根治: 工具栏窗口层级降到 Alert-10(1990), 仍高于所有 app 内容(盖住截图背景), 但低于系统 alert(2000), 于是 OCR/翻译/识别/错误弹窗由系统自然浮在工具栏之上, 且 dismiss 后正常清理、无残留; 并删除 Common.present/sn3AlertError 里的抬层 hack. (沿用 v5.25.5 全部 UI 优化: 控制中心图标、紧凑底部条、AI对话、旋转、两排×5 工具栏)
+Description: [v5.25.7] 工具栏增强与设置可测: ①「问 AI」开关(启用问 AI)默认开启, 关闭后工具栏自动隐藏「问 AI/AI对话」两按钮; ②设置「问 AI」段新增「测试连接」一键验证(打一发 chat 请求回显成功/失败+模型)与「打开火山方舟 Ark 申请页」, 并补豆包接入提示(豆包: Base URL=https://ark.cn-beijing.volces.com/api/v3, 模型名填接入点 ID ep-xxxx); ③单排滑动改为真·无限制循环(3 组按钮首尾相接, 滑动越界无感回绕, 左右均可无限滑); ④旋转支持 90°(点按)与 180°(长按). (沿用 v5.25.6 弹窗关不掉修复 + v5.25.5 全部 UI 优化)
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.25.6_iphoneos-arm64.deb
-Size: 171752
-MD5sum: 833991929a5dbaa7026e31c1a7f08299
-SHA1: 0a412d625bf347af515dc2b44b8e43df5e4bab52
-SHA256: b0942534b87113b5bcc5213602d5aa54e4a4c7eb46bb863807e8d45fb8c58ccb
+Filename: ./debs/com.axs.snapper3zhext_5.25.7_iphoneos-arm64.deb
+Size: 174352
+MD5sum: c5cfe253f3ad65312f82c513dee2646d
+SHA1: 1bba48ecf4d6d8bf5368400f20b267bc688d9306
+SHA256: 5f944b5ed323b3165e0580ec81e59cf0f53ec3c3e6c7412f785feaa13a463237
