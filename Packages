@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 6.19
+Version: 6.20
 Architecture: iphoneos-arm64
-Description: 一款 iOS 越狱截图增强插件。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。
+Description: 一款 iOS 越狱截图增强插件，已绑定设备 UDID 授权（需解锁码才能使用，在设置「设备授权」里复制 UDID 并发给开发者获取解锁码）。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_6.19_iphoneos-arm64.deb
-Size: 271904
-MD5sum: 0b7aa0b63c5ab5b7c0e2890345a0a60b
-SHA1: 3cfe993fb42a0dbb0e478f891e761066d96a9a03
-SHA256: ea8a0625cf21db2baf278c66a187e0503b15658388fc06c2fc1f97258ecc33fe
+Filename: ./debs/com.axs.snapper3zhext_6.20_iphoneos-arm64.deb
+Size: 286140
+MD5sum: 5dc9d870e79735972a19b4dadb3fdf3a
+SHA1: d3355a5e89881d0bd098003ed71dc871a3f115bf
+SHA256: 63e2eefbc4aa1d0c4b5165f15279c0ef7fd7360e2a480c6a62427979ba8a4593
