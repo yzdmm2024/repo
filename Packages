@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 6.04
+Version: 6.05
 Architecture: iphoneos-arm64
-Description: [v6.04] ①回退 v6.03 误加的「全屏编辑窗」: 框选确认后改为在选区下方弹出紧凑工具栏(不占满全屏), 工具栏含全部 17 功能(OCR/翻译/画图/识码/AI/旋转/复制/贴图/保存/分享/加壳/PDF/压缩/去状态栏/取色/还原), 单排=横向循环滑动, 双排=每行5个折行, 最右侧固定关闭按钮, 且读「工具栏排序」设置. ②合并「问AI/对话」为单一「AI」按钮: 点开立即进对话, 后台把截图文字当上下文(比先OCR再开更快). ③AI对话浮层用 topWindow+100 盖在最上方, 不再被截图压住. (沿用 v6.03 测试连接修复 + v6.02 蓝色按钮 + v6.01 排序页 + v5.25 UI 优化)
+Description: [v6.05] 8项工具栏/功能修复: ①图标/文字/间距压缩更紧凑(min 48pt 仍可点); ②贴图拖动改用窗口center移动根除闪烁, 关闭按钮彻底移除浮窗; ③AI对话浮层层级提到 Alert+500(盖过局部工具栏, 不再被压在下层); ④关闭按钮改红色X, 小尺寸跟随工具栏右沿单指可点; ⑤旋转/压缩/去状态栏/还原后左侧预览实时刷新(操作看得见); ⑥新增「手机壳库」设置(选配色+开关), 仅正常截图自动套壳, 加壳移出工具栏; ⑦局部截图选区上探到状态栏/刘海上方(去状态栏功能现在才生效); ⑧去状态栏对含状态栏的选区生效. (沿用 v6.04 紧凑工具栏 + v6.03 测试连接修复 + v6.02/v6.01/v5.25)
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_6.04_iphoneos-arm64.deb
-Size: 186424
-MD5sum: 68dfc51a888b08733dc649d25e213f73
-SHA1: 16d7f8a2b84e4dff4a8724192796b6df4c638169
-SHA256: df521543eaf0a2e85db7a686818806c1fbb5ae5671f81612c30c1888ca1793dc
+Filename: ./debs/com.axs.snapper3zhext_6.05_iphoneos-arm64.deb
+Size: 188388
+MD5sum: 8d533bf58c86251e96b7db5714c81f0d
+SHA1: f4d0e27ea0e4eb603a8d87e2bfad9b87d552eaf3
+SHA256: 2bfae75e00b8e191cb6e26c2c0263ade27d74dacdaa43501202a1d6187856061
