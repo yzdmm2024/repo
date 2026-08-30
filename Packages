@@ -28,35 +28,6 @@ MD5sum: 2d420843898288c3a27d611bf1504006
 SHA1: 2ea4ecc5f2f80c3a9c1b492390e0379732838702
 SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
-Package: com.yzdmm.keyboardpluspro
-Name: KeyboardPlusPro
-Version: 1.0.0
-Architecture: iphoneos-arm64
-Maintainer: yzdmm
-Author: yzdmm
-Section: Tweaks
-Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
-Filename: debs/com.yzdmm.keyboardpluspro_1.0.0_iphoneos-arm64.deb
-Size: 28744
-MD5sum: 0e5b992bc5671fcb0b407d0c2863f43e
-SHA1: 9b433652a2ac114c8b014c83d15e5b97eb4e8a44
-SHA256: 80a854558c2cf7306fd9f28ede0450077181eb211886d9bb43b8b298ba38ea50
-
-Package: com.yzdmm.keyboardpluspro
-Name: KeyboardPlusPro
-Version: 1.0.1
-Architecture: iphoneos-arm64
-Maintainer: yzdmm
-Author: yzdmm
-Section: Tweaks
-Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
-Filename: debs/com.yzdmm.keyboardpluspro_1.0.1_iphoneos-arm64.deb
-Size: 28764
-MD5sum: 5ceca4087483b3644616249e58dec384
-SHA1: f19575d6d13ec745446298004f70ae36b03aabd6
-SHA256: 353c82244344313b1287b402aaea6fb77617dae1cbe93f29c125415ed515c73a
-
-
 Package: com.axs.snapper3zhext
 Name: 超级截图
 Version: 6.20.9
@@ -71,3 +42,18 @@ Size: 306472
 MD5sum: eb24a6107a67c618f17a9df83f680d02
 SHA1: cc061001cc9e9f96bc2d0c9c7e3f206a992d0bd7
 SHA256: 98047f09fab76a62bb1759a30f3c183f34e2b1016fadb6d483e4540d31cc3acd
+
+
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
+Filename: ./debs/KeyboardPlusPro_v1.0.2_iphoneos-arm64.deb
+Size: 28760
+MD5sum: 91a18807fe515bfaca8ec8448af2cd0a
+SHA1: 66f2831714a457f3e7d9be3fce95d438ae452632
+SHA256: 0f42aa8fcf69fd1444d43dca02fa32cb4ba492e126562346f86bb6ef56d664ff
