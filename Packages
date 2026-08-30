@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 5.25.7
+Version: 6.01
 Architecture: iphoneos-arm64
-Description: [v5.25.7] 工具栏增强与设置可测: ①「问 AI」开关(启用问 AI)默认开启, 关闭后工具栏自动隐藏「问 AI/AI对话」两按钮; ②设置「问 AI」段新增「测试连接」一键验证(打一发 chat 请求回显成功/失败+模型)与「打开火山方舟 Ark 申请页」, 并补豆包接入提示(豆包: Base URL=https://ark.cn-beijing.volces.com/api/v3, 模型名填接入点 ID ep-xxxx); ③单排滑动改为真·无限制循环(3 组按钮首尾相接, 滑动越界无感回绕, 左右均可无限滑); ④旋转支持 90°(点按)与 180°(长按). (沿用 v5.25.6 弹窗关不掉修复 + v5.25.5 全部 UI 优化)
+Description: [v6.01] ①修「设置面板所有蓝色按钮(PSButtonCell)点击无反应」: iOS16 Preferences 下 plist 的 action 键不生效, 改为加载 specifiers 后统一 setButtonAction: 绑定, 测试连接/打开Ark页/粘贴Key/工具栏排序 全部可点; ②新增「工具栏排序」页(设置→工具栏→工具栏排序): 编辑模式拖动排序 + 每行开关显隐, 即时写入 Toolbar_Order/Toolbar_Disabled 与编辑工具栏打通; ③AI/对话/旋转 三按钮默认始终显示(不再受「启用问 AI」开关过滤); ④接豆包: 设置→问AI→Base URL=https://ark.cn-beijing.volces.com/api/v3, 模型名填接入点 ID ep-xxxx, 点「测试连接」验证. (沿用 v5.25.6 弹窗关不掉修复 + v5.25.5/5.25.7 UI 优化)
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_5.25.7_iphoneos-arm64.deb
-Size: 174352
-MD5sum: c5cfe253f3ad65312f82c513dee2646d
-SHA1: 1bba48ecf4d6d8bf5368400f20b267bc688d9306
-SHA256: 5f944b5ed323b3165e0580ec81e59cf0f53ec3c3e6c7412f785feaa13a463237
+Filename: ./debs/com.axs.snapper3zhext_6.01_iphoneos-arm64.deb
+Size: 185008
+MD5sum: b2e0cf2c0ee32942ca96fdf592d47114
+SHA1: 6518c3b8acbbb6dbce27e988fbb4e1f86e420576
+SHA256: 7440ebecd9b4a02408381d47b5f39d64791ffb5230d9e68bafdb33e0bf462848
