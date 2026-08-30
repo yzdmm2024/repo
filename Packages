@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 6.10
+Version: 6.11
 Architecture: iphoneos-arm64
-Description: [v6.10] 新增「内置百度 PP-OCR」免费 OCR 通道：设置→识别引擎→百度 PP-OCR 填 API Key+Secret Key 两个即开(个人实名免费1000次/月；独立于大模型库，开启后识别引擎/翻译改走它，不消耗大模型额度)；内置严格 form-urlencode 保证 base64 正确上送；设置加「测试 PP-OCR 连接」按钮可一键验证 Key 有效性。支持 PP-OCRv6 文字识别(含手写体)。(沿用 v6.09 安全模式根治 + v6.07 大模型库 + 关闭按钮常驻 + 音量键触发加固)
+Description: [v6.11] 修正 PP-OCR 后端：改用 AI Studio 免费 PaddleOCR（aistudio.baidu.com/paddleocr/task），设置→识别引擎→百度 PaddleOCR 填 API_URL+Token 两个即开(免费，JSON 提交，独立于大模型库)；修复「测试连接」因未编码 URL 导致的闪退。支持 PP-OCR 文字识别(含手写体)。(沿用 v6.10 内置 PP-OCR + v6.09 安全模式根治 + v6.07 大模型库 + 关闭按钮常驻 + 音量键触发加固)
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_6.10_iphoneos-arm64.deb
-Size: 249076
-MD5sum: b1ccde1a2ef0c28e0ec2ec485e7ee7f5
-SHA1: aae5e8470d30e918476e275be91f0dd56514065a
-SHA256: 34895616882c463e11e4807672f1eb6828bc5f7cf62f73dbc27948fa5ac73357
+Filename: ./debs/com.axs.snapper3zhext_6.11_iphoneos-arm64.deb
+Size: 247684
+MD5sum: 5a8d650991b1eb11f6f5ce18768f8ce5
+SHA1: 03a38d76909865ac9e9d9c5ebe28a3cd7578b3da
+SHA256: d719854f7126aad1d83e7886282bb4ef2efe14b830ca07135f6bfffe19635117
