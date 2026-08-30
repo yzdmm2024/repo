@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 6.06
+Version: 6.07
 Architecture: iphoneos-arm64
-Description: [v6.06] 7项更新: ①工具栏横向间距收紧但文字/图标不再被压缩(标签回到12pt默认名完整显示,关闭按钮改淡红圆底+红色X更显眼); ②工具栏排序页轻点某行可改「显示名称/图标(SF Symbol名)」; ③手机壳库支持自定义机框(来源GitHub jonnyjackson26/device-frames-media,用Filza把frame.png+info.json放到Frames/<名称>/下,设置里选「自定义」填名称即可); ④修复问AI 401「API key format is incorrect」(自动去除密钥首尾空格/换行); ⑤OCR/翻译/识别结果窗口层级提到Alert+600,不再被局部工具栏遮挡; ⑥新增「音量+电源键触发超级截图」开关(实验性,拦截系统截图改为拉起超级截图); ⑦面板顶部显示累计截图次数+「历史」入口,可查看/分享/删除历史截图(默认开,保留50张). (沿用 v6.05 紧凑工具栏 + v6.03/v6.01/v5.25)
+Description: [v6.07] ①新增「大模型库」统一管理 识别引擎/问AI/翻译 的配置(只填一次Key,支持一键导入DeepSeek/OpenAI/智谱/通义/火山方舟/Ollama预设,误点某项也不再带崩其它功能,旧配置自动迁移); ②关闭按钮移到面板顶栏「历史」旁常驻可见(不用再移动选取框); ③OCR失败等错误提示改挂独立顶层窗口(Alert+750),彻底解决被选区/工具栏遮挡点不了; ④音量+电源键触发超级截图加固(同时hook SBScreenShotter+SBScreenshotManager); ⑤自动套壳去掉GitHub帮助按钮,内置iPhone12Pro四色开箱即用,自定义机框用Filza放Frames/<名称>/即可; ⑥AI对话/OCR/翻译均改走大模型库所选模型(翻译无模型时回退百度). (沿用 v6.06 大模型库 + v6.05 紧凑工具栏)
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_6.06_iphoneos-arm64.deb
-Size: 219868
-MD5sum: 5d19c2d28d8ef73181b21e6902eb5620
-SHA1: f40a180e22eb26221124c199f5036bc254df4375
-SHA256: fb112eb095fe95447f9795b1160fee959fffd925797224b9e51420e2bf4dd2ba
+Filename: ./debs/com.axs.snapper3zhext_6.07_iphoneos-arm64.deb
+Size: 241904
+MD5sum: 9d0ad6930de1c88516cff3a900a12b1e
+SHA1: b55baf62948c218fbff146f15ffc40e06447e40d
+SHA256: 54241e5f13663f013f47eda4edcd44ffb691c05e4422fd4105e2d0aff53926a6
