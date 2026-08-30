@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 6.09
+Version: 6.10
 Architecture: iphoneos-arm64
-Description: [v6.09] 彻底根治「点 OCR/翻译 进安全模式」：v6.07/6.08 为把失败提示抬到工具栏之上,自建了 Alert+750 的 UIWindow 并在其上 present UIAlertController —— 其中 makeKeyAndVisible 在 SpringBoard 里抢 key window、窗口无显式 frame、且靠 presentationControllerDidDismiss: 回收(该回调对 UIAlertController 点按钮的程序化 dismiss 根本不触发,2750 层空窗口永久残留吞掉全屏触摸),三处叠加直接崩 SpringBoard。v6.09 删掉整套自建窗口机制,改用本项目已长期跑通的 ResultWindow(Alert+600,显式 frame、hidden=NO 不抢 key window、单例确定性回收),既盖过工具栏面板(约2000)可点、又不再崩。另: ①模型库解析全面加固(JSON 元素非字典/id 非字符串不再 unrecognized selector 崩溃); ②工具栏按钮加异常兜底(tweak 内未捕获异常不再拖垮 SpringBoard); ③修正 AI 按钮仍在读旧 AskAI_Key 未走大模型库的遗漏。(沿用 v6.07 大模型库 + 关闭按钮常驻 + 音量键触发加固)
+Description: [v6.10] 新增「内置百度 PP-OCR」免费 OCR 通道：设置→识别引擎→百度 PP-OCR 填 API Key+Secret Key 两个即开(个人实名免费1000次/月；独立于大模型库，开启后识别引擎/翻译改走它，不消耗大模型额度)；内置严格 form-urlencode 保证 base64 正确上送；设置加「测试 PP-OCR 连接」按钮可一键验证 Key 有效性。支持 PP-OCRv6 文字识别(含手写体)。(沿用 v6.09 安全模式根治 + v6.07 大模型库 + 关闭按钮常驻 + 音量键触发加固)
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_6.09_iphoneos-arm64.deb
-Size: 238488
-MD5sum: 798cbfd3c484fee16564698f03990d8c
-SHA1: c0d022381e57b23e6afc866b7dd1ce3dde65f352
-SHA256: 694e3a992e034b8a441c16d2137348cae71f9c39a6061769282239327b0c2879
+Filename: ./debs/com.axs.snapper3zhext_6.10_iphoneos-arm64.deb
+Size: 249076
+MD5sum: b1ccde1a2ef0c28e0ec2ec485e7ee7f5
+SHA1: aae5e8470d30e918476e275be91f0dd56514065a
+SHA256: 34895616882c463e11e4807672f1eb6828bc5f7cf62f73dbc27948fa5ac73357
