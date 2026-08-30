@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 6.16
+Version: 6.17
 Architecture: iphoneos-arm64
-Description: [v6.16] ①修控制中心图标缺失(bundle 内 icon.png/icon@2x/icon@3x 旧版只占位 97/155/309 字节,iOS 16 控制中心读不到正常图标;现替换为 60/120/180 三档相机主题 PNG,蓝色机身+白色镜头+顶部 viewfinder+反光点,transparent 背景由控制中心自动染色)。②修复「大模型库→识别引擎」picker 切换模型后实际仍走 PaddleOCR 的 bug(根因:PPOCR_Enabled 独立开关锁死优先级,先开过 PPOCR_Enabled 后切大模型也无用;现 picker 选中后自动同步 PPOCR_Enabled,选内置/PPOCR→开开关,选其它大模型→关开关)。①要求 killall SpringBoard 让 CCSupport 重新扫描 bundle;②对历史开过 PPOCR_Enabled 的设备立即生效(下次选任意模型或进一次 picker 即刷新)。PP-OCR v2 异步协议沿用 v6.15。
+Description: [v6.17] 新增「套壳」companion App：主屏出现「超级截图」图标(蓝底白相机,与品牌一致),点按即经 notify_post 唤醒 Tweak.xm 已注册的 xz_ccCapture、拉起截图浮层;支持 URL Scheme snapper://capture(Siri/快捷指令直接触发截图)与 snapper://settings(打开本插件设置)。App 只是一个壳,截图 UI 仍由注入 SpringBoard 的 tweak 提供,故浮层出现在主屏之上(与控制中心按钮同机制)。升级后需 killall SpringBoard(或 uicache)让主屏注册新 App 图标。v6.16 的 OCR 选择器联动、控制中心相机图标均保留。PP-OCR v2 异步协议沿用 v6.15。
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_6.16_iphoneos-arm64.deb
-Size: 266100
-MD5sum: f18e9c8f85269aea483ad3b6de041c28
-SHA1: 6c8276b808a4d292b241c54cc084ad3cdf6f856a
-SHA256: e6c66471debf1456b053d6fbe5d2c2134785ee95368f4b632fe3da090ddd50c8
+Filename: ./debs/com.axs.snapper3zhext_6.17_iphoneos-arm64.deb
+Size: 278264
+MD5sum: db7feb54f9f9e65fd31538cc64b0698f
+SHA1: 4dd5cf6d9742398930bbd3ef52a2d4b1844737fe
+SHA256: 4038713c9ab67573232172dc0bf1fde38ad1d2008cc3e88499cfda5441631b73
