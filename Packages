@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 6.07
+Version: 6.08
 Architecture: iphoneos-arm64
-Description: [v6.07] ①新增「大模型库」统一管理 识别引擎/问AI/翻译 的配置(只填一次Key,支持一键导入DeepSeek/OpenAI/智谱/通义/火山方舟/Ollama预设,误点某项也不再带崩其它功能,旧配置自动迁移); ②关闭按钮移到面板顶栏「历史」旁常驻可见(不用再移动选取框); ③OCR失败等错误提示改挂独立顶层窗口(Alert+750),彻底解决被选区/工具栏遮挡点不了; ④音量+电源键触发超级截图加固(同时hook SBScreenShotter+SBScreenshotManager); ⑤自动套壳去掉GitHub帮助按钮,内置iPhone12Pro四色开箱即用,自定义机框用Filza放Frames/<名称>/即可; ⑥AI对话/OCR/翻译均改走大模型库所选模型(翻译无模型时回退百度). (沿用 v6.06 大模型库 + v6.05 紧凑工具栏)
+Description: [v6.08] 热修 v6.07 安全模式崩溃：OCR/翻译报错弹窗点「知道了」时，顶层 alert 的 dismiss 回调对象因 delegate 是 weak 已被提前释放，向僵尸对象发消息导致 SpringBoard 崩溃进入安全模式；改为用静态强引用把回调对象撑到 dismiss 完成后再释放，并补 makeKeyAndVisible 保证按钮可点。(沿用 v6.07 大模型库 + 关闭按钮常驻 + 顶层提示 + 音量键触发加固)
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_6.07_iphoneos-arm64.deb
-Size: 241904
-MD5sum: 9d0ad6930de1c88516cff3a900a12b1e
-SHA1: b55baf62948c218fbff146f15ffc40e06447e40d
-SHA256: 54241e5f13663f013f47eda4edcd44ffb691c05e4422fd4105e2d0aff53926a6
+Filename: ./debs/com.axs.snapper3zhext_6.08_iphoneos-arm64.deb
+Size: 238000
+MD5sum: d45f8383de8b1aed3396a3789fb03708
+SHA1: 9388aefc3eda725ac95c42785dde345240a0c032
+SHA256: ac5b0e1b0a73242bc528dc6bdbf417282b9e36723930abc5f27b76ce7ba38a34
