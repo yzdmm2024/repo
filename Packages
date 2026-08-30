@@ -42,3 +42,17 @@ Size: 286928
 MD5sum: 59fee860d51db15ecb5eef8d563fda9c
 SHA1: 052b837b1e75c65825c74cb5e4eb50dcf6eee45f
 SHA256: 88b4d5f95b1819c8d73d0bd50562e60061223772804d3d2a910029fb9b46effa
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Description: 键盘增强：光标移动、剪贴板历史、自定义符号栏、布局自定义、手势操作、主题引擎、触觉反馈、CapsLock 增强。适配 iOS 16+ rootless 越狱。
+Depends: mobilesubstrate, preferenceloader
+Filename: ./debs/com.yzdmm.keyboardpluspro_1.0.0_iphoneos-arm64.deb
+Size: 28436
+MD5sum: 2480411a5dfc37602419cf4b10828d6a
+SHA1: 373d278ff74399c1f98590e5fab67ba35d20e807
+SHA256: ebeef2a56295df31ae6c511467536595805f2099521fb632dcfc705952866d86
