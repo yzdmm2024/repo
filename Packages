@@ -30,29 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 6.20.2
+Version: 6.20.3
 Architecture: iphoneos-arm64
-Description: 一款 iOS 越狱截图增强插件，已绑定设备 UDID 授权（需解锁码才能使用，在设置「设备授权」里复制 UDID 并发给开发者获取解锁码）。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。
+Description: 一款 iOS 越狱截图增强插件，已绑定设备 UDID 授权（需解锁码才能使用，在设置「设备授权」里复制 UDID 并发给开发者获取解锁码）。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。OCR 识别结果现按阅读顺序（上→下、同行左→右）重排，复制全部/问AI/翻译不再乱序；PaddleOCR 路径保留文字块坐标后精确排序。
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_6.20.2_iphoneos-arm64.deb
-Size: 286928
-MD5sum: 59fee860d51db15ecb5eef8d563fda9c
-SHA1: 052b837b1e75c65825c74cb5e4eb50dcf6eee45f
-SHA256: 88b4d5f95b1819c8d73d0bd50562e60061223772804d3d2a910029fb9b46effa
-Package: com.yzdmm.keyboardpluspro
-Name: KeyboardPlusPro
-Version: 1.0.0
-Architecture: iphoneos-arm64
-Maintainer: yzdmm2024
-Author: yzdmm2024
-Section: Tweaks
-Description: 键盘增强：光标移动、剪贴板历史、自定义符号栏、布局自定义、手势操作、主题引擎、触觉反馈、CapsLock 增强。适配 iOS 16+ rootless 越狱。
-Depends: mobilesubstrate, preferenceloader
-Filename: ./debs/com.yzdmm.keyboardpluspro_1.0.0_iphoneos-arm64.deb
-Size: 28436
-MD5sum: 2480411a5dfc37602419cf4b10828d6a
-SHA1: 373d278ff74399c1f98590e5fab67ba35d20e807
-SHA256: ebeef2a56295df31ae6c511467536595805f2099521fb632dcfc705952866d86
+Filename: ./debs/com.axs.snapper3zhext_6.20.3_iphoneos-arm64.deb
+Size: 293184
+MD5sum: a50bd61d280a36574764058760e7fdb0
+SHA1: 68046194386f734bce95696ad8e7dde5598cb490
+SHA256: f27b434653ca06934d60c0af0e28bf38ede1444f3986f5e0fbcb7a9ddfd0ec64
