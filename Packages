@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 6.12
+Version: 6.13
 Architecture: iphoneos-arm64
-Description: [v6.12] 修复「测试 PaddleOCR 连接」闪退：根因是网络回调在后台线程直接改 UIAlertController，系统进程跨线程改 UI 必崩，改为 UI 更新统一回主线程。新增严格 URL 校验：误填任务页网址(paddleocr/task)会明确提示去点「API」按钮复制带 /ocr 结尾的接口地址，不再崩溃。其余同 v6.11（AI Studio 免费 PaddleOCR，设置填 API_URL+Token 即开，JSON 提交，独立于大模型库，支持 PP-OCR 文字/手写识别）。(沿用 v6.10 内置 PP-OCR + v6.09 安全模式根治 + v6.07 大模型库 + 关闭按钮常驻 + 音量键触发加固)
+Description: [v6.13] 修复「连接成功但识别为空」真 bug：AI Studio 两种接口格式自动适配（aistudio-app.com 用 {"file",fileType:1}；aistudio-hub.baidu.com 用 {"image":...}），返回解析兼容 ocrResults[].prunedResult.rec_texts / texts / rec_texts 多结构兜底。并把「百度 PaddleOCR (免费)」加入大模型库预设，可在「大模型库→识别引擎」一键导入并选中即生效（API_URL+Token 仍在本页填）。(沿用 v6.12 主线程修复 + v6.11 AI Studio 免费 PaddleOCR + v6.10 内置 PP-OCR + v6.09 安全模式根治 + v6.07 大模型库)
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_6.12_iphoneos-arm64.deb
-Size: 249312
-MD5sum: bc4289556e9f8aeaf72e6b13eb21c83a
-SHA1: 814a894b8481a59cbff07fb259b02cb43f03af4c
-SHA256: 0e6a320fe9cb151ed970d32da574bb2705e3919819790d14327f3f6497e757b6
+Filename: ./debs/com.axs.snapper3zhext_6.13_iphoneos-arm64.deb
+Size: 252844
+MD5sum: b88a41c8e21808d1208733688593eb43
+SHA1: f202b1ec27ef81da3aa1c01fb57de66d6cdc8dda
+SHA256: dc1dd1c1cbdd190aa5a365229edd5b34294e54789771eb722b735438e6665cec
