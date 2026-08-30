@@ -30,15 +30,15 @@ SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
-Version: 6.20.1
+Version: 6.20.2
 Architecture: iphoneos-arm64
 Description: 一款 iOS 越狱截图增强插件，已绑定设备 UDID 授权（需解锁码才能使用，在设置「设备授权」里复制 UDID 并发给开发者获取解锁码）。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_6.20.1_iphoneos-arm64.deb
-Size: 286304
-MD5sum: ec999b4f7f65c275424fb6ce60b519ad
-SHA1: f748896d75d930e8e3ee6dd79eb43e4ee9956d70
-SHA256: 4ec544c00296091d74bff45b2dc9956e6fffce40e693145227590826e8af0578
+Filename: ./debs/com.axs.snapper3zhext_6.20.2_iphoneos-arm64.deb
+Size: 286928
+MD5sum: 59fee860d51db15ecb5eef8d563fda9c
+SHA1: 052b837b1e75c65825c74cb5e4eb50dcf6eee45f
+SHA256: 88b4d5f95b1819c8d73d0bd50562e60061223772804d3d2a910029fb9b46effa
