@@ -23,6 +23,14 @@
     return _specifiers;
 }
 
+// 设置值变更时通知 SpringBoard 里的调度器立即重算
+- (void)setPreferenceValue:(id)value specifier:(id)specifier {
+    [super setPreferenceValue:value specifier:specifier];
+    CFNotificationCenterPostNotification(CFNotificationCenterGetDarwinNotifyCenter(),
+                                         (CFStringRef)@"com.roa.randopenapp.changed",
+                                         NULL, NULL, YES);
+}
+
 #pragma mark - 选择 App
 
 - (void)openAppPicker {

@@ -26,6 +26,15 @@ static NSString *const kROAWorkdays  = @"ROAWorkdaysOnly";
 static NSString *const kROALastOpenDate = @"ROALastOpenDay";      // "yyyyMMdd"
 static NSString *const kROAPrefsDomain  = @"com.roa.randopenapp"; // 与 bundle id 一致
 
+// 设置面板改动后的跨进程回调（在 start/stop 中注册/移除）
+static void roa_settingsChanged(CFNotificationCenterRef center, void *observer,
+                                CFStringRef name, const void *object, CFDictionaryRef userInfo) {
+    ROARandomScheduler *s = (__bridge ROARandomScheduler *)observer;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [s reloadSettings];
+    });
+}
+
 @implementation ROARandomScheduler {
     NSTimer *_pollTimer;
     NSDate  *_targetDate;
@@ -60,12 +69,25 @@ static NSString *const kROAPrefsDomain  = @"com.roa.randopenapp"; // 与 bundle 
                                                  userInfo:nil
                                                   repeats:YES];
     [[NSRunLoop mainRunLoop] addTimer:_pollTimer forMode:NSRunLoopCommonModes];
+
+    // 监听设置面板变更通知（跨进程）
+    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(),
+                                    (__bridge const void *)self,
+                                    roa_settingsChanged,
+                                    (CFStringRef)@"com.roa.randopenapp.changed",
+                                    NULL,
+                                    CFNotificationSuspensionBehaviorDeliverImmediately);
+
     NSLog(@"[ROA] scheduler started.");
 }
 
 - (void)stop {
     [_pollTimer invalidate];
     _pollTimer = nil;
+    CFNotificationCenterRemoveObserver(CFNotificationCenterGetDarwinNotifyCenter(),
+                                       (__bridge const void *)self,
+                                       (CFStringRef)@"com.roa.randopenapp.changed",
+                                       NULL);
 }
 
 - (void)reloadSettings {
