@@ -223,14 +223,14 @@ SHA256: b804a8edda6a598232b4b754e1cf24f4b75cbbcb3bfa4811b96d14bb9a398dc1
 
 Package: com.yzdmm.wetypeplus
 Name: WetypePlus
-Version: 3.0.1
+Version: 3.0.2
 Architecture: iphoneos-arm64e
 Maintainer: yzdmm
 Author: yzdmm
 Section: Tweaks
-Description: 微信输入法键盘内工具栏(光标/粘贴/符号)；用工具栏替换微信键盘顶部图标行(按住说话/语音/AI等)，占据图标行原位置，不压按键不挡输入框
-Filename: ./debs/com.yzdmm.wetypeplus_3.0.1_iphoneos-arm64e.deb
-Size: 21144
-MD5sum: 1a4dd10ebf718911d73c53340654c6fd
-SHA1: 546b207aa78a118ae550a0fb80db514c1855417d
-SHA256: 8a930de846d145741d73807b8eab97920c7a4481dfe2ba372416ba82533d9050
+Description: 微信输入法键盘内工具栏(光标/粘贴/符号)；递归按类名WBTopBar定位图标行、占据其原位并隐藏其按钮，不压按键；附几何日志wp_geo.log
+Filename: ./debs/com.yzdmm.wetypeplus_3.0.2_iphoneos-arm64e.deb
+Size: 22948
+MD5sum: 07f4e1603323d2d8abf0385dd54b4fed
+SHA1: 8b147b0a6402f3eb6f0ddbafde9a64e48364a172
+SHA256: 0c1ebbe833577f5f95f7f9338a290293856db487c47f010dd1f1135cfa88af21
