@@ -1,3 +1,210 @@
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
+Filename: debs/KeyboardPlusPro_v1.0.2_iphoneos-arm64.deb
+Size: 28760
+MD5sum: 91a18807fe515bfaca8ec8448af2cd0a
+SHA1: 66f2831714a457f3e7d9be3fce95d438ae452632
+SHA256: 0f42aa8fcf69fd1444d43dca02fa32cb4ba492e126562346f86bb6ef56d664ff
+
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.3
+Architecture: iphoneos-arm64
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
+Filename: debs/KeyboardPlusPro_v1.0.3_iphoneos-arm64.deb
+Size: 28676
+MD5sum: cf31f46a45242b1fbcd00327d2bfe153
+SHA1: cc3d1524bcd19f5cde76e3704ba694e267773cdd
+SHA256: bbb1bfab9ffb28d7eaa0948595a19e8cf63c295ea91c71734453e2c2ea62efef
+
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.4
+Architecture: iphoneos-arm64
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
+Filename: debs/KeyboardPlusPro_v1.0.4_iphoneos-arm64.deb
+Size: 29484
+MD5sum: fbe43abc9c792cb79cfd5f0bc8be84ca
+SHA1: b3462ebcc4b1c12955d86aed98fe83bb404b664f
+SHA256: 46111118048fc01019a301f0c7ba09e0eafa763ac917256b17c0f0802dc28e02
+
+Package: com.axs.snapper3zhext
+Name: 超级截图
+Version: 6.19
+Architecture: iphoneos-arm64
+Description: 一款 iOS 越狱截图增强插件。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Filename: debs/com.axs.snapper3zhext_6.19_iphoneos-arm64.deb
+Size: 271904
+MD5sum: 0b7aa0b63c5ab5b7c0e2890345a0a60b
+SHA1: 3cfe993fb42a0dbb0e478f891e761066d96a9a03
+SHA256: ea8a0625cf21db2baf278c66a187e0503b15658388fc06c2fc1f97258ecc33fe
+
+Package: com.axs.snapper3zhext
+Name: 超级截图
+Version: 6.20.1
+Architecture: iphoneos-arm64
+Description: 一款 iOS 越狱截图增强插件，已绑定设备 UDID 授权（需解锁码才能使用，在设置「设备授权」里复制 UDID 并发给开发者获取解锁码）。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Filename: debs/com.axs.snapper3zhext_6.20.1_iphoneos-arm64.deb
+Size: 286304
+MD5sum: ec999b4f7f65c275424fb6ce60b519ad
+SHA1: f748896d75d930e8e3ee6dd79eb43e4ee9956d70
+SHA256: 4ec544c00296091d74bff45b2dc9956e6fffce40e693145227590826e8af0578
+
+Package: com.axs.snapper3zhext
+Name: 超级截图
+Version: 6.20.2
+Architecture: iphoneos-arm64
+Description: 一款 iOS 越狱截图增强插件，已绑定设备 UDID 授权（需解锁码才能使用，在设置「设备授权」里复制 UDID 并发给开发者获取解锁码）。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Filename: debs/com.axs.snapper3zhext_6.20.2_iphoneos-arm64.deb
+Size: 286928
+MD5sum: 59fee860d51db15ecb5eef8d563fda9c
+SHA1: 052b837b1e75c65825c74cb5e4eb50dcf6eee45f
+SHA256: 88b4d5f95b1819c8d73d0bd50562e60061223772804d3d2a910029fb9b46effa
+
+Package: com.axs.snapper3zhext
+Name: 超级截图
+Version: 6.20.3
+Architecture: iphoneos-arm64
+Description: 一款 iOS 越狱截图增强插件，已绑定设备 UDID 授权（需解锁码才能使用，在设置「设备授权」里复制 UDID 并发给开发者获取解锁码）。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。OCR 识别结果现按阅读顺序（上→下、同行左→右）重排，复制全部/问AI/翻译不再乱序；PaddleOCR 路径保留文字块坐标后精确排序。
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Filename: debs/com.axs.snapper3zhext_6.20.3_iphoneos-arm64.deb
+Size: 293184
+MD5sum: a50bd61d280a36574764058760e7fdb0
+SHA1: 68046194386f734bce95696ad8e7dde5598cb490
+SHA256: f27b434653ca06934d60c0af0e28bf38ede1444f3986f5e0fbcb7a9ddfd0ec64
+
+Package: com.axs.snapper3zhext
+Name: 超级截图
+Version: 6.20.4
+Architecture: iphoneos-arm64
+Description: 一款 iOS 越狱截图增强插件，已绑定设备 UDID 授权（需解锁码才能使用，在设置「设备授权」里复制 UDID 并发给开发者获取解锁码）。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。OCR 识别结果现按阅读顺序（上→下、同行左→右）重排，复制全部/问AI/翻译不再乱序；PaddleOCR 路径保留文字块坐标后精确排序。新增「看图问AI」按钮：把截图原图作为多模态内容（图片+OCR文字）直接发给所选视觉模型（豆包/智谱 glm-4v/通义 qwen-vl/OpenAI gpt-4o 等 OpenAI 兼容接口）；DeepSeek 等纯文本模型会被提示改用视觉模型。
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Filename: debs/com.axs.snapper3zhext_6.20.4_iphoneos-arm64.deb
+Size: 297424
+MD5sum: 9591890dd9b971a361ea5a551e2edd79
+SHA1: ff9f93608219216ed0d41acd115d82d6ba12404d
+SHA256: eaf9851718f3573d08184e3259b04436dba24cf7bd1b042f9f6bfe2c1234f6d3
+
+Package: com.axs.snapper3zhext
+Name: 超级截图
+Version: 6.20.5
+Architecture: iphoneos-arm64
+Description: 一款 iOS 越狱截图增强插件，已绑定设备 UDID 授权（需解锁码才能使用，在设置「设备授权」里复制 UDID 并发给开发者获取解锁码）。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。OCR 识别结果现按阅读顺序（上→下、同行左→右）重排，复制全部/问AI/翻译不再乱序；PaddleOCR 路径保留文字块坐标后精确排序。新增「看图问AI」按钮：把截图原图作为多模态内容（图片+OCR文字）直接发给所选视觉模型（豆包/智谱 glm-4v/通义 qwen-vl/OpenAI gpt-4o 等 OpenAI 兼容接口）；DeepSeek 等纯文本模型会被提示改用视觉模型。v6.20.5：截图/长截图/编辑保存统一归入专属相册「SN3截图」（兼容 iOS 14+ 限定访问权限，不再只进相机胶卷）；工具栏「去状态栏」按钮由「看图问AI」替代（位置不变）。
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Filename: debs/com.axs.snapper3zhext_6.20.5_iphoneos-arm64.deb
+Size: 295704
+MD5sum: e4bd7c797e3f4e4e7141a5e784d13557
+SHA1: 2839a5ae285295e85a55b430e5d4708c6ce68a7c
+SHA256: 18c66ecfc2dd9a5b7370f52c0be8edc7368813d7c2fcf68afab3a5a5005aaf89
+
+Package: com.axs.snapper3zhext
+Name: 超级截图
+Version: 6.20.6
+Architecture: iphoneos-arm64
+Description: 一款 iOS 越狱截图增强插件，已绑定设备 UDID 授权（需解锁码才能使用，在设置「设备授权」里复制 UDID 并发给开发者获取解锁码）。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。OCR 识别结果现按阅读顺序（上→下、同行左→右）重排，复制全部/问AI/翻译不再乱序；PaddleOCR 路径保留文字块坐标后精确排序。新增「看图问AI」按钮：把截图原图作为多模态内容（图片+OCR文字）直接发给所选视觉模型（豆包/智谱 glm-4v/通义 qwen-vl/OpenAI gpt-4o 等 OpenAI 兼容接口）；DeepSeek 等纯文本模型会被提示改用视觉模型。v6.20.5：截图/长截图/编辑保存统一归入专属相册「SN3截图」（兼容 iOS 14+ 限定访问权限，不再只进相机胶卷）；工具栏「去状态栏」按钮由「看图问AI」替代（位置不变）。v6.20.6：修复局部截图工具栏（框选浮层）缺失「看图问AI」按钮——此前该按钮只加到了主编辑工具栏，局部截图工具栏因默认顺序未含此 tag 被隐藏过滤；现已与主工具栏同源补齐（校验模型/拦截 DeepSeek/发图）。
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Filename: debs/com.axs.snapper3zhext_6.20.6_iphoneos-arm64.deb
+Size: 295940
+MD5sum: a5a68a79b076658ff44c1334387de4c6
+SHA1: 1c5a0af828951d0c8ce605c2e61a49e12fdba070
+SHA256: 64a6a71e118413b5ddc8c0569abddcb365f4edacbb6e0162d274a9c67bbc9c17
+
+Package: com.axs.snapper3zhext
+Name: 超级截图
+Version: 6.20.7
+Architecture: iphoneos-arm64
+Description: 一款 iOS 越狱截图增强插件，已绑定设备 UDID 授权（需解锁码才能使用，在设置「设备授权」里复制 UDID 并发给开发者获取解锁码）。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。OCR 识别结果现按阅读顺序（上→下、同行左→右）重排，复制全部/问AI/翻译不再乱序；PaddleOCR 路径保留文字块坐标后精确排序。新增「看图问AI」按钮：把截图原图作为多模态内容（图片+OCR文字）直接发给所选视觉模型（豆包/智谱 glm-4v/通义 qwen-vl/OpenAI gpt-4o 等 OpenAI 兼容接口）；DeepSeek 等纯文本模型会被提示改用视觉模型。v6.20.5：截图/长截图/编辑保存统一归入专属相册「超级截图」（兼容 iOS 14+ 限定访问权限，不再只进相机胶卷）；工具栏「去状态栏」按钮由「看图问AI」替代（位置不变）。v6.20.6：修复局部截图工具栏（框选浮层）缺失「看图问AI」按钮——此前该按钮只加到了主编辑工具栏，局部截图工具栏因默认顺序未含此 tag 被隐藏过滤；现已与主工具栏同源补齐（校验模型/拦截 DeepSeek/发图）。v6.20.7：相册名称由「SN3截图」改为「超级截图」（与插件名一致）。
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Filename: debs/com.axs.snapper3zhext_6.20.7_iphoneos-arm64.deb
+Size: 296644
+MD5sum: c2b7e9941802d3ba94ab651b7dd37a60
+SHA1: 8ecdd5f3491e399ae76d38ea565cfa315370082b
+SHA256: ac1b0e4b9197d9a6795b3835ddbb285295d5e7593f9052ad6bd7ecd3f13875ac
+
+Package: com.axs.snapper3zhext
+Name: 超级截图
+Version: 6.20.8
+Architecture: iphoneos-arm64
+Description: 一款 iOS 越狱截图增强插件，已绑定设备 UDID 授权（需解锁码才能使用，在设置「设备授权」里复制 UDID 并发给开发者获取解锁码）。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。OCR 识别结果现按阅读顺序（上→下、同行左→右）重排，复制全部/问AI/翻译不再乱序；PaddleOCR 路径保留文字块坐标后精确排序。「问AI」按钮：选好截图后一键直接拉起「豆包」App 并把截图带进去（图同时存入剪贴板，豆包内长按输入框可粘贴），由你在豆包里直接打字提问；不再在插件内自建对话 / 发 API。v6.20.5：截图/长截图/编辑保存统一归入专属相册「超级截图」（兼容 iOS 14+ 限定访问权限，不再只进相机胶卷）；工具栏「去状态栏」按钮由「看图问AI」替代（位置不变）。v6.20.6：修复局部截图工具栏（框选浮层）缺失「看图问AI」按钮——此前该按钮只加到了主编辑工具栏，局部截图工具栏因默认顺序未含此 tag 被隐藏过滤；现已与主工具栏同源补齐（校验模型/拦截 DeepSeek/发图）。v6.20.7：相册名称由「SN3截图」改为「超级截图」（与插件名一致）。v6.20.8：原「看图问AI / 问AI」应用内对话按钮改为「打开豆包」（直接 Deep Link 进豆包 App 并带图）；删去纯文字「问AI」应用内对话按钮，工具栏只保留一个「打开豆包」。
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Filename: debs/com.axs.snapper3zhext_6.20.8_iphoneos-arm64.deb
+Size: 293992
+MD5sum: 3ac785c6539535769ab606f1886db518
+SHA1: 76e62a709fade19662af3ae6e15d9309917d9188
+SHA256: cddd515b5774dfd3d0af08bac9eddeb07e96849b6cb507500c537e9806df2e1b
+
+Package: com.axs.snapper3zhext
+Name: 超级截图
+Version: 6.20.9
+Architecture: iphoneos-arm64
+Description: 一款 iOS 越狱截图增强插件，已绑定设备 UDID 授权（需解锁码才能使用，在设置「设备授权」里复制 UDID 并发给开发者获取解锁码）。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。OCR 识别结果现按阅读顺序（上→下、同行左→右）重排，复制全部/问AI/翻译不再乱序；PaddleOCR 路径保留文字块坐标后精确排序。「问AI」按钮：选好截图后一键直接拉起「豆包」App 并把截图带进去（图同时存入剪贴板，豆包内长按输入框可粘贴），由你在豆包里直接打字提问；不再在插件内自建对话 / 发 API。v6.20.5：截图/长截图/编辑保存统一归入专属相册「超级截图」（兼容 iOS 14+ 限定访问权限，不再只进相机胶卷）；工具栏「去状态栏」按钮由「看图问AI」替代（位置不变）。v6.20.6：修复局部截图工具栏（框选浮层）缺失「看图问AI」按钮——此前该按钮只加到了主编辑工具栏，局部截图工具栏因默认顺序未含此 tag 被隐藏过滤；现已与主工具栏同源补齐（校验模型/拦截 DeepSeek/发图）。v6.20.7：相册名称由「SN3截图」改为「超级截图」（与插件名一致）。v6.20.8：原「看图问AI / 问AI」应用内对话按钮改为「打开豆包」（直接 Deep Link 进豆包 App 并带图）；删去纯文字「问AI」应用内对话按钮，工具栏只保留一个「打开豆包」。v6.20.9：新增「启动」按钮（工具栏第 3 排末位）——点它弹层选你要秒开的 App（微信 / QQ / 闲鱼 一键加，或填任意 App 的 scheme 自选如 dingtalk://、alipay://），选哪个就 Deep Link 秒开哪个，并把当前截图放进剪贴板（进 App 后长按输入框可粘贴）。在设置 → 快捷启动 里管理要秒开的 App 列表。
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Filename: debs/com.axs.snapper3zhext_6.20.9_iphoneos-arm64.deb
+Size: 306472
+MD5sum: eb24a6107a67c618f17a9df83f680d02
+SHA1: cc061001cc9e9f96bc2d0c9c7e3f206a992d0bd7
+SHA256: 98047f09fab76a62bb1759a30f3c183f34e2b1016fadb6d483e4540d31cc3acd
+
+Package: com.axs.snapper3zhext
+Name: 超级截图
+Version: 6.20
+Architecture: iphoneos-arm64
+Description: 一款 iOS 越狱截图增强插件，已绑定设备 UDID 授权（需解锁码才能使用，在设置「设备授权」里复制 UDID 并发给开发者获取解锁码）。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Filename: debs/com.axs.snapper3zhext_6.20_iphoneos-arm64.deb
+Size: 286140
+MD5sum: 5dc9d870e79735972a19b4dadb3fdf3a
+SHA1: d3355a5e89881d0bd098003ed71dc871a3f115bf
+SHA256: 63e2eefbc4aa1d0c4b5165f15279c0ef7fd7360e2a480c6a62427979ba8a4593
+
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
 Version: 1.6.7
@@ -28,31 +235,44 @@ MD5sum: 2d420843898288c3a27d611bf1504006
 SHA1: 2ea4ecc5f2f80c3a9c1b492390e0379732838702
 SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
-Package: com.axs.snapper3zhext
-Name: 超级截图
-Version: 6.20.9
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.0
 Architecture: iphoneos-arm64
-Description: 一款 iOS 越狱截图增强插件，已绑定设备 UDID 授权（需解锁码才能使用，在设置「设备授权」里复制 UDID 并发给开发者获取解锁码）。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。OCR 识别结果现按阅读顺序（上→下、同行左→右）重排，复制全部/问AI/翻译不再乱序；PaddleOCR 路径保留文字块坐标后精确排序。「问AI」按钮：选好截图后一键直接拉起「豆包」App 并把截图带进去（图同时存入剪贴板，豆包内长按输入框可粘贴），由你在豆包里直接打字提问；不再在插件内自建对话 / 发 API。v6.20.5：截图/长截图/编辑保存统一归入专属相册「超级截图」（兼容 iOS 14+ 限定访问权限，不再只进相机胶卷）；工具栏「去状态栏」按钮由「看图问AI」替代（位置不变）。v6.20.6：修复局部截图工具栏（框选浮层）缺失「看图问AI」按钮——此前该按钮只加到了主编辑工具栏，局部截图工具栏因默认顺序未含此 tag 被隐藏过滤；现已与主工具栏同源补齐（校验模型/拦截 DeepSeek/发图）。v6.20.7：相册名称由「SN3截图」改为「超级截图」（与插件名一致）。v6.20.8：原「看图问AI / 问AI」应用内对话按钮改为「打开豆包」（直接 Deep Link 进豆包 App 并带图）；删去纯文字「问AI」应用内对话按钮，工具栏只保留一个「打开豆包」。v6.20.9：新增「启动」按钮（工具栏第 3 排末位）——点它弹层选你要秒开的 App（微信 / QQ / 闲鱼 一键加，或填任意 App 的 scheme 自选如 dingtalk://、alipay://），选哪个就 Deep Link 秒开哪个，并把当前截图放进剪贴板（进 App 后长按输入框可粘贴）。在设置 → 快捷启动 里管理要秒开的 App 列表。
-Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
-Maintainer: yzdmm2024
-Author: yzdmm2024
+Maintainer: yzdmm
+Author: yzdmm
 Section: Tweaks
-Filename: ./debs/com.axs.snapper3zhext_6.20.9_iphoneos-arm64.deb
-Size: 306472
-MD5sum: eb24a6107a67c618f17a9df83f680d02
-SHA1: cc061001cc9e9f96bc2d0c9c7e3f206a992d0bd7
-SHA256: 98047f09fab76a62bb1759a30f3c183f34e2b1016fadb6d483e4540d31cc3acd
+Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
+Filename: debs/com.yzdmm.keyboardpluspro_1.0.0_iphoneos-arm64.deb
+Size: 28744
+MD5sum: 0e5b992bc5671fcb0b407d0c2863f43e
+SHA1: 9b433652a2ac114c8b014c83d15e5b97eb4e8a44
+SHA256: 80a854558c2cf7306fd9f28ede0450077181eb211886d9bb43b8b298ba38ea50
+
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.1
+Architecture: iphoneos-arm64
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
+Filename: debs/com.yzdmm.keyboardpluspro_1.0.1_iphoneos-arm64.deb
+Size: 28764
+MD5sum: 5ceca4087483b3644616249e58dec384
+SHA1: f19575d6d13ec745446298004f70ae36b03aabd6
+SHA256: 353c82244344313b1287b402aaea6fb77617dae1cbe93f29c125415ed515c73a
 
 Package: com.roa.randopenapp
-Version: 1.0.2
+Name: 随机开启app
+Version: 1.0.3
 Architecture: iphoneos-arm64
 Maintainer: ROA
 Author: ROA
 Section: Tweaks
-Description: 在设定时间段内随机选择一个时刻自动打开指定App，每天最多一次。可在设置→随机开启app中配置目标App与时间段。
-Filename: debs/随机开启app_v1.0.2_iphoneos-arm64.deb
-Size: 7360
-MD5sum: 4ad2c99a211c9c522baa54aa567d1cb5
-SHA1: 2cf339b5bef00d7d51b0eb15da3f96f6dd69543d
-SHA256: 78b594bed72589042b06c5dc99f21f620864f31707afb904505d6a747cafff23
-Installed-Size: 180
+Description: 在设定时间段内随机选择一个时刻自动打开指定App，每天最多一次。可在 设置→随机开启app 中配置目标App与时间段。
+Filename: debs/随机开启app_v1.0.3_iphoneos-arm64.deb
+Size: 9248
+MD5sum: 2603aa07cd1001be11f4120c10014752
+SHA1: 35de8da3c46df36aac1a7c4c83e3f679cd88254f
+SHA256: aca1969d917508f3dac3b99bdd4cfbadc2dd9932ad493e3336e7c6a1398e2959
