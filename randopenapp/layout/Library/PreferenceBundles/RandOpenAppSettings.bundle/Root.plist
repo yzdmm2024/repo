@@ -145,7 +145,7 @@
 			<string>ROAStartHour2</string>
 			<key>label</key>
 			<string>②开始 小时 (0-23)</string>
-			<key>keyboardType</string>
+			<key>keyboardType</key>
 			<string>UIKeyboardTypeNumberPad</string>
 		</dict>
 		<dict>
@@ -157,7 +157,7 @@
 			<string>ROAStartMinute2</string>
 			<key>label</key>
 			<string>②开始 分钟 (0-59)</string>
-			<key>keyboardType</string>
+			<key>keyboardType</key>
 			<string>UIKeyboardTypeNumberPad</string>
 		</dict>
 		<dict>
@@ -169,7 +169,7 @@
 			<string>ROAEndHour2</string>
 			<key>label</key>
 			<string>②结束 小时 (0-23)</string>
-			<key>keyboardType</string>
+			<key>keyboardType</key>
 			<string>UIKeyboardTypeNumberPad</string>
 		</dict>
 		<dict>
@@ -181,7 +181,7 @@
 			<string>ROAEndMinute2</string>
 			<key>label</key>
 			<string>②结束 分钟 (0-59)</string>
-			<key>keyboardType</string>
+			<key>keyboardType</key>
 			<string>UIKeyboardTypeNumberPad</string>
 		</dict>
 		<dict>
