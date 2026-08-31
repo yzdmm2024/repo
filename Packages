@@ -223,15 +223,15 @@ SHA256: 031519d30c5e663e24bd8cea4bc6a32a0f0d7dcf255a6067c5025480cb74619b
 
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
-Version: 1.0.2
+Version: 1.0.3
 Architecture: iphoneos-arm64
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
 Description: 隐私与安全性：在「设置」内集中管理每个 App 的 照片/本地网络/麦克风/相机/定位/跟踪/通讯录 共七类权限。照片、麦克风、相机、定位、跟踪、通讯录 直接改写系统 TCC 数据库；本地网络为尽力项，需系统设置兜底。支持 App 分类(用户/系统/巨魔)、搜索、统计、批量允许/拒绝/重置、配置导入导出。
 Depends: preferenceloader
-Filename: ./debs/com.ntm.privacymanager_1.0.2_iphoneos-arm64.deb
-Size: 35640
-MD5sum: 5a8f437fbf43449ceb932b3a6dad4452
-SHA1: 76451a64fb7baee0f3793f6f2225ab43ddfce46c
-SHA256: 8920c5ee341fcd5a701309f28189e4a67d4cf2260200c7e8c1598830495743d9
+Filename: ./debs/pm_v103.deb
+Size: 36992
+MD5sum: 024e6969fe7310b4af5bd39924f981ff
+SHA1: 2eb9b9ac1e4fee6337c032ae9659f346d32769b0
+SHA256: cbe454d89f8ece887a00cfd22396298275c72ca146f78fd3f90bd4d96c7b19fc
