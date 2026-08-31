@@ -176,24 +176,6 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
-			<string>选项</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSSwitchCell</string>
-			<key>default</key>
-			<false/>
-			<key>defaults</key>
-			<string>com.roa.randopenapp</string>
-			<key>key</key>
-			<string>ROAWorkdaysOnly</string>
-			<key>label</key>
-			<string>仅限工作日开启</string>
-		</dict>
-		<dict>
-			<key>cell</key>
-			<string>PSGroupCell</string>
-			<key>label</key>
 			<string>配置说明</string>
 			<key>footerText</key>
 			<string>改完设置后，重启 SpringBoard（或注销后重新登录）让插件重新读取配置。Sileo 内可通过"重启SpringBoard"实现。</string>

@@ -42,11 +42,33 @@
                                          NULL, NULL, YES);
 }
 
-// 打开"立即测试"目标 App（发出通知，SpringBoard 调度器收到后打开）
+// 打开"立即测试"目标 App：直接在设置进程内拉起，避免走 SpringBoard 跨进程转发导致卡顿
 - (void)testNow {
-    CFNotificationCenterPostNotification(CFNotificationCenterGetDarwinNotifyCenter(),
-                                         (CFStringRef)@"com.roa.randopenapp.test",
-                                         NULL, NULL, YES);
+    NSUserDefaults *prefs = [[NSUserDefaults alloc] initWithSuiteName:@"com.roa.randopenapp"];
+    NSString *bundleID = [prefs stringForKey:@"ROABundleID"];
+    if (bundleID.length == 0) {
+        UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"未选择App"
+                                                                       message:@"请先点击上方「选择App」按钮。"
+                                                                preferredStyle:UIAlertControllerStyleAlert];
+        [alert addAction:[UIAlertAction actionWithTitle:@"好" style:UIAlertActionStyleDefault handler:nil]];
+        [self presentViewController:alert animated:YES completion:nil];
+        return;
+    }
+    // 方式1：LSApplicationWorkspace 官网拉起（最快，无需 URL scheme）
+    Class LSAppWorkspace = NSClassFromString(@"LSApplicationWorkspace");
+    if (LSAppWorkspace) {
+        id ws = [LSAppWorkspace performSelector:NSSelectorFromString(@"defaultWorkspace")];
+        if (ws) {
+            BOOL ok = (BOOL)[ws performSelector:NSSelectorFromString(@"openApplicationWithBundleID:")
+                                     withObject:bundleID];
+            if (ok) return;
+        }
+    }
+    // 方式2：递归打开 URL scheme
+    NSString *scheme = [prefs stringForKey:@"ROAURLScheme"];
+    NSString *urlString = (scheme.length ? scheme : bundleID);
+    if (![urlString containsString:@"://"]) urlString = [urlString stringByAppendingString:@"://"];
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:urlString]];
 }
 
 #pragma mark - 选择 App（可搜索 + 图标）
