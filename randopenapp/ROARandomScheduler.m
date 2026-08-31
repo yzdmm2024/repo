@@ -78,6 +78,18 @@ static void roa_testRequest(CFNotificationCenterRef center, void *observer,
 
 - (void)start {
     [self stop];
+    // 启动即重置今日状态：避免旧的 ROALastOpenDay 残留把当天永久挡住（立即测试不受此影响）
+    [[self prefs] removeObjectForKey:kROALastOpenDate];
+    [[self prefs] setInteger:0 forKey:kROAOpenCount];
+    [[self prefs] synchronize];
+    _todayKey = [self dayKeyForDate:[NSDate date]];
+
+    NSLog(@"[ROA] settings => enabled=%d bundleID=%@ w1=%02ld:%02ld-%02ld:%02ld w2=%02ld:%02ld-%02ld:%02ld times=%ld workdays=%d",
+          [self isEnabled], [self targetBundleID] ?: @"nil",
+          (long)[self startHour], (long)[self startMin], (long)[self endHour], (long)[self endMin],
+          (long)[self start2Hour], (long)[self start2Min], (long)[self end2Hour], (long)[self end2Min],
+          (long)[self timesPerDay], [self workdaysOnly]);
+
     [self computeTargetIfNeeded];
     _pollTimer = [NSTimer scheduledTimerWithTimeInterval:30.0
                                                    target:self
