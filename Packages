@@ -221,7 +221,6 @@ MD5sum: b58a296bc51652d448923b1c475d7a98
 SHA1: 71326a08804d118822bec2e6d7b343e4dc257071
 SHA256: 031519d30c5e663e24bd8cea4bc6a32a0f0d7dcf255a6067c5025480cb74619b
 
-
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
 Version: 1.0.0
@@ -232,7 +231,7 @@ Section: Tweaks
 Description: 隐私与安全性：在「设置」内集中管理每个 App 的 照片/本地网络/麦克风/相机/定位/跟踪/通讯录 共七类权限。照片、麦克风、相机、定位、跟踪、通讯录 直接改写系统 TCC 数据库；本地网络为尽力项，需系统设置兜底。支持 App 分类(用户/系统/巨魔)、搜索、统计、批量允许/拒绝/重置、配置导入导出。
 Depends: preferenceloader
 Filename: ./debs/PrivacyManager.deb
-Size: 48976
-MD5sum: c85e11eda0ffb6cf3052fb2bb31cdc38
-SHA1: e39da5de7029daae7db9e071914434dfe4ca0fc9
-SHA256: 011dddfcb8df117c23e1dd445a734c8326cb4e7e0166e055f7c33234c06b609e
+Size: 49384
+MD5sum: be28b77a15a8aaa3e5cff5715dbdae88
+SHA1: ca295826e79e13505f2891c8847e8568711e802f
+SHA256: d40e89f0956dfcb7ef8493030b39199d26c8a42e5d12c1ee590fba72c46d93c4
