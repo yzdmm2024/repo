@@ -10,30 +10,6 @@
 #import <Preferences/Preferences.h>
 #import <objc/runtime.h>
 
-static NSBundle *gBundle = nil;
-
-static PSCellType PSCellTypeFromString(NSString *str) {
-    static NSDictionary *map;
-    static dispatch_once_t once;
-    dispatch_once(&once, ^{
-        map = @{
-            @"PSGroupCell": @(PSGroupCell),
-            @"PSLinkCell": @(PSLinkCell),
-            @"PSLinkListCell": @(PSLinkListCell),
-            @"PSListItemCell": @(PSListItemCell),
-            @"PSTitleValueCell": @(PSTitleValueCell),
-            @"PSSliderCell": @(PSSliderCell),
-            @"PSSwitchCell": @(PSSwitchCell),
-            @"PSStaticTextCell": @(PSStaticTextCell),
-            @"PSEditTextCell": @(PSEditTextCell),
-            @"PSSegmentCell": @(PSSegmentCell),
-            @"PSButtonCell": @(PSButtonCell),
-            @"PSSecureEditTextCell": @(PSSecureEditTextCell),
-        };
-    });
-    return (PSCellType)[(map[str] ?: @(PSStaticTextCell)) integerValue];
-}
-
 @interface ROARootListController : PSListController
 - (void)openAppPicker;
 @end
@@ -42,56 +18,9 @@ static PSCellType PSCellTypeFromString(NSString *str) {
 
 - (id)specifiers {
     if (_specifiers == nil) {
-        if (!gBundle) {
-            NSBundle *b = [NSBundle bundleWithIdentifier:@"com.roa.randopenapp.settings"];
-            if (!b) { // fallback: 从当前 controller 推断
-                NSArray *components = [[self bundle] bundlePath].pathComponents;
-                if (components.count > 0 && [components[components.count-1] hasSuffix:@".bundle"]) {
-                    b = [NSBundle bundleWithPath:[self bundle].bundlePath];
-                }
-            }
-            gBundle = b ?: [NSBundle mainBundle];
-        }
-        NSArray *loaded = [gBundle objectForInfoDictionaryKey:@"items"]
-                        ?: [NSArray arrayWithContentsOfFile:[gBundle pathForResource:@"Root" ofType:@"plist"]];
-        // Root.plist 是 preferences plist 格式，取 items 键
-        NSArray *specs = loaded ? [self specifiersFromPlist:loaded] : [NSArray array];
-        _specifiers = specs;
+        _specifiers = [self loadSpecifiersFromPlistName:@"Root" target:self];
     }
     return _specifiers;
-}
-
-// 从 plist 的 items 数组构建 specifiers
-- (NSArray *)specifiersFromPlist:(NSArray *)items {
-    NSMutableArray *specs = [NSMutableArray array];
-    for (NSDictionary *dict in items) {
-        PSSpecifier *spec = [PSSpecifier preferenceSpecifierNamed:dict[@"label"]
-                                                           target:self
-                                                              set:NULL
-                                                              get:NULL
-                                                           detail:nil
-                                                             cell:PSCellTypeFromString(dict[@"cell"])
-                                                             edit:nil];
-        if ([dict[@"cell"] isKindOfClass:[NSString class]]) {
-            NSString *cell = dict[@"cell"];
-            if ([cell isEqualToString:@"PSSwitchCell"] || [cell isEqualToString:@"PSEditTextCell"]) {
-                // 绑定 defaults/key
-                [spec setProperty:dict[@"defaults"] forKey:@"defaults"];
-                [spec setProperty:dict[@"key"] forKey:@"key"];
-                if (dict[@"default"]) [spec setProperty:dict[@"default"] forKey:@"default"];
-                if (cell == nil) {}
-            }
-            [spec setProperty:dict[@"keyboardType"] ?: @"" forKey:@"keyboardType"];
-        }
-        if (dict[@"action"]) {
-            [spec setButtonAction:NSSelectorFromString(dict[@"action"])];
-        }
-        if (dict[@"footerText"]) {
-            [spec setProperty:dict[@"footerText"] forKey:@"footerText"];
-        }
-        [specs addObject:spec];
-    }
-    return specs;
 }
 
 #pragma mark - 选择 App
