@@ -12,6 +12,28 @@
 
 static NSBundle *gBundle = nil;
 
+static PSCellType PSCellTypeFromString(NSString *str) {
+    static NSDictionary *map;
+    static dispatch_once_t once;
+    dispatch_once(&once, ^{
+        map = @{
+            @"PSGroupCell": @(PSGroupCell),
+            @"PSLinkCell": @(PSLinkCell),
+            @"PSLinkListCell": @(PSLinkListCell),
+            @"PSListItemCell": @(PSListItemCell),
+            @"PSTitleValueCell": @(PSTitleValueCell),
+            @"PSSliderCell": @(PSSliderCell),
+            @"PSSwitchCell": @(PSSwitchCell),
+            @"PSStaticTextCell": @(PSStaticTextCell),
+            @"PSEditTextCell": @(PSEditTextCell),
+            @"PSSegmentCell": @(PSSegmentCell),
+            @"PSButtonCell": @(PSButtonCell),
+            @"PSSecureEditTextCell": @(PSSecureEditTextCell),
+        };
+    });
+    return (PSCellType)[(map[str] ?: @(PSStaticTextCell)) integerValue];
+}
+
 @interface ROARootListController : PSListController
 - (void)openAppPicker;
 @end
@@ -33,7 +55,8 @@ static NSBundle *gBundle = nil;
         NSArray *loaded = [gBundle objectForInfoDictionaryKey:@"items"]
                         ?: [NSArray arrayWithContentsOfFile:[gBundle pathForResource:@"Root" ofType:@"plist"]];
         // Root.plist 是 preferences plist 格式，取 items 键
-        self.customSpecifiers = loaded ? [self specifiersFromPlist:loaded] : [NSArray array];
+        NSArray *specs = loaded ? [self specifiersFromPlist:loaded] : [NSArray array];
+        _specifiers = specs;
     }
     return _specifiers;
 }
@@ -47,7 +70,7 @@ static NSBundle *gBundle = nil;
                                                               set:NULL
                                                               get:NULL
                                                            detail:nil
-                                                             cell:dict[@"cell"]
+                                                             cell:PSCellTypeFromString(dict[@"cell"])
                                                              edit:nil];
         if ([dict[@"cell"] isKindOfClass:[NSString class]]) {
             NSString *cell = dict[@"cell"];
