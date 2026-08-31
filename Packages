@@ -223,14 +223,14 @@ SHA256: b804a8edda6a598232b4b754e1cf24f4b75cbbcb3bfa4811b96d14bb9a398dc1
 
 Package: com.yzdmm.wetypeplus
 Name: WetypePlus
-Version: 1.0.3
+Version: 2.0.0
 Architecture: iphoneos-arm64e
 Maintainer: yzdmm
 Author: yzdmm
 Section: Tweaks
 Description: 键盘上方通用工具栏(光标/粘贴/全选/符号)，对任意键盘(含微信输入法)生效
-Filename: ./debs/com.yzdmm.wetypeplus_1.0.3_iphoneos-arm64e.deb
-Size: 19728
-MD5sum: 1c5d097a6436a7fc4626d4add5c1d644
-SHA1: 85922e5fd60f6baa29f52cd47f024b9305d830de
-SHA256: c10ccd231e63e3ad9f3673b3403d83286db33c77a2515156245fac98dfd43c3e
+Filename: ./debs/com.yzdmm.wetypeplus_2.0.0_iphoneos-arm64e.deb
+Size: 17456
+MD5sum: 6c3de0dfd547b373c0d5e397b0b9e1c1
+SHA1: e040217d361b661f8e54d5559793d712d1639c0f
+SHA256: 4122628b5da3a44c94cf13cb1dd2e5e034f3b1f204f885055969ace32edc5773
