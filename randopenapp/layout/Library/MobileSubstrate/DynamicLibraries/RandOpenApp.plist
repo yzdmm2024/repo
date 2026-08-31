@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Filter</key>
+	<dict>
+		<key>Bundles</key>
+		<array>
+			<string>com.apple.springboard</string>
+			<!-- 必须含 com.apple.Preferences: 否则设置进程不加载 tweak, 面板打不开/空白 -->
+			<string>com.apple.Preferences</string>
+		</array>
+	</dict>
+</dict>
+</plist>

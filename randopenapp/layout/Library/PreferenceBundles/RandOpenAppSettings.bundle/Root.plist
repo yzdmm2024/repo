@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>随机开启app - 设置</string>
+			<key>footerText</key>
+			<string>选择目标应用并设置时间段后，App 会在这个时间段内某个随机时刻被打开，每天最多一次。</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<true/>
+			<key>defaults</key>
+			<string>com.roa.randopenapp</string>
+			<key>key</key>
+			<string>ROAEnabled</string>
+			<key>label</key>
+			<string>启用随机开启</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>目标应用</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>openAppPicker</string>
+			<key>label</key>
+			<string>选择要随机开启的App</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>defaults</key>
+			<string>com.roa.randopenapp</string>
+			<key>key</key>
+			<string>ROABundleID</string>
+			<key>label</key>
+			<string>当前 Bundle ID</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>随机时间段</string>
+			<key>footerText</key>
+			<string>App 会在这个时间段内随机选择一个时刻触发，每天只开一次。</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>defaults</key>
+			<string>com.roa.randopenapp</string>
+			<key>key</key>
+			<string>ROAStartHour</string>
+			<key>label</key>
+			<string>开始 小时 (0-23)</string>
+			<key>keyboardType</key>
+			<string>UIKeyboardTypeNumberPad</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>defaults</key>
+			<string>com.roa.randopenapp</string>
+			<key>key</key>
+			<string>ROAStartMinute</string>
+			<key>label</key>
+			<string>开始 分钟 (0-59)</string>
+			<key>keyboardType</key>
+			<string>UIKeyboardTypeNumberPad</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>defaults</key>
+			<string>com.roa.randopenapp</string>
+			<key>key</key>
+			<string>ROAEndHour</string>
+			<key>label</key>
+			<string>结束 小时 (0-23)</string>
+			<key>keyboardType</key>
+			<string>UIKeyboardTypeNumberPad</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>defaults</key>
+			<string>com.roa.randopenapp</string>
+			<key>key</key>
+			<string>ROAEndMinute</string>
+			<key>label</key>
+			<string>结束 分钟 (0-59)</string>
+			<key>keyboardType</key>
+			<string>UIKeyboardTypeNumberPad</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>选项</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSSwitchCell</string>
+			<key>default</key>
+			<false/>
+			<key>defaults</key>
+			<string>com.roa.randopenapp</string>
+			<key>key</key>
+			<string>ROAWorkdaysOnly</string>
+			<key>label</key>
+			<string>仅限工作日开启</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>配置说明</string>
+			<key>footerText</key>
+			<string>改完设置后，重启 SpringBoard（或注销后重新登录）让插件重新读取配置。Sileo 内可通过"重启SpringBoard"实现。</string>
+		</dict>
+	</array>
+	<key>title</key>
+	<string>随机开启app</string>
+</dict>
+</plist>
