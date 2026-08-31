@@ -50,6 +50,14 @@
 		</dict>
 		<dict>
 			<key>cell</key>
+			<string>PSButtonCell</string>
+			<key>action</key>
+			<string>testNow</string>
+			<key>label</key>
+			<string>立即测试打开</string>
+		</dict>
+		<dict>
+			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>label</key>
 			<string>随机时间段</string>

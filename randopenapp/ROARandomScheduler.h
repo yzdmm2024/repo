@@ -18,6 +18,9 @@ NS_ASSUME_NONNULL_BEGIN
 // 重新读取设置并重算（设置变更后调用）
 - (void)reloadSettings;
 
+// 设置面板"立即测试打开"：绕开时间段与每日限制，立即拉起目标 App
+- (void)openForTest;
+
 @end
 
 NS_ASSUME_NONNULL_END

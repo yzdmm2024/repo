@@ -1,6 +1,6 @@
 Package: com.roa.randopenapp
 Name: 随机开启app
-Version: 1.0.7
+Version: 1.0.8
 Architecture: iphoneos-arm64e
 Description: 在设定时间段内随机选择一个时刻自动打开指定App，每天最多一次。支持在系统设置中选择目标App和随机时间段。
 Maintainer: ROA

@@ -35,6 +35,15 @@ static void roa_settingsChanged(CFNotificationCenterRef center, void *observer,
     });
 }
 
+// "立即测试打开"通知（来自设置面板的测试按钮）
+static void roa_testRequest(CFNotificationCenterRef center, void *observer,
+                            CFStringRef name, const void *object, CFDictionaryRef userInfo) {
+    ROARandomScheduler *s = (__bridge ROARandomScheduler *)observer;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [s openForTest];
+    });
+}
+
 @implementation ROARandomScheduler {
     NSTimer *_pollTimer;
     NSDate  *_targetDate;
@@ -77,6 +86,13 @@ static void roa_settingsChanged(CFNotificationCenterRef center, void *observer,
                                     (CFStringRef)@"com.roa.randopenapp.changed",
                                     NULL,
                                     CFNotificationSuspensionBehaviorDeliverImmediately);
+    // 监听"立即测试打开"通知
+    CFNotificationCenterAddObserver(CFNotificationCenterGetDarwinNotifyCenter(),
+                                    (__bridge const void *)self,
+                                    roa_testRequest,
+                                    (CFStringRef)@"com.roa.randopenapp.test",
+                                    NULL,
+                                    CFNotificationSuspensionBehaviorDeliverImmediately);
 
     NSLog(@"[ROA] scheduler started.");
 }
@@ -87,6 +103,10 @@ static void roa_settingsChanged(CFNotificationCenterRef center, void *observer,
     CFNotificationCenterRemoveObserver(CFNotificationCenterGetDarwinNotifyCenter(),
                                        (__bridge const void *)self,
                                        (CFStringRef)@"com.roa.randopenapp.changed",
+                                       NULL);
+    CFNotificationCenterRemoveObserver(CFNotificationCenterGetDarwinNotifyCenter(),
+                                       (__bridge const void *)self,
+                                       (CFStringRef)@"com.roa.randopenapp.test",
                                        NULL);
 }
 
@@ -211,6 +231,37 @@ static void roa_settingsChanged(CFNotificationCenterRef center, void *observer,
 
 #pragma mark - 打开目标 App
 
+// 共用：非阻塞拉起一个已注册的 URL scheme（最可靠），失败再走 LSApplicationWorkspace
+- (void)launchAppWithURLScheme:(NSString *)scheme {
+    if (scheme.length == 0) {
+        NSLog(@"[ROA] launch: empty scheme.");
+        return;
+    }
+    NSString *urlString = [scheme rangeOfString:@"://"].location == NSNotFound
+                            ? [NSString stringWithFormat:@"%@://", scheme]
+                            : scheme;
+    NSURL *url = [NSURL URLWithString:urlString];
+    NSLog(@"[ROA] launch via scheme: %@", urlString);
+    BOOL ok = [[UIApplication sharedApplication] openURL:url];
+    NSLog(@"[ROA] scheme open result = %@ (this is the primary path)", ok ? @"YES" : @"NO");
+}
+
+// 兜底：用 LSApplicationWorkspace 按 Bundle ID 打开
+- (void)launchAppWithBundleID:(NSString *)bundleID {
+    Class LSAppWorkspace = NSClassFromString(@"LSApplicationWorkspace");
+    if (LSAppWorkspace) {
+        id ws = [LSAppWorkspace performSelector:NSSelectorFromString(@"defaultWorkspace")];
+        if (ws) {
+            BOOL ok = (BOOL)[ws performSelector:NSSelectorFromString(@"openApplicationWithBundleID:")
+                                     withObject:bundleID];
+            NSLog(@"[ROA] openApplicationWithBundleID result = %@", ok ? @"YES" : @"NO");
+            return;
+        }
+    }
+    NSLog(@"[ROA] LSApplicationWorkspace unavailable, no fallback.");
+}
+
+// 真正被调度器调用：到达目标时刻，打开 App
 - (void)openTarget {
     NSString *bundleID = [self targetBundleID];
     if (!bundleID) return;
@@ -219,22 +270,27 @@ static void roa_settingsChanged(CFNotificationCenterRef center, void *observer,
     [[self prefs] setObject:_todayKey forKey:kROALastOpenDate];
     [[self prefs] synchronize];
 
-    // 使用 LSApplicationWorkspace 拉起 App（已验证对已安装 App 有效）
-    Class LSAppWorkspace = NSClassFromString(@"LSApplicationWorkspace");
-    if (LSAppWorkspace) {
-        id ws = [LSAppWorkspace performSelector:NSSelectorFromString(@"defaultWorkspace")];
-        if (ws) {
-            BOOL ok = (BOOL)[ws performSelector:NSSelectorFromString(@"openApplicationWithBundleID:")
-                                     withObject:bundleID];
-            NSLog(@"[ROA] open result = %@", ok ? @"YES" : @"NO");
-            return;
-        }
+    // 首选 URL scheme（兼容钉钉 dingtalk://）；若未配置 scheme，fallback 到 Bundle ID
+    NSString *scheme = [[self prefs] stringForKey:@"ROAURLScheme"];
+    if (scheme.length == 0) {
+        scheme = bundleID;
     }
+    [self launchAppWithURLScheme:scheme];
+    // 保险：scheme 已尝试，若未配置专门 scheme 再走 Workspace 兜底
+    [self launchAppWithBundleID:bundleID];
+}
 
-    // fallback：深链
-    NSString *scheme = [NSString stringWithFormat:@"%@://", bundleID];
-    BOOL ok = [[UIApplication sharedApplication] openURL:[NSURL URLWithString:scheme]];
-    NSLog(@"[ROA] open via scheme result = %@", ok ? @"YES" : @"NO");
+// 设置面板"立即测试打开"按钮：绕开时间段与每日限制，立即拉起
+- (void)openForTest {
+    NSString *bundleID = [self targetBundleID];
+    if (!bundleID) {
+        NSLog(@"[ROA] test: no bundle id, set one first.");
+        return;
+    }
+    NSLog(@"[ROA] test open requested for %@", bundleID);
+    NSString *scheme = [[self prefs] stringForKey:@"ROAURLScheme"];
+    [self launchAppWithURLScheme:(scheme.length ? scheme : bundleID)];
+    [self launchAppWithBundleID:bundleID];
 }
 
 @end
