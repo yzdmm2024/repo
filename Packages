@@ -209,14 +209,14 @@ SHA256: aca1969d917508f3dac3b99bdd4cfbadc2dd9932ad493e3336e7c6a1398e2959
 
 Package: com.yzdmm.keyboardpluspro
 Name: KeyboardPlusPro
-Version: 1.0.7
+Version: 1.0.8
 Architecture: iphoneos-arm64e
 Maintainer: yzdmm
 Author: yzdmm
 Section: Tweaks
 Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
-Filename: ./debs/com.yzdmm.keyboardpluspro_1.0.7_iphoneos-arm64e.deb
-Size: 60808
-MD5sum: c14302e974680f0d3d0eb819f0f1b230
-SHA1: 70f69c569c41162b345bd121b3db432ed2ce9f3d
-SHA256: 1725e30cc8b1816e23b5caff254fa2cdf9a5303cce566f5103a5cca87837fffb
+Filename: ./debs/com.yzdmm.keyboardpluspro_1.0.8_iphoneos-arm64e.deb
+Size: 61136
+MD5sum: 9669247f55077f61ed41fef16aaa85b5
+SHA1: 43b505eb361ccf2f3d8479d81e36ea8da2ab3629
+SHA256: 26a90904aac625d189a1f08d63a6d558e8f31d79d30a37741e5e4307a7a3d112
