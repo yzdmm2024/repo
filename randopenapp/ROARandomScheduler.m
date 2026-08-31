@@ -21,9 +21,16 @@ static NSString *const kROAStartH    = @"ROAStartHour";
 static NSString *const kROAStartM    = @"ROAStartMinute";
 static NSString *const kROAEndH      = @"ROAEndHour";
 static NSString *const kROAEndM      = @"ROAEndMinute";
+static NSString *const kROATimes     = @"ROATimesPerDay";
+// 时间段②
+static NSString *const kROAStart2H   = @"ROAStartHour2";
+static NSString *const kROAStart2M   = @"ROAStartMinute2";
+static NSString *const kROAEnd2H     = @"ROAEndHour2";
+static NSString *const kROAEnd2M     = @"ROAEndMinute2";
 static NSString *const kROAWorkdays  = @"ROAWorkdaysOnly";
 
 static NSString *const kROALastOpenDate = @"ROALastOpenDay";      // "yyyyMMdd"
+static NSString *const kROAOpenCount    = @"ROAOpenCount";         // 今天已触发次数
 static NSString *const kROAPrefsDomain  = @"com.roa.randopenapp"; // 与 bundle id 一致
 
 // 设置面板改动后的跨进程回调（在 start/stop 中注册/移除）
@@ -114,8 +121,9 @@ static void roa_testRequest(CFNotificationCenterRef center, void *observer,
     // 设置可能已变，重算目标
     _targetDate = nil;
     _todayKey = [self dayKeyForDate:[NSDate date]];
-    // 设置变更时重置"今日已开"标记，让用户改动后当天能重新触发（不影响正常每日一次逻辑）
+    // 设置变更时重置"今日已开"标记与计数，让用户改动后当天能重新触发
     [[self prefs] removeObjectForKey:kROALastOpenDate];
+    [[self prefs] setInteger:0 forKey:kROAOpenCount];
     [[self prefs] synchronize];
     [self computeTargetIfNeeded];
 }
@@ -139,6 +147,12 @@ static void roa_testRequest(CFNotificationCenterRef center, void *observer,
 - (NSInteger)startMin   { return [[self prefs] integerForKey:kROAStartM]; }
 - (NSInteger)endHour    { return [[self prefs] integerForKey:kROAEndH]; }
 - (NSInteger)endMin     { return [[self prefs] integerForKey:kROAEndM]; }
+- (NSInteger)timesPerDay { NSInteger t = [[self prefs] integerForKey:kROATimes]; return (t < 1) ? 1 : (t > 2 ? 2 : t); }
+// 时间段②
+- (NSInteger)start2Hour { return [[self prefs] integerForKey:kROAStart2H]; }
+- (NSInteger)start2Min  { return [[self prefs] integerForKey:kROAStart2M]; }
+- (NSInteger)end2Hour   { return [[self prefs] integerForKey:kROAEnd2H]; }
+- (NSInteger)end2Min    { return [[self prefs] integerForKey:kROAEnd2M]; }
 - (BOOL)workdaysOnly    { return [[self prefs] boolForKey:kROAWorkdays]; }
 
 #pragma mark - 日期工具
@@ -172,29 +186,72 @@ static void roa_testRequest(CFNotificationCenterRef center, void *observer,
     if (![self targetBundleID]) { NSLog(@"[ROA] no bundle id."); return; }
     // 仅工作日
     if ([self workdaysOnly] && ![self isWorkdayForDate:[NSDate date]]) { NSLog(@"[ROA] weekend, skip."); return; }
-    // 今天开过了？
+    // 今天触发次数是否已达上限
+    NSInteger todayCount = 0;
     NSString *last = [[self prefs] stringForKey:kROALastOpenDate];
-    if ([last isEqualToString:_todayKey]) { NSLog(@"[ROA] already opened today."); return; }
+    if (last.length > 0 && [last isEqualToString:_todayKey]) {
+        todayCount = [[self prefs] integerForKey:kROAOpenCount];
+    }
+    NSInteger times = [self timesPerDay];
+    if (todayCount >= times) {
+        NSLog(@"[ROA] reached limit %ld/%ld today.", (long)todayCount, (long)times);
+        return;
+    }
 
     NSCalendar *cal = [NSCalendar currentCalendar];
     NSDateComponents *now = [cal components:NSCalendarUnitHour | NSCalendarUnitMinute fromDate:[NSDate date]];
     NSInteger nowMin = [self minutesForHour:now.hour minute:now.minute];
-    NSInteger startMin = [self minutesForHour:[self startHour] minute:[self startMin]];
-    NSInteger endMin   = [self minutesForHour:[self endHour] minute:[self endMin]];
 
-    // 窗口合法性
-    if (endMin <= startMin) { NSLog(@"[ROA] invalid window."); return; }
+    // 两个时间段
+    NSInteger w1s = [self minutesForHour:[self startHour] minute:[self startMin]];
+    NSInteger w1e = [self minutesForHour:[self endHour] minute:[self endMin]];
+    NSInteger w2s = [self minutesForHour:[self start2Hour] minute:[self start2Min]];
+    NSInteger w2e = [self minutesForHour:[self end2Hour] minute:[self end2Min]];
 
-    // 当前时间是否在窗口内？
-    if (nowMin < startMin || nowMin > endMin) {
-        NSLog(@"[ROA] outside window now."); 
-        return;
+    // 收集所有"未过期且合法"的候选窗口
+    // 目标必须是当前之后的时刻，且在今天剩余窗口内随机
+    NSMutableArray *candidates = [NSMutableArray array];
+    // 窗口①
+    if (w1e > w1s) {
+        [candidates addObject:@[@(w1s), @(w1e)]];
     }
+    // 窗口②（未填写时 w2s==0,w2e==0 视为无效）
+    if (w2e > w2s && w2s > 0) {
+        [candidates addObject:@[@(w2s), @(w2e)]];
+    }
+    if (candidates.count == 0) { NSLog(@"[ROA] no valid window."); return; }
 
-    // 在窗口内：从"当前之后 1 分钟"到"窗口末尾"随机选一个时刻
+    // 挑选"现在所处或之后"的候选：优先当前窗口，否则下一个未来的窗口
+    NSArray *chosen = nil;
+    // 先看当前是否在某窗口内
+    for (NSArray *win in candidates) {
+        NSInteger ws = [win[0] integerValue], we = [win[1] integerValue];
+        if (nowMin >= ws && nowMin <= we) { chosen = win; break; }
+    }
+    // 不在任何窗口内：选即将到来的最早窗口
+    if (!chosen) {
+        NSArray *best = nil;
+        for (NSArray *win in candidates) {
+            NSInteger ws = [win[0] integerValue];
+            // 窗口开始时间必须晚于当前
+            if (ws > nowMin) {
+                if (!best || ws < [best[0] integerValue]) { best = win; }
+            }
+        }
+        chosen = best;
+    }
+    if (!chosen) { NSLog(@"[ROA] no upcoming window today."); return; }
+
+    NSInteger ws = [chosen[0] integerValue], we = [chosen[1] integerValue];
+    // 在窗口内：earliest 至少当前+1分钟，最晚窗口末尾；若窗口已到末尾则用当前时刻
     NSInteger earliest = nowMin + 1;
-    NSInteger latest   = endMin;
-    if (earliest > latest) { latest = nowMin; } // 接近末尾时兜底
+    NSInteger latest   = we;
+    if (earliest > latest) {
+        // 窗口刚结束，退回到现在（保证能立即安排）
+        if (nowMin <= we) { earliest = nowMin; latest = we; }
+        else { NSLog(@"[ROA] window passed, skip."); return; }
+    }
+    if (earliest < ws) earliest = ws;
     NSInteger pick = earliest + arc4random_uniform((uint32_t)(latest - earliest + 1));
 
     NSDateComponents *targetComp = [cal components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay fromDate:[NSDate date]];
@@ -205,7 +262,8 @@ static void roa_testRequest(CFNotificationCenterRef center, void *observer,
 
     NSDateFormatter *f = [[NSDateFormatter alloc] init];
     f.dateFormat = @"HH:mm";
-    NSLog(@"[ROA] target scheduled at %@", [f stringFromDate:_targetDate]);
+    NSLog(@"[ROA] target scheduled at %@ (window %02ld:%02ld-%02ld:%02ld)",
+          [f stringFromDate:_targetDate], (long)(ws/60), (long)(ws%60), (long)(we/60), (long)(we%60));
 }
 
 #pragma mark - 轮询
@@ -269,8 +327,15 @@ static void roa_testRequest(CFNotificationCenterRef center, void *observer,
     NSString *bundleID = [self targetBundleID];
     if (!bundleID) return;
 
-    // 写入"今日已开"标记（先标记，即使打开失败也不重复尝试当天）
+    // 写入今天日期并计数递增（即使打开失败也不重复尝试同一个窗口）
+    NSInteger count = 0;
+    NSString *last = [[self prefs] stringForKey:kROALastOpenDate];
+    if (last.length > 0 && [last isEqualToString:_todayKey]) {
+        count = [[self prefs] integerForKey:kROAOpenCount];
+    }
+    count += 1;
     [[self prefs] setObject:_todayKey forKey:kROALastOpenDate];
+    [[self prefs] setInteger:count forKey:kROAOpenCount];
     [[self prefs] synchronize];
 
     // 首选 URL scheme（兼容钉钉 dingtalk://）；若未配置 scheme，fallback 到 Bundle ID
@@ -278,9 +343,12 @@ static void roa_testRequest(CFNotificationCenterRef center, void *observer,
     if (scheme.length == 0) {
         scheme = bundleID;
     }
+    NSLog(@"[ROA] time reached, opening (count %ld) ...", (long)count);
     [self launchAppWithURLScheme:scheme];
     // 保险：scheme 已尝试，若未配置专门 scheme 再走 Workspace 兜底
     [self launchAppWithBundleID:bundleID];
+    // 下一次触发可能在另一窗口，清空当前目标让它找下一个窗口
+    _targetDate = nil;
 }
 
 // 设置面板"立即测试打开"按钮：绕开时间段与每日限制，立即拉起

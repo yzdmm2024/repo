@@ -62,7 +62,25 @@
 			<key>label</key>
 			<string>随机时间段</string>
 			<key>footerText</key>
-			<string>App 会在这个时间段内随机选择一个时刻触发，每天只开一次。</string>
+			<string>可配置两个时间段（如早上一个、下午一个）。每个时间段内会各触发一次，两个都开启时每天最多开2次。</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>defaults</key>
+			<string>com.roa.randopenapp</string>
+			<key>key</key>
+			<string>ROATimesPerDay</string>
+			<key>label</key>
+			<string>每天最多触发次数 (1-2)</string>
+			<key>keyboardType</key>
+			<string>UIKeyboardTypeNumberPad</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>时间段①（如早上）</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -72,7 +90,7 @@
 			<key>key</key>
 			<string>ROAStartHour</string>
 			<key>label</key>
-			<string>开始 小时 (0-23)</string>
+			<string>①开始 小时 (0-23)</string>
 			<key>keyboardType</key>
 			<string>UIKeyboardTypeNumberPad</string>
 		</dict>
@@ -84,7 +102,7 @@
 			<key>key</key>
 			<string>ROAStartMinute</string>
 			<key>label</key>
-			<string>开始 分钟 (0-59)</string>
+			<string>①开始 分钟 (0-59)</string>
 			<key>keyboardType</key>
 			<string>UIKeyboardTypeNumberPad</string>
 		</dict>
@@ -96,7 +114,7 @@
 			<key>key</key>
 			<string>ROAEndHour</string>
 			<key>label</key>
-			<string>结束 小时 (0-23)</string>
+			<string>①结束 小时 (0-23)</string>
 			<key>keyboardType</key>
 			<string>UIKeyboardTypeNumberPad</string>
 		</dict>
@@ -108,8 +126,62 @@
 			<key>key</key>
 			<string>ROAEndMinute</string>
 			<key>label</key>
-			<string>结束 分钟 (0-59)</string>
+			<string>①结束 分钟 (0-59)</string>
 			<key>keyboardType</key>
+			<string>UIKeyboardTypeNumberPad</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSGroupCell</string>
+			<key>label</key>
+			<string>时间段②（如下午）</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>defaults</key>
+			<string>com.roa.randopenapp</string>
+			<key>key</key>
+			<string>ROAStartHour2</string>
+			<key>label</key>
+			<string>②开始 小时 (0-23)</string>
+			<key>keyboardType</string>
+			<string>UIKeyboardTypeNumberPad</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>defaults</key>
+			<string>com.roa.randopenapp</string>
+			<key>key</key>
+			<string>ROAStartMinute2</string>
+			<key>label</key>
+			<string>②开始 分钟 (0-59)</string>
+			<key>keyboardType</string>
+			<string>UIKeyboardTypeNumberPad</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>defaults</key>
+			<string>com.roa.randopenapp</string>
+			<key>key</key>
+			<string>ROAEndHour2</string>
+			<key>label</key>
+			<string>②结束 小时 (0-23)</string>
+			<key>keyboardType</string>
+			<string>UIKeyboardTypeNumberPad</string>
+		</dict>
+		<dict>
+			<key>cell</key>
+			<string>PSEditTextCell</string>
+			<key>defaults</key>
+			<string>com.roa.randopenapp</string>
+			<key>key</key>
+			<string>ROAEndMinute2</string>
+			<key>label</key>
+			<string>②结束 分钟 (0-59)</string>
+			<key>keyboardType</string>
 			<string>UIKeyboardTypeNumberPad</string>
 		</dict>
 		<dict>
