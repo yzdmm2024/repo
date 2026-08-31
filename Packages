@@ -44,15 +44,15 @@ SHA1: cc061001cc9e9f96bc2d0c9c7e3f206a992d0bd7
 SHA256: 98047f09fab76a62bb1759a30f3c183f34e2b1016fadb6d483e4540d31cc3acd
 
 Package: com.roa.randopenapp
-Version: 1.0.1
+Version: 1.0.2
 Architecture: iphoneos-arm64
 Maintainer: ROA
 Author: ROA
 Section: Tweaks
 Description: 在设定时间段内随机选择一个时刻自动打开指定App，每天最多一次。可在设置→随机开启app中配置目标App与时间段。
-Filename: debs/随机开启app_v1.0.1_iphoneos-arm64.deb
-Size: 7276
-MD5sum: b4d434f88dd5d016f815981b0e126f1d
-SHA1: f6f952fd415f226f7c1721ae0032aac647590533
-SHA256: 5f0678be9f4d15c83f844b6c1d7e2e0b52d0ef5f5d06b105a94741f7d66e1aa9
+Filename: debs/随机开启app_v1.0.2_iphoneos-arm64.deb
+Size: 7360
+MD5sum: 4ad2c99a211c9c522baa54aa567d1cb5
+SHA1: 2cf339b5bef00d7d51b0eb15da3f96f6dd69543d
+SHA256: 78b594bed72589042b06c5dc99f21f620864f31707afb904505d6a747cafff23
 Installed-Size: 180
