@@ -1,3 +1,45 @@
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
+Filename: debs/KeyboardPlusPro_v1.0.2_iphoneos-arm64.deb
+Size: 28760
+MD5sum: 91a18807fe515bfaca8ec8448af2cd0a
+SHA1: 66f2831714a457f3e7d9be3fce95d438ae452632
+SHA256: 0f42aa8fcf69fd1444d43dca02fa32cb4ba492e126562346f86bb6ef56d664ff
+
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.3
+Architecture: iphoneos-arm64
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
+Filename: debs/KeyboardPlusPro_v1.0.3_iphoneos-arm64.deb
+Size: 28676
+MD5sum: cf31f46a45242b1fbcd00327d2bfe153
+SHA1: cc3d1524bcd19f5cde76e3704ba694e267773cdd
+SHA256: bbb1bfab9ffb28d7eaa0948595a19e8cf63c295ea91c71734453e2c2ea62efef
+
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.4
+Architecture: iphoneos-arm64
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
+Filename: debs/KeyboardPlusPro_v1.0.4_iphoneos-arm64.deb
+Size: 29484
+MD5sum: fbe43abc9c792cb79cfd5f0bc8be84ca
+SHA1: b3462ebcc4b1c12955d86aed98fe83bb404b664f
+SHA256: 46111118048fc01019a301f0c7ba09e0eafa763ac917256b17c0f0802dc28e02
+
 Package: com.axs.snapper3zhext
 Name: 超级截图
 Version: 6.19
@@ -193,6 +235,300 @@ MD5sum: 2d420843898288c3a27d611bf1504006
 SHA1: 2ea4ecc5f2f80c3a9c1b492390e0379732838702
 SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
+Filename: debs/com.yzdmm.keyboardpluspro_1.0.0_iphoneos-arm64.deb
+Size: 28744
+MD5sum: 0e5b992bc5671fcb0b407d0c2863f43e
+SHA1: 9b433652a2ac114c8b014c83d15e5b97eb4e8a44
+SHA256: 80a854558c2cf7306fd9f28ede0450077181eb211886d9bb43b8b298ba38ea50
+
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.11
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
+Filename: debs/com.yzdmm.keyboardpluspro_1.0.11_iphoneos-arm64e.deb
+Size: 61492
+MD5sum: f733c7698872e72e783c60ddbd256366
+SHA1: 41cc0dc1b892883047e21bf89b82f35c8fe6e8b4
+SHA256: 93da0043c02c629a92cc3d936290c2dee1c918d1df60d5ec274ef5740974ff83
+
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.12
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
+Filename: debs/com.yzdmm.keyboardpluspro_1.0.12_iphoneos-arm64e.deb
+Size: 61380
+MD5sum: eee285923842e8498b7ec7d36d55d0ae
+SHA1: 3d46e102363c31097e2defccdb70c6a1da667bc9
+SHA256: 76f7b5e233476adc183a2d3f624df27a9bcb12630616a48ef084262cb8f8db71
+
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.13
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
+Filename: debs/com.yzdmm.keyboardpluspro_1.0.13_iphoneos-arm64e.deb
+Size: 61820
+MD5sum: 55720b4beed4a89911fb744d392457cd
+SHA1: 945121fd340cd2c3508dc6ce22dc9f366fe7da04
+SHA256: 7c9a352a9212700ea694e7edd6e6b4c8e1998604d063203d840f31c5f44246fd
+
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.14
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
+Filename: debs/com.yzdmm.keyboardpluspro_1.0.14_iphoneos-arm64e.deb
+Size: 61376
+MD5sum: b65fadc5e7189e067c66960407914e11
+SHA1: 5a3414b1af7f2ef68e05b6b204e642e601dd5835
+SHA256: b804a8edda6a598232b4b754e1cf24f4b75cbbcb3bfa4811b96d14bb9a398dc1
+
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.1
+Architecture: iphoneos-arm64
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
+Filename: debs/com.yzdmm.keyboardpluspro_1.0.1_iphoneos-arm64.deb
+Size: 28764
+MD5sum: 5ceca4087483b3644616249e58dec384
+SHA1: f19575d6d13ec745446298004f70ae36b03aabd6
+SHA256: 353c82244344313b1287b402aaea6fb77617dae1cbe93f29c125415ed515c73a
+
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.5
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
+Filename: debs/com.yzdmm.keyboardpluspro_1.0.5_iphoneos-arm64e.deb
+Size: 60060
+MD5sum: d6288177f558ecc4fdd233966987cc08
+SHA1: 85e4b28366a5d8d5bf13288382023580f546592c
+SHA256: 9007d4b69f70a0d7f2090252766a8648721421047b94715249486f34857c5668
+
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.6
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
+Filename: debs/com.yzdmm.keyboardpluspro_1.0.6_iphoneos-arm64e.deb
+Size: 60688
+MD5sum: b94c99035a83bc817d849ff154b776a6
+SHA1: 2f4a1f6e61d100bf2160e9551a8d5dd42fd71af0
+SHA256: 72bf047c33be52125a89733c164a077d5d02a8a10a578b5a7365ed88b5de5589
+
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.7
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
+Filename: debs/com.yzdmm.keyboardpluspro_1.0.7_iphoneos-arm64e.deb
+Size: 60808
+MD5sum: c14302e974680f0d3d0eb819f0f1b230
+SHA1: 70f69c569c41162b345bd121b3db432ed2ce9f3d
+SHA256: 1725e30cc8b1816e23b5caff254fa2cdf9a5303cce566f5103a5cca87837fffb
+
+Package: com.yzdmm.keyboardpluspro
+Name: KeyboardPlusPro
+Version: 1.0.8
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
+Filename: debs/com.yzdmm.keyboardpluspro_1.0.8_iphoneos-arm64e.deb
+Size: 61136
+MD5sum: 9669247f55077f61ed41fef16aaa85b5
+SHA1: 43b505eb361ccf2f3d8479d81e36ea8da2ab3629
+SHA256: 26a90904aac625d189a1f08d63a6d558e8f31d79d30a37741e5e4307a7a3d112
+
+Package: com.yzdmm.kkgameautologin
+Name: KKGameAutoLogin
+Version: 1.0.10
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: 用于验证（免登录）
+Filename: debs/com.yzdmm.kkgameautologin_1.0.10_iphoneos-arm64e.deb
+Size: 13456
+MD5sum: b80337af7bb290863a8ac27aa562582d
+SHA1: 494ee11b5e68d65a4cc3ae6e38d55292b942a447
+SHA256: 8feebb68aefc2a92781a4964083e20109a689a84781a1476828d553fe34164e4
+
+Package: com.yzdmm.wetypeplus
+Name: WetypePlus
+Version: 1.0.0
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: 键盘上方通用工具栏(光标/粘贴/全选/符号)，对任意键盘(含微信输入法)生效
+Filename: debs/com.yzdmm.wetypeplus_1.0.0_iphoneos-arm64e.deb
+Size: 18988
+MD5sum: 769209d829ff664fa1b73cddbd6b77ae
+SHA1: 69ca9f6b3e152ec5174e3f5fbc43182218bf6b52
+SHA256: 820dad480a831b2d156742fb558bbe72eb43eed3fe55bb001c51224a608b188d
+
+Package: com.yzdmm.wetypeplus
+Name: WetypePlus
+Version: 1.0.1
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: 键盘上方通用工具栏(光标/粘贴/全选/符号)，对任意键盘(含微信输入法)生效
+Filename: debs/com.yzdmm.wetypeplus_1.0.1_iphoneos-arm64e.deb
+Size: 18960
+MD5sum: 057c5163554e3060610d5e407f4daa8e
+SHA1: 72295256612f5d15e737484dec2690d4bf9fbe0c
+SHA256: 67b6c704eeac2e3c3b58ddb6bcdd78dd3d2588f3ccaf8c167a05bdec32a2ea42
+
+Package: com.yzdmm.wetypeplus
+Name: WetypePlus
+Version: 1.0.2
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: 键盘上方通用工具栏(光标/粘贴/全选/符号)，对任意键盘(含微信输入法)生效
+Filename: debs/com.yzdmm.wetypeplus_1.0.2_iphoneos-arm64e.deb
+Size: 19004
+MD5sum: 06b577bdf45f3ba5b400110796523026
+SHA1: c7e214388ab394cb8e00de6ad2248b0757fb7d94
+SHA256: 029bd91dd5af9e73b5f9a69f46cf182fd084ba7ea6b3c2bf675316d35d24b2b1
+
+Package: com.yzdmm.wetypeplus
+Name: WetypePlus
+Version: 1.0.3
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: 键盘上方通用工具栏(光标/粘贴/全选/符号)，对任意键盘(含微信输入法)生效
+Filename: debs/com.yzdmm.wetypeplus_1.0.3_iphoneos-arm64e.deb
+Size: 19728
+MD5sum: 1c5d097a6436a7fc4626d4add5c1d644
+SHA1: 85922e5fd60f6baa29f52cd47f024b9305d830de
+SHA256: c10ccd231e63e3ad9f3673b3403d83286db33c77a2515156245fac98dfd43c3e
+
+Package: com.yzdmm.wetypeplus
+Name: WetypePlus
+Version: 2.0.0
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: 键盘上方通用工具栏(光标/粘贴/全选/符号)，对任意键盘(含微信输入法)生效
+Filename: debs/com.yzdmm.wetypeplus_2.0.0_iphoneos-arm64e.deb
+Size: 17456
+MD5sum: 6c3de0dfd547b373c0d5e397b0b9e1c1
+SHA1: e040217d361b661f8e54d5559793d712d1639c0f
+SHA256: 4122628b5da3a44c94cf13cb1dd2e5e034f3b1f204f885055969ace32edc5773
+
+Package: com.yzdmm.wetypeplus
+Name: WetypePlus
+Version: 2.0.1
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: 微信输入法键盘内叠加工具栏(光标/粘贴/符号)，长高键盘腾出底部空条，不挡123/空格行
+Filename: debs/com.yzdmm.wetypeplus_2.0.1_iphoneos-arm64e.deb
+Size: 18672
+MD5sum: 4c22c0fc5ac833758068fd55fb04fead
+SHA1: 087e665fdeba6e3c695284f4d09c888e78da0f6e
+SHA256: 01aeebd40ec5210e5c2bb8df63f438f186a8d6cb993da6aa62697d937e762da3
+
+Package: com.yzdmm.wetypeplus
+Name: WetypePlus
+Version: 2.0.2
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: 微信输入法键盘内叠加工具栏(光标/粘贴/符号)；整体上移键盘内容腾出底部空条，工具栏贴屏幕底边
+Filename: debs/com.yzdmm.wetypeplus_2.0.2_iphoneos-arm64e.deb
+Size: 18332
+MD5sum: 486c5053084f4c4bc9fad386ca6cdaf0
+SHA1: 2c8dee4e65d22edf61e30644c2172f7a2bf5641a
+SHA256: 32add0744d9ca8137dbb2e3171a2abae324b96c2306a085ed6d4fd1c5d8dbfb7
+
+Package: com.yzdmm.wetypeplus
+Name: WetypePlus
+Version: 3.0.0
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: 微信输入法键盘上方叠加工具栏(光标/粘贴/符号)；放在键盘顶边之上空隙，不压按键也不占底部安全区
+Filename: debs/com.yzdmm.wetypeplus_3.0.0_iphoneos-arm64e.deb
+Size: 17176
+MD5sum: 087004860f11b2557dec0a1649eb42ab
+SHA1: ed0baa10d5c14d4579a4aef5ed275834bbda54ba
+SHA256: 84c4331684abd8d8f81b728cd1969f71b9cda83b1651c0658a2be086ba7d867c
+
+Package: com.yzdmm.wetypeplus
+Name: WetypePlus
+Version: 3.0.1
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: 微信输入法键盘内工具栏(光标/粘贴/符号)；用工具栏替换微信键盘顶部图标行(按住说话/语音/AI等)，占据图标行原位置，不压按键不挡输入框
+Filename: debs/com.yzdmm.wetypeplus_3.0.1_iphoneos-arm64e.deb
+Size: 21144
+MD5sum: 1a4dd10ebf718911d73c53340654c6fd
+SHA1: 546b207aa78a118ae550a0fb80db514c1855417d
+SHA256: 8a930de846d145741d73807b8eab97920c7a4481dfe2ba372416ba82533d9050
+
+Package: com.yzdmm.wetypeplus
+Name: WetypePlus
+Version: 3.0.2
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: 微信输入法键盘内工具栏(光标/粘贴/符号)；递归按类名WBTopBar定位图标行、占据其原位并隐藏其按钮，不压按键；附几何日志wp_geo.log
+Filename: debs/com.yzdmm.wetypeplus_3.0.2_iphoneos-arm64e.deb
+Size: 22948
+MD5sum: 07f4e1603323d2d8abf0385dd54b4fed
+SHA1: 8b147b0a6402f3eb6f0ddbafde9a64e48364a172
+SHA256: 0c1ebbe833577f5f95f7f9338a290293856db487c47f010dd1f1135cfa88af21
+
 Package: com.roa.randopenapp
 Name: 随机开启app
 Version: 1.3.1
@@ -206,31 +542,3 @@ Size: 30508
 MD5sum: b58a296bc51652d448923b1c475d7a98
 SHA1: 71326a08804d118822bec2e6d7b343e4dc257071
 SHA256: 031519d30c5e663e24bd8cea4bc6a32a0f0d7dcf255a6067c5025480cb74619b
-
-Package: com.yzdmm.keyboardpluspro
-Name: KeyboardPlusPro
-Version: 1.0.14
-Architecture: iphoneos-arm64e
-Maintainer: yzdmm
-Author: yzdmm
-Section: Tweaks
-Description: Keyboard enhancement - cursor, clipboard, symbol bar, layout, gestures, theme, haptic, caps lock
-Filename: ./debs/com.yzdmm.keyboardpluspro_1.0.14_iphoneos-arm64e.deb
-Size: 61376
-MD5sum: b65fadc5e7189e067c66960407914e11
-SHA1: 5a3414b1af7f2ef68e05b6b204e642e601dd5835
-SHA256: b804a8edda6a598232b4b754e1cf24f4b75cbbcb3bfa4811b96d14bb9a398dc1
-
-Package: com.yzdmm.wetypeplus
-Name: WetypePlus
-Version: 3.0.2
-Architecture: iphoneos-arm64e
-Maintainer: yzdmm
-Author: yzdmm
-Section: Tweaks
-Description: 微信输入法键盘内工具栏(光标/粘贴/符号)；递归按类名WBTopBar定位图标行、占据其原位并隐藏其按钮，不压按键；附几何日志wp_geo.log
-Filename: ./debs/com.yzdmm.wetypeplus_3.0.2_iphoneos-arm64e.deb
-Size: 22948
-MD5sum: 07f4e1603323d2d8abf0385dd54b4fed
-SHA1: 8b147b0a6402f3eb6f0ddbafde9a64e48364a172
-SHA256: 0c1ebbe833577f5f95f7f9338a290293856db487c47f010dd1f1135cfa88af21
