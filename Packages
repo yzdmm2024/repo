@@ -223,14 +223,14 @@ SHA256: b804a8edda6a598232b4b754e1cf24f4b75cbbcb3bfa4811b96d14bb9a398dc1
 
 Package: com.yzdmm.wetypeplus
 Name: WetypePlus
-Version: 2.0.2
+Version: 3.0.0
 Architecture: iphoneos-arm64e
 Maintainer: yzdmm
 Author: yzdmm
 Section: Tweaks
-Description: 微信输入法键盘内叠加工具栏(光标/粘贴/符号)；整体上移键盘内容腾出底部空条，工具栏贴屏幕底边
-Filename: ./debs/com.yzdmm.wetypeplus_2.0.2_iphoneos-arm64e.deb
-Size: 18332
-MD5sum: 486c5053084f4c4bc9fad386ca6cdaf0
-SHA1: 2c8dee4e65d22edf61e30644c2172f7a2bf5641a
-SHA256: 32add0744d9ca8137dbb2e3171a2abae324b96c2306a085ed6d4fd1c5d8dbfb7
+Description: 微信输入法键盘上方叠加工具栏(光标/粘贴/符号)；放在键盘顶边之上空隙，不压按键也不占底部安全区
+Filename: ./debs/com.yzdmm.wetypeplus_3.0.0_iphoneos-arm64e.deb
+Size: 17176
+MD5sum: 087004860f11b2557dec0a1649eb42ab
+SHA1: ed0baa10d5c14d4579a4aef5ed275834bbda54ba
+SHA256: 84c4331684abd8d8f81b728cd1969f71b9cda83b1651c0658a2be086ba7d867c
