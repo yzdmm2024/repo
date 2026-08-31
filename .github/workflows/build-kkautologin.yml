@@ -1,0 +1,122 @@
+# Build KKGameAutoLogin (arm64e) 免登录插件 on GitHub's macOS runner,
+# then stage deb into debs/, regen Packages index, push so Pages refreshes.
+# Trigger: manual only (workflow_dispatch).
+name: Build kkautologin & update source
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: macos-14
+    env:
+      HOMEBREW_NO_REQUIRE_TAP_TRUST: "1"
+    steps:
+      - name: Checkout this repo (source site)
+        uses: actions/checkout@v4
+
+      - name: Checkout kkautologin source (yzdmm-dylib)
+        uses: actions/checkout@v4
+        with:
+          repository: yzdmm2024/yzdmm-dylib
+          ref: main
+          path: kkautologin_src
+
+      - name: Install Theos dependencies
+        run: |
+          brew install ldid dpkg xz perl || true
+
+      - name: Install Theos
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          git clone --depth=1 https://github.com/theos/theos.git $HOME/theos
+          export THEOS=$HOME/theos
+          $THEOS/bin/update-theos
+          mkdir -p $HOME/theos/sdks
+          gh release download -R theos/sdks -p "iPhoneOS14.5.sdk.tar.xz" -D /tmp
+          tar -xJf /tmp/iPhoneOS14.5.sdk.tar.xz -C $HOME/theos/sdks/
+          ln -sf "$HOME/theos/sdks/iPhoneOS14.5.sdk" "$HOME/theos/sdks/iPhoneOS14.0.sdk"
+
+      - name: Build with Theos (FAT arm64 + arm64e)
+        working-directory: kkautologin_src/kkautologin
+        env:
+          THEOS: /Users/runner/theos
+        run: |
+          rm -rf .theos
+          make
+          echo "=== Build output ==="
+          find .theos -type f 2>/dev/null | head -50
+
+      - name: Package deb manually (rootless TweakInject layout)
+        working-directory: kkautologin_src/kkautologin
+        run: |
+          set -e
+          VERSION=$(grep '^Version:' control | awk '{print $2}')
+          echo "VERSION=$VERSION"
+          mkdir -p stage/DEBIAN
+
+          # ---- TweakInject：dylib + Filter plist（roothide 下落到 /var/jb/usr/lib/TweakInject）----
+          mkdir -p stage/var/jb/usr/lib/TweakInject
+          TWEAK_BIN=""
+          for c in .theos/obj/debug/KKGameAutoLogin.dylib .theos/obj/KKGameAutoLogin.dylib; do
+            [ -f "$c" ] && TWEAK_BIN="$c" && break
+          done
+          [ -z "$TWEAK_BIN" ] && { echo "FATAL: KKGameAutoLogin.dylib not found"; find .theos -name '*.dylib' 2>/dev/null; exit 1; }
+          cp "$TWEAK_BIN" stage/var/jb/usr/lib/TweakInject/KKGameAutoLogin.dylib
+          cp src/Filter.plist stage/var/jb/usr/lib/TweakInject/KKGameAutoLogin.plist
+
+          # ---- PreferenceBundles：先铺 layout（含手写 Info.plist/Root.plist），再拷 theos 产出的可执行 ----
+          mkdir -p stage/var/jb/Library/PreferenceBundles
+          cp -R layout/Library/PreferenceBundles/KKGameAutoLoginPrefs.bundle stage/var/jb/Library/PreferenceBundles/
+          PREFS_BIN=""
+          for c in .theos/obj/debug/KKGameAutoLoginPrefs.bundle/KKGameAutoLoginPrefs .theos/obj/KKGameAutoLoginPrefs.bundle/KKGameAutoLoginPrefs; do
+            [ -f "$c" ] && PREFS_BIN="$c" && break
+          done
+          [ -z "$PREFS_BIN" ] && { echo "FATAL: KKGameAutoLoginPrefs executable not found"; find .theos -name 'KKGameAutoLoginPrefs' 2>/dev/null; exit 1; }
+          cp "$PREFS_BIN" stage/var/jb/Library/PreferenceBundles/KKGameAutoLoginPrefs.bundle/
+
+          # ---- PreferenceLoader 入口 ----
+          mkdir -p stage/var/jb/Library/PreferenceLoader/Preferences
+          cp layout/Library/PreferenceLoader/Preferences/KKGameAutoLogin.plist stage/var/jb/Library/PreferenceLoader/Preferences/
+
+          # ---- 自检：偏好 bundle 关键文件缺一不可 ----
+          test -f stage/var/jb/Library/PreferenceBundles/KKGameAutoLoginPrefs.bundle/KKGameAutoLoginPrefs || { echo "FATAL: prefs executable missing"; exit 1; }
+          test -f stage/var/jb/Library/PreferenceBundles/KKGameAutoLoginPrefs.bundle/Root.plist || { echo "FATAL: Root.plist missing"; exit 1; }
+
+          # ---- 保险：对所有 Mach-O 显式假签名 ----
+          find stage -type f \( -name "*.dylib" -o -name "KKGameAutoLoginPrefs" \) -exec ldid -S {} \;
+
+          # ---- DEBIAN ----
+          cp control stage/DEBIAN/control
+          sed -i '' "s/^Version:.*/Version: $VERSION/" stage/DEBIAN/control
+          echo "" >> stage/DEBIAN/control
+          if [ -f DEBIAN/postinst ]; then cp DEBIAN/postinst stage/DEBIAN/postinst; chmod 755 stage/DEBIAN/postinst; fi
+          chmod 755 stage/DEBIAN/control
+
+          echo "=== Stage layout ==="
+          find stage -type f
+
+          mkdir -p "$GITHUB_WORKSPACE/debs"
+          DEB="$GITHUB_WORKSPACE/debs/com.yzdmm.kkgameautologin_${VERSION}_iphoneos-arm64e.deb"
+          dpkg-deb --root-owner-group -b stage "$DEB"
+          echo "=== Deb -> $DEB ==="
+          ls -la "$GITHUB_WORKSPACE/debs/"
+
+      - name: Regenerate metadata & push
+        run: |
+          set -e
+          python3 tools/update.py
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no changes to commit"
+            exit 0
+          fi
+          NEWDEB=$(ls debs/*kkgameautologin*.deb 2>/dev/null | head -n1 || true)
+          git commit -m "update: KKGameAutoLogin 免登录 arm64e ${NEWDEB:-}"
+          git push origin main
