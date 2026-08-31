@@ -18,12 +18,12 @@ jobs:
       - name: Checkout this repo (source site)
         uses: actions/checkout@v4
 
-      - name: Checkout kkautologin source (yzdmm-dylib)
+      - name: Checkout kkautologin source (yzdmm-dylib) — 仓库外，避免嵌套 git 仓库污染本源
         uses: actions/checkout@v4
         with:
           repository: yzdmm2024/yzdmm-dylib
           ref: main
-          path: kkautologin_src
+          path: ../kkautologin_src
 
       - name: Install Theos dependencies
         run: |
@@ -42,7 +42,7 @@ jobs:
           ln -sf "$HOME/theos/sdks/iPhoneOS14.5.sdk" "$HOME/theos/sdks/iPhoneOS14.0.sdk"
 
       - name: Build with Theos (FAT arm64 + arm64e)
-        working-directory: kkautologin_src/kkautologin
+        working-directory: ../kkautologin_src/kkautologin
         env:
           THEOS: /Users/runner/theos
         run: |
@@ -52,7 +52,7 @@ jobs:
           find .theos -type f 2>/dev/null | head -50
 
       - name: Package deb manually (rootless TweakInject layout)
-        working-directory: kkautologin_src/kkautologin
+        working-directory: ../kkautologin_src/kkautologin
         run: |
           set -e
           VERSION=$(grep '^Version:' control | awk '{print $2}')
@@ -112,7 +112,8 @@ jobs:
           python3 tools/update.py
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
+          # 仅精确提交源元数据，绝不 git add -A（会吞入工作区里任何嵌套 git 仓库形成 gitlink）
+          git add debs Packages Packages.gz Packages.bz2 Release
           if git diff --cached --quiet; then
             echo "no changes to commit"
             exit 0
