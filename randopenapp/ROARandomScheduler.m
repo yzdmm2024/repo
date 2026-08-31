@@ -114,6 +114,9 @@ static void roa_testRequest(CFNotificationCenterRef center, void *observer,
     // 设置可能已变，重算目标
     _targetDate = nil;
     _todayKey = [self dayKeyForDate:[NSDate date]];
+    // 设置变更时重置"今日已开"标记，让用户改动后当天能重新触发（不影响正常每日一次逻辑）
+    [[self prefs] removeObjectForKey:kROALastOpenDate];
+    [[self prefs] synchronize];
     [self computeTargetIfNeeded];
 }
 
