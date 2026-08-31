@@ -230,7 +230,7 @@ Author: yzdmm2024
 Section: Tweaks
 Description: 隐私与安全性：在「设置」内集中管理每个 App 的 照片/本地网络/麦克风/相机/定位/跟踪/通讯录 共七类权限。照片、麦克风、相机、定位、跟踪、通讯录 直接改写系统 TCC 数据库；本地网络为尽力项，需系统设置兜底。支持 App 分类(用户/系统/巨魔)、搜索、统计、批量允许/拒绝/重置、配置导入导出。
 Depends: preferenceloader
-Filename: ./debs/pm_publish.deb
+Filename: ./debs/com.ntm.privacymanager_1.0.2_iphoneos-arm64.deb
 Size: 35640
 MD5sum: 5a8f437fbf43449ceb932b3a6dad4452
 SHA1: 76451a64fb7baee0f3793f6f2225ab43ddfce46c
