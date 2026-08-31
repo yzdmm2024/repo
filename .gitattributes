@@ -1,0 +1,6 @@
+# 强制这些文本文件以 LF 入库，避免 Windows CRLF 干扰校验和自洽
+Packages  text eol=lf
+Packages.gz -text
+Packages.bz2 -text
+Release   text eol=lf
+*.deb     binary
