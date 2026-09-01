@@ -210,17 +210,17 @@ SHA256: 1dd8808c3ae2f40d866432a3f580cd51d9a4063777a1e0d0ba1981114066c9b3
 
 Package: com.yzdmm.kkgameautologin
 Name: KKGameAutoLogin
-Version: 1.0.12
+Version: 1.0.13
 Architecture: iphoneos-arm64e
 Maintainer: yzdmm
 Author: yzdmm
 Section: Tweaks
 Description: 用于验证（免登录）
-Filename: debs/com.yzdmm.kkgameautologin_1.0.12_iphoneos-arm64e.deb
-Size: 18592
-MD5sum: 67c59435c5d9f41e3d8b16a4e39820f2
-SHA1: 478dfe5391d3944582dae16797ec5f4259e53629
-SHA256: 2d2f65a9170aa66b7520246e45b8327a1ca0f9219db576d232400dd2c849fbfa
+Filename: debs/com.yzdmm.kkgameautologin_1.0.13_iphoneos-arm64e.deb
+Size: 18672
+MD5sum: 935867cbd9e86d462ebde591ffe7fc73
+SHA1: 2c10479918a733985636bec6afeb08099e1a5ab4
+SHA256: f5c972c836005d2efbbc9f8b95782ff3180751c15f3348c58cb6ef6160fe0a04
 
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
