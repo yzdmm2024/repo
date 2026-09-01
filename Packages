@@ -236,19 +236,21 @@ SHA1: 71326a08804d118822bec2e6d7b343e4dc257071
 SHA256: 031519d30c5e663e24bd8cea4bc6a32a0f0d7dcf255a6067c5025480cb74619b
 Icon: ./icons/randopenapp.png
 
+Icon: ./icons/privacymanager.png
+
+
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
-Version: 1.0.6
+Version: 1.0.7
 Architecture: iphoneos-arm64
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
 Description: 隐私与安全性：系统「设置→隐私与安全性」的实时镜像。App 列表直接取自系统 TCC 数据库（与系统面板完全一致），七个权限开关实时读写同一 TCC.db——你在此开/关，系统设置立刻同步（双向）。照片、麦克风、相机、定位、跟踪、通讯录 直写 TCC；本地网络为尽力项。支持批量允许/拒绝、单 App 重置、配置导入导出。
 Depends: preferenceloader
-Filename: ./debs/com.ntm.privacymanager_1.0.6_iphoneos-arm64.deb
-Size: 25104
-MD5sum: cca278d62158204603989f4f35942480
-SHA1: da577ad5a7d8536ef9a2571905d7fef454aa437f
-SHA256: 94d77fcc238451a40375add718de3c70616685c90c912095b8563bcbc8f66145
-
+Filename: ./debs/com.ntm.privacymanager_1.0.7_iphoneos-arm64.deb
+Size: 26100
+MD5sum: b9d24f692e0ad06cde960246723f5e91
+SHA1: ae7c055c41fd950f4c6c4948b7b60b845ec75e45
+SHA256: a6d9cd195363b182601c0188fd8b22703bdd8c0256bcef307382f2fff063ba44
 Icon: ./icons/privacymanager.png
