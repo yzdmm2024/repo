@@ -250,4 +250,4 @@ Size: 26520
 MD5sum: 465359e4ce9e54317032d221794c9cb9
 SHA1: d347b6b76a69e883e3ce11e2f0d7cb0a677616b0
 SHA256: 8f507b0a37bdaea83f131981e386e115058ceed4a9157b559ef8cd0a4124777e
-Icon: ./icons/privacymanager.png
+Icon: https://cdn.jsdelivr.net/gh/yzdmm2024/repo@main/icons/privacymanager.png
