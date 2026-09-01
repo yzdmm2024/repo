@@ -193,6 +193,21 @@ MD5sum: 2d420843898288c3a27d611bf1504006
 SHA1: 2ea4ecc5f2f80c3a9c1b492390e0379732838702
 SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
+Package: com.ntm.privacymanager
+Name: 隐私与安全性
+Version: 1.0.4
+Architecture: iphoneos-arm64
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Description: 隐私与安全性：在「设置」内集中管理每个 App 的 照片/本地网络/麦克风/相机/定位/跟踪/通讯录 共七类权限。照片、麦克风、相机、定位、跟踪、通讯录 直接改写系统 TCC 数据库；本地网络为尽力项，需系统设置兜底。支持 App 分类(用户/系统/巨魔)、搜索、统计、批量允许/拒绝/重置、配置导入导出。
+Depends: preferenceloader
+Filename: debs/com.ntm.privacymanager_1.0.4_iphoneos-arm64.deb
+Size: 39384
+MD5sum: 6745d35f90af27b41d3e2231478f57d9
+SHA1: a84734d64f461b9cdf866d0594a51236f244795e
+SHA256: 1dd8808c3ae2f40d866432a3f580cd51d9a4063777a1e0d0ba1981114066c9b3
+
 Package: com.yzdmm.kkgameautologin
 Name: KKGameAutoLogin
 Version: 1.0.10
@@ -207,6 +222,35 @@ MD5sum: b80337af7bb290863a8ac27aa562582d
 SHA1: 494ee11b5e68d65a4cc3ae6e38d55292b942a447
 SHA256: 8feebb68aefc2a92781a4964083e20109a689a84781a1476828d553fe34164e4
 
+Package: com.yzdmm.kkgameautologin
+Name: KKGameAutoLogin
+Version: 1.0.11
+Architecture: iphoneos-arm64e
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: 用于验证（免登录）
+Filename: debs/com.yzdmm.kkgameautologin_1.0.11_iphoneos-arm64e.deb
+Size: 16416
+MD5sum: cfa460eb1d5fb687222a3a975fb38cc8
+SHA1: d4c7cfae9863e94555cc3f7361b519acc89d9723
+SHA256: 5c1a0d1e3b48391b064c4c41132b6ed848355c3ac98383ccf1499a9eb29e0060
+
+Package: com.ntm.privacymanager
+Name: 隐私与安全性
+Version: 1.0.3
+Architecture: iphoneos-arm64
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Description: 隐私与安全性：在「设置」内集中管理每个 App 的 照片/本地网络/麦克风/相机/定位/跟踪/通讯录 共七类权限。照片、麦克风、相机、定位、跟踪、通讯录 直接改写系统 TCC 数据库；本地网络为尽力项，需系统设置兜底。支持 App 分类(用户/系统/巨魔)、搜索、统计、批量允许/拒绝/重置、配置导入导出。
+Depends: preferenceloader
+Filename: debs/pm_v103.deb
+Size: 36992
+MD5sum: 024e6969fe7310b4af5bd39924f981ff
+SHA1: 2eb9b9ac1e4fee6337c032ae9659f346d32769b0
+SHA256: cbe454d89f8ece887a00cfd22396298275c72ca146f78fd3f90bd4d96c7b19fc
+
 Package: com.roa.randopenapp
 Name: 随机开启app
 Version: 1.3.1
@@ -220,18 +264,3 @@ Size: 30508
 MD5sum: b58a296bc51652d448923b1c475d7a98
 SHA1: 71326a08804d118822bec2e6d7b343e4dc257071
 SHA256: 031519d30c5e663e24bd8cea4bc6a32a0f0d7dcf255a6067c5025480cb74619b
-
-Package: com.ntm.privacymanager
-Name: 隐私与安全性
-Version: 1.0.4
-Architecture: iphoneos-arm64
-Maintainer: yzdmm2024
-Author: yzdmm2024
-Section: Tweaks
-Description: 隐私与安全性：在「设置」内集中管理每个 App 的 照片/本地网络/麦克风/相机/定位/跟踪/通讯录 共七类权限。照片、麦克风、相机、定位、跟踪、通讯录 直接改写系统 TCC 数据库；本地网络为尽力项，需系统设置兜底。支持 App 分类(用户/系统/巨魔)、搜索、统计、批量允许/拒绝/重置、配置导入导出。
-Depends: preferenceloader
-Filename: ./debs/com.ntm.privacymanager_1.0.4_iphoneos-arm64.deb
-Size: 39384
-MD5sum: 6745d35f90af27b41d3e2231478f57d9
-SHA1: a84734d64f461b9cdf866d0594a51236f244795e
-SHA256: 1dd8808c3ae2f40d866432a3f580cd51d9a4063777a1e0d0ba1981114066c9b3
