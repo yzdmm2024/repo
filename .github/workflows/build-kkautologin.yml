@@ -23,7 +23,7 @@ jobs:
         with:
           repository: yzdmm2024/yzdmm-dylib
           ref: main
-          path: ../kkautologin_src
+          path: kkautologin_src
 
       - name: Install Theos dependencies
         run: |
@@ -42,7 +42,7 @@ jobs:
           ln -sf "$HOME/theos/sdks/iPhoneOS14.5.sdk" "$HOME/theos/sdks/iPhoneOS14.0.sdk"
 
       - name: Build with Theos (FAT arm64 + arm64e)
-        working-directory: ../kkautologin_src/kkautologin
+        working-directory: kkautologin_src/kkautologin
         env:
           THEOS: /Users/runner/theos
         run: |
@@ -52,7 +52,7 @@ jobs:
           find .theos -type f 2>/dev/null | head -50
 
       - name: Package deb manually (rootless TweakInject layout)
-        working-directory: ../kkautologin_src/kkautologin
+        working-directory: kkautologin_src/kkautologin
         run: |
           set -e
           VERSION=$(grep '^Version:' control | awk '{print $2}')
