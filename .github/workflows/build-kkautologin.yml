@@ -55,7 +55,7 @@ jobs:
         working-directory: kkautologin_src/kkautologin
         run: |
           set -e
-          VERSION=$(grep '^Version:' control | awk '{print $2}')
+          VERSION=$(grep '^Version:' control | awk '{print $2}' | tr -d '\r')
           echo "VERSION=$VERSION"
           mkdir -p stage/DEBIAN
 
@@ -101,6 +101,8 @@ jobs:
           find stage -type f
 
           mkdir -p "$GITHUB_WORKSPACE/debs"
+          # 清掉旧的 kkgame deb（含可能带 \r 的坏文件名），再生成唯一的最新版
+          rm -f "$GITHUB_WORKSPACE"/debs/com.yzdmm.kkgameautologin_*.deb
           DEB="$GITHUB_WORKSPACE/debs/com.yzdmm.kkgameautologin_${VERSION}_iphoneos-arm64e.deb"
           dpkg-deb --root-owner-group -b stage "$DEB"
           echo "=== Deb -> $DEB ==="
