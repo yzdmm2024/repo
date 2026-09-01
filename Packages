@@ -238,7 +238,7 @@ Icon: http://101.200.189.251/repo/icons/randopenapp.png
 
 Package: com.ntm.privacymanager
 Name: 隐私总开关
-Version: 1.0.11
+Version: 1.0.12
 Architecture: iphoneos-arm64
 Maintainer: yzdmm2024
 Author: yzdmm2024
@@ -246,8 +246,8 @@ Section: Tweaks
 Description: 隐私总开关：系统「设置→隐私与安全性」的实时镜像。App 列表直接取自系统 TCC 数据库（与系统面板完全一致），七个权限开关实时读写同一 TCC.db——你在此开/关，系统设置立刻同步（双向）。顶部「按功能一键开关」可一次性对某权限（照片/本地网络/麦克风/相机/定位/跟踪/通讯录）对全部应用开启或关闭；每个 App 卡片支持独立开关与重置。本地网络为尽力项。支持配置导入导出。
 Depends: preferenceloader
 Filename: ./debs/PrivacyManager.deb
-Size: 42040
-MD5sum: efc5cbd0c77bf6da15636d08216bb81f
-SHA1: 9577f87d9588fb0b7ccfd232b6d0c96e1b63235f
-SHA256: 1dfc972c9912845165e7f623a0da5263a003f92d7fce56bc6f5116136e18a1ab
-Icon: http://101.200.189.251/repo/icons/privacymanager.png
+Size: 42036
+MD5sum: 29283c3a83a4b447d19d65545430328f
+SHA1: 5b50e1f1e742d8620d6b7323b19635c6a0c65c4d
+SHA256: b9e8ddfa8ede889f94a4205912b83f5a2c23ea64f74c60f875b2ea92ce00ca0d
+Icon: ./icons/privacymanager.png
