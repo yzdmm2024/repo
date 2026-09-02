@@ -1,0 +1,9 @@
+Package: com.dev.autoclicker
+Name: AutoClicker
+Version: 1.1
+Architecture: iphoneos-arm64
+Description: 全能自动连点器 - 支持点击、双击、滑动、识字、识图，任务可持久化保存
+Maintainer: Dev
+Author: Dev
+Section: Tweaks
+Depends: mobilesubstrate

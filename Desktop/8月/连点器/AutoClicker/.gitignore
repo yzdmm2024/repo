@@ -1,0 +1,8 @@
+*.o
+*.dylib
+输出成品/
+构建中间/
+build/obj/
+build/Tweak.gen.m
+build/Tweak.m
+assets/
