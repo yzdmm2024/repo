@@ -12,7 +12,7 @@ Size: 306472
 MD5sum: eb24a6107a67c618f17a9df83f680d02
 SHA1: cc061001cc9e9f96bc2d0c9c7e3f206a992d0bd7
 SHA256: 98047f09fab76a62bb1759a30f3c183f34e2b1016fadb6d483e4540d31cc3acd
-Icon: https://cdn.jsdelivr.net/gh/yzdmm2024/repo@main/icons/superscreenshot.png
+Icon: https://cdn.jsdelivr.net/gh/yzdmm2024/repo@e7fde335cf261b56f134fa337eae6f095ea4b1d1/icons/superscreenshot.png
 
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
@@ -28,7 +28,7 @@ Size: 88732
 MD5sum: 946bece2e12ef3d5d46cd60d416df96f
 SHA1: ff6e1de8a3983fbe35a4a500720757bc12a34ff7
 SHA256: 1f416ce10d1acbf59001addd3b541181a68143d5ec73d6eec9e5caaf7f59c9a5
-Icon: https://cdn.jsdelivr.net/gh/yzdmm2024/repo@main/icons/batteryanalyzer.png
+Icon: https://cdn.jsdelivr.net/gh/yzdmm2024/repo@e7fde335cf261b56f134fa337eae6f095ea4b1d1/icons/batteryanalyzer.png
 
 Package: com.ntm.notifymanager
 Name: 通知管理
@@ -44,7 +44,7 @@ Size: 94112
 MD5sum: 2d420843898288c3a27d611bf1504006
 SHA1: 2ea4ecc5f2f80c3a9c1b492390e0379732838702
 SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
-Icon: https://cdn.jsdelivr.net/gh/yzdmm2024/repo@main/icons/notifymanager.png
+Icon: https://cdn.jsdelivr.net/gh/yzdmm2024/repo@e7fde335cf261b56f134fa337eae6f095ea4b1d1/icons/notifymanager.png
 
 Package: com.yzdmm.kkgameautologin
 Name: KKGameAutoLogin
@@ -59,7 +59,7 @@ Size: 18672
 MD5sum: 935867cbd9e86d462ebde591ffe7fc73
 SHA1: 2c10479918a733985636bec6afeb08099e1a5ab4
 SHA256: f5c972c836005d2efbbc9f8b95782ff3180751c15f3348c58cb6ef6160fe0a04
-Icon: https://cdn.jsdelivr.net/gh/yzdmm2024/repo@main/icons/kkgameautologin.png
+Icon: https://cdn.jsdelivr.net/gh/yzdmm2024/repo@e7fde335cf261b56f134fa337eae6f095ea4b1d1/icons/kkgameautologin.png
 
 Package: com.roa.randopenapp
 Name: 随机开启app
@@ -74,7 +74,7 @@ Size: 30508
 MD5sum: b58a296bc51652d448923b1c475d7a98
 SHA1: 71326a08804d118822bec2e6d7b343e4dc257071
 SHA256: 031519d30c5e663e24bd8cea4bc6a32a0f0d7dcf255a6067c5025480cb74619b
-Icon: https://cdn.jsdelivr.net/gh/yzdmm2024/repo@main/icons/randopenapp.png
+Icon: https://cdn.jsdelivr.net/gh/yzdmm2024/repo@e7fde335cf261b56f134fa337eae6f095ea4b1d1/icons/randopenapp.png
 
 Package: com.ntm.privacymanager
 Name: 隐私总开关
@@ -90,4 +90,4 @@ Size: 44400
 MD5sum: e7d0c880e73758ac08832380983c3fba
 SHA1: c3c1e4e1a6f0ab8fecb7d177c7def6839844166a
 SHA256: c733ef29fdde2a82638d175ecc73e089688c024c5867475fd84c2ac58a164482
-Icon: https://cdn.jsdelivr.net/gh/yzdmm2024/repo@main/icons/privacymanager.png
+Icon: https://cdn.jsdelivr.net/gh/yzdmm2024/repo@e7fde335cf261b56f134fa337eae6f095ea4b1d1/icons/privacymanager.png
