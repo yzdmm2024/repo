@@ -91,3 +91,19 @@ MD5sum: e7d0c880e73758ac08832380983c3fba
 SHA1: c3c1e4e1a6f0ab8fecb7d177c7def6839844166a
 SHA256: c733ef29fdde2a82638d175ecc73e089688c024c5867475fd84c2ac58a164482
 Icon: https://cdn.jsdelivr.net/gh/yzdmm2024/repo@e7fde335cf261b56f134fa337eae6f095ea4b1d1/icons/privacymanager.png
+
+
+Package: com.yzdmm.nbdismissad
+Name: NB广告跳过
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Description: NB助手广告自动跳过（续签/开屏半屏广告一键关闭）。通过 hook UIView 的 addSubview/didAddSubview 与 UIViewController 的 presentViewController，按广告类名特征（AdView/HalfScreen/Splash/ZJLocal/Popup/广告 等）自动移除并 dismiss。仅注入 com.nbmaster.app，不影响系统与其他 App。
+Depends: mobilesubstrate, firmware(>=14.0)
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Filename: ./debs/com.yzdmm.nbdismissad_1.0.0_iphoneos-arm64.deb
+Size: 7504
+MD5sum: 94ade76c0c54379e064f88c3330a3b85
+SHA1: a09ca91f7271f7b523b25a400c70d3d5b416df08
+SHA256: a448ed382cdf5baefc77c1af1319ad6696db2425a13cb2585e2854d19ac4b4fe
