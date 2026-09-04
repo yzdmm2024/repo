@@ -9,10 +9,10 @@ Author: PS
 Maintainer: PS
 Description: 一键分享文件到目标App - 点击dylib自动打开TrollFools，ipa/tipa自动打开TrollStore，deb自动打开Sileo
 Filename: debs/FileShareTweak.deb
-Size: 9824
-MD5sum: 8ef502f8e81b4aebb3b66e05e3839faa
-SHA1: 4a2b57559d3aa867b944e1103ea0ef7664768f07
-SHA256: 49889da3ca771493da1748c37475cd1f2f7535847d3d25ddbd100fd0513a793c
+Size: 9854
+MD5sum: bf3fc5eff4a9cb16bd1f6d2a79209b8d
+SHA1: a2c02729d1f32563597b13fd67ca43fd88aae563
+SHA256: 8deed86faae544db93845962dfa8b1edeb3b3f6471a743a08063a54a00acd0b2
 
 Package: com.ntm.privacymanager
 Name: 隐私总开关
