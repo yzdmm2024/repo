@@ -132,8 +132,10 @@ def build_release(content_str):
     if os.path.exists(RELEASE_PATH):
         with open(RELEASE_PATH, 'r', encoding='utf-8') as f:
             old = f.read()
-        # 保留 Date 之前的所有头字段，丢弃旧的校验和块
-        header = old.split('MD5Sum:')[0].strip() + '\n'
+        # 保留 Date 之前的所有头字段，丢弃旧的 Date 与校验和块
+        head = old.split('MD5Sum:')[0]
+        head = '\n'.join(l for l in head.splitlines() if not l.startswith('Date:'))
+        header = head.strip() + '\n'
     date = email.utils.formatdate(time.time(), usegmt=True)
     packages_bytes = content_str.encode('utf-8')
     files = {
