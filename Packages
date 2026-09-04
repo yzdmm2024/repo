@@ -1,6 +1,6 @@
 Package: com.ps.filesharetweak
 Name: FileShareTweak
-Version: 1.0.9
+Version: 1.0.10
 Architecture: iphoneos-arm64e
 Description: 一键将 dylib/deb/ipa/tipa 路由到 TrollFools/Sileo/TrollStore
 Maintainer: yzdmm2024 <yzdmm2023@gmail.com>
@@ -8,10 +8,10 @@ Author: yzdmm2024
 Section: Tweaks
 Depends: firmware (>= 16.0), preferenceloader
 Filename: debs/FileShareTweak.deb
-Size: 11112
-MD5sum: 59c0db836a9ba09f64e74a74769c05c9
-SHA1: 590103d2089e4df9bb993d2ae7412ebf9e268441
-SHA256: cb7dfdc056d299b17d670c89329f7f9f95cf5eefe6cdb51552a5c0e3309547d5
+Size: 12854
+MD5sum: 6d71da09c33a9b48eb94595e57277273
+SHA1: cc168b8758feebd2e65fb38f454c638fdc8295e8
+SHA256: 8dd432027068aa6c6e231e4742844a1ddf91c726f4048869acaf114ff2acffb7
 
 Package: com.ntm.privacymanager
 Name: 隐私总开关
