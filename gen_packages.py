@@ -146,8 +146,8 @@ def build_release(content_str):
     for fn, b in files.items():
         p = os.path.join(HERE, fn)
         if fn == 'Packages':
-            with open(p, 'w', encoding='utf-8') as f:
-                f.write(content_str)
+            with open(p, 'wb') as f:
+                f.write(packages_bytes)
         else:
             with open(p, 'wb') as f:
                 f.write(b)
@@ -191,8 +191,9 @@ def main():
         print(f'  + {info.get("Package")} {info.get("Version")}  [{fname}]')
 
     content = ''.join(entries)
-    with open(PACKAGES_PATH, 'w', encoding='utf-8') as f:
-        f.write(content)
+    # 二进制写入，避免 Windows 文本模式把 \n 转成 \r\n 导致与 Release 校验和不一致
+    with open(PACKAGES_PATH, 'wb') as f:
+        f.write(content.encode('utf-8'))
 
     files = build_release(content)
 
