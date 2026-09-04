@@ -16,72 +16,178 @@ MD5sum: 90c0f6a10d505b48bd172386b0384892
 SHA1: 272fe57bc8660139ab4d066096da4e321974136c
 SHA256: c32588de0acb34a3ff1cbd834fabd5e12f8b0e3ded33d1eabd2dd02b186ef04f
 
+Package: com.ntm.privacymanager
+Name: 隐私总开关
+Version: 1.0.16
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: preferenceloader
+Description: 隐私总开关：系统「设置→隐私与安全性」的实时镜像。App 列表直接取自系统 TCC 数据库（与系统面板完全一致），七个权限开关实时读写同一 TCC.db——你在此开/关，系统设置立刻同步（双向）。顶部「按功能一键开关」可一次性对某权限（照片/本地网络/麦克风/相机/定位/跟踪/通讯录）对全部应用开启或关闭；每个 App 卡片支持独立开关与重置。本地网络为尽力项。支持配置导入导出。
 Filename: debs/PrivacyManager.deb
 Size: 44400
 MD5sum: e7d0c880e73758ac08832380983c3fba
 SHA1: c3c1e4e1a6f0ab8fecb7d177c7def6839844166a
 SHA256: c733ef29fdde2a82638d175ecc73e089688c024c5867475fd84c2ac58a164482
 
+Package: com.axs.snapper3zhext
+Name: 超级截图
+Version: 6.20.9
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Description: 一款 iOS 越狱截图增强插件，已绑定设备 UDID 授权（需解锁码才能使用，在设置「设备授权」里复制 UDID 并发给开发者获取解锁码）。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。OCR 识别结果现按阅读顺序（上→下、同行左→右）重排，复制全部/问AI/翻译不再乱序；PaddleOCR 路径保留文字块坐标后精确排序。「问AI」按钮：选好截图后一键直接拉起「豆包」App 并把截图带进去（图同时存入剪贴板，豆包内长按输入框可粘贴），由你在豆包里直接打字提问；不再在插件内自建对话 / 发 API。v6.20.5：截图/长截图/编辑保存统一归入专属相册「超级截图」（兼容 iOS 14+ 限定访问权限，不再只进相机胶卷）；工具栏「去状态栏」按钮由「看图问AI」替代（位置不变）。v6.20.6：修复局部截图工具栏（框选浮层）缺失「看图问AI」按钮——此前该按钮只加到了主编辑工具栏，局部截图工具栏因默认顺序未含此 tag 被隐藏过滤；现已与主工具栏同源补齐（校验模型/拦截 DeepSeek/发图）。v6.20.7：相册名称由「SN3截图」改为「超级截图」（与插件名一致）。v6.20.8：原「看图问AI / 问AI」应用内对话按钮改为「打开豆包」（直接 Deep Link 进豆包 App 并带图）；删去纯文字「问AI」应用内对话按钮，工具栏只保留一个「打开豆包」。v6.20.9：新增「启动」按钮（工具栏第 3 排末位）——点它弹层选你要秒开的 App（微信 / QQ / 闲鱼 一键加，或填任意 App 的 scheme 自选如 dingtalk://、alipay://），选哪个就 Deep Link 秒开哪个，并把当前截图放进剪贴板（进 App 后长按输入框可粘贴）。在设置 → 快捷启动 里管理要秒开的 App 列表。
 Filename: debs/com.axs.snapper3zhext_6.20.9_iphoneos-arm64.deb
 Size: 306472
 MD5sum: eb24a6107a67c618f17a9df83f680d02
 SHA1: cc061001cc9e9f96bc2d0c9c7e3f206a992d0bd7
 SHA256: 98047f09fab76a62bb1759a30f3c183f34e2b1016fadb6d483e4540d31cc3acd
 
+Package: com.ntm.batteryanalyzer
+Name: 电池耗电分析
+Version: 1.6.7
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Description: 电池耗电分析：注入SpringBoard监控每App前台/后台运行时间与电量变化，估算每App耗电，显示电量历史与本次耗电统计
 Filename: debs/com.ntm.batteryanalyzer_1.6.7_iphoneos-arm64.deb
 Size: 88732
 MD5sum: 946bece2e12ef3d5d46cd60d416df96f
 SHA1: ff6e1de8a3983fbe35a4a500720757bc12a34ff7
 SHA256: 1f416ce10d1acbf59001addd3b541181a68143d5ec73d6eec9e5caaf7f59c9a5
 
+Package: com.ntm.notifymanager
+Name: 通知管理
+Version: 2.3.1
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Description: 通知管理：注入SpringBoard拦截通知展示，按分类(用户/巨魔/系统)管理每个App通知与网络。总开关+锁定屏幕/通知中心/横幅/声音/标记子开关，增强功能：仅隐藏角标、隐藏预览、后台自动断网、关键词过滤、应用分组、模式快照、拦截日志、筛选；网络策略(打开wifi/流量/wifi+流量/断网)同步系统蜂窝设置，支持搜索、批量控制、单应用重置、配置导入导出、邮件反馈
 Filename: debs/com.ntm.notifymanager_2.3.1_iphoneos-arm64.deb
 Size: 94112
 MD5sum: 2d420843898288c3a27d611bf1504006
 SHA1: 2ea4ecc5f2f80c3a9c1b492390e0379732838702
 SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
+Package: com.ntm.privacymanager
+Name: 隐私与安全性
+Version: 1.0.4
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: preferenceloader
+Description: 隐私与安全性：在「设置」内集中管理每个 App 的 照片/本地网络/麦克风/相机/定位/跟踪/通讯录 共七类权限。照片、麦克风、相机、定位、跟踪、通讯录 直接改写系统 TCC 数据库；本地网络为尽力项，需系统设置兜底。支持 App 分类(用户/系统/巨魔)、搜索、统计、批量允许/拒绝/重置、配置导入导出。
 Filename: debs/com.ntm.privacymanager_1.0.4_iphoneos-arm64.deb
 Size: 39384
 MD5sum: 6745d35f90af27b41d3e2231478f57d9
 SHA1: a84734d64f461b9cdf866d0594a51236f244795e
 SHA256: 1dd8808c3ae2f40d866432a3f580cd51d9a4063777a1e0d0ba1981114066c9b3
 
+Package: com.ntm.privacymanager
+Name: 隐私与安全性
+Version: 1.0.5
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: preferenceloader
+Description: 隐私与安全性：系统「设置→隐私与安全性」的实时镜像。App 列表直接取自系统 TCC 数据库（与系统面板完全一致），七个权限开关实时读写同一 TCC.db——你在此开/关，系统设置立刻同步（双向）。照片、麦克风、相机、定位、跟踪、通讯录 直写 TCC；本地网络为尽力项。支持批量允许/拒绝、单 App 重置、配置导入导出。
 Filename: debs/com.ntm.privacymanager_1.0.5_iphoneos-arm64.deb
 Size: 24028
 MD5sum: b8e2ce465636986da4814cfcbf9caf01
 SHA1: 0da72635b9a5f596e516cde117c8176660a1cf4e
 SHA256: e4a73ea8ef288507963621078f85f7d855eb8e9c5c0f55b360d94d37d14a1947
 
+Package: com.ntm.privacymanager
+Name: 隐私与安全性
+Version: 1.0.6
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: preferenceloader
+Description: 隐私与安全性：系统「设置→隐私与安全性」的实时镜像。App 列表直接取自系统 TCC 数据库（与系统面板完全一致），七个权限开关实时读写同一 TCC.db——你在此开/关，系统设置立刻同步（双向）。照片、麦克风、相机、定位、跟踪、通讯录 直写 TCC；本地网络为尽力项。支持批量允许/拒绝、单 App 重置、配置导入导出。
 Filename: debs/com.ntm.privacymanager_1.0.6_iphoneos-arm64.deb
 Size: 25104
 MD5sum: cca278d62158204603989f4f35942480
 SHA1: da577ad5a7d8536ef9a2571905d7fef454aa437f
 SHA256: 94d77fcc238451a40375add718de3c70616685c90c912095b8563bcbc8f66145
 
+Package: com.ntm.privacymanager
+Name: 隐私与安全性
+Version: 1.0.7
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: preferenceloader
+Description: 隐私与安全性：系统「设置→隐私与安全性」的实时镜像。App 列表直接取自系统 TCC 数据库（与系统面板完全一致），七个权限开关实时读写同一 TCC.db——你在此开/关，系统设置立刻同步（双向）。照片、麦克风、相机、定位、跟踪、通讯录 直写 TCC；本地网络为尽力项。支持批量允许/拒绝、单 App 重置、配置导入导出。
 Filename: debs/com.ntm.privacymanager_1.0.7_iphoneos-arm64.deb
 Size: 26100
 MD5sum: b9d24f692e0ad06cde960246723f5e91
 SHA1: ae7c055c41fd950f4c6c4948b7b60b845ec75e45
 SHA256: a6d9cd195363b182601c0188fd8b22703bdd8c0256bcef307382f2fff063ba44
 
+Package: com.yzdmm.kkgameautologin
+Name: KKGameAutoLogin
+Version: 1.0.13
+Architecture: iphoneos-arm64e
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Description: 用于验证（免登录）
 Filename: debs/com.yzdmm.kkgameautologin_1.0.13_iphoneos-arm64e.deb
 Size: 18672
 MD5sum: 935867cbd9e86d462ebde591ffe7fc73
 SHA1: 2c10479918a733985636bec6afeb08099e1a5ab4
 SHA256: f5c972c836005d2efbbc9f8b95782ff3180751c15f3348c58cb6ef6160fe0a04
 
+Package: com.yzdmm.nbdismissad
+Name: NB广告跳过
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: mobilesubstrate, firmware(>=14.0)
+Description: NB助手广告自动跳过（续签/开屏半屏广告一键关闭）。通过 hook UIView 的 addSubview/didAddSubview 与 UIViewController 的 presentViewController，按广告类名特征（AdView/HalfScreen/Splash/ZJLocal/Popup/广告 等）自动移除并 dismiss。仅注入 com.nbmaster.app，不影响系统与其他 App。
 Filename: debs/com.yzdmm.nbdismissad_1.0.0_iphoneos-arm64.deb
 Size: 7504
 MD5sum: 94ade76c0c54379e064f88c3330a3b85
 SHA1: a09ca91f7271f7b523b25a400c70d3d5b416df08
 SHA256: a448ed382cdf5baefc77c1af1319ad6696db2425a13cb2585e2854d19ac4b4fe
 
+Package: com.ntm.privacymanager
+Name: 隐私与安全性
+Version: 1.0.3
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: preferenceloader
+Description: 隐私与安全性：在「设置」内集中管理每个 App 的 照片/本地网络/麦克风/相机/定位/跟踪/通讯录 共七类权限。照片、麦克风、相机、定位、跟踪、通讯录 直接改写系统 TCC 数据库；本地网络为尽力项，需系统设置兜底。支持 App 分类(用户/系统/巨魔)、搜索、统计、批量允许/拒绝/重置、配置导入导出。
 Filename: debs/pm_v103.deb
 Size: 36992
 MD5sum: 024e6969fe7310b4af5bd39924f981ff
 SHA1: 2eb9b9ac1e4fee6337c032ae9659f346d32769b0
 SHA256: cbe454d89f8ece887a00cfd22396298275c72ca146f78fd3f90bd4d96c7b19fc
 
+Package: com.roa.randopenapp
+Name: 随机开启app
+Version: 1.3.1
+Architecture: iphoneos-arm64e
+Section: Tweaks
+Author: ROA
+Maintainer: ROA
+Description: 在设定时间段内随机选择一个时刻自动打开指定App，每天最多一次。支持在系统设置中选择目标App和随机时间段。
 Filename: debs/随机开启app_v1.3.1_iphoneos-arm64e.deb
 Size: 30508
 MD5sum: b58a296bc51652d448923b1c475d7a98
