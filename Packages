@@ -16,7 +16,7 @@ SHA256: f9048b6dd2b7d2cff241806a063d978a3d92810314579b1983c51c2cbff7d89b
 
 Package: com.ntm.privacymanager
 Name: 隐私总开关
-Version: 1.0.17
+Version: 1.0.18
 Architecture: iphoneos-arm64
 Maintainer: yzdmm2024
 Author: yzdmm2024
@@ -24,10 +24,10 @@ Section: Tweaks
 Description: 隐私总开关：系统「设置→隐私与安全性」的实时镜像。App 列表直接取自系统 TCC 数据库（与系统面板完全一致），七个权限开关实时读写同一 TCC.db——你在此开/关，系统设置立刻同步（双向）。顶部「按功能一键开关」可一次性对某权限（照片/本地网络/麦克风/相机/定位/跟踪/通讯录）对全部应用开启或关闭；每个 App 卡片支持独立开关与重置。本地网络为尽力项。支持配置导入导出。
 Depends: preferenceloader
 Filename: debs/PrivacyManager.deb
-Size: 44348
-MD5sum: 495478b318b980277a7c14c6f8cf5501
-SHA1: b5815b247511442b820313eb1550033852e76a91
-SHA256: 2002be24050758e2606674cf34ab42ff9f8bdf1e168e47a071a7480c44ec8796
+Size: 44512
+MD5sum: 2dccf808bcd978f1234dee07502cdd4d
+SHA1: 5f341aee7471831844227d29c888af91bec0078a
+SHA256: 3aee8a82c9b79c09a5eaecc8404fa260b696e108af8045d92164e30cee6c5aea
 
 Package: com.axs.snapper3zhext
 Name: 超级截图
