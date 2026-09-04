@@ -7,13 +7,13 @@ Author: PS
 Maintainer: PS
 Description: 一键分享文件到目标App - 点击dylib自动打开TrollFools，ipa/tipa自动打开TrollStore，deb自动打开Sileo
 Architecture: iphoneos-arm64e
-Version: 1.0.4
+Version: 1.0.5
 Installed-Size: 344
 Filename: debs/FileShareTweak.deb
-Size: 9854
-MD5sum: bf3fc5eff4a9cb16bd1f6d2a79209b8d
-SHA1: a2c02729d1f32563597b13fd67ca43fd88aae563
-SHA256: 8deed86faae544db93845962dfa8b1edeb3b3f6471a743a08063a54a00acd0b2
+Size: 10220
+MD5sum: 809c9491c507418b984ff0089cd8457d
+SHA1: 3762d0f5d41c2b18fe2f570c8ec4305e10315685
+SHA256: 7e94c5bd75fd1ecc69806aadcd9a8c6c89e9206be79e0d70d65c5584bc98fd1a
 
 Package: com.ntm.privacymanager
 Name: 隐私总开关
