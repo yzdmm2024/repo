@@ -81,7 +81,6 @@ MD5sum: b58a296bc51652d448923b1c475d7a98
 SHA1: 71326a08804d118822bec2e6d7b343e4dc257071
 SHA256: 031519d30c5e663e24bd8cea4bc6a32a0f0d7dcf255a6067c5025480cb74619b
 
-
 Package: com.axs.superscreenshot
 Name: 超级截图
 Version: 6.20.16
@@ -97,3 +96,20 @@ MD5sum: 2858c772d4e8f8cff1d698076c75d833
 SHA1: b0f7c98daa9806f0c6515492600a15480b597bbd
 SHA256: 4148795d28c624c202d077be731b3698a2c6abb1c0220c582e2add0e6dad1981
 Icon: ./icons/superscreenshot.png
+
+
+Package: com.local.mygestures
+Name: 我的手势
+Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
+Maintainer: yzdmm2024
+Author: yzdmm2024
+Section: Tweaks
+Description: 状态栏左右耳朵手势：单击/双击/左滑，刘海灵动岛触摸忽略，下滑透传兼容控制中心插件，分区独立配置+黑名单。rootless 适配。
+Architecture: iphoneos-arm64
+Version: 0.11.3
+Installed-Size: 488
+Filename: ./debs/com.local.mygestures_0.11.3_iphoneos-arm64.deb
+Size: 53078
+MD5sum: d6cb70e547a8a867872abd4dea799164
+SHA1: 12a9311fd424806ccbc3e55e3f6746a8780b9877
+SHA256: a4dfd533509d9bcb77f2504c27b49bdb46a6379996ee05f9cde846814a449f0a
