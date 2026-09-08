@@ -105,14 +105,14 @@ Package: com.axs.snapper3zhext
 Name: 超级截图
 Version: 6.20.10
 Architecture: iphoneos-arm64
-Description: 一款 iOS 越狱截图增强插件，已绑定设备 UDID 授权（需解锁码才能使用，在设置「设备授权」里复制 UDID 并发给开发者获取解锁码）。截图后弹出浮层工具栏，支持框选裁剪、OCR 文字识别、翻译、画图标注、二维码/条码识别、AI 处理、旋转、复制、贴图（浮动图片）、保存、分享、导出 PDF、图片压缩、去状态栏、取色、一键还原。内置长截图（滚动拼接）；控制中心按钮一键拉起截图浮层，图标可在设置里五选一（相机/剪刀/闪电/文档/星星）；工具栏支持自由排序、显隐、改名与换图标（SF Symbol）。另含手机壳库（给正常截图加外壳模板）、百度 PaddleOCR 识别与连接测试、AskAI 引擎与模型库、截图历史记录。设置项丰富，适配 iOS 14+。OCR 识别结果现按阅读顺序（上→下、同行左→右）重排，复制全部/问AI/翻译不再乱序；PaddleOCR 路径保留文字块坐标后精确排序。「问AI」按钮：选好截图后一键直接拉起「豆包」App 并把截图带进去（图同时存入剪贴板，豆包内长按输入框可粘贴），由你在豆包里直接打字提问；不再在插件内自建对话 / 发 API。v6.20.5：截图/长截图/编辑保存统一归入专属相册「超级截图」（兼容 iOS 14+ 限定访问权限，不再只进相机胶卷）；工具栏「去状态栏」按钮由「看图问AI」替代（位置不变）。v6.20.6：修复局部截图工具栏（框选浮层）缺失「看图问AI」按钮——此前该按钮只加到了主编辑工具栏，局部截图工具栏因默认顺序未含此 tag 被隐藏过滤；现已与主工具栏同源补齐（校验模型/拦截 DeepSeek/发图）。v6.20.7：相册名称由「SN3截图」改为「超级截图」（与插件名一致）。v6.20.8：原「看图问AI / 问AI」应用内对话按钮改为「打开豆包」（直接 Deep Link 进豆包 App 并带图）；删去纯文字「问AI」应用内对话按钮，工具栏只保留一个「打开豆包」。v6.20.9：新增「启动」按钮（工具栏第 3 排末位）——点它弹层选你要秒开的 App（微信 / QQ / 闲鱼 一键加，或填任意 App 的 scheme 自选如 dingtalk://、alipay://），选哪个就 Deep Link 秒开哪个，并把当前截图放进剪贴板（进 App 后长按输入框可粘贴）。在设置 → 快捷启动 里管理要秒开的 App 列表。v6.20.10：仅自己用，已验证。toast 提示与截图引导条背景透明；取消呼出截图时的引导 toast。
+Description: v6.20.10：仅自己用，已验证。toast 提示与截图引导条背景透明；取消呼出截图时的引导 toast。
 Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
 Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
 Filename: ./debs/com.axs.snapper3zhext_6.20.10_iphoneos-arm64.deb
-Size: 306180
-MD5sum: a4fdffc2f005c7c20bfb4f69e2c2188e
-SHA1: 8785f47d0765898a0247dd35a78a8a57a6872cbe
-SHA256: 77d20688211a61ea18ad208664dc934936732e3cb3c5241d71201297e0dfaa34
+Size: 306996
+MD5sum: 8153fae3c92b69899daef5dfa48c687a
+SHA1: 57f2af6107e422fc7de10af4aed023632d575b5f
+SHA256: d198e4065b000582191667f95fb7dafd1b8df0c33ad170a0fae3f7d9e6627097
 Icon: ./icons/superscreenshot.png
