@@ -50,7 +50,7 @@ SHA1: 2ea4ecc5f2f80c3a9c1b492390e0379732838702
 SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
 Package: com.yzdmm.kkgameautologin
-Name: KKGameAutoLogin
+Name: 快速登录
 Version: 1.0.13
 Architecture: iphoneos-arm64e
 Section: Tweaks
