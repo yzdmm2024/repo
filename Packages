@@ -91,8 +91,8 @@ Maintainer: yzdmm2024
 Author: yzdmm2024
 Section: Tweaks
 Filename: ./debs/com.axs.snapper3zhext_6.20.12_iphoneos-arm64.deb
-Size: 187572
-MD5sum: 777b6b4c3f81cc79a33db76bb97ef828
-SHA1: b6b79546fc0314b80c36622abba2cc0d9474203f
-SHA256: cd2db6ef763b5aa385362f09eb5b2f4dd3523b9a553bb8acf2d919a00d151f34
+Size: 187728
+MD5sum: c91f09ff68bc32d6b8f68d9279f4138f
+SHA1: 5c12cc01095e531824b9bbcdb95204e11e71d377
+SHA256: 988342d6402f34e7dc72fe93c15f9810e1deb4425bb47e6b0f0bd169fdd3c937
 Icon: ./icons/superscreenshot.png
