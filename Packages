@@ -137,10 +137,10 @@ Maintainer: WxKbNoJump
 Author: WxKbNoJump
 Section: Tweaks
 Architecture: iphoneos-arm64
-Version: 1.1.8
+Version: 1.1.9
 Installed-Size: 352
-Filename: ./debs/com.wxkbd.nojump_1.1.8_iphoneos-arm64.deb
-Size: 20550
-MD5sum: 4062abe483cd30ed1b30eb238de96e2e
-SHA1: 28b8594035507c4e690766df13e4ca0855384285
-SHA256: bb847fe0b679d2a130baae0630e5370d9702f0c4f9e977d99739cb46af448cb7
+Filename: ./debs/com.wxkbd.nojump_1.1.9_iphoneos-arm64.deb
+Size: 20848
+MD5sum: 99559ffeee6bb8e05aa62cd0f9f709fb
+SHA1: 864470ca2ca62af341bb6fe6de2be93d4fe56b5e
+SHA256: d51de05f1dcde47cbfb7ff26bd483e3c2bf34daf99cae30f9e1a81d309719c98
