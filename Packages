@@ -129,19 +129,18 @@ MD5sum: 092fa425647b1b8794a449aa53a78a11
 SHA1: 02ce15b7dc458b7855075e6cfb93e8a30bdfb1c9
 SHA256: 41ccaf6c9c06d9724cc11951b66d34eeef37ba39d301b5934bbcc5e9e20ca327
 
-
 Package: com.wxkbd.nojump
-Name: 微信键盘免跳转
-Maintainer: yzdmm
-Author: yzdmm
+Name: WeType NoJump (微信键盘免跳转)
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2)
+Description: 微信输入法语音全局免跳转 + 键盘外观定制（圆角/缩放/颜色/透明度）
+Maintainer: WxKbNoJump
+Author: WxKbNoJump
 Section: Tweaks
-Description: 微信输入法语音免跳转 + 键盘外观定制（圆角/大小/颜色/透明度）。rootless (Relaxin/ElleKit) deb，由 GitHub Actions 用 Theos 构建。
-Depends: preferenceloader, firmware (>= 15.0)
 Architecture: iphoneos-arm64
-Version: 1.1.6
+Version: 1.1.8
 Installed-Size: 352
-Filename: ./debs/com.wxkbd.nojump_1.1.6_iphoneos-arm64.deb
-Size: 24638
-MD5sum: 2383e3809d327d3a6f481b8c3ea5dc5e
-SHA1: 5d7e29f6c2779732f590f65efc43577d1aae4f60
-SHA256: 3f72e12f4a75d78c28a55cbb99c1716cf47f9cbaa25fb373f99c411ea4005323
+Filename: ./debs/com.wxkbd.nojump_1.1.8_iphoneos-arm64.deb
+Size: 20550
+MD5sum: 4062abe483cd30ed1b30eb238de96e2e
+SHA1: 28b8594035507c4e690766df13e4ca0855384285
+SHA256: bb847fe0b679d2a130baae0630e5370d9702f0c4f9e977d99739cb46af448cb7
