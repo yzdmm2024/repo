@@ -135,18 +135,18 @@ SHA256: a6d9cd195363b182601c0188fd8b22703bdd8c0256bcef307382f2fff063ba44
 
 Package: com.wxkbd.nojump
 Name: WeType NoJump (微信键盘免跳转)
-Version: 1.1.11
+Version: 1.1.12
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: WxKbNoJump
 Maintainer: WxKbNoJump
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2)
-Description: 微信输入法语音全局免跳转 + 键盘外观定制（圆角/缩放/颜色/透明度）
-Filename: debs/com.wxkbd.nojump_1.1.11_iphoneos-arm64.deb
-Size: 23490
-MD5sum: 496914e1ae95b4b5b43960cf0b91f054
-SHA1: 9d74941dfec985b643b6505d3dae70930519aa91
-SHA256: e81f7e93b0f6f48de6c2f895157e5b02ccae3403931640f5133bcc08e6034f25
+Description: 微信输入法语音全局免跳转 + 键盘外观定制（每键圆角/按键间距/高度/字号/字母键·功能键·键盘背景·候选栏底色）
+Filename: debs/com.wxkbd.nojump_1.1.12_iphoneos-arm64.deb
+Size: 22094
+MD5sum: 7565f58602dc99e56ec790b5331f9b22
+SHA1: 2c1407b305987c63d6d9a9f7575c6fa69df86d67
+SHA256: 77bf63f1328fa87b3071c360f7489923618e51a596f99a43096fbb7e6f2bd28c
 
 Package: com.yzdmm.keyboardstatus
 Name: 键盘下方状态
