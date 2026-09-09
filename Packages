@@ -199,10 +199,10 @@ Author: yzdmm
 Section: Tweaks
 Description: 强制低电量模式常驻 + 禁后台App刷新 / 禁系统定位 / 禁诊断上传 / 缩短自动锁屏。五项独立开关，全部可关。rootless 适配，iOS 16。
 Architecture: iphoneos-arm64
-Version: 1.0.1
+Version: 1.0.2
 Installed-Size: 344
-Filename: ./debs/com.yzdmm.powersave_1.0.1_iphoneos-arm64.deb
-Size: 7712
-MD5sum: afa2def73858b1a627987f91b272afea
-SHA1: 2f1cfbe7740a1215fbcb76cdd944459fb2ffd981
-SHA256: 6104796d2f01841ac44e63ec052ae7ef7c9c57eb728010baaed1527cd479c27b
+Filename: ./debs/com.yzdmm.powersave_1.0.2_iphoneos-arm64.deb
+Size: 9072
+MD5sum: 32542b0ae1c6e0ff3bbabdd0b7d65ed8
+SHA1: e8bc968959e7d976e8d2678e01761e09187dcf52
+SHA256: cde0f63ee4349f93a060b0a01d40c3d29c25c635713571b1bd5d629bcb690497
