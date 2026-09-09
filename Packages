@@ -193,15 +193,15 @@ SHA256: 031519d30c5e663e24bd8cea4bc6a32a0f0d7dcf255a6067c5025480cb74619b
 
 Package: com.yzdmm.powersave
 Name: 省电助手 PowerSave
-Version: 1.0.3
+Version: 1.0.4
 Architecture: iphoneos-arm64
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Maintainer: yzdmm
 Author: yzdmm
 Section: Tweaks
 Description: 强制低电量模式常驻 + 禁后台App刷新 / 禁系统定位 / 禁诊断上传 / 缩短自动锁屏。五项独立开关，全部可关。rootless 适配，iOS 16。
-Filename: ./debs/com.yzdmm.powersave_1.0.3_iphoneos-arm64.deb
+Filename: ./debs/com.yzdmm.powersave_1.0.4_iphoneos-arm64.deb
 Size: 11184
-MD5sum: 7315bd3b65fdc0a93c149ba6ce4fd656
-SHA1: 4dba1db91829a56fdef04927db025c80abb7f91e
-SHA256: b7dc16e2696d0d174070085ce26d7bab3d55dd501e6c860f9433edbf108e649a
+MD5sum: c8a19af5032bcc171d1200bac3bb2750
+SHA1: 1e96f7fb4e520faa014019eb0082cffa40129541
+SHA256: 5a2a8bfa9830d6ee31c194343ab47a202f4ca357470bcf26e596950184c9b48f
