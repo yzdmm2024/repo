@@ -6,14 +6,42 @@ Section: Tweaks
 Author: yzdmm2024
 Maintainer: yzdmm2024
 Depends: preferenceloader
-Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。
- 
- 隐私总开关：系统「设置→隐私与安全性」的实时镜像。App 列表直接取自系统 TCC 数据库（与系统面板完全一致），七个权限开关实时读写同一 TCC.db——你在此开/关，系统设置立刻同步（双向）。顶部「按功能一键开关」可一次性对某权限（照片/本地网络/麦克风/相机/定位/跟踪/通讯录）对全部应用开启或关闭；每个 App 卡片支持独立开关与重置。本地网络为尽力项。支持配置导入导出。
+Description: 隐私总开关：系统「设置→隐私与安全性」的实时镜像。App 列表直接取自系统 TCC 数据库（与系统面板完全一致），七个权限开关实时读写同一 TCC.db——你在此开/关，系统设置立刻同步（双向）。顶部「按功能一键开关」可一次性对某权限（照片/本地网络/麦克风/相机/定位/跟踪/通讯录）对全部应用开启或关闭；每个 App 卡片支持独立开关与重置。本地网络为尽力项。支持配置导入导出。
 Filename: debs/PrivacyManager.deb
 Size: 45144
 MD5sum: bcdc997446834dd74c1114ac38235225
 SHA1: 190a383b9979605629d3cb2d3af798e343aeca6a
 SHA256: 72965926ea274bc3e3f8d2c3bed0d608b3c9f9727148de0bd33a63c5ede0d660
+
+Package: com.axs.superscreenshot
+Name: 超级截图
+Version: 6.20.16
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：截图与裁剪（控制中心按钮或手势呼出浮层，拖框选区可拖动 / 缩放微调，支持正常截图与长截图，长截图含自动滚动 / 自动 SAD 两种采集模式并滚动拼接成整页长图）；OCR 文字识别（视觉大模型引擎与百度 PaddleOCR 两种识别源，结果按阅读顺序上→下、同行左→右重排，可复制全文）；翻译（大模型或百度翻译对选中文字翻译，原文 / 译文可分别复制）；画图标注（画笔实线 / 马克笔半透明粗线 / 橡皮，可选颜色与透明度、撤销）；识码（识别二维码 / 条码，结果可复制或用 Safari 打开）；打开豆包（把当前截图带进豆包 App 直接对话提问，图片同时存入剪贴板可长按粘贴，替代原问 AI / 去状态栏按钮）；图像打码（方块像素马赛克 / 高斯模糊两种涂抹脱敏，可手动涂抹或智能识别手机号、身份证自动打码）；取色（吸管点取图中任意颜色并复制 HEX 值）；旋转（90° / 180° 旋转当前图）；图片压缩（一键压缩并提示前后体积）；贴图（把图片作为浮动窗贴到屏幕，可拖动、双指缩放、关闭）；复制 / 保存 / 分享（复制图片或文字到剪贴板；保存到专属相册「超级截图」；系统分享）；导出 PDF（把截图导出为 PDF）；还原（一键还原为编辑前原图）；启动（工具栏「启动」弹层选要秒开的 App，微信 / QQ / 闲鱼 预设或自定义 URL Scheme，秒开并把截图存入剪贴板）；截图历史记录（回看历次截图）；手机壳库（设置开启后正常截图自动套入手机外壳模板，含中框与刘海）；设置丰富（工具栏自由排序 / 显隐 / 改名 / 换图标 SF Symbol；控制中心图标五选一相机 / 剪刀 / 闪电 / 文档 / 星星；大模型库识别引擎 / 问 AI / 翻译 分别选模型、一键导入预设、连接测试；百度 PaddleOCR 与百度翻译密钥配置；设备授权复制本机 UDID 发给开发者获取解锁码）。
+Filename: debs/com.axs.superscreenshot_6.20.16_iphoneos-arm64.deb
+Size: 308804
+MD5sum: 2858c772d4e8f8cff1d698076c75d833
+SHA1: b0f7c98daa9806f0c6515492600a15480b597bbd
+SHA256: 4148795d28c624c202d077be731b3698a2c6abb1c0220c582e2add0e6dad1981
+
+Package: com.local.mygestures
+Name: 我的手势
+Version: 0.11.3
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
+Description: 状态栏左右耳朵手势：单击/双击/左滑，刘海灵动岛触摸忽略，下滑透传兼容控制中心插件，分区独立配置+黑名单。rootless 适配。
+Filename: debs/com.local.mygestures_0.11.3_iphoneos-arm64.deb
+Size: 53078
+MD5sum: d6cb70e547a8a867872abd4dea799164
+SHA1: 12a9311fd424806ccbc3e55e3f6746a8780b9877
+SHA256: a4dfd533509d9bcb77f2504c27b49bdb46a6379996ee05f9cde846814a449f0a
 
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
@@ -23,9 +51,7 @@ Section: Tweaks
 Author: yzdmm2024
 Maintainer: yzdmm2024
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
-Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。
- 
- 电池耗电分析：注入SpringBoard监控每App前台/后台运行时间与电量变化，估算每App耗电，显示电量历史与本次耗电统计
+Description: 电池耗电分析：注入SpringBoard监控每App前台/后台运行时间与电量变化，估算每App耗电，显示电量历史与本次耗电统计
 Filename: debs/com.ntm.batteryanalyzer_1.6.7_iphoneos-arm64.deb
 Size: 88732
 MD5sum: 946bece2e12ef3d5d46cd60d416df96f
@@ -40,30 +66,131 @@ Section: Tweaks
 Author: yzdmm2024
 Maintainer: yzdmm2024
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
-Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。
- 
- 通知管理：注入SpringBoard拦截通知展示，按分类(用户/巨魔/系统)管理每个App通知与网络。总开关+锁定屏幕/通知中心/横幅/声音/标记子开关，增强功能：仅隐藏角标、隐藏预览、后台自动断网、关键词过滤、应用分组、模式快照、拦截日志、筛选；网络策略(打开wifi/流量/wifi+流量/断网)同步系统蜂窝设置，支持搜索、批量控制、单应用重置、配置导入导出、邮件反馈
+Description: 通知管理：注入SpringBoard拦截通知展示，按分类(用户/巨魔/系统)管理每个App通知与网络。总开关+锁定屏幕/通知中心/横幅/声音/标记子开关，增强功能：仅隐藏角标、隐藏预览、后台自动断网、关键词过滤、应用分组、模式快照、拦截日志、筛选；网络策略(打开wifi/流量/wifi+流量/断网)同步系统蜂窝设置，支持搜索、批量控制、单应用重置、配置导入导出、邮件反馈
 Filename: debs/com.ntm.notifymanager_2.3.1_iphoneos-arm64.deb
 Size: 94112
 MD5sum: 2d420843898288c3a27d611bf1504006
 SHA1: 2ea4ecc5f2f80c3a9c1b492390e0379732838702
 SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
+Package: com.ntm.privacymanager
+Name: 隐私与安全性
+Version: 1.0.4
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: preferenceloader
+Description: 隐私与安全性：在「设置」内集中管理每个 App 的 照片/本地网络/麦克风/相机/定位/跟踪/通讯录 共七类权限。照片、麦克风、相机、定位、跟踪、通讯录 直接改写系统 TCC 数据库；本地网络为尽力项，需系统设置兜底。支持 App 分类(用户/系统/巨魔)、搜索、统计、批量允许/拒绝/重置、配置导入导出。
+Filename: debs/com.ntm.privacymanager_1.0.4_iphoneos-arm64.deb
+Size: 39384
+MD5sum: 6745d35f90af27b41d3e2231478f57d9
+SHA1: a84734d64f461b9cdf866d0594a51236f244795e
+SHA256: 1dd8808c3ae2f40d866432a3f580cd51d9a4063777a1e0d0ba1981114066c9b3
+
+Package: com.ntm.privacymanager
+Name: 隐私与安全性
+Version: 1.0.5
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: preferenceloader
+Description: 隐私与安全性：系统「设置→隐私与安全性」的实时镜像。App 列表直接取自系统 TCC 数据库（与系统面板完全一致），七个权限开关实时读写同一 TCC.db——你在此开/关，系统设置立刻同步（双向）。照片、麦克风、相机、定位、跟踪、通讯录 直写 TCC；本地网络为尽力项。支持批量允许/拒绝、单 App 重置、配置导入导出。
+Filename: debs/com.ntm.privacymanager_1.0.5_iphoneos-arm64.deb
+Size: 24028
+MD5sum: b8e2ce465636986da4814cfcbf9caf01
+SHA1: 0da72635b9a5f596e516cde117c8176660a1cf4e
+SHA256: e4a73ea8ef288507963621078f85f7d855eb8e9c5c0f55b360d94d37d14a1947
+
+Package: com.ntm.privacymanager
+Name: 隐私与安全性
+Version: 1.0.6
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: preferenceloader
+Description: 隐私与安全性：系统「设置→隐私与安全性」的实时镜像。App 列表直接取自系统 TCC 数据库（与系统面板完全一致），七个权限开关实时读写同一 TCC.db——你在此开/关，系统设置立刻同步（双向）。照片、麦克风、相机、定位、跟踪、通讯录 直写 TCC；本地网络为尽力项。支持批量允许/拒绝、单 App 重置、配置导入导出。
+Filename: debs/com.ntm.privacymanager_1.0.6_iphoneos-arm64.deb
+Size: 25104
+MD5sum: cca278d62158204603989f4f35942480
+SHA1: da577ad5a7d8536ef9a2571905d7fef454aa437f
+SHA256: 94d77fcc238451a40375add718de3c70616685c90c912095b8563bcbc8f66145
+
+Package: com.ntm.privacymanager
+Name: 隐私与安全性
+Version: 1.0.7
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: preferenceloader
+Description: 隐私与安全性：系统「设置→隐私与安全性」的实时镜像。App 列表直接取自系统 TCC 数据库（与系统面板完全一致），七个权限开关实时读写同一 TCC.db——你在此开/关，系统设置立刻同步（双向）。照片、麦克风、相机、定位、跟踪、通讯录 直写 TCC；本地网络为尽力项。支持批量允许/拒绝、单 App 重置、配置导入导出。
+Filename: debs/com.ntm.privacymanager_1.0.7_iphoneos-arm64.deb
+Size: 26100
+MD5sum: b9d24f692e0ad06cde960246723f5e91
+SHA1: ae7c055c41fd950f4c6c4948b7b60b845ec75e45
+SHA256: a6d9cd195363b182601c0188fd8b22703bdd8c0256bcef307382f2fff063ba44
+
+Package: com.wxkbd.nojump
+Name: WeType NoJump (微信键盘免跳转)
+Version: 1.1.11
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: WxKbNoJump
+Maintainer: WxKbNoJump
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2)
+Description: 微信输入法语音全局免跳转 + 键盘外观定制（圆角/缩放/颜色/透明度）
+Filename: debs/com.wxkbd.nojump_1.1.11_iphoneos-arm64.deb
+Size: 23490
+MD5sum: 496914e1ae95b4b5b43960cf0b91f054
+SHA1: 9d74941dfec985b643b6505d3dae70930519aa91
+SHA256: e81f7e93b0f6f48de6c2f895157e5b02ccae3403931640f5133bcc08e6034f25
+
+Package: com.yzdmm.keyboardstatus
+Name: 键盘下方状态
+Version: 1.2.6
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
+Description: 系统键盘底栏加功能按钮（全选/剪切/粘贴/光标移动/剪贴板历史/快捷短语/收起键盘）+ 可选状态条。rootless 适配，逐功能可关，安全不崩。
+Filename: debs/com.yzdmm.keyboardstatus_1.2.6_iphoneos-arm64.deb
+Size: 65888
+MD5sum: 092fa425647b1b8794a449aa53a78a11
+SHA1: 02ce15b7dc458b7855075e6cfb93e8a30bdfb1c9
+SHA256: 41ccaf6c9c06d9724cc11951b66d34eeef37ba39d301b5934bbcc5e9e20ca327
+
 Package: com.yzdmm.kkgameautologin
-Name: 快速登录
+Name: KKGameAutoLogin
 Version: 1.0.13
 Architecture: iphoneos-arm64e
 Section: Tweaks
 Author: yzdmm
 Maintainer: yzdmm
-Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。
- 
- 用于验证（免登录）
+Description: 用于验证（免登录）
 Filename: debs/com.yzdmm.kkgameautologin_1.0.13_iphoneos-arm64e.deb
 Size: 18672
 MD5sum: 935867cbd9e86d462ebde591ffe7fc73
 SHA1: 2c10479918a733985636bec6afeb08099e1a5ab4
 SHA256: f5c972c836005d2efbbc9f8b95782ff3180751c15f3348c58cb6ef6160fe0a04
+
+Package: com.ntm.privacymanager
+Name: 隐私与安全性
+Version: 1.0.3
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: preferenceloader
+Description: 隐私与安全性：在「设置」内集中管理每个 App 的 照片/本地网络/麦克风/相机/定位/跟踪/通讯录 共七类权限。照片、麦克风、相机、定位、跟踪、通讯录 直接改写系统 TCC 数据库；本地网络为尽力项，需系统设置兜底。支持 App 分类(用户/系统/巨魔)、搜索、统计、批量允许/拒绝/重置、配置导入导出。
+Filename: debs/pm_v103.deb
+Size: 36992
+MD5sum: 024e6969fe7310b4af5bd39924f981ff
+SHA1: 2eb9b9ac1e4fee6337c032ae9659f346d32769b0
+SHA256: cbe454d89f8ece887a00cfd22396298275c72ca146f78fd3f90bd4d96c7b19fc
 
 Package: com.roa.randopenapp
 Name: 随机开启app
@@ -72,75 +199,10 @@ Architecture: iphoneos-arm64e
 Section: Tweaks
 Author: ROA
 Maintainer: ROA
-Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。
- 
- 在设定时间段内随机选择一个时刻自动打开指定App，每天最多一次。支持在系统设置中选择目标App和随机时间段。
+Description: 在设定时间段内随机选择一个时刻自动打开指定App，每天最多一次。支持在系统设置中选择目标App和随机时间段。
 Filename: debs/随机开启app_v1.3.1_iphoneos-arm64e.deb
 Size: 30508
 MD5sum: b58a296bc51652d448923b1c475d7a98
 SHA1: 71326a08804d118822bec2e6d7b343e4dc257071
 SHA256: 031519d30c5e663e24bd8cea4bc6a32a0f0d7dcf255a6067c5025480cb74619b
 
-Package: com.axs.superscreenshot
-Name: 超级截图
-Version: 6.20.16
-Architecture: iphoneos-arm64
-Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：截图与裁剪（控制中心按钮或手势呼出浮层，拖框选区可拖动 / 缩放微调，支持正常截图与长截图，长截图含自动滚动 / 自动 SAD 两种采集模式并滚动拼接成整页长图）；OCR 文字识别（视觉大模型引擎与百度 PaddleOCR 两种识别源，结果按阅读顺序上→下、同行左→右重排，可复制全文）；翻译（大模型或百度翻译对选中文字翻译，原文 / 译文可分别复制）；画图标注（画笔实线 / 马克笔半透明粗线 / 橡皮，可选颜色与透明度、撤销）；识码（识别二维码 / 条码，结果可复制或用 Safari 打开）；打开豆包（把当前截图带进豆包 App 直接对话提问，图片同时存入剪贴板可长按粘贴，替代原问 AI / 去状态栏按钮）；图像打码（方块像素马赛克 / 高斯模糊两种涂抹脱敏，可手动涂抹或智能识别手机号、身份证自动打码）；取色（吸管点取图中任意颜色并复制 HEX 值）；旋转（90° / 180° 旋转当前图）；图片压缩（一键压缩并提示前后体积）；贴图（把图片作为浮动窗贴到屏幕，可拖动、双指缩放、关闭）；复制 / 保存 / 分享（复制图片或文字到剪贴板；保存到专属相册「超级截图」；系统分享）；导出 PDF（把截图导出为 PDF）；还原（一键还原为编辑前原图）；启动（工具栏「启动」弹层选要秒开的 App，微信 / QQ / 闲鱼 预设或自定义 URL Scheme，秒开并把截图存入剪贴板）；截图历史记录（回看历次截图）；手机壳库（设置开启后正常截图自动套入手机外壳模板，含中框与刘海）；设置丰富（工具栏自由排序 / 显隐 / 改名 / 换图标 SF Symbol；控制中心图标五选一相机 / 剪刀 / 闪电 / 文档 / 星星；大模型库识别引擎 / 问 AI / 翻译 分别选模型、一键导入预设、连接测试；百度 PaddleOCR 与百度翻译密钥配置；设备授权复制本机 UDID 发给开发者获取解锁码）。
-Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
-Maintainer: yzdmm2024
-Author: yzdmm2024
-Section: Tweaks
-Filename: ./debs/com.axs.superscreenshot_6.20.16_iphoneos-arm64.deb
-Size: 308804
-MD5sum: 2858c772d4e8f8cff1d698076c75d833
-SHA1: b0f7c98daa9806f0c6515492600a15480b597bbd
-SHA256: 4148795d28c624c202d077be731b3698a2c6abb1c0220c582e2add0e6dad1981
-Icon: ./icons/superscreenshot.png
-
-Package: com.local.mygestures
-Name: 我的手势
-Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
-Maintainer: yzdmm2024
-Author: yzdmm2024
-Section: Tweaks
-Description: 状态栏左右耳朵手势：单击/双击/左滑，刘海灵动岛触摸忽略，下滑透传兼容控制中心插件，分区独立配置+黑名单。rootless 适配。
-Architecture: iphoneos-arm64
-Version: 0.11.3
-Installed-Size: 488
-Filename: ./debs/com.local.mygestures_0.11.3_iphoneos-arm64.deb
-Size: 53078
-MD5sum: d6cb70e547a8a867872abd4dea799164
-SHA1: 12a9311fd424806ccbc3e55e3f6746a8780b9877
-SHA256: a4dfd533509d9bcb77f2504c27b49bdb46a6379996ee05f9cde846814a449f0a
-
-Package: com.yzdmm.keyboardstatus
-Name: 键盘下方状态
-Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
-Maintainer: yzdmm
-Author: yzdmm
-Section: Tweaks
-Description: 系统键盘底栏加功能按钮（全选/剪切/粘贴/光标移动/剪贴板历史/快捷短语/收起键盘）+ 可选状态条。rootless 适配，逐功能可关，安全不崩。
-Architecture: iphoneos-arm64
-Version: 1.2.6
-Installed-Size: 532
-Filename: ./debs/com.yzdmm.keyboardstatus_1.2.6_iphoneos-arm64.deb
-Size: 65888
-MD5sum: 092fa425647b1b8794a449aa53a78a11
-SHA1: 02ce15b7dc458b7855075e6cfb93e8a30bdfb1c9
-SHA256: 41ccaf6c9c06d9724cc11951b66d34eeef37ba39d301b5934bbcc5e9e20ca327
-
-Package: com.wxkbd.nojump
-Name: WeType NoJump (微信键盘免跳转)
-Depends: mobilesubstrate (>= 0.9.5000), preferenceloader (>= 2.2.2)
-Description: 微信输入法语音全局免跳转 + 键盘外观定制（圆角/缩放/颜色/透明度）
-Maintainer: WxKbNoJump
-Author: WxKbNoJump
-Section: Tweaks
-Architecture: iphoneos-arm64
-Version: 1.1.10
-Installed-Size: 352
-Filename: ./debs/com.wxkbd.nojump_1.1.10_iphoneos-arm64.deb
-Size: 20876
-MD5sum: b645a405c2518a68f30a384a636f3c68
-SHA1: 84af1d7a8ece48ed4d69e14425cb1d2e38f8a8c3
-SHA256: 0e36e5c9c29c3768e684d0a5909032a2b119e3c468b3c3aed42b883f354a1d24
