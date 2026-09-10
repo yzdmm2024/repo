@@ -12,76 +12,82 @@ jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Show env
+      - name: STEP1 show env
         run: |
-          echo "actor=${{ github.actor }}"
-          echo "repo=${{ github.repository }}"
-          echo "ref=${{ github.ref }}"
-          git --version
-          python3 --version
+          echo "actor=${{ github.actor }} repo=${{ github.repository }} ref=${{ github.ref }}"
+          git --version; python3 --version
 
-      # 不用 actions/checkout，直接 git clone（排除 checkout action 的干扰）
-      - name: Clone appdata branch
+      - name: STEP2 clone source
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -e
+          echo "cloning appdata..."
           git clone --depth 1 -b appdata \
-            "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" \
-            src
-          ls -la src
+            "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" src
+          echo "cloned. appdata contents:"
           ls -la src/appdata
 
-      - name: Install Theos + iOS SDK
+      - name: STEP3 install theos
         run: |
           set -e
-          export THEOS="$HOME/theos"
-          echo "THEOS=$THEOS" >> "$GITHUB_ENV"
-          git clone --recursive https://github.com/theos/theos.git "$THEOS"
-          mkdir -p "$THEOS/sdks"
-          SDK_URL="https://github.com/theos/sdks/releases/download/master-146e41f/iPhoneOS16.5.sdk.tar.xz"
-          curl -fsSL -o "$THEOS/sdks/iPhoneOS16.5.sdk.tar.xz" "$SDK_URL"
-          tar -xJf "$THEOS/sdks/iPhoneOS16.5.sdk.tar.xz" -C "$THEOS/sdks"
-          test -d "$THEOS/sdks/iPhoneOS16.5.sdk"
+          export THEOS=$HOME/theos
+          echo "installing theos to $THEOS"
+          git clone --depth 1 https://github.com/theos/theos.git "$THEOS"
+          git -C "$THEOS" submodule update --init --recursive --depth 1
+          echo "theos ok"
+          ls "$THEOS"
 
-      - name: Build rootless deb
+      - name: STEP4 install sdk
         run: |
           set -e
-          export THEOS="$HOME/theos"
+          export THEOS=$HOME/theos
+          mkdir -p "$THEOS/sdks"
+          URL="https://github.com/theos/sdks/releases/download/master-146e41f/iPhoneOS16.5.sdk.tar.xz"
+          echo "downloading $URL"
+          curl -fL --retry 3 -o /tmp/sdk.tar.xz "$URL"
+          ls -l /tmp/sdk.tar.xz
+          tar -xJf /tmp/sdk.tar.xz -C "$THEOS/sdks"
+          echo "sdk dir:"
+          ls "$THEOS/sdks"
+
+      - name: STEP5 build deb
+        run: |
+          set -e
+          export THEOS=$HOME/theos
           export PATH="$THEOS/bin:$PATH"
           cd src/appdata
-          make package THEOS_PACKAGE_SCHEME=rootless FINALPACKAGE=1
-          ls -la packages/
+          echo "== make package =="
+          make package THEOS_PACKAGE_SCHEME=rootless FINALPACKAGE=1 2>&1 | tail -80
+          echo "== result =="
+          ls -la packages/ || true
 
-      - name: Upload artifact
+      - name: STEP6 upload artifact
+        if: always()
         uses: actions/upload-artifact@v4
         with:
-          name: appdata-fila-rootless
+          name: appdata-deb
           path: src/appdata/packages/*.deb
-          if-no-files-found: error
+          if-no-files-found: warn
 
-      - name: Publish to main debs/
-        env:
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: STEP7 publish to main
         run: |
           set -e
+          TOKEN="${{ secrets.GITHUB_TOKEN }}"
           git clone --depth 1 -b main \
-            "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" \
-            dst
+            "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" dst
           shopt -s nullglob
           debs=(src/appdata/packages/*.deb)
-          [ ${#debs[@]} -gt 0 ] || { echo "no deb"; exit 1; }
+          [ ${#debs[@]} -gt 0 ] || { echo "NO DEB BUILT"; exit 1; }
           mkdir -p dst/debs
-          for f in "${debs[@]}"; do cp -f "$f" dst/debs/; echo "+ debs/$(basename "$f")"; done
+          for f in "${debs[@]}"; do cp -f "$f" dst/debs/; echo "+ $(basename "$f")"; done
           cd dst
           python3 tools/update.py
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
-          if git diff --cached --quiet; then
-            echo "no changes"
-          else
-            git commit -m "AppData (Fila) $(date +%Y%m%d-%H%M): build & publish"
+          if git diff --cached --quiet; then echo "no changes"; else
+            git commit -m "AppData (Fila) $(date +%Y%m%d-%H%M)"
             git push origin main
-            echo "PUSHED to main"
+            echo "PUSHED"
           fi
