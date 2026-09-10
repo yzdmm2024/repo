@@ -60,17 +60,15 @@ jobs:
           export THEOS_MAKE_PATH="$THEOS/makefiles"
           export PATH="$THEOS/bin:$PATH"
           cd src/appdata
-          echo "=== make -p 变量诊断 ==="
-          make -p -n 2>/dev/null | grep -iE "^THEOS|^ARCHS|^TARGET|^TWEAK_NAME|_THEOS_RULES_LOADED|THEOS_CURRENT_INSTANCE" | head -30 || true
-          echo "=== 是否有 package 规则 ==="
-          make -p -n 2>/dev/null | grep -E "^package" | head -5 || echo "!! 没有 package 规则"
-          echo "=== 手动 include 测试 ==="
-          printf 'include %s/tweak.mk\nall:\n\t@echo included-ok\n' "$THEOS_MAKE_PATH" > /tmp/t.mk
-          make -f /tmp/t.mk -n all 2>&1 | head -5 || true
-          echo "=== real build ==="
-          make package THEOS_PACKAGE_SCHEME=rootless FINALPACKAGE=1 2>&1 | tee /tmp/build.log
+          echo "=== 环境里是否有 THEOS_* 污染 ==="
+          env | grep -i theos || echo "(none)"
+          echo "=== 尝试 A: 原样 make ==="
+          make package THEOS_PACKAGE_SCHEME=rootless FINALPACKAGE=1 2>&1 | tail -5 || true
+          echo "=== 尝试 B: 清掉 THEOS_CURRENT_INSTANCE 后 make ==="
+          env -u THEOS_CURRENT_INSTANCE -u _THEOS_CURRENT_TYPE -u _THEOS_RULES_LOADED \
+            make package THEOS_PACKAGE_SCHEME=rootless FINALPACKAGE=1 2>&1 | tee /tmp/build.log | tail -40
           echo "--- packages ---"
-          ls -la packages/
+          ls -la packages/ || echo "NO PACKAGES"
 
       - name: STEP5b dump build log on failure
         if: failure()
