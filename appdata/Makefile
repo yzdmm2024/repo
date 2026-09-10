@@ -31,6 +31,10 @@ AppData_CFLAGS += -fobjc-arc -IAppData -IAppData/Classes $(APP_DATA_INCLUDE_DIRS
 # maskedCorners（iOS 11+ API）在部分 SDK 上会触发 -Wunguarded-availability-new 误报，
 # 部署目标已是 15.0，该 API 必然可用，直接关掉这个警告（避免 -Werror 中断构建）
 AppData_CFLAGS += -Wno-unguarded-availability-new -Wno-unguarded-availability
+# ★ Linux 上系统 clang 版本较新，与 iOS SDK 内的 libc++ 头不兼容，
+#   构建 module 'std' 会失败（reference to unresolved using declaration）。
+#   关闭 clang 的 modules 特性即可绕开。
+AppData_CFLAGS += -fno-modules
 
 AppData_FRAMEWORKS = UIKit Foundation CoreLocation
 
