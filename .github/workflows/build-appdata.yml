@@ -60,14 +60,13 @@ jobs:
           export THEOS_MAKE_PATH="$THEOS/makefiles"
           export PATH="$THEOS/bin:$PATH"
           cd src/appdata
-          echo "=== env check ==="
-          echo "THEOS=$THEOS"
-          echo "THEOS_MAKE_PATH=$THEOS_MAKE_PATH"
-          ls -la "$THEOS_MAKE_PATH/tweak.mk"
-          echo "=== makefile head ==="
-          head -12 Makefile
-          echo "=== make -n dry run ==="
-          make -n package THEOS_PACKAGE_SCHEME=rootless FINALPACKAGE=1 2>&1 | head -20 || true
+          echo "=== make -p 变量诊断 ==="
+          make -p -n 2>/dev/null | grep -iE "^THEOS|^ARCHS|^TARGET|^TWEAK_NAME|_THEOS_RULES_LOADED|THEOS_CURRENT_INSTANCE" | head -30 || true
+          echo "=== 是否有 package 规则 ==="
+          make -p -n 2>/dev/null | grep -E "^package" | head -5 || echo "!! 没有 package 规则"
+          echo "=== 手动 include 测试 ==="
+          printf 'include %s/tweak.mk\nall:\n\t@echo included-ok\n' "$THEOS_MAKE_PATH" > /tmp/t.mk
+          make -f /tmp/t.mk -n all 2>&1 | head -5 || true
           echo "=== real build ==="
           make package THEOS_PACKAGE_SCHEME=rootless FINALPACKAGE=1 2>&1 | tee /tmp/build.log
           echo "--- packages ---"
