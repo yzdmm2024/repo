@@ -3,8 +3,14 @@
 # 目标: iOS 15/16 无根越狱 (Dopamine / roothide), arm64 + arm64e
 # ============================================================
 # 本地:  make package THEOS_PACKAGE_SCHEME=rootless
-# CI:    推送到 GitHub 后由 .github/workflows/build.yml 自动编译
+# CI:    推送到 GitHub 后由 .github/workflows/build-appdata.yml 自动编译
 # ============================================================
+
+# ★ 关键：必须先加载 common.mk，否则 _THEOS_FALSE / _THEOS_RULES_LOADED
+#   等内部变量未定义，后续 tweak.mk → rules.mk 会被整体跳过，
+#   表现为 `make: *** No rule to make target 'package'.  Stop.`
+THEOS_MAKE_PATH ?= $(THEOS)/makefiles
+include $(THEOS_MAKE_PATH)/common.mk
 
 TARGET := iphone:clang:16.6:15.0
 ARCHS := arm64 arm64e
@@ -18,8 +24,7 @@ AppData_FILES = $(shell find AppData/Classes -name '*.m') \
                 AppData/AppData.xm
 
 # 前缀头里定义了 kSBApplicationShortcutItemType 等宏
-AppData_CFLAGS += -fobjc-arc -IAppData -IAppData/Classes
-GLOBAL_CFLAGS += -include AppData/AppData-Prefix.pch
+AppData_CFLAGS += -fobjc-arc -IAppData -IAppData/Classes -include AppData/AppData-Prefix.pch
 
 AppData_FRAMEWORKS = UIKit Foundation CoreLocation
 

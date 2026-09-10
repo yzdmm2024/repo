@@ -60,15 +60,12 @@ jobs:
           export THEOS_MAKE_PATH="$THEOS/makefiles"
           export PATH="$THEOS/bin:$PATH"
           cd src/appdata
-          echo "=== 环境里是否有 THEOS_* 污染 ==="
-          env | grep -i theos || echo "(none)"
-          echo "=== 尝试 A: 原样 make ==="
-          make package THEOS_PACKAGE_SCHEME=rootless FINALPACKAGE=1 2>&1 | tail -5 || true
-          echo "=== 尝试 B: 清掉 THEOS_CURRENT_INSTANCE 后 make ==="
-          env -u THEOS_CURRENT_INSTANCE -u _THEOS_CURRENT_TYPE -u _THEOS_RULES_LOADED \
-            make package THEOS_PACKAGE_SCHEME=rootless FINALPACKAGE=1 2>&1 | tee /tmp/build.log | tail -40
+          echo "=== makefile head ==="
+          head -20 Makefile
+          echo "=== build ==="
+          make package THEOS_PACKAGE_SCHEME=rootless FINALPACKAGE=1 2>&1 | tee /tmp/build.log
           echo "--- packages ---"
-          ls -la packages/ || echo "NO PACKAGES"
+          ls -la packages/
 
       - name: STEP5b dump build log on failure
         if: failure()
