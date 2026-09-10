@@ -36,10 +36,13 @@ jobs:
           echo "THEOS=$THEOS" >> "$GITHUB_ENV"
           git clone --recursive https://github.com/theos/theos.git "$THEOS"
           mkdir -p "$THEOS/sdks"
-          curl -fsSL -o "$THEOS/sdks/iPhoneOS16.5.sdk.tar.xz" \
-            https://github.com/theos/sdks/releases/download/master-20240217/iPhoneOS16.5.sdk.tar.xz
+          # 注意：tag 必须用当前有效值，否则 GitHub releases 返回 404 -> curl exit 22
+          SDK_URL="https://github.com/theos/sdks/releases/download/master-146e41f/iPhoneOS16.5.sdk.tar.xz"
+          echo "downloading $SDK_URL"
+          curl -fsSL -o "$THEOS/sdks/iPhoneOS16.5.sdk.tar.xz" "$SDK_URL"
           tar -xJf "$THEOS/sdks/iPhoneOS16.5.sdk.tar.xz" -C "$THEOS/sdks"
           ls -la "$THEOS/sdks"
+          test -d "$THEOS/sdks/iPhoneOS16.5.sdk" || { echo "SDK extract failed"; exit 1; }
 
       - name: Build rootless deb
         run: |
