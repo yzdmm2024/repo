@@ -1,3 +1,18 @@
+Package: com.xunmeng.pinduoduo.pddcompare
+Name: PDDCompare 货比三家
+Version: 5.3.0
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: pddcompare
+Maintainer: pddcompare
+Depends: ellekit
+Description: 拼多多搜索结果自动货比三家 —— 按品类分组，按「价格/销量/店铺/优惠」综合评分排出最划算 TOP3。个人研究学习用。
+Filename: debs/PDDCompare_5.3.0.deb
+Size: 24400
+MD5sum: c70d1906fb86f2b8321084d1ef47fb85
+SHA1: b9d2e9d47ae4166256eb8005cf7350fb0ab619e4
+SHA256: e5a344e0adf06e9e94aabfbf8c6ce47d40b51111d45c921aed7d0bdce697364d
+
 Package: com.ntm.privacymanager
 Name: 隐私总开关
 Version: 1.0.19
