@@ -56,8 +56,19 @@ jobs:
       - name: STEP5 build deb
         run: |
           set -e
+          export THEOS="$HOME/theos"
+          export THEOS_MAKE_PATH="$THEOS/makefiles"
+          export PATH="$THEOS/bin:$PATH"
           cd src/appdata
-          ls -la
+          echo "=== env check ==="
+          echo "THEOS=$THEOS"
+          echo "THEOS_MAKE_PATH=$THEOS_MAKE_PATH"
+          ls -la "$THEOS_MAKE_PATH/tweak.mk"
+          echo "=== makefile head ==="
+          head -12 Makefile
+          echo "=== make -n dry run ==="
+          make -n package THEOS_PACKAGE_SCHEME=rootless FINALPACKAGE=1 2>&1 | head -20 || true
+          echo "=== real build ==="
           make package THEOS_PACKAGE_SCHEME=rootless FINALPACKAGE=1 2>&1 | tee /tmp/build.log
           echo "--- packages ---"
           ls -la packages/
