@@ -1,0 +1,89 @@
+name: Build AppData (Fila, rootless) -> publish to source
+
+on:
+  push:
+    branches: [ appdata ]
+    paths:
+      - 'appdata/**'
+      - '.github/workflows/build-appdata.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout appdata branch
+        uses: actions/checkout@v4
+        with:
+          ref: appdata
+
+      - name: Install Theos + iOS SDK
+        run: |
+          set -e
+          export THEOS="$HOME/theos"
+          echo "THEOS=$THEOS" >> "$GITHUB_ENV"
+          git clone --recursive https://github.com/theos/theos.git "$THEOS"
+          mkdir -p "$THEOS/sdks"
+          curl -sSL -o "$THEOS/sdks/iPhoneOS16.5.sdk.tar.xz" \
+            https://github.com/theos/sdks/releases/download/master-20240217/iPhoneOS16.5.sdk.tar.xz
+          tar -xJf "$THEOS/sdks/iPhoneOS16.5.sdk.tar.xz" -C "$THEOS/sdks"
+          ls -la "$THEOS/sdks"
+
+      - name: Build rootless deb
+        run: |
+          set -e
+          export THEOS="$HOME/theos"
+          export PATH="$THEOS/bin:$PATH"
+          cd appdata
+          make package THEOS_PACKAGE_SCHEME=rootless FINALPACKAGE=1
+          echo "== built =="
+          ls -la packages/
+
+      - name: Upload artifact (for inspection)
+        uses: actions/upload-artifact@v4
+        with:
+          name: appdata-fila-rootless
+          path: appdata/packages/*.deb
+          if-no-files-found: error
+
+      # ---------- 发布到 main 分支的 debs/ + 重建索引 ----------
+      - name: Checkout main (source repo)
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: repo-main
+
+      - name: Copy deb into debs/ and rebuild index
+        run: |
+          set -e
+          shopt -s nullglob
+          debs=(appdata/packages/*.deb)
+          if [ ${#debs[@]} -eq 0 ]; then echo "no deb built"; exit 1; fi
+          mkdir -p repo-main/debs
+          for f in "${debs[@]}"; do
+            cp -f "$f" repo-main/debs/
+            echo "  + debs/$(basename "$f")"
+          done
+          cd repo-main
+          python3 tools/update.py
+          echo "== index rebuilt =="
+
+      - name: Commit and push to main
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          set -e
+          cd repo-main
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no changes"
+          else
+            git commit -m "AppData (Fila) $(date +%Y%m%d-%H%M): build & publish"
+            git push origin main
+            echo "pushed to main"
+          fi

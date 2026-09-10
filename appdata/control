@@ -1,0 +1,9 @@
+Package: com.fouadraheb.appdata
+Name: AppData (Fila)
+Version: 1.3.6-fila1
+Architecture: iphoneos-arm64
+Description: View & manage app data from the Home Screen. Opens app containers in Fila.
+Section: Tweaks
+Depends: ellekit
+Author: Fouad Raheb
+Maintainer: yzdmm2024
