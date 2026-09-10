@@ -12,22 +12,25 @@ jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     steps:
-      - name: Diagnostic
+      - name: Show env
         run: |
-          echo "actor: ${{ github.actor }}"
-          echo "ref: ${{ github.ref }}"
-          echo "sha: ${{ github.sha }}"
-          echo "event: ${{ github.event_name }}"
+          echo "actor=${{ github.actor }}"
+          echo "repo=${{ github.repository }}"
+          echo "ref=${{ github.ref }}"
+          git --version
+          python3 --version
 
-      - name: Checkout appdata branch
-        uses: actions/checkout@v4
-
-      - name: Verify source present
+      # 不用 actions/checkout，直接 git clone（排除 checkout action 的干扰）
+      - name: Clone appdata branch
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          echo "== working tree =="
-          ls -la
-          echo "== appdata dir =="
-          ls -la appdata || { echo "ERROR: appdata/ missing"; exit 1; }
+          set -e
+          git clone --depth 1 -b appdata \
+            "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" \
+            src
+          ls -la src
+          ls -la src/appdata
 
       - name: Install Theos + iOS SDK
         run: |
@@ -36,65 +39,49 @@ jobs:
           echo "THEOS=$THEOS" >> "$GITHUB_ENV"
           git clone --recursive https://github.com/theos/theos.git "$THEOS"
           mkdir -p "$THEOS/sdks"
-          # 注意：tag 必须用当前有效值，否则 GitHub releases 返回 404 -> curl exit 22
           SDK_URL="https://github.com/theos/sdks/releases/download/master-146e41f/iPhoneOS16.5.sdk.tar.xz"
-          echo "downloading $SDK_URL"
           curl -fsSL -o "$THEOS/sdks/iPhoneOS16.5.sdk.tar.xz" "$SDK_URL"
           tar -xJf "$THEOS/sdks/iPhoneOS16.5.sdk.tar.xz" -C "$THEOS/sdks"
-          ls -la "$THEOS/sdks"
-          test -d "$THEOS/sdks/iPhoneOS16.5.sdk" || { echo "SDK extract failed"; exit 1; }
+          test -d "$THEOS/sdks/iPhoneOS16.5.sdk"
 
       - name: Build rootless deb
         run: |
           set -e
           export THEOS="$HOME/theos"
           export PATH="$THEOS/bin:$PATH"
-          cd appdata
+          cd src/appdata
           make package THEOS_PACKAGE_SCHEME=rootless FINALPACKAGE=1
-          echo "== built =="
           ls -la packages/
 
-      - name: Upload artifact (for inspection)
+      - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
           name: appdata-fila-rootless
-          path: appdata/packages/*.deb
+          path: src/appdata/packages/*.deb
           if-no-files-found: error
 
-      # ---------- 发布到 main：用带 token 的 clone（比二次 checkout 稳） ----------
-      - name: Clone main and copy deb
+      - name: Publish to main debs/
         env:
           TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -e
-          git clone --depth 1 \
+          git clone --depth 1 -b main \
             "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" \
-            -b main repo-main
+            dst
           shopt -s nullglob
-          debs=(appdata/packages/*.deb)
-          if [ ${#debs[@]} -eq 0 ]; then echo "no deb built"; exit 1; fi
-          mkdir -p repo-main/debs
-          for f in "${debs[@]}"; do
-            cp -f "$f" repo-main/debs/
-            echo "  + debs/$(basename "$f")"
-          done
-          cd repo-main
+          debs=(src/appdata/packages/*.deb)
+          [ ${#debs[@]} -gt 0 ] || { echo "no deb"; exit 1; }
+          mkdir -p dst/debs
+          for f in "${debs[@]}"; do cp -f "$f" dst/debs/; echo "+ debs/$(basename "$f")"; done
+          cd dst
           python3 tools/update.py
-          echo "== index rebuilt =="
-
-      - name: Commit and push to main
-        env:
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          set -e
-          cd repo-main
-          git config user.name  "github-actions[bot]"
+          git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           if git diff --cached --quiet; then
-            echo "no changes to commit"
+            echo "no changes"
           else
             git commit -m "AppData (Fila) $(date +%Y%m%d-%H%M): build & publish"
             git push origin main
-            echo "pushed to main"
+            echo "PUSHED to main"
           fi
