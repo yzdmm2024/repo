@@ -56,11 +56,27 @@ jobs:
           set -e
           export THEOS=$HOME/theos
           export PATH="$THEOS/bin:$PATH"
+          export THEOS_MAKE_PATH="$THEOS/makefiles"
           cd src/appdata
-          echo "== make package =="
+          echo "THEOS=$THEOS"
+          echo "THEOS_MAKE_PATH=$THEOS_MAKE_PATH"
+          echo "--- makefile head ---"
+          head -5 Makefile
+          echo "--- theos makefiles present? ---"
+          ls "$THEOS/makefiles/tweak.mk" || { echo "tweak.mk MISSING"; ls "$THEOS"; exit 1; }
+          echo "--- running make package ---"
           make package THEOS_PACKAGE_SCHEME=rootless FINALPACKAGE=1 2>&1 | tail -80
-          echo "== result =="
-          ls -la packages/ || true
+          echo "--- exit=$? ---"
+          ls -la packages/ || echo "NO packages/ DIR"
+
+      - name: STEP5b dump build log on failure
+        if: always()
+        run: |
+          echo "===== look for build outputs / logs ====="
+          find "$HOME/theos" -maxdepth 2 -name "*.log" 2>/dev/null | head
+          ls -la "$HOME/theos" 2>/dev/null | head -30
+          echo "===== theos makefiles ====="
+          ls "$HOME/theos/makefiles" 2>/dev/null || echo "no makefiles dir"
 
       - name: STEP6 upload artifact
         if: always()
