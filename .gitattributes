@@ -4,3 +4,27 @@ Packages.gz -text
 Packages.bz2 -text
 Release   text eol=lf
 *.deb     binary
+
+# ---- AppData 源码：必须 LF ----
+# Theos 的 makefile 在 Linux runner 上是 GNU make，
+# 若 Makefile 带 CRLF，`include $(THEOS_MAKE_PATH)/tweak.mk` 会去找 "tweak.mk\r"，
+# 找不到 -> 规则整体不加载 -> "No rule to make target 'package'"。
+# 注意：先声明二进制，避免被 eol 规则破坏
+*.png binary
+*.jpg binary
+*.icns binary
+*.deb binary
+Packages.gz -text
+Packages.bz2 -text
+
+appdata/Makefile text eol=lf
+appdata/control  text eol=lf
+*.pch text eol=lf
+*.xm  text eol=lf
+*.m   text eol=lf
+*.mm  text eol=lf
+*.h   text eol=lf
+*.mk  text eol=lf
+*.yml text eol=lf
+*.plist text eol=lf
+*.sh  text eol=lf
