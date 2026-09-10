@@ -12,7 +12,7 @@
 THEOS_MAKE_PATH ?= $(THEOS)/makefiles
 include $(THEOS_MAKE_PATH)/common.mk
 
-TARGET := iphone:clang:16.6:15.0
+TARGET := iphone:clang:16.5:15.0
 ARCHS := arm64 arm64e
 
 TWEAK_NAME := AppData
@@ -28,6 +28,9 @@ AppData_FILES = $(shell find AppData/Classes -name '*.m') \
 # 必须把所有子目录都加进 -I，否则 fatal error: 'ADHelper.h' file not found
 APP_DATA_INCLUDE_DIRS := $(shell find AppData/Classes AppData/Vendors -type d 2>/dev/null | sed 's/^/-I/')
 AppData_CFLAGS += -fobjc-arc -IAppData -IAppData/Classes $(APP_DATA_INCLUDE_DIRS) -include AppData/AppData-Prefix.pch
+# maskedCorners（iOS 11+ API）在部分 SDK 上会触发 -Wunguarded-availability-new 误报，
+# 部署目标已是 15.0，该 API 必然可用，直接关掉这个警告（避免 -Werror 中断构建）
+AppData_CFLAGS += -Wno-unguarded-availability-new -Wno-unguarded-availability
 
 AppData_FRAMEWORKS = UIKit Foundation CoreLocation
 
