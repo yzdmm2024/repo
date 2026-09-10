@@ -30,18 +30,18 @@ SHA256: 4148795d28c624c202d077be731b3698a2c6abb1c0220c582e2add0e6dad1981
 
 Package: com.local.mygestures
 Name: 我的手势
-Version: 0.11.5
+Version: 0.11.6
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: yzdmm2024
 Maintainer: yzdmm2024
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 状态栏左右耳朵手势：单击/双击/左滑，刘海灵动岛触摸忽略，下滑透传兼容控制中心插件，分区独立配置+黑名单。rootless 适配。
-Filename: debs/com.local.mygestures_0.11.5_iphoneos-arm64.deb
-Size: 54266
-MD5sum: d7c38e0256db73ef4f15de239afaebe2
-SHA1: 6bbc3e5bfe12909dfa241a0093eef24eb4359350
-SHA256: 467ae82b975fb411bc15e226837514aab2713ad38c086759146de1696414f5c3
+Filename: debs/com.local.mygestures_0.11.6_iphoneos-arm64.deb
+Size: 54768
+MD5sum: 65639593ca3a0220968e6fcee74ee16a
+SHA1: 2b3bc1574e4e5a5c1ff7881ba15c815946eb8e51
+SHA256: a63e206226d6112d9e1a3a781894b31aeb256dac073d3ba6a5030110e155a045
 
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
