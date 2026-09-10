@@ -24,7 +24,10 @@ AppData_FILES = $(shell find AppData/Classes -name '*.m') \
                 AppData/AppData.xm
 
 # 前缀头里定义了 kSBApplicationShortcutItemType 等宏
-AppData_CFLAGS += -fobjc-arc -IAppData -IAppData/Classes -include AppData/AppData-Prefix.pch
+# 注意：pch 里 #import "ADHelper.h" 等用的是相对文件名，
+# 必须把所有子目录都加进 -I，否则 fatal error: 'ADHelper.h' file not found
+APP_DATA_INCLUDE_DIRS := $(shell find AppData/Classes AppData/Vendors -type d 2>/dev/null | sed 's/^/-I/')
+AppData_CFLAGS += -fobjc-arc -IAppData -IAppData/Classes $(APP_DATA_INCLUDE_DIRS) -include AppData/AppData-Prefix.pch
 
 AppData_FRAMEWORKS = UIKit Foundation CoreLocation
 
