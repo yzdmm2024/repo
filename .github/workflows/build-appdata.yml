@@ -3,9 +3,6 @@ name: Build AppData (Fila, rootless) -> publish to source
 on:
   push:
     branches: [ appdata ]
-    paths:
-      - 'appdata/**'
-      - '.github/workflows/build-appdata.yml'
   workflow_dispatch:
 
 permissions:
@@ -15,10 +12,22 @@ jobs:
   build-and-publish:
     runs-on: ubuntu-latest
     steps:
+      - name: Diagnostic
+        run: |
+          echo "actor: ${{ github.actor }}"
+          echo "ref: ${{ github.ref }}"
+          echo "sha: ${{ github.sha }}"
+          echo "event: ${{ github.event_name }}"
+
       - name: Checkout appdata branch
         uses: actions/checkout@v4
-        with:
-          ref: appdata
+
+      - name: Verify source present
+        run: |
+          echo "== working tree =="
+          ls -la
+          echo "== appdata dir =="
+          ls -la appdata || { echo "ERROR: appdata/ missing"; exit 1; }
 
       - name: Install Theos + iOS SDK
         run: |
@@ -27,7 +36,7 @@ jobs:
           echo "THEOS=$THEOS" >> "$GITHUB_ENV"
           git clone --recursive https://github.com/theos/theos.git "$THEOS"
           mkdir -p "$THEOS/sdks"
-          curl -sSL -o "$THEOS/sdks/iPhoneOS16.5.sdk.tar.xz" \
+          curl -fsSL -o "$THEOS/sdks/iPhoneOS16.5.sdk.tar.xz" \
             https://github.com/theos/sdks/releases/download/master-20240217/iPhoneOS16.5.sdk.tar.xz
           tar -xJf "$THEOS/sdks/iPhoneOS16.5.sdk.tar.xz" -C "$THEOS/sdks"
           ls -la "$THEOS/sdks"
@@ -49,16 +58,15 @@ jobs:
           path: appdata/packages/*.deb
           if-no-files-found: error
 
-      # ---------- 发布到 main 分支的 debs/ + 重建索引 ----------
-      - name: Checkout main (source repo)
-        uses: actions/checkout@v4
-        with:
-          ref: main
-          path: repo-main
-
-      - name: Copy deb into debs/ and rebuild index
+      # ---------- 发布到 main：用带 token 的 clone（比二次 checkout 稳） ----------
+      - name: Clone main and copy deb
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -e
+          git clone --depth 1 \
+            "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" \
+            -b main repo-main
           shopt -s nullglob
           debs=(appdata/packages/*.deb)
           if [ ${#debs[@]} -eq 0 ]; then echo "no deb built"; exit 1; fi
@@ -73,7 +81,7 @@ jobs:
 
       - name: Commit and push to main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -e
           cd repo-main
@@ -81,7 +89,7 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add -A
           if git diff --cached --quiet; then
-            echo "no changes"
+            echo "no changes to commit"
           else
             git commit -m "AppData (Fila) $(date +%Y%m%d-%H%M): build & publish"
             git push origin main
