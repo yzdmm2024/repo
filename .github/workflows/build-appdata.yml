@@ -1,37 +1,116 @@
-name: Build AppData (test)
+name: Build AppData (Fila, rootless)
+
+# 编译 -> 打包 -> 用仓库自带 GITHUB_TOKEN 把 deb 推进 appdata 分支的 ci-out/ 目录
+# 全程不需要任何外部 PAT / Secret
 
 on:
   push:
     branches: [ appdata ]
+    paths-ignore:
+      - 'ci-out/**'
   workflow_dispatch:
+
+permissions:
+  contents: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: A
-        run: echo "hello from CI, actor=${{ github.actor }}"
-      - name: B clone
+      - name: STEP0 checkout
+        uses: actions/checkout@v4
+        with:
+          ref: appdata
+          fetch-depth: 0
+
+      - name: STEP1 show env
         run: |
-          git clone --depth 1 -b appdata https://github.com/yzdmm2024/repo.git src
-          ls -la src/appdata
-      - name: C theos
-        run: |
-          git clone --depth 1 https://github.com/theos/theos.git $HOME/theos
-          git -C $HOME/theos submodule update --init --recursive --depth 1
-          ls $HOME/theos | head
-      - name: D sdk
-        run: |
-          mkdir -p $HOME/theos/sdks
-          curl -fL --retry 3 -o /tmp/sdk.tar.xz https://github.com/theos/sdks/releases/download/master-146e41f/iPhoneOS16.5.sdk.tar.xz
-          tar -xJf /tmp/sdk.tar.xz -C $HOME/theos/sdks
-          ls $HOME/theos/sdks
-      - name: E build
-        run: |
-          export THEOS=$HOME/theos
-          export PATH="$THEOS/bin:$PATH"
-          export THEOS_MAKE_PATH="$THEOS/makefiles"
-          cd src/appdata
+          echo "actor=${{ github.actor }} sha=${{ github.sha }}"
+          echo "pwd=$(pwd)"
           ls -la
-          make package THEOS_PACKAGE_SCHEME=rootless FINALPACKAGE=1 2>&1 | tail -100
-          ls -la packages/ || echo "NO PACKAGES"
+          ls -la appdata | head -40
+
+      - name: STEP2 install theos
+        run: |
+          set -e
+          git clone --depth 1 https://github.com/theos/theos.git "$HOME/theos"
+          git -C "$HOME/theos" submodule update --init --recursive --depth 1
+          echo "THEOS=$HOME/theos" >> "$GITHUB_ENV"
+          echo "THEOS_MAKE_PATH=$HOME/theos/makefiles" >> "$GITHUB_ENV"
+          echo "PATH=$HOME/theos/bin:$PATH" >> "$GITHUB_ENV"
+          ls "$HOME/theos" | head
+
+      - name: STEP3 install sdk
+        run: |
+          set -e
+          mkdir -p "$HOME/theos/sdks"
+          curl -fL --retry 3 -o /tmp/sdk.tar.xz \
+            https://github.com/theos/sdks/releases/download/master-146e41f/iPhoneOS16.5.sdk.tar.xz
+          tar -xJf /tmp/sdk.tar.xz -C "$HOME/theos/sdks"
+          ls -la "$HOME/theos/sdks"
+
+      - name: STEP4 build deb
+        run: |
+          set -e
+          cd appdata
+          echo "--- files ---"
+          ls -la
+          echo "--- make ---"
+          make package THEOS_PACKAGE_SCHEME=rootless FINALPACKAGE=1 2>&1 | tee /tmp/build.log
+          echo "--- packages ---"
+          ls -la packages/
+
+      - name: STEP4b dump build log on failure
+        if: failure()
+        run: |
+          echo "===== last 200 lines of build.log ====="
+          tail -200 /tmp/build.log || true
+
+      - name: STEP5 upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: appdata-fila-rootless
+          path: appdata/packages/*.deb
+          if-no-files-found: error
+
+      - name: STEP6 publish deb to source repo
+        run: |
+          set -e
+          DEB=$(ls appdata/packages/*.deb | head -1)
+          echo "DEB=$DEB"
+          BASE=$(basename "$DEB")
+          echo "BASE=$BASE"
+
+          git config --global user.name  "github-actions[bot]"
+          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # 取回 repo 的 main 分支（带 debs/ 与索引）
+          cd "$GITHUB_WORKSPACE"
+          git remote set-url origin "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+          git fetch --depth 1 origin main
+          rm -rf /tmp/main
+          git worktree add /tmp/main FETCH_HEAD
+
+          cd /tmp/main
+          mkdir -p debs
+          # 清掉同包旧版本，只保留最新
+          rm -f debs/com.fouadraheb.appdata_*.deb || true
+          cp "$GITHUB_WORKSPACE/$DEB" "debs/$BASE"
+          ls -la debs/ | grep -i appdata || true
+
+          # 重建源索引
+          if [ -f tools/update.py ]; then
+            python3 tools/update.py || echo "update.py failed, will try gen_packages.py"
+          fi
+          if [ -f gen_packages.py ]; then
+            python3 gen_packages.py || true
+          fi
+
+          git add -A
+          if git diff --cached --quiet; then
+            echo "nothing to commit"
+          else
+            git commit -m "ci: publish AppData(Fila) $BASE"
+            git push origin HEAD:main
+            echo "PUSHED OK"
+          fi
