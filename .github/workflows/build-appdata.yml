@@ -1,109 +1,37 @@
-name: Build AppData (Fila, rootless) -> publish to source
+name: Build AppData (test)
 
 on:
   push:
     branches: [ appdata ]
   workflow_dispatch:
 
-permissions:
-  contents: write
-
 jobs:
-  build-and-publish:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - name: STEP1 show env
+      - name: A
+        run: echo "hello from CI, actor=${{ github.actor }}"
+      - name: B clone
         run: |
-          echo "actor=${{ github.actor }} repo=${{ github.repository }} ref=${{ github.ref }}"
-          git --version; python3 --version
-
-      - name: STEP2 clone source
-        env:
-          TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          set -e
-          echo "cloning appdata..."
-          git clone --depth 1 -b appdata \
-            "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" src
-          echo "cloned. appdata contents:"
+          git clone --depth 1 -b appdata https://github.com/yzdmm2024/repo.git src
           ls -la src/appdata
-
-      - name: STEP3 install theos
+      - name: C theos
         run: |
-          set -e
-          export THEOS=$HOME/theos
-          echo "installing theos to $THEOS"
-          git clone --depth 1 https://github.com/theos/theos.git "$THEOS"
-          git -C "$THEOS" submodule update --init --recursive --depth 1
-          echo "theos ok"
-          ls "$THEOS"
-
-      - name: STEP4 install sdk
+          git clone --depth 1 https://github.com/theos/theos.git $HOME/theos
+          git -C $HOME/theos submodule update --init --recursive --depth 1
+          ls $HOME/theos | head
+      - name: D sdk
         run: |
-          set -e
-          export THEOS=$HOME/theos
-          mkdir -p "$THEOS/sdks"
-          URL="https://github.com/theos/sdks/releases/download/master-146e41f/iPhoneOS16.5.sdk.tar.xz"
-          echo "downloading $URL"
-          curl -fL --retry 3 -o /tmp/sdk.tar.xz "$URL"
-          ls -l /tmp/sdk.tar.xz
-          tar -xJf /tmp/sdk.tar.xz -C "$THEOS/sdks"
-          echo "sdk dir:"
-          ls "$THEOS/sdks"
-
-      - name: STEP5 build deb
+          mkdir -p $HOME/theos/sdks
+          curl -fL --retry 3 -o /tmp/sdk.tar.xz https://github.com/theos/sdks/releases/download/master-146e41f/iPhoneOS16.5.sdk.tar.xz
+          tar -xJf /tmp/sdk.tar.xz -C $HOME/theos/sdks
+          ls $HOME/theos/sdks
+      - name: E build
         run: |
-          set -e
           export THEOS=$HOME/theos
           export PATH="$THEOS/bin:$PATH"
           export THEOS_MAKE_PATH="$THEOS/makefiles"
           cd src/appdata
-          echo "THEOS=$THEOS"
-          echo "THEOS_MAKE_PATH=$THEOS_MAKE_PATH"
-          echo "--- makefile head ---"
-          head -5 Makefile
-          echo "--- theos makefiles present? ---"
-          ls "$THEOS/makefiles/tweak.mk" || { echo "tweak.mk MISSING"; ls "$THEOS"; exit 1; }
-          echo "--- running make package ---"
-          make package THEOS_PACKAGE_SCHEME=rootless FINALPACKAGE=1 2>&1 | tail -80
-          echo "--- exit=$? ---"
-          ls -la packages/ || echo "NO packages/ DIR"
-
-      - name: STEP5b dump build log on failure
-        if: always()
-        run: |
-          echo "===== look for build outputs / logs ====="
-          find "$HOME/theos" -maxdepth 2 -name "*.log" 2>/dev/null | head
-          ls -la "$HOME/theos" 2>/dev/null | head -30
-          echo "===== theos makefiles ====="
-          ls "$HOME/theos/makefiles" 2>/dev/null || echo "no makefiles dir"
-
-      - name: STEP6 upload artifact
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: appdata-deb
-          path: src/appdata/packages/*.deb
-          if-no-files-found: warn
-
-      - name: STEP7 publish to main
-        run: |
-          set -e
-          TOKEN="${{ secrets.GITHUB_TOKEN }}"
-          git clone --depth 1 -b main \
-            "https://x-access-token:${TOKEN}@github.com/${{ github.repository }}.git" dst
-          shopt -s nullglob
-          debs=(src/appdata/packages/*.deb)
-          [ ${#debs[@]} -gt 0 ] || { echo "NO DEB BUILT"; exit 1; }
-          mkdir -p dst/debs
-          for f in "${debs[@]}"; do cp -f "$f" dst/debs/; echo "+ $(basename "$f")"; done
-          cd dst
-          python3 tools/update.py
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if git diff --cached --quiet; then echo "no changes"; else
-            git commit -m "AppData (Fila) $(date +%Y%m%d-%H%M)"
-            git push origin main
-            echo "PUSHED"
-          fi
+          ls -la
+          make package THEOS_PACKAGE_SCHEME=rootless FINALPACKAGE=1 2>&1 | tail -100
+          ls -la packages/ || echo "NO PACKAGES"
