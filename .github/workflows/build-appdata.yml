@@ -37,11 +37,25 @@ jobs:
       - name: STEP3 install theos
         run: |
           set -e
+          # 系统工具链（Ubuntu runner 自带 clang；ldid 用于签名，Theos 需要）
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq clang lld make fakeroot curl git xz-utils libplist-utils zip unzip
+          sudo curl -fsSL -o /usr/local/bin/ldid \
+            https://github.com/ProcursusTeam/ldid/releases/download/v2.1.5-procursus7/ldid_linux_x86_64
+          sudo chmod +x /usr/local/bin/ldid
+          ldid -v || true
+
           git clone --depth 1 https://github.com/theos/theos.git "$HOME/theos"
           git -C "$HOME/theos" submodule update --init --recursive --depth 1
           echo "THEOS=$HOME/theos" >> "$GITHUB_ENV"
           echo "THEOS_MAKE_PATH=$HOME/theos/makefiles" >> "$GITHUB_ENV"
           echo "$HOME/theos/bin" >> "$GITHUB_PATH"
+
+          # ★ Linux 上 Theos 默认找 $THEOS/toolchain/linux/iphone/bin，
+          #   该工具链仓库已不存在 -> clang 找不到 -> Error 127。
+          #   解法：把 SDKBINPATH 指到系统 /usr/bin，走系统 clang/ld。
+          echo "SDKBINPATH=/usr/bin" >> "$GITHUB_ENV"
+          echo "SWIFTBINPATH=/usr/bin" >> "$GITHUB_ENV"
           ls "$HOME/theos" | head
 
       - name: STEP4 install sdk
