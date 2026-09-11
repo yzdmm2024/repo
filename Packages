@@ -178,6 +178,21 @@ MD5sum: 1c09c974867ac50f9b20a007654d78ab
 SHA1: 10af657e664536fa9e9ad4580c9c6d4ce3e6dce0
 SHA256: 0b2b4cf17cf3abc02ca4b372520b91b3b8d10466ede441495e6351720a3dbd83
 
+Package: com.yzdmm.batterytemp
+Name: 电池温度
+Version: 1.1.2
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: mobilesubstrate, preferenceloader, firmware (>= 16.0)
+Description: 在「设置 → 电池」页面显示实时电池温度、电压、循环次数（换过第三方电池也能看真实读数）。温度文字可用手指拖动到任意位置并自动保存；设置面板提供开关、默认位置与一键重置。rootless 适配，iOS 16。
+Filename: debs/com.yzdmm.batterytemp_1.1.2_iphoneos-arm64.deb
+Size: 17228
+MD5sum: b65933289a281e02e63aef6e3a7ad3a3
+SHA1: d13f820abdd76bc55ea77301c600a2da1b383e57
+SHA256: 3015ccdd58369510c337c02dc8d2a42919cfeda5f32f6a8b98875c8f7897d877
+
 Package: com.yzdmm.keyboardstatus
 Name: 键盘下方状态
 Version: 1.2.6
