@@ -253,6 +253,21 @@ MD5sum: b13a305bc2c14afce8744dec565760ff
 SHA1: ae47a57f508f2314ea280a66f811a85e8f167f43
 SHA256: b46ae6acf9a8b35b0a60a7c34f2a186086ca8ce2b5f80bf3b3ad30b732a72387
 
+Package: com.yzdmm.batterytemp
+Name: 电池温度
+Version: 1.1.8
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: mobilesubstrate, preferenceloader, firmware (>= 16.0)
+Description: 贯穿显示：在桌面/锁屏/任意 App 的状态栏电池图标正下方，实时显示电池温度与电压（如 25.8°C  4.07V）。标签完全透明、白色文字带阴影，出屏即贯穿所有界面。设置面板可用 - / + 实时调节显示的高度、左右、上下与字号大小。rootless 适配，iOS 16。
+Filename: debs/com.yzdmm.batterytemp_1.1.8_iphoneos-arm64.deb
+Size: 25036
+MD5sum: f018a80f5b1553d9524d1919d44ad53f
+SHA1: 481df0fad93804be5f64556492b135634196d53c
+SHA256: 397274a93eb1aa5edb43d619d8140223a3f7636cca3124c929dbe3d8c70f181c
+
 Package: com.yzdmm.keyboardstatus
 Name: 键盘下方状态
 Version: 1.2.6
