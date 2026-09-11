@@ -314,18 +314,18 @@ SHA256: f5c972c836005d2efbbc9f8b95782ff3180751c15f3348c58cb6ef6160fe0a04
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
-Version: 2.0.13
+Version: 2.0.14
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: yzdmm2024
 Maintainer: yzdmm2024
 Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
-Description: 微信文字转语音（阿里云百炼 CosyVoice）。修复「设置里能用、微信里读不到」：改为直接读 rootless 共享配置 /var/jb/var/mobile/Library/Preferences/；「测试配置」现在会显示读取来源。悬浮面板支持全屏拖动 + 右下角关闭。文字设计免 OSS 免录音。
-Filename: debs/com.yzdmm2024.myvoice_2.0.13_iphoneos-arm64.deb
-Size: 63958
-MD5sum: d23b00bb580b83531f691e6281d2263d
-SHA1: e035a9b142adb84a365020a6082b15c86fc32553
-SHA256: 33d203cd6518184508f34e9875b1b5d27ab2bbbc1b9a16fbe3011728a47f4884
+Description: 微信文字转语音（阿里云百炼 CosyVoice）。修复「一直提示未识别到聊天对象」：微信 8.0.75 的聊天页 VC 里根本没有 talker 字段，改为走真实的 -getChatUserName / -GetContact / m_contact / 逻辑控制器 m_contact 四条路，并在聊天页出现、录音结束时自动捕获会话写入共享配置；面板顶部新增「当前会话」状态行，可点按重新识别。
+Filename: debs/com.yzdmm2024.myvoice_2.0.14_iphoneos-arm64.deb
+Size: 69192
+MD5sum: 5d8d5c9f82bcd76873e5469416e0722e
+SHA1: b0d80df26636c20b8730f33ad02cd303f2d89de9
+SHA256: 2deba15434265ef6c583267e5a2c434b7e4d4f9eedef86efdfa8a0c6f0611808
 
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
