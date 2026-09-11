@@ -314,18 +314,18 @@ SHA256: f5c972c836005d2efbbc9f8b95782ff3180751c15f3348c58cb6ef6160fe0a04
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
-Version: 2.0.12
+Version: 2.0.13
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: yzdmm2024
 Maintainer: yzdmm2024
 Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
-Description: 微信文字转语音（阿里云百炼 CosyVoice）。新增「测试」：设置面板里可一键测 API Key 是否可用、测 OSS 地址与公共读；微信内「音色管理 → 测试配置」可验证跨进程读取。文字设计免 OSS 免录音。
-Filename: debs/com.yzdmm2024.myvoice_2.0.12_iphoneos-arm64.deb
-Size: 59232
-MD5sum: 16a41d86400ab27487fd95c3839234b0
-SHA1: 660ac4b0546d473ab6a9894742adee422dc67e40
-SHA256: c1a970c77e265743a6729bc2807b1fc46fef6f6f38b597b6f8e1ada6f007680c
+Description: 微信文字转语音（阿里云百炼 CosyVoice）。修复「设置里能用、微信里读不到」：改为直接读 rootless 共享配置 /var/jb/var/mobile/Library/Preferences/；「测试配置」现在会显示读取来源。悬浮面板支持全屏拖动 + 右下角关闭。文字设计免 OSS 免录音。
+Filename: debs/com.yzdmm2024.myvoice_2.0.13_iphoneos-arm64.deb
+Size: 63958
+MD5sum: d23b00bb580b83531f691e6281d2263d
+SHA1: e035a9b142adb84a365020a6082b15c86fc32553
+SHA256: 33d203cd6518184508f34e9875b1b5d27ab2bbbc1b9a16fbe3011728a47f4884
 
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
