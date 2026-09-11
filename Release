@@ -31,16 +31,17 @@ Description: Acljcr Source
 
 
 Support: https://github.com/yzdmm2024/repo
-Date: Fri, 11 Sep 2026 04:58:28 GMT
+Date: Fri, 11 Sep 2026 10:11:58 GMT
+
 MD5Sum:
- 18ad4f36ef6f8b3ba8eeff495f855a1d 8219 Packages
- dae0d594bbc5c08863fa105222d0c03a 4344 Packages.gz
- dfcfe77c17f9d6373bd7150bff2cc27f 4060 Packages.bz2
+ 4da874eca67b709f6cde75775c953f3e 13003 Packages
+ fe4ab5ca68b25c828d7fdfcf2971d9c3 5327 Packages.gz
+ 4aee0e6b9a633a54890f971d2808bca2 5012 Packages.bz2
 SHA1:
- 2f1f60e8bc65e21e0b6f9dddbdb8d429a2bd5c6e 8219 Packages
- 32c34e7f5761ccd4b1b70a1a88f1a15249473434 4344 Packages.gz
- 92ea553d2df384cd508bdcb757cbc3b7e097e6e9 4060 Packages.bz2
+ 1c36ce580ed820b1090de46bd6fd20a3633f6465 13003 Packages
+ f1474d22d30f3405e213973b4147931867cd991d 5327 Packages.gz
+ 465af58884ccd0aac06cf156ed3d075db5e2d597 5012 Packages.bz2
 SHA256:
- 078bc0694b9c60e44fa90bb5a3dee40fa9df3c0da09e98febc87ebeaa3002480 8219 Packages
- a00cc6247e6bc6ce4f51cf74f88f504c11e887c4c56447fa6b84b0c9eea37b93 4344 Packages.gz
- f338f12a123a9567eedd987402088b34a4beaa0617d7ae873c7b30eb46859729 4060 Packages.bz2
+ ce20f2be8c19d45025ca26164e9806344ee2a003e0046150c7bdfa3ab1371ddb 13003 Packages
+ 5852e823ad6c4ff66f8a08fe0cc039f73ff383c244e58692a298e892c1abddee 5327 Packages.gz
+ 4bd4196bb47d0eccf9b64ef9842e619026976a207049bba8d901f88439e3460b 5012 Packages.bz2
