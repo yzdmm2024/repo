@@ -239,18 +239,18 @@ SHA256: f5c972c836005d2efbbc9f8b95782ff3180751c15f3348c58cb6ef6160fe0a04
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
-Version: 1.0.6
+Version: 1.0.7
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: yzdmm2024
 Maintainer: yzdmm2024
 Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
 Description: 微信文字转语音浮动助手（离线系统TTS，纯功能，不上传任何内容）
-Filename: debs/com.yzdmm2024.myvoice_1.0.6_iphoneos-arm64.deb
-Size: 27770
-MD5sum: 21ff07a9a046901666ff7b5cde7f6696
-SHA1: ec99afa4a1669a238158c881e56bfbc283b93934
-SHA256: a9fea4c6eed6353e1e6fcb1650b188b336f0aedbfe0d70aef08b685ea98b0c2f
+Filename: debs/com.yzdmm2024.myvoice_1.0.7_iphoneos-arm64.deb
+Size: 27784
+MD5sum: 8297706779d39ee6a1c2079d16ced4a2
+SHA1: 1a0d58d3249ac4986c6b3e3e27d135830b1aaa90
+SHA256: 407d56337adb3fd932a42f1edf12f54ff840730a070b0e39211cb5534f6aae16
 
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
