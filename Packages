@@ -327,6 +327,21 @@ MD5sum: 5d8d5c9f82bcd76873e5469416e0722e
 SHA1: b0d80df26636c20b8730f33ad02cd303f2d89de9
 SHA256: 2deba15434265ef6c583267e5a2c434b7e4d4f9eedef86efdfa8a0c6f0611808
 
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.0.16
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 微信文字转语音（阿里云百炼 CosyVoice）。修复「点发送闪退」：合成回调在后台队列（离线引擎走全局队列 / 云端走 NSURLSession）执行，toast 直接 addSubview 触发 CoreAutoLayout 非主线程断言导致 abort；现所有 UI 路径统一回主线程，微信内部发送接口也在主线程调用。另修 keyWindow 在多 scene 下取不到窗口的问题。
+Filename: debs/com.yzdmm2024.myvoice_2.0.16_iphoneos-arm64.deb
+Size: 69950
+MD5sum: a0db0abf641782847641492cfeb74a81
+SHA1: 49886ac3307d4674a0f04fc9fe1df34507fbe2bd
+SHA256: 4273cc1f8115c8612227726aa837166ad3d2234f2f7bc45e4b394082aa6acefd
+
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
 Version: 1.0.3
