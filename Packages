@@ -1,20 +1,5 @@
 Package: com.yzdmm.parallaxwallpaper
 Name: ParallaxWallpaper
-Version: 0.1.0
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm2024
-Maintainer: yzdmm2024
-Depends: mobilesubstrate (>= 0.9.7000) | com.ex.substitute, firmware (>= 16.0)
-Description: Gyro-driven multi-view wallpaper tweak (rootless, iOS 16)
-Filename: debs/ParallaxWallpaper_v0.1.0_iphoneos-arm64.deb
-Size: 13812
-MD5sum: 965a93166afa83db7099221541ae0028
-SHA1: 441746e41d317c897e7b0191dd4fdf2e1dcab190
-SHA256: acb2ebf3145255fdee057fea19a8c665f026a08d7f4e4986cd8181b27b386ff8
-
-Package: com.yzdmm.parallaxwallpaper
-Name: ParallaxWallpaper
 Version: 0.1.1
 Architecture: iphoneos-arm64
 Section: Tweaks
