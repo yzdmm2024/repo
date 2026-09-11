@@ -314,18 +314,18 @@ SHA256: f5c972c836005d2efbbc9f8b95782ff3180751c15f3348c58cb6ef6160fe0a04
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
-Version: 2.0.17
+Version: 2.1.0
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: yzdmm2024
 Maintainer: yzdmm2024
 Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
-Description: 微信文字转语音（阿里云百炼 CosyVoice）。直发链路重做：微信 8.0.75 已无 silk_Encode 符号与 sendVoiceToWeChat:toUsr: 接口，改用微信自带的 MJSilkCodec 实例编码器（initEncoderWithSampleRate: + encodeFromPCMData:，实测 1/2/3 秒时长换算全部正确）+ 构造 CMessageWrap(type 34) 并写入 m_nsContent 指向的音频文件 + CMessageMgr -AddMsg:MsgWrap: 直发；旧的类方法编码器产物微信读不出时长，已弃用。
-Filename: debs/com.yzdmm2024.myvoice_2.0.17_iphoneos-arm64.deb
-Size: 74338
-MD5sum: 63cb8f477ac8ee5fb580227e7abe5dfd
-SHA1: f000e56c509f356978ef1dcd43c9b4631fb82752
-SHA256: 7be7f2b4a0cad271f424308b24817985b40c398ccd2aaebd1a9c96b94d78db8b
+Description: 微信文字转语音（阿里云百炼 CosyVoice，可克隆音色）。★ 2.1.0 发送链路重做：2.0.17 的「自建 CMessageWrap + AddMsg 直塞」虽然能出气泡，但音频没被微信的录音/上传链注册，播放出来是空白无声。现改为【录音管线劫持】：合成好的 PCM 装填进缓冲，用户在原聊天页按住「按住 说话」时把麦克风采样整块替换成 TTS 数据，松手后由微信自己完成 SILK 编码、落盘、入库、上传与气泡 —— 因此语音必定可播放、时长由微信实算。采样率按录音管线实测校正为 16kHz（原 24kHz 会造成音调/时长错位）。用法：①在目标聊天页点面板「① 合成语音」→ ②按住说话键（不用出声）→ ③松开发送。
+Filename: debs/com.yzdmm2024.myvoice_2.1.0_iphoneos-arm64.deb
+Size: 80430
+MD5sum: 59631f1e2202d82b9f45db15e26948f2
+SHA1: 323e4a8b9eaaf7425179c42ec2ccf5c31e74d224
+SHA256: 76434aef6820707b9ebf7599503bc5978cb712b489ed92198bf48a2ad09c1b2c
 
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
