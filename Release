@@ -31,16 +31,17 @@ Description: Acljcr Source
 
 
 Support: https://github.com/yzdmm2024/repo
-Date: Fri, 11 Sep 2026 11:21:09 GMT
+Date: Fri, 11 Sep 2026 11:21:22 GMT
+
 MD5Sum:
- ba78235a41821b0b167b235f4c13cf0c 13544 Packages
- f4efc09fba94c65a5a78782abab6e17b 5492 Packages.gz
- d8a9113639d2fe4a8d134253a13f92ab 5155 Packages.bz2
+ 3212ad5f01a097b14effe141c882d7b8 13543 Packages
+ 1ba373dc8d8e353b2cb3b9363f1e3f71 5474 Packages.gz
+ 539c67d7eaf59836ef0befe12cea167b 5132 Packages.bz2
 SHA1:
- a2393ac0e98337f44065d8e1b9d935a8a3c50dc5 13544 Packages
- 9f8d31f10b16a3c041ad97574213fddcff6cacab 5492 Packages.gz
- d5cb1f419a5277cee96fd6638cd72c41764bd5a9 5155 Packages.bz2
+ 9b891e9769740aa620430b25638fe8dea540de01 13543 Packages
+ 0d29b013c3996835d58e6da3e13ad6e68aab44d7 5474 Packages.gz
+ b4b8cf11c5bfd6267eb65d13cb5f2c07e7fd6da5 5132 Packages.bz2
 SHA256:
- e67e779628d9ba7ec6c58b089a45db3e3731090cc709f3eaea9bb45d64d23035 13544 Packages
- 3bb40db710defb01fbbec84d35a03d7b0c3efbde66d0e882735edc3bcbe43e04 5492 Packages.gz
- 4607b33fdde7d49d1347b4ccda393c165814b416f146106f5b87770edec67c3f 5155 Packages.bz2
+ e1ada281a6e1bf04e5395a73463e37b273af7efc2b43aa0bd8d222bc761d153a 13543 Packages
+ 977eb76b3af9fc1a8a6a516574e5b8f7deda324f5b9765b335059b31deac330b 5474 Packages.gz
+ 3de077d69690bf7f04ea3b2e713e334c4f8bacae82eb22ae0393f8541b735a78 5132 Packages.bz2
