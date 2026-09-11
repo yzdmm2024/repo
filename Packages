@@ -1,20 +1,5 @@
 Package: com.yzdmm.parallaxwallpaper
 Name: ParallaxWallpaper
-Version: 0.1.1
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm2024
-Maintainer: yzdmm2024
-Depends: mobilesubstrate (>= 0.9.7000) | com.ex.substitute, firmware (>= 16.0), preferenceloader
-Description: 陀螺仪驱动的多角度壁纸 tweak (rootless, iOS 16)，带设置面板
-Filename: debs/ParallaxWallpaper_v0.1.1_iphoneos-arm64.deb
-Size: 18440
-MD5sum: a61f2bbcb99b1fa4ed21b6530ce59ea4
-SHA1: b3abe1828df5f2bca082dc844ee421bf4b5ef11d
-SHA256: ee5024b717e6e0d0f5fce6b7cff307b603677c2908d10e89750f14ae9f44bc68
-
-Package: com.yzdmm.parallaxwallpaper
-Name: ParallaxWallpaper
 Version: 0.1.2
 Architecture: iphoneos-arm64
 Section: Tweaks
