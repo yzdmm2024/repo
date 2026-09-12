@@ -372,6 +372,21 @@ MD5sum: 39f704655448419eef79dddcb2c5c409
 SHA1: 9f0696cc428be9334db965dd81a43d6d636f0d7b
 SHA256: 9e4f8d1bc29cfec257ccec9fd6d368b57ba3f0b261ad3d645d0f9c30e12ea80e
 
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.2.3
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: ★ 2.2.3 新增「自动发送」：装填完成后自动模拟按住说话并松手，无需手动按住（默认开启；自动触发未生效会自动回退手动提示）。发送前停止预览朗读，避免预览外放与录音注入串音造成的重叠。微信文字转语音（阿里云百炼：CosyVoice 克隆音色 / 千问 Qwen-TTS 预置音色）。★ 2.2.2 修复「云端模式缺 API Key 时静默回退本地 AVS、报看不懂的 AVS无输出」问题——现在会明确提示去设置填 DashScope Key；本地 AVS 引擎加中文语音预检，未下载中文语音时给出清晰指引。微信文字转语音（阿里云百炼：CosyVoice 克隆音色 / 千问 Qwen-TTS 预置音色）。微信文字转语音（阿里云百炼：CosyVoice 克隆音色 / 千问 Qwen-TTS 预置音色）。★ 2.2.0 新增千问 Qwen-TTS 云端服务（官方预置音色，免克隆，与 CosyVoice 共用同一 API Key，设置里一键切换）；修复录音队列只绑定第一个导致的替换失效（发出去的是麦克风原声而非 TTS）；合成失败不再静默回退蜂鸣占位音，改为明确报错。2.1.0 已改为【录音管线劫持】：合成好的 PCM 装填进缓冲，用户在原聊天页按住「按住 说话」时把麦克风采样整块替换成 TTS 数据，松手后由微信自己完成 SILK 编码、落盘、入库、上传与气泡。★ 2.1.0 发送链路重做：2.0.17 的「自建 CMessageWrap + AddMsg 直塞」虽然能出气泡，但音频没被微信的录音/上传链注册，播放出来是空白无声。现改为【录音管线劫持】：合成好的 PCM 装填进缓冲，用户在原聊天页按住「按住 说话」时把麦克风采样整块替换成 TTS 数据，松手后由微信自己完成 SILK 编码、落盘、入库、上传与气泡 —— 因此语音必定可播放、时长由微信实算。采样率按录音管线实测校正为 16kHz（原 24kHz 会造成音调/时长错位）。用法：①在目标聊天页点面板「① 合成语音」→ ②自动发送（或手动按住说话键，不用出声）→ ③松开发送。
+Filename: debs/com.yzdmm2024.myvoice_2.2.3_iphoneos-arm64.deb
+Size: 98924
+MD5sum: 494556ebb67ec588634bac7d08e626c9
+SHA1: c8fb809e5c8611a9f742aaaf459b88667d0813a0
+SHA256: 46fb845fc272ea7f65170ad3b56675c3ca79025e960288a05b9703338c3cd906
+
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
 Version: 1.0.3
