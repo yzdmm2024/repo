@@ -868,6 +868,21 @@ MD5sum: 38e84facab2b645d306bed23fb0cb345
 SHA1: 22f02b1e8a59ce95b3967df0ee95780ebed3ad9d
 SHA256: dd10d8e96df9a8fe1c50763664b09ba390b6b00f10ff0210d8ca0868a6e08192
 
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.5
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 节约时间，打字即可。修复录音停止 + 文件权限 + 界面可读性；音色选择一屏更多；★ 克隆音色补齐语速/音高/指令参数（旧版全用默认朗读腔=AI 味重），新增「人情味/标准腔/慢语速/亲切/活泼」一键风格与音高调节；输入框新增「一键纠偏」（数字读法、标点、长句断句）。
+Filename: debs/com.yzdmm2024.myvoice_2.8.5_iphoneos-arm64.deb
+Size: 150082
+MD5sum: cfcd9b49f4d52a0f28fa7947136c2712
+SHA1: 2594636ca740a15cf5fdaddb75d8376e618ab83b
+SHA256: 76c2f6f513f0f9217ab68f391c2281fba2eeb90083e2fb8bf8ab255a6f5e775f
+
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
 Version: 1.0.3
