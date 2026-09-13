@@ -867,3 +867,18 @@ MD5sum: b58a296bc51652d448923b1c475d7a98
 SHA1: 71326a08804d118822bec2e6d7b343e4dc257071
 SHA256: 031519d30c5e663e24bd8cea4bc6a32a0f0d7dcf255a6067c5025480cb74619b
 
+Package: com.yzdmm.batterytemp
+Name: 电池温度
+Version: 1.1.10
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: mobilesubstrate, preferenceloader, firmware (>= 16.0)
+Description: 电池芯片真实温度/电压：在「设置 → 电池温度」面板内实时显示温度(°C)、电压(V)、电流(mA)与充电循环次数，每 1 秒刷新。点开面板才读取、退出即静默不耗电。数据来自 AppleSmartBattery，是真实硬件读数（非估算、非假）。rootless 适配，iOS 16。
+Filename: debs/com.yzdmm.batterytemp_1.1.10_iphoneos-arm64.deb
+Size: 19096
+MD5sum: be30c622499d02d25652e523f2da174f
+SHA1: dc6bce14b934257464d84eccbcb7fc0b990b8383
+SHA256: 77050240dcfcaa77cfa26b5c645c1c7f364f3b095432b83bc1d4a313f204d2db
+
