@@ -13,6 +13,21 @@ MD5sum: 3471dac7dbd3e986dd5e8fb7c82ae23b
 SHA1: a84d08a987beae7912acb5dc8f8c8db3b3d1e67e
 SHA256: 7f7fd008985ae7ead35778a76161b2e6d5735d16fb88b23c64a7826827caf353
 
+Package: com.axs.cpuwatcher
+Name: CPU 监视器
+Version: 0.1.0
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：按需 CPU 与性能诊断工具（默认静默，零后台采样，打开监控页才启动采集，返回上级页立即停止）。① 全局与每核 CPU 占用、内存占用与压力；② 实时进程列表（按 CPU 占用排序，可看进程名 / PID / CPU% / 内存 / 线程数）；③ 能耗与唤醒排行（按进程统计耗电纳焦与中断唤醒次数，用于定位「CPU 不高但待机耗电」的插件）；④ 采样剖析（对指定进程采样若干秒，定位到具体 dylib 及偏移）；⑤ 插件冲突扫描（静态解析各插件 dylib 的 Logos hook 符号，找出两个插件 hook 同一方法的冲突矩阵）；⑥ 崩溃日志聚合（按归属插件统计崩溃次数）；⑦ 进程震荡检测（反复重启的异常进程标红）；⑧ 悬浮窗（默认关闭，开启时在屏幕上显示实时 CPU 与内存，关闭后彻底停止刷新）；⑨ 一键导出诊断快照。安全设计：不注册任何 LaunchDaemon、开机零执行、不改动系统关键进程、对越狱目录只做可逆的改名与备份、所有采集进程均有硬性存活上限与心跳看门狗。
+Filename: debs/com.axs.cpuwatcher_0.1.0_iphoneos-arm64.deb
+Size: 62972
+MD5sum: 7cc56ce6c070b760407a1cdbeb96e2ce
+SHA1: 3e2b4627858aa21bf9f29b67f9e92e736e136dc9
+SHA256: 4ff9160eb9f7ab989f69b9a88faee63029dfdfe3057e829c54e0ba44bc555416
+
 Package: com.axs.superscreenshot
 Name: 超级截图
 Version: 6.20.16
@@ -882,17 +897,3 @@ MD5sum: b58a296bc51652d448923b1c475d7a98
 SHA1: 71326a08804d118822bec2e6d7b343e4dc257071
 SHA256: 031519d30c5e663e24bd8cea4bc6a32a0f0d7dcf255a6067c5025480cb74619b
 
-Package: com.axs.cpuwatcher
-Name: CPU 监视器
-Version: 0.1.0
-Architecture: iphoneos-arm64
-Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：按需 CPU 与性能诊断工具（默认静默，零后台采样，打开监控页才启动采集，返回上级页立即停止）。① 全局与每核 CPU 占用、内存占用与压力；② 实时进程列表（按 CPU 占用排序，可看进程名 / PID / CPU% / 内存 / 线程数）；③ 能耗与唤醒排行（按进程统计耗电纳焦与中断唤醒次数，用于定位「CPU 不高但待机耗电」的插件）；④ 采样剖析（对指定进程采样若干秒，定位到具体 dylib 及偏移）；⑤ 插件冲突扫描（静态解析各插件 dylib 的 Logos hook 符号，找出两个插件 hook 同一方法的冲突矩阵）；⑥ 崩溃日志聚合（按归属插件统计崩溃次数）；⑦ 进程震荡检测（反复重启的异常进程标红）；⑧ 悬浮窗（默认关闭，开启时在屏幕上显示实时 CPU 与内存，关闭后彻底停止刷新）；⑨ 一键导出诊断快照。安全设计：不注册任何 LaunchDaemon、开机零执行、不改动系统关键进程、对越狱目录只做可逆的改名与备份、所有采集进程均有硬性存活上限与心跳看门狗。
-Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
-Maintainer: yzdmm2024
-Author: yzdmm2024
-Section: Tweaks
-Filename: ./debs/com.axs.cpuwatcher_0.1.0_iphoneos-arm64.deb
-Size: 62972
-MD5sum: 7cc56ce6c070b760407a1cdbeb96e2ce
-SHA1: 3e2b4627858aa21bf9f29b67f9e92e736e136dc9
-SHA256: 4ff9160eb9f7ab989f69b9a88faee63029dfdfe3057e829c54e0ba44bc555416
