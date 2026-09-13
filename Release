@@ -31,17 +31,17 @@ Description: Acljcr Source
 
 
 Support: https://github.com/yzdmm2024/repo
-Date: Sun, 13 Sep 2026 09:34:17 GMT
+Date: Sun, 13 Sep 2026 09:53:45 GMT
 
 MD5Sum:
- 66a731781af09befcbaab4ea7e173e97 346221 Packages
- 9ba18365bbd59c9e8df92f207eba07a9 22205 Packages.gz
- cad906b21fec1d3e0e89b15bfe8b16fc 23311 Packages.bz2
+ 972d9113a081af8377c59a42b7b7e276 348066 Packages
+ 40c1b2f09c51feef6aec5a57ff2ab13f 22977 Packages.gz
+ fbf61abba075c72e59d27a7e301b4695 23747 Packages.bz2
 SHA1:
- 443bef2fb586dba7d8265a31a3f20a6ba08be999 346221 Packages
- 80b40b831d77fc5ee33fbc7ecb49ef76b3694768 22205 Packages.gz
- 416f25b6bc793266d84f1c03cc037d2bd5f75f06 23311 Packages.bz2
+ 3213b11f3b28b5e53b555cf5445d432a29dcd7b3 348066 Packages
+ 28ad5695a99714bca3eeca874b3ab282d82d128c 22977 Packages.gz
+ 884b7419955399441acdb856423d5a7d8fd9ca88 23747 Packages.bz2
 SHA256:
- ef78ded1a235de87601962a55db101a11bfe7f255db78467c0edff87f729a595 346221 Packages
- 131a39b062f7b0cbc3b26143a4c69a9896ac59512b9b9dbcbd7559b4d55ac4c0 22205 Packages.gz
- ebf4ec79af1102d9adb3fa89946ae2fc6b2ef64c545ee6a4a6a54ac3fe7d8223 23311 Packages.bz2
+ 9ccf8f81b57d6338cb7e54d44bbff7b06fd7a63b7cd6bf53a3d4a92c833ea54e 348066 Packages
+ a80af0e65b26e1bf9fe8688f0298879f5ae30fe20a2f5f8863f0c5bd1f334cbe 22977 Packages.gz
+ 44e77e8b87ed5faa963e800f94aca25b15f9eebdbc3e3cd4364ad4f32cf90cbd 23747 Packages.bz2
