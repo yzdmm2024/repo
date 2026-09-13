@@ -822,3 +822,17 @@ MD5sum: b58a296bc51652d448923b1c475d7a98
 SHA1: 71326a08804d118822bec2e6d7b343e4dc257071
 SHA256: 031519d30c5e663e24bd8cea4bc6a32a0f0d7dcf255a6067c5025480cb74619b
 
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.2
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 节约时间，打字即可。接入 LocSim 解锁验证(锁整个插件); 29 个音色(12 旧+17 新, 含粤语 Rocky/Kiki)全部到位。
+Filename: debs/com.yzdmm2024.myvoice_2.8.2_iphoneos-arm64.deb
+Size: 140078
+MD5sum: f82920f5941bf93bcb245ad671c46049
+SHA1: 3e1e40d1c1f8ed0361b4cd4e64ab76191d352cef
+SHA256: df8f4d15802d6a94b881b5c7629d3d037bfe4a8e3a981267aae0fb429ee3aca3
