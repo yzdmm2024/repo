@@ -763,6 +763,21 @@ MD5sum: bff81b11c4b1297e4fb1470ea5e7cbd8
 SHA1: 6f339b7001f4555d42da4bab3097b46a18f7b12d
 SHA256: 1fa0f1f4967173c28a2a0673ef100b9e667009eccc858d6ebdba878cd9f5bc1c
 
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.0
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 节约时间，打字即可。
+Filename: debs/com.yzdmm2024.myvoice_2.8.0_iphoneos-arm64.deb
+Size: 135246
+MD5sum: 24ba8d44ee113c9602a7fa1c31cbed12
+SHA1: cc7e61de6885734148f3be4dd413215dcd892df6
+SHA256: 5a2b7fc661439e4c7171355fb04979b98c50c4dcbf1ebe801e4d78e72782709a
+
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
 Version: 1.0.3
