@@ -928,6 +928,21 @@ MD5sum: 99d31e9159d7884af4faeb9eeef3878e
 SHA1: 8c85aff7113b6b7999e9fac34706ba0373bea8bb
 SHA256: f25ea444fcb94be134c8c62739a845d3b24e314677e60e8ee252eed7077ab4cf
 
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.9
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 节约时间，打字即可。★ 2.8.9 「从文件选取音频」新增 .aud 格式支持：自动识别微信/QQ 语音的 AMR 封装（#!AMR 头）并就地转成 m4a 后再克隆；SILK 封装（#!SILK 头）iOS 无解码器，给出 ffmpeg/格式工厂转码提示，不再无声失败。
+Filename: debs/com.yzdmm2024.myvoice_2.8.9_iphoneos-arm64.deb
+Size: 184562
+MD5sum: c62f9f7dcee66e3697a904a572a09dfb
+SHA1: e87126e8a19711a71eb3807ef66ffcc5fdeac22f
+SHA256: f6fdb4282c00bdde0e090eaf6690fc40eff9eb059707b3553c7aa3d49f64856a
+
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
 Version: 1.0.3
@@ -957,17 +972,3 @@ MD5sum: b58a296bc51652d448923b1c475d7a98
 SHA1: 71326a08804d118822bec2e6d7b343e4dc257071
 SHA256: 031519d30c5e663e24bd8cea4bc6a32a0f0d7dcf255a6067c5025480cb74619b
 
-Package: com.yzdmm2024.myvoice
-Name: 我的语音
-Version: 2.8.9
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm2024
-Maintainer: yzdmm2024
-Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
-Description: 节约时间，打字即可。★ 2.8.9 「从文件选取音频」新增 .aud 格式支持：自动识别微信/QQ 语音的 AMR 封装（#!AMR 头）并就地转成 m4a 后再克隆；SILK 封装（#!SILK 头）iOS 无解码器，给出 ffmpeg/格式工厂转码提示，不再无声失败。
-Filename: debs/com.yzdmm2024.myvoice_2.8.9_iphoneos-arm64.deb
-Size: 184562
-MD5sum: c62f9f7dcee66e3697a904a572a09dfb
-SHA1: e87126e8a19711a71eb3807ef66ffcc5fdeac22f
-SHA256: f6fdb4282c00bdde0e090eaf6690fc40eff9eb059707b3553c7aa3d49f64856a
