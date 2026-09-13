@@ -898,6 +898,21 @@ MD5sum: 4e26a090c74309e130f26240ffda6b7b
 SHA1: 229b50d324a649e0bef339e1480de45e3cb4350f
 SHA256: 275888d7dfc4195071714321914b2c16b9af5beb376e53ea813775de404abd9b
 
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.7
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 节约时间，打字即可。★ 真修千问「调了没反应」：旧版把 emotion/speed 塞进请求体，而这两个不是 Qwen-TTS 接口的合法字段，被服务端静默忽略——现在千问统一走 instructions（仅可调版模型认），面板新增「千问模型」标准版/可调版切换。另新增：音色列表内一键云端试听、克隆失败给具体原因、「音色+风格+方言」预设一键切换、常用文本模板、缓存管理入口、音色按最近使用排序；音色分节不再用悬浮表头（原先会挡住列表）。
+Filename: debs/com.yzdmm2024.myvoice_2.8.7_iphoneos-arm64.deb
+Size: 177126
+MD5sum: 773013b9bbb07e370ae0c60a54bd4166
+SHA1: 6f970b03e36f32c189b3f99436b9c6286b4a54d1
+SHA256: 38b02918a5d592d21e3e9948e38badabbab9353bedd5f3b3c897fd4e722de616
+
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
 Version: 1.0.3
