@@ -756,12 +756,12 @@ Section: Tweaks
 Author: yzdmm2024
 Maintainer: yzdmm2024
 Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
-Description: 节约时间，打字即可。支持 QQ，选音色自动发出，免配置开箱即用。
+Description: 节约时间，打字即可。
 Filename: debs/com.yzdmm2024.myvoice_2.7.0_iphoneos-arm64.deb
-Size: 133664
-MD5sum: 63c2870e9b2bd71297c94ff92801c91a
-SHA1: cd3b5987d5ee90f509dae682472a6a2350cbf9b7
-SHA256: 3d1f6dee066e0d5f47d824331059faa17c8a0b1107cbaf6d0abf0ac64ed8b51c
+Size: 133522
+MD5sum: bff81b11c4b1297e4fb1470ea5e7cbd8
+SHA1: 6f339b7001f4555d42da4bab3097b46a18f7b12d
+SHA256: 1fa0f1f4967173c28a2a0673ef100b9e667009eccc858d6ebdba878cd9f5bc1c
 
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
