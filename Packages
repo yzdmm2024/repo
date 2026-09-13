@@ -823,6 +823,21 @@ MD5sum: a95baa00e3dd5b4001dc313860844001
 SHA1: 7bbbdeacbee15b815d9972a4eec95b3e03f3d679
 SHA256: 0c1cac41a5ebc345021e5170288d215ae9f839c1581ce8b1154e4ea275f00f2e
 
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.4
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 节约时间，打字即可。修复录音停止无响应 + 文件选取权限 + 界面颜色可读性；优化音色选择，一屏显示更多音色；★ 修复声音复刻不生效（克隆后自动切换到克隆音色 + 统一复刻/合成模型）。
+Filename: debs/com.yzdmm2024.myvoice_2.8.4_iphoneos-arm64.deb
+Size: 141094
+MD5sum: 38e84facab2b645d306bed23fb0cb345
+SHA1: 22f02b1e8a59ce95b3967df0ee95780ebed3ad9d
+SHA256: dd10d8e96df9a8fe1c50763664b09ba390b6b00f10ff0210d8ca0868a6e08192
+
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
 Version: 1.0.3
@@ -852,17 +867,3 @@ MD5sum: b58a296bc51652d448923b1c475d7a98
 SHA1: 71326a08804d118822bec2e6d7b343e4dc257071
 SHA256: 031519d30c5e663e24bd8cea4bc6a32a0f0d7dcf255a6067c5025480cb74619b
 
-Package: com.yzdmm2024.myvoice
-Name: 我的语音
-Version: 2.8.4
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm2024
-Maintainer: yzdmm2024
-Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
-Description: 节约时间，打字即可。修复录音停止无响应 + 文件选取权限 + 界面颜色可读性；优化音色选择，一屏显示更多音色；★ 修复声音复刻不生效（克隆后自动切换到克隆音色 + 统一复刻/合成模型）。
-Filename: debs/com.yzdmm2024.myvoice_2.8.4_iphoneos-arm64.deb
-Size: 141094
-MD5sum: 38e84facab2b645d306bed23fb0cb345
-SHA1: 22f02b1e8a59ce95b3967df0ee95780ebed3ad9d
-SHA256: dd10d8e96df9a8fe1c50763664b09ba390b6b00f10ff0210d8ca0868a6e08192
