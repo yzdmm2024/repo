@@ -1,0 +1,49 @@
+Origin: Acljcr
+
+
+
+Label: Acljcr
+
+
+
+Suite: stable
+
+
+
+Version: 1.0
+
+
+
+Codename: ios
+
+
+
+Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
+
+
+
+Components: main
+
+
+
+Description: Acljcr Source
+
+
+
+Support: https://github.com/yzdmm2024/repo
+Date: Sun, 13 Sep 2026 08:47:13 GMT
+
+MD5Sum:
+ e7b870c29e4b1c7f168920153193a002 348066 Packages
+ 55b28920021b996cc7d02e28f7f55998 22979 Packages.gz
+ 183ded6312794d55bfbe44a19f162caf 23666 Packages.bz2
+
+SHA1:
+ 0d87239053e43487a7c4be29d81a70bf961a7d3c 348066 Packages
+ 55fa65b359d6891337e8f720537388060b5e76ed 22979 Packages.gz
+ 1cc21b8dd301e3831ecf6130571ee65bb6f94f1f 23666 Packages.bz2
+
+SHA256:
+ 2bcb6c02b1def3ff38a81f8680b63efea6b22523b401b77e120179ffeedcb3f0 348066 Packages
+ 3cc36e3f3615544c8417841af6d0bbc5efc3956f4302661686f070d7cc1640bf 22979 Packages.gz
+ 53e3432ab7d35dfb5aad889a27f95f87d75e44bc58dcd1249fcc372d6578043e 23666 Packages.bz2
