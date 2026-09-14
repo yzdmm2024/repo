@@ -885,18 +885,18 @@ SHA256: 8498923623c96ab4fd769b6683dae2b4fbab56f8a829a5fadda6b7fb88fe28be
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
-Version: 2.8.18
+Version: 2.8.19
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: yzdmm2024
 Maintainer: yzdmm2024
 Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
-Description: 节约时间，打字即可。★ 2.8.18 修 QQ 全自动发送：实机 frida 抓包确认真链路（QQPushToTalkView.startRecordAsync 开始 → QQPttRecorder.sendRecordData 发送），改「合成语音」直接驱动真入口，不再硬找按钮、不再用 stopRecord，点一下就自动发送无需手动按住。★ 2.8.14 修阳江话/皖北话仍是普通话：引擎未训练这两种方言，纯文本指令被忽略；改为映射成最接近的已支持方言（阳江话→广东话/粤语，皖北话→河南话/中原官话），指令真正生效出真腔。 修阳江话/皖北话仍是普通话：引擎未训练这两种方言，纯文本指令被忽略；改为映射成最接近的已支持方言（阳江话→广东话/粤语，皖北话→河南话/中原官话），指令真正生效出真腔。★ 2.8.13 ①克隆音色跨 App 共享（微信克隆 QQ 也显示）②保留 2.8.12 键盘修复。 ★ 2.8.11 修复 .aud 解码错误码 -2。 ★ 2.8.15 QQ 全自动发送：点「合成语音」无需先手动按住「按住 说话」——主动定位当前聊天页 PttRecordOperator 直接触发录音（与手动按住同链路），找不到才退回手动兜底。
-Filename: debs/com.yzdmm2024.myvoice_2.8.18_iphoneos-arm64.deb
-Size: 286188
-MD5sum: b2c49b29951709efa9883a7b4e711016
-SHA1: 2bb906c6a2300ce5c9e2afa1f357bc73794650fd
-SHA256: 40fd4b358c708225423f6f1e1c56029bca54bc0fccefe95a7be0d75a77f755ef
+Description: 节约时间，打字即可。★ 2.8.19 修复 2.8.18 点「合成语音」闪退：根因是递归遍历 vc.view.subviews 找 QQPushToTalkView 时碰到 QQ 正在释放的视图，for...in 拿到悬空数组 → EXC_BAD_ACCESS。改法：用 MSHookMessageEx 钩住 QQPushToTalkView（didMoveToWindow/startRecordAsync）直接捕获视图实例，零遍历、零主线程阻塞，彻底不闪退；拿不到捕获视图时安全退回「请手动按住」提示。★ 2.8.18 修 QQ 全自动发送：实机 frida 抓包确认真链路（QQPushToTalkView.startRecordAsync 开始 → QQPttRecorder.sendRecordData 发送），点一下就自动发送无需手动按住。★ 2.8.14 修阳江话/皖北话仍是普通话：引擎未训练这两种方言，纯文本指令被忽略；改为映射成最接近的已支持方言（阳江话→广东话/粤语，皖北话→河南话/中原官话），指令真正生效出真腔。 修阳江话/皖北话仍是普通话：引擎未训练这两种方言，纯文本指令被忽略；改为映射成最接近的已支持方言（阳江话→广东话/粤语，皖北话→河南话/中原官话），指令真正生效出真腔。★ 2.8.13 ①克隆音色跨 App 共享（微信克隆 QQ 也显示）②保留 2.8.12 键盘修复。 ★ 2.8.11 修复 .aud 解码错误码 -2。 ★ 2.8.15 QQ 全自动发送：点「合成语音」无需先手动按住「按住 说话」——主动定位当前聊天页 PttRecordOperator 直接触发录音（与手动按住同链路），找不到才退回手动兜底。
+Filename: debs/com.yzdmm2024.myvoice_2.8.19_iphoneos-arm64.deb
+Size: 285806
+MD5sum: 2c224f605f2b5b884fe5638d6384b2e0
+SHA1: d63add34b10b0b2745198ae5d65bf690092250ef
+SHA256: 71dc751d8709a2a73767bba18052aef3dcb152e7c014038323021e10337bc7f8
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
