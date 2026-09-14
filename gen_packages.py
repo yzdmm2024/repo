@@ -1,3 +1,4 @@
+# regen-trigger: re-index voicesaver after debs stable
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """扫描 debs/ 目录，生成 Packages / Packages.gz / Packages.bz2 / Release。
