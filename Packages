@@ -13,6 +13,21 @@ MD5sum: 3471dac7dbd3e986dd5e8fb7c82ae23b
 SHA1: a84d08a987beae7912acb5dc8f8c8db3b3d1e67e
 SHA256: 7f7fd008985ae7ead35778a76161b2e6d5735d16fb88b23c64a7826827caf353
 
+Package: com.axs.cpuwatcher
+Name: CPU 监视器
+Version: 0.1.6
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：按需 CPU 与性能诊断工具（默认静默，零后台采样，打开监控页才启动采集，返回上级页立即停止）。① 全局 CPU 占用与内存占用；② 实时进程列表（支持按 CPU / 内存 / 唤醒 / 线程 / 名称排序，可暂停冻结、点击复制。每个进程按可执行路径自动标注 [系统]/[App]/[越狱] 类别，一眼区分是 iOS 自带、你装的 App 还是越狱相关程序。实测非 root 即可读取，不需要特权助手）；③ 能耗排行（按进程统计耗电纳焦与中断唤醒次数，用于定位「CPU 不高但待机耗电」的插件）；④ 一键列出 SpringBoard 实际加载的插件 dylib 清单（在 SpringBoard 内部直接问 dyld，不是解析 Filter plist 猜的，含每个 dylib 的 UUID，可与崩溃日志 usedImages 对齐）；⑤ 插件冲突扫描（IMP 归属法：遍历类方法，检测同一方法是否被多个插件替换，标红显示潜在冲突）。安全设计：不注册任何 LaunchDaemon、开机零执行、不改动系统关键进程、不写越狱目录（数据只落在 /var/mobile/Media/CPUWatcher）、采集进程有 60 秒硬性存活上限与孤儿看门狗。
+Filename: debs/com.axs.cpuwatcher_0.1.6_iphoneos-arm64.deb
+Size: 98988
+MD5sum: b0d4c08d94f18a1fad55e4d7e3bd8d37
+SHA1: be7fb305dde3bd72fdd8dd19a0b7d4e229cc94a1
+SHA256: 4f6a85a1778dc452a666b4987bf7f061bab920949320c535a65f587ee0ee3b96
+
 Package: com.axs.superscreenshot
 Name: 超级截图
 Version: 6.20.16
@@ -810,6 +825,51 @@ SHA256: 0f38047ca9bb5dd641758e08b3b5a87ca8418376b00f095f16ebb47b0971caa8
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
+Version: 2.8.11
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 节约时间，打字即可。★ 2.8.11 修复 .aud 解码错误码 -2：SILK 分支在释放文件访问权限后才读原文件，fopen 必败；改为先拷贝到临时目录再解码，与其他分支一致。
+Filename: debs/com.yzdmm2024.myvoice_2.8.11_iphoneos-arm64.deb
+Size: 269820
+MD5sum: 3c82fee4ff443d6f584b0cf4445ef330
+SHA1: 5c80b095f472dd7676fd6c299655a9eb4b149377
+SHA256: d7d0991d5f11c8bf984cee89928c90a9e2354ed2ce57d916acdfe82159db8c83
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.12
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 节约时间，打字即可。★ 2.8.12 ①新增阳江话/皖北话方言（接入选方言列表，CosyVoice 指令式生成，听感更真人）②修输入文字时键盘偶尔不弹（面板/FAB 拖动手势 cancelsTouchesInView=NO）。 ★ 2.8.11 修复 .aud 解码错误码 -2：SILK 分支在释放文件访问权限后才读原文件，fopen 必败；改为先拷贝到临时目录再解码，与其他分支一致。
+Filename: debs/com.yzdmm2024.myvoice_2.8.12_iphoneos-arm64.deb
+Size: 270262
+MD5sum: 857af8a37a409d5115dda18cc0272e4c
+SHA1: ca5ea6260f7b1b0f881e17a676277732c4a8530a
+SHA256: 665dbab555f4a46f5cf41ce4fb55711e10a2874188c6de6f18afa4a036bfc64a
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.13
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 节约时间，打字即可。★ 2.8.13 ①阳江话/皖北话方言接入「选方言」列表（qwen-audio 模型，列表 21→23 种，听感更真人）②修克隆音色跨 App 不共享：微信克隆的嗓音 QQ 看不到，voices 改存全局共享域，微信/QQ 互通 ③保留 2.8.12 输入键盘偶尔不弹修复。 ★ 2.8.12 新增阳江话/皖北话（CosyVoice 指令式）+ 修键盘。 ★ 2.8.11 修复 .aud 解码错误码 -2。
+Filename: debs/com.yzdmm2024.myvoice_2.8.13_iphoneos-arm64.deb
+Size: 275630
+MD5sum: 04bd9304f57754c5f21f1058869030a6
+SHA1: 15dbb6c1da5a79bb1ac49dfec51e85e4170efc5f
+SHA256: 8498923623c96ab4fd769b6683dae2b4fbab56f8a829a5fadda6b7fb88fe28be
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
 Version: 2.8.14
 Architecture: iphoneos-arm64
 Section: Tweaks
@@ -987,17 +1047,3 @@ MD5sum: b58a296bc51652d448923b1c475d7a98
 SHA1: 71326a08804d118822bec2e6d7b343e4dc257071
 SHA256: 031519d30c5e663e24bd8cea4bc6a32a0f0d7dcf255a6067c5025480cb74619b
 
-Package: com.axs.cpuwatcher
-Name: CPU 监视器
-Version: 0.1.6
-Architecture: iphoneos-arm64
-Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：按需 CPU 与性能诊断工具（默认静默，零后台采样，打开监控页才启动采集，返回上级页立即停止）。① 全局 CPU 占用与内存占用；② 实时进程列表（支持按 CPU / 内存 / 唤醒 / 线程 / 名称排序，可暂停冻结、点击复制。每个进程按可执行路径自动标注 [系统]/[App]/[越狱] 类别，一眼区分是 iOS 自带、你装的 App 还是越狱相关程序。实测非 root 即可读取，不需要特权助手）；③ 能耗排行（按进程统计耗电纳焦与中断唤醒次数，用于定位「CPU 不高但待机耗电」的插件）；④ 一键列出 SpringBoard 实际加载的插件 dylib 清单（在 SpringBoard 内部直接问 dyld，不是解析 Filter plist 猜的，含每个 dylib 的 UUID，可与崩溃日志 usedImages 对齐）；⑤ 插件冲突扫描（IMP 归属法：遍历类方法，检测同一方法是否被多个插件替换，标红显示潜在冲突）。安全设计：不注册任何 LaunchDaemon、开机零执行、不改动系统关键进程、不写越狱目录（数据只落在 /var/mobile/Media/CPUWatcher）、采集进程有 60 秒硬性存活上限与孤儿看门狗。
-Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
-Maintainer: yzdmm2024
-Author: yzdmm2024
-Section: Tweaks
-Filename: ./debs/com.axs.cpuwatcher_0.1.6_iphoneos-arm64.deb
-Size: 98988
-MD5sum: b0d4c08d94f18a1fad55e4d7e3bd8d37
-SHA1: be7fb305dde3bd72fdd8dd19a0b7d4e229cc94a1
-SHA256: 4f6a85a1778dc452a666b4987bf7f061bab920949320c535a65f587ee0ee3b96
