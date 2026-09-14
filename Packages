@@ -885,6 +885,81 @@ SHA256: 8498923623c96ab4fd769b6683dae2b4fbab56f8a829a5fadda6b7fb88fe28be
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
+Version: 2.8.14
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 节约时间，打字即可。★ 2.8.14 修阳江话/皖北话仍是普通话：引擎未训练这两种方言，纯文本指令被忽略；改为映射成最接近的已支持方言（阳江话→广东话/粤语，皖北话→河南话/中原官话），指令真正生效出真腔。★ 2.8.13 ①克隆音色跨 App 共享（微信克隆 QQ 也显示）②保留 2.8.12 键盘修复。 ★ 2.8.11 修复 .aud 解码错误码 -2。
+Filename: debs/com.yzdmm2024.myvoice_2.8.14_iphoneos-arm64.deb
+Size: 275564
+MD5sum: e9529cd004d932640281fd7ab66144b1
+SHA1: 0d77664a85cd7012d27ba7e3db135fb1646858ab
+SHA256: 64f153192716f59ac7a4e47278b34d7fc29d6bec76c3f183937ee2cdde345008
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.15
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 节约时间，打字即可。★ 2.8.14 修阳江话/皖北话仍是普通话：引擎未训练这两种方言，纯文本指令被忽略；改为映射成最接近的已支持方言（阳江话→广东话/粤语，皖北话→河南话/中原官话），指令真正生效出真腔。★ 2.8.13 ①克隆音色跨 App 共享（微信克隆 QQ 也显示）②保留 2.8.12 键盘修复。 ★ 2.8.11 修复 .aud 解码错误码 -2。 ★ 2.8.15 QQ 全自动发送：点「合成语音」无需先手动按住「按住 说话」——主动定位当前聊天页 PttRecordOperator 直接触发录音（与手动按住同链路），找不到才退回手动兜底。
+Filename: debs/com.yzdmm2024.myvoice_2.8.15_iphoneos-arm64.deb
+Size: 275058
+MD5sum: a3dc028000b73b43a066731fe9c8803a
+SHA1: eed27fa023ce8493ea48b6cdbaece51656fd8b3d
+SHA256: af159e6575b621093737d44d913ff9c7f2085b2c5e7b4b257383f2d1f23050da
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.16
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 节约时间，打字即可。★ 2.8.16 修 QQ 全自动发送仍弹「请按住说话」：2.8.15 靠「从视图图里找 PttRecordOperator」走不通（该实例仅在手指按住时创建），改为点「合成语音」时直接【模拟按下「按住说话」按钮】，由 QQ 自行创建 operator/recorder 并注入 TTS，松手即发。★ 2.8.14 修阳江话/皖北话仍是普通话：引擎未训练这两种方言，纯文本指令被忽略；改为映射成最接近的已支持方言（阳江话→广东话/粤语，皖北话→河南话/中原官话），指令真正生效出真腔。 修阳江话/皖北话仍是普通话：引擎未训练这两种方言，纯文本指令被忽略；改为映射成最接近的已支持方言（阳江话→广东话/粤语，皖北话→河南话/中原官话），指令真正生效出真腔。★ 2.8.13 ①克隆音色跨 App 共享（微信克隆 QQ 也显示）②保留 2.8.12 键盘修复。 ★ 2.8.11 修复 .aud 解码错误码 -2。 ★ 2.8.15 QQ 全自动发送：点「合成语音」无需先手动按住「按住 说话」——主动定位当前聊天页 PttRecordOperator 直接触发录音（与手动按住同链路），找不到才退回手动兜底。
+Filename: debs/com.yzdmm2024.myvoice_2.8.16_iphoneos-arm64.deb
+Size: 275128
+MD5sum: 1de71a3d7ced7808b8996d29a980391a
+SHA1: 2ae680f45e3df9464f064b9cabf4eb911716d20a
+SHA256: eab38ddc36c3f70b6646ebdddab8d33b1e2684fe0471216313cbc4e70204cfa5
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.17
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 节约时间，打字即可。★ 2.8.17 真机抓包诊断版：仅增强 [mvdiag] 日志（枚举 QQ 录音相关类/方法、按住说话真实按钮类与手势、聊天输入区视图树），不改发送行为，用于定位 QQ 自动发送失效根因。：2.8.15 靠「从视图图里找 PttRecordOperator」走不通（该实例仅在手指按住时创建），改为点「合成语音」时直接【模拟按下「按住说话」按钮】，由 QQ 自行创建 operator/recorder 并注入 TTS，松手即发。★ 2.8.14 修阳江话/皖北话仍是普通话：引擎未训练这两种方言，纯文本指令被忽略；改为映射成最接近的已支持方言（阳江话→广东话/粤语，皖北话→河南话/中原官话），指令真正生效出真腔。 修阳江话/皖北话仍是普通话：引擎未训练这两种方言，纯文本指令被忽略；改为映射成最接近的已支持方言（阳江话→广东话/粤语，皖北话→河南话/中原官话），指令真正生效出真腔。★ 2.8.13 ①克隆音色跨 App 共享（微信克隆 QQ 也显示）②保留 2.8.12 键盘修复。 ★ 2.8.11 修复 .aud 解码错误码 -2。 ★ 2.8.15 QQ 全自动发送：点「合成语音」无需先手动按住「按住 说话」——主动定位当前聊天页 PttRecordOperator 直接触发录音（与手动按住同链路），找不到才退回手动兜底。
+Filename: debs/com.yzdmm2024.myvoice_2.8.17_iphoneos-arm64.deb
+Size: 284292
+MD5sum: 943b18c2d7f626433cde24b66c3e7ee2
+SHA1: 92971f74087465ab86dbb24753507b0c10438177
+SHA256: 6b59dc9d914273e6df89092e514d2b302b59a4bdb7338c30fdedd18f4ca597d4
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.18
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 节约时间，打字即可。★ 2.8.18 修 QQ 全自动发送：实机 frida 抓包确认真链路（QQPushToTalkView.startRecordAsync 开始 → QQPttRecorder.sendRecordData 发送），改「合成语音」直接驱动真入口，不再硬找按钮、不再用 stopRecord，点一下就自动发送无需手动按住。★ 2.8.14 修阳江话/皖北话仍是普通话：引擎未训练这两种方言，纯文本指令被忽略；改为映射成最接近的已支持方言（阳江话→广东话/粤语，皖北话→河南话/中原官话），指令真正生效出真腔。 修阳江话/皖北话仍是普通话：引擎未训练这两种方言，纯文本指令被忽略；改为映射成最接近的已支持方言（阳江话→广东话/粤语，皖北话→河南话/中原官话），指令真正生效出真腔。★ 2.8.13 ①克隆音色跨 App 共享（微信克隆 QQ 也显示）②保留 2.8.12 键盘修复。 ★ 2.8.11 修复 .aud 解码错误码 -2。 ★ 2.8.15 QQ 全自动发送：点「合成语音」无需先手动按住「按住 说话」——主动定位当前聊天页 PttRecordOperator 直接触发录音（与手动按住同链路），找不到才退回手动兜底。
+Filename: debs/com.yzdmm2024.myvoice_2.8.18_iphoneos-arm64.deb
+Size: 286188
+MD5sum: b2c49b29951709efa9883a7b4e711016
+SHA1: 2bb906c6a2300ce5c9e2afa1f357bc73794650fd
+SHA256: 40fd4b358c708225423f6f1e1c56029bca54bc0fccefe95a7be0d75a77f755ef
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
 Version: 2.8.19
 Architecture: iphoneos-arm64
 Section: Tweaks
@@ -912,6 +987,21 @@ Size: 135604
 MD5sum: 9abf26625325fb646399b41bcc601664
 SHA1: dc960239766f5c2bf4b6b667782c6f66b81e908b
 SHA256: bd87c5523231a42678c3fa0f2f3bd289bab92e90a0bfb61faa8c57d4cd37fd2b
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.20
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 节约时间，打字即可。★ 2.8.20 修 QQ 全自动发送真正失效根因：2.8.15~2.8.19 三个 QQ 钩子（didTriggeredRecord/createRecorder/QQPushToTalkView）是在点「合成语音」时才懒安装，而 QQPushToTalkView 的 didMoveToWindow 在用户切语音模式时已触发 → 钩子永远来不及扣住视图 → 永远退回「请手动按住」。改为 tweak 启动即挂钩子（带类加载重试），切语音模式时即扣留视图实例；发送时再叠加「实时遍历视图树找 QQPushToTalkView」兜底，只要处于语音模式点合成语音即自动 startRecordAsync 开始 + sendRecordData 发送，无需手动按住。★ 2.8.19 修复 2.8.18 点「合成语音」闪退（递归遍历视图树拿悬空数组 → EXC_BAD_ACCESS），改钩住 QQPushToTalkView 直接捕获。★ 2.8.18 修 QQ 全自动发送：实机 frida 抓包确认真链路（QQPushToTalkView.startRecordAsync 开始 → QQPttRecorder.sendRecordData 发送）。★ 2.8.14 修阳江话/皖北话仍是普通话：映射成最接近的已支持方言（阳江话→广东话/粤语，皖北话→河南话/中原官话）。★ 2.8.13 ①克隆音色跨 App 共享（微信克隆 QQ 也显示）②保留 2.8.12 键盘修复。★ 2.8.11 修复 .aud 解码错误码 -2。
+Filename: debs/com.yzdmm2024.myvoice_2.8.20_iphoneos-arm64.deb
+Size: 286812
+MD5sum: d37f4d3da43be159feac6a448e2fd0ff
+SHA1: cdff0f4012ac1011eb3190c0d6e23e85041c6e95
+SHA256: ae5d622ef2c7249250f8d2f76d17cc8a0fd8914764176fa326286c17ba53ecc5
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
