@@ -1071,12 +1071,12 @@ Section: Tweaks
 Author: yzdmm2024
 Maintainer: yzdmm2024
 Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
-Description: 节约时间，打字即可。★ 2.8.24 新增抖音半自动语音发送（文件替换法，frida 真机抓全栈确认）：抖音语音键长按手势 action 是 p_handleGes: 且 startRecord 无法程序化触发，故走半自动——用户在抖音聊天按住「按住说话」(MyVoice 面板已备好文本/音色)，MyVoice 合成 TTS 编码成 m4a、自动替用户松手(stopRecordWithInTranslate:0)、并 hook AWEIMAudioRecordController -sendRecordMessageIfNeededWithFilePath: 把抖音录音文件替换成 TTS 语音发出。未备文本时抖音正常录音。★ 2.8.23 修 QQ 全自动「一直录音、停不下来、无法取消」（frida 真机抓全栈确认）：手动松手全链路 = QQPttRecordBtn.touchesEnded → QQPushToTalkView.touchEnd:(单 UITouch*) → 这才是「停止+发送」唯一真实入口。2.8.20~2.8.22 调的 sendRecordData/onRecordEnd 是更底层发包方法，要求 touchEnd: 先设好「已松手」状态才能真正停 AudioQueue，直接调它们绕过状态机 → 录音永远不停。改为自动停止/取消都模拟松手：调 QQPushToTalkView.touchEnd:(合成 Ended 触摸)，与手动同一入口，QQ 内部正确停止+发送；同时修复 recorder 实例扣错（createRecorder 不再覆盖 startRecordAsync:completion: 先扣留的实例）。处于语音模式点合成语音即自动录+发+自动停。★ 2.8.23 修 QQ 全自动「一直录音、停不下来、无法取消」（frida 真机抓全栈确认）：手动松手全链路 = QQPttRecordBtn.touchesEnded → QQPushToTalkView.touchEnd:(单 UITouch*) → 这才是「停止+发送」唯一真实入口。2.8.20~2.8.22 调的 sendRecordData/onRecordEnd 是更底层发包方法，要求 touchEnd: 先设好「已松手」状态才能真正停 AudioQueue，直接调它们绕过状态机 → 录音永远不停。改为自动停止/取消都模拟松手：调 QQPushToTalkView.touchEnd:(合成 Ended 触摸)，与手动同一入口，QQ 内部正确停止+发送；同时修复 recorder 实例扣错（createRecorder 不再覆盖 startRecordAsync:completion: 先扣留的实例）。处于语音模式点合成语音即自动录+发+自动停。★ 2.8.21 修 QQ 全自动发送（frida 真机侦察当前 QQ 版本类名后定位）：QQ 把 `NTAIOChat.NTAIOPttRecordOperator` 重命名为 `QQPttRecordOperator`、把 `didTriggeredRecord` 重命名为 `didStartRecordAsync:`（带参数），2.8.15~2.8.20 的 qqAvailable 类名判断恒为 nil → QQ 自动模式从未激活。改为 hook 真实类。★ 2.8.19 修复 2.8.18 点「合成语音」闪退（递归遍历视图树 → EXC_BAD_ACCESS），改钩住 QQPushToTalkView 直接捕获。★ 2.8.18 修 QQ 全自动发送：真链路（QQPushToTalkView.startRecordAsync 开始 → 松手 touchEnd 停止发送）。★ 2.8.14 修阳江话/皖北话仍是普通话：阳江话→广东话/粤语，皖北话→河南话/中原官话。★ 2.8.13 ①克隆音色跨 App 共享 ②保留 2.8.12 键盘修复。★ 2.8.11 修复 .aud 解码错误码 -2。★ 2.8.19 修复 2.8.18 点「合成语音」闪退（递归遍历视图树拿悬空数组 → EXC_BAD_ACCESS），改钩住 QQPushToTalkView 直接捕获。★ 2.8.18 修 QQ 全自动发送：实机 frida 抓包确认真链路（QQPushToTalkView.startRecordAsync 开始 → QQPttRecorder.sendRecordData 发送）。★ 2.8.14 修阳江话/皖北话仍是普通话：映射成最接近的已支持方言（阳江话→广东话/粤语，皖北话→河南话/中原官话）。★ 2.8.13 ①克隆音色跨 App 共享（微信克隆 QQ 也显示）②保留 2.8.12 键盘修复。★ 2.8.11 修复 .aud 解码错误码 -2。
+Description: 节约时间，打字即可。★ 2.8.25 修抖音「自己就中断 / 停不下来 / 未识别聊天对象」：①去掉自动松手——抖音改为纯半自动（用户掌控松手时机，TTS 仅后台合成、松手瞬间替换文件，不再强松手导致中断）；②点面板「合成语音」在抖音进程里不再走微信发送逻辑（之前因抖音无 wxid 报「未识别」），改为「授权本次抖音 TTS 接管」+ 引导去长按语音键；③激活改用显式 arming 门控（替代 lastComposedText 全局残留），未授权时抖音完全正常、不会被劫持，发完即失效需重新点。★ 2.8.24 抖音半自动语音发送（文件替换法）：长按抖音语音键 → MyVoice 合成 TTS 编码 m4a → 松手时 hook sendRecordMessageIfNeededWithFilePath: 把录音文件替换成 TTS 发出。★ 2.8.23 修 QQ 全自动「一直录音、停不下来、无法取消」：停止/取消改模拟松手调 QQPushToTalkView.touchEnd:（手动松手真实入口）。★ 2.8.21 修 QQ 全自动类名（QQPttRecordOperator / didStartRecordAsync:）。
 Filename: debs/com.yzdmm2024.myvoice_2.8.25_iphoneos-arm64.deb
-Size: 294604
-MD5sum: 8989510e5433d343707e6c6548a1be05
-SHA1: 81ddb5944dc3218ed60fd722211778d9bc18180b
-SHA256: 9648191d2a234e5c56eb286ab5d0a7e27baa5abad10204e405ab189eaca11062
+Size: 293874
+MD5sum: bbdbbf91808b11679c60d91e9d87ac7e
+SHA1: 5dba2e2867f0bcca2a88e8410134c02f996ebdef
+SHA256: f65e43c2586ad52c8de4af98e75882802e9931d1dd5bf47b723051806853897c
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
