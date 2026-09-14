@@ -885,18 +885,18 @@ SHA256: 8498923623c96ab4fd769b6683dae2b4fbab56f8a829a5fadda6b7fb88fe28be
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
-Version: 2.8.14
+Version: 2.8.15
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: yzdmm2024
 Maintainer: yzdmm2024
 Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
-Description: 节约时间，打字即可。★ 2.8.14 修阳江话/皖北话仍是普通话：引擎未训练这两种方言，纯文本指令被忽略；改为映射成最接近的已支持方言（阳江话→广东话/粤语，皖北话→河南话/中原官话），指令真正生效出真腔。★ 2.8.13 ①克隆音色跨 App 共享（微信克隆 QQ 也显示）②保留 2.8.12 键盘修复。 ★ 2.8.11 修复 .aud 解码错误码 -2。
-Filename: debs/com.yzdmm2024.myvoice_2.8.14_iphoneos-arm64.deb
-Size: 275564
-MD5sum: e9529cd004d932640281fd7ab66144b1
-SHA1: 0d77664a85cd7012d27ba7e3db135fb1646858ab
-SHA256: 64f153192716f59ac7a4e47278b34d7fc29d6bec76c3f183937ee2cdde345008
+Description: 节约时间，打字即可。★ 2.8.14 修阳江话/皖北话仍是普通话：引擎未训练这两种方言，纯文本指令被忽略；改为映射成最接近的已支持方言（阳江话→广东话/粤语，皖北话→河南话/中原官话），指令真正生效出真腔。★ 2.8.13 ①克隆音色跨 App 共享（微信克隆 QQ 也显示）②保留 2.8.12 键盘修复。 ★ 2.8.11 修复 .aud 解码错误码 -2。 ★ 2.8.15 QQ 全自动发送：点「合成语音」无需先手动按住「按住 说话」——主动定位当前聊天页 PttRecordOperator 直接触发录音（与手动按住同链路），找不到才退回手动兜底。
+Filename: debs/com.yzdmm2024.myvoice_2.8.15_iphoneos-arm64.deb
+Size: 275058
+MD5sum: a3dc028000b73b43a066731fe9c8803a
+SHA1: eed27fa023ce8493ea48b6cdbaece51656fd8b3d
+SHA256: af159e6575b621093737d44d913ff9c7f2085b2c5e7b4b257383f2d1f23050da
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
