@@ -1095,6 +1095,21 @@ SHA256: 0ff05e724aebb98ceb4ecef0d007ca7769bf874a14667b133840d4122ef7aa70
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
+Version: 2.8.27
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 节约时间，打字即可。★ 2.8.27 修：①抖音松手提示改用【文字 toast】「可以松手了」+震动（与 QQ 一致），去掉语音播报；按住即弹「正在合成 TTS…（N字）」，合成好再弹「可以松手了」，提示时机由 TTS 时长（≈文字长度）决定，不再松手后才提示、也不再出声。②方言选择器顶部新增「无（用当前音色原声）」——选了克隆音色只想用克隆声、不想带方言时直接点它即可，不必再选一个方言。★ 2.8.26 修克隆音色在抖音发出是普通话（按音色自身服务商路由）★ 2.8.25 抖音纯半自动（用户掌控松手，TTS 松手瞬间替换文件）★ 2.8.24 抖音文件替换法发送 ★ 2.8.23 修 QQ 全自动停不下来（模拟松手调 touchEnd:）。
+Filename: debs/com.yzdmm2024.myvoice_2.8.27_iphoneos-arm64.deb
+Size: 295900
+MD5sum: 6ab1364c5959efd87f267982c395199e
+SHA1: 4639b245d8d9514de2dc91888847940a1d17dcee
+SHA256: 3660097b3ebf5ebf16a1c75dae144f38fca98a5df3d13548f54401326f86cd71
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
 Version: 2.8.2
 Architecture: iphoneos-arm64
 Section: Tweaks
