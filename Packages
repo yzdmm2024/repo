@@ -1155,6 +1155,21 @@ SHA256: df8f4d15802d6a94b881b5c7629d3d037bfe4a8e3a981267aae0fb429ee3aca3
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
+Version: 2.8.30
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 2.8.29 新增【内置阳江话】音色：把打包的阳江话.mp3 作为参考音频复刻成 CosyVoice 克隆，面板「选方言」里点「阳江话（内置样本克隆）」即出真·阳江话（声线+口音来自样本，不再是被映射成广东话的近似）。★ 2.8.28 克隆音色按自身服务商路由，修复微信/QQ 克隆变普通话。★ 2.8.27 抖音松手提示改文字 toast+震动；方言选择器新增「无（用当前音色原声）」。★ 2.8.26 克隆音色抖音发出是普通话修复。★ 2.8.25 抖音纯半自动。★ 2.8.24 抖音文件替换法。★ 2.8.23 修 QQ 停不下来。
+Filename: debs/com.yzdmm2024.myvoice_2.8.30_iphoneos-arm64.deb
+Size: 933640
+MD5sum: 2ac7d7a4c0961b27e403c9842cbce4b0
+SHA1: 0dfc7a7e28b0fb50771c4141087b34f6820e088c
+SHA256: e45c64caf7e7b7bfe6e2bcfd7c95bde99d7f4a378fd3fc0bd1d5439361fb7794
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
 Version: 2.8.3
 Architecture: iphoneos-arm64
 Section: Tweaks
