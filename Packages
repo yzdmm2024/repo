@@ -1275,6 +1275,21 @@ SHA256: 2422fea730a6744857b3ffb81a63867c8ca0667b9cfa8439c09d6db143790e9c
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
+Version: 2.8.38
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: ★★ 2.8.37 新增「同步服务器音色」：悬浮面板「选择音色」里点「同步」即可把电脑 server.py 的 voices/ 语音包与模型预置音色拉进手机列表，选中即免上传参考音频直接用（合成发 voice=<名字>，服务端自己读 ref.wav）；服务器音色单独成「服务器音色」分组、长按不可删。★★ 2.8.35 省电：QQ 里那段「每次触摸都跑」的抓包诊断代码改为默认关闭（新增开关 设置→我的语音→诊断（排查用）→「记录触摸诊断（仅 QQ）」），并把 %orig 提到最前。以前它会对每次触摸逐级 superview 做类名匹配，命中就拼视图树/手势信息写日志 —— 而 MVLog 每条都是 NSLog + 开/seek/写/关文件，等于点一下写一次盘：没打开悬浮面板也在耗电，还拖慢点击。另外 mvDiagIsQQ/mvDiagIsDouyin 改为进程内缓存（原来每次调用都读 bundleIdentifier）。 ★ 2.8.35 发音通道化（三选一·互斥）：旧版的「启用自建服务器」开关和「云端服务」二选一是两组**独立**设置，可以同时成立 —— 用户明明开了自建服务器，千问预置音色那条路仍然照走阿里云，于是「开着免费模式还在扣额度」，而且从界面上根本看不出来钱花在哪。现在合并成单一的【发音通道】：①自建·免费（你电脑上的 CosyVoice，完全不碰阿里云）②云端Cosy（阿里云 CosyVoice，按量计费）③云端千问（阿里云预置音色，按量计费）；selfHostEnabled 与 ttsProvider 全部由它**单向派生**，数据结构上就出不了「既用自建、又用千问」的状态；并在合成入口加最后一道闸：自建通道下千问族模型一律拦下，并明确提示怎么切。同时做安全脱密：设置页说明里不再出现真实公网 IP，悬浮面板信息弹窗与日志一律只显示 1.2.*.* 形式（完整地址只留在本机设置里）。另把 5 处仍在直写 ttsProvider 的旧逻辑（克隆完成、预设应用、阳江话内置克隆、音色列表点选、试听）全部收敛到通道，其中选千问音色会给出「已切到云端千问（按量计费）」的明确提示，绝不静默扣额度。★ 2.8.34 把「自建服务器」的开关/地址搬到【系统设置 → 我的语音 → 自建服务器】（悬浮面板里点了只显示状态并指路），并删掉用不到的「对象存储 OSS」整组（Bucket / Endpoint / AccessKey / Secret / 测试按钮）—— 克隆音色本来就走 DashScope 临时托管，无需 OSS。同时修一个隐蔽 bug：自建开关/地址原先面板与设置页都能写，但读取是「微信容器优先」，会把设置页写在 jbroot 里的值遮住 → 表现为「设置页改了不生效」；现在设置页是唯一写入方，自建键改为 jbroot 优先读取（并自愈旧版残留）。★ 2.8.33 新增「自建服务器」开关（本地 CosyVoice + 阿里云 ECS 中转，免费克隆音色）：开启后 CosyVoice 族（克隆/预置）走本地 server.py，彻底不消耗 DashScope 额度；千问预置音色仍走阿里云。克隆复刻时参考音频自动存本机，合成时作为零样本复刻素材发给 server.py。★ 2.8.32 修复「千问合成失败·模型名不支持·服务端原文 url error, please check url!」（与充值/额度无关）：根因是【合成端点必须按模型家族选】，旧版按服务商(provider)分流，把 Qwen-Audio-TTS 族的千问克隆音色(绑定 qwen-audio-3.0-tts-plus)送进了 Qwen-TTS 专用端点 multimodal-generation → 服务端必然 400 url error。现改为按模型家族分流：qwen3-tts-* 走 multimodal-generation/generation，qwen-audio-3.0-tts-*/cosyvoice-* 走 /services/audio/tts/SpeechSynthesizer，并在千问通道加安全网（误入即转正确端点）。同时修复：① 预置音色选「可调版(qwen3-tts-instruct-flash)」不再被音色列表写死的标准版覆盖，风格/语速指令终于生效；② 报错信息带上模型名，url error 直接给出人话解释。★ 2.8.29 新增【内置阳江话】音色：把打包的阳江话.mp3 作为参考音频复刻成 CosyVoice 克隆，面板「选方言」里点「阳江话（内置样本克隆）」即出真·阳江话（声线+口音来自样本，不再是被映射成广东话的近似）。★ 2.8.28 克隆音色按自身服务商路由，修复微信/QQ 克隆变普通话。★ 2.8.27 抖音松手提示改文字 toast+震动；方言选择器新增「无（用当前音色原声）」。★ 2.8.26 克隆音色抖音发出是普通话修复。★ 2.8.25 抖音纯半自动。★ 2.8.24 抖音文件替换法。★ 2.8.23 修 QQ 停不下来。
+Filename: debs/com.yzdmm2024.myvoice_2.8.38_iphoneos-arm64.deb
+Size: 949042
+MD5sum: e5f5882124fc177d871b321de78a08b8
+SHA1: b84cc690a4f234ae4b89d9cbe6280c5ba9fecf65
+SHA256: fb7e7ef78ebd497d6cb959986bbeedb541fda311ebf4887d10edbb7f60bf8d5e
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
 Version: 2.8.3
 Architecture: iphoneos-arm64
 Section: Tweaks
