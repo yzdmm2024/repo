@@ -1170,18 +1170,18 @@ SHA256: e45c64caf7e7b7bfe6e2bcfd7c95bde99d7f4a378fd3fc0bd1d5439361fb7794
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
-Version: 2.8.33
+Version: 2.8.34
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: yzdmm2024
 Maintainer: yzdmm2024
 Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
-Description: ★ 2.8.33 新增「自建服务器」开关（本地 CosyVoice + 阿里云 ECS 中转，免费克隆音色）：开启后 CosyVoice 族（克隆/预置）走本地 server.py，彻底不消耗 DashScope 额度；千问预置音色仍走阿里云。克隆复刻时参考音频自动存本机，合成时作为零样本复刻素材发给 server.py。★ 2.8.32 修复「千问合成失败·模型名不支持·服务端原文 url error, please check url!」（与充值/额度无关）：根因是【合成端点必须按模型家族选】，旧版按服务商(provider)分流，把 Qwen-Audio-TTS 族的千问克隆音色(绑定 qwen-audio-3.0-tts-plus)送进了 Qwen-TTS 专用端点 multimodal-generation → 服务端必然 400 url error。现改为按模型家族分流：qwen3-tts-* 走 multimodal-generation/generation，qwen-audio-3.0-tts-*/cosyvoice-* 走 /services/audio/tts/SpeechSynthesizer，并在千问通道加安全网（误入即转正确端点）。同时修复：① 预置音色选「可调版(qwen3-tts-instruct-flash)」不再被音色列表写死的标准版覆盖，风格/语速指令终于生效；② 报错信息带上模型名，url error 直接给出人话解释。★ 2.8.29 新增【内置阳江话】音色：把打包的阳江话.mp3 作为参考音频复刻成 CosyVoice 克隆，面板「选方言」里点「阳江话（内置样本克隆）」即出真·阳江话（声线+口音来自样本，不再是被映射成广东话的近似）。★ 2.8.28 克隆音色按自身服务商路由，修复微信/QQ 克隆变普通话。★ 2.8.27 抖音松手提示改文字 toast+震动；方言选择器新增「无（用当前音色原声）」。★ 2.8.26 克隆音色抖音发出是普通话修复。★ 2.8.25 抖音纯半自动。★ 2.8.24 抖音文件替换法。★ 2.8.23 修 QQ 停不下来。
-Filename: debs/com.yzdmm2024.myvoice_2.8.33_iphoneos-arm64.deb
-Size: 940686
-MD5sum: 53b1032fe1177ccaf55826e41087d872
-SHA1: 5061e45c433f6f9c227674cdac00dde720223b0f
-SHA256: 2583d4a4e2632ef9c8a4cf18222291716eb16af7646567f86c8f18d54e1065f5
+Description: ★ 2.8.34 把「自建服务器」的开关/地址搬到【系统设置 → 我的语音 → 自建服务器】（悬浮面板里点了只显示状态并指路），并删掉用不到的「对象存储 OSS」整组（Bucket / Endpoint / AccessKey / Secret / 测试按钮）—— 克隆音色本来就走 DashScope 临时托管，无需 OSS。同时修一个隐蔽 bug：自建开关/地址原先面板与设置页都能写，但读取是「微信容器优先」，会把设置页写在 jbroot 里的值遮住 → 表现为「设置页改了不生效」；现在设置页是唯一写入方，自建键改为 jbroot 优先读取（并自愈旧版残留）。★ 2.8.33 新增「自建服务器」开关（本地 CosyVoice + 阿里云 ECS 中转，免费克隆音色）：开启后 CosyVoice 族（克隆/预置）走本地 server.py，彻底不消耗 DashScope 额度；千问预置音色仍走阿里云。克隆复刻时参考音频自动存本机，合成时作为零样本复刻素材发给 server.py。★ 2.8.32 修复「千问合成失败·模型名不支持·服务端原文 url error, please check url!」（与充值/额度无关）：根因是【合成端点必须按模型家族选】，旧版按服务商(provider)分流，把 Qwen-Audio-TTS 族的千问克隆音色(绑定 qwen-audio-3.0-tts-plus)送进了 Qwen-TTS 专用端点 multimodal-generation → 服务端必然 400 url error。现改为按模型家族分流：qwen3-tts-* 走 multimodal-generation/generation，qwen-audio-3.0-tts-*/cosyvoice-* 走 /services/audio/tts/SpeechSynthesizer，并在千问通道加安全网（误入即转正确端点）。同时修复：① 预置音色选「可调版(qwen3-tts-instruct-flash)」不再被音色列表写死的标准版覆盖，风格/语速指令终于生效；② 报错信息带上模型名，url error 直接给出人话解释。★ 2.8.29 新增【内置阳江话】音色：把打包的阳江话.mp3 作为参考音频复刻成 CosyVoice 克隆，面板「选方言」里点「阳江话（内置样本克隆）」即出真·阳江话（声线+口音来自样本，不再是被映射成广东话的近似）。★ 2.8.28 克隆音色按自身服务商路由，修复微信/QQ 克隆变普通话。★ 2.8.27 抖音松手提示改文字 toast+震动；方言选择器新增「无（用当前音色原声）」。★ 2.8.26 克隆音色抖音发出是普通话修复。★ 2.8.25 抖音纯半自动。★ 2.8.24 抖音文件替换法。★ 2.8.23 修 QQ 停不下来。
+Filename: debs/com.yzdmm2024.myvoice_2.8.34_iphoneos-arm64.deb
+Size: 940102
+MD5sum: 8fb56ba86365f3ffd369aa723bc6e97f
+SHA1: a91aec2f940959662ee41faa8146b3606b78c8fe
+SHA256: 0807a374ce95cb9ad3ef1f679c9c54f899e808a38c671e53cfdfad8dd5813d18
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
