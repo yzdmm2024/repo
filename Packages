@@ -148,6 +148,21 @@ MD5sum: b9d24f692e0ad06cde960246723f5e91
 SHA1: ae7c055c41fd950f4c6c4948b7b60b845ec75e45
 SHA256: a6d9cd195363b182601c0188fd8b22703bdd8c0256bcef307382f2fff063ba44
 
+Package: com.yourname.powersaver
+Name: PowerSaver 省电助手
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Description: 拦截指定 App 的后台定位/蓝牙扫描/后台任务/后台网络，降低待机耗电。
+Filename: debs/com.yourname.powersaver_1.0.0_iphoneos-arm64.deb
+Size: 8162
+MD5sum: 9e1245441f9cc7078d087b8e67527f2f
+SHA1: 67574e95e478f39a22b385d1e436951ad6ad52df
+SHA256: ae001b1c30bce56145a197329863994b05bcd455b12b0a99ad813c5ff104f552
+
 Package: com.yzdmm.batterytemp
 Name: 电池温度
 Version: 1.0.0
@@ -1332,6 +1347,21 @@ Size: 951016
 MD5sum: 246149b21aece45f64162e0eb3ceec5f
 SHA1: 9507dcc97a84fcf6d9c6dd5a3fddfc50fcea9ab5
 SHA256: dee54d92dfeaf0ff35cbacd4500615c1fc13a11279af17e65d71943070a3b4f5
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.41
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 微信文字转语音（阿里云百炼 CosyVoice / 千问，可克隆音色）。★★ 2.8.41 移除「自建服务器」通道 —— 本地 CosyVoice + 阿里云 ECS 中转方案整体下线：手机端点一次试听要等近 3 分钟才出声（首次合成 RTF≈10.6，16 秒音频要算 174 秒；8/9 个克隆音色的参考文本为空，还导致音频时长失控约 3 倍），没有独立显卡的电脑带不动，体验不可接受。本次删除：悬浮面板的「同步」按钮与「同步服务器音色」、系统设置里的服务器地址 / 访问令牌输入项、发音通道的第 0 档（现为二选一：云端Cosy / 云端千问）；老用户存过的 ttsChannel=0 会自动归并到「云端 CosyVoice」，不会卡在无效档位。★★ 2.8.35 省电：QQ 里的触摸抓包诊断改为默认关闭（设置→我的语音→诊断（排查用）），并把 %orig 提到最前；mvDiagIsQQ / mvDiagIsDouyin 改为进程内缓存，不再每次读 bundleIdentifier。★★ 2.8.32 修「千问合成失败·模型名不支持·url error」：合成端点改为按模型家族分流（qwen3-tts-* 走 multimodal-generation，qwen-audio-3.0-tts-* / cosyvoice-* 走 /services/audio/tts/SpeechSynthesizer），与充值 / 额度无关；并修预置音色选「可调版」不生效。★★ 2.8.29 内置阳江话音色（样本克隆）。★★ 用法：聊天页点悬浮球「语」→ 选音色 → 输入文字 → 点「合成语音」发送。（2.8.33–2.8.40 的自建服务器相关功能已在本版移除。）
+Filename: debs/com.yzdmm2024.myvoice_2.8.41_iphoneos-arm64.deb
+Size: 934710
+MD5sum: b4660adb9b529c09509a508fd9b01fff
+SHA1: c935b947b3b1fc68701711586ecdd6bf67a83afa
+SHA256: fce1cf67bea752ec49c03dd1ce78d7ee39b823e9e06d660f2f54bc209a946604
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
