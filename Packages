@@ -158,10 +158,10 @@ Maintainer: yzdmm
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
 Description: 拦截指定 App 的后台定位/蓝牙扫描/后台任务/后台网络，降低待机耗电。
 Filename: debs/com.yourname.powersaver_1.0.0_iphoneos-arm64.deb
-Size: 8162
-MD5sum: 9e1245441f9cc7078d087b8e67527f2f
-SHA1: 67574e95e478f39a22b385d1e436951ad6ad52df
-SHA256: ae001b1c30bce56145a197329863994b05bcd455b12b0a99ad813c5ff104f552
+Size: 8264
+MD5sum: 2b7ea35c84dde6fbcd7aefc7d2169a85
+SHA1: 8fad88876d92707d06110ad7688796b7617c10f7
+SHA256: df8b1b2351632afcf8992ffe41f8a85ca2d1dde224e217e826997c1f3a6fe95a
 
 Package: com.yzdmm.batterytemp
 Name: 电池温度
