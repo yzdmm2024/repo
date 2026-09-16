@@ -150,18 +150,18 @@ SHA256: a6d9cd195363b182601c0188fd8b22703bdd8c0256bcef307382f2fff063ba44
 
 Package: com.yourname.powersaver
 Name: PowerSaver 省电助手
-Version: 1.0.2
+Version: 1.0.3
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: yzdmm
 Maintainer: yzdmm
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
 Description: 拦截指定 App 的后台定位/蓝牙扫描/后台任务/后台网络，降低待机耗电。
-Filename: debs/com.yourname.powersaver_1.0.2_iphoneos-arm64.deb
-Size: 8224
-MD5sum: 43f54016013c4d6236bc4acfae575d32
-SHA1: d91f9def5ec855aaffb0f862412ff6d1790094cd
-SHA256: 1f537f6fc576c3c556e8fb215f02cd6a84a7689f86d8f00ea3697ec158243e5a
+Filename: debs/com.yourname.powersaver_1.0.3_iphoneos-arm64.deb
+Size: 13672
+MD5sum: d4cd3ddbe7465297ff04630a386603cd
+SHA1: 736eb551d06313554e57e3f6b6b25217a78cb153
+SHA256: 933ef119f9ff9a6a9c235ddbcf33cc85cce1f7f435973d03356a7f8c19c152af
 
 Package: com.yzdmm.batterytemp
 Name: 电池温度
@@ -1362,6 +1362,21 @@ Size: 934710
 MD5sum: b4660adb9b529c09509a508fd9b01fff
 SHA1: c935b947b3b1fc68701711586ecdd6bf67a83afa
 SHA256: fce1cf67bea752ec49c03dd1ce78d7ee39b823e9e06d660f2f54bc209a946604
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.42
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 微信文字转语音（阿里云百炼 CosyVoice / 千问，可克隆音色）。★★ 2.8.42 体验大修：① 修复「拖语速/音高滑块时整个面板跟着飘」——父视图的拖面板手势会抢走滑块的触摸，现按触摸落在哪类控件上决定是否接管。② 8 档一键风格改为【语速 × 音高】双轴参数化（旧版只动语速且差距不到 1.3 倍，所以「听不出差别」），同时把每档指令改写成模型能执行的物理描述（停顿位置 / 句尾走向 / 气息），不再写「快乐/生气」这类模型读不懂的情绪词。③ 自定义指令新增历史记录（自动留存最近 20 条，可一键回填）与 10 条内置场景预设（哄睡、撒娇、高冷御姐、客服播报、电台夜话…和风格是两个正交维度，可叠加）；并修掉「清空指令」把方言一起清掉的误伤。④ 方言表按官方清单重建：移除引擎未训练的「阳江话」「皖北话」，CosyVoice 17 种 / 千问 21 种，每种方言的描述改成发声动作写法（音调走向 / 鼻音儿化入声 / 节奏），出腔更稳。⑤ 面板新增「服务商」选择行，一眼看到当前在用谁家的服务，并接入火山引擎与 MiniMax（各 12 个官方预置音色、独立端点与鉴权）；每家都提供「一键测试当前凭据」和「官网直达」链接（点文字直接开浏览器）。⑥ 改语速/音高后统一清合成缓存，避免「拖了滑块试听没变化」。★★ 2.8.41 移除「自建服务器」通道。★★ 2.8.35 省电。★★ 2.8.32 修「千问合成失败·url error」。★★ 用法：聊天页点悬浮球「语」→ 选音色 → 输入文字 → 点「合成语音」发送。
+Filename: debs/com.yzdmm2024.myvoice_2.8.42_iphoneos-arm64.deb
+Size: 957400
+MD5sum: d8da1c5fcd8d0051ffe4cb4cb831f6cd
+SHA1: 2b350c685b5d176ee26bb30b036f79d16a17654e
+SHA256: be778565b07f2c32f7d5f187d6dfcce8eec2d78c07b6293a29bd6211ab87b5f9
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
