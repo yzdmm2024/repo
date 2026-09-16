@@ -150,18 +150,18 @@ SHA256: a6d9cd195363b182601c0188fd8b22703bdd8c0256bcef307382f2fff063ba44
 
 Package: com.yourname.powersaver
 Name: PowerSaver 省电助手
-Version: 1.0.0
+Version: 1.0.1
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: yzdmm
 Maintainer: yzdmm
 Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
 Description: 拦截指定 App 的后台定位/蓝牙扫描/后台任务/后台网络，降低待机耗电。
-Filename: debs/com.yourname.powersaver_1.0.0_iphoneos-arm64.deb
-Size: 8264
-MD5sum: 2b7ea35c84dde6fbcd7aefc7d2169a85
-SHA1: 8fad88876d92707d06110ad7688796b7617c10f7
-SHA256: df8b1b2351632afcf8992ffe41f8a85ca2d1dde224e217e826997c1f3a6fe95a
+Filename: debs/com.yourname.powersaver_1.0.1_iphoneos-arm64.deb
+Size: 8246
+MD5sum: 0641dd3f588cc3a1753761057de013e2
+SHA1: 62eef59754c63be2231bbf2434a6fdc2b4e0cb57
+SHA256: 8d2953d9ad4ec2dc6e7a6be55d9b7753ca6227d1489a257c98f2d88cd98590b4
 
 Package: com.yzdmm.batterytemp
 Name: 电池温度
