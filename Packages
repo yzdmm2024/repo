@@ -88,6 +88,21 @@ MD5sum: 2d420843898288c3a27d611bf1504006
 SHA1: 2ea4ecc5f2f80c3a9c1b492390e0379732838702
 SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
 
+Package: com.ntm.notifymanager
+Name: 通知管理
+Version: 2.3.2
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Description: 通知管理：注入SpringBoard拦截通知展示，按分类(用户/巨魔/系统)管理每个App通知与网络。总开关+锁定屏幕/通知中心/横幅/声音/标记子开关，增强功能：仅隐藏角标、隐藏预览、后台自动断网、关键词过滤、应用分组、模式快照、筛选；网络策略(打开wifi/流量/wifi+流量/断网)同步系统蜂窝设置，支持搜索、批量控制、单应用重置、配置导入导出、邮件反馈
+Filename: debs/com.ntm.notifymanager_2.3.2_iphoneos-arm64.deb
+Size: 88824
+MD5sum: b7ed9b7c84267f4307983b90bca2869e
+SHA1: 5ee82d3b501ae66a7c293e23f6a3fa9112e4162f
+SHA256: d040028316a76fff1c34ea31977c379c9ee14969a5059afc37c5f2e0333009b6
+
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
 Version: 1.0.4
