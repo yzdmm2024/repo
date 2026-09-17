@@ -1,4 +1,13 @@
-Date: Thu, 17 Sep 2026 06:39:20 GMT
+Origin: Acljcr
+Label: Acljcr
+Suite: stable
+Version: 1.0
+Codename: ios
+Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
+Components: main
+Description: Acljcr Source
+Support: https://github.com/yzdmm2024/repo
+Date: Thu, 17 Sep 2026 06:43:50 GMT
 
 MD5Sum:
  7dd9c03193ed72662d149102e02c0d4b 474295 Packages
