@@ -1860,6 +1860,21 @@ SHA256: 925f15e888f9dd6e7b7983db9f68d4a87df93a894655d9594852e63225df0ee2
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
+Version: 2.8.57
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本
+Filename: debs/com.yzdmm2024.myvoice_2.8.57_iphoneos-arm64.deb
+Size: 1010950
+MD5sum: 5570cb50ce1014b9ef0bf8eb9ba10f71
+SHA1: b89f38395bc857a0f4e6e7cba096f624e8864ed9
+SHA256: f3663b5c27658932b97d5029deff98b03f99e676d6493a5467efa56a4f2cc128
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
 Version: 2.8.5
 Architecture: iphoneos-arm64
 Section: Tweaks
