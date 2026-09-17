@@ -510,6 +510,24 @@ MD5sum: 36facea41222a3181e98b02751e80fde
 SHA1: 6471716925f0d9185558af1649cb486adf05895d
 SHA256: 689eac6fdfe4530886dcb7afe79ea42fcb7ed1a57a74acc9dec7a54c6fd119b6
 
+Package: com.yzdmm.powersaver
+Name: PowerSaver 省电助手
+Version: 1.0.13
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: ellekit, preferenceloader
+Conflicts: com.yourname.powersaver
+Replaces: com.yourname.powersaver
+Provides: com.yourname.powersaver
+Description: 拦截指定 App 的后台定位/蓝牙扫描/后台任务/后台网络，降低待机耗电；新增本机拦截计数。
+Filename: debs/com.yzdmm.powersaver_1.0.13_iphoneos-arm64.deb
+Size: 19088
+MD5sum: d9096298bb71339f61ebb8067f3baed8
+SHA1: 5754146dfb9a543222ceda23ded92bb850cdd25f
+SHA256: 4bd4b7139f434c05bce82f32be724bacb010ebf1ac5d476a483a85f5030ff530
+
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.2
