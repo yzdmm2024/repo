@@ -7,17 +7,17 @@ Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: Acljcr Source
 Support: https://github.com/yzdmm2024/repo
-Date: Thu, 17 Sep 2026 12:18:20 GMT
+Date: Thu, 17 Sep 2026 12:18:42 GMT
 
 MD5Sum:
  59970da92ff04b6dd37b9d41fa366d4a 512679 Packages
- 84d61b88adf88212f4b74682fe3227e0 45415 Packages.gz
+ 625ff16ac72a5609f81eb0f9b160187b 45415 Packages.gz
  9c12ecfa88ef98579d724411f51682fb 43752 Packages.bz2
 SHA1:
  2229237f3cb05d318b36d2d55d43c1e45c8f45bd 512679 Packages
- c64e0529c754efa529a4b93832b42b07ca697c01 45415 Packages.gz
+ 9c99a5ef29a5b76ab9e2b8ce722e473e0d2bafcc 45415 Packages.gz
  bef0f7017879337f992dd25b993861ffead66970 43752 Packages.bz2
 SHA256:
  b1b6a55d8e0fc36746a1bf807fd3542480b78f802b5f73e57c08469a52a42f1f 512679 Packages
- 96c3d098bde9e505da036f6cbcbdd5202d88f4cc77652c31679084dc8a1146de 45415 Packages.gz
+ c70531611ef5051f4ab992725d2aa509d6d4714e2ecfd0a417f92bf8fdd1be7a 45415 Packages.gz
  39e74d7abfecea36d21da0becd2e52807c1acd08728e58b5b3007d37abfaa8d6 43752 Packages.bz2
