@@ -12,7 +12,6 @@ Size: 48352
 MD5sum: 3471dac7dbd3e986dd5e8fb7c82ae23b
 SHA1: a84d08a987beae7912acb5dc8f8c8db3b3d1e67e
 SHA256: 7f7fd008985ae7ead35778a76161b2e6d5735d16fb88b23c64a7826827caf353
-
 Package: com.axs.cpuwatcher
 Name: CPU 监视器
 Version: 0.1.8
@@ -27,7 +26,6 @@ Size: 115512
 MD5sum: 8c7a5d1f3a31993c3ddd27124c2d6625
 SHA1: 6f4b1a0ebc447cbdd1cd59ca4786a15957055172
 SHA256: f8e92b14ae3ed8ee6d0030219a33735355872d76ff77dad08b59089521dc6b0c
-
 Package: com.axs.superscreenshot
 Name: 超级截图
 Version: 6.20.16
@@ -42,7 +40,6 @@ Size: 308804
 MD5sum: 2858c772d4e8f8cff1d698076c75d833
 SHA1: b0f7c98daa9806f0c6515492600a15480b597bbd
 SHA256: 4148795d28c624c202d077be731b3698a2c6abb1c0220c582e2add0e6dad1981
-
 Package: com.axs.superscreenshot
 Name: 超级截图
 Version: 6.20.17
@@ -57,7 +54,6 @@ Size: 310144
 MD5sum: 9c158e5b06e9ed936a7aa5d90dc96623
 SHA1: 8040821417a07ec6deec7f569fddd43a704f6618
 SHA256: 22cdae723c36cd8adb24244fa0e24d4aa7b4e62aaf177a543ccd13ac488f640a
-
 Package: com.axs.superscreenshot
 Name: 超级截图
 Version: 6.20.18
@@ -72,7 +68,6 @@ Size: 310740
 MD5sum: 4710edb4d239469b5512504c131792d9
 SHA1: 4730ac350e06d473c47094b755e0fa8f1918f618
 SHA256: b4face44059c6d0672c50009921bd7bb8eb0c857e64cc241a34e55df602619cc
-
 Package: com.axs.superscreenshot
 Name: 超级截图
 Version: 6.20.19
@@ -87,7 +82,6 @@ Size: 309668
 MD5sum: 9739decfb73bf5141095fef67b5eb747
 SHA1: 668882d667f1f099b7075f74731dffca23d0f5a0
 SHA256: 6212139228fb033a70cb2faa1a60f97f968cfcda576c2106925e3c5abdcc906b
-
 Package: com.axs.superscreenshot
 Name: 超级截图
 Version: 6.20.20
@@ -102,7 +96,6 @@ Size: 310828
 MD5sum: e4e23f3f2a20192ab75bc6136e750ef4
 SHA1: 19c7ecce7996728a25b630b3b14d2a2747e806bb
 SHA256: f6ebe1b68d7e934a01e9a6892a396e354f97617b46b477ceae6cc8dc71194cf2
-
 Package: com.axs.superscreenshot
 Name: 超级截图
 Version: 6.20.21
@@ -117,7 +110,6 @@ Size: 309708
 MD5sum: 5edfec6a81dd0b3112af614601f14a46
 SHA1: 900bedda2c984e54a48797099621b1f0482adf7a
 SHA256: ab4ffef7273a295aa3da3188efb424d44de977a1640ce0095c4eae82c26854b2
-
 Package: com.axs.superscreenshot
 Name: 超级截图
 Version: 6.20.22
@@ -132,7 +124,6 @@ Size: 309832
 MD5sum: 1ab3f628b73f6cdaa447a0ebb3139f31
 SHA1: 8552d6b380f46f4e0fa3a74299f30ae197bfeb18
 SHA256: 5ac6f272f5191a3bfe503733ec8002802576d6dab26ff309ef0416983d24f5dc
-
 Package: com.axs.superscreenshot
 Name: 超级截图
 Version: 6.20.23
@@ -147,7 +138,6 @@ Size: 309724
 MD5sum: 7096fdae7d226790c92b25623fc85409
 SHA1: fbe85962961ac41115731db9d0e0849475319a8a
 SHA256: a93b4cb2bbe4e752aea3da9ade22d1fcd3cb7d0ecfe1b876aa0a3d8409fb93bb
-
 Package: com.local.mygestures
 Name: 我的手势
 Version: 0.11.10
@@ -162,7 +152,6 @@ Size: 54990
 MD5sum: 2d5eead8b0949fe5cc4398885a115c26
 SHA1: d185f470e6cd6af34ea6ae9bfa20e8ccc1164108
 SHA256: d2bbaefe892a9d0d5c4aa2b2f557a5cc1ed5b1035a74133343cdaa415732dd75
-
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
 Version: 1.6.7
@@ -177,7 +166,6 @@ Size: 88732
 MD5sum: 946bece2e12ef3d5d46cd60d416df96f
 SHA1: ff6e1de8a3983fbe35a4a500720757bc12a34ff7
 SHA256: 1f416ce10d1acbf59001addd3b541181a68143d5ec73d6eec9e5caaf7f59c9a5
-
 Package: com.ntm.notifymanager
 Name: 通知管理
 Version: 2.3.1
@@ -192,7 +180,6 @@ Size: 94112
 MD5sum: 2d420843898288c3a27d611bf1504006
 SHA1: 2ea4ecc5f2f80c3a9c1b492390e0379732838702
 SHA256: 044dcc5460a3c6f57743e74d67d429b83d0b2d502ee0b928a9cf6e6de1724b09
-
 Package: com.ntm.notifymanager
 Name: 通知管理
 Version: 2.3.2
@@ -207,7 +194,6 @@ Size: 88824
 MD5sum: b7ed9b7c84267f4307983b90bca2869e
 SHA1: 5ee82d3b501ae66a7c293e23f6a3fa9112e4162f
 SHA256: d040028316a76fff1c34ea31977c379c9ee14969a5059afc37c5f2e0333009b6
-
 Package: com.ntm.notifymanager
 Name: 通知管理
 Version: 2.3.3
@@ -222,7 +208,6 @@ Size: 93788
 MD5sum: 95437bd3d3ab5674e637a1b167e89f5a
 SHA1: a1bd6f28d77480cda8f394113e3548fcb90238a1
 SHA256: d550023842c09398ecfd38206cbb25f64fa5a38bcb5ef4081bfccb73bb508380
-
 Package: com.ntm.notifymanager
 Name: 通知管理
 Version: 2.3.4
@@ -237,7 +222,6 @@ Size: 93884
 MD5sum: 94541ae32dd154f995e0adf355ced7fa
 SHA1: 66792f1e32c068b47c3c765afecc382d6209dc19
 SHA256: f68c19a5bdb0e0ca3a440b9ee005693047a8207fed569d0feb0d439152184c46
-
 Package: com.ntm.notifymanager
 Name: 通知管理
 Version: 2.3.5
@@ -252,7 +236,6 @@ Size: 94268
 MD5sum: 823447f9fe94c303f0db3b5c743f7329
 SHA1: 426de5df497c933d7f6259668fa09239efe7faff
 SHA256: 3bdb61d5770de1b5ea06ef162c17f4333182873c35c8373ceba500bc6928be5a
-
 Package: com.ntm.notifymanager
 Name: 通知管理
 Version: 2.3.6
@@ -267,7 +250,6 @@ Size: 98256
 MD5sum: 5941c1e8d2b6b3416e86b225a3f09947
 SHA1: b3fe8f89fa0ee119d44cfddc52eebc094055926c
 SHA256: f57b89d9ff8e1b0c8e467f6cbb78cad0f3449870809402dfd69391d3ca57ca23
-
 Package: com.ntm.notifymanager
 Name: 通知管理
 Version: 2.3.7
@@ -282,7 +264,6 @@ Size: 97996
 MD5sum: be6d4c78de3bbf18483c7484b81118e4
 SHA1: 61668d43d6d26b508a71e1bd97e375c7b1d640b7
 SHA256: 788516e5868b3743549c3b3e3dfd237285da2aeb2ff5b6da71a2486833aed3dd
-
 Package: com.ntm.notifymanager
 Name: 通知管理
 Version: 2.3.8
@@ -297,7 +278,6 @@ Size: 98776
 MD5sum: 44fb945649e5b490390895c65b8f860a
 SHA1: 9535353f0ede95d747644d97ad56f0282d9f7282
 SHA256: f2f27f97f470bb70ebae2b5c70675cb89e4263624486175d6078b48bd00beffa
-
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
 Version: 1.0.4
@@ -312,7 +292,6 @@ Size: 39384
 MD5sum: 6745d35f90af27b41d3e2231478f57d9
 SHA1: a84734d64f461b9cdf866d0594a51236f244795e
 SHA256: 1dd8808c3ae2f40d866432a3f580cd51d9a4063777a1e0d0ba1981114066c9b3
-
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
 Version: 1.0.5
@@ -327,7 +306,6 @@ Size: 24028
 MD5sum: b8e2ce465636986da4814cfcbf9caf01
 SHA1: 0da72635b9a5f596e516cde117c8176660a1cf4e
 SHA256: e4a73ea8ef288507963621078f85f7d855eb8e9c5c0f55b360d94d37d14a1947
-
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
 Version: 1.0.6
@@ -342,7 +320,6 @@ Size: 25104
 MD5sum: cca278d62158204603989f4f35942480
 SHA1: da577ad5a7d8536ef9a2571905d7fef454aa437f
 SHA256: 94d77fcc238451a40375add718de3c70616685c90c912095b8563bcbc8f66145
-
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
 Version: 1.0.7
@@ -357,7 +334,6 @@ Size: 26100
 MD5sum: b9d24f692e0ad06cde960246723f5e91
 SHA1: ae7c055c41fd950f4c6c4948b7b60b845ec75e45
 SHA256: a6d9cd195363b182601c0188fd8b22703bdd8c0256bcef307382f2fff063ba44
-
 Package: com.yzdmm.batterytemp
 Name: 电池温度
 Version: 1.0.0
@@ -372,7 +348,6 @@ Size: 5628
 MD5sum: 7ba2e7a58ddf78cf1243bc1beb40b17e
 SHA1: 96bd1620d948a899343965776759793b0f59af0a
 SHA256: 2c367c964b955acc08e199d8e54f0649081544f101f49f3d59db46f4adbdce10
-
 Package: com.yzdmm.batterytemp
 Name: 电池温度
 Version: 1.1.10
@@ -387,7 +362,6 @@ Size: 19096
 MD5sum: be30c622499d02d25652e523f2da174f
 SHA1: dc6bce14b934257464d84eccbcb7fc0b990b8383
 SHA256: 77050240dcfcaa77cfa26b5c645c1c7f364f3b095432b83bc1d4a313f204d2db
-
 Package: com.yzdmm.batterytemp
 Name: 电池温度
 Version: 1.1.1
@@ -402,7 +376,6 @@ Size: 16724
 MD5sum: 1c09c974867ac50f9b20a007654d78ab
 SHA1: 10af657e664536fa9e9ad4580c9c6d4ce3e6dce0
 SHA256: 0b2b4cf17cf3abc02ca4b372520b91b3b8d10466ede441495e6351720a3dbd83
-
 Package: com.yzdmm.batterytemp
 Name: 电池温度
 Version: 1.1.2
@@ -417,7 +390,6 @@ Size: 17228
 MD5sum: b65933289a281e02e63aef6e3a7ad3a3
 SHA1: d13f820abdd76bc55ea77301c600a2da1b383e57
 SHA256: 3015ccdd58369510c337c02dc8d2a42919cfeda5f32f6a8b98875c8f7897d877
-
 Package: com.yzdmm.batterytemp
 Name: 电池温度
 Version: 1.1.3
@@ -432,7 +404,6 @@ Size: 16880
 MD5sum: bea9e7a64ae952c15b94191548932550
 SHA1: 42f3b083c9dff89a75bf0458f95a326696f7a9ca
 SHA256: 6eae36b1142d1fee6c394c7f51e6df333ed8cf094f266e5349ed3e48c4fdd54f
-
 Package: com.yzdmm.batterytemp
 Name: 电池温度
 Version: 1.1.4
@@ -447,7 +418,6 @@ Size: 23756
 MD5sum: 921057d2281029533204c48ece1d043a
 SHA1: e592d42c55e2e3932173e193fb69ee6ffe831552
 SHA256: 12fbc725264b3a3cf8002d7dc18a6c526766bc6879bbed120a6f6fb70f72eef7
-
 Package: com.yzdmm.batterytemp
 Name: 电池温度
 Version: 1.1.5
@@ -462,7 +432,6 @@ Size: 23648
 MD5sum: 621a2deb8e96df1e5f81d932792e7c55
 SHA1: 13f1a1b24c0a21b6b6e34a6cb024d3e92d02eec3
 SHA256: f8db96389e2b85a957565c4b161218b4cc514dc3f9fbcb66700215818fed5822
-
 Package: com.yzdmm.batterytemp
 Name: 电池温度
 Version: 1.1.6
@@ -477,7 +446,6 @@ Size: 24496
 MD5sum: 2d60259def5e7f4a28f2e802ebdf42b7
 SHA1: b236a108cc2240d49054edc2c6d6ff03c540bdc3
 SHA256: c0b25b8d9107088856ab94b9eb4acba5e41e7ae1810de36d635efde5bd407674
-
 Package: com.yzdmm.batterytemp
 Name: 电池温度
 Version: 1.1.7
@@ -492,7 +460,6 @@ Size: 24380
 MD5sum: b13a305bc2c14afce8744dec565760ff
 SHA1: ae47a57f508f2314ea280a66f811a85e8f167f43
 SHA256: b46ae6acf9a8b35b0a60a7c34f2a186086ca8ce2b5f80bf3b3ad30b732a72387
-
 Package: com.yzdmm.batterytemp
 Name: 电池温度
 Version: 1.1.8
@@ -507,7 +474,6 @@ Size: 25036
 MD5sum: f018a80f5b1553d9524d1919d44ad53f
 SHA1: 481df0fad93804be5f64556492b135634196d53c
 SHA256: 397274a93eb1aa5edb43d619d8140223a3f7636cca3124c929dbe3d8c70f181c
-
 Package: com.yzdmm.batterytemp
 Name: 电池温度
 Version: 1.1.9
@@ -522,7 +488,6 @@ Size: 25364
 MD5sum: 2f66a0bad4e4add31e699cff6f184a4f
 SHA1: cbb3aecae3b3d660cbe5bdf6039403c3ee1ec5bb
 SHA256: 6564fc9395ba6ef9f8806d30bdb44642ecd1b56effec0227e5085e06f707237b
-
 Package: com.yzdmm.keyboardstatus
 Name: 键盘下方状态
 Version: 1.2.6
@@ -537,7 +502,6 @@ Size: 65888
 MD5sum: 092fa425647b1b8794a449aa53a78a11
 SHA1: 02ce15b7dc458b7855075e6cfb93e8a30bdfb1c9
 SHA256: 41ccaf6c9c06d9724cc11951b66d34eeef37ba39d301b5934bbcc5e9e20ca327
-
 Package: com.yzdmm.kkgameautologin
 Name: KKGameAutoLogin
 Version: 1.0.13
@@ -551,7 +515,6 @@ Size: 18672
 MD5sum: 935867cbd9e86d462ebde591ffe7fc73
 SHA1: 2c10479918a733985636bec6afeb08099e1a5ab4
 SHA256: f5c972c836005d2efbbc9f8b95782ff3180751c15f3348c58cb6ef6160fe0a04
-
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.2
@@ -566,7 +529,6 @@ Size: 37256
 MD5sum: 32e7d50c6057648f6a3a9bd9f3164488
 SHA1: 6a9e51f5062f405274da93b0e067748fc5602707
 SHA256: bb61e64e2c39b6b032b8dc6bcf038a89a8f4d985c2ccdb44902ed0508c598565
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.1.0
@@ -581,7 +543,6 @@ Size: 80430
 MD5sum: 59631f1e2202d82b9f45db15e26948f2
 SHA1: 323e4a8b9eaaf7425179c42ec2ccf5c31e74d224
 SHA256: 76434aef6820707b9ebf7599503bc5978cb712b489ed92198bf48a2ad09c1b2c
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.2.0
@@ -596,7 +557,6 @@ Size: 83784
 MD5sum: f4ef6792a2c362863ac8d36f6d52b0ee
 SHA1: 1cafeb5db732fec72fa5c122793b57725dd65584
 SHA256: f97d53ab5cc2e421ea601bf2d06ce92240330f6a3c32e39b9c6f55df824aae93
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.2.1
@@ -611,7 +571,6 @@ Size: 94592
 MD5sum: 738582ca10721e28ee3c6a90929c747c
 SHA1: 47f81f8c5cbc2d84d721fc0850ed1b4818959e52
 SHA256: 657e7938960be096bf5536318c675e2aff6215194ec6840f065077492660f1bc
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.2.2
@@ -626,7 +585,6 @@ Size: 95132
 MD5sum: 39f704655448419eef79dddcb2c5c409
 SHA1: 9f0696cc428be9334db965dd81a43d6d636f0d7b
 SHA256: 9e4f8d1bc29cfec257ccec9fd6d368b57ba3f0b261ad3d645d0f9c30e12ea80e
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.2.3
@@ -641,7 +599,6 @@ Size: 98924
 MD5sum: 494556ebb67ec588634bac7d08e626c9
 SHA1: c8fb809e5c8611a9f742aaaf459b88667d0813a0
 SHA256: 46fb845fc272ea7f65170ad3b56675c3ca79025e960288a05b9703338c3cd906
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.2.4
@@ -656,7 +613,6 @@ Size: 105886
 MD5sum: 4dd3cb65f937f76facc15133593f8b98
 SHA1: cb73a46d210d0383d5bece36476c5c0f3cf7bbc4
 SHA256: 43b0bfa57bdc8c11b31b25c04992f23e8fe0bc6f7b581949933cc92ce8aa8149
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.2.5
@@ -671,7 +627,6 @@ Size: 106726
 MD5sum: 0e38b903ed6bcca83035922b5120eba6
 SHA1: b4959af11d8da55982e6e4b340eb587a1c640959
 SHA256: 1a92b594e4fa6156047780de354418e6bf9f3fa0d169f8567ea6aab4c756eccb
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.2.6
@@ -686,7 +641,6 @@ Size: 111560
 MD5sum: d0dfcda32792a5667d036aad3596908d
 SHA1: 942f07f21a929cd9770e044e56e495e98ad00919
 SHA256: a9240b89df217bfbe728810bf34f8aae27d98725bb807594f981c3c9f4e67668
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.2.7
@@ -701,7 +655,6 @@ Size: 115080
 MD5sum: 89e3b06948a86c1572f9685c6a8ab027
 SHA1: 3c5e85fcda08fef7d57b1c6fa2fe6bb14d4ae776
 SHA256: 9f691d97fa5663ea436ef72dbb731572ac4c3c59c39192b013f2c2a736b5d6cf
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.2.8
@@ -716,7 +669,6 @@ Size: 117250
 MD5sum: dd3798f2a62a82509940065d59114ba9
 SHA1: cc047fd49c79ce403e11f7249853a5ca01984ae3
 SHA256: c1cf258cef053c050cf86dbea319a6b9f13af5b3e325168c4448c3374a384e0a
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.2.9
@@ -731,7 +683,6 @@ Size: 117814
 MD5sum: f580ba861ae0f70147b940d2adc761fd
 SHA1: 5d20b337467fba18afc127e16e6f4a9b91f92cce
 SHA256: f2934e5c634201226004a54d158dcfed2e9685fa758e0ecca30b75a8092de1fc
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.3.0
@@ -746,7 +697,6 @@ Size: 120882
 MD5sum: 7de4a0dbd56f586c4a126e1162200a79
 SHA1: dabd765bf7a075838094671202a5de49ec139df5
 SHA256: 37bd46676611b32488805f8bc5538841ca7e8356b84279ce43ac7861167642b5
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.3.1
@@ -761,7 +711,6 @@ Size: 122184
 MD5sum: be57fc78d8e0033fc352ac84bba56ce1
 SHA1: 9489f2d21c4c6128b7dac0ee7f4f7c7284257661
 SHA256: 9079339fd647c6d1a56e4b85fee5705fcab0419c17e1efc888f7e5f1e4ce0f8f
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.3.2
@@ -776,7 +725,6 @@ Size: 122324
 MD5sum: cc55f70891e564041407df0bef008b31
 SHA1: 25176cb952826b809495fee2240315c3af093bd4
 SHA256: f1da4a15a53aa343a0681cc803fc9b6c36a9ca3da58e38129bc97a3a9f07e7cd
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.4.0
@@ -791,7 +739,6 @@ Size: 124204
 MD5sum: 8758c737657e9c28ac3dac29ca1acdb4
 SHA1: 7c8427700f4aad32dd695990ac97f391c28bc363
 SHA256: c6347d070b8e481178dce9eeed1f3c63a6cc0e680cd295491ee33634c5e00ef4
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.4.2
@@ -806,7 +753,6 @@ Size: 132712
 MD5sum: 5be54406dcb0f9ce8c219e4cb2ee1a37
 SHA1: edaad07d4fd4c2e42f573614cb56721a7e2c6068
 SHA256: 1c34a50abcf3c7513fa97a0b078633022650e3a08ffc06a90f62208a6681c28a
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.4.3
@@ -821,7 +767,6 @@ Size: 133556
 MD5sum: 502c4568d0a3c9aba6ec9598821f7606
 SHA1: 78e40da8ec930b0034472d35a687e19910fbff6e
 SHA256: 48a48d9cd630f28ef7ee9ac0e057c4107137ec484241118a693e830794ddc13b
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.4.4
@@ -836,7 +781,6 @@ Size: 136126
 MD5sum: d0487dfb39b69c09820aa3ca541ad162
 SHA1: 07dafddc5af551e52e7a96057934ff43d1533b22
 SHA256: c6396a1dabdb94353fadf8c896b2200691543ce80119c970e07062745c450114
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.5.0
@@ -851,7 +795,6 @@ Size: 137156
 MD5sum: 614ac7571ef0a7548747a0072ea159ed
 SHA1: 57c528e1657376eef98d42aa3a6c216ccb2ac258
 SHA256: aaaf567098d825664ab50bb3f7053f652d98c767d8d8d5bcd19c13de45c84a93
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.5.1
@@ -866,7 +809,6 @@ Size: 137460
 MD5sum: 17ff2c0d9312c18dc3fd12177bfeea87
 SHA1: 07b4ecf9aa6e10c3b3ebaec86234eba846062c5a
 SHA256: b188a6599dc286d0873027265a879a592b6ddb15af063110b9b9b82f8f224778
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.5.2
@@ -881,7 +823,6 @@ Size: 141392
 MD5sum: 8f79db68b2836474b0a854eef531ad1e
 SHA1: 23b606e3d6950ba92e8b98a763b6312eff624d2b
 SHA256: 2fc7fc41523b9bb8babbd7febd87db20bf61b6e0cc330d18d4cf5bdae9693e7f
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.5.3
@@ -896,7 +837,6 @@ Size: 141688
 MD5sum: 8b71f68e280542b0f375ab565fdde956
 SHA1: 539452a864502fb675a3317aa61c7612c0fc7d8f
 SHA256: fc6b83b65214e437eece4b41be561ddcf9b257923cbcce1a7e184990840b392e
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.5.4
@@ -911,7 +851,6 @@ Size: 142066
 MD5sum: 8c4d16d2f67b587312470c869864460a
 SHA1: 56b797fded34c988293025b8b91a8df8a36e7601
 SHA256: 51407220e91079a6797602c31bd5c786fe179a386742d269d281b3cc759645ed
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.6.0
@@ -926,7 +865,6 @@ Size: 142416
 MD5sum: 3db9db30c00bb9eb40dd09c1f2fd0d07
 SHA1: f28a7260629011226da0b6bff9c335f35d6bb836
 SHA256: effb0ab37dcd39bb753b2e56e54a33d6c6f4ffeb72a5c0f1aa81040a4a8426ea
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.6.1
@@ -941,7 +879,6 @@ Size: 141866
 MD5sum: 137bfb47099ca2800cd2e4122441cc9d
 SHA1: fe6be69ccbb29a847e38c24fa90212e74e0735ec
 SHA256: cc7c8932704cd4fa99441c5b7e934c86a8286d6317000876d3f0cddc819062b8
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.6.2
@@ -956,7 +893,6 @@ Size: 142170
 MD5sum: 1c603294ed7251971706651ddaa44ae3
 SHA1: c5de0b85434da813416f18fb3dea9e70440e0f0c
 SHA256: 69570835e67e89738a082dbddbb7b45a6b45660802afa2079c6b6acd4ba07db5
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.6.3
@@ -971,7 +907,6 @@ Size: 142944
 MD5sum: 711e563f530425d39808b0d6c4cbbdc3
 SHA1: 6092627589c98f87cb04eb11fad1563b376ec5e8
 SHA256: 24e2d67bf4526929db6ce4dd62b9888aa8971462819999b4071baec69bcb74ec
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.6.4
@@ -986,7 +921,6 @@ Size: 143028
 MD5sum: b97e3d60452ae2a2e97a5031484f3acb
 SHA1: 299ee65920d278fd66b8343895bda00def97081c
 SHA256: f0fb561733759a2580ae6e90a030253af8d9d116b6953e9c13b301a5d3c7bee7
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.6.5
@@ -1002,7 +936,6 @@ Size: 142472
 MD5sum: 6b691b3efca5f08530d8e5a1ac0720d8
 SHA1: 6d7042caf1fae97b5e5168357238cd8b3c651e98
 SHA256: 27ce57e49a0a8980e2ecbc5b609c8d8919f21bb195989fbd48e5cbc4dd4b0bca
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.7.0
@@ -1017,7 +950,6 @@ Size: 133522
 MD5sum: bff81b11c4b1297e4fb1470ea5e7cbd8
 SHA1: 6f339b7001f4555d42da4bab3097b46a18f7b12d
 SHA256: 1fa0f1f4967173c28a2a0673ef100b9e667009eccc858d6ebdba878cd9f5bc1c
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.0
@@ -1032,7 +964,6 @@ Size: 135174
 MD5sum: 7858a5e9e4f7e362d779464f4eb61537
 SHA1: e521c3eada34fb2222e80afd432434245754eb36
 SHA256: 19566ccd53ed9de1d99863fba0a1caecaabc8b232d24ae48ab50e78bd3471717
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.10
@@ -1047,7 +978,6 @@ Size: 270428
 MD5sum: 9e5a25eee8ba0e21daea966ac6e0bc7f
 SHA1: 45ad762be5b717ede1fa1087234806726a1d4132
 SHA256: 0f38047ca9bb5dd641758e08b3b5a87ca8418376b00f095f16ebb47b0971caa8
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.11
@@ -1062,7 +992,6 @@ Size: 269820
 MD5sum: 3c82fee4ff443d6f584b0cf4445ef330
 SHA1: 5c80b095f472dd7676fd6c299655a9eb4b149377
 SHA256: d7d0991d5f11c8bf984cee89928c90a9e2354ed2ce57d916acdfe82159db8c83
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.12
@@ -1077,7 +1006,6 @@ Size: 270262
 MD5sum: 857af8a37a409d5115dda18cc0272e4c
 SHA1: ca5ea6260f7b1b0f881e17a676277732c4a8530a
 SHA256: 665dbab555f4a46f5cf41ce4fb55711e10a2874188c6de6f18afa4a036bfc64a
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.13
@@ -1092,7 +1020,6 @@ Size: 275630
 MD5sum: 04bd9304f57754c5f21f1058869030a6
 SHA1: 15dbb6c1da5a79bb1ac49dfec51e85e4170efc5f
 SHA256: 8498923623c96ab4fd769b6683dae2b4fbab56f8a829a5fadda6b7fb88fe28be
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.14
@@ -1107,7 +1034,6 @@ Size: 275564
 MD5sum: e9529cd004d932640281fd7ab66144b1
 SHA1: 0d77664a85cd7012d27ba7e3db135fb1646858ab
 SHA256: 64f153192716f59ac7a4e47278b34d7fc29d6bec76c3f183937ee2cdde345008
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.15
@@ -1122,7 +1048,6 @@ Size: 275058
 MD5sum: a3dc028000b73b43a066731fe9c8803a
 SHA1: eed27fa023ce8493ea48b6cdbaece51656fd8b3d
 SHA256: af159e6575b621093737d44d913ff9c7f2085b2c5e7b4b257383f2d1f23050da
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.16
@@ -1137,7 +1062,6 @@ Size: 275128
 MD5sum: 1de71a3d7ced7808b8996d29a980391a
 SHA1: 2ae680f45e3df9464f064b9cabf4eb911716d20a
 SHA256: eab38ddc36c3f70b6646ebdddab8d33b1e2684fe0471216313cbc4e70204cfa5
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.17
@@ -1152,7 +1076,6 @@ Size: 284292
 MD5sum: 943b18c2d7f626433cde24b66c3e7ee2
 SHA1: 92971f74087465ab86dbb24753507b0c10438177
 SHA256: 6b59dc9d914273e6df89092e514d2b302b59a4bdb7338c30fdedd18f4ca597d4
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.18
@@ -1167,7 +1090,6 @@ Size: 286188
 MD5sum: b2c49b29951709efa9883a7b4e711016
 SHA1: 2bb906c6a2300ce5c9e2afa1f357bc73794650fd
 SHA256: 40fd4b358c708225423f6f1e1c56029bca54bc0fccefe95a7be0d75a77f755ef
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.19
@@ -1182,7 +1104,6 @@ Size: 285806
 MD5sum: 2c224f605f2b5b884fe5638d6384b2e0
 SHA1: d63add34b10b0b2745198ae5d65bf690092250ef
 SHA256: 71dc751d8709a2a73767bba18052aef3dcb152e7c014038323021e10337bc7f8
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.1
@@ -1197,7 +1118,6 @@ Size: 135604
 MD5sum: 9abf26625325fb646399b41bcc601664
 SHA1: dc960239766f5c2bf4b6b667782c6f66b81e908b
 SHA256: bd87c5523231a42678c3fa0f2f3bd289bab92e90a0bfb61faa8c57d4cd37fd2b
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.20
@@ -1212,7 +1132,6 @@ Size: 286812
 MD5sum: d37f4d3da43be159feac6a448e2fd0ff
 SHA1: cdff0f4012ac1011eb3190c0d6e23e85041c6e95
 SHA256: ae5d622ef2c7249250f8d2f76d17cc8a0fd8914764176fa326286c17ba53ecc5
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.21
@@ -1227,7 +1146,6 @@ Size: 287034
 MD5sum: a4ff7ce6f39d30c9a545cc346815d56b
 SHA1: 7871c7297371b830f18e695d7040b2c968dce113
 SHA256: 959fb49be1593227d752d35327ead1c77011577855b688f4676c9ea6f5e02c6f
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.22
@@ -1242,7 +1160,6 @@ Size: 285368
 MD5sum: 1122be46ab5615ba5b7e7ca52003b663
 SHA1: bf99e3995a8eb40246c8d4c89a0ed3a59f8db4a7
 SHA256: 764ce918717eff2043714a5004f5d960607174d37095d47f3de25dc5941ec18a
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.23
@@ -1257,7 +1174,6 @@ Size: 286246
 MD5sum: 7641cd9654b7ac9fbe9d43a416b6d5c0
 SHA1: af5d4c6c96392a2f9cfb377ac499b7122073ff93
 SHA256: 4136a50a0a526170e4a90c40f43786ea76717ce8cb784d7f86d2a186d4a4259e
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.24
@@ -1272,7 +1188,6 @@ Size: 292714
 MD5sum: ce3643ac7048ba4264995107e001f328
 SHA1: f4aa6b7ce0f0596c783c787921ad53c444faa29e
 SHA256: 86cb4a85938676ab4adb0b275b0589061250f6510a701a10361c04ce84b5ce59
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.25
@@ -1287,7 +1202,6 @@ Size: 293874
 MD5sum: bbdbbf91808b11679c60d91e9d87ac7e
 SHA1: 5dba2e2867f0bcca2a88e8410134c02f996ebdef
 SHA256: f65e43c2586ad52c8de4af98e75882802e9931d1dd5bf47b723051806853897c
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.26
@@ -1302,7 +1216,6 @@ Size: 295254
 MD5sum: 6e9fea485b0b79a90fc5e4d24af4ee11
 SHA1: 0aa516aab2d34cf7c949f0eeaaf554672a7d2821
 SHA256: 0ff05e724aebb98ceb4ecef0d007ca7769bf874a14667b133840d4122ef7aa70
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.27
@@ -1317,7 +1230,6 @@ Size: 295900
 MD5sum: 6ab1364c5959efd87f267982c395199e
 SHA1: 4639b245d8d9514de2dc91888847940a1d17dcee
 SHA256: 3660097b3ebf5ebf16a1c75dae144f38fca98a5df3d13548f54401326f86cd71
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.28
@@ -1332,7 +1244,6 @@ Size: 295450
 MD5sum: 7a173fb279f89b86c42202b69ecac38a
 SHA1: 3974e20a8d1b4a0210b9722d1a95cf39b9a56382
 SHA256: 1c80f671a8ab0a3fda512e3b61f1603eafbb4c60ee9a5739b1fd0f5535280e9a
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.29
@@ -1347,7 +1258,6 @@ Size: 932784
 MD5sum: 9ae788176daff8b2eee49395c4933295
 SHA1: 0a3b69c65ff9eb276e7f828cec4e68b7032049fa
 SHA256: 4e71d19e362fc6eaf950228f63a045361a480902137f2251d9d9781945626f5d
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.2
@@ -1362,7 +1272,6 @@ Size: 140078
 MD5sum: f82920f5941bf93bcb245ad671c46049
 SHA1: 3e1e40d1c1f8ed0361b4cd4e64ab76191d352cef
 SHA256: df8f4d15802d6a94b881b5c7629d3d037bfe4a8e3a981267aae0fb429ee3aca3
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.30
@@ -1377,7 +1286,6 @@ Size: 933640
 MD5sum: 2ac7d7a4c0961b27e403c9842cbce4b0
 SHA1: 0dfc7a7e28b0fb50771c4141087b34f6820e088c
 SHA256: e45c64caf7e7b7bfe6e2bcfd7c95bde99d7f4a378fd3fc0bd1d5439361fb7794
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.31
@@ -1392,7 +1300,6 @@ Size: 931202
 MD5sum: 36c0656de5a3e15101d199a86ea7c327
 SHA1: 865082aa870c2857d487450ebd709134c9857192
 SHA256: 40fb7c146d61a9e2b81205f104d8785dbd0d2984c869379f6b80167269f1d615
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.32
@@ -1407,7 +1314,6 @@ Size: 933384
 MD5sum: 4098b03fe534040982db4e83fe3cad0c
 SHA1: f1140fa2b84d88c121261d116fc2290fe613f094
 SHA256: 318b5153e1f8e05a4d36f1125c1a42d91f57d0f385d1989c7b9fdd0e0324f0e3
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.33
@@ -1422,7 +1328,6 @@ Size: 940686
 MD5sum: 53b1032fe1177ccaf55826e41087d872
 SHA1: 5061e45c433f6f9c227674cdac00dde720223b0f
 SHA256: 2583d4a4e2632ef9c8a4cf18222291716eb16af7646567f86c8f18d54e1065f5
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.34
@@ -1437,7 +1342,6 @@ Size: 940102
 MD5sum: 8fb56ba86365f3ffd369aa723bc6e97f
 SHA1: a91aec2f940959662ee41faa8146b3606b78c8fe
 SHA256: 0807a374ce95cb9ad3ef1f679c9c54f899e808a38c671e53cfdfad8dd5813d18
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.35
@@ -1452,7 +1356,6 @@ Size: 944270
 MD5sum: 01b7b244f04bc4f8e1cad56c1fafd1f3
 SHA1: 905acb92f515d8f19ec00aea9e91e1a00a6bc90f
 SHA256: 626f4671d2e7b368a04d7c003bbeef1e32082ea3ab662af011cf70d43e2dbe67
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.36
@@ -1467,7 +1370,6 @@ Size: 944462
 MD5sum: d07c034965a5eb7c8db2e5e40277935d
 SHA1: 94caccc9d3dc2bf5e7598d9691349f7a4388bc31
 SHA256: 527e32211e8ea4bd27671a98b87965d70514b7654724dd06c35254360fca9826
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.37
@@ -1482,7 +1384,6 @@ Size: 948702
 MD5sum: 80911d52efa60e59005d121151a63ee8
 SHA1: 56767eb6513c0f0331f1ae3ec33ddefdd0adb71a
 SHA256: 2422fea730a6744857b3ffb81a63867c8ca0667b9cfa8439c09d6db143790e9c
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.38
@@ -1497,7 +1398,6 @@ Size: 949042
 MD5sum: e5f5882124fc177d871b321de78a08b8
 SHA1: b84cc690a4f234ae4b89d9cbe6280c5ba9fecf65
 SHA256: fb7e7ef78ebd497d6cb959986bbeedb541fda311ebf4887d10edbb7f60bf8d5e
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.39
@@ -1512,7 +1412,6 @@ Size: 949354
 MD5sum: 140ba0b58313b96ebf66517130576f16
 SHA1: 42edd722fb6627c749ce9266543bc38fa325aac0
 SHA256: bfa7fbdc14a28fec1fc872e27543411518bc165f19e746f2910558f8448388d0
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.3
@@ -1527,7 +1426,6 @@ Size: 140038
 MD5sum: a95baa00e3dd5b4001dc313860844001
 SHA1: 7bbbdeacbee15b815d9972a4eec95b3e03f3d679
 SHA256: 0c1cac41a5ebc345021e5170288d215ae9f839c1581ce8b1154e4ea275f00f2e
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.40
@@ -1542,7 +1440,6 @@ Size: 951016
 MD5sum: 246149b21aece45f64162e0eb3ceec5f
 SHA1: 9507dcc97a84fcf6d9c6dd5a3fddfc50fcea9ab5
 SHA256: dee54d92dfeaf0ff35cbacd4500615c1fc13a11279af17e65d71943070a3b4f5
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.41
@@ -1557,7 +1454,6 @@ Size: 934710
 MD5sum: b4660adb9b529c09509a508fd9b01fff
 SHA1: c935b947b3b1fc68701711586ecdd6bf67a83afa
 SHA256: fce1cf67bea752ec49c03dd1ce78d7ee39b823e9e06d660f2f54bc209a946604
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.42
@@ -1572,7 +1468,6 @@ Size: 957400
 MD5sum: d8da1c5fcd8d0051ffe4cb4cb831f6cd
 SHA1: 2b350c685b5d176ee26bb30b036f79d16a17654e
 SHA256: be778565b07f2c32f7d5f187d6dfcce8eec2d78c07b6293a29bd6211ab87b5f9
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.43
@@ -1587,7 +1482,6 @@ Size: 957856
 MD5sum: bbee8701c26e712532a9b1f28bbb38b9
 SHA1: e1dff09a12a4e1701b937a68ece70c48276a270f
 SHA256: 5415020bc3e82fc8f17c1739c2511f33eb3e43679944cd61171d2f77b474c26c
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.44
@@ -1602,7 +1496,6 @@ Size: 967356
 MD5sum: 7cf131def45eb563b524bbf68a2f12d5
 SHA1: 02d97e9cfed04e99e59b6cb87fc5773cb57c5da7
 SHA256: e68b5d927511b94a92e2f2b572ec90138ba7b8e72552eb75e9bbd5d170ee32bc
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.45
@@ -1617,7 +1510,6 @@ Size: 969298
 MD5sum: 3ad04b29d11699305a10291978a42e65
 SHA1: 85476cc9f2614f0d07a82c84dc17744a73d94c88
 SHA256: c947e800da7946a4c041a9dd7c6ac4e367e3b01ab21c13cacb6c8c0609620b9a
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.46
@@ -1632,7 +1524,6 @@ Size: 985900
 MD5sum: 41f22ba2d99da8c03d8a6b14d0e42336
 SHA1: 7d54593dbdb6c1ad302528915cfbfad22a728b33
 SHA256: 62eed2cc264c704fbddac5160758a5668ad6d964c829206be3a2097186ed109f
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.47
@@ -1647,7 +1538,6 @@ Size: 987302
 MD5sum: f4f7555e307af6edbc53cdf7178883bb
 SHA1: 581d74536a2c400222162a1da1ee5fada9071c7f
 SHA256: ceaca46823ad07c9a7a4fdfe068ef0f08458dc859a37c2eaec51bae85c7351b6
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.48
@@ -1662,7 +1552,6 @@ Size: 990136
 MD5sum: aa4d38bceb0f848937d8ef812988e64a
 SHA1: 095182de14a5063dc9e2ab03a8ed43f3038d83aa
 SHA256: 848ecd0bf956cb19a44266e0dfc826f4cc2d7b57f153c84cc2e1779731883f8d
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.4
@@ -1677,7 +1566,6 @@ Size: 141094
 MD5sum: 38e84facab2b645d306bed23fb0cb345
 SHA1: 22f02b1e8a59ce95b3967df0ee95780ebed3ad9d
 SHA256: dd10d8e96df9a8fe1c50763664b09ba390b6b00f10ff0210d8ca0868a6e08192
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.5
@@ -1692,7 +1580,6 @@ Size: 150082
 MD5sum: cfcd9b49f4d52a0f28fa7947136c2712
 SHA1: 2594636ca740a15cf5fdaddb75d8376e618ab83b
 SHA256: 76c2f6f513f0f9217ab68f391c2281fba2eeb90083e2fb8bf8ab255a6f5e775f
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.6
@@ -1707,7 +1594,6 @@ Size: 158332
 MD5sum: 4e26a090c74309e130f26240ffda6b7b
 SHA1: 229b50d324a649e0bef339e1480de45e3cb4350f
 SHA256: 275888d7dfc4195071714321914b2c16b9af5beb376e53ea813775de404abd9b
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.7
@@ -1722,7 +1608,6 @@ Size: 177126
 MD5sum: 773013b9bbb07e370ae0c60a54bd4166
 SHA1: 6f970b03e36f32c189b3f99436b9c6286b4a54d1
 SHA256: 38b02918a5d592d21e3e9948e38badabbab9353bedd5f3b3c897fd4e722de616
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.8
@@ -1737,7 +1622,6 @@ Size: 182812
 MD5sum: 99d31e9159d7884af4faeb9eeef3878e
 SHA1: 8c85aff7113b6b7999e9fac34706ba0373bea8bb
 SHA256: f25ea444fcb94be134c8c62739a845d3b24e314677e60e8ee252eed7077ab4cf
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.9
@@ -1752,7 +1636,6 @@ Size: 184562
 MD5sum: c62f9f7dcee66e3697a904a572a09dfb
 SHA1: e87126e8a19711a71eb3807ef66ffcc5fdeac22f
 SHA256: f6fdb4282c00bdde0e090eaf6690fc40eff9eb059707b3553c7aa3d49f64856a
-
 Package: com.ntm.privacymanager
 Name: 隐私与安全性
 Version: 1.0.3
@@ -1767,7 +1650,6 @@ Size: 36992
 MD5sum: 024e6969fe7310b4af5bd39924f981ff
 SHA1: 2eb9b9ac1e4fee6337c032ae9659f346d32769b0
 SHA256: cbe454d89f8ece887a00cfd22396298275c72ca146f78fd3f90bd4d96c7b19fc
-
 Package: com.roa.randopenapp
 Name: 随机开启app
 Version: 1.3.1
@@ -1781,4 +1663,19 @@ Size: 30508
 MD5sum: b58a296bc51652d448923b1c475d7a98
 SHA1: 71326a08804d118822bec2e6d7b343e4dc257071
 SHA256: 031519d30c5e663e24bd8cea4bc6a32a0f0d7dcf255a6067c5025480cb74619b
+
+Package: com.axs.superscreenshot
+Name: 超级截图
+Version: 6.20.24
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
+Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：截图与裁剪（控制中心按钮或手势呼出浮层，拖框选区可拖动 / 缩放微调，支持正常截图与长截图，长截图含自动滚动 / 自动 SAD 两种采集模式并滚动拼接成整页长图）；OCR 文字识别（视觉大模型引擎与百度 PaddleOCR 两种识别源，结果按阅读顺序上→下、同行左→右重排，可复制全文）；翻译（大模型或百度翻译对选中文字翻译，原文 / 译文可分别复制）；画图标注（画笔实线 / 马克笔半透明粗线 / 橡皮，可选颜色与透明度、撤销）；识码（识别二维码 / 条码，结果可复制或用 Safari 打开）；打开豆包（把当前截图带进豆包 App 直接对话提问，图片同时存入剪贴板可长按粘贴，替代原问 AI / 去状态栏按钮）；图像打码（方块像素马赛克 / 高斯模糊两种涂抹脱敏，可手动涂抹或智能识别手机号、身份证自动打码）；取色（吸管点取图中任意颜色并复制 HEX 值）；旋转（90° / 180° 旋转当前图）；图片压缩（一键压缩并提示前后体积）；贴图（把图片作为浮动窗贴到屏幕，可拖动、双指缩放、关闭）；复制 / 保存 / 分享（复制图片或文字到剪贴板；保存到专属相册「超级截图」；系统分享）；导出 PDF（把截图导出为 PDF）；还原（一键还原为编辑前原图）；启动（工具栏「启动」弹层选要秒开的 App，微信 / QQ / 闲鱼 预设或自定义 URL Scheme，秒开并把截图存入剪贴板）；截图历史记录（回看历次截图）；手机壳库（设置开启后正常截图自动套入手机外壳模板，含中框与刘海）；设置丰富（工具栏自由排序 / 显隐 / 改名 / 换图标 SF Symbol；控制中心图标五选一相机 / 剪刀 / 闪电 / 文档 / 星星；大模型库识别引擎 / 问 AI / 翻译 分别选模型、一键导入预设、连接测试；百度 PaddleOCR 与百度翻译密钥配置；设备授权复制本机 UDID 发给开发者获取解锁码）。
+Filename: debs/com.axs.superscreenshot_6.20.24_iphoneos-arm64.deb
+Size: 309672
+MD5sum: 2df402e8282dbd8928f67a59b4eae1ff
+SHA1: 177a00484f61821259e760c43ea7cb7348a1bbb5
+SHA256: a79737283304e63c2120d1011df183cf8f529cdcc847fdc77a3c15d604133473
 
