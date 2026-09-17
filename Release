@@ -8,17 +8,17 @@ Components: main
 Description: Acljcr Source
 Support: https://github.com/yzdmm2024/repo
 <<<<<<< HEAD
-Date: Thu, 17 Sep 2026 16:30:23 GMT
+Date: Thu, 17 Sep 2026 16:31:52 GMT
 
 MD5Sum:
  050d0d1b4be32050de1e32e25c215100 508311 Packages
- 8ff9f46c255485f29adfed0d1b1bd24b 45591 Packages.gz
+ e38bce01ccab11fc348cd7a293cc1642 45591 Packages.gz
  72a59448fb8591d77aa7d891ca867785 43849 Packages.bz2
 SHA1:
  06ac9fc3a70d9abd0f8623fb9f0d5f2a0eb9af34 508311 Packages
- 97f0d604d347834898a2d5ae52aa91f96477fc5a 45591 Packages.gz
+ 4252862b286d34610aacfb9bbd45bf7157d11269 45591 Packages.gz
  ff64dd7bcdf78563820a471c4149f4d71ae5588d 43849 Packages.bz2
 SHA256:
  597d3964dd0555ce2f21b8e4a3d665f0715227d24fb892ed1e56f5f6f9111c15 508311 Packages
- 423b945a271996a488339c247ba6bfce3c8c57d07f7879cc81e81c2ca43aed3c 45591 Packages.gz
+ e037319d2fc26858952ccad430ee9d41c8d83accc2ba9dafb8475afb8c79deb5 45591 Packages.gz
  e5159fba362ae2fcb40afad85fb5449b5611ea444965d84ad6bba47bffe31bb0 43849 Packages.bz2
