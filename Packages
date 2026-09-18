@@ -1973,10 +1973,10 @@ Maintainer: yzdmm2024
 Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
 Description: 不想说话 只想文本
 Filename: debs/com.yzdmm2024.myvoice_2.8.64_iphoneos-arm64.deb
-Size: 1017042
-MD5sum: 74ea149ceff31d8def4cd8afe3da0543
-SHA1: 951c4bab9c3256d541587662654fd5f7d00eade0
-SHA256: 2d72c917ff705c3f5c11bbee71bc733e10eb7b89117ef33721a2e0f19129f768
+Size: 1013852
+MD5sum: dba106cf1bcb976df63642dd951cdda8
+SHA1: cc94561f06740be3b67be32add2033d77272a1b2
+SHA256: 7484e58e50c2a801fbcac34c15cb778d1a9186de6eb2f58f1570c964b52a223f
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
