@@ -2040,6 +2040,21 @@ SHA256: 1c0a1c4a6607e00c80b8bc2ea79285e6882072500803e616e802dd6b296f567f
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
+Version: 2.8.69
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本。2.8.69 修复 Fish 克隆音色无法选择（voiceId/voiceID 键名统一），删除支持删 Fish 音色。
+Filename: debs/com.yzdmm2024.myvoice_2.8.69_iphoneos-arm64.deb
+Size: 1032108
+MD5sum: e60730e9b4f0c7c3b239cca404fb6808
+SHA1: afc35ef57d44d4dd7a9d406a043de0dbc12f1082
+SHA256: 01508c7580a7a85a18e5c6af381c83731d68a2656e66f50504a93fef1b728dad
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
 Version: 2.8.6
 Architecture: iphoneos-arm64
 Section: Tweaks
