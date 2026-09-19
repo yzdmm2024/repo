@@ -2025,6 +2025,21 @@ SHA256: c1d26c387ed4f4e07a2283db4bb03d584d8f612013ee919e7953a0fb8a7a563c
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
+Version: 2.8.68
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本。2.8.68 修复讯飞通道鉴权 401（鉴权参数改走官方 URL query 方式）。
+Filename: debs/com.yzdmm2024.myvoice_2.8.68_iphoneos-arm64.deb
+Size: 1032038
+MD5sum: a1c448a0ebc2739465a38f229fb1aa65
+SHA1: 5b5c2259fa26ff3545cf3eb7b5bea8a3768adb4a
+SHA256: 1c0a1c4a6607e00c80b8bc2ea79285e6882072500803e616e802dd6b296f567f
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
 Version: 2.8.6
 Architecture: iphoneos-arm64
 Section: Tweaks
