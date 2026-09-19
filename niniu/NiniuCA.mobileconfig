@@ -42,7 +42,7 @@
 			<key>PayloadType</key>
 			<string>com.apple.security.root</string>
 			<key>PayloadUUID</key>
-			<string>6B87DCB7-D791-4794-B17D-44A6C68FB278</string>
+			<string>1F844A66-6FD9-42A3-B815-0F29E2B3825E</string>
 			<key>PayloadVersion</key>
 			<integer>1</integer>
 		</dict>
@@ -60,7 +60,7 @@
 	<key>PayloadType</key>
 	<string>Configuration</string>
 	<key>PayloadUUID</key>
-	<string>5594A2AD-CAA3-4BD4-80EE-69EEACD9D6F0</string>
+	<string>27842DC3-5F23-4F97-AC9D-5F177B0E79AE</string>
 	<key>PayloadVersion</key>
 	<integer>1</integer>
 </dict>
