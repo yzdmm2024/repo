@@ -627,24 +627,6 @@ MD5sum: 935867cbd9e86d462ebde591ffe7fc73
 SHA1: 2c10479918a733985636bec6afeb08099e1a5ab4
 SHA256: f5c972c836005d2efbbc9f8b95782ff3180751c15f3348c58cb6ef6160fe0a04
 
-Package: com.yzdmm.powersaver
-Name: PowerSaver 省电助手
-Version: 1.0.12
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: ellekit, preferenceloader
-Conflicts: com.yourname.powersaver
-Replaces: com.yourname.powersaver
-Provides: com.yourname.powersaver
-Description: 拦截指定 App 的后台定位/蓝牙扫描/后台任务/后台网络，降低待机耗电；新增本机拦截计数。
-Filename: debs/com.yzdmm.powersaver_1.0.12_iphoneos-arm64.deb
-Size: 17588
-MD5sum: 36facea41222a3181e98b02751e80fde
-SHA1: 6471716925f0d9185558af1649cb486adf05895d
-SHA256: 689eac6fdfe4530886dcb7afe79ea42fcb7ed1a57a74acc9dec7a54c6fd119b6
-
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.2
@@ -659,6 +641,36 @@ Size: 37256
 MD5sum: 32e7d50c6057648f6a3a9bd9f3164488
 SHA1: 6a9e51f5062f405274da93b0e067748fc5602707
 SHA256: bb61e64e2c39b6b032b8dc6bcf038a89a8f4d985c2ccdb44902ed0508c598565
+
+Package: com.yzdmm.wechatnotifyclear
+Name: 通知自动清理
+Version: 1.1.0
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 16.0), firmware (<< 17.0)
+Description: 打开 App 阅读消息时自动清除该 App 在通知中心的全部通知，解决已读后通知残留问题。设置面板可逐个 App 开关。注入目标：微信/QQ/信息/企业微信/钉钉/飞书/支付宝/淘宝/抖音/微博/邮件。
+Filename: debs/com.yzdmm.wechatnotifyclear_1.1.0_iphoneos-arm64.deb
+Size: 7132
+MD5sum: 744da1b00d892b95135dadcb1fd2b793
+SHA1: 154cb705deebb957a323661829634f7744785636
+SHA256: 6f43ad02af0917c68672f0e798c34be2862dbb572d57506a647aea70a85f19ba
+
+Package: com.yzdmm.wechatnotifyclear
+Name: 通知自动清理
+Version: 1.1.1
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 16.0), firmware (<< 17.0)
+Description: 打开 App 阅读消息时自动清除该 App 在通知中心的全部通知，解决已读后通知残留问题。设置面板可逐个 App 开关。注入目标：微信/QQ/信息/企业微信/钉钉/飞书/支付宝/淘宝/抖音/微博/邮件。
+Filename: debs/com.yzdmm.wechatnotifyclear_1.1.1_iphoneos-arm64.deb
+Size: 7168
+MD5sum: 9ced1a8f273b66695545fc26db095b40
+SHA1: 5e43e578c2a8727626dcf7ffb7cd5150c3961836
+SHA256: cbd91769fb06c349a66a5796649a933254bf83b6e311a776918973aef13456af
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
@@ -1683,6 +1695,96 @@ SHA256: 5415020bc3e82fc8f17c1739c2511f33eb3e43679944cd61171d2f77b474c26c
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
+Version: 2.8.44
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 微信文字转语音（阿里云百炼 CosyVoice / 千问，可克隆音色）。★★ 2.8.44 新增「转粤语」一键换字（在文本输入区）：点一下把普通话换成粤语写法，150+ 词条、按最长匹配替换（不会把「明天」「说明」这类词改坏），并顺手把方言切到「广东话」让发音指令同步生效。为什么要换字：克隆只搬音色不搬口音，文本前端走的是普通话发音，参考音频就算是粤语也一样读出普通话 —— 想真出粤语腔，必须把用字也改成粤语写法；其他方言不需要换字（靠发音指令出腔），所以只做了粤语。另修「QQ 里看不到 / 用不了克隆音色」：读端一直同时看 jbroot 与原生全局 Preferences 两处，写端却只写了 jbroot，rootful 越狱下 /var/jb 不存在 →「能读的那份没人写」，克隆音色跨 App 共享因此失效；现已补上写入，并加了来源诊断日志（日志里 [voices] 一行可直接看出断在哪条通道）。★★ 2.8.43 修复火山引擎报错 code 3001：火山音色体系已换代，插件里的旧编号 BV*_streaming 已下架/未授权（服务端返回 requested resource not granted），现全部换成当前在售的 *_uranus_bigtts 系列，并优先排布「高冷御姐 / 性感御姐 / 魅力女友 / 撒娇学妹 / 娇喘女声」等贴人设的音色，另保留 Vivi、云舟两个原生覆盖粤语·上海·河南·北京·天津·四川·陕西·东北 8 种方言的音色。★★ 2.8.42 体验大修：① 修复「拖语速/音高滑块时整个面板跟着飘」——父视图的拖面板手势会抢走滑块的触摸，现按触摸落在哪类控件上决定是否接管。② 8 档一键风格改为【语速 × 音高】双轴参数化（旧版只动语速且差距不到 1.3 倍，所以「听不出差别」），同时把每档指令改写成模型能执行的物理描述（停顿位置 / 句尾走向 / 气息），不再写「快乐/生气」这类模型读不懂的情绪词。③ 自定义指令新增历史记录（自动留存最近 20 条，可一键回填）与 10 条内置场景预设（哄睡、撒娇、高冷御姐、客服播报、电台夜话…和风格是两个正交维度，可叠加）；并修掉「清空指令」把方言一起清掉的误伤。④ 方言表按官方清单重建：移除引擎未训练的「阳江话」「皖北话」，CosyVoice 17 种 / 千问 21 种，每种方言的描述改成发声动作写法（音调走向 / 鼻音儿化入声 / 节奏），出腔更稳。⑤ 面板新增「服务商」选择行，一眼看到当前在用谁家的服务，并接入火山引擎与 MiniMax（各 12 个官方预置音色、独立端点与鉴权）；每家都提供「一键测试当前凭据」和「官网直达」链接（点文字直接开浏览器）。⑥ 改语速/音高后统一清合成缓存，避免「拖了滑块试听没变化」。★★ 2.8.41 移除「自建服务器」通道。★★ 2.8.35 省电。★★ 2.8.32 修「千问合成失败·url error」。★★ 用法：聊天页点悬浮球「语」→ 选音色 → 输入文字 → 点「合成语音」发送。
+Filename: debs/com.yzdmm2024.myvoice_2.8.44_iphoneos-arm64.deb
+Size: 967356
+MD5sum: 7cf131def45eb563b524bbf68a2f12d5
+SHA1: 02d97e9cfed04e99e59b6cb87fc5773cb57c5da7
+SHA256: e68b5d927511b94a92e2f2b572ec90138ba7b8e72552eb75e9bbd5d170ee32bc
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.45
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 微信文字转语音（阿里云百炼 CosyVoice / 千问，可克隆音色）。★★ 2.8.45 修「升级到 2.8.44 后 QQ 里还是看不到克隆音色」：2.8.44 只补好了写端（以后克隆 / 删音色时才写那份原生全局 Preferences），而在这之前已经克隆好的音色，那份文件从来没人写过 —— 只升级不会自动补写，QQ 里依旧只剩千问那 29 个预置音色。现在改成读端自愈：一旦读到「全局域=0 但本地有数据」，立刻自动补写一次（每进程只做一次，写完即停），不需要重新克隆一遍。日志 [voices] 那行新增「自愈=」字段，可直接确认有没有补上。 ★★ 2.8.44 新增「转粤语」一键换字（在文本输入区）：点一下把普通话换成粤语写法，150+ 词条、按最长匹配替换（不会把「明天」「说明」这类词改坏），并顺手把方言切到「广东话」让发音指令同步生效。为什么要换字：克隆只搬音色不搬口音，文本前端走的是普通话发音，参考音频就算是粤语也一样读出普通话 —— 想真出粤语腔，必须把用字也改成粤语写法；其他方言不需要换字（靠发音指令出腔），所以只做了粤语。另修「QQ 里看不到 / 用不了克隆音色」：读端一直同时看 jbroot 与原生全局 Preferences 两处，写端却只写了 jbroot，rootful 越狱下 /var/jb 不存在 →「能读的那份没人写」，克隆音色跨 App 共享因此失效；现已补上写入，并加了来源诊断日志（日志里 [voices] 一行可直接看出断在哪条通道）。★★ 2.8.43 修复火山引擎报错 code 3001：火山音色体系已换代，插件里的旧编号 BV*_streaming 已下架/未授权（服务端返回 requested resource not granted），现全部换成当前在售的 *_uranus_bigtts 系列，并优先排布「高冷御姐 / 性感御姐 / 魅力女友 / 撒娇学妹 / 娇喘女声」等贴人设的音色，另保留 Vivi、云舟两个原生覆盖粤语·上海·河南·北京·天津·四川·陕西·东北 8 种方言的音色。★★ 2.8.42 体验大修：① 修复「拖语速/音高滑块时整个面板跟着飘」——父视图的拖面板手势会抢走滑块的触摸，现按触摸落在哪类控件上决定是否接管。② 8 档一键风格改为【语速 × 音高】双轴参数化（旧版只动语速且差距不到 1.3 倍，所以「听不出差别」），同时把每档指令改写成模型能执行的物理描述（停顿位置 / 句尾走向 / 气息），不再写「快乐/生气」这类模型读不懂的情绪词。③ 自定义指令新增历史记录（自动留存最近 20 条，可一键回填）与 10 条内置场景预设（哄睡、撒娇、高冷御姐、客服播报、电台夜话…和风格是两个正交维度，可叠加）；并修掉「清空指令」把方言一起清掉的误伤。④ 方言表按官方清单重建：移除引擎未训练的「阳江话」「皖北话」，CosyVoice 17 种 / 千问 21 种，每种方言的描述改成发声动作写法（音调走向 / 鼻音儿化入声 / 节奏），出腔更稳。⑤ 面板新增「服务商」选择行，一眼看到当前在用谁家的服务，并接入火山引擎与 MiniMax（各 12 个官方预置音色、独立端点与鉴权）；每家都提供「一键测试当前凭据」和「官网直达」链接（点文字直接开浏览器）。⑥ 改语速/音高后统一清合成缓存，避免「拖了滑块试听没变化」。★★ 2.8.41 移除「自建服务器」通道。★★ 2.8.35 省电。★★ 2.8.32 修「千问合成失败·url error」。★★ 用法：聊天页点悬浮球「语」→ 选音色 → 输入文字 → 点「合成语音」发送。
+Filename: debs/com.yzdmm2024.myvoice_2.8.45_iphoneos-arm64.deb
+Size: 969298
+MD5sum: 3ad04b29d11699305a10291978a42e65
+SHA1: 85476cc9f2614f0d07a82c84dc17744a73d94c88
+SHA256: c947e800da7946a4c041a9dd7c6ac4e367e3b01ab21c13cacb6c8c0609620b9a
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.46
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 微信文字转语音（阿里云百炼 CosyVoice / 千问，可克隆音色）。★★ 2.8.46 修「云端千问通道下克隆音色选不上 / 用不了」：面板刷新时无条件按通道重算音色，只要当前是「云端千问」就把刚点中的克隆音色顶回千问预置 —— 而刷新在选音色、开关列表、各控件回调里反复触发，等于「点了就丢」；发送与试听的兜底也同样按通道回落，面板显示克隆、发出去的仍是千问预置。现引入与通道解耦的唯一真源「选中音色」：选过的一律优先，只有已失效才退通道默认。② 让方言指令真正下发 —— 千问 / 克隆路径的指令组装里**完全没有方言**（只有 CosyVoice 路径有），所以点「转粤语」只换了字、发音指令从没下发，出来就是「粤语字普通话腔」；现已补上方言句，并在转方言时自动把千问预置从「标准版」切到「可调版」（标准版不认 instructions，方言与风格会被静默丢弃）。③ 「转粤语」大扩容并通用化：广东话 273 条，另加四川 / 东北 / 河南 / 上海 / 天津 / 陕西 / 湖南 / 山东 八张口语化词表（合计 512 条）；**长按**「转粤语」按钮可选其他方言，轻点仍是粤语；新增粤语句末「了 → 喇 / 咗」规则，按钮标题会跟着当前方言走。④ 克隆音色跨 App 共享再加固：新增两条越狱根下的普通文件通道（绕过 cfprefsd 的沙箱限制），读端合并去重、写端逐通道打日志（[voices] 那行新增「文件=」字段）；自愈改为「合并写」，绝不会用 QQ 侧那份不完整的列表覆盖微信写下的完整列表。 ★★ 2.8.45 修「升级到 2.8.44 后 QQ 里还是看不到克隆音色」：2.8.44 只补好了写端（以后克隆 / 删音色时才写那份原生全局 Preferences），而在这之前已经克隆好的音色，那份文件从来没人写过 —— 只升级不会自动补写，QQ 里依旧只剩千问那 29 个预置音色。现在改成读端自愈：一旦读到「全局域=0 但本地有数据」，立刻自动补写一次（每进程只做一次，写完即停），不需要重新克隆一遍。日志 [voices] 那行新增「自愈=」字段，可直接确认有没有补上。 ★★ 2.8.44 新增「转粤语」一键换字（在文本输入区）：点一下把普通话换成粤语写法，150+ 词条、按最长匹配替换（不会把「明天」「说明」这类词改坏），并顺手把方言切到「广东话」让发音指令同步生效。为什么要换字：克隆只搬音色不搬口音，文本前端走的是普通话发音，参考音频就算是粤语也一样读出普通话 —— 想真出粤语腔，必须把用字也改成粤语写法；其他方言不需要换字（靠发音指令出腔），所以只做了粤语。另修「QQ 里看不到 / 用不了克隆音色」：读端一直同时看 jbroot 与原生全局 Preferences 两处，写端却只写了 jbroot，rootful 越狱下 /var/jb 不存在 →「能读的那份没人写」，克隆音色跨 App 共享因此失效；现已补上写入，并加了来源诊断日志（日志里 [voices] 一行可直接看出断在哪条通道）。★★ 2.8.43 修复火山引擎报错 code 3001：火山音色体系已换代，插件里的旧编号 BV*_streaming 已下架/未授权（服务端返回 requested resource not granted），现全部换成当前在售的 *_uranus_bigtts 系列，并优先排布「高冷御姐 / 性感御姐 / 魅力女友 / 撒娇学妹 / 娇喘女声」等贴人设的音色，另保留 Vivi、云舟两个原生覆盖粤语·上海·河南·北京·天津·四川·陕西·东北 8 种方言的音色。★★ 2.8.42 体验大修：① 修复「拖语速/音高滑块时整个面板跟着飘」——父视图的拖面板手势会抢走滑块的触摸，现按触摸落在哪类控件上决定是否接管。② 8 档一键风格改为【语速 × 音高】双轴参数化（旧版只动语速且差距不到 1.3 倍，所以「听不出差别」），同时把每档指令改写成模型能执行的物理描述（停顿位置 / 句尾走向 / 气息），不再写「快乐/生气」这类模型读不懂的情绪词。③ 自定义指令新增历史记录（自动留存最近 20 条，可一键回填）与 10 条内置场景预设（哄睡、撒娇、高冷御姐、客服播报、电台夜话…和风格是两个正交维度，可叠加）；并修掉「清空指令」把方言一起清掉的误伤。④ 方言表按官方清单重建：移除引擎未训练的「阳江话」「皖北话」，CosyVoice 17 种 / 千问 21 种，每种方言的描述改成发声动作写法（音调走向 / 鼻音儿化入声 / 节奏），出腔更稳。⑤ 面板新增「服务商」选择行，一眼看到当前在用谁家的服务，并接入火山引擎与 MiniMax（各 12 个官方预置音色、独立端点与鉴权）；每家都提供「一键测试当前凭据」和「官网直达」链接（点文字直接开浏览器）。⑥ 改语速/音高后统一清合成缓存，避免「拖了滑块试听没变化」。★★ 2.8.41 移除「自建服务器」通道。★★ 2.8.35 省电。★★ 2.8.32 修「千问合成失败·url error」。★★ 用法：聊天页点悬浮球「语」→ 选音色 → 输入文字 → 点「合成语音」发送。
+Filename: debs/com.yzdmm2024.myvoice_2.8.46_iphoneos-arm64.deb
+Size: 985900
+MD5sum: 41f22ba2d99da8c03d8a6b14d0e42336
+SHA1: 7d54593dbdb6c1ad302528915cfbfad22a728b33
+SHA256: 62eed2cc264c704fbddac5160758a5668ad6d964c829206be3a2097186ed109f
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.47
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 微信文字转语音（阿里云百炼 CosyVoice / 千问，可克隆音色）。★★ 2.8.47 修「转换按钮写死成粤语、与所选方言脱节」：之前「转换」（原名转粤语）按钮的轻点逻辑写死成广东话，你无论「方言」里选什么、长按选什么，一点击都转成粤语 —— 正是你吐槽的「不管选什么都转粤语」。2.8.47 让轻点读取当前所选方言做纯文字换字：选粤语→粤语写法、选潮汕话→潮汕话写法、选祁东话→祁东话写法（其余方言同理）；按钮改名「转换」，长按菜单仍可快速选方言。② 新增潮汕话、祁东话两张种子词表（各 16~20 条常用字），并纳入可选方言 —— 这两种不在模型口音清单里，只能换字、不出腔，词表为种子版，待你补充「普通话→方言」对照词后越填越准。③ 有词表的方言不再弹「不支持方言指令」口音警告，避免吓人。 ★★ 2.8.46 修「云端千问通道下克隆音色选不上 / 用不了」：面板刷新时无条件按通道重算音色，只要当前是「云端千问」就把刚点中的克隆音色顶回千问预置 —— 而刷新在选音色、开关列表、各控件回调里反复触发，等于「点了就丢」；发送与试听的兜底也同样按通道回落，面板显示克隆、发出去的仍是千问预置。现引入与通道解耦的唯一真源「选中音色」：选过的一律优先，只有已失效才退通道默认。② 让方言指令真正下发 —— 千问 / 克隆路径的指令组装里**完全没有方言**（只有 CosyVoice 路径有），所以点「转粤语」只换了字、发音指令从没下发，出来就是「粤语字普通话腔」；现已补上方言句，并在转方言时自动把千问预置从「标准版」切到「可调版」（标准版不认 instructions，方言与风格会被静默丢弃）。③ 「转粤语」大扩容并通用化：广东话 273 条，另加四川 / 东北 / 河南 / 上海 / 天津 / 陕西 / 湖南 / 山东 八张口语化词表（合计 512 条）；**长按**「转粤语」按钮可选其他方言，轻点仍是粤语；新增粤语句末「了 → 喇 / 咗」规则，按钮标题会跟着当前方言走。④ 克隆音色跨 App 共享再加固：新增两条越狱根下的普通文件通道（绕过 cfprefsd 的沙箱限制），读端合并去重、写端逐通道打日志（[voices] 那行新增「文件=」字段）；自愈改为「合并写」，绝不会用 QQ 侧那份不完整的列表覆盖微信写下的完整列表。 ★★ 2.8.45 修「升级到 2.8.44 后 QQ 里还是看不到克隆音色」：2.8.44 只补好了写端（以后克隆 / 删音色时才写那份原生全局 Preferences），而在这之前已经克隆好的音色，那份文件从来没人写过 —— 只升级不会自动补写，QQ 里依旧只剩千问那 29 个预置音色。现在改成读端自愈：一旦读到「全局域=0 但本地有数据」，立刻自动补写一次（每进程只做一次，写完即停），不需要重新克隆一遍。日志 [voices] 那行新增「自愈=」字段，可直接确认有没有补上。 ★★ 2.8.44 新增「转粤语」一键换字（在文本输入区）：点一下把普通话换成粤语写法，150+ 词条、按最长匹配替换（不会把「明天」「说明」这类词改坏），并顺手把方言切到「广东话」让发音指令同步生效。为什么要换字：克隆只搬音色不搬口音，文本前端走的是普通话发音，参考音频就算是粤语也一样读出普通话 —— 想真出粤语腔，必须把用字也改成粤语写法；其他方言不需要换字（靠发音指令出腔），所以只做了粤语。另修「QQ 里看不到 / 用不了克隆音色」：读端一直同时看 jbroot 与原生全局 Preferences 两处，写端却只写了 jbroot，rootful 越狱下 /var/jb 不存在 →「能读的那份没人写」，克隆音色跨 App 共享因此失效；现已补上写入，并加了来源诊断日志（日志里 [voices] 一行可直接看出断在哪条通道）。★★ 2.8.43 修复火山引擎报错 code 3001：火山音色体系已换代，插件里的旧编号 BV*_streaming 已下架/未授权（服务端返回 requested resource not granted），现全部换成当前在售的 *_uranus_bigtts 系列，并优先排布「高冷御姐 / 性感御姐 / 魅力女友 / 撒娇学妹 / 娇喘女声」等贴人设的音色，另保留 Vivi、云舟两个原生覆盖粤语·上海·河南·北京·天津·四川·陕西·东北 8 种方言的音色。★★ 2.8.42 体验大修：① 修复「拖语速/音高滑块时整个面板跟着飘」——父视图的拖面板手势会抢走滑块的触摸，现按触摸落在哪类控件上决定是否接管。② 8 档一键风格改为【语速 × 音高】双轴参数化（旧版只动语速且差距不到 1.3 倍，所以「听不出差别」），同时把每档指令改写成模型能执行的物理描述（停顿位置 / 句尾走向 / 气息），不再写「快乐/生气」这类模型读不懂的情绪词。③ 自定义指令新增历史记录（自动留存最近 20 条，可一键回填）与 10 条内置场景预设（哄睡、撒娇、高冷御姐、客服播报、电台夜话…和风格是两个正交维度，可叠加）；并修掉「清空指令」把方言一起清掉的误伤。④ 方言表按官方清单重建：移除引擎未训练的「阳江话」「皖北话」，CosyVoice 17 种 / 千问 21 种，每种方言的描述改成发声动作写法（音调走向 / 鼻音儿化入声 / 节奏），出腔更稳。⑤ 面板新增「服务商」选择行，一眼看到当前在用谁家的服务，并接入火山引擎与 MiniMax（各 12 个官方预置音色、独立端点与鉴权）；每家都提供「一键测试当前凭据」和「官网直达」链接（点文字直接开浏览器）。⑥ 改语速/音高后统一清合成缓存，避免「拖了滑块试听没变化」。★★ 2.8.41 移除「自建服务器」通道。★★ 2.8.35 省电。★★ 2.8.32 修「千问合成失败·url error」。★★ 用法：聊天页点悬浮球「语」→ 选音色 → 输入文字 → 点「合成语音」发送。
+Filename: debs/com.yzdmm2024.myvoice_2.8.47_iphoneos-arm64.deb
+Size: 987302
+MD5sum: f4f7555e307af6edbc53cdf7178883bb
+SHA1: 581d74536a2c400222162a1da1ee5fada9071c7f
+SHA256: ceaca46823ad07c9a7a4fdfe068ef0f08458dc859a37c2eaec51bae85c7351b6
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.48
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 微信文字转语音（阿里云百炼 CosyVoice / 千问，可克隆音色）。★★ 2.8.48 新增「选方言」按钮 + 修输入框不弹键盘：主面板顶部新增「选方言 ▾」按钮，点一下弹可选方言列表，选完点「转换」换字；长按「转换」也能选方言；各地方言换字词表充实并对齐别名，新增衡阳话；修「点输入框不弹键盘、无法输入」。★★ 2.8.47 修「转换按钮写死成粤语、与所选方言脱节」：之前「转换」（原名转粤语）按钮的轻点逻辑写死成广东话，你无论「方言」里选什么、长按选什么，一点击都转成粤语 —— 正是你吐槽的「不管选什么都转粤语」。2.8.47 让轻点读取当前所选方言做纯文字换字：选粤语→粤语写法、选潮汕话→潮汕话写法、选祁东话→祁东话写法（其余方言同理）；按钮改名「转换」，长按菜单仍可快速选方言。② 新增潮汕话、祁东话两张种子词表（各 16~20 条常用字），并纳入可选方言 —— 这两种不在模型口音清单里，只能换字、不出腔，词表为种子版，待你补充「普通话→方言」对照词后越填越准。③ 有词表的方言不再弹「不支持方言指令」口音警告，避免吓人。 ★★ 2.8.46 修「云端千问通道下克隆音色选不上 / 用不了」：面板刷新时无条件按通道重算音色，只要当前是「云端千问」就把刚点中的克隆音色顶回千问预置 —— 而刷新在选音色、开关列表、各控件回调里反复触发，等于「点了就丢」；发送与试听的兜底也同样按通道回落，面板显示克隆、发出去的仍是千问预置。现引入与通道解耦的唯一真源「选中音色」：选过的一律优先，只有已失效才退通道默认。② 让方言指令真正下发 —— 千问 / 克隆路径的指令组装里**完全没有方言**（只有 CosyVoice 路径有），所以点「转粤语」只换了字、发音指令从没下发，出来就是「粤语字普通话腔」；现已补上方言句，并在转方言时自动把千问预置从「标准版」切到「可调版」（标准版不认 instructions，方言与风格会被静默丢弃）。③ 「转粤语」大扩容并通用化：广东话 273 条，另加四川 / 东北 / 河南 / 上海 / 天津 / 陕西 / 湖南 / 山东 八张口语化词表（合计 512 条）；**长按**「转粤语」按钮可选其他方言，轻点仍是粤语；新增粤语句末「了 → 喇 / 咗」规则，按钮标题会跟着当前方言走。④ 克隆音色跨 App 共享再加固：新增两条越狱根下的普通文件通道（绕过 cfprefsd 的沙箱限制），读端合并去重、写端逐通道打日志（[voices] 那行新增「文件=」字段）；自愈改为「合并写」，绝不会用 QQ 侧那份不完整的列表覆盖微信写下的完整列表。 ★★ 2.8.45 修「升级到 2.8.44 后 QQ 里还是看不到克隆音色」：2.8.44 只补好了写端（以后克隆 / 删音色时才写那份原生全局 Preferences），而在这之前已经克隆好的音色，那份文件从来没人写过 —— 只升级不会自动补写，QQ 里依旧只剩千问那 29 个预置音色。现在改成读端自愈：一旦读到「全局域=0 但本地有数据」，立刻自动补写一次（每进程只做一次，写完即停），不需要重新克隆一遍。日志 [voices] 那行新增「自愈=」字段，可直接确认有没有补上。 ★★ 2.8.44 新增「转粤语」一键换字（在文本输入区）：点一下把普通话换成粤语写法，150+ 词条、按最长匹配替换（不会把「明天」「说明」这类词改坏），并顺手把方言切到「广东话」让发音指令同步生效。为什么要换字：克隆只搬音色不搬口音，文本前端走的是普通话发音，参考音频就算是粤语也一样读出普通话 —— 想真出粤语腔，必须把用字也改成粤语写法；其他方言不需要换字（靠发音指令出腔），所以只做了粤语。另修「QQ 里看不到 / 用不了克隆音色」：读端一直同时看 jbroot 与原生全局 Preferences 两处，写端却只写了 jbroot，rootful 越狱下 /var/jb 不存在 →「能读的那份没人写」，克隆音色跨 App 共享因此失效；现已补上写入，并加了来源诊断日志（日志里 [voices] 一行可直接看出断在哪条通道）。★★ 2.8.43 修复火山引擎报错 code 3001：火山音色体系已换代，插件里的旧编号 BV*_streaming 已下架/未授权（服务端返回 requested resource not granted），现全部换成当前在售的 *_uranus_bigtts 系列，并优先排布「高冷御姐 / 性感御姐 / 魅力女友 / 撒娇学妹 / 娇喘女声」等贴人设的音色，另保留 Vivi、云舟两个原生覆盖粤语·上海·河南·北京·天津·四川·陕西·东北 8 种方言的音色。★★ 2.8.42 体验大修：① 修复「拖语速/音高滑块时整个面板跟着飘」——父视图的拖面板手势会抢走滑块的触摸，现按触摸落在哪类控件上决定是否接管。② 8 档一键风格改为【语速 × 音高】双轴参数化（旧版只动语速且差距不到 1.3 倍，所以「听不出差别」），同时把每档指令改写成模型能执行的物理描述（停顿位置 / 句尾走向 / 气息），不再写「快乐/生气」这类模型读不懂的情绪词。③ 自定义指令新增历史记录（自动留存最近 20 条，可一键回填）与 10 条内置场景预设（哄睡、撒娇、高冷御姐、客服播报、电台夜话…和风格是两个正交维度，可叠加）；并修掉「清空指令」把方言一起清掉的误伤。④ 方言表按官方清单重建：移除引擎未训练的「阳江话」「皖北话」，CosyVoice 17 种 / 千问 21 种，每种方言的描述改成发声动作写法（音调走向 / 鼻音儿化入声 / 节奏），出腔更稳。⑤ 面板新增「服务商」选择行，一眼看到当前在用谁家的服务，并接入火山引擎与 MiniMax（各 12 个官方预置音色、独立端点与鉴权）；每家都提供「一键测试当前凭据」和「官网直达」链接（点文字直接开浏览器）。⑥ 改语速/音高后统一清合成缓存，避免「拖了滑块试听没变化」。★★ 2.8.41 移除「自建服务器」通道。★★ 2.8.35 省电。★★ 2.8.32 修「千问合成失败·url error」。★★ 用法：聊天页点悬浮球「语」→ 选音色 → 输入文字 → 点「合成语音」发送。
+Filename: debs/com.yzdmm2024.myvoice_2.8.48_iphoneos-arm64.deb
+Size: 990136
+MD5sum: aa4d38bceb0f848937d8ef812988e64a
+SHA1: 095182de14a5063dc9e2ab03a8ed43f3038d83aa
+SHA256: 848ecd0bf956cb19a44266e0dfc826f4cc2d7b57f153c84cc2e1779731883f8d
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.49
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本
+Filename: debs/com.yzdmm2024.myvoice_2.8.49_iphoneos-arm64.deb
+Size: 989926
+MD5sum: 7c51c4346eb1a03850c7bb91029ba5bf
+SHA1: cd33051ae9dde64c31bccdc12f070b26e8b8cd78
+SHA256: 8a59afbf45858f382db3086f6775cd7b02ecd0a67db109a9d3fb29ab1f907d5e
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
 Version: 2.8.4
 Architecture: iphoneos-arm64
 Section: Tweaks
@@ -1695,6 +1797,156 @@ Size: 141094
 MD5sum: 38e84facab2b645d306bed23fb0cb345
 SHA1: 22f02b1e8a59ce95b3967df0ee95780ebed3ad9d
 SHA256: dd10d8e96df9a8fe1c50763664b09ba390b6b00f10ff0210d8ca0868a6e08192
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.50
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本
+Filename: debs/com.yzdmm2024.myvoice_2.8.50_iphoneos-arm64.deb
+Size: 1007726
+MD5sum: 7571b7a53459ab395ce7769dc1bd807b
+SHA1: f35fc9bc225f51f1f1349a6588c419e07f911adf
+SHA256: 3fdb2d88378f2e1707591e298403085b59cb23ffc5ac69ddad743e6ba696cd85
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.51
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本
+Filename: debs/com.yzdmm2024.myvoice_2.8.51_iphoneos-arm64.deb
+Size: 1007460
+MD5sum: 5b969b154e97cf8b65fd1082ea0fcf79
+SHA1: 3e0a97d3d98085895fb5974286a553a765114d06
+SHA256: 8617b2aafcde14e43d69e4cccc1ee0633de5ee303228a57c6d4cc4d0a0347de3
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.52
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本
+Filename: debs/com.yzdmm2024.myvoice_2.8.52_iphoneos-arm64.deb
+Size: 1007390
+MD5sum: 67f65306d82100e2ad2c079603a051cb
+SHA1: fa299d32f963382c4049d0842af1155cf16ec276
+SHA256: d01874572e7f577560999b27b7eea504112c0bbdf651780803e939d2fac571b5
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.53
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本
+Filename: debs/com.yzdmm2024.myvoice_2.8.53_iphoneos-arm64.deb
+Size: 1008870
+MD5sum: 9145299ec20f344a974791b71ee200c6
+SHA1: 34c7f16ee3dd525cdee204c5c814403d971677a6
+SHA256: c0ae862ceac8cff4c8eec6d152e1641b3fc4c75ac1a08b139c35a79ff50b8e3c
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.54
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本
+Filename: debs/com.yzdmm2024.myvoice_2.8.54_iphoneos-arm64.deb
+Size: 1008888
+MD5sum: ccb7c38555f03f65c133c4773204ef6d
+SHA1: a545aad33a6d1aee776230899081ccedbfed04c3
+SHA256: 6caa265703cbf354f452b81ea6c50948f12c90d19b31664fb1e6d4d926d07c16
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.55
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本
+Filename: debs/com.yzdmm2024.myvoice_2.8.55_iphoneos-arm64.deb
+Size: 1010006
+MD5sum: 9c6b1c6a3001a04f9ac17361f8d67128
+SHA1: c6b9d5ed5e45bde0ef3ea0999a899a557e2c6347
+SHA256: 4d9dbaf85cf0486f3d0f9e724b3d171658607833af467f951c61ce7aaf647dda
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.56
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本
+Filename: debs/com.yzdmm2024.myvoice_2.8.56_iphoneos-arm64.deb
+Size: 1011930
+MD5sum: 5d3a6fb9363e8fe94fe9b8795ce8a256
+SHA1: 72f221b7100755ab64cdf7553f2e12dc19057ba2
+SHA256: 925f15e888f9dd6e7b7983db9f68d4a87df93a894655d9594852e63225df0ee2
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.57
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本
+Filename: debs/com.yzdmm2024.myvoice_2.8.57_iphoneos-arm64.deb
+Size: 1010950
+MD5sum: 5570cb50ce1014b9ef0bf8eb9ba10f71
+SHA1: b89f38395bc857a0f4e6e7cba096f624e8864ed9
+SHA256: f3663b5c27658932b97d5029deff98b03f99e676d6493a5467efa56a4f2cc128
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.58
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本
+Filename: debs/com.yzdmm2024.myvoice_2.8.58_iphoneos-arm64.deb
+Size: 1015758
+MD5sum: 037bc1caaff80a10ca660b69c1104172
+SHA1: 8de1604bdad4dc7e10fcba2837f43246958981df
+SHA256: 86b0870a22a42adb51f5300d4421d84589419fb0601dfa142d3858e0caef6736
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.59
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本
+Filename: debs/com.yzdmm2024.myvoice_2.8.59_iphoneos-arm64.deb
+Size: 1016756
+MD5sum: 3d64b6eb8baaf36eedc2cbfdd294f887
+SHA1: 1147e943d9dec16f253b4d32e139be73e5817ab2
+SHA256: 5250181cb5f982499a2c46401dfb10a3177f39a2590f6cecfd90aec6352391f7
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
@@ -1713,6 +1965,141 @@ SHA256: 76c2f6f513f0f9217ab68f391c2281fba2eeb90083e2fb8bf8ab255a6f5e775f
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
+Version: 2.8.60
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本
+Filename: debs/com.yzdmm2024.myvoice_2.8.60_iphoneos-arm64.deb
+Size: 1018392
+MD5sum: 65fe4247e9e9d5840665f49bd888e8e8
+SHA1: d51868220575b4755d026ea33cce34c741f04183
+SHA256: 550e3d6d2dfb8d6b311eb43b89ca339353bebd12052ed59ba2ff980e661258be
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.61
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本
+Filename: debs/com.yzdmm2024.myvoice_2.8.61_iphoneos-arm64.deb
+Size: 1018212
+MD5sum: 4f900795fdedc14b0b650762b75a5749
+SHA1: bdb7d67536dddadb98a273cd08f9f41def2c6989
+SHA256: 0a66412f6a7c456e74eb8cf5241611b305c56538eead9dc4d33cbe68f0157106
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.62
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本
+Filename: debs/com.yzdmm2024.myvoice_2.8.62_iphoneos-arm64.deb
+Size: 1019168
+MD5sum: 3f55c9f933c5e61989eda6cbff5c8708
+SHA1: 3d104ec979586ea7d269b38a3a3b343aa1ad4b86
+SHA256: a2e57a17bf9d1b485820b74673b6dfbbdfd62ed1015a9f17320249bff0db3752
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.64
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本
+Filename: debs/com.yzdmm2024.myvoice_2.8.64_iphoneos-arm64.deb
+Size: 1013852
+MD5sum: dba106cf1bcb976df63642dd951cdda8
+SHA1: cc94561f06740be3b67be32add2033d77272a1b2
+SHA256: 7484e58e50c2a801fbcac34c15cb778d1a9186de6eb2f58f1570c964b52a223f
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.65
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本
+Filename: debs/com.yzdmm2024.myvoice_2.8.65_iphoneos-arm64.deb
+Size: 1015128
+MD5sum: f01ed4e38437d1c6505400706fc17fd5
+SHA1: 1d2954e7ae53a933d1ced43bc78ad8eb8f69af3f
+SHA256: 9a4db12e68224285e9fe36f8d96d206ae630089caaf4524e0af69cf4c537c2b3
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.66
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本
+Filename: debs/com.yzdmm2024.myvoice_2.8.66_iphoneos-arm64.deb
+Size: 1017626
+MD5sum: 39d81d7b41861f314444a6f6b71f5969
+SHA1: e13aa9f76fe303973bfb74df95c3620262bd0504
+SHA256: 3e667daed4f85497999dffb021e88262b194a5cebf23ece80ef9b3c48dec8a7a
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.67
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本。2.8.67 新增讯飞免费音色通道（5 个免费发音人、每日 500 次额度）。
+Filename: debs/com.yzdmm2024.myvoice_2.8.67_iphoneos-arm64.deb
+Size: 1032586
+MD5sum: 524d5ff4ba11e827ddc7ed9594ef6985
+SHA1: f287a79c5abdb54db47c2fec14d97d3c495230aa
+SHA256: c1d26c387ed4f4e07a2283db4bb03d584d8f612013ee919e7953a0fb8a7a563c
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.68
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本。2.8.68 修复讯飞通道鉴权 401（鉴权参数改走官方 URL query 方式）。
+Filename: debs/com.yzdmm2024.myvoice_2.8.68_iphoneos-arm64.deb
+Size: 1032038
+MD5sum: a1c448a0ebc2739465a38f229fb1aa65
+SHA1: 5b5c2259fa26ff3545cf3eb7b5bea8a3768adb4a
+SHA256: 1c0a1c4a6607e00c80b8bc2ea79285e6882072500803e616e802dd6b296f567f
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.69
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本。2.8.69 修复 Fish 克隆音色无法选择（voiceId/voiceID 键名统一），删除支持删 Fish 音色。
+Filename: debs/com.yzdmm2024.myvoice_2.8.69_iphoneos-arm64.deb
+Size: 1032108
+MD5sum: e60730e9b4f0c7c3b239cca404fb6808
+SHA1: afc35ef57d44d4dd7a9d406a043de0dbc12f1082
+SHA256: 01508c7580a7a85a18e5c6af381c83731d68a2656e66f50504a93fef1b728dad
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
 Version: 2.8.6
 Architecture: iphoneos-arm64
 Section: Tweaks
@@ -1725,6 +2112,51 @@ Size: 158332
 MD5sum: 4e26a090c74309e130f26240ffda6b7b
 SHA1: 229b50d324a649e0bef339e1480de45e3cb4350f
 SHA256: 275888d7dfc4195071714321914b2c16b9af5beb376e53ea813775de404abd9b
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.70
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本。2.8.70 移除 Fish 通道（免费额度低、Key 不通用），保留讯飞/千问/Edge 三通道；删除克隆入口与相关文件。
+Filename: debs/com.yzdmm2024.myvoice_2.8.70_iphoneos-arm64.deb
+Size: 367380
+MD5sum: 3acc540c05831ac09ffdf0b2f9c3eaba
+SHA1: 9e7e97751206fc717bb386a7de49d4d34fcb848a
+SHA256: 803c927fbcf041b2d77283adf7138eb8a07f094453db4f4e9fdc86a0d473e4a6
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.71
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本。2.8.71 服务商合并为千问/Edge/讯飞；纠偏默认只动句末（长按整段）；恢复克隆音色（录音/上传/文字设计）；预留批量音色清单接口。2.8.70 移除 Fish 通道。
+Filename: debs/com.yzdmm2024.myvoice_2.8.71_iphoneos-arm64.deb
+Size: 388702
+MD5sum: cbc015f4b440db85ccb0f6b16a158641
+SHA1: 5e4a4c70cee6ad63173f9aa29d00b972a382056d
+SHA256: abf06e29cfd44699d12ab2eb40c135f246c236484a3fe60aa59a61394b9c1328
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
+Version: 2.8.72
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本。2.8.72 Edge 内置音色补齐为 17 个（新增云夏/曉恰恰/曉雨），内置可用令牌。2.8.71 服务商合并为千问/Edge/讯飞；纠偏默认只动句末（长按整段）；恢复克隆音色（录音/上传/文字设计）；预留批量音色清单接口。2.8.70 移除 Fish 通道。
+Filename: debs/com.yzdmm2024.myvoice_2.8.72_iphoneos-arm64.deb
+Size: 389212
+MD5sum: b0873bc746422a5aa559d1392702daca
+SHA1: e3e8cd0f54d4d36d15d90168f104585806dfe843
+SHA256: f8e7ea8fcdb5a42c6889cac4c3d1a9fe7bf56539883ac03677562ba48b7230fe
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
