@@ -2085,6 +2085,21 @@ SHA256: 803c927fbcf041b2d77283adf7138eb8a07f094453db4f4e9fdc86a0d473e4a6
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
+Version: 2.8.71
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想文本。2.8.71 服务商合并为千问/Edge/讯飞；纠偏默认只动句末（长按整段）；恢复克隆音色（录音/上传/文字设计）；预留批量音色清单接口。2.8.70 移除 Fish 通道。
+Filename: debs/com.yzdmm2024.myvoice_2.8.71_iphoneos-arm64.deb
+Size: 388702
+MD5sum: cbc015f4b440db85ccb0f6b16a158641
+SHA1: 5e4a4c70cee6ad63173f9aa29d00b972a382056d
+SHA256: abf06e29cfd44699d12ab2eb40c135f246c236484a3fe60aa59a61394b9c1328
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
 Version: 2.8.7
 Architecture: iphoneos-arm64
 Section: Tweaks
