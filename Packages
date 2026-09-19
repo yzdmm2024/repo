@@ -627,6 +627,21 @@ MD5sum: 32e7d50c6057648f6a3a9bd9f3164488
 SHA1: 6a9e51f5062f405274da93b0e067748fc5602707
 SHA256: bb61e64e2c39b6b032b8dc6bcf038a89a8f4d985c2ccdb44902ed0508c598565
 
+Package: com.yzdmm.wechatnotifyclear
+Name: 通知自动清理
+Version: 1.1.0
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader, firmware (>= 16.0), firmware (<< 17.0)
+Description: 打开 App 阅读消息时自动清除该 App 在通知中心的全部通知，解决已读后通知残留问题。设置面板可逐个 App 开关。注入目标：微信/QQ/信息/企业微信/钉钉/飞书/支付宝/淘宝/抖音/微博/邮件。
+Filename: debs/com.yzdmm.wechatnotifyclear_1.1.0_iphoneos-arm64.deb
+Size: 7132
+MD5sum: 744da1b00d892b95135dadcb1fd2b793
+SHA1: 154cb705deebb957a323661829634f7744785636
+SHA256: 6f43ad02af0917c68672f0e798c34be2862dbb572d57506a647aea70a85f19ba
+
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.1.0
