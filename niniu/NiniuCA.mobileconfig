@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>PayloadContent</key>
+	<array>
+		<dict>
+			<key>PayloadCertificateFileName</key>
+			<string>NiniuCA.crt</string>
+			<key>PayloadContent</key>
+			<data>
+			MIIDejCCAmKgAwIBAgIUEdGR3xKUQo2zXc8V5vl2VpU+N4IwDQYJ
+			KoZIhvcNAQELBQAwQzEYMBYGA1UEAwwPTklVTklVIExvY2FsIENB
+			MQ8wDQYDVQQKDAZOSVVOSVUxFjAUBgNVBAsMDUxvY2FsIFNpZ25p
+			bmcwHhcNMjYwOTE5MDY0MDI2WhcNMzYwOTE2MDY0MDI2WjBDMRgw
+			FgYDVQQDDA9OSVVOSVUgTG9jYWwgQ0ExDzANBgNVBAoMBk5JVU5J
+			VTEWMBQGA1UECwwNTG9jYWwgU2lnbmluZzCCASIwDQYJKoZIhvcN
+			AQEBBQADggEPADCCAQoCggEBALP/QMau8GFMFbJbflprbmMUbkyZ
+			Yrbnr9nquQrK0u+ihJe0AxaRGDTrg7MeQVKNKk6VmGc/sTrkOpc9
+			6mVYaHHlvCmya1rDn+cTichhZabav2jpa+1n0o4stI9kD/X+irZu
+			VCpdczeQjwCy3pG2vER+4cY/qzkJmIdVrU8ZmbMU1bTxoIlfl3eE
+			a6rY0Rjb7Mz6TUC+Jrp5HOzwfzZOdK/tMTMfRzKnn1F9D2Drp+R7
+			YPDxlw528oeMy1UzizQd1gG30O3jNDLaFjpoj2HpAjWQ4OCCQkrO
+			DbqTb6mGK/Fq6B5X69wdKDp0DsxXqbseG39W9gsjRTp4pyUdzUG3
+			TR8CAwEAAaNmMGQwHwYDVR0jBBgwFoAUSY+Wc7wQ6Hfr1g9wRceX
+			2BOqvG4wEgYDVR0TAQH/BAgwBgEB/wIBADAOBgNVHQ8BAf8EBAMC
+			AQYwHQYDVR0OBBYEFEmPlnO8EOh369YPcEXHl9gTqrxuMA0GCSqG
+			SIb3DQEBCwUAA4IBAQCDdOooZKu7b38e/xm171ife1Apy8Pbro2w
+			ejN16Gqy1/voJOt/Qma/JQTsqa1/g6drm3PPtJbkAnvSshUWTqa/
+			1/HhQqocWy9qovToMQKxGyqj/6eEYJnWMBtKvaCPXkNUbHtAdQM3
+			RN0xJhI+wX1KGHMS7j29bgR9Ph1juzWVNeUETUQ3OpAUwTbafqKs
+			oX3mecf76iHqIRQa4Xk9ag+WjKIjt+XdCITFe6isGcGj3W3Z2hu7
+			cEkSR2NSgp1+sIJok78To00FZEzaZuDtIl0cDjh/6nebnAk6+iPm
+			DKiCx/r2ZzGEBObZkn30Z0spo4HhMxP+TiEPArJls3XOP2jB
+			</data>
+			<key>PayloadDescription</key>
+			<string>安装后才能使用「签名并安装」功能（本地 HTTPS 服务器信任）</string>
+			<key>PayloadDisplayName</key>
+			<string>NIUNIU 本地签名信任证书</string>
+			<key>PayloadIdentifier</key>
+			<string>com.niniu.certsign.ca</string>
+			<key>PayloadType</key>
+			<string>com.apple.security.root</string>
+			<key>PayloadUUID</key>
+			<string>6B87DCB7-D791-4794-B17D-44A6C68FB278</string>
+			<key>PayloadVersion</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>PayloadDescription</key>
+	<string>NIUNIU证书版 安装信任证书（只影响本机回环安装，不影响其它网络访问）</string>
+	<key>PayloadDisplayName</key>
+	<string>NIUNIU证书版 信任证书</string>
+	<key>PayloadIdentifier</key>
+	<string>com.niniu.certsign.profile</string>
+	<key>PayloadOrganization</key>
+	<string>NIUNIU</string>
+	<key>PayloadRemovalDisallowed</key>
+	<false/>
+	<key>PayloadType</key>
+	<string>Configuration</string>
+	<key>PayloadUUID</key>
+	<string>5594A2AD-CAA3-4BD4-80EE-69EEACD9D6F0</string>
+	<key>PayloadVersion</key>
+	<integer>1</integer>
+</dict>
+</plist>
