@@ -39,7 +39,7 @@ def parse_ar(data):
         header = data[off:off + 60]
         name = header[0:16].decode('utf-8', 'replace').rstrip()
         if name.endswith('/'):
-            name = name[:-1]
+            name = name[:-1].rstrip()
         size = int(header[48:58].decode().strip() or '0')
         off += 60
         body = data[off:off + size]
@@ -61,12 +61,15 @@ def extract_control(deb_path):
     if not ctrl_name:
         return ''
     raw = members[ctrl_name]
-    if ctrl_name.endswith('.xz'):
+    # 按实际魔数判定压缩格式，比后缀更稳（GNU ar 成员名可能带尾随空格）
+    magic = raw[:6]
+    if raw[:6] in (b'\xfd7zXZ\x00', b'\xfd7zXZ\x00\x00'):
         mode = 'r:xz'
-    elif ctrl_name.endswith('.gz'):
+    elif raw[:2] == b'\x1f\x8b':
         mode = 'r:gz'
-    elif ctrl_name.endswith('.zst'):
-        # stdlib 不支持 zst；如需要可安装 zstandard 后处理
+    elif raw[:3] == b'BZh':
+        mode = 'r:bz2'
+    elif magic[:3] == b'\x28\xb5\x2f':  # zstd
         return ''
     else:
         mode = 'r:'
