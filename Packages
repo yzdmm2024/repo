@@ -148,6 +148,21 @@ SHA256: d90a0a0fc84ec8cf79c72abf5fd9c291bb4bbd7dac01f2e5bdacb06105745bc2
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
+Version: 2.8.73
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
+Description: 不想说话 只想打字。2.8.73 新增闽南话（福建话）完整换字词表，方言菜单可选；转换支持转成福建话口语。2.8.72 Edge 内置 17 个中文音色+可用令牌。
+Filename: debs/com.yzdmm2024.myvoice_2.8.73_iphoneos-arm64.deb
+Size: 403356
+MD5sum: a0558681f24890d5db8e23070d91178e
+SHA1: 8ab6d409b7b7b5ceeb32fcba17648bb74fc4fb8e
+SHA256: 94043754ec90dc4234aa0ba55a252b88b71b2366b454ef399ed812f503b7217e
+
+Package: com.yzdmm2024.myvoice
+Name: 我的语音
 Version: 2.8.75
 Architecture: iphoneos-arm64
 Section: Tweaks
