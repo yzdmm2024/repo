@@ -112,10 +112,10 @@ Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：屏幕边缘常驻可拖动小球，点开加载任意网址，全 App 及主屏幕可用。rootless 适配，URL/总开关/窗口大小均可调。
 Filename: debs/com.yzdmm.floatingurl_1.2.10_iphoneos-arm64.deb
-Size: 93532
-MD5sum: de93d1f83e3c330330bd286132f19828
-SHA1: f20ddc1b7c1fe8c96a048013c9ce59c7b8f8382e
-SHA256: b5e217722b19dffd7860aa7733177ad211d7d54c9698b9d3b30f063a7da85bf5
+Size: 93384
+MD5sum: 889bce2a9835224dfeec6665649375e6
+SHA1: eda17dc0b6e11d833d33ee065c42ca0cad28acc4
+SHA256: 5e0f123cd33b04c6a35a43458dfaa3f1b2943337f76b62000076e7c54919f111
 
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
