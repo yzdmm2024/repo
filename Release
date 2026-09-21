@@ -7,17 +7,17 @@ Architectures: iphoneos-arm iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: Acljcr Source
 Support: https://github.com/yzdmm2024/repo
-Date: Mon, 21 Sep 2026 03:38:59 GMT
+Date: Mon, 21 Sep 2026 03:42:25 GMT
 
 MD5Sum:
- 5b8d4f7dee0a62abb3e021c6d6a14a0b 17493 Packages
- 14be8ec0d3c6fabced346c5b46e16201 7000 Packages.gz
- 1b89813cca906399dc2c4aa8bcc9d862 6409 Packages.bz2
+ 513b98b63b6272887c5d4fe78dd603cc 18202 Packages
+ 34bb25fe4fd26e2af103ce244b3a0e55 7116 Packages.gz
+ e4ae6bd2e73d4967f4df5ba1900f7a4c 6507 Packages.bz2
 SHA1:
- c98d54e6733042f818b1fd4b3eb72371cf63788b 17493 Packages
- f3af21f4f8dfd54b5aabc3723d9db2ca4ae19efe 7000 Packages.gz
- 604af636f3bfde6d4ea9924a64d56ed1ed96c192 6409 Packages.bz2
+ 7ada10fbf5c5043100e768497b9d1f5a756c8540 18202 Packages
+ 078609375ab0248758b8a0d9c93a782675f39e61 7116 Packages.gz
+ 676f82391922eb9c7f97585737bbd1b6af06e1c1 6507 Packages.bz2
 SHA256:
- d3c4b885b174c6c56b3d794eb8797abb47748fb9f5ab1622443e3ebcdf90cde2 17493 Packages
- 61c7b8f48c5a4117626fdecaf0d6d51fc9b497f06f9f2cd21ba349e9dd373fc1 7000 Packages.gz
- 7bc23dee182ad036312a464a908c196f344a55210589cc1cfdb8df826a05c2a6 6409 Packages.bz2
+ 65803005228b8081313f90515422f407ef4b23b40d7551abd94c40b77a6d2218 18202 Packages
+ 34ce0ac51e0061f0e18bbd6864766c5b75602d86a588e299ac6d593441861206 7116 Packages.gz
+ 964a559adb4e9ab3371166946eb5935039732bb7897c4605a79fd29d0080461a 6507 Packages.bz2

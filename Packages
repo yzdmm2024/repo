@@ -252,6 +252,21 @@ MD5sum: 04abde24bca7d9749ef465d53bd93798
 SHA1: 67c4c1f70bd200d8bb34940a46a931c463d3eabe
 SHA256: b7068b3d823722f6ecaeffee834c4735f44aa445610d2d59137a8bc51fa6769e
 
+Package: com.yzdmm.floatingurl
+Name: 悬浮URL
+Version: 1.3.1
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
+Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形两层快捷环（URL+第一层4+第二层6），网页/scheme 一键直达，全 App 及主屏幕可用。rootless 适配，左/右停靠 + 图标大小/间隔滑杆可调并带实时预览。
+Filename: debs/com.yzdmm.floatingurl_1.3.1_iphoneos-arm64.deb
+Size: 110748
+MD5sum: f5150cf4c4f9127baad8b3ea6e4309f1
+SHA1: 7a7960a1acbdaa1ade39c904e0b8f8bb49c6f9c4
+SHA256: f9c4e701060551c7762586c174e282b792ed795759bf03da4a27bfe3bc67df43
+
 Package: com.yzdmm.keyboardstatus
 Name: 键盘下方状态
 Version: 1.2.9
