@@ -254,6 +254,21 @@ SHA256: b7068b3d823722f6ecaeffee834c4735f44aa445610d2d59137a8bc51fa6769e
 
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
+Version: 1.3.10
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
+Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快捷环（按入口数量自动分层，最多 48 个），网页/scheme 一键直达，全 App 及主屏幕可用。入口/球的图标底色内置 48 色并支持系统取色器任意色。rootless 适配；吸附模式（自动吸附/全屏固定）改分段选择；扇形以「球心指向屏幕中心」的方向自动展开并自动收缩防越界（四角同样自适应）；只有 1 个入口时点球直接打开不再展开扇形；球名称/图标/颜色可自定义；快捷URI 管理页支持搜索/筛选/全选/批量添加；布局页实时预览 + 调节同屏。
+Filename: debs/com.yzdmm.floatingurl_1.3.10_iphoneos-arm64.deb
+Size: 163424
+MD5sum: 1ddd1d5f5daea3798c1678487d544495
+SHA1: 004cd516a1fd866739eb0346c17aa43a94215899
+SHA256: 9d72986bec50c5684e19fe813eee9db5339c41ed81845cc0c4e5674e6b5ce855
+
+Package: com.yzdmm.floatingurl
+Name: 悬浮URL
 Version: 1.3.1
 Architecture: iphoneos-arm64
 Section: Tweaks
