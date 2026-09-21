@@ -567,10 +567,10 @@ Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快�
  1.3.26：修复「设置页深链填了点了没反应」——新增 prefs:root=X / App-Prefs:root=X 专用通道（走 LSApplicationWorkspace 的 openSensitiveURL:withOptions:，普通 openURL 会被系统静默拒绝）；URL 解析改为自己按 RFC 3986 切 scheme，prefs:root=X 这类没有「//」的写法不再被误加 https:// 前缀，scheme 自动转小写。
  1.3.27：① 修截图不收扇形（1.3.25 的 bug）——系统截图通知只发给最前面的 App，而球建在 SpringBoard 里收不到；现在改成在 SpringBoard 侧钩住截图手势入口（SBCombinationHardwareButtonActions），按下快门之前就先收拢扇形 + 藏球，截出来的图不带悬浮球，1.8 秒后自动恢复。② 新增「图标自动区分左右」：球在屏幕左半边，自定义图标主体就显示在左边；球在右半边主体显示在右边（主体偏一侧的图自动水平镜像，居中的不翻），设置里可关。
 Filename: debs/com.yzdmm.floatingurl_1.3.27_iphoneos-arm64.deb
-Size: 158848
-MD5sum: cb13bb4432bf15e077938213ccddc8b4
-SHA1: ea0c12eeb3bd3930a31a27d1557cb792d290c230
-SHA256: 4de3cdaa1680eaec51a9019ee6217be0a1732fd6015bad882114345eeae2d963
+Size: 150976
+MD5sum: c13e66af056f7abd3445fb0159c33439
+SHA1: 44324b6199dc287fbdcfcb9eb69a996ebbc56f35
+SHA256: e7ec2ef05530489ca3c4e079e4aa111596b36a36f8a363f31fe9f977be1b7bc4
 
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
