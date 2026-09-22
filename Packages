@@ -644,6 +644,21 @@ SHA256: 5fb330c2d2db1f1ea268050d2cc688a2e7f60d4a883139ed17e438a3c75de231
 
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
+Version: 1.3.30
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
+Description: 解锁URL玩法！
+Filename: debs/com.yzdmm.floatingurl_1.3.30_iphoneos-arm64.deb
+Size: 164744
+MD5sum: c180da2f8c924ea34406b4703f14778c
+SHA1: fcf5991d9f5be872062ee7db3a66dddc5fd2245f
+SHA256: ef205626ab5721328754bd3c21b09d187ac5788d3041f70fe689be413fbea418
+
+Package: com.yzdmm.floatingurl
+Name: 悬浮URL
 Version: 1.3.3
 Architecture: iphoneos-arm64
 Section: Tweaks
