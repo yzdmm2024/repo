@@ -941,21 +941,6 @@ MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
-Package: com.yzdmm.onyx
-Name: Onyx
-Version: 0.1.0
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
-Description: 按需控制指定 App 的系统返回值，在设置内按 App 开关。rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_0.1.0_iphoneos-arm64.deb
-Size: 14178
-MD5sum: a25f0b8da7ff627d1329caf11009f562
-SHA1: e34d5568dffd1ad700b808a79d1d865e10fe03bd
-SHA256: 182c2c908e168028ad0c64ac08b3ea83d0b28c93e35be52c15b236e24c73828d
-
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1016,3 +1001,18 @@ MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
 
+Package: com.yzdmm.onyx
+Name: Onyx
+Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: 按需控制指定 App 的系统返回值，独立 App 面板配置地图选点、搜索、坐标切换与目标应用。rootless 适配，A12+。
+Architecture: iphoneos-arm64
+Version: 0.2.0
+Installed-Size: 440
+Filename: ./debs/com.yzdmm.onyx_0.2.0_iphoneos-arm64.deb
+Size: 36068
+MD5sum: 355dadee027fd7a7943ada43496d5bed
+SHA1: ac393b364f752404d94ecab43f76c3ed728bc18c
+SHA256: 19c0fc3f3b13aa06dcabb4c1a3e49d7141b9ad7ecb2cbfd77eb9462e5bc71b72
