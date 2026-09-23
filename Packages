@@ -986,21 +986,6 @@ MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
-Package: com.yzdmm.onyx
-Name: Onyx
-Version: 0.3.1
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
-Description: 系统级定位模拟，通过 CLSimulationManager + com.apple.locationd.simulation 私有 entitlement 向 locationd 注入坐标，全局影响所有 App。独立 App 面板：高德地图选点、搜索、应用列表（搜索/图标/一键清除）、状态面板。rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_0.3.1_iphoneos-arm64.deb
-Size: 58976
-MD5sum: 56e589c64c1541ad3d16c24a3f13e3bc
-SHA1: 4d0872da97000835bebb5625b79ac20d313d051a
-SHA256: 437f95b36269455ecd40c5f56653c6509bd563c0f50fa57ac011bbf748c4be37
-
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1091,3 +1076,18 @@ MD5sum: d399dd3c38c43eabcbe632cedecde486
 SHA1: 49285fc6542435e1ab4ff7c3fb210c068cccc244
 SHA256: a252b47c8c07d704fd09820eff50c3dbf7110a1c8b5cc3a2322576809f540163
 
+Package: com.yzdmm.onyx
+Name: Onyx
+Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: 系统级定位模拟，通过 CLSimulationManager + com.apple.locationd.simulation 私有 entitlement 向 locationd 注入坐标，全局影响所有 App。独立 App 面板：苹果原生地图（MapKit）选点、搜索、应用列表（搜索/图标/一键清除）、状态面板。rootless 适配，A12+。
+Architecture: iphoneos-arm64
+Version: 0.3.2
+Installed-Size: 476
+Filename: debs/com.yzdmm.onyx_0.3.2_iphoneos-arm64.deb
+Size: 55768
+MD5sum: 15d317ca933206b08f79fb0eb0161985
+SHA1: f12da6b5079d2a6b333b0dd4b9fc62b226ddba2c
+SHA256: 4c4a02b2ab79028f054082a9fa078b5e9f7bad8c5c52902eee179a18dffd2145
