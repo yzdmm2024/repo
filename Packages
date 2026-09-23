@@ -1125,12 +1125,12 @@ Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Maintainer: yzdmm
 Author: yzdmm
 Section: Tweaks
-Description: 系统级定位模拟，通过 CLSimulationManager + com.apple.locationd.simulation 私有 entitlement 向 locationd 注入坐标，全局影响所有 App。独立 App 面板：苹果原生地图（MapKit）选点、搜索、应用列表（搜索/图标/一键清除）、状态面板。rootless 适配，A12+。
+Description: 系统级定位模拟，通过 CLSimulationManager + com.apple.locationd.simulation 私有 entitlement 向 locationd 注入坐标，全局影响所有 App。独立 App 面板：自绘高德瓦片地图（脱离被屏蔽的苹果 MapKit 后端）选点、搜索、应用列表（搜索/图标/一键清除）、状态面板。rootless 适配，A12+。
 Architecture: iphoneos-arm64
-Version: 0.3.4
-Installed-Size: 492
-Filename: debs/com.yzdmm.onyx_0.3.4_iphoneos-arm64.deb
-Size: 57784
-MD5sum: cfa82cca52ece172106dd4e31ffcecfa
-SHA1: d5be4ee8c8c4a91a8c7e165b008d4545b1f887a7
-SHA256: b82c446d4aebe9ff3c3cd2e9d4cdbb0edc96d39ab25dbade398ce979649dea83
+Version: 0.3.5
+Installed-Size: 508
+Filename: debs/com.yzdmm.onyx_0.3.5_iphoneos-arm64.deb
+Size: 61504
+MD5sum: d5964280a2fe193c14bfdfe447e8c419
+SHA1: 12e9758ae6af14bdb994ac7395b98776b8e31ddf
+SHA256: 146cd24870241448cf49b9e79a3a2df0359cdb3470af4258020eb7545e099429
