@@ -1061,21 +1061,6 @@ SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
 Package: com.yzdmm.onyx
 Name: GO~
-Version: 0.5.6
-Architecture: iphoneos-arm64e
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v0.5.6 修复（关键）：Tweak 改为直接读取 plist 文件（绕过 cfprefsd 在 rootless/RootHide 下跨进程读不到偏好的问题），并每秒自动重读一次实现配置自愈，选中 App 立即生效。v0.5.4 修复：选中应用未立即生效（实时读取配置、配置变更即主动推送假坐标）、快速定位输入框被键盘遮挡；历史记录底部新增「记忆功能」开关。v0.5.2 起按 App 生效：仅「应用列表」勾选的 App 收假坐标；App 内「恢复」按钮一键回到真实位置。独立面板：自绘瓦片地图选点、搜索、历史记录、应用列表、运行中应用管理。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_0.5.6_iphoneos-arm64e.deb
-Size: 421440
-MD5sum: 1004c9b47085844660c2d3ca147a46a4
-SHA1: e9a395d5be3952566a28c4ae7d52d90fdcc0f1c8
-SHA256: fca1beb6f186a15d89b0c0fb2e7fb35ad47bab8320501b50d3dab570f5bbf48d
-
-Package: com.yzdmm.onyx
-Name: GO~
 Version: 0.5.7
 Architecture: iphoneos-arm64
 Section: Tweaks
