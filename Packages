@@ -67,7 +67,7 @@ Depends: mobilesubstrate, firmware (>= 17.0), firmware (>= 11.0)
 Conflicts: com.ioscreatix.silo, com.skypain.cclocation, com.skypain.ccsettrings, com.skypain.ccrespring, com.sop.cpumagicrootless, netskao.ccbadgeclear-rootless, com.mtac.uptime, netskao.alipayscan-rootless, netskao.wechatscan-rootless, com.skypain.ccvpn, netskao.ccswitchdata-rootless, netskao.ccsim-rootless, netskao.tinyccmodules-rootless, netskao.cccellularrate-rootless, netskao.quantumultxlauncher-rootless, com.p2kdev.snapper2cc, com.skypain.ccautobrightness, com.skypain.ccscreenshot, com.skypain.cclockscreen, xyz.cypwn.safeccmodules, com.zqbb.ccpay, com.zqbb.qszqb, com.netskao.ccbadgeclear, com.kingpuffdaddi.control-center.ccvpn, com.netskao.cclifttowake, com.kdt.caperfhudmodule, com.kingpuffdaddi.control-center.ccvibration, com.hk.roothide.cc, com.hk.rootless.cc
 Replaces: com.ioscreatix.silo
 Provides: com.ioscreatix.silo
-Description: CCSupport and CCHide merged package
+Description: 屿哥专属!
 Filename: debs/com.merged.cc-suite_2.1-1_iphoneos-arm64e_rootless.deb
 Size: 562932
 MD5sum: 9cf51b3d699cdeaa895ef57fc3761d55
@@ -80,7 +80,7 @@ Version: 1.0.1-1
 Architecture: iphoneos-arm64e
 Maintainer: merged
 Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
-Description: PassText with Simplified Chinese language support
+Description: 屿哥专属!
 Filename: debs/com.merged.passtext-suite_1.0.1-1_iphoneos-arm64e_rootless.deb
 Size: 131980
 MD5sum: 4c4aa4806ac2d6c2ba9711c36a01b079
@@ -94,7 +94,7 @@ Architecture: iphoneos-arm64e
 Maintainer: merged
 Depends: mobilesubstrate, preferenceloader, firmware (>= 16.0), firmware (<< 19.0)
 Conflicts: com.82flex.singlevpn
-Description: DynamicX and iPhoneDuoIcon merged package
+Description: 屿哥专属!
 Filename: debs/com.merged.ui-enhancer_1.4.8-1_iphoneos-arm64e_rootless.deb
 Size: 622564
 MD5sum: c447f08c62526d9778f1ec55b3157480
