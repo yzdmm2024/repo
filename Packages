@@ -1059,36 +1059,6 @@ MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.5.6
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v0.5.6 修复（关键）：Tweak 改为直接读取 plist 文件（绕过 cfprefsd 在 rootless/RootHide 下跨进程读不到偏好的问题），并每秒自动重读一次实现配置自愈，选中 App 立即生效。v0.5.4 修复：选中应用未立即生效（实时读取配置、配置变更即主动推送假坐标）、快速定位输入框被键盘遮挡；历史记录底部新增「记忆功能」开关。v0.5.2 起按 App 生效：仅「应用列表」勾选的 App 收假坐标；App 内「恢复」按钮一键回到真实位置。独立面板：自绘瓦片地图选点、搜索、历史记录、应用列表、运行中应用管理。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_0.5.6_iphoneos-arm64.deb
-Size: 421440
-MD5sum: 0e5331c77756fd9f0926d3d38e58fed0
-SHA1: 61e7fa1e83a8db10ce75a36ca4f690a049729502
-SHA256: 70bb361687c3564d02510e4fe76ad2f8f8a1c6d5c177e1c70245a9a208bf1104
-
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.5.6
-Architecture: iphoneos-arm64e
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v0.5.6 修复（关键）：Tweak 改为直接读取 plist 文件（绕过 cfprefsd 在 rootless/RootHide 下跨进程读不到偏好的问题），并每秒自动重读一次实现配置自愈，选中 App 立即生效。v0.5.4 修复：选中应用未立即生效（实时读取配置、配置变更即主动推送假坐标）、快速定位输入框被键盘遮挡；历史记录底部新增「记忆功能」开关。v0.5.2 起按 App 生效：仅「应用列表」勾选的 App 收假坐标；App 内「恢复」按钮一键回到真实位置。独立面板：自绘瓦片地图选点、搜索、历史记录、应用列表、运行中应用管理。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_0.5.6_iphoneos-arm64e.deb
-Size: 421440
-MD5sum: 1004c9b47085844660c2d3ca147a46a4
-SHA1: e9a395d5be3952566a28c4ae7d52d90fdcc0f1c8
-SHA256: fca1beb6f186a15d89b0c0fb2e7fb35ad47bab8320501b50d3dab570f5bbf48d
-
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1149,3 +1119,32 @@ MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
 
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.5.7
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Maintainer: yzdmm
+Author: yzdmm
+Description: 想去哪里就去哪里。v0.5.7 修复（关键）：统一 App 端与 Tweak 的配置读写——App 写配置时同步直写同一份 plist 文件（rootless 与标准路径都写），与 Tweak 直接读 plist 完全一致，彻底解决跨进程隔离导致「定位失效 / 勾选 App 不生效仍停在原地」；修复快速定位输入框被系统键盘遮挡看不到正在输入的文字（键盘弹起时自动抬升面板并滚到输入框）。v0.5.6 Tweak 改为直接读 plist 文件并按秒自愈重读；v0.5.4 起实时读取、选中 App 立即生效，历史记录下单记忆功能开关。v0.5.2 起仅勾选的 App 收假坐标，App 内「恢复」按钮一键回到真实位置。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Architecture: iphoneos-arm64
+Filename: debs/com.yzdmm.onyx_0.5.7_iphoneos-arm64.deb
+Size: 424004
+MD5sum: b867c98b0210ecb1e0a3e43b7f75a376
+SHA1: a8aa9905c84cc50b7ca27748cb815b0fa95dbada
+SHA256: aadf16a98fa35ae7096b3a3d11e6226a522bd586530516323306d4636b4fd069
+
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.5.7
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Maintainer: yzdmm
+Author: yzdmm
+Description: 想去哪里就去哪里。v0.5.7 修复（关键）：统一 App 端与 Tweak 的配置读写——App 写配置时同步直写同一份 plist 文件（rootless 与标准路径都写），与 Tweak 直接读 plist 完全一致，彻底解决跨进程隔离导致「定位失效 / 勾选 App 不生效仍停在原地」；修复快速定位输入框被系统键盘遮挡看不到正在输入的文字（键盘弹起时自动抬升面板并滚到输入框）。v0.5.6 Tweak 改为直接读 plist 文件并按秒自愈重读；v0.5.4 起实时读取、选中 App 立即生效，历史记录下单记忆功能开关。v0.5.2 起仅勾选的 App 收假坐标，App 内「恢复」按钮一键回到真实位置。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Architecture: iphoneos-arm64e
+Filename: debs/com.yzdmm.onyx_0.5.7_iphoneos-arm64e.deb
+Size: 424004
+MD5sum: e59e2be8d42e8f7007c94c0c6c8c825b
+SHA1: 2a4a0a7f8f051b1cf449c9f4392d9836597fd79d
+SHA256: aec5fbd36ec10f22c23ad39ef1f056377b7d559cd597a3b1bd05e272f1b1ab8d
