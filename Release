@@ -6,17 +6,16 @@ Version: 1.0
 Architectures: iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: Ac`ljcr 越狱插件源（定位模拟等）
-Date: Wed, 23 Sep 2026 15:03:06 GMT
-
+Date: Wed, 23 Sep 2026 15:03:25 GMT
 MD5Sum:
- bf3751fbbdb36b13002d3f0714865d3a 88488 Packages
- cab9f598d95aa68c1565b881fb75b274 17427 Packages.gz
- 871b7b67250c9b8468cb1b0e18ca2f54 16132 Packages.bz2
+ ae75881ab142d51f3ef5a32d048447ad 88507 Packages
+ de9997e6003f829c7a6382313cf4eed1 17467 Packages.gz
+ 3636acc6968ac75c5624327d7c57b3a7 16179 Packages.bz2
 SHA1:
- f629d6e5e00e86f106c9e44e0b2434fdac44db5c 88488 Packages
- 7e282f7a625601d5aa167add0a15fcd1d5d25514 17427 Packages.gz
- e4c5d7ceaec59df83b77795c372ef074fba47e01 16132 Packages.bz2
+ 8540ba38c1d4138838de7438d66214b3c993ae36 88507 Packages
+ d5d4ffc4e21e9e9d01213b210993a8862aab6e7e 17467 Packages.gz
+ 1a6f981a2e3dfbba9dd877786ef757031334059a 16179 Packages.bz2
 SHA256:
- 3ecdfa0808821a26c4cbdb808a4f9a6853f3948daf759ef7538e4f487fd63924 88488 Packages
- 263b56f53f2f1afb89c9643a3d8429c7812c55023a615a810aac5c7244919acf 17427 Packages.gz
- ebfc70cc0ac359ba6822ae9cc99dc4e186ad0e6dadc4d8319a7d704e3706548f 16132 Packages.bz2
+ 1af8c0915a8019e0fc9d0415d7633beef7f55a8d333a80be14d47bff75f1cbf0 88507 Packages
+ 325ea8bbbc1b79b62073c05a652a3ef1eaeb553b6c14a57963fbfa8c6b6de0bc 17467 Packages.gz
+ 62a49aeb8d72fcf77762892c5ef3d641aa2bbe80f09a485d55fbf878768dfa6f 16179 Packages.bz2
