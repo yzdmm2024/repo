@@ -69,10 +69,10 @@ Replaces: com.ioscreatix.silo
 Provides: com.ioscreatix.silo
 Description: 屿哥专属!
 Filename: debs/com.merged.cc-suite_2.1-1_iphoneos-arm64e_rootless.deb
-Size: 562872
-MD5sum: b375ba8bd7638dc5f129195b14b6d2b8
-SHA1: 53019c0faef804a8846b239338e9f641a587114e
-SHA256: 2ccc3d39de3a30db3a8c0292cdb48516b2edeb53e6af959bcc4d95f423031243
+Size: 562908
+MD5sum: 71c835533ccb64863a618a687e80d5c3
+SHA1: f1e8f04c449cd61f79de85708c790e22781cdd70
+SHA256: ad310bb8ce149cd268a4ddded02f6eb9137f79357c1090b68ee8f75002246793
 
 Package: com.merged.passtext-suite
 Name: PassText Suite
@@ -82,10 +82,10 @@ Maintainer: merged
 Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
 Description: 屿哥专属!
 Filename: debs/com.merged.passtext-suite_1.0.1-1_iphoneos-arm64e_rootless.deb
-Size: 131908
-MD5sum: 25256926b50b4c60d17efec6b49fceea
-SHA1: c44277cf7e9f649823a4754167822426395e6d8e
-SHA256: 14e598b7fe0a61b165fe91a67bbfbc306f287fa4bc132b04af9bd633a56dcfa3
+Size: 131948
+MD5sum: 65a6abe77686edf44cd164fc817cb3b5
+SHA1: 122666f8cc4c7afd74bbc5ce6cebace5bf6c9b84
+SHA256: aeb11cdf9822919a07a44ea3c8aee0366aa967b7f0f022e7f2b24c92df706333
 
 Package: com.merged.ui-enhancer
 Name: UI Enhancer
@@ -96,10 +96,10 @@ Depends: mobilesubstrate, preferenceloader, firmware (>= 16.0), firmware (<< 19.
 Conflicts: com.82flex.singlevpn
 Description: 屿哥专属!
 Filename: debs/com.merged.ui-enhancer_1.4.8-1_iphoneos-arm64e_rootless.deb
-Size: 622356
-MD5sum: a29483b4da501c7ee80972bd34ef96c8
-SHA1: 6dab74f1b718af1b6aa4e8219059c8a0f53587b6
-SHA256: 09e1432c75956de840270bb45cac92db66c688ac45d3a3553e88dd6b17e51afa
+Size: 622536
+MD5sum: 7eabc389b4525380229feb53d9b73cc6
+SHA1: 07e5625c29be8fbb97aaa165b7d57ed6fb955036
+SHA256: 555b70aaf0976475ac92e0de581157aed5323fdafc58d5295f2db4b72fbf3713
 
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
@@ -1133,4 +1133,3 @@ Size: 405734
 MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
-
