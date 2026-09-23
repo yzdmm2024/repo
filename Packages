@@ -1059,6 +1059,21 @@ MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.5.4
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 想去哪里就去哪里。v0.5.4 修复：选中应用未立即生效（改为实时读取配置、配置变更即主动推送假坐标）、快速定位输入框被键盘遮挡看不到文字；历史记录底部新增「记忆功能」开关（关闭=每次进入停止模拟，开启=自动恢复上次定位）。v0.5.2 起按 App 生效：仅「应用列表」勾选的 App 收假坐标，未勾选保持真实定位；App 内「恢复」按钮一键回到真实位置。独立面板：自绘瓦片地图选点、搜索、历史记录、应用列表、运行中应用管理。支持 iOS 15-17：arm64（Dopamine/palera1n）+ arm64e（relaxin/RootHide）。rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_0.5.4_iphoneos-arm64.deb
+Size: 420408
+MD5sum: 1d654eaf06b61b75b41deba763111d79
+SHA1: 6dc4c5c0439b3aa4c0b5cb6898cd24adc84fdbc3
+SHA256: 62152f820a12255f8276a927560c700245fe36f8e0e4e11c29899a8ee7dd7f65
+
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1119,18 +1134,3 @@ MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
 
-Package: com.yzdmm.onyx
-Name: GO~
-Section: Tweaks
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Maintainer: yzdmm
-Author: yzdmm
-Description: 想去哪里就去哪里。v0.5.4 修复：选中应用未立即生效（改为实时读取配置、配置变更即主动推送假坐标）、快速定位输入框被键盘遮挡看不到文字；历史记录底部新增「记忆功能」开关（关闭=每次进入停止模拟，开启=自动恢复上次定位）。v0.5.2 起按 App 生效：仅「应用列表」勾选的 App 收假坐标，未勾选保持真实定位；App 内「恢复」按钮一键回到真实位置。独立面板：自绘瓦片地图选点、搜索、历史记录、应用列表、运行中应用管理。支持 iOS 15-17：arm64（Dopamine/palera1n）+ arm64e（relaxin/RootHide）。rootless 适配，A12+。
-Architecture: iphoneos-arm64
-Version: 0.5.4
-Installed-Size: 932
-Filename: ./debs/com.yzdmm.onyx_0.5.4_iphoneos-arm64.deb
-Size: 420408
-MD5sum: 1d654eaf06b61b75b41deba763111d79
-SHA1: 6dc4c5c0439b3aa4c0b5cb6898cd24adc84fdbc3
-SHA256: 62152f820a12255f8276a927560c700245fe36f8e0e4e11c29899a8ee7dd7f65
