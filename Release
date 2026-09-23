@@ -1,21 +1,21 @@
-Origin: yzdmm2024
-Label: yzdmm2024
+Origin: Ac`ljcr
+Label: Ac`ljcr
 Suite: stable
 Codename: stable
-Architectures: iphoneos-arm iphoneos-arm64
+Version: 1.0
+Architectures: iphoneos-arm64
 Components: main
-Description: yzdmm2024 repo
-Date: Wed, 23 Sep 2026 04:47:32 GMT
-
+Description: Ac`ljcr 越狱插件源（定位模拟等）
+Date: Wed, 23 Sep 2026 05:23:32 GMT
 MD5Sum:
- ce2b1811373db0ba0f61dc6e5bd6ebfc 88226 Packages
- 8b6228f3c67e6b5efabcd037d5fa8e7c 17290 Packages.gz
- 188567e99e58fa27998aea792d3a93d7 16042 Packages.bz2
+ 7e2580632a75f4bd62cb13ffa1adcf01 88280 Packages
+ 8f780e1f67006bf7f3ffa44a1102cf32 17331 Packages.gz
+ db4879d0690bd2453ed0bd8b7d0c3a26 16108 Packages.bz2
 SHA1:
- 767ed52e36fefc6cd7894fa924bf93a9d267fad5 88226 Packages
- cbdade2d6203611d52e860a471d51d180ef3fb0f 17290 Packages.gz
- f1649270ebf0d7cfa19a5bd6552b377d16f88b73 16042 Packages.bz2
+ 96a192701a39ee591feeeda68a912989ba7bd50f 88280 Packages
+ 54c18a95966d7d83606deb486a9cd990119649e0 17331 Packages.gz
+ d757298e8d03030d1c30132aef88ac93428a4c3f 16108 Packages.bz2
 SHA256:
- 52eb510b05f86dffeec5d8531470773ee51efbc2c1a9c0e01417cfcbfd0f3297 88226 Packages
- 243fe3b561f532bf7e1b18e4c7fa7200ff656b5b165b55f5ca1b9659ce5f96b4 17290 Packages.gz
- d631408c7e146bbd7cd8e6aa2966c9a405cec45f0df8500d6da1ed9e8f9c2a90 16042 Packages.bz2
+ 14bad03f709d80acdf1e1b63a55fce107f599e38762aa060efd2edb651a21982 88280 Packages
+ 2398698158542f7540ce30a392958ac0fdf5c9dce7d0393e538e5db8dc02b483 17331 Packages.gz
+ 4bf347dfbae1a3c64a14a24417599a6195da02672adfeb70c7ba08dbe9b40d4f 16108 Packages.bz2
