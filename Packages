@@ -1059,6 +1059,36 @@ MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.5.5
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 想去哪里就去哪里。v0.5.5 修复：App 与 Tweak 改用同一全局用户偏好（kCFPreferencesCurrentUser/kCFPreferencesAnyHost），解决 iOS container 隔离导致目标 App 读不到配置的问题。v0.5.4 修复：选中应用未立即生效（实时读取配置、配置变更即主动推送假坐标）、快速定位输入框被键盘遮挡；历史记录底部新增「记忆功能」开关。v0.5.2 起按 App 生效：仅「应用列表」勾选的 App 收假坐标；App 内「恢复」按钮一键回到真实位置。独立面板：自绘瓦片地图选点、搜索、历史记录、应用列表、运行中应用管理。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_0.5.5_iphoneos-arm64.deb
+Size: 420540
+MD5sum: 5b6d2be6dd23a79bc2b3d959840439cd
+SHA1: a160b41f0eb951a790785af2a91322c154e2cd22
+SHA256: 91a74f5922433147a8d12a65fb8199852aab14c0eb95dc1ec84f1e3e4d926558
+
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.5.5
+Architecture: iphoneos-arm64e
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 想去哪里就去哪里。v0.5.5 修复：App 与 Tweak 改用同一全局用户偏好（kCFPreferencesCurrentUser/kCFPreferencesAnyHost），解决 iOS container 隔离导致目标 App 读不到配置的问题。v0.5.4 修复：选中应用未立即生效（实时读取配置、配置变更即主动推送假坐标）、快速定位输入框被键盘遮挡；历史记录底部新增「记忆功能」开关。v0.5.2 起按 App 生效：仅「应用列表」勾选的 App 收假坐标；App 内「恢复」按钮一键回到真实位置。独立面板：自绘瓦片地图选点、搜索、历史记录、应用列表、运行中应用管理。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_0.5.5_iphoneos-arm64e.deb
+Size: 420540
+MD5sum: 40b56d187e7ecee2d798be457be00989
+SHA1: dc5a9c67cbc9295a2d927bdcf8bebbbcb50a4ce3
+SHA256: 1a4b140f31bc8419ee81380f4c7971c1d21e64d78a1167462c2e200bfc67843f
+
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1119,18 +1149,3 @@ MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
 
-Package: com.yzdmm.onyx
-Name: GO~
-Section: Tweaks
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Maintainer: yzdmm
-Author: yzdmm
-Description: 想去哪里就去哪里。v0.5.5 修复：App 与 Tweak 改用同一全局用户偏好（kCFPreferencesCurrentUser/kCFPreferencesAnyHost），解决 iOS container 隔离导致目标 App 读不到配置的问题。v0.5.4 修复：选中应用未立即生效（实时读取配置、配置变更即主动推送假坐标）、快速定位输入框被键盘遮挡；历史记录底部新增「记忆功能」开关。v0.5.2 起按 App 生效：仅「应用列表」勾选的 App 收假坐标；App 内「恢复」按钮一键回到真实位置。独立面板：自绘瓦片地图选点、搜索、历史记录、应用列表、运行中应用管理。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Architecture: iphoneos-arm64
-Version: 0.5.5
-Installed-Size: 932
-Filename: ./debs/com.yzdmm.onyx_0.5.5_iphoneos-arm64.deb
-Size: 420540
-MD5sum: 5b6d2be6dd23a79bc2b3d959840439cd
-SHA1: a160b41f0eb951a790785af2a91322c154e2cd22
-SHA256: 91a74f5922433147a8d12a65fb8199852aab14c0eb95dc1ec84f1e3e4d926558
