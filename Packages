@@ -67,7 +67,7 @@ Depends: mobilesubstrate, firmware (>= 17.0), firmware (>= 11.0)
 Conflicts: com.ioscreatix.silo, com.skypain.cclocation, com.skypain.ccsettrings, com.skypain.ccrespring, com.sop.cpumagicrootless, netskao.ccbadgeclear-rootless, com.mtac.uptime, netskao.alipayscan-rootless, netskao.wechatscan-rootless, com.skypain.ccvpn, netskao.ccswitchdata-rootless, netskao.ccsim-rootless, netskao.tinyccmodules-rootless, netskao.cccellularrate-rootless, netskao.quantumultxlauncher-rootless, com.p2kdev.snapper2cc, com.skypain.ccautobrightness, com.skypain.ccscreenshot, com.skypain.cclockscreen, xyz.cypwn.safeccmodules, com.zqbb.ccpay, com.zqbb.qszqb, com.netskao.ccbadgeclear, com.kingpuffdaddi.control-center.ccvpn, com.netskao.cclifttowake, com.kdt.caperfhudmodule, com.kingpuffdaddi.control-center.ccvibration, com.hk.roothide.cc, com.hk.rootless.cc
 Replaces: com.ioscreatix.silo
 Provides: com.ioscreatix.silo
-Description: 屿哥专属!
+Description: CCSupport and CCHide merged package
 Filename: debs/com.merged.cc-suite_2.1-1_iphoneos-arm64e_rootless.deb
 Size: 562932
 MD5sum: 9cf51b3d699cdeaa895ef57fc3761d55
@@ -80,7 +80,7 @@ Version: 1.0.1-1
 Architecture: iphoneos-arm64e
 Maintainer: merged
 Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
-Description: 屿哥专属!
+Description: PassText with Simplified Chinese language support
 Filename: debs/com.merged.passtext-suite_1.0.1-1_iphoneos-arm64e_rootless.deb
 Size: 131980
 MD5sum: 4c4aa4806ac2d6c2ba9711c36a01b079
@@ -94,7 +94,7 @@ Architecture: iphoneos-arm64e
 Maintainer: merged
 Depends: mobilesubstrate, preferenceloader, firmware (>= 16.0), firmware (<< 19.0)
 Conflicts: com.82flex.singlevpn
-Description: 屿哥专属!
+Description: DynamicX and iPhoneDuoIcon merged package
 Filename: debs/com.merged.ui-enhancer_1.4.8-1_iphoneos-arm64e_rootless.deb
 Size: 622564
 MD5sum: c447f08c62526d9778f1ec55b3157480
@@ -1133,4 +1133,47 @@ Size: 405734
 MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
+
+Package: com.merged.cc-suite
+Name: CC Suite
+Version: 2.1-1
+Architecture: iphoneos-arm64e
+Maintainer: merged
+Depends: mobilesubstrate, firmware (>= 17.0), firmware (>= 11.0)
+Conflicts: com.ioscreatix.silo, com.skypain.cclocation, com.skypain.ccsettrings, com.skypain.ccrespring, com.sop.cpumagicrootless, netskao.ccbadgeclear-rootless, com.mtac.uptime, netskao.alipayscan-rootless, netskao.wechatscan-rootless, com.skypain.ccvpn, netskao.ccswitchdata-rootless, netskao.ccsim-rootless, netskao.tinyccmodules-rootless, netskao.cccellularrate-rootless, netskao.quantumultxlauncher-rootless, com.p2kdev.snapper2cc, com.skypain.ccautobrightness, com.skypain.ccscreenshot, com.skypain.cclockscreen, xyz.cypwn.safeccmodules, com.zqbb.ccpay, com.zqbb.qszqb, com.netskao.ccbadgeclear, com.kingpuffdaddi.control-center.ccvpn, com.netskao.cclifttowake, com.kdt.caperfhudmodule, com.kingpuffdaddi.control-center.ccvibration, com.hk.roothide.cc, com.hk.rootless.cc
+Replaces: com.ioscreatix.silo
+Provides: com.ioscreatix.silo
+Description: 屿哥专属!
+Filename: debs/repacked_com.merged.cc-suite_2.1-1_iphoneos-arm64e_rootless.deb
+Size: 562872
+MD5sum: b375ba8bd7638dc5f129195b14b6d2b8
+SHA1: 53019c0faef804a8846b239338e9f641a587114e
+SHA256: 2ccc3d39de3a30db3a8c0292cdb48516b2edeb53e6af959bcc4d95f423031243
+
+Package: com.merged.passtext-suite
+Name: PassText Suite
+Version: 1.0.1-1
+Architecture: iphoneos-arm64e
+Maintainer: merged
+Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
+Description: 屿哥专属!
+Filename: debs/repacked_com.merged.passtext-suite_1.0.1-1_iphoneos-arm64e_rootless.deb
+Size: 131908
+MD5sum: 25256926b50b4c60d17efec6b49fceea
+SHA1: c44277cf7e9f649823a4754167822426395e6d8e
+SHA256: 14e598b7fe0a61b165fe91a67bbfbc306f287fa4bc132b04af9bd633a56dcfa3
+
+Package: com.merged.ui-enhancer
+Name: UI Enhancer
+Version: 1.4.8-1
+Architecture: iphoneos-arm64e
+Maintainer: merged
+Depends: mobilesubstrate, preferenceloader, firmware (>= 16.0), firmware (<< 19.0)
+Conflicts: com.82flex.singlevpn
+Description: 屿哥专属!
+Filename: debs/repacked_com.merged.ui-enhancer_1.4.8-1_iphoneos-arm64e_rootless.deb
+Size: 622356
+MD5sum: a29483b4da501c7ee80972bd34ef96c8
+SHA1: 6dab74f1b718af1b6aa4e8219059c8a0f53587b6
+SHA256: 09e1432c75956de840270bb45cac92db66c688ac45d3a3553e88dd6b17e51afa
 
