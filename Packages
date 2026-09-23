@@ -1059,6 +1059,36 @@ MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.5.1
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 想去哪里就去哪里。系统级定位模拟：向 locationd 注入坐标，全局影响所有使用系统定位的 App；并对百度/高德/腾讯/系统定位 SDK 回调假坐标，无需信任证书。独立 App 面板：自绘瓦片地图（高德优先、失败自动回退 OSM，多源回退+一键刷新）选点、搜索、历史记录（地名+坐标、左滑删除/备注、点击跳转）、应用列表、运行中应用管理、上次定位记忆。支持 iOS 15-17：arm64（无根 Dopamine/palera1n）+ arm64e（隐根 relaxin/RootHide）。rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_0.5.1_iphoneos-arm64.deb
+Size: 418576
+MD5sum: 2b42e6a60550e6dac6a07422004a95fa
+SHA1: 8fb7a4aa8e6070fc6172f34f66edcace59f6aa8d
+SHA256: 595a6a275ab42c84be2fddd0febffd9d258e794b8bd006f18ba1a7f61fdab1fa
+
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.5.1
+Architecture: iphoneos-arm64e
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 想去哪里就去哪里。系统级定位模拟：向 locationd 注入坐标，全局影响所有使用系统定位的 App；并对百度/高德/腾讯/系统定位 SDK 回调假坐标，无需信任证书。独立 App 面板：自绘瓦片地图（高德优先、失败自动回退 OSM，多源回退+一键刷新）选点、搜索、历史记录（地名+坐标、左滑删除/备注、点击跳转）、应用列表、运行中应用管理、上次定位记忆。支持 iOS 15-17：arm64（无根 Dopamine/palera1n）+ arm64e（隐根 relaxin/RootHide）。rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_0.5.1_iphoneos-arm64e.deb
+Size: 418340
+MD5sum: 54a5b491cc14ab7f142c6d605bf62cbf
+SHA1: 8908fd3cbb31280178128caefbb07fa1741d6013
+SHA256: 4745f1e7fc1411cd892b3ef843e95c1346d6ddcda158d3e4f96a1ffad06005fb
+
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1119,32 +1149,3 @@ MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
 
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.5.1
-Architecture: iphoneos-arm64
-Section: Tweaks
-Maintainer: yzdmm
-Author: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Filename: debs/com.yzdmm.onyx_0.5.1_iphoneos-arm64.deb
-Size: 418576
-MD5sum: 2b42e6a60550e6dac6a07422004a95fa
-SHA1: 8fb7a4aa8e6070fc6172f34f66edcace59f6aa8d
-SHA256: 595a6a275ab42c84be2fddd0febffd9d258e794b8bd006f18ba1a7f61fdab1fa
-Description: 想去哪里就去哪里。系统级定位模拟：向 locationd 注入坐标，全局影响所有使用系统定位的 App；并对百度/高德/腾讯/系统定位 SDK 回调假坐标，无需信任证书。独立 App 面板：自绘瓦片地图（高德优先、失败自动回退 OSM，多源回退+一键刷新）选点、搜索、历史记录（地名+坐标、左滑删除/备注、点击跳转）、应用列表、运行中应用管理、上次定位记忆。支持 iOS 15-17：arm64（无根 Dopamine/palera1n）+ arm64e（隐根 relaxin/RootHide）。rootless 适配，A12+。
-
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.5.1
-Architecture: iphoneos-arm64e
-Section: Tweaks
-Maintainer: yzdmm
-Author: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Filename: debs/com.yzdmm.onyx_0.5.1_iphoneos-arm64e.deb
-Size: 418340
-MD5sum: 54a5b491cc14ab7f142c6d605bf62cbf
-SHA1: 8908fd3cbb31280178128caefbb07fa1741d6013
-SHA256: 4745f1e7fc1411cd892b3ef843e95c1346d6ddcda158d3e4f96a1ffad06005fb
-Description: 想去哪里就去哪里。系统级定位模拟：向 locationd 注入坐标，全局影响所有使用系统定位的 App；并对百度/高德/腾讯/系统定位 SDK 回调假坐标，无需信任证书。独立 App 面板：自绘瓦片地图（高德优先、失败自动回退 OSM，多源回退+一键刷新）选点、搜索、历史记录（地名+坐标、左滑删除/备注、点击跳转）、应用列表、运行中应用管理、上次定位记忆。支持 iOS 15-17：arm64（无根 Dopamine/palera1n）+ arm64e（隐根 relaxin/RootHide）。rootless 适配，A12+。
