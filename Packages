@@ -869,6 +869,36 @@ SHA256: a433111c8aa296ddbab7e4402d725dc9bc6ea0be4676300806dd5da4c185b0c5
 
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
+Version: 1.3.44
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 解锁URL玩法！
+Filename: debs/com.yzdmm.floatingurl_1.3.44_iphoneos-arm64.deb
+Size: 172792
+MD5sum: eb924b06b0d82862d0f73b572e75a8fc
+SHA1: 30c9c688292e9fbe33b85c84f0b10a8cfa06e6c8
+SHA256: 6eddfc64bf5b5ce359404e785b3023de734f44e7dfd0b11a3b482b6476a0178c
+
+Package: com.yzdmm.floatingurl
+Name: 悬浮URL
+Version: 1.3.44
+Architecture: iphoneos-arm64e
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 解锁URL玩法！
+Filename: debs/com.yzdmm.floatingurl_1.3.44_iphoneos-arm64e.deb
+Size: 172576
+MD5sum: d399dd3c38c43eabcbe632cedecde486
+SHA1: 49285fc6542435e1ab4ff7c3fb210c068cccc244
+SHA256: a252b47c8c07d704fd09820eff50c3dbf7110a1c8b5cc3a2322576809f540163
+
+Package: com.yzdmm.floatingurl
+Name: 悬浮URL
 Version: 1.3.4
 Architecture: iphoneos-arm64
 Section: Tweaks
@@ -986,6 +1016,21 @@ MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
+Package: com.yzdmm.onyx
+Name: Onyx
+Version: 0.3.2
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
+Description: 系统级定位模拟，通过 CLSimulationManager + com.apple.locationd.simulation 私有 entitlement 向 locationd 注入坐标，全局影响所有 App。独立 App 面板：苹果原生地图（MapKit）选点、搜索、应用列表（搜索/图标/一键清除）、状态面板。rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_0.3.2_iphoneos-arm64.deb
+Size: 55768
+MD5sum: 15d317ca933206b08f79fb0eb0161985
+SHA1: f12da6b5079d2a6b333b0dd4b9fc62b226ddba2c
+SHA256: 4c4a02b2ab79028f054082a9fa078b5e9f7bad8c5c52902eee179a18dffd2145
+
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1046,48 +1091,3 @@ MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
 
-Package: com.yzdmm.floatingurl
-Name: 悬浮URL
-Version: 1.3.44
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 解锁URL玩法！
-Filename: debs/com.yzdmm.floatingurl_1.3.44_iphoneos-arm64.deb
-Size: 172792
-MD5sum: eb924b06b0d82862d0f73b572e75a8fc
-SHA1: 30c9c688292e9fbe33b85c84f0b10a8cfa06e6c8
-SHA256: 6eddfc64bf5b5ce359404e785b3023de734f44e7dfd0b11a3b482b6476a0178c
-
-Package: com.yzdmm.floatingurl
-Name: 悬浮URL
-Version: 1.3.44
-Architecture: iphoneos-arm64e
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 解锁URL玩法！
-Filename: debs/com.yzdmm.floatingurl_1.3.44_iphoneos-arm64e.deb
-Size: 172576
-MD5sum: d399dd3c38c43eabcbe632cedecde486
-SHA1: 49285fc6542435e1ab4ff7c3fb210c068cccc244
-SHA256: a252b47c8c07d704fd09820eff50c3dbf7110a1c8b5cc3a2322576809f540163
-
-Package: com.yzdmm.onyx
-Name: Onyx
-Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
-Maintainer: yzdmm
-Author: yzdmm
-Section: Tweaks
-Description: 系统级定位模拟，通过 CLSimulationManager + com.apple.locationd.simulation 私有 entitlement 向 locationd 注入坐标，全局影响所有 App。独立 App 面板：苹果原生地图（MapKit）选点、搜索、应用列表（搜索/图标/一键清除）、状态面板。rootless 适配，A12+。
-Architecture: iphoneos-arm64
-Version: 0.3.2
-Installed-Size: 476
-Filename: debs/com.yzdmm.onyx_0.3.2_iphoneos-arm64.deb
-Size: 55768
-MD5sum: 15d317ca933206b08f79fb0eb0161985
-SHA1: f12da6b5079d2a6b333b0dd4b9fc62b226ddba2c
-SHA256: 4c4a02b2ab79028f054082a9fa078b5e9f7bad8c5c52902eee179a18dffd2145
