@@ -140,7 +140,7 @@ def build_release(content_str):
         "Suite: stable\n"
         "Codename: stable\n"
         "Version: 1.0\n"
-        "Architectures: iphoneos-arm64\n"
+        "Architectures: iphoneos-arm64 iphoneos-arm64e\n"
         "Components: main\n"
         "Description: Ac`ljcr 越狱插件源（定位模拟等）\n"
     )

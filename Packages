@@ -1134,3 +1134,20 @@ MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
 
+Package: com.yzdmm2024.t31
+Name: 3+1
+Version: 0.0.1
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024 <repo-bot@users.noreply.github.com>
+Depends: mobilesubstrate
+Conflicts: com.merged.ui-enhancer
+Replaces: com.merged.ui-enhancer
+Description: 液态玻璃状态栏胶囊 (Liquid Glass status bar capsule) —— 时间 + WiFi 弧线 + 信号点
+Filename: debs/com.yzdmm2024.t31_0.0.1_iphoneos-arm64.deb
+Size: 7934
+MD5sum: 0c64c17f224537c5541e2e0ebf37e141
+SHA1: e591ac96db77eec0592d9118fe35a9bcd3c6ddab
+SHA256: 407547f674330b3d0930d20bc132d691a358f99cf5d7bbde9ff8a7da718005d5
+
