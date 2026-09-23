@@ -2,7 +2,7 @@ Origin: yzdmm2024
 Label: yzdmm2024
 Suite: stable
 Codename: stable
-Architectures: iphoneos-arm
+Architectures: iphoneos-arm iphoneos-arm64
 Components: main
 Description: yzdmm2024 repo
 Date: Wed, 23 Sep 2026 03:47:02 GMT
