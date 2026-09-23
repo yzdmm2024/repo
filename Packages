@@ -12,7 +12,6 @@ Size: 134588
 MD5sum: c223c6c9e8af43d3cc85bb71f6ab646b
 SHA1: 9434fb6400545ff64606323cc86ecca221dd60cb
 SHA256: 8012e448e04b78bfbe7724cb1cbea0942379da86e879284c791886c8d820f956
-
 Package: com.axs.superscreenshot
 Name: 超级截图
 Version: 6.20.31
@@ -27,7 +26,6 @@ Size: 324304
 MD5sum: d4c4183440c8142308937eb56dc33488
 SHA1: e77f24ddc40a9ffb3fd602b79576f8e2ca4abd79
 SHA256: ceeb6dff12369fb2a97ed4f79c6719269f269b550e87c59f36427e59611c2c2f
-
 Package: com.axs.superscreenshot
 Name: 超级截图
 Version: 6.20.32
@@ -42,7 +40,6 @@ Size: 322620
 MD5sum: 3572630b99830d04bbeee77f069b5261
 SHA1: 00cd35a612f9fc88bb1c9ab810ea39286d5d001f
 SHA256: 2e00c0cae2eee99eac80f95d4085d2cb985e869ceb1b527e8798c0143a248d5a
-
 Package: com.local.mygestures
 Name: 我的手势
 Version: 0.11.13
@@ -57,7 +54,6 @@ Size: 74416
 MD5sum: b77a77514596e1943c8f65a3b8601ec4
 SHA1: 6c28f1de70818d989f98b6f752a4bcf4282e5618
 SHA256: 0eacec0178d6570923fb3d86722a4fc0c1a507c9199f99751aa7b849f4b2bc39
-
 Package: com.merged.cc-suite
 Name: CC Suite
 Version: 2.1-1
@@ -67,26 +63,24 @@ Depends: mobilesubstrate, firmware (>= 17.0), firmware (>= 11.0)
 Conflicts: com.ioscreatix.silo, com.skypain.cclocation, com.skypain.ccsettrings, com.skypain.ccrespring, com.sop.cpumagicrootless, netskao.ccbadgeclear-rootless, com.mtac.uptime, netskao.alipayscan-rootless, netskao.wechatscan-rootless, com.skypain.ccvpn, netskao.ccswitchdata-rootless, netskao.ccsim-rootless, netskao.tinyccmodules-rootless, netskao.cccellularrate-rootless, netskao.quantumultxlauncher-rootless, com.p2kdev.snapper2cc, com.skypain.ccautobrightness, com.skypain.ccscreenshot, com.skypain.cclockscreen, xyz.cypwn.safeccmodules, com.zqbb.ccpay, com.zqbb.qszqb, com.netskao.ccbadgeclear, com.kingpuffdaddi.control-center.ccvpn, com.netskao.cclifttowake, com.kdt.caperfhudmodule, com.kingpuffdaddi.control-center.ccvibration, com.hk.roothide.cc, com.hk.rootless.cc
 Replaces: com.ioscreatix.silo
 Provides: com.ioscreatix.silo
-Description: CCSupport and CCHide merged package
+Description: 屿哥专属!
 Filename: debs/com.merged.cc-suite_2.1-1_iphoneos-arm64e_rootless.deb
-Size: 562932
-MD5sum: 9cf51b3d699cdeaa895ef57fc3761d55
-SHA1: c7f7c1735b7c9af2bba5b933899d7ea3267354a5
-SHA256: f2f7de9e96ff376864a5ac9bfa2628795d9f240f4c1b04873ae6300078011be2
-
+Size: 562872
+MD5sum: b375ba8bd7638dc5f129195b14b6d2b8
+SHA1: 53019c0faef804a8846b239338e9f641a587114e
+SHA256: 2ccc3d39de3a30db3a8c0292cdb48516b2edeb53e6af959bcc4d95f423031243
 Package: com.merged.passtext-suite
 Name: PassText Suite
 Version: 1.0.1-1
 Architecture: iphoneos-arm64e
 Maintainer: merged
 Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
-Description: PassText with Simplified Chinese language support
+Description: 屿哥专属!
 Filename: debs/com.merged.passtext-suite_1.0.1-1_iphoneos-arm64e_rootless.deb
-Size: 131980
-MD5sum: 4c4aa4806ac2d6c2ba9711c36a01b079
-SHA1: 98ef9a76fd55e2ff41ed26d60b86c1b28d6aaba6
-SHA256: 1620008a9895c0f745f7364d418f36e9f9257ea869356605f48b0825b77f8421
-
+Size: 131908
+MD5sum: 25256926b50b4c60d17efec6b49fceea
+SHA1: c44277cf7e9f649823a4754167822426395e6d8e
+SHA256: 14e598b7fe0a61b165fe91a67bbfbc306f287fa4bc132b04af9bd633a56dcfa3
 Package: com.merged.ui-enhancer
 Name: UI Enhancer
 Version: 1.4.8-1
@@ -94,13 +88,12 @@ Architecture: iphoneos-arm64e
 Maintainer: merged
 Depends: mobilesubstrate, preferenceloader, firmware (>= 16.0), firmware (<< 19.0)
 Conflicts: com.82flex.singlevpn
-Description: DynamicX and iPhoneDuoIcon merged package
+Description: 屿哥专属!
 Filename: debs/com.merged.ui-enhancer_1.4.8-1_iphoneos-arm64e_rootless.deb
-Size: 622564
-MD5sum: c447f08c62526d9778f1ec55b3157480
-SHA1: 5c8455c28786306ad3e87ac2b815143f3053c982
-SHA256: c144e2c1972ac3e881e4b58a9c9967f0d29068f22246e1ad53b9d3de889ee934
-
+Size: 622356
+MD5sum: a29483b4da501c7ee80972bd34ef96c8
+SHA1: 6dab74f1b718af1b6aa4e8219059c8a0f53587b6
+SHA256: 09e1432c75956de840270bb45cac92db66c688ac45d3a3553e88dd6b17e51afa
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
 Version: 1.6.10
@@ -115,7 +108,6 @@ Size: 100516
 MD5sum: 2624f07dd0ee1b39d08df4d8b7c15d16
 SHA1: 38877c4c2c143d5fead1d40dffe33d6f0b8d8755
 SHA256: d729ffbb2a4e1acefbb5cd0e81f8c13f3e51508a79fb5c16ec34e64ca890f594
-
 Package: com.ntm.notifymanager
 Name: 通知管理
 Version: 2.3.11
@@ -130,7 +122,6 @@ Size: 112508
 MD5sum: 2660fecafabcd56ef97524d537a89c2d
 SHA1: 2d79168b4c843f59f8217dc449dc9b5b65dbfff5
 SHA256: 866308c0428ae82b39c679d7f65613663aa971f15235fe9b9f24652b555a901b
-
 Package: com.ntm.privacymanager
 Name: 隐私总开关
 Version: 1.0.20
@@ -145,7 +136,6 @@ Size: 63672
 MD5sum: c2a333738c5628b7280f2753d04d4def
 SHA1: c1c2e50705a4c5bdcac0656f39bfaa63f311c126
 SHA256: 6a144310ab11d2eb621f3c9e0f1f2f40ef3bdc6c46ab561e3d384ad0e7c2d62a
-
 Package: com.roa.randopenapp
 Name: 随机开启app
 Version: 1.3.3
@@ -159,7 +149,6 @@ Size: 32408
 MD5sum: 8bbe9d55b0afcac5b528b62ea30c1091
 SHA1: 967401d89c90fd8b567dd614cc5c48eecac50758
 SHA256: e21d6bce460ed86251ff532df12f20a8043628e9fce0e02e6973c317e1527e7f
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.2.10
@@ -174,7 +163,6 @@ Size: 93384
 MD5sum: 889bce2a9835224dfeec6665649375e6
 SHA1: eda17dc0b6e11d833d33ee065c42ca0cad28acc4
 SHA256: 5e0f123cd33b04c6a35a43458dfaa3f1b2943337f76b62000076e7c54919f111
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.2.11
@@ -189,7 +177,6 @@ Size: 95400
 MD5sum: abf0b38e4cd004a376361d52ee86d970
 SHA1: 796be68973c146074e70ae334907af69eea8915e
 SHA256: 46be5a9b9def90fd86c0d9d20fe5a7bb05aa331394d5ac81f934f8e5683bfbb3
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.2.12
@@ -204,7 +191,6 @@ Size: 96332
 MD5sum: 488616d9e760e21b9876ccb18dd67f91
 SHA1: 93654232510e280dc3757e5fcf6ebfa33c253c88
 SHA256: ed379fad9741833363e4a61378bebaf812fd88df55be47acb6977e0222fb7349
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.2.4
@@ -219,7 +205,6 @@ Size: 58768
 MD5sum: ede6c5b46e9f25d75a938090fbef4739
 SHA1: dbabba7763bd4563cf43071b67a588f2ef5bda93
 SHA256: 6543d0f83d2e3215c0444e0f93ae10b61d2116f33eee7958ab53552e2c9a5d93
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.2.5
@@ -234,7 +219,6 @@ Size: 85180
 MD5sum: 0c3b3ff045404e1b8085bc5d022f6cc8
 SHA1: fd6a87d9dc3aaf192ab15faf8d1c534d68ad2978
 SHA256: 929f3041973a8837f2a77211e78e558f9cd3aff95f01b4fa9fa410b83238efc3
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.2.6
@@ -249,7 +233,6 @@ Size: 87624
 MD5sum: 55d2aa3779a052bb9da235fda1a5d7a5
 SHA1: ef278cefdce08ea6cdc6c2c1ee5231f93dc54eaa
 SHA256: 503fd4c19b013eaaee141da897448f2ae0f89a0642da38565bf6be4f9016149b
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.2.7
@@ -264,7 +247,6 @@ Size: 92568
 MD5sum: b5d59d4a969f9a604a30cbd10c58f977
 SHA1: 9eef8c1fcc4dcbdfb5ecf98b450d4be7f07be433
 SHA256: 4daeecf28f3e72f7c315b10027cd86900ec0c911ca72339d8d8fe64e6f70f67f
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.2.8
@@ -279,7 +261,6 @@ Size: 92556
 MD5sum: f99863360da68133929d039e7b719d44
 SHA1: 3eedf70482572515186c55059d1ee0dd3c65af28
 SHA256: 880fdac1c8440e159c41809fbb1da8ccc1b311078c63b8b28e8f4ff541a04c36
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.2.9
@@ -294,7 +275,6 @@ Size: 92884
 MD5sum: 382e09deab17fc0260b90d172e256c4c
 SHA1: a82814fe4d21aa84a5e09ca2ff62718d9364b0ec
 SHA256: 96dfb1256e519ebe1afb9bd6ea490dbca09093006a3f6f0715aaa6e89c4a277b
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.0
@@ -309,7 +289,6 @@ Size: 110848
 MD5sum: 04abde24bca7d9749ef465d53bd93798
 SHA1: 67c4c1f70bd200d8bb34940a46a931c463d3eabe
 SHA256: b7068b3d823722f6ecaeffee834c4735f44aa445610d2d59137a8bc51fa6769e
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.10
@@ -324,7 +303,6 @@ Size: 163424
 MD5sum: 1ddd1d5f5daea3798c1678487d544495
 SHA1: 004cd516a1fd866739eb0346c17aa43a94215899
 SHA256: 9d72986bec50c5684e19fe813eee9db5339c41ed81845cc0c4e5674e6b5ce855
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.11
@@ -339,7 +317,6 @@ Size: 160372
 MD5sum: b695c0d7ac79f0572b5e31e8cf700bff
 SHA1: 8d2c31c5fd1e6e0666af3ac551d1bf4c82eedad7
 SHA256: 0297c0d0e9cf1da385a7dd9755c857b23d62335656550c614e2e1030c1ec7efc
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.12
@@ -354,7 +331,6 @@ Size: 165644
 MD5sum: ac29b1c02b20e64d19ae95e8552c1883
 SHA1: e1ce822caf77824654be0043ee888adbee970d22
 SHA256: 9538cfc29990b80e2a9bda2717f122117fef7a1a7d00ea8093fe3a823938e698
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.13
@@ -369,7 +345,6 @@ Size: 178892
 MD5sum: 0b3623afdba6dcab813b41c0fac42759
 SHA1: 6e0298fcfb6456f70d71f2a2e3d5f36cfb7f77c4
 SHA256: d26734f87d352f545a8e390d34d607b7517905e4a26fb61ea42d27bef16e42d9
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.14
@@ -384,7 +359,6 @@ Size: 177292
 MD5sum: e8503bc771948a3227631495ecff5299
 SHA1: 1709bfda88eb7f7408a6b8e40fa03f170747ec61
 SHA256: 6401db7a7a92c011422599d2da67d97ef8f267b33138d0cd1576c8b26972ecac
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.15
@@ -399,7 +373,6 @@ Size: 174832
 MD5sum: c71230f73dac86f552dc531d4b4b93f8
 SHA1: d954440ba66d2d5dd4ff63d5af738b85cf04fcc6
 SHA256: baa04c1c013446ff3cc52ee2398b3fbc3840a792084fed8c17c4600c248b7494
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.16
@@ -414,7 +387,6 @@ Size: 175276
 MD5sum: 3b9a03b4e9f7789e9b94d1549274eed8
 SHA1: 3bcebd9c5db6e023f34cf7b465a92c17c9d32ec7
 SHA256: 5f1c02ef1e5399c8c53efb2b26b2d85fd01ee0ede6a45526273c0e52d15464b4
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.17
@@ -429,7 +401,6 @@ Size: 177176
 MD5sum: e826016ee1c428df4c1a1f35476f28fa
 SHA1: 7a9d6945ec44cca4d6623c719fd2c54487b1f936
 SHA256: 3a0103ba63e28b2c182d7847316113e1141dab2f136aaef3491789ff056f1246
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.18
@@ -445,7 +416,6 @@ Size: 179744
 MD5sum: b8131a12a4978f1c30602d5810351400
 SHA1: 15025f7693105953e8d1312a03f7dabe768be64a
 SHA256: 05778ade312ab31e97cad80cf4d8e40608cf6188bf1adafb4350ac0e27698212
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.19
@@ -462,7 +432,6 @@ Size: 179028
 MD5sum: 545b330be165b397fee92fb3e2dfbf26
 SHA1: b4d387e1c7637b53f0839bb9f9906906b16aaa05
 SHA256: d7bfd7a35d84b1663a8d29ef5a05298c7b3b8c7c2a0b2ab1307c7b5b084ccd1d
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.1
@@ -477,7 +446,6 @@ Size: 110748
 MD5sum: f5150cf4c4f9127baad8b3ea6e4309f1
 SHA1: 7a7960a1acbdaa1ade39c904e0b8f8bb49c6f9c4
 SHA256: f9c4e701060551c7762586c174e282b792ed795759bf03da4a27bfe3bc67df43
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.20
@@ -495,7 +463,6 @@ Size: 168612
 MD5sum: 69a73c2f3e6f93b42ccb86e22c7b7724
 SHA1: 8f5fdf1c95a282c22b83f542dffe9a0e868b88b5
 SHA256: b4a0b129355b170566ff06651fea53cee8f5774c512e12d0d81fa4101969f351
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.21
@@ -515,7 +482,6 @@ Size: 168804
 MD5sum: d6eafd8412c45bcfbb8c569e45a3d993
 SHA1: 3a5a7b55d246f93399423ad47ffb1a8612a7ae59
 SHA256: 08e801fce48610693404a925b7b80cf4ea84f8552416780b72aa2009ce16dfec
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.22
@@ -535,7 +501,6 @@ Size: 169184
 MD5sum: ba4ccc602938572224d6a6b85142e41f
 SHA1: 0e03ce766c5920ecbb61cfe5b72bbe00c7cc8580
 SHA256: 9139143b325bdb26ec0340d5ea551e7f2e823478f20f6399dad7ff184d265b3e
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.24
@@ -557,7 +522,6 @@ Size: 146796
 MD5sum: 95cc3be2a797a9ae81df5abf490b3d68
 SHA1: 2cfedeb649827c844153c8ccb36a8bf3b29d153c
 SHA256: e24099e017fc71b46c47bab404b42c6689c92028cdd8e7373f056b6f70696ce7
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.25
@@ -580,7 +544,6 @@ Size: 152308
 MD5sum: d93cd0e451514793d52e580cc73555ff
 SHA1: ff823e7b90e012e388e084504ece50214e362d2a
 SHA256: 4363f9481c09d8a782a1090205768411925959340906c690b42e53da7d5520de
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.26
@@ -604,7 +567,6 @@ Size: 155032
 MD5sum: 37c714e3489ef45f23e08e801e268974
 SHA1: b3a5796e152ee1937cc766fa3e19d1cb2f8b0ec7
 SHA256: dbaec11b984b677524a42f41d2aaac605bb2d4a9bf945b6b7cf4f295c2aa0701
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.27
@@ -629,7 +591,6 @@ Size: 150976
 MD5sum: c13e66af056f7abd3445fb0159c33439
 SHA1: 44324b6199dc287fbdcfcb9eb69a996ebbc56f35
 SHA256: e7ec2ef05530489ca3c4e079e4aa111596b36a36f8a363f31fe9f977be1b7bc4
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.28
@@ -654,7 +615,6 @@ Size: 160536
 MD5sum: 9a91cfa6d5bbbc059de41de3f7b20246
 SHA1: bf8dcc4782a090e8efff7939a937674be5f51da1
 SHA256: 5ecd35de9a1a71987f4161b0f5dfcadae8b68610dbe0760198848b88baecefe4
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.29
@@ -669,7 +629,6 @@ Size: 163080
 MD5sum: 13e67ce59618444964f6bdb2e0e07e91
 SHA1: 53a44a35e6e912bbe229d331be1f9f6e6eaee13b
 SHA256: e146c6823280f13d50d8f7654a358f187dba6338ec3fb8c3bc3ce33a6801d254
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.2
@@ -684,7 +643,6 @@ Size: 116168
 MD5sum: a8b26f0813ab1d9b48853a108f90fd44
 SHA1: b6b2580eda592df30f15f4ce6f6c9d73030107c4
 SHA256: 5fb330c2d2db1f1ea268050d2cc688a2e7f60d4a883139ed17e438a3c75de231
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.30
@@ -699,7 +657,6 @@ Size: 164744
 MD5sum: c180da2f8c924ea34406b4703f14778c
 SHA1: fcf5991d9f5be872062ee7db3a66dddc5fd2245f
 SHA256: ef205626ab5721328754bd3c21b09d187ac5788d3041f70fe689be413fbea418
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.31
@@ -714,7 +671,6 @@ Size: 164988
 MD5sum: 419e4d10d74cd2ee104bf1f3314cd4b3
 SHA1: db6bbcc527d23ec701e08331b0ac168243567c7d
 SHA256: b7dedf8c6eb83d7fd0b5220b9bb3ec958dcad52e27bd8c8edfa9eb810bea2962
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.32
@@ -729,7 +685,6 @@ Size: 163176
 MD5sum: 045c4edc655c195c3fc9364718ab6987
 SHA1: 48eefa439ae38024f57c54c91cd14a25a1d3fdd6
 SHA256: ac629e074c11071dff91947e06e835c68d83eedbb9420d8a6014f10d0598288e
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.33
@@ -744,7 +699,6 @@ Size: 165588
 MD5sum: 58fada12f70332e4117a322787433b89
 SHA1: 6a6b44eabc646b41417f4aa3cf5e628c65a6de15
 SHA256: 149ac24b011930392e0b680d25843995e00689135ec0f6abdd666234cfcd153c
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.34
@@ -759,7 +713,6 @@ Size: 165856
 MD5sum: bf4be721115354622e10ef066908942c
 SHA1: d008a9786a59ee8a94830c72213d0cadef49a0d6
 SHA256: cfde09eb295a1d6d3be9294301ca3755bbe48557d081f585ab93c30dc354130c
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.35
@@ -774,7 +727,6 @@ Size: 165812
 MD5sum: c23e15dfab6acf16944b33f3d7e6de75
 SHA1: 218a787123accc556bbcee1bb45c375c65f9701b
 SHA256: 254036690cc856cc89834398d66a33098f2cc9a1ca7c904d94bc7e1929246fee
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.36
@@ -789,7 +741,6 @@ Size: 165612
 MD5sum: 5c2bda33924e2ec78dc5c5b67f734e24
 SHA1: 579f2eea41abbf960eef93e535e758aa74abce49
 SHA256: 450b3317bdd8f2035049d0a942762249b30c18f4cd87dbb1ed3545e26b1ff31b
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.37
@@ -804,7 +755,6 @@ Size: 166780
 MD5sum: 6843f123849d18f4a88a5a3feac084d2
 SHA1: 6e2a40cab439cbf0e49fab126e4959f369e1c843
 SHA256: 0df427e558add21717be52184367e4045923b3ccb602a78c325e05366b929382
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.39
@@ -819,7 +769,6 @@ Size: 167560
 MD5sum: ccc404407b2f7499cbd1e7c0e20e86fb
 SHA1: 92c70165d9bd52f944fb0ef94395602b9ce1ede6
 SHA256: b00296f67d5f5108dad43c8f1a4a138fbd2a597301c09646bb923075381ca49e
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.3
@@ -834,7 +783,6 @@ Size: 129152
 MD5sum: aab97cf48195646c76439c039514f9c0
 SHA1: 228e88218af765d03ffe8e60aba0802504850ace
 SHA256: 553ad27137898b38d0efb43ff59551c4c25131fb16a94c7143291aa2845c60e5
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.40
@@ -849,7 +797,6 @@ Size: 168048
 MD5sum: d5845aef7b22a566a550250a1210c6be
 SHA1: 44de0aef24fa91038d4faa4ac907b4d67967d8f2
 SHA256: 34e757c5b5b5cd10e4d9c08bc63ff098c3b96d0c631dfc4763711ea2020badf4
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.41
@@ -864,7 +811,6 @@ Size: 172416
 MD5sum: 9061bd9a08621c9f166a326e0eb12e72
 SHA1: 9f4db2e72e8abc9e9d1b95d25a63cb80c4fbe0ae
 SHA256: 2e084fbe607b7c44e601c72ddbee02b63a38fd1c3ce018c293100836c18ab758
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.42
@@ -879,7 +825,6 @@ Size: 172320
 MD5sum: 45ff2674a2d058b76b353bbbb4067de5
 SHA1: 348a1ffd649c3dcccd72a7720f4b91f8d7ac6177
 SHA256: dcfa83da5a9f4aaaa5be729ceed073eef91610c4ff92d4d36b7e0d4c87ed4fd3
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.43
@@ -894,7 +839,6 @@ Size: 173428
 MD5sum: d07f7b73e3b19355584066d46b3849a2
 SHA1: 8142e4c0c1ef6be2a6188039f5dd05a5a35504f9
 SHA256: 437de179ee4fcbc3694c38681fd7fb6c3d8dc5536b4e79a926cdd1293c1e9ef3
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.43
@@ -909,7 +853,6 @@ Size: 172660
 MD5sum: 02eac1cb472ac9ad444d0a819023dd1a
 SHA1: a411bfa43c2fd8b6e754ec0296884e80b1586a50
 SHA256: a433111c8aa296ddbab7e4402d725dc9bc6ea0be4676300806dd5da4c185b0c5
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.44
@@ -924,7 +867,6 @@ Size: 172792
 MD5sum: eb924b06b0d82862d0f73b572e75a8fc
 SHA1: 30c9c688292e9fbe33b85c84f0b10a8cfa06e6c8
 SHA256: 6eddfc64bf5b5ce359404e785b3023de734f44e7dfd0b11a3b482b6476a0178c
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.44
@@ -939,7 +881,6 @@ Size: 172576
 MD5sum: d399dd3c38c43eabcbe632cedecde486
 SHA1: 49285fc6542435e1ab4ff7c3fb210c068cccc244
 SHA256: a252b47c8c07d704fd09820eff50c3dbf7110a1c8b5cc3a2322576809f540163
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.4
@@ -954,7 +895,6 @@ Size: 130100
 MD5sum: f03ffba65c7058a4eef32e363eadaac3
 SHA1: 4ce4ed0782e051d3535ece5848fe34c2677337e6
 SHA256: e387c96de55acc2e25d6b559e98b438ba1a027ccee5a20e74f7abee5933af97c
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.5
@@ -969,7 +909,6 @@ Size: 140284
 MD5sum: a3c107a8fbbca8f838bd98191ef29cba
 SHA1: 3d55a5479fe53d184cea307b638d9d648e65a46c
 SHA256: ea29d7274fb74325bdab8fe30ed721092aed28228b3384017cfebead78aadf62
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.6
@@ -984,7 +923,6 @@ Size: 141352
 MD5sum: e95176e01b7228a0424193563b376e11
 SHA1: 3f3aed77767ddcf425bdc38ce4190417f7beab40
 SHA256: 13117b69062fc63376f708f5b59ea496226b5e48a24a2f56783ee097a4107931
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.7
@@ -999,7 +937,6 @@ Size: 144048
 MD5sum: 936172809d98c25044ef881729446d81
 SHA1: c10a50249e34a69130780a228dd5877d2028a8a8
 SHA256: 8b1fb3d86de7f49288397a2391927e8dc200ce89f56303ac901d71c617af3ea8
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.8
@@ -1014,7 +951,6 @@ Size: 159952
 MD5sum: 45218d4671e67e3e54fd42a369250814
 SHA1: f5482c24f55278c3f447a7a85ca8734a44e94517
 SHA256: 79bde925f3beac70746f228edd9f9a7e1ffb0e423cae4facf0dc61d257e053fd
-
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.3.9
@@ -1029,7 +965,6 @@ Size: 160928
 MD5sum: 4a65e205393eb5e76a8a3280b1910f84
 SHA1: fa97ccef66bc0e06fcfb609c4eed07db26e51fed
 SHA256: f652e3b0df046b6a283dbc489ba020df84b891102daa9e78cb3dfad09ad9c2dc
-
 Package: com.yzdmm.keyboardstatus
 Name: 键盘下方状态
 Version: 1.2.9
@@ -1044,7 +979,6 @@ Size: 79560
 MD5sum: 01880b335297b423d63d10c75b6bebb3
 SHA1: afd8dd6a113dc2d420bb9d5e532f52844e05a96b
 SHA256: 56bc5e23d79d9cc2a86e23074730e253ac78d869aca82a2c74817332124a6a66
-
 Package: com.yzdmm.kkgameautologin
 Name: KKGameAutoLogin
 Version: 1.0.16
@@ -1058,7 +992,6 @@ Size: 32968
 MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
-
 Package: com.yzdmm.onyx
 Name: Onyx
 Version: 0.3.3
@@ -1073,7 +1006,6 @@ Size: 56916
 MD5sum: 141f7fc44bfac9b7e30a82a215d1abf1
 SHA1: ace85ced6a0799803f16e57433c983a738550bef
 SHA256: c21038f9a7c88bf9d3cc2621f924dcb616c35b1db8a6587d61a25db2492520c4
-
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1088,7 +1020,6 @@ Size: 36892
 MD5sum: 6b1664148a12cc41159a279dc35ff591
 SHA1: efe96d99753d11585674646d81a134e899f5ce66
 SHA256: d90a0a0fc84ec8cf79c72abf5fd9c291bb4bbd7dac01f2e5bdacb06105745bc2
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.77
@@ -1103,7 +1034,6 @@ Size: 402852
 MD5sum: 1e5ba10743d3750092380901e1bd049f
 SHA1: 2a3b77959b78053e26a416e49f3db33ee4651adc
 SHA256: 4b6d2caa5fe0a4a44ab901c66635d34250bf402a1192ffe39053b689ef8cd657
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.78
@@ -1118,7 +1048,6 @@ Size: 405534
 MD5sum: 7c2857f797c784dd9f5ba820259516e6
 SHA1: 70145942afcbf3e2321a8a552fd68c140d6ba4d4
 SHA256: aa3376ba16246f1c78af0e71aee66300eee156d698eb395b1b33ae701456b461
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.79
@@ -1133,47 +1062,4 @@ Size: 405734
 MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
-
-Package: com.merged.cc-suite
-Name: CC Suite
-Version: 2.1-1
-Architecture: iphoneos-arm64e
-Maintainer: merged
-Depends: mobilesubstrate, firmware (>= 17.0), firmware (>= 11.0)
-Conflicts: com.ioscreatix.silo, com.skypain.cclocation, com.skypain.ccsettrings, com.skypain.ccrespring, com.sop.cpumagicrootless, netskao.ccbadgeclear-rootless, com.mtac.uptime, netskao.alipayscan-rootless, netskao.wechatscan-rootless, com.skypain.ccvpn, netskao.ccswitchdata-rootless, netskao.ccsim-rootless, netskao.tinyccmodules-rootless, netskao.cccellularrate-rootless, netskao.quantumultxlauncher-rootless, com.p2kdev.snapper2cc, com.skypain.ccautobrightness, com.skypain.ccscreenshot, com.skypain.cclockscreen, xyz.cypwn.safeccmodules, com.zqbb.ccpay, com.zqbb.qszqb, com.netskao.ccbadgeclear, com.kingpuffdaddi.control-center.ccvpn, com.netskao.cclifttowake, com.kdt.caperfhudmodule, com.kingpuffdaddi.control-center.ccvibration, com.hk.roothide.cc, com.hk.rootless.cc
-Replaces: com.ioscreatix.silo
-Provides: com.ioscreatix.silo
-Description: 屿哥专属!
-Filename: debs/repacked_com.merged.cc-suite_2.1-1_iphoneos-arm64e_rootless.deb
-Size: 562872
-MD5sum: b375ba8bd7638dc5f129195b14b6d2b8
-SHA1: 53019c0faef804a8846b239338e9f641a587114e
-SHA256: 2ccc3d39de3a30db3a8c0292cdb48516b2edeb53e6af959bcc4d95f423031243
-
-Package: com.merged.passtext-suite
-Name: PassText Suite
-Version: 1.0.1-1
-Architecture: iphoneos-arm64e
-Maintainer: merged
-Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
-Description: 屿哥专属!
-Filename: debs/repacked_com.merged.passtext-suite_1.0.1-1_iphoneos-arm64e_rootless.deb
-Size: 131908
-MD5sum: 25256926b50b4c60d17efec6b49fceea
-SHA1: c44277cf7e9f649823a4754167822426395e6d8e
-SHA256: 14e598b7fe0a61b165fe91a67bbfbc306f287fa4bc132b04af9bd633a56dcfa3
-
-Package: com.merged.ui-enhancer
-Name: UI Enhancer
-Version: 1.4.8-1
-Architecture: iphoneos-arm64e
-Maintainer: merged
-Depends: mobilesubstrate, preferenceloader, firmware (>= 16.0), firmware (<< 19.0)
-Conflicts: com.82flex.singlevpn
-Description: 屿哥专属!
-Filename: debs/repacked_com.merged.ui-enhancer_1.4.8-1_iphoneos-arm64e_rootless.deb
-Size: 622356
-MD5sum: a29483b4da501c7ee80972bd34ef96c8
-SHA1: 6dab74f1b718af1b6aa4e8219059c8a0f53587b6
-SHA256: 09e1432c75956de840270bb45cac92db66c688ac45d3a3553e88dd6b17e51afa
 
