@@ -1077,36 +1077,6 @@ SHA256: 74ccd4c2d6b425d4b0b022ebf86c52f5eac07707a008cd78d314ac5390674a4f
 Package: com.yzdmm.onyx
 Name: GO~
 Version: 0.5.8
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v0.5.8 恢复 0.5.0 系统级全局模拟：保存/开始即对 locationd 全局注入坐标，所有使用系统定位的 App（含百度/高德/腾讯/微信）同时生效，无需逐个勾选；导航栏「恢复」按钮（刷新旁）为回到真实位置的唯一开关，仅点击才停止模拟并清掉 locationd 残留。v0.5.7 起 App 与 Tweak 统一直写同一份 plist；v0.5.6 Tweak 直读 plist 并按秒自愈；v0.5.2 起的按 App 注入因设备注入不可靠已弃用。历史记录下方保留「记忆功能」开关：开启时进入 App 恢复上次模拟位置（除非点了恢复）。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_0.5.8_iphoneos-arm64.deb
-Size: 423964
-MD5sum: b32d6d946b6d691d6c5369a609e8764b
-SHA1: c76fed5bf12b6c0b3014cd7a954963483bdcfdcb
-SHA256: 74ccd4c2d6b425d4b0b022ebf86c52f5eac07707a008cd78d314ac5390674a4f
-
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.5.8
-Architecture: iphoneos-arm64e
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v0.5.8 恢复 0.5.0 系统级全局模拟：保存/开始即对 locationd 全局注入坐标，所有使用系统定位的 App（含百度/高德/腾讯/微信）同时生效，无需逐个勾选；导航栏「恢复」按钮（刷新旁）为回到真实位置的唯一开关，仅点击才停止模拟并清掉 locationd 残留。v0.5.7 起 App 与 Tweak 统一直写同一份 plist；v0.5.6 Tweak 直读 plist 并按秒自愈；v0.5.2 起的按 App 注入因设备注入不可靠已弃用。历史记录下方保留「记忆功能」开关：开启时进入 App 恢复上次模拟位置（除非点了恢复）。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_0.5.8_iphoneos-arm64e.deb
-Size: 423964
-MD5sum: 0241d7f08fe8cc531af0b050524b5618
-SHA1: e7f627b94d127cf4e87860539096a8deb8309c26
-SHA256: 7b4e14867cae70326f0befab45c71daf5650bc15d11da2caf7ea666aa76ddee8
-
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.5.8
 Architecture: iphoneos-arm64e
 Section: Tweaks
 Author: yzdmm
@@ -1178,3 +1148,4 @@ Size: 405734
 MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
+
