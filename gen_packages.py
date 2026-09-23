@@ -7,6 +7,7 @@
 Packages 缺 Package/Version 等字段，源在 Sileo/Zebra/Cydia 里显示空）：
   - 用通用 ar 解析读取 control.tar.{gz,xz,zst}，不再硬编码 .gz
   - 生成完索引后同步刷新 Release 的 MD5Sum/SHA1/SHA256 与 Date
+  - Release 头固定为源名 Ac`ljcr（不再沿用旧头，避免被覆盖回 yzdmm2024 / 架构警告）
 """
 import os
 import io
@@ -132,14 +133,17 @@ def format_entry(info):
 
 
 def build_release(content_str):
-    header = ''
-    if os.path.exists(RELEASE_PATH):
-        with open(RELEASE_PATH, 'r', encoding='utf-8') as f:
-            old = f.read()
-        # 保留 Date 之前的所有头字段，丢弃旧的 Date 与校验和块
-        head = old.split('MD5Sum:')[0]
-        head = '\n'.join(l for l in head.splitlines() if not l.startswith('Date:'))
-        header = head.strip() + '\n'
+    # 固定源头：源名 Ac`ljcr（不再沿用旧 Release 头，避免被覆盖回 yzdmm2024 / 架构警告）
+    header = (
+        "Origin: Ac`ljcr\n"
+        "Label: Ac`ljcr\n"
+        "Suite: stable\n"
+        "Codename: stable\n"
+        "Version: 1.0\n"
+        "Architectures: iphoneos-arm64\n"
+        "Components: main\n"
+        "Description: Ac`ljcr 越狱插件源（定位模拟等）\n"
+    )
     date = email.utils.formatdate(time.time(), usegmt=True)
     packages_bytes = content_str.encode('utf-8')
     files = {
@@ -149,12 +153,8 @@ def build_release(content_str):
     }
     for fn, b in files.items():
         p = os.path.join(HERE, fn)
-        if fn == 'Packages':
-            with open(p, 'wb') as f:
-                f.write(packages_bytes)
-        else:
-            with open(p, 'wb') as f:
-                f.write(b)
+        with open(p, 'wb') as f:
+            f.write(b)
 
     def block(algo):
         out = []
