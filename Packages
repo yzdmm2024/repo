@@ -1059,21 +1059,6 @@ MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
-Package: com.yzdmm.onyx
-Name: Onyx
-Version: 0.3.7
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
-Description: 系统级定位模拟，通过 CLSimulationManager + com.apple.locationd.simulation 私有 entitlement 向 locationd 注入坐标，全局影响所有 App。独立 App 面板：自绘高德瓦片地图选点、搜索、应用列表（搜索/图标/一键清除）、状态面板。v0.3.7 修复越狱 App 无法联网导致瓦片下载失败的问题（移除 platform-application，networkd 不再拦截；保留 locationd.simulation 等 entitlement）。rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_0.3.7_iphoneos-arm64.deb
-Size: 62880
-MD5sum: b8636dd60c395d3cf7456dc8a146d900
-SHA1: 49ca7c7bd42d09010033477a547907e70f225930
-SHA256: 5ccb410cf5087329682e3052d0f16d767b4520f7346b0637fdfd4e6f6dfd52bc
-
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1134,3 +1119,18 @@ MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
 
+Package: com.yzdmm.onyx
+Name: Onyx
+Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: 系统级定位模拟，通过 CLSimulationManager + com.apple.locationd.simulation 私有 entitlement 向 locationd 注入坐标，全局影响所有 App。独立 App 面板：自绘瓦片地图（高德优先、失败自动切换 OSM，多源回退，不开 VPN 也能出图）选点、搜索、应用列表（搜索/图标/一键清除）、状态面板。rootless 适配，A12+。
+Architecture: iphoneos-arm64
+Version: 0.3.8
+Installed-Size: 508
+Filename: debs/com.yzdmm.onyx_0.3.8_iphoneos-arm64.deb
+Size: 64312
+MD5sum: 7ece0722d1e76cc3a940ac6654e7a19a
+SHA1: c303ad3bff2267f1fb7bab1d5efa85d7763041bb
+SHA256: b2ee1e26532e9fec2dce6b129e8b3c274398384afec694e3bd13dfff3653596c
