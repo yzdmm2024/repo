@@ -1076,6 +1076,36 @@ MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.6.0
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 想去哪里就去哪里。v0.6.0 重大更新：改用 CLSimulationManager 系统级定位模拟，Tweak 只注入 SpringBoard，不再 hook 任何 App 内定位接口/地图 SDK，钉钉等反作弊检测不到异常 dylib，定位模拟稳定不暴露。保留瓦片代拉加速(6并发+队列化+智能超时)。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_0.6.0_iphoneos-arm64.deb
+Size: 431276
+MD5sum: c7cc8328ae083a530e1329551edd45c1
+SHA1: 90eba896727c0ff83f71ef00a2d90654548657e6
+SHA256: 57683676889a488d5ff19bd74988f3056e7c2f4547001c0a57c430cd35b76ea3
+
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.6.0
+Architecture: iphoneos-arm64e
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 想去哪里就去哪里。v0.6.0 重大更新：改用 CLSimulationManager 系统级定位模拟，Tweak 只注入 SpringBoard，不再 hook 任何 App 内定位接口/地图 SDK，钉钉等反作弊检测不到异常 dylib，定位模拟稳定不暴露。保留瓦片代拉加速(6并发+队列化+智能超时)。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_0.6.0_iphoneos-arm64e.deb
+Size: 431280
+MD5sum: c00bf96f2df57ec6c57cd06155a4568f
+SHA1: ce904fa816ac5d2d1ffbf645485220a8427c253d
+SHA256: fa9bd5568f938b396bb6c64bc6bfe3d90c99072528b7173c82ed4d0e91b3121c
+
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1136,32 +1166,3 @@ MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
 
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.6.0
-Section: Tweaks
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Maintainer: yzdmm
-Author: yzdmm
-Description: 想去哪里就去哪里。v0.6.0 重大更新：改用 CLSimulationManager 系统级定位模拟，Tweak 只注入 SpringBoard，不再 hook 任何 App 内定位接口/地图 SDK，钉钉等反作弊检测不到异常 dylib，定位模拟稳定不暴露。保留瓦片代拉加速(6并发+队列化+智能超时)。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Architecture: iphoneos-arm64
-Filename: debs/com.yzdmm.onyx_0.6.0_iphoneos-arm64.deb
-Size: 431276
-MD5sum: c7cc8328ae083a530e1329551edd45c1
-SHA1: 90eba896727c0ff83f71ef00a2d90654548657e6
-SHA256: 57683676889a488d5ff19bd74988f3056e7c2f4547001c0a57c430cd35b76ea3
-
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.6.0
-Section: Tweaks
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Maintainer: yzdmm
-Author: yzdmm
-Description: 想去哪里就去哪里。v0.6.0 重大更新：改用 CLSimulationManager 系统级定位模拟，Tweak 只注入 SpringBoard，不再 hook 任何 App 内定位接口/地图 SDK，钉钉等反作弊检测不到异常 dylib，定位模拟稳定不暴露。保留瓦片代拉加速(6并发+队列化+智能超时)。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Architecture: iphoneos-arm64e
-Filename: debs/com.yzdmm.onyx_0.6.0_iphoneos-arm64e.deb
-Size: 431280
-MD5sum: c00bf96f2df57ec6c57cd06155a4568f
-SHA1: ce904fa816ac5d2d1ffbf645485220a8427c253d
-SHA256: fa9bd5568f938b396bb6c64bc6bfe3d90c99072528b7173c82ed4d0e91b3121c
