@@ -1076,36 +1076,6 @@ MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.7.2
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v0.7.2 修复 Tweak 读不到配置的问题：配置同步写入 /var/tmp 公共路径，沙盒 App 内的 Tweak 也能读到，黑名单模式真正生效。v0.7.1 彻底移除系统级模拟。App图标/名称隐身优化。瓦片代拉6并发加速。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_0.7.2_iphoneos-arm64.deb
-Size: 557388
-MD5sum: ede756cb28f3f0618ccc3ffd4f1a57bc
-SHA1: 631945187e90dfd4a5f90363cf65985f09adc114
-SHA256: 88bd175880d29c64d326c5e21b97af3761bee6cf0885c95f1b5c260784a38241
-
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.7.2
-Architecture: iphoneos-arm64e
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v0.7.2 修复 Tweak 读不到配置的问题：配置同步写入 /var/tmp 公共路径，沙盒 App 内的 Tweak 也能读到，黑名单模式真正生效。v0.7.1 彻底移除系统级模拟。App图标/名称隐身优化。瓦片代拉6并发加速。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_0.7.2_iphoneos-arm64e.deb
-Size: 557388
-MD5sum: 7bd4159b782eb722af46ed8bb19c58be
-SHA1: afdeb3a654ec15d18f1959fdc8cb7bcb6049f184
-SHA256: 5981edcc371f3a96ea24be3ca7a62e76d0a544497647046e83da6bdcae11e69d
-
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1166,3 +1136,32 @@ MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
 
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.7.3
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Maintainer: yzdmm
+Author: yzdmm
+Description: 想去哪里就去哪里。v0.7.3 修复配置读取：配置同步写入 Tweak 同目录（MobileSubstrate/DynamicLibraries），dylib 能加载就能读到，沙盒也不挡。加诊断日志便于排查。v0.7.1 彻底移除系统级模拟。黑名单模式。App图标/名称隐身。瓦片代拉6并发。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Architecture: iphoneos-arm64
+Filename: debs/com.yzdmm.onyx_0.7.3_iphoneos-arm64.deb
+Size: 557804
+MD5sum: 896202f608eec242f4f77e43d6b43308
+SHA1: 9fd50235d6155d3f9e14b8918b5ecbe6a063aeea
+SHA256: 0bea3dbd06a394badd72e14c87f325a945c884001cb244fd9de9da02c466bf06
+
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.7.3
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Maintainer: yzdmm
+Author: yzdmm
+Description: 想去哪里就去哪里。v0.7.3 修复配置读取：配置同步写入 Tweak 同目录（MobileSubstrate/DynamicLibraries），dylib 能加载就能读到，沙盒也不挡。加诊断日志便于排查。v0.7.1 彻底移除系统级模拟。黑名单模式。App图标/名称隐身。瓦片代拉6并发。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Architecture: iphoneos-arm64e
+Filename: debs/com.yzdmm.onyx_0.7.3_iphoneos-arm64e.deb
+Size: 557460
+MD5sum: 71d917a75a60ae609ad04bf88705cf7e
+SHA1: 6db186b510363c3b0518be8d2475d6d774b4c156
+SHA256: 56d1ad92eca800bb148db08d400437b6921690aff6740115446a27a29c94e79f
