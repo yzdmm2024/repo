@@ -1212,33 +1212,33 @@ SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
 Package: com.yzdmm.onyx
 Name: GO~
-Version: 1.0.3
+Version: 1.1.0
 Architecture: iphoneos-arm64
 Section: 越狱后必备
 Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v1.0.3 修复「其他 App 一直显示真实定位」：旧版只注入 SpringBoard 走系统级模拟(CLSimulationManager)，第三方 App 的 CoreLocation 拿不到假坐标；现改为每个 App 进程内直接 Hook CLLocationManager(location 取值/startUpdatingLocation/requestLocation/setDelegate 回调)注入假坐标兜底，覆盖系统模拟下不到的 App。v1.0.2 修复 relaxin 卸载弹 Ellekit corrupted + 找回 /var/tmp 配置路径。支持 iOS 15-17，rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_1.0.3_iphoneos-arm64.deb
-Size: 556172
-MD5sum: bd4925f7c473322a2a9d539b7853a3ee
-SHA1: 5f075fd75492cdfa6d6d6e40cf547f0b802ccf3a
-SHA256: dadb8736ac25855e2e20ff92dbc6ffcc172b8c7b6b2a085d35277d01ae853bb7
+Description: 想去哪里就去哪里。v1.1.0 彻底修复「第三方 App 一直显示真实定位」：回到 v0.7 验证可用的 per-app 直注方案——直接 Hook CLLocation 类本体(coordinate/init/locationWithLatitude) + CLLocationManager + 百度/高德/腾讯三家地图 SDK，任何 App 读到/构造的坐标都被洗成假坐标；SpringBoard 保留 CLSimulationManager 系统级模拟作兜底。新增黑名单：App 内「黑名单（排除应用）」可把不需要改定位的 App 加进去，这些 App 保持真实位置。v1.0.2 修复 relaxin 卸载弹 Ellekit corrupted + 找回 /var/tmp 配置路径。支持 iOS 15-17，rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_1.1.0_iphoneos-arm64.deb
+Size: 558780
+MD5sum: 8ac84a2e7ea5a06a427ba5234740ad22
+SHA1: 1a84ca3a2bf30606126edfe5533c44032f76b93d
+SHA256: 2240fc6ad4211c7e6987ad21c5360da4cf86426267bcea70f979376d2e836528
 
 Package: com.yzdmm.onyx
 Name: GO~
-Version: 1.0.3
+Version: 1.1.0
 Architecture: iphoneos-arm64e
 Section: 越狱后必备
 Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v1.0.3 修复「其他 App 一直显示真实定位」：旧版只注入 SpringBoard 走系统级模拟(CLSimulationManager)，第三方 App 的 CoreLocation 拿不到假坐标；现改为每个 App 进程内直接 Hook CLLocationManager(location 取值/startUpdatingLocation/requestLocation/setDelegate 回调)注入假坐标兜底，覆盖系统模拟下不到的 App。v1.0.2 修复 relaxin 卸载弹 Ellekit corrupted + 找回 /var/tmp 配置路径。支持 iOS 15-17，rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_1.0.3_iphoneos-arm64e.deb
-Size: 556112
-MD5sum: a9b9a8ff3e0e49651dff6c3168c3e906
-SHA1: 71f2aa7907e52ddccacd50672e57a7946c189979
-SHA256: b1bff55f0a4540a81ad32201a68b28e90c7955fec8e6a38d20cfed079e9bb02f
+Description: 想去哪里就去哪里。v1.1.0 彻底修复「第三方 App 一直显示真实定位」：回到 v0.7 验证可用的 per-app 直注方案——直接 Hook CLLocation 类本体(coordinate/init/locationWithLatitude) + CLLocationManager + 百度/高德/腾讯三家地图 SDK，任何 App 读到/构造的坐标都被洗成假坐标；SpringBoard 保留 CLSimulationManager 系统级模拟作兜底。新增黑名单：App 内「黑名单（排除应用）」可把不需要改定位的 App 加进去，这些 App 保持真实位置。v1.0.2 修复 relaxin 卸载弹 Ellekit corrupted + 找回 /var/tmp 配置路径。支持 iOS 15-17，rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_1.1.0_iphoneos-arm64e.deb
+Size: 558768
+MD5sum: f92301610b2969328454765f965f1ca0
+SHA1: 2297a781ab3cd5b8747d3dfc313d7289afa927be
+SHA256: 883988ac72266197e7f283e1a795f4b26cdfafa00eff789cb14635a4c9f1c7bc
 
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
