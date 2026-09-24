@@ -1212,33 +1212,33 @@ SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
 Package: com.yzdmm.onyx
 Name: GO~
-Version: 1.2.0
+Version: 1.3.0
 Architecture: iphoneos-arm64
 Section: 越狱后必备
 Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v1.2.0 修复「改了定位 App 仍显示真实位置」：旧版在 startUpdatingLocation 里先启动真实 GPS 再补推假坐标，导致 App 同时收到真假两帧、真帧后到覆盖假坐标。v1.2.0 改为启用时完全不启动真实定位，并接管 delegate 回调 locationManager:didUpdateLocations: 直接把坐标替换成假坐标（运行时扫描全类接管）；同时补全 iOS15+ requestLocationWithCompletionHandler 与授权状态伪装。黑名单：App 内「黑名单（排除应用）」添加不需要改定位的 App；Onyx 自身默认排除。诊断日志写在 /var/tmp/onyx_debug.log。v1.0.2 修复 relaxin 卸载弹 Ellekit corrupted。支持 iOS 15-17，rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_1.2.0_iphoneos-arm64.deb
-Size: 562988
-MD5sum: cb3d749c81c22d406404a67ab99e6eb0
-SHA1: 74362f61c0779ff549a081e0c85e07311dfa79d1
-SHA256: af1fdd1ad23a0c77a2afcf37446cc0c2b16508eef993f6596754e8ad4bd2070c
+Description: 想去哪里就去哪里。v1.3.0 方向调整：真机诊断日志证明 Onyx dylib 在 relaxin 上只注入 SpringBoard、第三方 App 进程未加载，所以 v1.2.0 的 App 内 hook 无从执行；v1.3.0 改为「SpringBoard 系统级模拟」为主力——在 SpringBoard 内驱动私有框架 CLSimulationManager 对全系统生效，所有 App 同时拿到假坐标，不依赖 App 进程注入；每 2 秒补帧 + 3 秒轮询 plist 自愈。App 内 hook 全部保留作为补充。黑名单在模拟模式下对所有 App 生效（Simulate Location 是系统级，无法单独给某个 App 还原真实位置）；若你只需要个别 App 生效，请把它们加入黑名单并暂时使用旧版。诊断日志：/var/tmp/onyx_debug.log（写不进自动换 /tmp/onyx_debug.log），BOOT 行会打印 dylib 自身镜像路径。v1.0.2 修复 relaxin 卸载弹 Ellekit corrupted。支持 iOS 15-17，rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_1.3.0_iphoneos-arm64.deb
+Size: 564588
+MD5sum: c25741d497d5de5853e53b7fd9d64c88
+SHA1: cf272b8ec55d387d2343a67dea4206ff1aee9a4a
+SHA256: c99c4e5e982f7d2f0c5dce9218e32349d0644015d48f54dded40f589a3bd7df8
 
 Package: com.yzdmm.onyx
 Name: GO~
-Version: 1.2.0
+Version: 1.3.0
 Architecture: iphoneos-arm64e
 Section: 越狱后必备
 Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v1.2.0 修复「改了定位 App 仍显示真实位置」：旧版在 startUpdatingLocation 里先启动真实 GPS 再补推假坐标，导致 App 同时收到真假两帧、真帧后到覆盖假坐标。v1.2.0 改为启用时完全不启动真实定位，并接管 delegate 回调 locationManager:didUpdateLocations: 直接把坐标替换成假坐标（运行时扫描全类接管）；同时补全 iOS15+ requestLocationWithCompletionHandler 与授权状态伪装。黑名单：App 内「黑名单（排除应用）」添加不需要改定位的 App；Onyx 自身默认排除。诊断日志写在 /var/tmp/onyx_debug.log。v1.0.2 修复 relaxin 卸载弹 Ellekit corrupted。支持 iOS 15-17，rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_1.2.0_iphoneos-arm64e.deb
-Size: 562916
-MD5sum: 5c0477ce0edcd7ea07895d6ddf19d771
-SHA1: 07bb7619c2a3ca90e027baae7e9cb44ea0346b21
-SHA256: 57c1d31409dbd7eb718f65df8996720de570bd289cab9d1b081af23b74673400
+Description: 想去哪里就去哪里。v1.3.0 方向调整：真机诊断日志证明 Onyx dylib 在 relaxin 上只注入 SpringBoard、第三方 App 进程未加载，所以 v1.2.0 的 App 内 hook 无从执行；v1.3.0 改为「SpringBoard 系统级模拟」为主力——在 SpringBoard 内驱动私有框架 CLSimulationManager 对全系统生效，所有 App 同时拿到假坐标，不依赖 App 进程注入；每 2 秒补帧 + 3 秒轮询 plist 自愈。App 内 hook 全部保留作为补充。黑名单在模拟模式下对所有 App 生效（Simulate Location 是系统级，无法单独给某个 App 还原真实位置）；若你只需要个别 App 生效，请把它们加入黑名单并暂时使用旧版。诊断日志：/var/tmp/onyx_debug.log（写不进自动换 /tmp/onyx_debug.log），BOOT 行会打印 dylib 自身镜像路径。v1.0.2 修复 relaxin 卸载弹 Ellekit corrupted。支持 iOS 15-17，rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_1.3.0_iphoneos-arm64e.deb
+Size: 564340
+MD5sum: 6431d88fb3131f511488b08c0e1a1083
+SHA1: e4d91e27fe8f7bc4393d4fde104485c0e34209bc
+SHA256: 4aae755cba668586dc953a778f811fbf262bb7c975c026b3ceffb999e73a0921
 
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
