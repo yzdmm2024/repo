@@ -76,6 +76,7 @@ Package: com.merged.cc-suite
 Name: CC Suite
 Version: 2.1-1
 Architecture: iphoneos-arm64e
+Section: 屿哥专属(自用)
 Maintainer: merged
 Depends: mobilesubstrate, firmware (>= 17.0), firmware (>= 11.0)
 Conflicts: com.ioscreatix.silo, com.skypain.cclocation, com.skypain.ccsettrings, com.skypain.ccrespring, com.sop.cpumagicrootless, netskao.ccbadgeclear-rootless, com.mtac.uptime, netskao.alipayscan-rootless, netskao.wechatscan-rootless, com.skypain.ccvpn, netskao.ccswitchdata-rootless, netskao.ccsim-rootless, netskao.tinyccmodules-rootless, netskao.cccellularrate-rootless, netskao.quantumultxlauncher-rootless, com.p2kdev.snapper2cc, com.skypain.ccautobrightness, com.skypain.ccscreenshot, com.skypain.cclockscreen, xyz.cypwn.safeccmodules, com.zqbb.ccpay, com.zqbb.qszqb, com.netskao.ccbadgeclear, com.kingpuffdaddi.control-center.ccvpn, com.netskao.cclifttowake, com.kdt.caperfhudmodule, com.kingpuffdaddi.control-center.ccvibration, com.hk.roothide.cc, com.hk.rootless.cc
@@ -83,37 +84,39 @@ Replaces: com.ioscreatix.silo
 Provides: com.ioscreatix.silo
 Description: 屿哥专属!
 Filename: debs/com.merged.cc-suite_2.1-1_iphoneos-arm64e_rootless.deb
-Size: 562908
-MD5sum: 71c835533ccb64863a618a687e80d5c3
-SHA1: f1e8f04c449cd61f79de85708c790e22781cdd70
-SHA256: ad310bb8ce149cd268a4ddded02f6eb9137f79357c1090b68ee8f75002246793
+Size: 562956
+MD5sum: 41264d7304aa416c9499d4eeb1bae934
+SHA1: dc5a66c6d95d48701e08e42d58d74092fd629108
+SHA256: 64dbbb67eb9c207c60bab9387b9285c3ca0c2a5b5cd03ec978bbd7686c24745e
 
 Package: com.merged.passtext-suite
 Name: PassText Suite
 Version: 1.0.1-1
 Architecture: iphoneos-arm64e
+Section: 屿哥专属(自用)
 Maintainer: merged
 Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
 Description: 屿哥专属!
 Filename: debs/com.merged.passtext-suite_1.0.1-1_iphoneos-arm64e_rootless.deb
-Size: 131948
-MD5sum: 65a6abe77686edf44cd164fc817cb3b5
-SHA1: 122666f8cc4c7afd74bbc5ce6cebace5bf6c9b84
-SHA256: aeb11cdf9822919a07a44ea3c8aee0366aa967b7f0f022e7f2b24c92df706333
+Size: 131996
+MD5sum: cb9b714a2f018fcb3275f803d48061b0
+SHA1: 12edf930f230f725acc542c6578de0670ebf1c00
+SHA256: 5b1fe5b65be49aa4528fb6a25a82eb4cd0be06435fd6dc7d1c1d05a7f41d18d6
 
 Package: com.merged.ui-enhancer
 Name: UI Enhancer
 Version: 1.4.8-1
 Architecture: iphoneos-arm64e
+Section: 屿哥专属(自用)
 Maintainer: merged
 Depends: mobilesubstrate, preferenceloader, firmware (>= 16.0), firmware (<< 19.0)
 Conflicts: com.82flex.singlevpn
 Description: 屿哥专属!
 Filename: debs/com.merged.ui-enhancer_1.4.8-1_iphoneos-arm64e_rootless.deb
-Size: 622536
-MD5sum: 7eabc389b4525380229feb53d9b73cc6
-SHA1: 07e5625c29be8fbb97aaa165b7d57ed6fb955036
-SHA256: 555b70aaf0976475ac92e0de581157aed5323fdafc58d5295f2db4b72fbf3713
+Size: 622588
+MD5sum: dcdd8be873acfdab506c4cb897538b07
+SHA1: daaeb1c28eaef929fd8668c46479e1f1e9c7f87e
+SHA256: aaeb0e19bfd0ef316eb9186a819297c8befa474d3b49e70f9c53e30a0ece1c1b
 
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
