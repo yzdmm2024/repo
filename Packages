@@ -1059,6 +1059,66 @@ MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.5.9.1
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 想去哪里就去哪里。v0.5.9.1 新增程序化离线底图（纯本机网络即可用，不依赖任何 VPN/代理）：高德->高德webst->OSM 三源全失败时自动切换为程序化绘制的经纬网格底图，地图永不空白；网络恢复或手动刷新自动回到在线瓦片。瓦片请求走系统默认通道，用运营商卡/普通WiFi直连高德国内CDN即可正常出图，无需开启任何加速软件。v0.5.9 修复点「恢复」后地图光标回真实位置、快速定位输入框键盘遮挡。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_0.5.9.1_iphoneos-arm64.deb
+Size: 426968
+MD5sum: 34900bf3c60135ec00cac84392f0908f
+SHA1: c43dc3c2b864f62f48bf8e022ce2ac3cd74a4b1c
+SHA256: a470fffefbbdb538f21a66c1db700b2a674f859f48fb4480505b9dc77202b9da
+
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.5.9.1
+Architecture: iphoneos-arm64e
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 想去哪里就去哪里。v0.5.9.1 新增程序化离线底图（纯本机网络即可用，不依赖任何 VPN/代理）：高德->高德webst->OSM 三源全失败时自动切换为程序化绘制的经纬网格底图，地图永不空白；网络恢复或手动刷新自动回到在线瓦片。瓦片请求走系统默认通道，用运营商卡/普通WiFi直连高德国内CDN即可正常出图，无需开启任何加速软件。v0.5.9 修复点「恢复」后地图光标回真实位置、快速定位输入框键盘遮挡。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_0.5.9.1_iphoneos-arm64e.deb
+Size: 426964
+MD5sum: 2a296794a8af8683f00e25e6f1b70ab1
+SHA1: 585c1dd06c25f6886ec8c5dac41f28d630806d83
+SHA256: 731a637ee9ef3364403d99ba4127dd84c8126ee76addbc95af1e23f511c4441c
+
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.5.9
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 想去哪里就去哪里。v0.5.9 修复：1）点「恢复」后地图红色光标会请求一次真实定位并移回真实地址，看地图即知已恢复；2）快速定位输入框键盘弹出后滚动修正，完整显示正在输入的文字。v0.5.8 恢复系统级全局模拟：保存/开始即对 locationd 全局注入坐标，所有使用系统定位的 App（含百度/高德/腾讯/微信）同时生效；「恢复」按钮（刷新旁）为回到真实位置的唯一开关，仅点击才停止模拟并清掉 locationd 残留。历史记录下方「记忆功能」开关：开启时进入 App 恢复上次模拟位置（除非点了恢复）。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_0.5.9_iphoneos-arm64.deb
+Size: 424636
+MD5sum: 76cb7b25cbfb42cbc69366347086e214
+SHA1: 12249ca4bad2000544358c1b7a6435961ab138c9
+SHA256: bcbe56b4e447d71ab00800be4fe56255f13113f867161ae20eb550cbb31a0d33
+
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.5.9
+Architecture: iphoneos-arm64e
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 想去哪里就去哪里。v0.5.9 修复：1）点「恢复」后地图红色光标会请求一次真实定位并移回真实地址，看地图即知已恢复；2）快速定位输入框键盘弹出后滚动修正，完整显示正在输入的文字。v0.5.8 恢复系统级全局模拟：保存/开始即对 locationd 全局注入坐标，所有使用系统定位的 App（含百度/高德/腾讯/微信）同时生效；「恢复」按钮（刷新旁）为回到真实位置的唯一开关，仅点击才停止模拟并清掉 locationd 残留。历史记录下方「记忆功能」开关：开启时进入 App 恢复上次模拟位置（除非点了恢复）。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_0.5.9_iphoneos-arm64e.deb
+Size: 424636
+MD5sum: 9d79845c8e8b6abc3f900ca5b8e067b5
+SHA1: bea9f9626cf177faeb2095b8998f6460dac3d51b
+SHA256: 8213ac5d6dfd70bca2ead4a246a561599bdd517080df2c798c5c01654cb1402b
+
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1119,33 +1179,3 @@ MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
 
-
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.5.9.1
-Section: Tweaks
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Maintainer: yzdmm
-Author: yzdmm
-Description: 想去哪里就去哪里。v0.5.9.1 新增程序化离线底图（纯本机网络即可用，不依赖任何 VPN/代理）：高德->高德webst->OSM 三源全失败时自动切换为程序化绘制的经纬网格底图，地图永不空白；网络恢复或手动刷新自动回到在线瓦片。瓦片请求走系统默认通道，用运营商卡/普通WiFi直连高德国内CDN即可正常出图，无需开启任何加速软件。v0.5.9 修复点「恢复」后地图光标回真实位置、快速定位输入框键盘遮挡。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Architecture: iphoneos-arm64
-Filename: debs/com.yzdmm.onyx_0.5.9.1_iphoneos-arm64.deb
-Size: 426968
-MD5sum: 34900bf3c60135ec00cac84392f0908f
-SHA1: c43dc3c2b864f62f48bf8e022ce2ac3cd74a4b1c
-SHA256: a470fffefbbdb538f21a66c1db700b2a674f859f48fb4480505b9dc77202b9da
-
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.5.9.1
-Section: Tweaks
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Maintainer: yzdmm
-Author: yzdmm
-Description: 想去哪里就去哪里。v0.5.9.1 新增程序化离线底图（纯本机网络即可用，不依赖任何 VPN/代理）：高德->高德webst->OSM 三源全失败时自动切换为程序化绘制的经纬网格底图，地图永不空白；网络恢复或手动刷新自动回到在线瓦片。瓦片请求走系统默认通道，用运营商卡/普通WiFi直连高德国内CDN即可正常出图，无需开启任何加速软件。v0.5.9 修复点「恢复」后地图光标回真实位置、快速定位输入框键盘遮挡。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Architecture: iphoneos-arm64e
-Filename: debs/com.yzdmm.onyx_0.5.9.1_iphoneos-arm64e.deb
-Size: 426964
-MD5sum: 2a296794a8af8683f00e25e6f1b70ab1
-SHA1: 585c1dd06c25f6886ec8c5dac41f28d630806d83
-SHA256: 731a637ee9ef3364403d99ba4127dd84c8126ee76addbc95af1e23f511c4441c
