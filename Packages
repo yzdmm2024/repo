@@ -1076,36 +1076,6 @@ MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.5.9.3
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v0.5.9.3 无网强兜底：OSM 源一次失败立即进离线程序化底图（不再等 3 连），提高网格对比度+中心坐标标签，杜绝地图空白。v0.5.9.2 补 platform-application + 去沙盒 entitlement 解除网络隔离。v0.5.9.1 新增程序化离线底图。v0.5.9 恢复系统级全局模拟 + 恢复真实位置按钮 + 记忆开关。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_0.5.9.3_iphoneos-arm64.deb
-Size: 427544
-MD5sum: 76cebf534f940eaaba7fcc450d92f7ce
-SHA1: bcde0262fcfd84308e44f135139003a639ac63da
-SHA256: af171f1417d3990ad0b95b24cea47ef95e678895a2e858ba57c0e6c478412b14
-
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.5.9.3
-Architecture: iphoneos-arm64e
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v0.5.9.3 无网强兜底：OSM 源一次失败立即进离线程序化底图（不再等 3 连），提高网格对比度+中心坐标标签，杜绝地图空白。v0.5.9.2 补 platform-application + 去沙盒 entitlement 解除网络隔离。v0.5.9.1 新增程序化离线底图。v0.5.9 恢复系统级全局模拟 + 恢复真实位置按钮 + 记忆开关。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_0.5.9.3_iphoneos-arm64e.deb
-Size: 427544
-MD5sum: 6dc5bc149f0f69d5fc5fab1b589d2711
-SHA1: 57e5b6f3ec3993048682e963244973cb25562741
-SHA256: 55434aedab6ce27357c5e13cdf9038a39e32679678284e096b44d4dfa14003f6
-
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1166,3 +1136,32 @@ MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
 
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.5.9.4
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Maintainer: yzdmm
+Author: yzdmm
+Description: 想去哪里就去哪里。v0.5.9.4 根治无 VPN 瓦片加载：新增独立 root 常驻 daemon(OnyxNetDaemon, platform-application 联网) 唯一负责代拉瓦片落盘共享缓存，OnyxApp 直接读取，不再依赖 SpringBoard/自联网络，断网也能出图有离线底图兜底。v0.5.9.3 无网强兜底：OSM 源一次失败立即进离线程序化底图。v0.5.9.2 补 no-sandbox entitlement。v0.5.9.1 新增程序化离线底图。v0.5.9 恢复系统级全局模拟 + 恢复真实位置 + 记忆开关。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Architecture: iphoneos-arm64
+Filename: debs/com.yzdmm.onyx_0.5.9.4_iphoneos-arm64.deb
+Size: 437608
+MD5sum: 2dc70c04fedd41359f1b0ca920603feb
+SHA1: 1872f07e0fee690a6faf8af59917c9f3e24c5656
+SHA256: 06903a0e6026be113f3fbe11ed34ce60b07b43ba9469bf539eb958d93d7da321
+
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.5.9.4
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Maintainer: yzdmm
+Author: yzdmm
+Description: 想去哪里就去哪里。v0.5.9.4 根治无 VPN 瓦片加载：新增独立 root 常驻 daemon(OnyxNetDaemon, platform-application 联网) 唯一负责代拉瓦片落盘共享缓存，OnyxApp 直接读取，不再依赖 SpringBoard/自联网络，断网也能出图有离线底图兜底。v0.5.9.3 无网强兜底：OSM 源一次失败立即进离线程序化底图。v0.5.9.2 补 no-sandbox entitlement。v0.5.9.1 新增程序化离线底图。v0.5.9 恢复系统级全局模拟 + 恢复真实位置 + 记忆开关。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Architecture: iphoneos-arm64e
+Filename: debs/com.yzdmm.onyx_0.5.9.4_iphoneos-arm64e.deb
+Size: 437604
+MD5sum: ca3ac7a39a50fc9d200dde6e7968bb97
+SHA1: a67650dc720c9374bb7a2def50b81dcc2f3f04a9
+SHA256: 783f2f6565536fe6208d1492a3f48d9289de53488ba9f587fcb149e0f3439ead
