@@ -1136,3 +1136,349 @@ MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
 
+Package: byg.iosios.net.appdata-rootless
+Name: AppData软件降级-Rootless
+Version: 2.7.3
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: Fouad Raheb
+Maintainer: 搬运工
+Depends: firmware (>= 11.0), mobilesubstrate, preferenceloader
+Pre-Depends: rootless-compat (>= 0.9)
+Description: 本插件功能非常的强大，可以降级APP软件版本，这是最nice的功能，还可以查看软件所占内存的大小，可以清除APP缓存，修改软件名称，修改角标数量，可以重置APP到刚下载时候的设置！可以查看软件的bundleID，可以直接跳转到软件的缓存及安装路径，可谓越狱必装插件，效果看截图介绍！安装之后去设置里开启插件唤醒的方式，然后注销即可，可以选择长按或者上滑软件，任君选择，搬运工源，永久免费！本插件由iosdump大神修复更新！感谢iosdump！
+Icon: https://chinesebuilding.club/pic/cydia.png
+Filename: debs/byg.iosios.net.appdata-rootless_2.7.3_iphoneos-arm64e.deb
+Size: 2407190
+MD5sum: 9b6e73bc0116e20e357cda4ade0712f5
+SHA1: 20de762f28f1f6a77c69b348a6a48604f104c99a
+SHA256: fea85b23d8e3de2486bb40298360201be00d486a956a7adda2a49e09e92df393
+
+Package: byg.iosios.net.settingsrevamp
+Name: SettingsRevamp-设置归类
+Version: 3.0.1-1
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: SOPPPra
+Maintainer: 搬运工
+Depends: mobilesubstrate, preferenceloader, com.mrgcgamer.libgcuniversal, firmware (>= 14)
+Pre-Depends: rootless-compat (>= 0.9)
+Conflicts: com.creaturecoding.shuffle, com.trappledestek.ikset, pro.ikghd.iksettings, preferenceloader.rootless.tops, org.mr.settingswidgets, com.trappledestek.settingswidgets, com.shepgoba.settingswidgets, preferenceloader.rootless.top, com.hk.settingsrevamp.cn.rl
+Description: Customize the ios settings page插件设置归类，一款将插件归类，美化系统设置的插件，已最新汉化，无需汉化包！可以更换设置背景图片，把插件归纳到一起！具体可以观看插件介绍，非常的nice！后续有更新，等搬运工源第一时间更新！2.1.1旧版本搬运工源群文件里有！
+Icon: https://chinesebuilding.club/pic/cydia.png
+Filename: debs/byg.iosios.net.settingsrevamp_3.0.1-1_iphoneos-arm64e.deb
+Size: 522430
+MD5sum: 0c93ec37456bf5479ebd6b080ef2725f
+SHA1: 3dcda737c777dd37c846a3eba69fba86374ef3e1
+SHA256: 5a4c6d39903f9cf076dc2d27ea60eb88acf870e0678f6336c027fec0973dc5f0
+
+Package: com.mrgcgamer.libgcuniversal
+Name: LibGcUniversal
+Version: 1.7.0
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: MrGcGamer
+Maintainer: MrGcGamer
+Depends: firmware (>= 14.0) | ws.hbang.alderis, firmware (>= 12.0)
+Pre-Depends: rootless-compat (>= 0.9)
+Provides: com.mrgcgamer.libgcimagepicker, com.mrgcgamer.libgccolorpicker
+Description: An awesome library of some sort!!
+Tag: role::developer
+Filename: debs/com.mrgcgamer.libgcuniversal_1.7.0_iphoneos-arm64e.deb
+Size: 123528
+MD5sum: 7a6eeb707953b8339cc442f560314b7d
+SHA1: 6a65032f7013330f0d96fca46a5db8a80b313822
+SHA256: 60407f4159bc396c0ef3016a0db3bb31e40a2feb99eb828d824915afb4d21c98
+
+Package: com.opa334.altlist
+Name: AltList
+Version: 1.0.11
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: opa334
+Maintainer: opa334
+Depends: firmware (>= 7.0)
+Description: A modern AppList alternative
+Tag: role::developer
+Filename: debs/com.opa334.altlist_1.0.11_iphoneos-arm64e.deb
+Size: 59306
+MD5sum: 52ea5b5e3edb6c30397dd486ec7c0511
+SHA1: 7344224b00c2a9fa446d9d8b71a146b064e06413
+SHA256: 826732cebdd2ed3ed5d20e901c20894754efb000a191a890c5444b8c8f733757
+
+Package: com.opa334.ccsupport
+Name: CCSupport
+Version: 1.3.13-2-15+debug
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: opa334
+Maintainer: opa334
+Depends: mobilesubstrate, firmware (>= 11.0)
+Conflicts: com.ioscreatix.silo
+Replaces: com.ioscreatix.silo
+Provides: com.ioscreatix.silo
+Description: Support tweak for CC modules!
+Filename: debs/com.opa334.ccsupport_1.3.13-2-15_2Bdebug_iphoneos-arm64e.deb
+Size: 176844
+MD5sum: 453647fc04cc27f56251e7b8962abda8
+SHA1: ae857159b68127829a4d2ac1fe6e7d74a8c8f6f3
+SHA256: abadc0d65d058b07ec56450b449dfcdba83c82ebe8c8007df974d2b50f63765d
+
+Package: com.opa334.libsandy
+Name: libSandy
+Version: 1.1.6-4
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: opa334
+Maintainer: opa334
+Description: Securely extend the sandbox of system processes and user applications
+Tag: role::developer
+Filename: debs/com.opa334.libsandy_1.1.6-4_iphoneos-arm64e.deb
+Size: 45996
+MD5sum: 79ce3b491989d0e775cc324cd8a906f6
+SHA1: 9fcb65e9e2b24dedcd16f620caa53a14ddec69f5
+SHA256: 3b22f89afa6811633f4eeba7ac3aa3fcde32ea4320ca248b3a80188d23617df7
+
+Package: com.roothide.patcher
+Name: RootHide Patcher
+Version: 2.1.4-1+debug
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: roothide
+Maintainer: roothide
+Depends: firmware (>= 15.0), libxar1, ldid, file, dpkg, gawk, plutil (>= 0.2.2-1), uikittools (>= 2.1.6-4)
+Description: patch rootless package to roothide, not work for all packages.
+Icon: https://github.com/roothide/RootHidePatcher/blob/master/derootifier-2-modified.png?raw=true
+Filename: debs/com.roothide.patcher_2.1.4-1_2Bdebug_iphoneos-arm64e.deb
+Size: 2823170
+MD5sum: 9a3a10eab6da0dfd99f99a17f9cd27fb
+SHA1: d0cb5481244e8859ddd20ff0fdec665b6a1b432b
+SHA256: 18152a94d14bf72c7b5bf294f0fe0543ce3d38f7080a405d007251fdc0f209bb
+
+Package: com.xybp888.callassist16.dopamine.roothide
+Name: 电话助手iOS16-正式版(Roothide)
+Version: 3.1.1
+Architecture: iphoneos-arm64e
+Priority: optional
+Section: 越狱后必备
+Author: xybp888
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Filename: debs/com.xybp888.callassist16.dopamine.roothide_3.1.1_iphoneos-arm64e.deb
+Size: 7968964
+MD5sum: efccbe998fd12160c561e452acd93cd8
+SHA1: 8b154045a3526a9461d59858f6a09b03b3da8420
+SHA256: 8b92cca16c151410970e6ea66454010ab2d13bfa8dd2243711bc2e2e2853dcb7
+
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.5.9.3
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 想去哪里就去哪里。v0.5.9.3 无网强兜底：OSM 源一次失败立即进离线程序化底图（不再等 3 连），提高网格对比度+中心坐标标签，杜绝地图空白。v0.5.9.2 补 platform-application + 去沙盒 entitlement 解除网络隔离。v0.5.9.1 新增程序化离线底图。v0.5.9 恢复系统级全局模拟 + 恢复真实位置按钮 + 记忆开关。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_0.5.9.3_iphoneos-arm64e.deb
+Size: 548776
+MD5sum: 0ecffc5b92e590160389be9dc71ab212
+SHA1: 366ff1538ebec72ac9c2f1739651b288aaf9e989
+SHA256: a2fb75d85097346271f4434bd669fabede6cdcb17bbfe01284cad6675867cae9
+
+Package: ellekit
+Name: ElleKit
+Version: 1.2-1
+Architecture: iphoneos-arm64e
+Priority: optional
+Section: 越狱后必备
+Author: Evelyn
+Maintainer: Dhinak G <dhinak@dhinak.net>
+Conflicts: com.ex.substitute, org.coolstar.libhooker, science.xnu.substitute, mobilesubstrate, com.saurik.substrate.safemode
+Replaces: com.ex.libsubstitute, org.coolstar.libhooker, mobilesubstrate
+Provides: mobilesubstrate (= 99), org.coolstar.libhooker (= 1.6.9)
+Description: ElleKit tweak injection libraries and loader
+Icon: https://ellekit.space/logos/logo.png
+Filename: debs/ellekit_1.2-1_iphoneos-arm64e.deb
+Size: 414038
+MD5sum: 25c5433ba1644dc006978f1148648012
+SHA1: 500ca3f537aa0e4c238046944096a88348251da3
+SHA256: a7fa59f862b7070c6b0d4199a81fe5ca2ed90cfc41aa4bd5e4fa64e996ca4d00
+
+Package: file
+Version: 5.43
+Architecture: iphoneos-arm64e
+Priority: important
+Section: 越狱后必备
+Maintainer: RootHide <RootHideDev@twitter>
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libmagic1 (= 5.43), liblzma5 (>= 5.2.5)
+Description: Recognize the type of data in a file using "magic" numbers
+ The file command is "a file type guesser", a command-line tool that
+ tells you in words what kind of data a file contains.
+ .
+ This package contains the file program itself.
+Filename: debs/file_5.43_iphoneos-arm64e.deb
+Size: 23328
+MD5sum: ea3e6ba94413f5df977ab4265fcf2511
+SHA1: 9a46fc36a73ae60f6453228df2c6656976df8cac
+SHA256: c9bb6c2e1f7d64c7a41944456d59febe0812b2d804924348671650baf5462776
+
+Package: gawk
+Version: 5.1.0-2
+Architecture: iphoneos-arm64e
+Priority: important
+Section: 越狱后必备
+Maintainer: RootHide <RootHideDev@twitter>
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libintl8, libreadline8, libmpfr6, libgmp10
+Provides: awk
+Description: GNU awk, a pattern scanning and processing language
+ `awk', a program that you can use to select particular records in a
+ file and perform operations upon them.
+ .
+ Gawk is the GNU Project's implementation of the AWK programming language.
+ It conforms to the definition of the language in the POSIX 1003.2 Command
+ Language And Utilities Standard. This version in turn is based on the
+ description in The AWK Programming Language, by Aho, Kernighan, and
+ Weinberger, with the additional features defined in the System V Release
+ 4 version of UNIX awk. Gawk also provides more recent Bell Labs awk
+ extensions, and some GNU-specific extensions.
+Filename: debs/gawk_5.1.0-2_iphoneos-arm64e.deb
+Size: 1274806
+MD5sum: dbbfa9bfeb80848aa05cb889ebcad10d
+SHA1: e86bc4a28f357c26cb58b452b6ff08633b78a184
+SHA256: db91a471f6f5dc57b6d312d904c792d2cf9ccf7c2ec2bdac707727dc492e7b4c
+
+Package: libmagic1
+Version: 5.43
+Architecture: iphoneos-arm64e
+Priority: important
+Section: 越狱后必备
+Maintainer: RootHide <RootHideDev@twitter>
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), liblzma5 (>= 5.2.5)
+Conflicts: file (<< 5.43)
+Replaces: file (<< 5.43)
+Description: Recognize the type of data in a file using "magic" numbers - library
+ This library can be used to classify files according to magic number
+ tests. It implements the core functionality of the file command.
+Filename: debs/libmagic1_5.43_iphoneos-arm64e.deb
+Size: 687514
+MD5sum: 301dba213388a52f6c4229331d6ddceb
+SHA1: dd56cda2f8f1e2c6dc360afbc2f52c71f69f7aaa
+SHA256: 9660091fd990e4430924486df7220a37dbd00ff73241ed87a5b50af00f2f7ea4
+
+Package: libmpfr6
+Version: 4.1.0
+Architecture: iphoneos-arm64e
+Priority: optional
+Section: 越狱后必备
+Maintainer: RootHide <RootHideDev@twitter>
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libgmp10
+Description: multiple precision floating-point computation
+ MPFR provides a library for multiple-precision floating-point computation
+ with correct rounding.  The computation is both efficient and has a
+ well-defined semantics. It copies the good ideas from the
+ ANSI/IEEE-754 standard for double-precision floating-point arithmetic
+ (53-bit mantissa).
+Filename: debs/libmpfr6_4.1.0_iphoneos-arm64e.deb
+Size: 308410
+MD5sum: 54a835335cc90fea3885c9ac1d02c4ec
+SHA1: 70d4affc6815f9411fb2445ac8db43486147ac10
+SHA256: 9b368af8ca414bd64e2985d933e3de2b5d091a9253d19cb13058f4cdcdcce792
+
+Package: libxar1
+Version: 1.8.0.487.100.1-1
+Architecture: iphoneos-arm64e
+Priority: optional
+Section: 越狱后必备
+Maintainer: RootHide <RootHideDev@twitter>
+Depends: roothide (>= 0.0.6), libiosexec1 (>= 1.3.1), libssl3
+Conflicts: xar (<< 1.8.0.487.100.1-1)
+Replaces: xar (<< 1.8.0.487.100.1-1)
+Description: eXtensible ARchive format - dynamic library
+Filename: debs/libxar1_1.8.0.487.100.1-1_iphoneos-arm64e.deb
+Size: 52644
+MD5sum: df75b614363dc732ab03e954628e434b
+SHA1: f575e67e64c9662466b4c1ae45fc910c3ac3b43e
+SHA256: 1f716e79edd74863900cfbc669ca96f73acc3e3e8326757e0c556ab678035ed3
+
+Package: plutil
+Version: 0.2.2+2
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: Samuel Bingner
+Maintainer: roothide <roothideDev@twitter>
+Depends: roothide (>= 0.0.9), libiosexec1 (>= 1.3.1-2)
+Conflicts: com.ericasadun.utilities, com.bingner.plutil
+Provides: com.bingner.plutil (= 0.2.2+2)
+Description: Utility for creating and editing Apple property list files.
+Filename: debs/plutil_0.2.2_2B2_iphoneos-arm64e.deb
+Size: 36034
+MD5sum: 29b14c28f831a7bb7437f8073e859d6e
+SHA1: 97a785b450605265a5071bd395da27a2aeeb27db
+SHA256: 8d3ef8261e260dfa4f55ca4a426dfe4d84d30af9b8d3714dae43ad3e6f7db2af
+
+Package: preferenceloader
+Name: PreferenceLoader
+Version: 2.2.8
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: Dhinak G <dhinak@dhinak.net>
+Maintainer: ProcursusTeam <support@procurs.us>
+Depends: mobilesubstrate
+Description: load preferences in style
+Filename: debs/preferenceloader_2.2.8_iphoneos-arm64e.deb
+Size: 39088
+MD5sum: 5cf84a7d1af03a7323389699d667245e
+SHA1: cc23eaa0656c8b6d22e888bccee5921ebbcc76ab
+SHA256: 6b8976fdfcd0401b0bab1a35a7257f6eb9aee37585169f631c3fe6877d033dd3
+
+Package: re.frida.server
+Name: Frida
+Version: 16.2.1
+Architecture: iphoneos-arm64e
+Priority: optional
+Section: 越狱后必备
+Author: Frida Developers <oleavr@nowsecure.com>
+Maintainer: Ole André Vadla Ravnås <oleavr@nowsecure.com>
+Pre-Depends: rootless-compat (>= 0.9)
+Conflicts: re.frida.server64
+Description: Observe and reprogram running programs.
+Filename: debs/re.frida.server_16.2.1_iphoneos-arm64e.deb
+Size: 34856392
+MD5sum: 4840e13525b13287ed3d3f41bd00669a
+SHA1: 01692e0bace53aad70ab3fbe3ec4dcbe257ca52e
+SHA256: cca25d9b866abeaa3042c466f056236ebb8ed860293edcb0a7f83939b01a8805
+
+Package: rootless-compat
+Name: rootless-compat
+Version: 2.0
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: roothide
+Maintainer: roothide
+Depends: com.roothide.patchloader (>= 0.0.4)
+Description: Compat Layer for Rootless Tweaks
+Filename: debs/rootless-compat_2.0_iphoneos-arm64e.deb
+Size: 93350
+MD5sum: ace9ca2788db5d3ca79e3c61a8b14acf
+SHA1: f907460f814bd2f1b1cbe8df0a05d0b19fc5787d
+SHA256: 08cc5451a1b15dee7faab620c6a88d25b459762715e713dd01c94cad2de5d0b5
+
+Package: ws.hbang.alderis
+Name: Alderis Color Picker
+Version: 1.2.3-8+debug
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: HASHBANG Productions <support@hbang.ws>
+Maintainer: HASHBANG Productions <support@hbang.ws>
+Depends: firmware (>= 12.0), firmware (>= 12.2) | org.swift.libswift (>= 5.0), uikittools
+Replaces: org.thebigboss.libcolorpicker, me.nepeta.libcolorpicker
+Provides: org.thebigboss.libcolorpicker (= 99.0), me.nepeta.libcolorpicker (= 99.0)
+Description: Color picker support library for tweaks
+Tag: role::developer, compatible_min::ios12.0
+Icon: https://img.chariz.cloud/icon/alderis/icon@3x.png
+Filename: debs/ws.hbang.alderis_1.2.3-8_2Bdebug_iphoneos-arm64e.deb
+Size: 1744732
+MD5sum: 210ca1d2dd1ed492331fc33901e93659
+SHA1: b70717fdec081edec492aa6b044e14bcede0a956
+SHA256: e60962c80ce7abf048965f18628659acdd06e8c49cade86fb73bfdf97fdfc9ee
+

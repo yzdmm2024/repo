@@ -30,6 +30,30 @@ FIELD_ORDER = [
     'Replaces', 'Provides', 'Description', 'Tag', 'Icon',
 ]
 
+# 越狱后必备：备份里的核心插件，统一归到一个分类下（Sileo 按 Section 分组）
+SECTION_OVERRIDE = {
+    'byg.iosios.net.appdata-rootless': '越狱后必备',
+    'byg.iosios.net.settingsrevamp': '越狱后必备',
+    'com.mrgcgamer.libgcuniversal': '越狱后必备',
+    'com.opa334.altlist': '越狱后必备',
+    'com.opa334.ccsupport': '越狱后必备',
+    'com.opa334.libsandy': '越狱后必备',
+    'com.roothide.patcher': '越狱后必备',
+    'com.xybp888.callassist16.dopamine.roothide': '越狱后必备',
+    'com.yzdmm.onyx': '越狱后必备',
+    'ellekit': '越狱后必备',
+    'file': '越狱后必备',
+    'gawk': '越狱后必备',
+    'libmagic1': '越狱后必备',
+    'libmpfr6': '越狱后必备',
+    'libxar1': '越狱后必备',
+    'plutil': '越狱后必备',
+    'preferenceloader': '越狱后必备',
+    're.frida.server': '越狱后必备',
+    'rootless-compat': '越狱后必备',
+    'ws.hbang.alderis': '越狱后必备',
+}
+
 
 def parse_ar(data):
     """极简 GNU ar 解析 -> {member_name: bytes}"""
@@ -112,6 +136,8 @@ def get_deb_info(deb_path):
     info['MD5sum'] = hashlib.md5(data).hexdigest()
     info['SHA1'] = hashlib.sha1(data).hexdigest()
     info['SHA256'] = hashlib.sha256(data).hexdigest()
+    if info.get('Package') in SECTION_OVERRIDE:
+        info['Section'] = SECTION_OVERRIDE[info['Package']]
     return data, info
 
 
