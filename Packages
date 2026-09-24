@@ -1,3 +1,38 @@
+Package: byg.iosios.net.appdata-rootless
+Name: AppData软件降级-Rootless
+Version: 2.7.3
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: Fouad Raheb
+Maintainer: 搬运工
+Depends: firmware (>= 11.0), mobilesubstrate, preferenceloader
+Pre-Depends: rootless-compat (>= 0.9)
+Description: 本插件功能非常的强大，可以降级APP软件版本，这是最nice的功能，还可以查看软件所占内存的大小，可以清除APP缓存，修改软件名称，修改角标数量，可以重置APP到刚下载时候的设置！可以查看软件的bundleID，可以直接跳转到软件的缓存及安装路径，可谓越狱必装插件，效果看截图介绍！安装之后去设置里开启插件唤醒的方式，然后注销即可，可以选择长按或者上滑软件，任君选择，搬运工源，永久免费！本插件由iosdump大神修复更新！感谢iosdump！
+Icon: https://chinesebuilding.club/pic/cydia.png
+Filename: debs/byg.iosios.net.appdata-rootless_2.7.3_iphoneos-arm64e.deb
+Size: 2407190
+MD5sum: 9b6e73bc0116e20e357cda4ade0712f5
+SHA1: 20de762f28f1f6a77c69b348a6a48604f104c99a
+SHA256: fea85b23d8e3de2486bb40298360201be00d486a956a7adda2a49e09e92df393
+
+Package: byg.iosios.net.settingsrevamp
+Name: SettingsRevamp-设置归类
+Version: 3.0.1-1
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: SOPPPra
+Maintainer: 搬运工
+Depends: mobilesubstrate, preferenceloader, com.mrgcgamer.libgcuniversal, firmware (>= 14)
+Pre-Depends: rootless-compat (>= 0.9)
+Conflicts: com.creaturecoding.shuffle, com.trappledestek.ikset, pro.ikghd.iksettings, preferenceloader.rootless.tops, org.mr.settingswidgets, com.trappledestek.settingswidgets, com.shepgoba.settingswidgets, preferenceloader.rootless.top, com.hk.settingsrevamp.cn.rl
+Description: Customize the ios settings page插件设置归类，一款将插件归类，美化系统设置的插件，已最新汉化，无需汉化包！可以更换设置背景图片，把插件归纳到一起！具体可以观看插件介绍，非常的nice！后续有更新，等搬运工源第一时间更新！2.1.1旧版本搬运工源群文件里有！
+Icon: https://chinesebuilding.club/pic/cydia.png
+Filename: debs/byg.iosios.net.settingsrevamp_3.0.1-1_iphoneos-arm64e.deb
+Size: 522430
+MD5sum: 0c93ec37456bf5479ebd6b080ef2725f
+SHA1: 3dcda737c777dd37c846a3eba69fba86374ef3e1
+SHA256: 5a4c6d39903f9cf076dc2d27ea60eb88acf870e0678f6336c027fec0973dc5f0
+
 Package: com.axs.cpuwatcher
 Name: CPU 监视器
 Version: 0.1.11
@@ -118,6 +153,24 @@ MD5sum: dcdd8be873acfdab506c4cb897538b07
 SHA1: daaeb1c28eaef929fd8668c46479e1f1e9c7f87e
 SHA256: aaeb0e19bfd0ef316eb9186a819297c8befa474d3b49e70f9c53e30a0ece1c1b
 
+Package: com.mrgcgamer.libgcuniversal
+Name: LibGcUniversal
+Version: 1.7.0
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: MrGcGamer
+Maintainer: MrGcGamer
+Depends: firmware (>= 14.0) | ws.hbang.alderis, firmware (>= 12.0)
+Pre-Depends: rootless-compat (>= 0.9)
+Provides: com.mrgcgamer.libgcimagepicker, com.mrgcgamer.libgccolorpicker
+Description: An awesome library of some sort!!
+Tag: role::developer
+Filename: debs/com.mrgcgamer.libgcuniversal_1.7.0_iphoneos-arm64e.deb
+Size: 123528
+MD5sum: 7a6eeb707953b8339cc442f560314b7d
+SHA1: 6a65032f7013330f0d96fca46a5db8a80b313822
+SHA256: 60407f4159bc396c0ef3016a0db3bb31e40a2feb99eb828d824915afb4d21c98
+
 Package: com.ntm.batteryanalyzer
 Name: 电池耗电分析
 Version: 1.6.10
@@ -163,6 +216,55 @@ MD5sum: c2a333738c5628b7280f2753d04d4def
 SHA1: c1c2e50705a4c5bdcac0656f39bfaa63f311c126
 SHA256: 6a144310ab11d2eb621f3c9e0f1f2f40ef3bdc6c46ab561e3d384ad0e7c2d62a
 
+Package: com.opa334.altlist
+Name: AltList
+Version: 1.0.11
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: opa334
+Maintainer: opa334
+Depends: firmware (>= 7.0)
+Description: A modern AppList alternative
+Tag: role::developer
+Filename: debs/com.opa334.altlist_1.0.11_iphoneos-arm64e.deb
+Size: 59306
+MD5sum: 52ea5b5e3edb6c30397dd486ec7c0511
+SHA1: 7344224b00c2a9fa446d9d8b71a146b064e06413
+SHA256: 826732cebdd2ed3ed5d20e901c20894754efb000a191a890c5444b8c8f733757
+
+Package: com.opa334.ccsupport
+Name: CCSupport
+Version: 1.3.13-2-15+debug
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: opa334
+Maintainer: opa334
+Depends: mobilesubstrate, firmware (>= 11.0)
+Conflicts: com.ioscreatix.silo
+Replaces: com.ioscreatix.silo
+Provides: com.ioscreatix.silo
+Description: Support tweak for CC modules!
+Filename: debs/com.opa334.ccsupport_1.3.13-2-15_2Bdebug_iphoneos-arm64e.deb
+Size: 176844
+MD5sum: 453647fc04cc27f56251e7b8962abda8
+SHA1: ae857159b68127829a4d2ac1fe6e7d74a8c8f6f3
+SHA256: abadc0d65d058b07ec56450b449dfcdba83c82ebe8c8007df974d2b50f63765d
+
+Package: com.opa334.libsandy
+Name: libSandy
+Version: 1.1.6-4
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: opa334
+Maintainer: opa334
+Description: Securely extend the sandbox of system processes and user applications
+Tag: role::developer
+Filename: debs/com.opa334.libsandy_1.1.6-4_iphoneos-arm64e.deb
+Size: 45996
+MD5sum: 79ce3b491989d0e775cc324cd8a906f6
+SHA1: 9fcb65e9e2b24dedcd16f620caa53a14ddec69f5
+SHA256: 3b22f89afa6811633f4eeba7ac3aa3fcde32ea4320ca248b3a80188d23617df7
+
 Package: com.roa.randopenapp
 Name: 随机开启app
 Version: 1.3.3
@@ -176,6 +278,38 @@ Size: 32408
 MD5sum: 8bbe9d55b0afcac5b528b62ea30c1091
 SHA1: 967401d89c90fd8b567dd614cc5c48eecac50758
 SHA256: e21d6bce460ed86251ff532df12f20a8043628e9fce0e02e6973c317e1527e7f
+
+Package: com.roothide.patcher
+Name: RootHide Patcher
+Version: 2.1.4-1+debug
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: roothide
+Maintainer: roothide
+Depends: firmware (>= 15.0), libxar1, ldid, file, dpkg, gawk, plutil (>= 0.2.2-1), uikittools (>= 2.1.6-4)
+Description: patch rootless package to roothide, not work for all packages.
+Icon: https://github.com/roothide/RootHidePatcher/blob/master/derootifier-2-modified.png?raw=true
+Filename: debs/com.roothide.patcher_2.1.4-1_2Bdebug_iphoneos-arm64e.deb
+Size: 2823170
+MD5sum: 9a3a10eab6da0dfd99f99a17f9cd27fb
+SHA1: d0cb5481244e8859ddd20ff0fdec665b6a1b432b
+SHA256: 18152a94d14bf72c7b5bf294f0fe0543ce3d38f7080a405d007251fdc0f209bb
+
+Package: com.xybp888.callassist16.dopamine.roothide
+Name: 电话助手iOS16-正式版(Roothide)
+Version: 3.1.1
+Architecture: iphoneos-arm64e
+Priority: optional
+Section: 越狱后必备
+Author: xybp888
+Maintainer: xybp888
+Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
+Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
+Filename: debs/com.xybp888.callassist16.dopamine.roothide_3.1.1_iphoneos-arm64e.deb
+Size: 7968964
+MD5sum: efccbe998fd12160c561e452acd93cd8
+SHA1: 8b154045a3526a9461d59858f6a09b03b3da8420
+SHA256: 8b92cca16c151410970e6ea66454010ab2d13bfa8dd2243711bc2e2e2853dcb7
 
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
@@ -1076,6 +1210,21 @@ MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.5.9.3
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 想去哪里就去哪里。v0.5.9.3 无网强兜底：OSM 源一次失败立即进离线程序化底图（不再等 3 连），提高网格对比度+中心坐标标签，杜绝地图空白。v0.5.9.2 补 platform-application + 去沙盒 entitlement 解除网络隔离。v0.5.9.1 新增程序化离线底图。v0.5.9 恢复系统级全局模拟 + 恢复真实位置按钮 + 记忆开关。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_0.5.9.3_iphoneos-arm64e.deb
+Size: 548776
+MD5sum: 0ecffc5b92e590160389be9dc71ab212
+SHA1: 366ff1538ebec72ac9c2f1739651b288aaf9e989
+SHA256: a2fb75d85097346271f4434bd669fabede6cdcb17bbfe01284cad6675867cae9
+
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1135,155 +1284,6 @@ Size: 405734
 MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
-
-Package: byg.iosios.net.appdata-rootless
-Name: AppData软件降级-Rootless
-Version: 2.7.3
-Architecture: iphoneos-arm64e
-Section: 越狱后必备
-Author: Fouad Raheb
-Maintainer: 搬运工
-Depends: firmware (>= 11.0), mobilesubstrate, preferenceloader
-Pre-Depends: rootless-compat (>= 0.9)
-Description: 本插件功能非常的强大，可以降级APP软件版本，这是最nice的功能，还可以查看软件所占内存的大小，可以清除APP缓存，修改软件名称，修改角标数量，可以重置APP到刚下载时候的设置！可以查看软件的bundleID，可以直接跳转到软件的缓存及安装路径，可谓越狱必装插件，效果看截图介绍！安装之后去设置里开启插件唤醒的方式，然后注销即可，可以选择长按或者上滑软件，任君选择，搬运工源，永久免费！本插件由iosdump大神修复更新！感谢iosdump！
-Icon: https://chinesebuilding.club/pic/cydia.png
-Filename: debs/byg.iosios.net.appdata-rootless_2.7.3_iphoneos-arm64e.deb
-Size: 2407190
-MD5sum: 9b6e73bc0116e20e357cda4ade0712f5
-SHA1: 20de762f28f1f6a77c69b348a6a48604f104c99a
-SHA256: fea85b23d8e3de2486bb40298360201be00d486a956a7adda2a49e09e92df393
-
-Package: byg.iosios.net.settingsrevamp
-Name: SettingsRevamp-设置归类
-Version: 3.0.1-1
-Architecture: iphoneos-arm64e
-Section: 越狱后必备
-Author: SOPPPra
-Maintainer: 搬运工
-Depends: mobilesubstrate, preferenceloader, com.mrgcgamer.libgcuniversal, firmware (>= 14)
-Pre-Depends: rootless-compat (>= 0.9)
-Conflicts: com.creaturecoding.shuffle, com.trappledestek.ikset, pro.ikghd.iksettings, preferenceloader.rootless.tops, org.mr.settingswidgets, com.trappledestek.settingswidgets, com.shepgoba.settingswidgets, preferenceloader.rootless.top, com.hk.settingsrevamp.cn.rl
-Description: Customize the ios settings page插件设置归类，一款将插件归类，美化系统设置的插件，已最新汉化，无需汉化包！可以更换设置背景图片，把插件归纳到一起！具体可以观看插件介绍，非常的nice！后续有更新，等搬运工源第一时间更新！2.1.1旧版本搬运工源群文件里有！
-Icon: https://chinesebuilding.club/pic/cydia.png
-Filename: debs/byg.iosios.net.settingsrevamp_3.0.1-1_iphoneos-arm64e.deb
-Size: 522430
-MD5sum: 0c93ec37456bf5479ebd6b080ef2725f
-SHA1: 3dcda737c777dd37c846a3eba69fba86374ef3e1
-SHA256: 5a4c6d39903f9cf076dc2d27ea60eb88acf870e0678f6336c027fec0973dc5f0
-
-Package: com.mrgcgamer.libgcuniversal
-Name: LibGcUniversal
-Version: 1.7.0
-Architecture: iphoneos-arm64e
-Section: 越狱后必备
-Author: MrGcGamer
-Maintainer: MrGcGamer
-Depends: firmware (>= 14.0) | ws.hbang.alderis, firmware (>= 12.0)
-Pre-Depends: rootless-compat (>= 0.9)
-Provides: com.mrgcgamer.libgcimagepicker, com.mrgcgamer.libgccolorpicker
-Description: An awesome library of some sort!!
-Tag: role::developer
-Filename: debs/com.mrgcgamer.libgcuniversal_1.7.0_iphoneos-arm64e.deb
-Size: 123528
-MD5sum: 7a6eeb707953b8339cc442f560314b7d
-SHA1: 6a65032f7013330f0d96fca46a5db8a80b313822
-SHA256: 60407f4159bc396c0ef3016a0db3bb31e40a2feb99eb828d824915afb4d21c98
-
-Package: com.opa334.altlist
-Name: AltList
-Version: 1.0.11
-Architecture: iphoneos-arm64e
-Section: 越狱后必备
-Author: opa334
-Maintainer: opa334
-Depends: firmware (>= 7.0)
-Description: A modern AppList alternative
-Tag: role::developer
-Filename: debs/com.opa334.altlist_1.0.11_iphoneos-arm64e.deb
-Size: 59306
-MD5sum: 52ea5b5e3edb6c30397dd486ec7c0511
-SHA1: 7344224b00c2a9fa446d9d8b71a146b064e06413
-SHA256: 826732cebdd2ed3ed5d20e901c20894754efb000a191a890c5444b8c8f733757
-
-Package: com.opa334.ccsupport
-Name: CCSupport
-Version: 1.3.13-2-15+debug
-Architecture: iphoneos-arm64e
-Section: 越狱后必备
-Author: opa334
-Maintainer: opa334
-Depends: mobilesubstrate, firmware (>= 11.0)
-Conflicts: com.ioscreatix.silo
-Replaces: com.ioscreatix.silo
-Provides: com.ioscreatix.silo
-Description: Support tweak for CC modules!
-Filename: debs/com.opa334.ccsupport_1.3.13-2-15_2Bdebug_iphoneos-arm64e.deb
-Size: 176844
-MD5sum: 453647fc04cc27f56251e7b8962abda8
-SHA1: ae857159b68127829a4d2ac1fe6e7d74a8c8f6f3
-SHA256: abadc0d65d058b07ec56450b449dfcdba83c82ebe8c8007df974d2b50f63765d
-
-Package: com.opa334.libsandy
-Name: libSandy
-Version: 1.1.6-4
-Architecture: iphoneos-arm64e
-Section: 越狱后必备
-Author: opa334
-Maintainer: opa334
-Description: Securely extend the sandbox of system processes and user applications
-Tag: role::developer
-Filename: debs/com.opa334.libsandy_1.1.6-4_iphoneos-arm64e.deb
-Size: 45996
-MD5sum: 79ce3b491989d0e775cc324cd8a906f6
-SHA1: 9fcb65e9e2b24dedcd16f620caa53a14ddec69f5
-SHA256: 3b22f89afa6811633f4eeba7ac3aa3fcde32ea4320ca248b3a80188d23617df7
-
-Package: com.roothide.patcher
-Name: RootHide Patcher
-Version: 2.1.4-1+debug
-Architecture: iphoneos-arm64e
-Section: 越狱后必备
-Author: roothide
-Maintainer: roothide
-Depends: firmware (>= 15.0), libxar1, ldid, file, dpkg, gawk, plutil (>= 0.2.2-1), uikittools (>= 2.1.6-4)
-Description: patch rootless package to roothide, not work for all packages.
-Icon: https://github.com/roothide/RootHidePatcher/blob/master/derootifier-2-modified.png?raw=true
-Filename: debs/com.roothide.patcher_2.1.4-1_2Bdebug_iphoneos-arm64e.deb
-Size: 2823170
-MD5sum: 9a3a10eab6da0dfd99f99a17f9cd27fb
-SHA1: d0cb5481244e8859ddd20ff0fdec665b6a1b432b
-SHA256: 18152a94d14bf72c7b5bf294f0fe0543ce3d38f7080a405d007251fdc0f209bb
-
-Package: com.xybp888.callassist16.dopamine.roothide
-Name: 电话助手iOS16-正式版(Roothide)
-Version: 3.1.1
-Architecture: iphoneos-arm64e
-Priority: optional
-Section: 越狱后必备
-Author: xybp888
-Maintainer: xybp888
-Depends: firmware (>= 16.0), preferenceloader, com.opa334.libsandy
-Description: 电话助手授权版本,通话录音,通话记录合并,T9双卡选卡拨号键盘,短信双卡选卡,来去电归属地,黑名单,骚扰拦截,状态栏图标替换,时间格式修改,常用小功能等强大插件
-Filename: debs/com.xybp888.callassist16.dopamine.roothide_3.1.1_iphoneos-arm64e.deb
-Size: 7968964
-MD5sum: efccbe998fd12160c561e452acd93cd8
-SHA1: 8b154045a3526a9461d59858f6a09b03b3da8420
-SHA256: 8b92cca16c151410970e6ea66454010ab2d13bfa8dd2243711bc2e2e2853dcb7
-
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.5.9.3
-Architecture: iphoneos-arm64e
-Section: 越狱后必备
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v0.5.9.3 无网强兜底：OSM 源一次失败立即进离线程序化底图（不再等 3 连），提高网格对比度+中心坐标标签，杜绝地图空白。v0.5.9.2 补 platform-application + 去沙盒 entitlement 解除网络隔离。v0.5.9.1 新增程序化离线底图。v0.5.9 恢复系统级全局模拟 + 恢复真实位置按钮 + 记忆开关。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_0.5.9.3_iphoneos-arm64e.deb
-Size: 548776
-MD5sum: 0ecffc5b92e590160389be9dc71ab212
-SHA1: 366ff1538ebec72ac9c2f1739651b288aaf9e989
-SHA256: a2fb75d85097346271f4434bd669fabede6cdcb17bbfe01284cad6675867cae9
 
 Package: ellekit
 Name: ElleKit
