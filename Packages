@@ -1210,6 +1210,36 @@ MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 1.4.3
+Architecture: iphoneos-arm64
+Section: 越狱后必备
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 想去哪里就去哪里。v1.4.3：真正修复「改定位无效」——根因是注入 Filter 写错：v1.3.0 起 plist 只列 com.apple.springboard（无 WildCard），per-app hook 全在 else 分支永远不执行；v1.4.2 又把 Filter 删成空 dict，ElleKit 下等价于不注入普通 App，依旧失效。本版改回 v0.5.8 验证可用的 Mode:WildCard + Bundles:[com.apple.UIKit]，dylib 注入所有 GUI App，per-app 的 CLLocationManager/百度/高德/腾讯 SDK hook 才真正生效。代价：dylib 进入第三方 App 进程，反作弊可能检测到（见 README）。v1.4.1：修诊断日志三件事——每行日志加时间戳、配置没变化不再每 3 秒刷 plist/prefs 日志（此前刷屏会在几小时内把 512KB 日志截断、冲掉最早的 ECHO 判定）、回声自检被 90 秒限流跳过时也留痕（ECHO: skip）。v1.4.0：在 v1.3.0「SpringBoard 系统级模拟」基础上加端到端回声自检——模拟启动 3 秒后 SpringBoard 自己向 locationd 要一次定位，日志直接给出 ECHO: FAKE（模拟生效）或 ECHO: REAL（模拟被 locationd 无视），不再靠猜；同时优先改用 CLSimulationManager 单例、心跳补帧加日志、模拟被消费完后自动复活、诊断日志合并三个路径。v1.3.0 方向调整：真机诊断日志证明 Onyx dylib 在 relaxin 上只注入 SpringBoard、第三方 App 进程未加载，所以 v1.2.0 的 App 内 hook 无从执行；v1.3.0 改为「SpringBoard 系统级模拟」为主力——在 SpringBoard 内驱动私有框架 CLSimulationManager 对全系统生效，所有 App 同时拿到假坐标，不依赖 App 进程注入；每 2 秒补帧 + 3 秒轮询 plist 自愈。App 内 hook 全部保留作为补充。黑名单在模拟模式下对所有 App 生效（Simulate Location 是系统级，无法单独给某个 App 还原真实位置）；若你只需要个别 App 生效，请把它们加入黑名单并暂时使用旧版。诊断日志：/var/tmp/onyx_debug.log（写不进自动换 /tmp/onyx_debug.log），BOOT 行会打印 dylib 自身镜像路径。v1.0.2 修复 relaxin 卸载弹 Ellekit corrupted。支持 iOS 15-17，rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_1.4.3_iphoneos-arm64.deb
+Size: 568520
+MD5sum: d5e6466d4c9ddb10827a843ff8b2678f
+SHA1: c7a17619743ebf73f1284aabbf1bfd425e5b319c
+SHA256: 9923c7aaa9d8a8a4e7e911b66e862cabe62f9b4202f9617d37b691e47d1769c0
+
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 1.4.3
+Architecture: iphoneos-arm64e
+Section: 越狱后必备
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 想去哪里就去哪里。v1.4.3：真正修复「改定位无效」——根因是注入 Filter 写错：v1.3.0 起 plist 只列 com.apple.springboard（无 WildCard），per-app hook 全在 else 分支永远不执行；v1.4.2 又把 Filter 删成空 dict，ElleKit 下等价于不注入普通 App，依旧失效。本版改回 v0.5.8 验证可用的 Mode:WildCard + Bundles:[com.apple.UIKit]，dylib 注入所有 GUI App，per-app 的 CLLocationManager/百度/高德/腾讯 SDK hook 才真正生效。代价：dylib 进入第三方 App 进程，反作弊可能检测到（见 README）。v1.4.1：修诊断日志三件事——每行日志加时间戳、配置没变化不再每 3 秒刷 plist/prefs 日志（此前刷屏会在几小时内把 512KB 日志截断、冲掉最早的 ECHO 判定）、回声自检被 90 秒限流跳过时也留痕（ECHO: skip）。v1.4.0：在 v1.3.0「SpringBoard 系统级模拟」基础上加端到端回声自检——模拟启动 3 秒后 SpringBoard 自己向 locationd 要一次定位，日志直接给出 ECHO: FAKE（模拟生效）或 ECHO: REAL（模拟被 locationd 无视），不再靠猜；同时优先改用 CLSimulationManager 单例、心跳补帧加日志、模拟被消费完后自动复活、诊断日志合并三个路径。v1.3.0 方向调整：真机诊断日志证明 Onyx dylib 在 relaxin 上只注入 SpringBoard、第三方 App 进程未加载，所以 v1.2.0 的 App 内 hook 无从执行；v1.3.0 改为「SpringBoard 系统级模拟」为主力——在 SpringBoard 内驱动私有框架 CLSimulationManager 对全系统生效，所有 App 同时拿到假坐标，不依赖 App 进程注入；每 2 秒补帧 + 3 秒轮询 plist 自愈。App 内 hook 全部保留作为补充。黑名单在模拟模式下对所有 App 生效（Simulate Location 是系统级，无法单独给某个 App 还原真实位置）；若你只需要个别 App 生效，请把它们加入黑名单并暂时使用旧版。诊断日志：/var/tmp/onyx_debug.log（写不进自动换 /tmp/onyx_debug.log），BOOT 行会打印 dylib 自身镜像路径。v1.0.2 修复 relaxin 卸载弹 Ellekit corrupted。支持 iOS 15-17，rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_1.4.3_iphoneos-arm64e.deb
+Size: 568516
+MD5sum: 16bcc9550f7eb6dc8591cfad36e31c78
+SHA1: ef1b1def5a184023c32e4dabc4a13f0f95b80aa4
+SHA256: 30ad0acf74223ee74d05a9674616c52bce490fbfc66eba8757ac166972ff79b9
+
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1467,32 +1497,3 @@ MD5sum: 210ca1d2dd1ed492331fc33901e93659
 SHA1: b70717fdec081edec492aa6b044e14bcede0a956
 SHA256: e60962c80ce7abf048965f18628659acdd06e8c49cade86fb73bfdf97fdfc9ee
 
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 1.4.3
-Section: Tweaks
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Maintainer: yzdmm
-Author: yzdmm
-Description: 想去哪里就去哪里。v1.4.3：真正修复「改定位无效」——根因是注入 Filter 写错：v1.3.0 起 plist 只列 com.apple.springboard（无 WildCard），per-app hook 全在 else 分支永远不执行；v1.4.2 又把 Filter 删成空 dict，ElleKit 下等价于不注入普通 App，依旧失效。本版改回 v0.5.8 验证可用的 Mode:WildCard + Bundles:[com.apple.UIKit]，dylib 注入所有 GUI App，per-app 的 CLLocationManager/百度/高德/腾讯 SDK hook 才真正生效。代价：dylib 进入第三方 App 进程，反作弊可能检测到（见 README）。v1.4.1：修诊断日志三件事——每行日志加时间戳、配置没变化不再每 3 秒刷 plist/prefs 日志（此前刷屏会在几小时内把 512KB 日志截断、冲掉最早的 ECHO 判定）、回声自检被 90 秒限流跳过时也留痕（ECHO: skip）。v1.4.0：在 v1.3.0「SpringBoard 系统级模拟」基础上加端到端回声自检——模拟启动 3 秒后 SpringBoard 自己向 locationd 要一次定位，日志直接给出 ECHO: FAKE（模拟生效）或 ECHO: REAL（模拟被 locationd 无视），不再靠猜；同时优先改用 CLSimulationManager 单例、心跳补帧加日志、模拟被消费完后自动复活、诊断日志合并三个路径。v1.3.0 方向调整：真机诊断日志证明 Onyx dylib 在 relaxin 上只注入 SpringBoard、第三方 App 进程未加载，所以 v1.2.0 的 App 内 hook 无从执行；v1.3.0 改为「SpringBoard 系统级模拟」为主力——在 SpringBoard 内驱动私有框架 CLSimulationManager 对全系统生效，所有 App 同时拿到假坐标，不依赖 App 进程注入；每 2 秒补帧 + 3 秒轮询 plist 自愈。App 内 hook 全部保留作为补充。黑名单在模拟模式下对所有 App 生效（Simulate Location 是系统级，无法单独给某个 App 还原真实位置）；若你只需要个别 App 生效，请把它们加入黑名单并暂时使用旧版。诊断日志：/var/tmp/onyx_debug.log（写不进自动换 /tmp/onyx_debug.log），BOOT 行会打印 dylib 自身镜像路径。v1.0.2 修复 relaxin 卸载弹 Ellekit corrupted。支持 iOS 15-17，rootless 适配，A12+。
-Architecture: iphoneos-arm64
-Filename: debs/com.yzdmm.onyx_1.4.3_iphoneos-arm64.deb
-Size: 568520
-MD5sum: d5e6466d4c9ddb10827a843ff8b2678f
-SHA1: c7a17619743ebf73f1284aabbf1bfd425e5b319c
-SHA256: 9923c7aaa9d8a8a4e7e911b66e862cabe62f9b4202f9617d37b691e47d1769c0
-
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 1.4.3
-Section: Tweaks
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Maintainer: yzdmm
-Author: yzdmm
-Description: 想去哪里就去哪里。v1.4.3：真正修复「改定位无效」——根因是注入 Filter 写错：v1.3.0 起 plist 只列 com.apple.springboard（无 WildCard），per-app hook 全在 else 分支永远不执行；v1.4.2 又把 Filter 删成空 dict，ElleKit 下等价于不注入普通 App，依旧失效。本版改回 v0.5.8 验证可用的 Mode:WildCard + Bundles:[com.apple.UIKit]，dylib 注入所有 GUI App，per-app 的 CLLocationManager/百度/高德/腾讯 SDK hook 才真正生效。代价：dylib 进入第三方 App 进程，反作弊可能检测到（见 README）。v1.4.1：修诊断日志三件事——每行日志加时间戳、配置没变化不再每 3 秒刷 plist/prefs 日志（此前刷屏会在几小时内把 512KB 日志截断、冲掉最早的 ECHO 判定）、回声自检被 90 秒限流跳过时也留痕（ECHO: skip）。v1.4.0：在 v1.3.0「SpringBoard 系统级模拟」基础上加端到端回声自检——模拟启动 3 秒后 SpringBoard 自己向 locationd 要一次定位，日志直接给出 ECHO: FAKE（模拟生效）或 ECHO: REAL（模拟被 locationd 无视），不再靠猜；同时优先改用 CLSimulationManager 单例、心跳补帧加日志、模拟被消费完后自动复活、诊断日志合并三个路径。v1.3.0 方向调整：真机诊断日志证明 Onyx dylib 在 relaxin 上只注入 SpringBoard、第三方 App 进程未加载，所以 v1.2.0 的 App 内 hook 无从执行；v1.3.0 改为「SpringBoard 系统级模拟」为主力——在 SpringBoard 内驱动私有框架 CLSimulationManager 对全系统生效，所有 App 同时拿到假坐标，不依赖 App 进程注入；每 2 秒补帧 + 3 秒轮询 plist 自愈。App 内 hook 全部保留作为补充。黑名单在模拟模式下对所有 App 生效（Simulate Location 是系统级，无法单独给某个 App 还原真实位置）；若你只需要个别 App 生效，请把它们加入黑名单并暂时使用旧版。诊断日志：/var/tmp/onyx_debug.log（写不进自动换 /tmp/onyx_debug.log），BOOT 行会打印 dylib 自身镜像路径。v1.0.2 修复 relaxin 卸载弹 Ellekit corrupted。支持 iOS 15-17，rootless 适配，A12+。
-Architecture: iphoneos-arm64e
-Filename: debs/com.yzdmm.onyx_1.4.3_iphoneos-arm64e.deb
-Size: 568516
-MD5sum: 16bcc9550f7eb6dc8591cfad36e31c78
-SHA1: ef1b1def5a184023c32e4dabc4a13f0f95b80aa4
-SHA256: 30ad0acf74223ee74d05a9674616c52bce490fbfc66eba8757ac166972ff79b9
