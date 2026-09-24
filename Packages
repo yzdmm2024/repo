@@ -1076,36 +1076,6 @@ MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.5.9.5
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v0.5.9.5 代拉加速：daemon 6并发下载(原串行) + 请求目录队列化(不再单plist覆盖丢请求) + 超时智能重置(有新瓦片就续时不轻易离线)，地图加载速度大幅提升且更稳定。v0.5.9.4 新增独立root常驻daemon代拉瓦片。v0.5.9.3 无网强兜底：OSM源一次失败立即进离线程序化底图。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_0.5.9.5_iphoneos-arm64.deb
-Size: 438984
-MD5sum: af915a741a707e9ddca9d32013378073
-SHA1: 6b14441914ba5ab82c0348db134b891462bd3012
-SHA256: 2f19614d00201f890a356ead4915177611c5e5d3451d67525dc13eada60b1509
-
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.5.9.5
-Architecture: iphoneos-arm64e
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v0.5.9.5 代拉加速：daemon 6并发下载(原串行) + 请求目录队列化(不再单plist覆盖丢请求) + 超时智能重置(有新瓦片就续时不轻易离线)，地图加载速度大幅提升且更稳定。v0.5.9.4 新增独立root常驻daemon代拉瓦片。v0.5.9.3 无网强兜底：OSM源一次失败立即进离线程序化底图。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_0.5.9.5_iphoneos-arm64e.deb
-Size: 438872
-MD5sum: d5abbb3b09765f10d59e4eb9815b1125
-SHA1: 76f71d0b1e83c6e3322cced5bf3bd94911a6128c
-SHA256: 96a7dd34e43949c2d1466eb06fcf64dcb04a073c17e26220d1e828f4d2877d69
-
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1166,3 +1136,32 @@ MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
 
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.5.9.6
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Maintainer: yzdmm
+Author: yzdmm
+Description: 想去哪里就去哪里。v0.5.9.6 去掉独立 LaunchDaemon（避免被钉钉等反作弊扫到异常 daemon 判定虚拟打卡），瓦片代拉改回 SpringBoard 注入承载，保留 6 并发+请求目录队列化+智能超时等加速优化，定位模拟稳定不暴露。v0.5.9.5 代拉加速 6 并发。v0.5.9.3 无网强兜底。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Architecture: iphoneos-arm64
+Filename: debs/com.yzdmm.onyx_0.5.9.6_iphoneos-arm64.deb
+Size: 436508
+MD5sum: b5ebd9f9b977f469528d422ed0961731
+SHA1: b80d99d6b1ec7b53daf2c0f42db2ffb7f3918c36
+SHA256: 493c6b5e0aa55d15909aceb1854b1e8c4b5ae22b170cf028fdbd8e8632445237
+
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.5.9.6
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Maintainer: yzdmm
+Author: yzdmm
+Description: 想去哪里就去哪里。v0.5.9.6 去掉独立 LaunchDaemon（避免被钉钉等反作弊扫到异常 daemon 判定虚拟打卡），瓦片代拉改回 SpringBoard 注入承载，保留 6 并发+请求目录队列化+智能超时等加速优化，定位模拟稳定不暴露。v0.5.9.5 代拉加速 6 并发。v0.5.9.3 无网强兜底。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Architecture: iphoneos-arm64e
+Filename: debs/com.yzdmm.onyx_0.5.9.6_iphoneos-arm64e.deb
+Size: 436508
+MD5sum: 0bdb8de40b1dec9391bc39961a21082d
+SHA1: 34194185c9cf9166e53ee8aa34e879fd36ed618a
+SHA256: 9d3cb1c72d63113b01cf30052a9817ce88ba5dea6e75948cf75280ea9af169ff
