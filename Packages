@@ -43,6 +43,20 @@ MD5sum: 3572630b99830d04bbeee77f069b5261
 SHA1: 00cd35a612f9fc88bb1c9ab810ea39286d5d001f
 SHA256: 2e00c0cae2eee99eac80f95d4085d2cb985e869ceb1b527e8798c0143a248d5a
 
+Package: com.duoui.integrated
+Name: DuoUI iOS 17.0
+Version: 0.4.0-dryrun
+Architecture: iphoneos-arm64
+Section: 屿哥专属(自用)
+Maintainer: DuoUI Reconstruction
+Description: 屿哥专属
+ iOS 17.0 arm64e rootless validation package (dry-run; no executable dylib)
+Filename: debs/com.duoui.integrated_0.4.0-dryrun_iphoneos-arm64.deb
+Size: 1976
+MD5sum: fb088538de26ad37b18a68a62a740235
+SHA1: ca42effbf11c60b5c9aa1d1bd89b69007e25572e
+SHA256: e176678e54476ac34cb9f93a10e06e2ea3ac607c11a90dcaa86f657de3df70e8
+
 Package: com.local.mygestures
 Name: 我的手势
 Version: 0.11.13
