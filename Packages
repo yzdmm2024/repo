@@ -1076,6 +1076,36 @@ MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.7.0
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 想去哪里就去哪里。v0.7.0 黑名单模式：默认所有被注入的App都用虚拟定位，勾选哪个App就排除哪个(用真实位置)。钉钉等打卡App直接加入黑名单即可安全打卡。SpringBoard只跑瓦片代拉不hook定位。App图标/名称隐身优化。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_0.7.0_iphoneos-arm64.deb
+Size: 561468
+MD5sum: 759199f44a867b723b6c1b7b1241ea1d
+SHA1: 46910512200e2a0b01782701bf2e591a766352bf
+SHA256: 41bd901fe43575cf6958fc0d662566d59f9ffbcab121dc07150a593da910fdef
+
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.7.0
+Architecture: iphoneos-arm64e
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 想去哪里就去哪里。v0.7.0 黑名单模式：默认所有被注入的App都用虚拟定位，勾选哪个App就排除哪个(用真实位置)。钉钉等打卡App直接加入黑名单即可安全打卡。SpringBoard只跑瓦片代拉不hook定位。App图标/名称隐身优化。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Filename: debs/com.yzdmm.onyx_0.7.0_iphoneos-arm64e.deb
+Size: 561464
+MD5sum: 23b095dffb6f7d3859e06e118b151c0c
+SHA1: 00549d5b288ec47dfc6a9e407bfd197b917fb363
+SHA256: b236e0e63f550c09abd5ea5f01596411a90c55388388104df31a347c2b8b764a
+
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1136,32 +1166,3 @@ MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
 
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.7.0
-Section: Tweaks
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Maintainer: yzdmm
-Author: yzdmm
-Description: 想去哪里就去哪里。v0.7.0 黑名单模式：默认所有被注入的App都用虚拟定位，勾选哪个App就排除哪个(用真实位置)。钉钉等打卡App直接加入黑名单即可安全打卡。SpringBoard只跑瓦片代拉不hook定位。App图标/名称隐身优化。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Architecture: iphoneos-arm64
-Filename: debs/com.yzdmm.onyx_0.7.0_iphoneos-arm64.deb
-Size: 561468
-MD5sum: 759199f44a867b723b6c1b7b1241ea1d
-SHA1: 46910512200e2a0b01782701bf2e591a766352bf
-SHA256: 41bd901fe43575cf6958fc0d662566d59f9ffbcab121dc07150a593da910fdef
-
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.7.0
-Section: Tweaks
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Maintainer: yzdmm
-Author: yzdmm
-Description: 想去哪里就去哪里。v0.7.0 黑名单模式：默认所有被注入的App都用虚拟定位，勾选哪个App就排除哪个(用真实位置)。钉钉等打卡App直接加入黑名单即可安全打卡。SpringBoard只跑瓦片代拉不hook定位。App图标/名称隐身优化。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Architecture: iphoneos-arm64e
-Filename: debs/com.yzdmm.onyx_0.7.0_iphoneos-arm64e.deb
-Size: 561464
-MD5sum: 23b095dffb6f7d3859e06e118b151c0c
-SHA1: 00549d5b288ec47dfc6a9e407bfd197b917fb363
-SHA256: b236e0e63f550c09abd5ea5f01596411a90c55388388104df31a347c2b8b764a
