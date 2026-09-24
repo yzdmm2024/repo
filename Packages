@@ -1241,6 +1241,21 @@ MD5sum: 25c51b92c4e9e5ac5aacce2a8ffbaf4d
 SHA1: 6e4abd1ae8ff52fb8611f912aa0380e502f48f33
 SHA256: 9fe425f38d3dda3d3c398575a5303edc5570908cf2b07fc3986c77a84ae5e2ff
 
+Package: com.yzdmm.keyboardstatus
+Name: 键盘下方状态
+Version: 1.5.1
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
+Description: 系统键盘底栏加功能按钮（全选/剪切/粘贴/光标移动/剪贴板历史/快捷短语/收起键盘）+ 可选状态条。rootless 适配，逐功能可关，安全不崩。
+Filename: debs/com.yzdmm.keyboardstatus_1.5.1_iphoneos-arm64.deb
+Size: 72720
+MD5sum: ebcbe2b08b711cf337cd2cdb7471df9a
+SHA1: 43a146c81329261517c992f548a6a24a6d4d6821
+SHA256: c95101cd3337f97412529766ac882a32f6ed97b7255169bb7ad4deb25fd053ec
+
 Package: com.yzdmm.kkgameautologin
 Name: KKGameAutoLogin
 Version: 1.0.16
