@@ -1076,36 +1076,6 @@ MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.7.3
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v0.7.3 修复配置读取：配置同步写入 Tweak 同目录（MobileSubstrate/DynamicLibraries），dylib 能加载就能读到，沙盒也不挡。加诊断日志便于排查。v0.7.1 彻底移除系统级模拟。黑名单模式。App图标/名称隐身。瓦片代拉6并发。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_0.7.3_iphoneos-arm64.deb
-Size: 557804
-MD5sum: 896202f608eec242f4f77e43d6b43308
-SHA1: 9fd50235d6155d3f9e14b8918b5ecbe6a063aeea
-SHA256: 0bea3dbd06a394badd72e14c87f325a945c884001cb244fd9de9da02c466bf06
-
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.7.3
-Architecture: iphoneos-arm64e
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v0.7.3 修复配置读取：配置同步写入 Tweak 同目录（MobileSubstrate/DynamicLibraries），dylib 能加载就能读到，沙盒也不挡。加诊断日志便于排查。v0.7.1 彻底移除系统级模拟。黑名单模式。App图标/名称隐身。瓦片代拉6并发。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_0.7.3_iphoneos-arm64e.deb
-Size: 557460
-MD5sum: 71d917a75a60ae609ad04bf88705cf7e
-SHA1: 6db186b510363c3b0518be8d2475d6d774b4c156
-SHA256: 56d1ad92eca800bb148db08d400437b6921690aff6740115446a27a29c94e79f
-
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1166,3 +1136,32 @@ MD5sum: 74de78f1e36c8cf36b2afc268832c993
 SHA1: 2d92c29d1632d51e90e09f66e424e67378cd424a
 SHA256: 14b370cbf700061f527cd738602710c53bced79cba70ac756bf0c93119f930f0
 
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.7.4
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
+Maintainer: yzdmm
+Author: yzdmm
+Description: 想去哪里就去哪里。v0.7.4 安全修复：移除 plist 中的 XML 注释（避免 ElleKit 解析失败导致缓存损坏/全机闪退），依赖声明兼容 ellekit，移除冲突的 INSTALL_TARGET_PROCESSES。v0.7.3 修复配置读取。黑名单模式。App图标/名称隐身。瓦片代拉6并发。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Architecture: iphoneos-arm64
+Filename: debs/com.yzdmm.onyx_0.7.4_iphoneos-arm64.deb
+Size: 557480
+MD5sum: 270d00a05790e74e939666c34539a7b7
+SHA1: f755b948a8284614dff2d13cc8ac1afff33e4887
+SHA256: 5f346c4531a452eb22c1e431776a50da3a4eb18da1b57242d1c96b205f10ffd1
+
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 0.7.4
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
+Maintainer: yzdmm
+Author: yzdmm
+Description: 想去哪里就去哪里。v0.7.4 安全修复：移除 plist 中的 XML 注释（避免 ElleKit 解析失败导致缓存损坏/全机闪退），依赖声明兼容 ellekit，移除冲突的 INSTALL_TARGET_PROCESSES。v0.7.3 修复配置读取。黑名单模式。App图标/名称隐身。瓦片代拉6并发。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Architecture: iphoneos-arm64e
+Filename: debs/com.yzdmm.onyx_0.7.4_iphoneos-arm64e.deb
+Size: 557608
+MD5sum: e8623c00342032121a639c788ba89c5a
+SHA1: 9c58f61d16787f4b77ac42eac4b3afb8adea6f45
+SHA256: 20540c88d6203ff2dbeddf5d3e782a2ca6a7a3af217ef6f558a6ad834bacf2ac
