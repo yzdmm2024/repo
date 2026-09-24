@@ -1211,66 +1211,6 @@ MD5sum: 01880b335297b423d63d10c75b6bebb3
 SHA1: afd8dd6a113dc2d420bb9d5e532f52844e05a96b
 SHA256: 56bc5e23d79d9cc2a86e23074730e253ac78d869aca82a2c74817332124a6a66
 
-Package: com.yzdmm.keyboardstatus
-Name: 键盘下方状态
-Version: 1.4.0
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
-Description: 系统键盘底栏加功能按钮（全选/剪切/粘贴/光标移动/剪贴板历史/快捷短语/收起键盘）+ 可选状态条。rootless 适配，逐功能可关，安全不崩。
-Filename: debs/com.yzdmm.keyboardstatus_1.4.0_iphoneos-arm64.deb
-Size: 79552
-MD5sum: 6c0ebbe0f0b700352686aaed98431551
-SHA1: 97619e357be9b683590e614d7dce4d040b6ae81c
-SHA256: b442ee46a29ef3122e15f88bbcb9867f4378a5410285bfd743fa0b50ada5b441
-
-Package: com.yzdmm.keyboardstatus
-Name: 键盘下方状态
-Version: 1.5.0
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
-Description: 系统键盘底栏加功能按钮（全选/剪切/粘贴/光标移动/剪贴板历史/快捷短语/收起键盘）+ 可选状态条。rootless 适配，逐功能可关，安全不崩。
-Filename: debs/com.yzdmm.keyboardstatus_1.5.0_iphoneos-arm64.deb
-Size: 71348
-MD5sum: 25c51b92c4e9e5ac5aacce2a8ffbaf4d
-SHA1: 6e4abd1ae8ff52fb8611f912aa0380e502f48f33
-SHA256: 9fe425f38d3dda3d3c398575a5303edc5570908cf2b07fc3986c77a84ae5e2ff
-
-Package: com.yzdmm.keyboardstatus
-Name: 键盘下方状态
-Version: 1.5.1
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
-Description: 系统键盘底栏加功能按钮（全选/剪切/粘贴/光标移动/剪贴板历史/快捷短语/收起键盘）+ 可选状态条。rootless 适配，逐功能可关，安全不崩。
-Filename: debs/com.yzdmm.keyboardstatus_1.5.1_iphoneos-arm64.deb
-Size: 72720
-MD5sum: ebcbe2b08b711cf337cd2cdb7471df9a
-SHA1: 43a146c81329261517c992f548a6a24a6d4d6821
-SHA256: c95101cd3337f97412529766ac882a32f6ed97b7255169bb7ad4deb25fd053ec
-
-Package: com.yzdmm.keyboardstatus
-Name: 键盘下方状态
-Version: 1.5.2
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
-Description: 系统键盘底栏加功能按钮（全选/剪切/粘贴/光标移动/剪贴板历史/快捷短语/收起键盘）+ 可选状态条。rootless 适配，逐功能可关，安全不崩。
-Filename: debs/com.yzdmm.keyboardstatus_1.5.2_iphoneos-arm64.deb
-Size: 73108
-MD5sum: cd47e2b2a18d523686cee991c538e421
-SHA1: f7cbc2ea9aac78875136eece0288702271e78bc4
-SHA256: b68e31be97dece4f78b1eadf8d61210905b36cd548ce292f2e76d7c9d7b3f6fb
-
 Package: com.yzdmm.kkgameautologin
 Name: KKGameAutoLogin
 Version: 1.0.16
