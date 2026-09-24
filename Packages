@@ -1210,21 +1210,6 @@ MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 0.5.9.3
-Architecture: iphoneos-arm64e
-Section: 越狱后必备
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v0.5.9.3 无网强兜底：OSM 源一次失败立即进离线程序化底图（不再等 3 连），提高网格对比度+中心坐标标签，杜绝地图空白。v0.5.9.2 补 platform-application + 去沙盒 entitlement 解除网络隔离。v0.5.9.1 新增程序化离线底图。v0.5.9 恢复系统级全局模拟 + 恢复真实位置按钮 + 记忆开关。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_0.5.9.3_iphoneos-arm64e.deb
-Size: 548776
-MD5sum: 0ecffc5b92e590160389be9dc71ab212
-SHA1: 366ff1538ebec72ac9c2f1739651b288aaf9e989
-SHA256: a2fb75d85097346271f4434bd669fabede6cdcb17bbfe01284cad6675867cae9
-
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1482,3 +1467,32 @@ MD5sum: 210ca1d2dd1ed492331fc33901e93659
 SHA1: b70717fdec081edec492aa6b044e14bcede0a956
 SHA256: e60962c80ce7abf048965f18628659acdd06e8c49cade86fb73bfdf97fdfc9ee
 
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 1.0.0
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
+Maintainer: yzdmm
+Author: yzdmm
+Description: 想去哪里就去哪里。v1.0.0 全新架构：只注入 SpringBoard，CLSimulationManager 系统级全局模拟（跟 LocSim 同款），钉钉检测不到。极简代码，卸载安全。瓦片代拉加速。App 图标名称隐身。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Architecture: iphoneos-arm64
+Filename: debs/com.yzdmm.onyx_1.0.0_iphoneos-arm64.deb
+Size: 552944
+MD5sum: 2805e9932b2299e481615abb4155905f
+SHA1: 4a2e67c2cd3c115c8a30c2e344bd43010b14d50c
+SHA256: e3d659d89982917c451b72d9d25a489cdbf8e77f480a9eab9c77e4c792831152
+
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 1.0.0
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate | ellekit, preferenceloader
+Maintainer: yzdmm
+Author: yzdmm
+Description: 想去哪里就去哪里。v1.0.0 全新架构：只注入 SpringBoard，CLSimulationManager 系统级全局模拟（跟 LocSim 同款），钉钉检测不到。极简代码，卸载安全。瓦片代拉加速。App 图标名称隐身。支持 iOS 15-17：arm64 + arm64e。rootless 适配，A12+。
+Architecture: iphoneos-arm64e
+Filename: debs/com.yzdmm.onyx_1.0.0_iphoneos-arm64e.deb
+Size: 552940
+MD5sum: 4798453f6042ce15ace3b5e134d9a5a3
+SHA1: 19cf8df8d36f013bd482298302bb97e83856cd71
+SHA256: 824026430433e434657fcb072a1cd99b090c4208a8a37ff22df3b4e4faf777fe
