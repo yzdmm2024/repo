@@ -1210,36 +1210,6 @@ MD5sum: a7db32c9892f8db171bd03e2dd10bccb
 SHA1: d60cdbc49fe8c75ee8b1e7d70a81c87a465bb1f0
 SHA256: 6952491c2df579a68aabcf634beda4ad31b4761ac450af0e162040c9d12ec771
 
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 1.4.1
-Architecture: iphoneos-arm64
-Section: 越狱后必备
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v1.4.1：修诊断日志三件事——每行日志加时间戳、配置没变化不再每 3 秒刷 plist/prefs 日志（此前刷屏会在几小时内把 512KB 日志截断、冲掉最早的 ECHO 判定）、回声自检被 90 秒限流跳过时也留痕（ECHO: skip）。v1.4.0：在 v1.3.0「SpringBoard 系统级模拟」基础上加端到端回声自检——模拟启动 3 秒后 SpringBoard 自己向 locationd 要一次定位，日志直接给出 ECHO: FAKE（模拟生效）或 ECHO: REAL（模拟被 locationd 无视），不再靠猜；同时优先改用 CLSimulationManager 单例、心跳补帧加日志、模拟被消费完后自动复活、诊断日志合并三个路径。v1.3.0 方向调整：真机诊断日志证明 Onyx dylib 在 relaxin 上只注入 SpringBoard、第三方 App 进程未加载，所以 v1.2.0 的 App 内 hook 无从执行；v1.3.0 改为「SpringBoard 系统级模拟」为主力——在 SpringBoard 内驱动私有框架 CLSimulationManager 对全系统生效，所有 App 同时拿到假坐标，不依赖 App 进程注入；每 2 秒补帧 + 3 秒轮询 plist 自愈。App 内 hook 全部保留作为补充。黑名单在模拟模式下对所有 App 生效（Simulate Location 是系统级，无法单独给某个 App 还原真实位置）；若你只需要个别 App 生效，请把它们加入黑名单并暂时使用旧版。诊断日志：/var/tmp/onyx_debug.log（写不进自动换 /tmp/onyx_debug.log），BOOT 行会打印 dylib 自身镜像路径。v1.0.2 修复 relaxin 卸载弹 Ellekit corrupted。支持 iOS 15-17，rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_1.4.1_iphoneos-arm64.deb
-Size: 568112
-MD5sum: f43bc148e3f15400b7b8d91e4690fd24
-SHA1: c1b010b175f29dde91de0b937a9fba522c22ec99
-SHA256: 3b6fd5b8bb43239d46203f2cb3d738a3a7f7420ebfe869f66af5ca657e3da1a2
-
-Package: com.yzdmm.onyx
-Name: GO~
-Version: 1.4.1
-Architecture: iphoneos-arm64e
-Section: 越狱后必备
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 想去哪里就去哪里。v1.4.1：修诊断日志三件事——每行日志加时间戳、配置没变化不再每 3 秒刷 plist/prefs 日志（此前刷屏会在几小时内把 512KB 日志截断、冲掉最早的 ECHO 判定）、回声自检被 90 秒限流跳过时也留痕（ECHO: skip）。v1.4.0：在 v1.3.0「SpringBoard 系统级模拟」基础上加端到端回声自检——模拟启动 3 秒后 SpringBoard 自己向 locationd 要一次定位，日志直接给出 ECHO: FAKE（模拟生效）或 ECHO: REAL（模拟被 locationd 无视），不再靠猜；同时优先改用 CLSimulationManager 单例、心跳补帧加日志、模拟被消费完后自动复活、诊断日志合并三个路径。v1.3.0 方向调整：真机诊断日志证明 Onyx dylib 在 relaxin 上只注入 SpringBoard、第三方 App 进程未加载，所以 v1.2.0 的 App 内 hook 无从执行；v1.3.0 改为「SpringBoard 系统级模拟」为主力——在 SpringBoard 内驱动私有框架 CLSimulationManager 对全系统生效，所有 App 同时拿到假坐标，不依赖 App 进程注入；每 2 秒补帧 + 3 秒轮询 plist 自愈。App 内 hook 全部保留作为补充。黑名单在模拟模式下对所有 App 生效（Simulate Location 是系统级，无法单独给某个 App 还原真实位置）；若你只需要个别 App 生效，请把它们加入黑名单并暂时使用旧版。诊断日志：/var/tmp/onyx_debug.log（写不进自动换 /tmp/onyx_debug.log），BOOT 行会打印 dylib 自身镜像路径。v1.0.2 修复 relaxin 卸载弹 Ellekit corrupted。支持 iOS 15-17，rootless 适配，A12+。
-Filename: debs/com.yzdmm.onyx_1.4.1_iphoneos-arm64e.deb
-Size: 568108
-MD5sum: aeafedcb1dbd4303c8a7bf84fcd30641
-SHA1: 54aebca062528c8d9ad4ddf1240abdcfb76b80af
-SHA256: 4dae91e6a04a3abf8a14234a67402899541494b8c400f70de2a8450198f608c1
-
 Package: com.yzdmm.voicesaver
 Name: VoiceSaver
 Version: 1.0.5
@@ -1497,3 +1467,32 @@ MD5sum: 210ca1d2dd1ed492331fc33901e93659
 SHA1: b70717fdec081edec492aa6b044e14bcede0a956
 SHA256: e60962c80ce7abf048965f18628659acdd06e8c49cade86fb73bfdf97fdfc9ee
 
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 1.4.2
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Maintainer: yzdmm
+Author: yzdmm
+Description: 想去哪里就去哪里。v1.4.2：修复「改定位无效」——根因是 Onyx.plist 的 Filter 只注入了 SpringBoard，导致 per-app 的 CLLocationManager/百度/高德/腾讯 SDK hook 全部不执行（死代码）；同时 SpringBoard 调 CLSimulationManager 做系统模拟因缺少 com.apple.locationd.simulation 权限被 locationd 无视。本版放开注入范围（注入所有进程），让 v1.2.0 验证可用的 per-app hook 重新生效（代价：dylib 进入第三方 App 进程，反作弊可能检测到，见 README）。v1.4.1：修诊断日志三件事——每行日志加时间戳、配置没变化不再每 3 秒刷 plist/prefs 日志（此前刷屏会在几小时内把 512KB 日志截断、冲掉最早的 ECHO 判定）、回声自检被 90 秒限流跳过时也留痕（ECHO: skip）。v1.4.0：在 v1.3.0「SpringBoard 系统级模拟」基础上加端到端回声自检——模拟启动 3 秒后 SpringBoard 自己向 locationd 要一次定位，日志直接给出 ECHO: FAKE（模拟生效）或 ECHO: REAL（模拟被 locationd 无视），不再靠猜；同时优先改用 CLSimulationManager 单例、心跳补帧加日志、模拟被消费完后自动复活、诊断日志合并三个路径。v1.3.0 方向调整：真机诊断日志证明 Onyx dylib 在 relaxin 上只注入 SpringBoard、第三方 App 进程未加载，所以 v1.2.0 的 App 内 hook 无从执行；v1.3.0 改为「SpringBoard 系统级模拟」为主力——在 SpringBoard 内驱动私有框架 CLSimulationManager 对全系统生效，所有 App 同时拿到假坐标，不依赖 App 进程注入；每 2 秒补帧 + 3 秒轮询 plist 自愈。App 内 hook 全部保留作为补充。黑名单在模拟模式下对所有 App 生效（Simulate Location 是系统级，无法单独给某个 App 还原真实位置）；若你只需要个别 App 生效，请把它们加入黑名单并暂时使用旧版。诊断日志：/var/tmp/onyx_debug.log（写不进自动换 /tmp/onyx_debug.log），BOOT 行会打印 dylib 自身镜像路径。v1.0.2 修复 relaxin 卸载弹 Ellekit corrupted。支持 iOS 15-17，rootless 适配，A12+。
+Architecture: iphoneos-arm64
+Filename: debs/com.yzdmm.onyx_1.4.2_iphoneos-arm64.deb
+Size: 568232
+MD5sum: 65b952c1055c48f7be7a256d8557c442
+SHA1: 2a98b162b19b2aa1c028d6485aa5f14b845ee5f4
+SHA256: 7edd2ae4c44d35a0f374b95df906737c4b4790f1aa388c4d99fb436a4150aa7a
+
+Package: com.yzdmm.onyx
+Name: GO~
+Version: 1.4.2
+Section: Tweaks
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Maintainer: yzdmm
+Author: yzdmm
+Description: 想去哪里就去哪里。v1.4.2：修复「改定位无效」——根因是 Onyx.plist 的 Filter 只注入了 SpringBoard，导致 per-app 的 CLLocationManager/百度/高德/腾讯 SDK hook 全部不执行（死代码）；同时 SpringBoard 调 CLSimulationManager 做系统模拟因缺少 com.apple.locationd.simulation 权限被 locationd 无视。本版放开注入范围（注入所有进程），让 v1.2.0 验证可用的 per-app hook 重新生效（代价：dylib 进入第三方 App 进程，反作弊可能检测到，见 README）。v1.4.1：修诊断日志三件事——每行日志加时间戳、配置没变化不再每 3 秒刷 plist/prefs 日志（此前刷屏会在几小时内把 512KB 日志截断、冲掉最早的 ECHO 判定）、回声自检被 90 秒限流跳过时也留痕（ECHO: skip）。v1.4.0：在 v1.3.0「SpringBoard 系统级模拟」基础上加端到端回声自检——模拟启动 3 秒后 SpringBoard 自己向 locationd 要一次定位，日志直接给出 ECHO: FAKE（模拟生效）或 ECHO: REAL（模拟被 locationd 无视），不再靠猜；同时优先改用 CLSimulationManager 单例、心跳补帧加日志、模拟被消费完后自动复活、诊断日志合并三个路径。v1.3.0 方向调整：真机诊断日志证明 Onyx dylib 在 relaxin 上只注入 SpringBoard、第三方 App 进程未加载，所以 v1.2.0 的 App 内 hook 无从执行；v1.3.0 改为「SpringBoard 系统级模拟」为主力——在 SpringBoard 内驱动私有框架 CLSimulationManager 对全系统生效，所有 App 同时拿到假坐标，不依赖 App 进程注入；每 2 秒补帧 + 3 秒轮询 plist 自愈。App 内 hook 全部保留作为补充。黑名单在模拟模式下对所有 App 生效（Simulate Location 是系统级，无法单独给某个 App 还原真实位置）；若你只需要个别 App 生效，请把它们加入黑名单并暂时使用旧版。诊断日志：/var/tmp/onyx_debug.log（写不进自动换 /tmp/onyx_debug.log），BOOT 行会打印 dylib 自身镜像路径。v1.0.2 修复 relaxin 卸载弹 Ellekit corrupted。支持 iOS 15-17，rootless 适配，A12+。
+Architecture: iphoneos-arm64e
+Filename: debs/com.yzdmm.onyx_1.4.2_iphoneos-arm64e.deb
+Size: 568228
+MD5sum: ff67f7307f8c2ffcefb0c1ce606f7cbc
+SHA1: cd9667cdaffcf608ec416455549f477a8e59ed53
+SHA256: e91de338a38da7f6ebf4d24f7f8dca38ed349d5ec9f2e58586a9f9adf2571602
