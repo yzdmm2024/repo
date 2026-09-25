@@ -52,6 +52,10 @@ SECTION_OVERRIDE = {
     're.frida.server': '越狱后必备',
     'rootless-compat': '越狱后必备',
     'ws.hbang.alderis': '越狱后必备',
+    'com.duoui.integrated': '专属（屿哥个人自用，托管在此）',
+    'com.merged.cc-suite': '专属（屿哥个人自用，托管在此）',
+    'com.merged.passtext-suite': '专属（屿哥个人自用，托管在此）',
+    'com.merged.ui-enhancer': '专属（屿哥个人自用，托管在此）',
 }
 
 
