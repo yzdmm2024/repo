@@ -7,7 +7,7 @@
 Packages 缺 Package/Version 等字段，源在 Sileo/Zebra/Cydia 里显示空）：
   - 用通用 ar 解析读取 control.tar.{gz,xz,zst}，不再硬编码 .gz
   - 生成完索引后同步刷新 Release 的 MD5Sum/SHA1/SHA256 与 Date
-  - Release 头固定为源名 我爱吃辣椒炒肉源（不再沿用旧头，避免被覆盖回 yzdmm2024 / 架构警告）
+  - Release 头固定为源名 我爱吃辣椒炒肉（不再沿用旧头，避免被覆盖回 yzdmm2024 / 架构警告）
 """
 import os
 import io
@@ -159,16 +159,16 @@ def format_entry(info):
 
 
 def build_release(content_str):
-    # 固定源头：源名 我爱吃辣椒炒肉源（gen.yml 推送时自动重生成 Release）
+    # 固定源头：源名 我爱吃辣椒炒肉（gen.yml 推送时自动重生成 Release）
     header = (
-        "Origin: 我爱吃辣椒炒肉源\n"
-        "Label: 我爱吃辣椒炒肉源\n"
+        "Origin: 我爱吃辣椒炒肉\n"
+        "Label: 我爱吃辣椒炒肉\n"
         "Suite: stable\n"
         "Codename: stable\n"
         "Version: 1.0\n"
         "Architectures: iphoneos-arm64 iphoneos-arm64e\n"
         "Components: main\n"
-        "Description: 我爱吃辣椒炒肉源（越狱插件 + TrollStore 应用）\n"
+        "Description: 我爱吃辣椒炒肉（越狱插件 + TrollStore 应用）\n"
     )
     date = email.utils.formatdate(time.time(), usegmt=True)
     packages_bytes = content_str.encode('utf-8')
