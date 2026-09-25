@@ -97,7 +97,7 @@ Package: com.duoui.integrated
 Name: DuoUI iOS 17.0
 Version: 0.4.0-dryrun
 Architecture: iphoneos-arm64
-Section: 屿哥专属(自用)
+Section: 专属（屿哥个人自用，托管在此）
 Maintainer: DuoUI Reconstruction
 Description: 屿哥专属
  iOS 17.0 arm64e rootless validation package (dry-run; no executable dylib)
@@ -126,7 +126,7 @@ Package: com.merged.cc-suite
 Name: CC Suite
 Version: 2.1-1
 Architecture: iphoneos-arm64e
-Section: 屿哥专属(自用)
+Section: 专属（屿哥个人自用，托管在此）
 Maintainer: merged
 Depends: mobilesubstrate, firmware (>= 17.0), firmware (>= 11.0)
 Conflicts: com.ioscreatix.silo, com.skypain.cclocation, com.skypain.ccsettrings, com.skypain.ccrespring, com.sop.cpumagicrootless, netskao.ccbadgeclear-rootless, com.mtac.uptime, netskao.alipayscan-rootless, netskao.wechatscan-rootless, com.skypain.ccvpn, netskao.ccswitchdata-rootless, netskao.ccsim-rootless, netskao.tinyccmodules-rootless, netskao.cccellularrate-rootless, netskao.quantumultxlauncher-rootless, com.p2kdev.snapper2cc, com.skypain.ccautobrightness, com.skypain.ccscreenshot, com.skypain.cclockscreen, xyz.cypwn.safeccmodules, com.zqbb.ccpay, com.zqbb.qszqb, com.netskao.ccbadgeclear, com.kingpuffdaddi.control-center.ccvpn, com.netskao.cclifttowake, com.kdt.caperfhudmodule, com.kingpuffdaddi.control-center.ccvibration, com.hk.roothide.cc, com.hk.rootless.cc
@@ -143,7 +143,7 @@ Package: com.merged.passtext-suite
 Name: PassText Suite
 Version: 1.0.1-1
 Architecture: iphoneos-arm64e
-Section: 屿哥专属(自用)
+Section: 专属（屿哥个人自用，托管在此）
 Maintainer: merged
 Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
 Description: 屿哥专属!
@@ -157,7 +157,7 @@ Package: com.merged.ui-enhancer
 Name: UI Enhancer
 Version: 1.4.8-1
 Architecture: iphoneos-arm64e
-Section: 屿哥专属(自用)
+Section: 专属（屿哥个人自用，托管在此）
 Maintainer: merged
 Depends: mobilesubstrate, preferenceloader, firmware (>= 16.0), firmware (<< 19.0)
 Conflicts: com.82flex.singlevpn
