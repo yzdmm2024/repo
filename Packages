@@ -1466,22 +1466,6 @@ MD5sum: aed237d999b2fa96c988b0c3221a6fe4
 SHA1: d0ebbe686332f01d115e3b2b4d6239f489bc4857
 SHA256: e1bce7c151b1e535ca90e6ea624b5391285905d2912b51afd445a4bdf765400a
 
-Package: com.yzdmm.voicesaver
-Name: VoiceSaver
-Version: 1.0.5
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 16.0), firmware (<< 17.0)
-Description: 微信语音保存: 长按语音消息菜单加「保存」, 转 MP3 并可选存到系统文件 App; 收到别人语音也会静默转存一份。
-Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.voicesaver.png
-Filename: debs/com.yzdmm.voicesaver_1.0.5_iphoneos-arm64.deb
-Size: 36892
-MD5sum: 6b1664148a12cc41159a279dc35ff591
-SHA1: efe96d99753d11585674646d81a134e899f5ce66
-SHA256: d90a0a0fc84ec8cf79c72abf5fd9c291bb4bbd7dac01f2e5bdacb06105745bc2
-
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.77
