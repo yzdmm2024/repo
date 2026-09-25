@@ -1468,51 +1468,19 @@ SHA256: e1bce7c151b1e535ca90e6ea624b5391285905d2912b51afd445a4bdf765400a
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
-Version: 2.8.77
+Version: 2.8.80
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: yzdmm2024
 Maintainer: yzdmm2024
 Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
-Description: 不想说话 只想打字
+Description: 不想说话 只想打字（主面板按内容紧凑排版，音色列表铺满）
 Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm2024.myvoice.png
-Filename: debs/com.yzdmm2024.myvoice_2.8.77_iphoneos-arm64.deb
-Size: 402852
-MD5sum: 1e5ba10743d3750092380901e1bd049f
-SHA1: 2a3b77959b78053e26a416e49f3db33ee4651adc
-SHA256: 4b6d2caa5fe0a4a44ab901c66635d34250bf402a1192ffe39053b689ef8cd657
-
-Package: com.yzdmm2024.myvoice
-Name: 我的语音
-Version: 2.8.78
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm2024
-Maintainer: yzdmm2024
-Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
-Description: 不想说话 只想打字
-Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm2024.myvoice.png
-Filename: debs/com.yzdmm2024.myvoice_2.8.78_iphoneos-arm64.deb
-Size: 405534
-MD5sum: 7c2857f797c784dd9f5ba820259516e6
-SHA1: 70145942afcbf3e2321a8a552fd68c140d6ba4d4
-SHA256: aa3376ba16246f1c78af0e71aee66300eee156d698eb395b1b33ae701456b461
-
-Package: com.yzdmm2024.myvoice
-Name: 我的语音
-Version: 2.8.79
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm2024
-Maintainer: yzdmm2024
-Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
-Description: 不想说话 只想打字
-Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm2024.myvoice.png
-Filename: debs/com.yzdmm2024.myvoice_2.8.79_iphoneos-arm64.deb
-Size: 399326
-MD5sum: 4466af5a90a6f3a81528dc52fbf83bfa
-SHA1: 4f3f60ad4075122710cc2ac62503654a0ebe17f0
-SHA256: 220dc863e1e0c94d0bb768450e2375adca9ddf9c18f211863ecdfff367442eb8
+Filename: debs/com.yzdmm2024.myvoice_2.8.80_iphoneos-arm64.deb
+Size: 407454
+MD5sum: c224cb487c993b563c0be20ae9756a77
+SHA1: 0ebc932df852e2d83990a387fc08ebac738fc53e
+SHA256: 81e7fccbff38485ff76b1b6a28bd88a638ddd3da7e290aec913d2d66378ab5bf
 
 Package: ellekit
 Name: ElleKit
