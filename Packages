@@ -1382,10 +1382,10 @@ Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
 Description: 解锁URL玩法！
 Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.4.3_iphoneos-arm64.deb
-Size: 201172
-MD5sum: 0da741ee5cd36e830d4a5fa4bd8e6934
-SHA1: dabd55407d5ae870896981423fb234fa5281824a
-SHA256: 1355a7f0733bb663d47bb52273718172bc3aafa81dcd0fb44a1217e2446f285b
+Size: 198172
+MD5sum: 16e097ae54212da60127985058d5118f
+SHA1: 7dbf887fa5f55c6563752da6ac6a043d123f693b
+SHA256: dcbecd2e42bb0a05acc9c69ff20f0565daa28f8a7c9e9146e2d8f444c446ce08
 
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
@@ -1398,10 +1398,10 @@ Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
 Description: 解锁URL玩法！
 Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.4.3_iphoneos-arm64e.deb
-Size: 200992
-MD5sum: 65a104a761a3c38f53d88bc112e92846
-SHA1: 2d8166e6dc5ce983395945e8d6a6462fb78cf3d7
-SHA256: e361faf1d14d0d8d70b98422bc9b35736390d1550e81ec142057feb72c322421
+Size: 199176
+MD5sum: e83c8450552cc5f23b7a0db5b8b7dadc
+SHA1: 361ef2c6cc88bd7a2071a8e0e73111c5c5027fe5
+SHA256: 0dce620cca375c5bb8b61402f5c01f8025baa21abd0709ff163876aeef6d4e9a
 
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
