@@ -1561,6 +1561,21 @@ MD5sum: cf3cb2b46d690a22cbfdbada2afab104
 SHA1: 1bbf88c503a6ca960e8bc17289c7ed8672f03ce7
 SHA256: f387f8323614fab872c6f74c9d250c276ad3a334327798296689af44c78ec25e
 
+Package: com.yzdmm.kkgameautologin
+Name: KKGameAutoLogin
+Version: 1.0.18
+Architecture: iphoneos-arm64e
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Description: 游戏授权页免输账密自动登录（支持 netlify 代理中继站）
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.kkgameautologin.png
+Filename: debs/com.yzdmm.kkgameautologin_1.0.18_iphoneos-arm64e.deb
+Size: 9652
+MD5sum: d3ca718d528f545184c7fd66ece13f83
+SHA1: 417f776b11894256324095ed9bcb48cb6350c52d
+SHA256: 7451c132cdb7990bfd38975da3552f4107fab2500efc1cb1a3c73d7e2b7b8a4e
+
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.81
