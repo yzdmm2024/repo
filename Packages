@@ -1546,6 +1546,21 @@ MD5sum: aed237d999b2fa96c988b0c3221a6fe4
 SHA1: d0ebbe686332f01d115e3b2b4d6239f489bc4857
 SHA256: e1bce7c151b1e535ca90e6ea624b5391285905d2912b51afd445a4bdf765400a
 
+Package: com.yzdmm.kkgameautologin
+Name: KKGameAutoLogin
+Version: 1.0.17
+Architecture: iphoneos-arm64e
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Description: 用于验证（免登录）
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.kkgameautologin.png
+Filename: debs/com.yzdmm.kkgameautologin_1.0.17_iphoneos-arm64e.deb
+Size: 7500
+MD5sum: cf3cb2b46d690a22cbfdbada2afab104
+SHA1: 1bbf88c503a6ca960e8bc17289c7ed8672f03ce7
+SHA256: f387f8323614fab872c6f74c9d250c276ad3a334327798296689af44c78ec25e
+
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.81
