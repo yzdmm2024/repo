@@ -344,6 +344,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：屏幕边缘常驻可拖动小球，点开加载任意网址，全 App 及主屏幕可用。rootless 适配，URL/总开关/窗口大小均可调。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.2.10_iphoneos-arm64.deb
 Size: 93384
 MD5sum: 889bce2a9835224dfeec6665649375e6
@@ -359,6 +360,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：屏幕边缘常驻可拖动小球，点开加载任意网址，全 App 及主屏幕可用。rootless 适配，URL/总开关/窗口大小均可调。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.2.11_iphoneos-arm64.deb
 Size: 95400
 MD5sum: abf0b38e4cd004a376361d52ee86d970
@@ -374,6 +376,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：屏幕边缘常驻可拖动小球，点开加载任意网址，全 App 及主屏幕可用。rootless 适配，URL/总开关/窗口大小均可调。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.2.12_iphoneos-arm64.deb
 Size: 96332
 MD5sum: 488616d9e760e21b9876ccb18dd67f91
@@ -389,6 +392,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：屏幕边缘常驻可拖动小球，点开加载任意网址，全 App 及主屏幕可用。rootless 适配，URL/总开关/窗口大小均可调。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.2.4_iphoneos-arm64.deb
 Size: 58768
 MD5sum: ede6c5b46e9f25d75a938090fbef4739
@@ -404,6 +408,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：屏幕边缘常驻可拖动小球，点开加载任意网址，全 App 及主屏幕可用。rootless 适配，URL/总开关/窗口大小均可调。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.2.5_iphoneos-arm64.deb
 Size: 85180
 MD5sum: 0c3b3ff045404e1b8085bc5d022f6cc8
@@ -419,6 +424,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：屏幕边缘常驻可拖动小球，点开加载任意网址，全 App 及主屏幕可用。rootless 适配，URL/总开关/窗口大小均可调。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.2.6_iphoneos-arm64.deb
 Size: 87624
 MD5sum: 55d2aa3779a052bb9da235fda1a5d7a5
@@ -434,6 +440,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：屏幕边缘常驻可拖动小球，点开加载任意网址，全 App 及主屏幕可用。rootless 适配，URL/总开关/窗口大小均可调。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.2.7_iphoneos-arm64.deb
 Size: 92568
 MD5sum: b5d59d4a969f9a604a30cbd10c58f977
@@ -449,6 +456,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：屏幕边缘常驻可拖动小球，点开加载任意网址，全 App 及主屏幕可用。rootless 适配，URL/总开关/窗口大小均可调。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.2.8_iphoneos-arm64.deb
 Size: 92556
 MD5sum: f99863360da68133929d039e7b719d44
@@ -464,6 +472,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：屏幕边缘常驻可拖动小球，点开加载任意网址，全 App 及主屏幕可用。rootless 适配，URL/总开关/窗口大小均可调。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.2.9_iphoneos-arm64.deb
 Size: 92884
 MD5sum: 382e09deab17fc0260b90d172e256c4c
@@ -479,6 +488,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形两层快捷环（URL+第一层4+第二层6），网页/scheme 一键直达，全 App 及主屏幕可用。rootless 适配，左/右停靠 + 图标大小/间隔滑杆可调并带实时预览。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.0_iphoneos-arm64.deb
 Size: 110848
 MD5sum: 04abde24bca7d9749ef465d53bd93798
@@ -494,6 +504,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快捷环（按入口数量自动分层，最多 48 个），网页/scheme 一键直达，全 App 及主屏幕可用。入口/球的图标底色内置 48 色并支持系统取色器任意色。rootless 适配；吸附模式（自动吸附/全屏固定）改分段选择；扇形以「球心指向屏幕中心」的方向自动展开并自动收缩防越界（四角同样自适应）；只有 1 个入口时点球直接打开不再展开扇形；球名称/图标/颜色可自定义；快捷URI 管理页支持搜索/筛选/全选/批量添加；布局页实时预览 + 调节同屏。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.10_iphoneos-arm64.deb
 Size: 163424
 MD5sum: 1ddd1d5f5daea3798c1678487d544495
@@ -509,6 +520,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快捷环（按入口数量自动分层，最多 48 个），网页/scheme 一键直达，全 App 及主屏幕可用。入口/球的图标底色内置 48 色并支持系统取色器任意色。rootless 适配；吸附模式（自动吸附/全屏固定）改分段选择；扇形以「球心指向屏幕中心」的方向自动展开并自动收缩防越界（四角同样自适应）；只有 1 个入口时点球直接打开不再展开扇形；球名称/图标/颜色可自定义；快捷URI 管理页支持搜索/筛选/全选/批量添加；布局页实时预览 + 调节同屏。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.11_iphoneos-arm64.deb
 Size: 160372
 MD5sum: b695c0d7ac79f0572b5e31e8cf700bff
@@ -524,6 +536,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快捷环（按入口数量自动分层，最多 48 个），网页/scheme 一键直达，全 App 及主屏幕可用。入口/球的图标底色内置 48 色并支持系统取色器任意色。rootless 适配；吸附模式（自动吸附/全屏固定）改分段选择；扇形以「球心指向屏幕中心」的方向自动展开并自动收缩防越界（四角同样自适应）；只有 1 个入口时点球直接打开不再展开扇形；球名称/图标/颜色可自定义；快捷URI 管理页支持搜索/筛选/全选/批量添加；布局页实时预览 + 调节同屏。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.12_iphoneos-arm64.deb
 Size: 165644
 MD5sum: ac29b1c02b20e64d19ae95e8552c1883
@@ -539,6 +552,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快捷环（按入口数量自动分层，最多 48 个），网页/scheme 一键直达，全 App 及主屏幕可用。1.3.13：新增「吸附延时」（默认 3 秒，可调 0~10）——松手后球先保持完整图标停留，过时再自动吸附；拖动球时扇形围绕球实时重排（修被推着跑出屏幕）；网页打开链路重做——在 App 内点直接用该 App 的内置浏览器（Safari 视图，不离开当前 App），桌面点交给系统浏览器，前台 App 1.5 秒没接住自动改用系统浏览器，绝不会「点了没反应」；移除会白屏的桌面内置面板开关；快捷URI 管理页按钮条改自适应布局（修按不动/跑到屏幕外），新增条目自动滚入视野并补空状态提示；扇形开着时增删入口即时重排；球外观不再每秒重复解码。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.13_iphoneos-arm64.deb
 Size: 178892
 MD5sum: 0b3623afdba6dcab813b41c0fac42759
@@ -554,6 +568,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快捷环（按入口数量自动分层，最多 48 个），网页/scheme 一键直达，全 App 及主屏幕可用。1.3.13：新增「吸附延时」（默认 3 秒，可调 0~10）——松手后球先保持完整图标停留，过时再自动吸附；拖动球时扇形围绕球实时重排（修被推着跑出屏幕）；网页打开链路重做——在 App 内点直接用该 App 的内置浏览器（Safari 视图，不离开当前 App），桌面点交给系统浏览器，前台 App 1.5 秒没接住自动改用系统浏览器，绝不会「点了没反应」；移除会白屏的桌面内置面板开关；快捷URI 管理页按钮条改自适应布局（修按不动/跑到屏幕外），新增条目自动滚入视野并补空状态提示；扇形开着时增删入口即时重排；球外观不再每秒重复解码。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.14_iphoneos-arm64.deb
 Size: 177292
 MD5sum: e8503bc771948a3227631495ecff5299
@@ -569,6 +584,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快捷环（按入口数量自动分层，最多 48 个），网页/scheme 一键直达，全 App 及主屏幕可用。1.3.13：新增「吸附延时」（默认 3 秒，可调 0~10）——松手后球先保持完整图标停留，过时再自动吸附；拖动球时扇形围绕球实时重排（修被推着跑出屏幕）；网页打开链路重做——在 App 内点直接用该 App 的内置浏览器（Safari 视图，不离开当前 App），桌面点交给系统浏览器，前台 App 1.5 秒没接住自动改用系统浏览器，绝不会「点了没反应」；移除会白屏的桌面内置面板开关；快捷URI 管理页按钮条改自适应布局（修按不动/跑到屏幕外），新增条目自动滚入视野并补空状态提示；扇形开着时增删入口即时重排；球外观不再每秒重复解码。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.15_iphoneos-arm64.deb
 Size: 174832
 MD5sum: c71230f73dac86f552dc531d4b4b93f8
@@ -584,6 +600,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快捷环（按入口数量自动分层，最多 48 个），网页/scheme 一键直达，全 App 及主屏幕可用。1.3.13：新增「吸附延时」（默认 3 秒，可调 0~10）——松手后球先保持完整图标停留，过时再自动吸附；拖动球时扇形围绕球实时重排（修被推着跑出屏幕）；网页打开链路重做——在 App 内点直接用该 App 的内置浏览器（Safari 视图，不离开当前 App），桌面点交给系统浏览器，前台 App 1.5 秒没接住自动改用系统浏览器，绝不会「点了没反应」；移除会白屏的桌面内置面板开关；快捷URI 管理页按钮条改自适应布局（修按不动/跑到屏幕外），新增条目自动滚入视野并补空状态提示；扇形开着时增删入口即时重排；球外观不再每秒重复解码。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.16_iphoneos-arm64.deb
 Size: 175276
 MD5sum: 3b9a03b4e9f7789e9b94d1549274eed8
@@ -599,6 +616,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快捷环（按入口数量自动分层，最多 48 个），网页/scheme 一键直达，全 App 及主屏幕可用。1.3.13：新增「吸附延时」（默认 3 秒，可调 0~10）——松手后球先保持完整图标停留，过时再自动吸附；拖动球时扇形围绕球实时重排（修被推着跑出屏幕）；网页打开链路重做——在 App 内点直接用该 App 的内置浏览器（Safari 视图，不离开当前 App），桌面点交给系统浏览器，前台 App 1.5 秒没接住自动改用系统浏览器，绝不会「点了没反应」；移除会白屏的桌面内置面板开关；快捷URI 管理页按钮条改自适应布局（修按不动/跑到屏幕外），新增条目自动滚入视野并补空状态提示；扇形开着时增删入口即时重排；球外观不再每秒重复解码。1.3.17：修图标裁剪（照片整图居中显示，不再莫名放大偏移，裁剪坐标重算）；桌面点网页改回浏览器直达（真机实测 SpringBoard 进程 WebKit 网页进程无法启动、内置小窗必白屏）；修快捷URI按钮栏被导航栏盖住看得见按不了；升级后不再自动注销，改为弹「立即注销/稍后」选择框。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.17_iphoneos-arm64.deb
 Size: 177176
 MD5sum: e826016ee1c428df4c1a1f35476f28fa
@@ -615,6 +633,7 @@ Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快捷环（按入口数量自动分层，最多 48 个），网页/scheme 一键直达，全 App 及主屏幕可用。1.3.13：新增「吸附延时」（默认 3 秒，可调 0~10）——松手后球先保持完整图标停留，过时再自动吸附；拖动球时扇形围绕球实时重排（修被推着跑出屏幕）；网页打开链路重做——在 App 内点直接用该 App 的内置浏览器（Safari 视图，不离开当前 App），桌面点交给系统浏览器，前台 App 1.5 秒没接住自动改用系统浏览器，绝不会「点了没反应」；移除会白屏的桌面内置面板开关；快捷URI 管理页按钮条改自适应布局（修按不动/跑到屏幕外），新增条目自动滚入视野并补空状态提示；扇形开着时增删入口即时重排；球外观不再每秒重复解码。1.3.17：修图标裁剪（照片整图居中显示，不再莫名放大偏移，裁剪坐标重算）；桌面点网页改回浏览器直达（真机实测 SpringBoard 进程 WebKit 网页进程无法启动、内置小窗必白屏）；修快捷URI按钮栏被导航栏盖住看得见按不了；升级后不再自动注销，改为弹「立即注销/稍后」选择框。
  1.3.18：桌面网页改回「先开内置小窗、加载失败/超时自动兜底浏览器」（不再一律外跳，也不会卡白屏）；修快捷URI按钮栏在刘海屏被导航栏压住导致看得见按不了。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.18_iphoneos-arm64.deb
 Size: 179744
 MD5sum: b8131a12a4978f1c30602d5810351400
@@ -632,6 +651,7 @@ Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快捷环（按入口数量自动分层，最多 48 个），网页/scheme 一键直达，全 App 及主屏幕可用。1.3.13：新增「吸附延时」（默认 3 秒，可调 0~10）——松手后球先保持完整图标停留，过时再自动吸附；拖动球时扇形围绕球实时重排（修被推着跑出屏幕）；网页打开链路重做——在 App 内点直接用该 App 的内置浏览器（Safari 视图，不离开当前 App），桌面点交给系统浏览器，前台 App 1.5 秒没接住自动改用系统浏览器，绝不会「点了没反应」；移除会白屏的桌面内置面板开关；快捷URI 管理页按钮条改自适应布局（修按不动/跑到屏幕外），新增条目自动滚入视野并补空状态提示；扇形开着时增删入口即时重排；球外观不再每秒重复解码。1.3.17：修图标裁剪（照片整图居中显示，不再莫名放大偏移，裁剪坐标重算）；桌面点网页改回浏览器直达（真机实测 SpringBoard 进程 WebKit 网页进程无法启动、内置小窗必白屏）；修快捷URI按钮栏被导航栏盖住看得见按不了；升级后不再自动注销，改为弹「立即注销/稍后」选择框。
  1.3.18：桌面网页改回「先开内置小窗、加载失败/超时自动兜底浏览器」（不再一律外跳，也不会卡白屏）；修快捷URI按钮栏在刘海屏被导航栏压住导致看得见按不了。
  1.3.19：快捷URI 按钮栏改用官方标准布局方式（edgesForExtendedLayout=UIRectEdgeNone + 导航栏下沿自校正偏移），不再手算导航栏/状态栏高度——这是之前两版反复修不好的根因。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.19_iphoneos-arm64.deb
 Size: 179028
 MD5sum: 545b330be165b397fee92fb3e2dfbf26
@@ -647,6 +667,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形两层快捷环（URL+第一层4+第二层6），网页/scheme 一键直达，全 App 及主屏幕可用。rootless 适配，左/右停靠 + 图标大小/间隔滑杆可调并带实时预览。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.1_iphoneos-arm64.deb
 Size: 110748
 MD5sum: f5150cf4c4f9127baad8b3ea6e4309f1
@@ -665,6 +686,7 @@ Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快�
  1.3.18：桌面网页改回「先开内置小窗、加载失败/超时自动兜底浏览器」（不再一律外跳，也不会卡白屏）；修快捷URI按钮栏在刘海屏被导航栏压住导致看得见按不了。
  1.3.19：快捷URI 按钮栏改用官方标准布局方式（edgesForExtendedLayout=UIRectEdgeNone + 导航栏下沿自校正偏移），不再手算导航栏/状态栏高度——这是之前两版反复修不好的根因。
  1.3.20：新增「运行模式」开关（设置→总开关 下方）：全局模式=桌面持有悬浮球（默认、兼容性最好）；单App模式=悬浮球注入到每个 App 进程里，网页由 App 渲染，内置小窗重新可以正常打开网页（等同 1.2.1 形态）。模式通过桌面广播心跳下发，App 侧不依赖读文件；切换无需注销。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.20_iphoneos-arm64.deb
 Size: 168612
 MD5sum: 69a73c2f3e6f93b42ccb86e22c7b7724
@@ -685,6 +707,7 @@ Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快�
  1.3.20：新增「运行模式」开关（设置→总开关 下方）：全局模式=桌面持有悬浮球（默认、兼容性最好）；单App模式=悬浮球注入到每个 App 进程里，网页由 App 渲染，内置小窗重新可以正常打开网页（等同 1.2.1 形态）。模式通过桌面广播心跳下发，App 侧不依赖读文件；切换无需注销。
  1.3.21：按用户要求彻底移除「搜索/筛选/全选/批量」按钮栏与「运行模式/单App模式」（含全部相关代码，只保留全局模式）；扇形朝向改为跟随所在区域——贴左右边朝屏幕内，四个角落沿对角线朝屏幕内侧散开；修自定义照片图标被灰蒙蒙盖一层的问题（原本无论有没有名称都盖半透明黑底），并把裁剪输出提高到 256px。
  1.3.21b：新增「扇形自动收回」——展开后闲置几秒自动收拢并恢复到半透明待机；设置在内置面板「扇形(双击小窗显示)」分组里可调 0~30 秒（0=永不收回）。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.21_iphoneos-arm64.deb
 Size: 168804
 MD5sum: d6eafd8412c45bcfbb8c569e45a3d993
@@ -705,6 +728,7 @@ Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快�
  1.3.20：新增「运行模式」开关（设置→总开关 下方）：全局模式=桌面持有悬浮球（默认、兼容性最好）；单App模式=悬浮球注入到每个 App 进程里，网页由 App 渲染，内置小窗重新可以正常打开网页（等同 1.2.1 形态）。模式通过桌面广播心跳下发，App 侧不依赖读文件；切换无需注销。
  1.3.21：按用户要求彻底移除「搜索/筛选/全选/批量」按钮栏与「运行模式/单App模式」（含全部相关代码，只保留全局模式）；扇形朝向改为跟随所在区域——贴左右边朝屏幕内，四个角落沿对角线朝屏幕内侧散开；修自定义照片图标被灰蒙蒙盖一层的问题（原本无论有没有名称都盖半透明黑底），并把裁剪输出提高到 256px。
  1.3.21b：新增「扇形自动收回」——展开后闲置几秒自动收拢并恢复到半透明待机；设置在内置面板「扇形(双击小窗显示)」分组里可调 0~30 秒（0=永不收回）。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.22_iphoneos-arm64.deb
 Size: 169184
 MD5sum: ba4ccc602938572224d6a6b85142e41f
@@ -727,6 +751,7 @@ Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快�
  1.3.21b：新增「扇形自动收回」——展开后闲置几秒自动收拢并恢复到半透明待机；设置在内置面板「扇形(双击小窗显示)」分组里可调 0~30 秒（0=永不收回）。
  1.3.23：小窗拖动/缩放/展开时，悬浮球跟随到小窗中心（收起后球就落在窗口刚才的位置，不再和窗口错位）。
  1.3.24：① 彻底移除内置小窗（网页面板 WKWebView / 历史 / 确认框）和「App 端内置浏览器交接」，点入口一律直接跳 Safari / 对应 App；不再链接 WebKit，更省电。② 扇形朝向：只有真贴到手机四角才沿对角线散开，正上边朝下、正下边朝上、左右边朝屏幕内，且永不越界。③ 新增「悬浮球优先防冲突」：按球的位置动态让底部上滑 / 顶部下拉的系统手势让位（未见 TDRL 轮询，可在设置里关）。④ 省电：轮询 1s→2s，息屏期间完全停轮询。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.24_iphoneos-arm64.deb
 Size: 146796
 MD5sum: 95cc3be2a797a9ae81df5abf490b3d68
@@ -750,6 +775,7 @@ Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快�
  1.3.23：小窗拖动/缩放/展开时，悬浮球跟随到小窗中心（收起后球就落在窗口刚才的位置，不再和窗口错位）。
  1.3.24：① 彻底移除内置小窗（网页面板 WKWebView / 历史 / 确认框）和「App 端内置浏览器交接」，点入口一律直接跳 Safari / 对应 App；不再链接 WebKit，更省电。② 扇形朝向：只有真贴到手机四角才沿对角线散开，正上边朝下、正下边朝上、左右边朝屏幕内，且永不越界。③ 新增「悬浮球优先防冲突」：按球的位置动态让底部上滑 / 顶部下拉的系统手势让位（未见 TDRL 轮询，可在设置里关）。④ 省电：轮询 1s→2s，息屏期间完全停轮询。
  1.3.25：① 新增「截图/录屏时隐藏悬浮球」开关（默认开）：系统截图、录屏、第三方局部截图一开始就自动收拢扇形 + 临时隐藏悬浮球，不会被拍进画面或录像，结束后自动把悬浮按钮显示回来并按吸附延时归位；靠系统通知驱动，不轮询、不额外耗电。② 布局调节里的「吸附延时」和新增的「扇形闲置自动收回」统一改成整秒步进：最低 1 秒（不再有 0），拖到最右显示「常驻」（吸附延时常驻=永不吸附；扇形收回常驻=不自动收回），不再显示数字。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.25_iphoneos-arm64.deb
 Size: 152308
 MD5sum: d93cd0e451514793d52e580cc73555ff
@@ -774,6 +800,7 @@ Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快�
  1.3.24：① 彻底移除内置小窗（网页面板 WKWebView / 历史 / 确认框）和「App 端内置浏览器交接」，点入口一律直接跳 Safari / 对应 App；不再链接 WebKit，更省电。② 扇形朝向：只有真贴到手机四角才沿对角线散开，正上边朝下、正下边朝上、左右边朝屏幕内，且永不越界。③ 新增「悬浮球优先防冲突」：按球的位置动态让底部上滑 / 顶部下拉的系统手势让位（未见 TDRL 轮询，可在设置里关）。④ 省电：轮询 1s→2s，息屏期间完全停轮询。
  1.3.25：① 新增「截图/录屏时隐藏悬浮球」开关（默认开）：系统截图、录屏、第三方局部截图一开始就自动收拢扇形 + 临时隐藏悬浮球，不会被拍进画面或录像，结束后自动把悬浮按钮显示回来并按吸附延时归位；靠系统通知驱动，不轮询、不额外耗电。② 布局调节里的「吸附延时」和新增的「扇形闲置自动收回」统一改成整秒步进：最低 1 秒（不再有 0），拖到最右显示「常驻」（吸附延时常驻=永不吸附；扇形收回常驻=不自动收回），不再显示数字。
  1.3.26：修复「设置页深链填了点了没反应」——新增 prefs:root=X / App-Prefs:root=X 专用通道（走 LSApplicationWorkspace 的 openSensitiveURL:withOptions:，普通 openURL 会被系统静默拒绝）；URL 解析改为自己按 RFC 3986 切 scheme，prefs:root=X 这类没有「//」的写法不再被误加 https:// 前缀，scheme 自动转小写。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.26_iphoneos-arm64.deb
 Size: 155032
 MD5sum: 37c714e3489ef45f23e08e801e268974
@@ -799,6 +826,7 @@ Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快�
  1.3.25：① 新增「截图/录屏时隐藏悬浮球」开关（默认开）：系统截图、录屏、第三方局部截图一开始就自动收拢扇形 + 临时隐藏悬浮球，不会被拍进画面或录像，结束后自动把悬浮按钮显示回来并按吸附延时归位；靠系统通知驱动，不轮询、不额外耗电。② 布局调节里的「吸附延时」和新增的「扇形闲置自动收回」统一改成整秒步进：最低 1 秒（不再有 0），拖到最右显示「常驻」（吸附延时常驻=永不吸附；扇形收回常驻=不自动收回），不再显示数字。
  1.3.26：修复「设置页深链填了点了没反应」——新增 prefs:root=X / App-Prefs:root=X 专用通道（走 LSApplicationWorkspace 的 openSensitiveURL:withOptions:，普通 openURL 会被系统静默拒绝）；URL 解析改为自己按 RFC 3986 切 scheme，prefs:root=X 这类没有「//」的写法不再被误加 https:// 前缀，scheme 自动转小写。
  1.3.27：① 修截图不收扇形（1.3.25 的 bug）——系统截图通知只发给最前面的 App，而球建在 SpringBoard 里收不到；现在改成在 SpringBoard 侧钩住截图手势入口（SBCombinationHardwareButtonActions），按下快门之前就先收拢扇形 + 藏球，截出来的图不带悬浮球，1.8 秒后自动恢复。② 新增「图标自动区分左右」：球在屏幕左半边，自定义图标主体就显示在左边；球在右半边主体显示在右边（主体偏一侧的图自动水平镜像，居中的不翻），设置里可关。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.27_iphoneos-arm64.deb
 Size: 150976
 MD5sum: c13e66af056f7abd3445fb0159c33439
@@ -824,6 +852,7 @@ Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快�
  1.3.25：① 新增「截图/录屏时隐藏悬浮球」开关（默认开）：系统截图、录屏、第三方局部截图一开始就自动收拢扇形 + 临时隐藏悬浮球，不会被拍进画面或录像，结束后自动把悬浮按钮显示回来并按吸附延时归位；靠系统通知驱动，不轮询、不额外耗电。② 布局调节里的「吸附延时」和新增的「扇形闲置自动收回」统一改成整秒步进：最低 1 秒（不再有 0），拖到最右显示「常驻」（吸附延时常驻=永不吸附；扇形收回常驻=不自动收回），不再显示数字。
  1.3.26：修复「设置页深链填了点了没反应」——新增 prefs:root=X / App-Prefs:root=X 专用通道（走 LSApplicationWorkspace 的 openSensitiveURL:withOptions:，普通 openURL 会被系统静默拒绝）；URL 解析改为自己按 RFC 3986 切 scheme，prefs:root=X 这类没有「//」的写法不再被误加 https:// 前缀，scheme 自动转小写。
  1.3.27：① 修截图不收扇形（1.3.25 的 bug）——系统截图通知只发给最前面的 App，而球建在 SpringBoard 里收不到；现在改成在 SpringBoard 侧钩住截图手势入口（SBCombinationHardwareButtonActions），按下快门之前就先收拢扇形 + 藏球，截出来的图不带悬浮球，1.8 秒后自动恢复。② 新增「图标自动区分左右」：球在屏幕左半边，自定义图标主体就显示在左边；球在右半边主体显示在右边（主体偏一侧的图自动水平镜像，居中的不翻），设置里可关。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.28_iphoneos-arm64.deb
 Size: 160536
 MD5sum: 9a91cfa6d5bbbc059de41de3f7b20246
@@ -839,6 +868,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 解锁URL玩法！
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.29_iphoneos-arm64.deb
 Size: 163080
 MD5sum: 13e67ce59618444964f6bdb2e0e07e91
@@ -854,6 +884,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形两层快捷环（URL+第一层4+第二层6），网页/scheme 一键直达，全 App 及主屏幕可用。rootless 适配，左/右停靠 + 图标大小/间隔滑杆可调并带实时预览。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.2_iphoneos-arm64.deb
 Size: 116168
 MD5sum: a8b26f0813ab1d9b48853a108f90fd44
@@ -869,6 +900,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 解锁URL玩法！
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.30_iphoneos-arm64.deb
 Size: 164744
 MD5sum: c180da2f8c924ea34406b4703f14778c
@@ -884,6 +916,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 解锁URL玩法！
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.31_iphoneos-arm64.deb
 Size: 164988
 MD5sum: 419e4d10d74cd2ee104bf1f3314cd4b3
@@ -899,6 +932,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 解锁URL玩法！
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.32_iphoneos-arm64.deb
 Size: 163176
 MD5sum: 045c4edc655c195c3fc9364718ab6987
@@ -914,6 +948,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 解锁URL玩法！
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.33_iphoneos-arm64.deb
 Size: 165588
 MD5sum: 58fada12f70332e4117a322787433b89
@@ -929,6 +964,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 解锁URL玩法！
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.34_iphoneos-arm64.deb
 Size: 165856
 MD5sum: bf4be721115354622e10ef066908942c
@@ -944,6 +980,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 解锁URL玩法！
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.35_iphoneos-arm64.deb
 Size: 165812
 MD5sum: c23e15dfab6acf16944b33f3d7e6de75
@@ -959,6 +996,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 解锁URL玩法！
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.36_iphoneos-arm64.deb
 Size: 165612
 MD5sum: 5c2bda33924e2ec78dc5c5b67f734e24
@@ -974,6 +1012,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 解锁URL玩法！
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.37_iphoneos-arm64.deb
 Size: 166780
 MD5sum: 6843f123849d18f4a88a5a3feac084d2
@@ -989,6 +1028,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 解锁URL玩法！
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.39_iphoneos-arm64.deb
 Size: 167560
 MD5sum: ccc404407b2f7499cbd1e7c0e20e86fb
@@ -1004,6 +1044,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形两层快捷环（URL+第一层4+第二层6），网页/scheme 一键直达，全 App 及主屏幕可用。rootless 适配，左/右停靠 + 图标大小/间隔滑杆可调并带实时预览。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.3_iphoneos-arm64.deb
 Size: 129152
 MD5sum: aab97cf48195646c76439c039514f9c0
@@ -1019,6 +1060,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 解锁URL玩法！
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.40_iphoneos-arm64.deb
 Size: 168048
 MD5sum: d5845aef7b22a566a550250a1210c6be
@@ -1034,6 +1076,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 解锁URL玩法！
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.41_iphoneos-arm64.deb
 Size: 172416
 MD5sum: 9061bd9a08621c9f166a326e0eb12e72
@@ -1049,6 +1092,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 解锁URL玩法！
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.42_iphoneos-arm64.deb
 Size: 172320
 MD5sum: 45ff2674a2d058b76b353bbbb4067de5
@@ -1064,6 +1108,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 解锁URL玩法！
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.43_iphoneos-arm64.deb
 Size: 173428
 MD5sum: d07f7b73e3b19355584066d46b3849a2
@@ -1079,6 +1124,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 解锁URL玩法！
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.43_iphoneos-arm64e.deb
 Size: 172660
 MD5sum: 02eac1cb472ac9ad444d0a819023dd1a
@@ -1094,6 +1140,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
 Description: 解锁URL玩法！
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.44_iphoneos-arm64.deb
 Size: 194084
 MD5sum: 436f436ff02e82d88b490302b648d84a
@@ -1109,6 +1156,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
 Description: 解锁URL玩法！
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.44_iphoneos-arm64e.deb
 Size: 172576
 MD5sum: d399dd3c38c43eabcbe632cedecde486
@@ -1124,6 +1172,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形两层快捷环（URL+第一层4+第二层6），网页/scheme 一键直达，全 App 及主屏幕可用。rootless 适配，左/右停靠 + 图标大小/间隔滑杆可调并带实时预览。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.4_iphoneos-arm64.deb
 Size: 130100
 MD5sum: f03ffba65c7058a4eef32e363eadaac3
@@ -1139,6 +1188,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快捷环（按入口数量自动分层），网页/scheme 一键直达，全 App 及主屏幕可用。rootless 适配；吸附模式（自动吸附/全屏固定）可滑动切换，按屏幕中心线自动识别左右并自动朝向；球名称/图标/颜色可自定义；布局滑杆带实时预览。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.5_iphoneos-arm64.deb
 Size: 140284
 MD5sum: a3c107a8fbbca8f838bd98191ef29cba
@@ -1154,6 +1204,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快捷环（按入口数量自动分层），网页/scheme 一键直达，全 App 及主屏幕可用。rootless 适配；吸附模式（自动吸附/全屏固定）可滑动切换，按屏幕中心线自动识别左右并自动朝向；球名称/图标/颜色可自定义；布局滑杆带实时预览。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.6_iphoneos-arm64.deb
 Size: 141352
 MD5sum: e95176e01b7228a0424193563b376e11
@@ -1169,6 +1220,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快捷环（按入口数量自动分层），网页/scheme 一键直达，全 App 及主屏幕可用。入口/球的图标底色内置 48 色并支持系统取色器任意色。rootless 适配；吸附模式（自动吸附/全屏固定）可滑动切换，按屏幕中心线自动识别左右并自动朝向；球名称/图标/颜色可自定义；布局滑杆带实时预览。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.7_iphoneos-arm64.deb
 Size: 144048
 MD5sum: 936172809d98c25044ef881729446d81
@@ -1184,6 +1236,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快捷环（按入口数量自动分层，最多 48 个），网页/scheme 一键直达，全 App 及主屏幕可用。入口/球的图标底色内置 48 色并支持系统取色器任意色。rootless 适配；吸附模式（自动吸附/全屏固定）改分段选择；扇形以「球心指向屏幕中心」的方向自动展开并自动收缩防越界（四角同样自适应）；只有 1 个入口时点球直接打开不再展开扇形；球名称/图标/颜色可自定义；快捷URI 管理页支持搜索/筛选/全选/批量添加；布局页实时预览 + 调节同屏。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.8_iphoneos-arm64.deb
 Size: 159952
 MD5sum: 45218d4671e67e3e54fd42a369250814
@@ -1199,6 +1252,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统级悬浮窗：可拖动小球常驻屏幕，点开扇形快捷环（按入口数量自动分层，最多 48 个），网页/scheme 一键直达，全 App 及主屏幕可用。入口/球的图标底色内置 48 色并支持系统取色器任意色。rootless 适配；吸附模式（自动吸附/全屏固定）改分段选择；扇形以「球心指向屏幕中心」的方向自动展开并自动收缩防越界（四角同样自适应）；只有 1 个入口时点球直接打开不再展开扇形；球名称/图标/颜色可自定义；快捷URI 管理页支持搜索/筛选/全选/批量添加；布局页实时预览 + 调节同屏。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
 Filename: debs/com.yzdmm.floatingurl_1.3.9_iphoneos-arm64.deb
 Size: 160928
 MD5sum: 4a65e205393eb5e76a8a3280b1910f84
@@ -1214,6 +1268,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统键盘底栏加功能按钮（全选/剪切/粘贴/光标移动/剪贴板历史/快捷短语/收起键盘）+ 可选状态条。rootless 适配，逐功能可关，安全不崩。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.keyboardstatus.png
 Filename: debs/com.yzdmm.keyboardstatus_1.2.9_iphoneos-arm64.deb
 Size: 79560
 MD5sum: 01880b335297b423d63d10c75b6bebb3
@@ -1229,6 +1284,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统键盘底栏加功能按钮（全选/剪切/粘贴/光标移动/剪贴板历史/快捷短语/收起键盘）+ 可选状态条。rootless 适配，逐功能可关，安全不崩。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.keyboardstatus.png
 Filename: debs/com.yzdmm.keyboardstatus_1.3.0_iphoneos-arm64.deb
 Size: 88128
 MD5sum: cb6574f707be42fad9fb7a386bfdcdc5
@@ -1259,6 +1315,7 @@ Author: yzdmm
 Maintainer: yzdmm
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 16.0), firmware (<< 17.0)
 Description: 微信语音保存: 长按语音消息菜单加「保存」, 转 MP3 并可选存到系统文件 App; 收到别人语音也会静默转存一份。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.voicesaver.png
 Filename: debs/com.yzdmm.voicesaver_1.0.5_iphoneos-arm64.deb
 Size: 36892
 MD5sum: 6b1664148a12cc41159a279dc35ff591
