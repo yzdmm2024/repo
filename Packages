@@ -1275,6 +1275,38 @@ MD5sum: 4a65e205393eb5e76a8a3280b1910f84
 SHA1: fa97ccef66bc0e06fcfb609c4eed07db26e51fed
 SHA256: f652e3b0df046b6a283dbc489ba020df84b891102daa9e78cb3dfad09ad9c2dc
 
+Package: com.yzdmm.floatingurl
+Name: 悬浮URL
+Version: 1.4.0
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 解锁URL玩法！
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
+Filename: debs/com.yzdmm.floatingurl_1.4.0_iphoneos-arm64.deb
+Size: 182380
+MD5sum: 90996c8393d21a19f7f011f55382119a
+SHA1: 4a37a7e2d11adec96c49a531326e5b4438b2056f
+SHA256: 189ef5b413bab5c6b90bfd91b4e8fb456f0a95d86fdfc31d2c2a45f32a4a7af7
+
+Package: com.yzdmm.floatingurl
+Name: 悬浮URL
+Version: 1.4.0
+Architecture: iphoneos-arm64e
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 解锁URL玩法！
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.floatingurl.png
+Filename: debs/com.yzdmm.floatingurl_1.4.0_iphoneos-arm64e.deb
+Size: 182376
+MD5sum: 7d5ae84303c90a94ff0dc872417b3357
+SHA1: b9daa2fe5da811f52fbe5cf76d65c62422074222
+SHA256: bc657d92271fa96f8594fe70a8df380646900a7cf9df25fdfad3e16815b952d7
+
 Package: com.yzdmm.keyboardstatus
 Name: 键盘下方状态
 Version: 1.2.9
