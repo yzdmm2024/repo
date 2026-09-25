@@ -1,11 +1,11 @@
-Origin: Ac`ljcr
-Label: Ac`ljcr
+Origin: 我爱吃辣椒炒肉源
+Label: 我爱吃辣椒炒肉源
 Suite: stable
 Codename: stable
 Version: 1.0
 Architectures: iphoneos-arm64 iphoneos-arm64e
 Components: main
-Description: Ac`ljcr 越狱插件源（定位模拟等）
+Description: 我爱吃辣椒炒肉源（越狱插件 + TrollStore 应用）
 Date: Fri, 25 Sep 2026 02:51:36 GMT
 
 MD5Sum:
