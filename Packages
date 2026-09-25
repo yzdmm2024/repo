@@ -1468,19 +1468,19 @@ SHA256: e1bce7c151b1e535ca90e6ea624b5391285905d2912b51afd445a4bdf765400a
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
-Version: 2.8.80
+Version: 2.8.81
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: yzdmm2024
 Maintainer: yzdmm2024
 Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
-Description: 不想说话 只想打字（主面板按内容紧凑排版，音色列表铺满）
+Description: 不想说话 只想打字（主面板按内容紧凑排版，音色列表铺满；设置面板图标修正）
 Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm2024.myvoice.png
-Filename: debs/com.yzdmm2024.myvoice_2.8.80_iphoneos-arm64.deb
-Size: 407454
-MD5sum: c224cb487c993b563c0be20ae9756a77
-SHA1: 0ebc932df852e2d83990a387fc08ebac738fc53e
-SHA256: 81e7fccbff38485ff76b1b6a28bd88a638ddd3da7e290aec913d2d66378ab5bf
+Filename: debs/com.yzdmm2024.myvoice_2.8.81_iphoneos-arm64.deb
+Size: 399876
+MD5sum: 0047fac6710abd320f7343239e9c96dd
+SHA1: f3c555e537386616b3f2aed3871aa9424b925de1
+SHA256: 30733b3e9bd0deb022cc9329aa7f1100ecb4ea319c5879b70d368a4b9df23123
 
 Package: ellekit
 Name: ElleKit
