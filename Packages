@@ -1243,6 +1243,21 @@ SHA256: 3c987a8ae2ced661e7c5a7af8b750711dc36a1a028bf00c83015d35230ebfff3
 
 Package: com.yzdmm.keyboardstatus
 Name: 键盘下方状态
+Version: 1.2.14
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
+Description: 系统键盘底栏加功能按钮（全选/剪切/粘贴/光标移动/剪贴板历史/快捷短语/收起键盘/全删）+ 第三方键盘（微信输入法）工具栏支持。rootless 适配，逐功能可关，安全不崩。
+Filename: debs/com.yzdmm.keyboardstatus_1.2.14_iphoneos-arm64.deb
+Size: 76962
+MD5sum: 1487fda2298fce527e58960288c33798
+SHA1: 6b09e5bf21af67999f23a2edee5bbf081b0d4acb
+SHA256: d40deaf331e0fca0423295da5d9a51a1c283ccdb0b5bf201bea6a377e36cafef
+
+Package: com.yzdmm.keyboardstatus
+Name: 键盘下方状态
 Version: 1.2.9
 Architecture: iphoneos-arm64
 Section: Tweaks
