@@ -252,3 +252,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+# note: icons/ 目录变更也会触发重建（gen.yml paths: icons/**）

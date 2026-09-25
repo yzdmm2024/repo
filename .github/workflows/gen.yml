@@ -6,6 +6,7 @@ on:
     paths:
       - 'debs/**'
       - 'gen_packages.py'
+      - 'icons/**'
 
 jobs:
   regen:
