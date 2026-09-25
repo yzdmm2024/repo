@@ -23,6 +23,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 DEBS_DIR = os.path.join(HERE, 'debs')
 PACKAGES_PATH = os.path.join(HERE, 'Packages')
 RELEASE_PATH = os.path.join(HERE, 'Release')
+ICON_BASE = 'https://yzdmm2024.github.io/repo/icons'
 
 FIELD_ORDER = [
     'Package', 'Name', 'Version', 'Architecture', 'Priority', 'Section',
@@ -129,6 +130,16 @@ def parse_control(text):
     return d
 
 
+def inject_icon(info):
+    """若 icons/<Package>.png 存在，自动给 Packages 注入 Icon: 字段。"""
+    pkg = info.get('Package')
+    if not pkg:
+        return
+    p = os.path.join(HERE, 'icons', pkg + '.png')
+    if os.path.exists(p):
+        info['Icon'] = ICON_BASE + '/' + pkg + '.png'
+
+
 def get_deb_info(deb_path):
     info = parse_control(extract_control(deb_path))
     filename = os.path.relpath(deb_path, HERE).replace('\\', '/')
@@ -142,6 +153,7 @@ def get_deb_info(deb_path):
     info['SHA256'] = hashlib.sha256(data).hexdigest()
     if info.get('Package') in SECTION_OVERRIDE:
         info['Section'] = SECTION_OVERRIDE[info['Package']]
+    inject_icon(info)
     return data, info
 
 
