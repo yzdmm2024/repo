@@ -239,6 +239,21 @@ MD5sum: fb088538de26ad37b18a68a62a740235
 SHA1: ca42effbf11c60b5c9aa1d1bd89b69007e25572e
 SHA256: e176678e54476ac34cb9f93a10e06e2ea3ac607c11a90dcaa86f657de3df70e8
 
+Package: com.local.appstoragecleaner
+Name: 清理工具
+Version: 2.1.0
+Architecture: iphoneos-arm64e
+Section: Utilities
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: firmware (>= 16.0), preferenceloader
+Description: 白名单式 App 缓存清理。只清空 Library/Caches、tmp 与 WebKit 缓存的内容，目录本身保留；不触碰 Documents、Application Support、Preferences、Cookies、Keychain 与数据库。清理前逐项校验路径边界与符号链接，校验失败立即中止。
+Filename: debs/com.local.appstoragecleaner_2.1.0_iphoneos-arm64e.deb
+Size: 28120
+MD5sum: fe6347d4e2e4424c5e0eb71a0a723d61
+SHA1: 2f3fa89fb6fa428839cc4ae9376a013d8af39330
+SHA256: 8bdcfdff2c771eaafb0948a2e8a51669ca0a3e309dedf147ca540e5799f6177e
+
 Package: com.local.mygestures
 Name: 我的手势
 Version: 0.11.13
