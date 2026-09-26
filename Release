@@ -6,17 +6,17 @@ Version: 1.0
 Architectures: iphoneos-arm64 iphoneos-arm64e
 Components: main
 Description: 我爱吃辣椒炒肉（越狱插件 + TrollStore 应用）
-Date: Sat, 26 Sep 2026 12:28:39 GMT
+Date: Sat, 26 Sep 2026 13:36:10 GMT
 
 MD5Sum:
- 7bd76defce3c2f42ac96cdb5283df56c 141817 Packages
- 8bd309fc37288b7391966db89c60c310 25707 Packages.gz
- 76429dd170a5262dd43469de6ec97895 23634 Packages.bz2
+ ba9f365a3dc0a76deb34cc0c1917579e 142709 Packages
+ 500291d4a9b073db2ae9032e3b8173e3 25822 Packages.gz
+ 3a789705c7aeb6bcd9a84046a33a2fca 23722 Packages.bz2
 SHA1:
- c9c4245e86e18e327af3c14b37d4d15e9bb7eb0a 141817 Packages
- 1e00c8ab9cf9c66301cff9453e712d5b2fb1c109 25707 Packages.gz
- 5a84f93c679055f4bbedd8f80b1b256ff0ff6370 23634 Packages.bz2
+ 30a1559e4837fcc05fa27aaabe40c2bb76c4d254 142709 Packages
+ 5914807f4d96e6ca9af075e0071aeca28cc15db0 25822 Packages.gz
+ f71e05daee41f1e53b36f3608b239433cedc6c72 23722 Packages.bz2
 SHA256:
- c038bb3352ac007f76e52b59290c22976ea102d40531f5f84a70534e0c232ea1 141817 Packages
- efe867ea22addb2b2ee5b0e99a8006c5dcdbacac70f77679bd573db0c920e1f9 25707 Packages.gz
- 1472b97c070da7f760f8b28d9e23fcbcc0543722d873402afb7e6353f87b7ff4 23634 Packages.bz2
+ c370fe3a6aaf60ee28ca17f3cf9cbb388f33e99f033bb1dc4f0fe401d6ac8b13 142709 Packages
+ e6eba6a4f51381b2ce1c8da9ece33f7b926ff3833fac4820e8537b094c76ef02 25822 Packages.gz
+ e2249ec8d16977c82e71dd2a9ac9fd7f4f88af9244b3602e102412544c00fab1 23722 Packages.bz2
