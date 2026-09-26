@@ -1626,19 +1626,19 @@ SHA256: 7451c132cdb7990bfd38975da3552f4107fab2500efc1cb1a3c73d7e2b7b8a4e
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
-Version: 2.8.82
+Version: 2.8.83
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: yzdmm2024
 Maintainer: yzdmm2024
 Depends: firmware (>=14.0), mobilesubstrate (>= 0.9.7100) | com.rpetrich.ellekit
-Description: 不想说话 只想打字（验证系统升级为 license_kit 时效授权：解锁码带到期+签名、防回拨；旧码失效需重新发码；设置面板图标修正）
+Description: 不想说话 只想打字（验证系统升级为 license_kit 时效授权：解锁码带到期+签名、防回拨；旧码失效需重新发码；设置面板图标修正；修复微信载入期闪退）
 Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm2024.myvoice.png
-Filename: debs/com.yzdmm2024.myvoice_2.8.82_iphoneos-arm64.deb
-Size: 412364
-MD5sum: 7e3b7069d0ccdd804049199576396f2a
-SHA1: 3e6b394d0632e429dd4c130fd40fac163b133710
-SHA256: 186da939df31eddac6adab8e27a80c43fd2655ac3b8f715eac99dff70c957583
+Filename: debs/com.yzdmm2024.myvoice_2.8.83_iphoneos-arm64.deb
+Size: 411982
+MD5sum: f0545ffa47551fade3760da35c6ac161
+SHA1: 137477f539cbe96ab4d3a459c16830c49612641b
+SHA256: e0005542efa472ca94670ea04f35c43377d6cba2cfcc1bad96f90979bf730ced
 
 Package: ellekit
 Name: ElleKit
