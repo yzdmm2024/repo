@@ -1858,38 +1858,6 @@ SHA256: e60962c80ce7abf048965f18628659acdd06e8c49cade86fb73bfdf97fdfc9ee
 
 Package: com.yzdmm.hideglobe
 Name: 隐藏地球图标
-Version: 1.0.2
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
-Description: 隐藏系统键盘地球（输入法切换）键，设置里可开关。rootless 适配，逐 App 生效。
-Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.hideglobe.png
-Filename: debs/com.yzdmm.hideglobe_1.0.2_iphoneos-arm64.deb
-Size: 11072
-MD5sum: fdea6a2d3faa367d3d21a9cfb908ccea
-SHA1: 5aa94c9aa6801324a3af15a3a53bf92d99c5765c
-SHA256: 4a8aaa0273f5cfa69cbae189e9c33b4cb661ed183d3acebb2de8c46f1b34fe3f
-
-Package: com.yzdmm.hideglobe
-Name: 隐藏地球图标
-Version: 1.0.0
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
-Description: 隐藏系统键盘地球（输入法切换）键，设置里可开关。rootless 适配，逐 App 生效。
-Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.hideglobe.png
-Filename: debs/com.yzdmm.hideglobe_1.0.3_iphoneos-arm64.deb
-Size: 11674
-MD5sum: abc5776bc64cfb6c7eea3fec55a7cbaf
-SHA1: 957d9471d068eae90d373af746923b2c89fa3b1d
-SHA256: 87188ec7a834e5965be51791cbd42f82278fe8895f3ca43e075e6e24e5d2d7ce
-
-Package: com.yzdmm.hideglobe
-Name: 隐藏地球图标
 Version: 1.0.3
 Architecture: iphoneos-arm64
 Section: Tweaks
