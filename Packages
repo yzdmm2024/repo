@@ -1866,8 +1866,8 @@ Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 隐藏系统键盘地球（输入法切换）键，设置里可开关。rootless 适配，逐 App 生效。
 Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.hideglobe.png
-Filename: debs/com.yzdmm.hideglobe_1.0.0_iphoneos-arm64.deb
-Size: 10758
-MD5sum: 988117f86e0e88c6d2a8901abd8b95de
-SHA1: 32c3402edec5332dbde34f2b6034acf8c88a52c7
-SHA256: be9025b01803d395f68f20971a434e7ab12dbfc2a1007624a7df0aa25529d72d
+Filename: debs/com.yzdmm.hideglobe_1.0.1_iphoneos-arm64.deb
+Size: 10754
+MD5sum: 921be7117ffad1177599c75f6ea2b0ca
+SHA1: 570f702c52088f9a622cf2b6c8fd257d23dca621
+SHA256: 9bb4a7f2f895daf407dd94fd500a03897c13bfc7389d9619ec56c1e3cb5be342
