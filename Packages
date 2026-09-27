@@ -466,6 +466,22 @@ MD5sum: efccbe998fd12160c561e452acd93cd8
 SHA1: 8b154045a3526a9461d59858f6a09b03b3da8420
 SHA256: 8b92cca16c151410970e6ea66454010ab2d13bfa8dd2243711bc2e2e2853dcb7
 
+Package: com.yzdmm.appdata2
+Name: AppData2
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: Fouad Raheb (original AppData), yzdmm2024 (fork)
+Maintainer: yzdmm2024
+Depends: firmware (>= 14.0), mobilesubstrate (>= 0.9.5000) | com.rpetrich.ellekit
+Description: 查看与管理应用数据（AppData 二改）。新增「Safe Clean 保留登录清理」：清理 Caches/Tmp/Logs 等可弃文件与其它非关键目录，保留登录态（Preferences/Cookies/HTTPStorages/Application Support/WebKit/Accounts），并可选择保留 Documents。
+Icon: file:///var/jb/Library/PreferenceBundles/AppData2Prefs.bundle/AppData2@3x.png
+Filename: debs/com.yzdmm.appdata2_1.0.0_iphoneos-arm64.deb
+Size: 125736
+MD5sum: 3a6071e045cf7e60353799326b88db3d
+SHA1: 7eadab6fa7912cd911294ae90e3cb279ab852000
+SHA256: 481c32d938f676f7444ede4575486cc4d5087b044cbe3bb3afc9abc02d28c599
+
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
 Version: 1.2.10
