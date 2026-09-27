@@ -1,20 +1,5 @@
 Package: com.yzdmm.fridahider
 Name: FridaHider
-Version: 1.0.0
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
-Description: Frida检测绕过工具，可在设置中配置黑名单，对指定APP隐藏Frida痕迹。支持rootless越狱。
-Filename: debs/FridaHider_v1.0.0_iphoneos-arm64.deb
-Size: 11932
-MD5sum: 3a65bd8ff5594fb2ef47863566b77cce
-SHA1: b1039d609e9967323c7742701af48f777b27cd0c
-SHA256: 62db9fea9ca6fef54152c2df41135f3a0d4469b3211b93c9ccdbf4e37efe81fd
-
-Package: com.yzdmm.fridahider
-Name: FridaHider
 Version: 1.0.2
 Architecture: iphoneos-arm64
 Section: Tweaks
