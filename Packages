@@ -1,3 +1,33 @@
+Package: com.yzdmm.fridahider
+Name: FridaHider
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Description: Frida检测绕过工具，可在设置中配置黑名单，对指定APP隐藏Frida痕迹。支持rootless越狱。
+Filename: debs/FridaHider_v1.0.0_iphoneos-arm64.deb
+Size: 11932
+MD5sum: 3a65bd8ff5594fb2ef47863566b77cce
+SHA1: b1039d609e9967323c7742701af48f777b27cd0c
+SHA256: 62db9fea9ca6fef54152c2df41135f3a0d4469b3211b93c9ccdbf4e37efe81fd
+
+Package: com.yzdmm.fridahider
+Name: FridaHider
+Version: 1.0.2
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: mobilesubstrate (>= 0.9.5000)
+Description: Frida检测绕过工具（验证版）。仅对目标应用 com.jygw.qznbp 隐藏Frida痕迹，默认开启，无需设置面板。支持rootless越狱。
+Filename: debs/FridaHider_v1.0.2_iphoneos-arm64.deb
+Size: 6000
+MD5sum: 921da27b0eeef7c9f5bcd458f3eb265e
+SHA1: 1f27ed9673ec93b436800f9867ec772f678b5114
+SHA256: c4e2f79ab9c6a047dee4534cdc59b3052541fac35c6a2ed3c387fdf14a959b55
+
 Package: byg.iosios.net.appdata-rootless
 Name: AppData软件降级-Rootless
 Version: 2.7.3
@@ -1903,17 +1933,3 @@ MD5sum: 210ca1d2dd1ed492331fc33901e93659
 SHA1: b70717fdec081edec492aa6b044e14bcede0a956
 SHA256: e60962c80ce7abf048965f18628659acdd06e8c49cade86fb73bfdf97fdfc9ee
 
-Package: com.yzdmm.fridahider
-Name: FridaHider
-Version: 1.0.2
-Architecture: iphoneos-arm64
-Maintainer: yzdmm
-Author: yzdmm
-Section: Tweaks
-Description: Frida检测绕过工具（验证版）。仅对目标应用 com.jygw.qznbp 隐藏Frida痕迹，默认开启，无需设置面板。支持rootless越狱。
-Depends: mobilesubstrate (>= 0.9.5000)
-Filename: ./debs/FridaHider_v1.0.2_iphoneos-arm64.deb
-Size: 6000
-MD5sum: 921da27b0eeef7c9f5bcd458f3eb265e
-SHA1: 1f27ed9673ec93b436800f9867ec772f678b5114
-SHA256: c4e2f79ab9c6a047dee4534cdc59b3052541fac35c6a2ed3c387fdf14a959b55
