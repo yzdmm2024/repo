@@ -1858,7 +1858,7 @@ SHA256: e60962c80ce7abf048965f18628659acdd06e8c49cade86fb73bfdf97fdfc9ee
 
 Package: com.yzdmm.hideglobe
 Name: 隐藏地球图标
-Version: 1.0.0
+Version: 1.0.2
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: yzdmm
