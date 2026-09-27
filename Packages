@@ -48,22 +48,6 @@ MD5sum: 0c93ec37456bf5479ebd6b080ef2725f
 SHA1: 3dcda737c777dd37c846a3eba69fba86374ef3e1
 SHA256: 5a4c6d39903f9cf076dc2d27ea60eb88acf870e0678f6336c027fec0973dc5f0
 
-Package: com.axs.cpuwatcher
-Name: CPU 监视器
-Version: 0.1.11
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm2024
-Maintainer: yzdmm2024
-Depends: mobilesubstrate, firmware(>=14.0), preferenceloader
-Description: 本项目仅限个人学习使用，仅针对 Relaxin 越狱环境、iOS 16.6.1 进行适配，其他越狱 / 系统版本均未测试。使用产生的各类报错、异常问题，请使用者自行排查解决。功能说明：按需 CPU 与性能诊断工具（默认静默，零后台采样，打开监控页才启动采集，返回上级页立即停止）。① 全局 CPU 占用与内存占用；② 实时进程列表（支持按 CPU / 内存 / 唤醒 / 线程 / 名称排序，可暂停冻结、点击复制。每个进程按可执行路径自动标注 [系统]/[App]/[越狱]/[未知] 类别，一眼区分是 iOS 自带、你装的 App 还是越狱相关程序；路径读不到的统一标 [未知]，不再冒认系统。实测非 root 即可读取，不需要特权助手）；③ 能耗排行（按进程统计耗电纳焦与中断唤醒次数，用于定位「CPU 不高但待机耗电」的插件）；④ 一键列出 SpringBoard 实际加载的插件 dylib 清单（在 SpringBoard 内部直接问 dyld，不是解析 Filter plist 猜的，含每个 dylib 的 UUID，可与崩溃日志 usedImages 对齐）；⑤ 插件冲突扫描（IMP 归属法：遍历类方法，检测同一方法是否被多个插件替换，标红显示潜在冲突）；⑥ 实时监控页内悬浮浮层：显示 CPU / 内存 前 3 名（带进程名，解决“只见数字不知是谁”），可全屏拖动停靠，点按切换 CPU / 内存，长按关闭（开关同步变 OFF）；⑦ 越狱插件 CPU / 内存归因：直接列出每个注入 SpringBoard 的 tweak 占了多少 CPU%、映射内存大小，按高低排，回答“哪个插件最吃资源”（内存为 dylib 映射大小近似；注入具体 App 的 tweak 不在此列）。安全设计：不注册任何 LaunchDaemon、开机零执行、不改动系统关键进程、不写越狱目录（数据只落在 /var/mobile/Media/CPUWatcher）、采集进程有 60 秒硬性存活上限与孤儿看门狗。
-Icon: https://yzdmm2024.github.io/repo/icons/com.axs.cpuwatcher.png
-Filename: debs/com.axs.cpuwatcher_0.1.11_iphoneos-arm64.deb
-Size: 124904
-MD5sum: e7f0accf9a0237778eac36d0547421d7
-SHA1: aa26bf9863ddc39596d1000f5917908568472585
-SHA256: b575fc8e5e02bc764f23d0d777772cf7b93afbff4d15211664936e019e351c08
-
 Package: com.axs.superscreenshot
 Name: 超级截图
 Version: 6.20.31
@@ -465,21 +449,6 @@ MD5sum: 79ce3b491989d0e775cc324cd8a906f6
 SHA1: 9fcb65e9e2b24dedcd16f620caa53a14ddec69f5
 SHA256: 3b22f89afa6811633f4eeba7ac3aa3fcde32ea4320ca248b3a80188d23617df7
 
-Package: com.roa.randopenapp
-Name: 随机开启app
-Version: 1.3.3
-Architecture: iphoneos-arm64e
-Section: Tweaks
-Author: ROA
-Maintainer: ROA
-Description: 在设定时间段内随机选择一个时刻自动打开指定App，每天最多一次。支持在系统设置中选择目标App和随机时间段。
-Icon: https://yzdmm2024.github.io/repo/icons/com.roa.randopenapp.png
-Filename: debs/com.roa.randopenapp_1.3.3_iphoneos-arm64e.deb
-Size: 32376
-MD5sum: 21e9d03bc33244215afe0a271861d9c2
-SHA1: 7da567d59031b5a9cd178136c526b3d532046e5d
-SHA256: 6a0e1d0248793f41bfd48d5787246e33f4e5e53222b5f31a38956c8736693487
-
 Package: com.roothide.patcher
 Name: RootHide Patcher
 Version: 2.1.4-1+debug
@@ -511,38 +480,6 @@ Size: 7968964
 MD5sum: efccbe998fd12160c561e452acd93cd8
 SHA1: 8b154045a3526a9461d59858f6a09b03b3da8420
 SHA256: 8b92cca16c151410970e6ea66454010ab2d13bfa8dd2243711bc2e2e2853dcb7
-
-Package: com.yzdmm.appstoragecleaner
-Name: 清理工具
-Version: 2.1.2
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm2024
-Maintainer: yzdmm2024
-Depends: firmware (>= 16.0), preferenceloader
-Description: 白名单式 App 缓存清理。只清空 Library/Caches、tmp 与 WebKit 缓存的内容，目录本身保留；不触碰 Documents、Application Support、Preferences、Cookies、Keychain 与数据库。清理前逐项校验路径边界与符号链接，校验失败立即中止。
-Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.appstoragecleaner.png
-Filename: debs/com.yzdmm.appstoragecleaner_2.1.2_iphoneos-arm64.deb
-Size: 44352
-MD5sum: 517514b3713b2f1aee834ab094a02f47
-SHA1: 58c3aa666eca64cbf9d40113939b652a632619fc
-SHA256: 87be7d8bdc60ce3d32609e8a5d2e7d38cc9c16fe69fa7881890a1302aa220733
-
-Package: com.yzdmm.appstoragecleaner
-Name: 清理工具
-Version: 2.1.2
-Architecture: iphoneos-arm64e
-Section: Tweaks
-Author: yzdmm2024
-Maintainer: yzdmm2024
-Depends: firmware (>= 16.0), preferenceloader
-Description: 白名单式 App 缓存清理。只清空 Library/Caches、tmp 与 WebKit 缓存的内容，目录本身保留；不触碰 Documents、Application Support、Preferences、Cookies、Keychain 与数据库。清理前逐项校验路径边界与符号链接，校验失败立即中止。
-Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.appstoragecleaner.png
-Filename: debs/com.yzdmm.appstoragecleaner_2.1.2_iphoneos-arm64e.deb
-Size: 44352
-MD5sum: 3ea4625281356f33c303259a1d6c9ec0
-SHA1: ebd6bcc8be82d9b804da1b3a2c8b0f47e1f1298e
-SHA256: b19da711d353bb43e72712da59bf81b65b80f552b61015c76bf256371a0210d6
 
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
@@ -1917,4 +1854,3 @@ Size: 1744732
 MD5sum: 210ca1d2dd1ed492331fc33901e93659
 SHA1: b70717fdec081edec492aa6b044e14bcede0a956
 SHA256: e60962c80ce7abf048965f18628659acdd06e8c49cade86fb73bfdf97fdfc9ee
-
