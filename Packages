@@ -1671,10 +1671,10 @@ Maintainer: yzdmm
 Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 隐藏系统键盘地球（输入法切换）键，设置里可开关。rootless 适配，逐 App 生效。
 Filename: debs/com.yzdmm.hideglobe_1.0.5_iphoneos-arm64.deb
-Size: 11780
-MD5sum: 4c8a7ff920ee41a15766c848d4e11c73
-SHA1: 06fc1cbbb979d47f1b6136f525d4994b7e72a455
-SHA256: 7ecc65c0928afcb79701d0113fe53cad88f18afc3db86d2a8a0ac2ba311db480
+Size: 14338
+MD5sum: 7e56c2c0914c8d5ca7204e9ecb0de89a
+SHA1: 388ef40cc85bd07ac530f8fe300302ec9564e5db
+SHA256: f1e63c49a522f36495949795a3cff98df534a3ab50935336b9e54ce8f872a7d7
 
 Package: com.yzdmm.keyboardstatus
 Name: 键盘下方状态
@@ -1687,10 +1687,10 @@ Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统键盘底栏加功能按钮（全选/剪切/粘贴/光标移动/剪贴板历史/快捷短语/收起键盘）+ 可选状态条。rootless 适配，逐功能可关，安全不崩。
 Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.keyboardstatus.png
 Filename: debs/com.yzdmm.keyboardstatus_1.3.1_iphoneos-arm64.deb
-Size: 68682
-MD5sum: 4c005288ffd39fc6683adcb146984e8b
-SHA1: 74a26aae9be9707e937cfbdb8b0428e4ad96826c
-SHA256: c0eb43c48f117d721c5123329ab75c1b5799eb05b63207b2acb9f2591c8fd632
+Size: 70864
+MD5sum: 7a8bb402c33a67b5c22a018098bece4f
+SHA1: c55b9fc0d7f7a1046bc939a6c44f7977bebaf43d
+SHA256: a079d78f74d5e6301a24bf54eef05c9e75140f879f07e4d8381e24236c9620d5
 
 Package: com.yzdmm.kkgameautologin
 Name: KKGameAutoLogin
