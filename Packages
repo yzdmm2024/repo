@@ -1655,10 +1655,10 @@ Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
 Description: 系统键盘底栏加功能按钮（全选/剪切/粘贴/光标移动/剪贴板历史/快捷短语/收起键盘）+ 可选状态条。rootless 适配，逐功能可关，安全不崩。
 Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.keyboardstatus.png
 Filename: debs/com.yzdmm.keyboardstatus_1.3.1_iphoneos-arm64.deb
-Size: 67092
-MD5sum: 5649ac4ea10ba353d067d63e200bc53f
-SHA1: f886f67083fd687eec14b505f6da6aa57360281a
-SHA256: 3c839a8176e6e325d1a54d10309988ecba3b6c15d4afa08cbe538b25c3ca9e3b
+Size: 68390
+MD5sum: ad82c2ebeb6116070799c4e23fe0a53b
+SHA1: 57344015d6cca1a7e31ddafb77939eb3b2e13d9c
+SHA256: c680fad20f301d3f5a827ec85f602e70c051c6c45160660158a825bed3304a75
 
 Package: com.yzdmm.kkgameautologin
 Name: KKGameAutoLogin
