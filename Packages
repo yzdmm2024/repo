@@ -1,20 +1,21 @@
 Package: com.muratkurt.cyswitcher
 Name: CYSwitcher
-Version: 0.5.4
+Version: 0.5.34
 Architecture: iphoneos-arm64e
 Priority: optional
 Section: 专属（屿哥个人自用，托管在此）
 Author: muratkurt / SINI
 Maintainer: muratkurt
-Depends: firmware (>= 16.0), preferenceloader, mobilesubstrate (>= 0.9.5000)
-Conflicts: com.muratkurt.kaswitcher, com.sini921.quickappskill
-Replaces: com.muratkurt.kaswitcher, com.sini921.quickappskill
-Description: CYSwitcher + QuickAppsKill unified preferences fusion
-Filename: debs/CYSwitcher-Fusion-0.5.4-clean-iphoneos-arm64e.deb
-Size: 235842
-MD5sum: 523b0f749ee487f173a8d20d8acda9c5
-SHA1: cd242d9a239f9d2430c8e4ac36aba3dcca19e3a9
-SHA256: 06ebe4242026a504447487a445d545c543febbf0d3283c7a3ac3d0ae3dbb34e4
+Depends: firmware (>= 16.0), preferenceloader, mobilesubstrate (>= 0.9.5000), rootless-compat (>= 0.9)
+Conflicts: com.muratkurt.kaswitcher, com.sini921.quickappskill, run.cheng.autopower, com.dynamicx.tweak, com.axs.jikan, com.dao.powercuff, com.axs.zxbsp
+Replaces: com.muratkurt.kaswitcher, com.sini921.quickappskill, run.cheng.autopower, com.dynamicx.tweak, com.axs.jikan, com.dao.powercuff, com.axs.zxbsp
+Description: CYSwitcher 0.5.34 是一款 iOS 综合增强插件
+ 整合 App 切换器、快速清理、应用保护、自动低电量、Dynamic Island 信息显示、充电剩余时间、系统节能及注销免验证等功能。采用单一设置入口，布局简洁，功能集中，减少多插件同时管理的繁琐。
+Filename: debs/CYSwitcher-0.5.34-iphoneos-arm64e.deb
+Size: 367468
+MD5sum: 35ddd5706ff893cd7ae7764adbc3ccdd
+SHA1: c97ae3a1aa833f1cbe72176e973ed8fb8f25ae69
+SHA256: ed9d0c5ef82e5afa7f2b850576b06b52e53a7f07419082287914937ab397b2a6
 
 Package: byg.iosios.net.appdata-rootless
 Name: AppData软件降级-Rootless
