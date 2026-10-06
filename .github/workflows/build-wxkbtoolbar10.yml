@@ -1,0 +1,62 @@
+name: Build WxkbToolbar10 & update source
+
+# 手动触发：在 GitHub（macOS + Theos）编译 WxkbToolbar10，
+# 把产物 deb 放入本源 debs/ 并重建 Packages / Release，GitHub Pages 自动刷新。
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout source repo
+        uses: actions/checkout@v4
+
+      - name: Checkout WxkbToolbar10 source
+        uses: actions/checkout@v4
+        with:
+          repository: yzdmm2024/WxkbToolbar10
+          ref: main
+          path: WxkbToolbar10
+
+      - name: Install Theos
+        run: |
+          brew install ldid xz 2>/dev/null || true
+          sudo mkdir -p /opt/theos
+          sudo chown $(whoami) /opt/theos
+          git clone --recursive https://github.com/theos/theos.git /opt/theos
+          rm -rf /opt/theos/sdks
+          git clone --depth 1 --filter=blob:none --sparse https://github.com/theos/sdks.git /opt/theos/sdks
+          cd /opt/theos/sdks && git sparse-checkout set iPhoneOS14.5.sdk
+
+      - name: Build package (rootless)
+        working-directory: WxkbToolbar10
+        env:
+          THEOS: /opt/theos
+        run: |
+          chmod +x layout/DEBIAN/postinst
+          make clean 2>/dev/null || true
+          make package FINALPACKAGE=1
+
+      - name: Stage deb & regenerate metadata
+        run: |
+          set -e
+          mkdir -p debs
+          cp -f WxkbToolbar10/packages/*.deb debs/
+          python3 gen_packages.py
+
+      - name: Commit & push
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no changes to commit"
+            exit 0
+          fi
+          git commit -m "update: WxkbToolbar10 1.0.0（微信输入法工具栏 10 图标 + 自动缩小铺满）"
+          git push origin main
