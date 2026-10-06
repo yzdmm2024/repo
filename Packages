@@ -1,21 +1,20 @@
 Package: com.muratkurt.cyswitcher
 Name: CYSwitcher
-Version: 0.5.34
+Version: 0.5.70
 Architecture: iphoneos-arm64e
 Priority: optional
-Section: 专属（屿哥个人自用，托管在此）
+Section: Tweaks
 Author: muratkurt / SINI
 Maintainer: muratkurt
-Depends: firmware (>= 16.0), preferenceloader, mobilesubstrate (>= 0.9.5000), rootless-compat (>= 0.9)
-Conflicts: com.muratkurt.kaswitcher, com.sini921.quickappskill, run.cheng.autopower, com.dynamicx.tweak, com.axs.jikan, com.dao.powercuff, com.axs.zxbsp
-Replaces: com.muratkurt.kaswitcher, com.sini921.quickappskill, run.cheng.autopower, com.dynamicx.tweak, com.axs.jikan, com.dao.powercuff, com.axs.zxbsp
-Description: CYSwitcher 0.5.34 是一款 iOS 综合增强插件
- 整合 App 切换器、快速清理、应用保护、自动低电量、Dynamic Island 信息显示、充电剩余时间、系统节能及注销免验证等功能。采用单一设置入口，布局简洁，功能集中，减少多插件同时管理的繁琐。
-Filename: debs/CYSwitcher-0.5.34-iphoneos-arm64e.deb
-Size: 367468
-MD5sum: 35ddd5706ff893cd7ae7764adbc3ccdd
-SHA1: c97ae3a1aa833f1cbe72176e973ed8fb8f25ae69
-SHA256: ed9d0c5ef82e5afa7f2b850576b06b52e53a7f07419082287914937ab397b2a6
+Depends: firmware (>= 15.0), preferenceloader, mobilesubstrate (>= 0.9.5000), rootless-compat (>= 0.9), com.mrgcgamer.libgcuniversal, com.creaturecoding.libcspreferences (>= 1.5.8), ellekit
+Conflicts: com.muratkurt.kaswitcher, com.sini921.quickappskill, run.cheng.autopower, com.dynamicx.tweak, com.axs.jikan, com.dao.powercuff, com.axs.zxbsp, com.cydia.love.april-rootless, com.wxhbts.storeswitcher.roothide, storeswitcher, apt.cydiakk.shuffle.rootless, net.kenhtao.shuffle
+Replaces: com.muratkurt.kaswitcher, com.sini921.quickappskill, run.cheng.autopower, com.dynamicx.tweak, com.axs.jikan, com.dao.powercuff, com.axs.zxbsp, com.cydia.love.april-rootless, com.wxhbts.storeswitcher.roothide, storeswitcher, apt.cydiakk.shuffle.rootless, net.kenhtao.shuffle
+Description: CYSwitcher unified preferences with native Shuffle settings classification and StoreSwitcher account switching
+Filename: debs/CYSwitcher-0.5.70-iphoneos-arm64e.deb
+Size: 820788
+MD5sum: f283343bbe8bdefb999710e9bb853420
+SHA1: a9828279a89e32c229fb926e0767a46a25563b60
+SHA256: 8e5b2ff1b3280ccbf7b4c8f5982956e99864246b57c9d2ca6a61cc1379cd8ef1
 
 Package: byg.iosios.net.appdata-rootless
 Name: AppData软件降级-Rootless
