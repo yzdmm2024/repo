@@ -9,12 +9,23 @@ Maintainer: muratkurt
 Depends: firmware (>= 15.0), preferenceloader, mobilesubstrate (>= 0.9.5000), rootless-compat (>= 0.9), com.mrgcgamer.libgcuniversal, com.creaturecoding.libcspreferences (>= 1.5.8), ellekit
 Conflicts: com.muratkurt.kaswitcher, com.sini921.quickappskill, run.cheng.autopower, com.dynamicx.tweak, com.axs.jikan, com.dao.powercuff, com.axs.zxbsp, com.cydia.love.april-rootless, com.wxhbts.storeswitcher.roothide, storeswitcher, apt.cydiakk.shuffle.rootless, net.kenhtao.shuffle
 Replaces: com.muratkurt.kaswitcher, com.sini921.quickappskill, run.cheng.autopower, com.dynamicx.tweak, com.axs.jikan, com.dao.powercuff, com.axs.zxbsp, com.cydia.love.april-rootless, com.wxhbts.storeswitcher.roothide, storeswitcher, apt.cydiakk.shuffle.rootless, net.kenhtao.shuffle
-Description: CYSwitcher unified preferences with native Shuffle settings classification and StoreSwitcher account switching
+Description: 一个入口，集中管理多项系统功能。
+ * ⚡ 快速应用管理
+ * 🧹 后台快速清理
+ * 🔋 电源管理
+ * 🌊 灵动岛效果
+ * 🔓 注销不锁屏
+ * 🎨 背景美化
+ * 🗂️ 设置归类
+ * 🛍️ 账号快速切换
+ * ☕ 系统行为调整
+ * 🧊 性能与功耗调节
+ * 🚫 解锁与验证优化
 Filename: debs/CYSwitcher-0.5.70-iphoneos-arm64e.deb
-Size: 820788
-MD5sum: f283343bbe8bdefb999710e9bb853420
-SHA1: a9828279a89e32c229fb926e0767a46a25563b60
-SHA256: 8e5b2ff1b3280ccbf7b4c8f5982956e99864246b57c9d2ca6a61cc1379cd8ef1
+Size: 820692
+MD5sum: 7fec09c9afa113b5114612f540b3551b
+SHA1: a5caa546b602907e860b55bcac5d001d777f3e7e
+SHA256: 7812d28cc89fc993dcf3b91e2c09ce39dcb35016cb8d8c002199960e8581f078
 
 Package: byg.iosios.net.appdata-rootless
 Name: AppData软件降级-Rootless
