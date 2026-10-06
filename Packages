@@ -2014,6 +2014,22 @@ MD5sum: e8a1d416851643386e40c848a4b8ddd6
 SHA1: dcd989338d0be646c8da7fcd6a952fca00b9bb84
 SHA256: cfdb6e856de260bbbe1163433f34963873aafc766b721665b9bf2fb2609fc628
 
+Package: com.yzdmm.qgg
+Name: Qugg去广告
+Version: 2.1.8
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 全 App 去广告：进程内 NSURLProtocol 拦截 + WebView DOM 清扫 + 原生广告视图隐藏 + 微信朋友圈/公众号广告行隐藏。规则来自 wool_scripts，350KB 规则库内嵌，无需代理无需证书。屏幕 5 连点呼出控制面板，「设置 - 越狱插件」有完整设置页（含 App 黑名单：搜索 App 一键举报拉黑，拉黑后该 App 内引擎完全不启动）。rootless 适配。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.qgg.png
+Filename: debs/com.yzdmm.qgg_2.1.8_iphoneos-arm64.deb
+Size: 231860
+MD5sum: 30b3bcec055e76853419162fbc46b5f0
+SHA1: 618226305ff0010e0c2b6389593646b2a5753aff
+SHA256: eb11075de27c945a6695edc52e99a8256502b21319c8f26980892609b13f39ee
+
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.83
