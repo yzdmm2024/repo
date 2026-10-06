@@ -3,7 +3,7 @@ Name: CYSwitcher
 Version: 0.5.70
 Architecture: iphoneos-arm64e
 Priority: optional
-Section: Tweaks
+Section: 专属（屿哥个人自用，托管在此）
 Author: muratkurt / SINI
 Maintainer: muratkurt
 Depends: firmware (>= 15.0), preferenceloader, mobilesubstrate (>= 0.9.5000), rootless-compat (>= 0.9), com.mrgcgamer.libgcuniversal, com.creaturecoding.libcspreferences (>= 1.5.8), ellekit
