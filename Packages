@@ -1936,6 +1936,22 @@ SHA256: c7af9c50d909ecd4f9ce526073f82d46056233ba2f8738371aa19f662efc0d3c
 
 Package: com.yzdmm.qgg
 Name: Qugg去广告
+Version: 2.1.12
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
+Description: 全 App 去广告：进程内 NSURLProtocol 拦截 + WebView DOM 清扫 + 原生广告视图隐藏 + 微信朋友圈/公众号广告行隐藏。规则来自 wool_scripts，350KB 规则库内嵌，无需代理无需证书。在「设置 - 越狱插件 - Qugg」解锁并配置，解锁后所有未拉黑的 App 默认开启去广告。rootless 适配。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.qgg.png
+Filename: debs/com.yzdmm.qgg_2.1.12_iphoneos-arm64.deb
+Size: 232900
+MD5sum: 276b9870b43d5ff757901045064f8488
+SHA1: fe5ecb087d0535bd93060a70eef0359329b85bf0
+SHA256: 3b789d4682954724e59bf9b851e7c2cb5b6352fae05fa30e3f4310b066ebf7d8
+
+Package: com.yzdmm.qgg
+Name: Qugg去广告
 Version: 2.1.1
 Architecture: iphoneos-arm64
 Section: Tweaks
