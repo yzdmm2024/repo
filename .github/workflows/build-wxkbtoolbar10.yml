@@ -58,5 +58,5 @@ jobs:
             echo "no changes to commit"
             exit 0
           fi
-          git commit -m "update: WxkbToolbar10 1.0.0（微信输入法工具栏 10 图标 + 自动缩小铺满）"
+          git commit -m "update: WxkbToolbar10（微信输入法键盘扩展工具栏增强）"
           git push origin main
