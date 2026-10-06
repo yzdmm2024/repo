@@ -57,6 +57,7 @@ SECTION_OVERRIDE = {
     'com.merged.cc-suite': '专属（屿哥个人自用，托管在此）',
     'com.merged.passtext-suite': '专属（屿哥个人自用，托管在此）',
     'com.merged.ui-enhancer': '专属（屿哥个人自用，托管在此）',
+    'com.muratkurt.cyswitcher': '专属（屿哥个人自用，托管在此）',
 }
 
 
