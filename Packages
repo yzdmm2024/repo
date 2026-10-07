@@ -1914,18 +1914,18 @@ SHA256: 7451c132cdb7990bfd38975da3552f4107fab2500efc1cb1a3c73d7e2b7b8a4e
 
 Package: com.yzdmm.qznbp.mylibrary
 Name: QZNBP MyLibrary
-Version: 1.0.1
+Version: 1.0.2
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: yzdmm
 Maintainer: yzdmm
 Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 16.0), firmware (<< 17.0)
 Description: 注入 com.jygw.qznbp 游戏的 dylib 插件（My_Library），仅在该 App 进程内加载。
-Filename: debs/com.yzdmm.qznbp.mylibrary_1.0.1_iphoneos-arm64.deb
-Size: 513288
-MD5sum: 6d50ca5cba115f57691a682974bb1e91
-SHA1: e3b0b03e63f585348e36e87064f3d60569e279ce
-SHA256: b25b18c83f9c9095e0bee1ad3615a435748e067783a28a495fe3fd6ecab148f9
+Filename: debs/com.yzdmm.qznbp.mylibrary_1.0.2_iphoneos-arm64.deb
+Size: 513628
+MD5sum: ca6f8c0fc0399d538729ae183edaee6e
+SHA1: 4757934955590d864d0e38311d376b5693d22058
+SHA256: 2de296d1fbb79b3f529e10786ce8b1e32cda2e3ca5518b3a489540aec117d26f
 
 Package: com.yzdmm.wxkbtoolbar10
 Name: WxkbToolbar10
