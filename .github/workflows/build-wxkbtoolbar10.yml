@@ -59,4 +59,14 @@ jobs:
             exit 0
           fi
           git commit -m "update: WxkbToolbar10（微信输入法键盘扩展工具栏增强）"
-          git push origin main
+          # 其他项目的 workflow 也在往 main 提交，push 被拒时 rebase 后重试
+          for i in 1 2 3 4; do
+            if git push origin main; then
+              exit 0
+            fi
+            echo "push rejected (fetch first), rebase & retry #$i"
+            sleep 8
+            git pull --rebase=merges --autostash origin main
+          done
+          echo "push failed after retries" >&2
+          exit 1
