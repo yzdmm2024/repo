@@ -1853,7 +1853,7 @@ SHA256: 112cd26425e6d5ecb96558e0ae99654a9dcfb6d143858df0964f23a37fa82e9f
 
 Package: com.yzdmm.keyboardstatus
 Name: 键盘下方状态
-Version: 1.3.4
+Version: 1.3.5
 Architecture: iphoneos-arm64
 Section: Tweaks
 Author: yzdmm
@@ -1861,11 +1861,11 @@ Maintainer: yzdmm
 Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
 Description: 系统键盘底栏加功能按钮（全选/剪切/粘贴/光标移动/剪贴板历史/快捷短语/收起键盘）+ 可选状态条。rootless 适配，逐功能可关，安全不崩。
 Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.keyboardstatus.png
-Filename: debs/com.yzdmm.keyboardstatus_1.3.4_iphoneos-arm64.deb
-Size: 72262
-MD5sum: 49d172dc430c98376650279107e20b47
-SHA1: 42118e15cf37bb5331fdca77fb9cdea88cf53056
-SHA256: 1858127de9557a4cff9ef4f97dfeb5ac8bdb6736537fc4531474752d2b291878
+Filename: debs/com.yzdmm.keyboardstatus_1.3.5_iphoneos-arm64.deb
+Size: 76184
+MD5sum: 050f8e53a40bf4766ca1b37f0e443e3d
+SHA1: 217fa6c00ec6d295e5f3b60340da52105f5ee0d9
+SHA256: 5e6aeae5f9f785313b6e22348c4c7ed0f04f97290958bce9ce8f6a1b5ab1e168
 
 Package: com.yzdmm.kkgameautologin
 Name: KKGameAutoLogin
