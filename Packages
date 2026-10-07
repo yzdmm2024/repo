@@ -2282,10 +2282,10 @@ Maintainer: yzdmm
 Depends: mobilesubstrate, preferenceloader
 Description: 微信输入法键盘扩展增强：整键盘透明、自定义键盘背景与按键配色、按键圆角；工具栏图标增删/顺序请在微信输入法内「定制工具栏」调整
 Filename: debs/com.yzdmm.wxkbtoolbar10_1.6.24_iphoneos-arm64.deb
-Size: 81712
-MD5sum: 6cf60d5792c4141ba652d44d2f9c0153
-SHA1: ac83dd8f1441287792c24d4baa9a02fa3f17f954
-SHA256: 3f8de115c2c0499ab14cdf4cec954ef665d7a38c03e890d40e2ef92e87e62ced
+Size: 81620
+MD5sum: c5010c3c27a865e865fd0474f742cef9
+SHA1: 614dd8d6bad0a054d62d4a3cb09ca112cab0ac47
+SHA256: 5084e37d2e43b6d91f6730274e03c25292edfe95adb172eac7302dd63a044e28
 
 Package: com.yzdmm.wxkbtoolbar10
 Name: WxkbToolbar10
