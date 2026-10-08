@@ -1,1 +1,86 @@
-test
+name: Build WxkbToolbar10 (Linux) & update source
+
+# 绕开拥堵的 macOS runner：在 ubuntu-latest 用 Theos 编译（rootless），
+# 产物 deb 放入本源 debs/ 并重建 Packages / Release，GitHub Pages 自动刷新。
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source repo
+        uses: actions/checkout@v4
+
+      - name: Checkout WxkbToolbar10 source
+        uses: actions/checkout@v4
+        with:
+          repository: yzdmm2024/WxkbToolbar10
+          ref: main
+          path: WxkbToolbar10
+
+      - name: Install build deps
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y build-essential git perl make curl fakeroot dpkg-dev
+          # ldid：rootless deb 伪签名必需（越狱设备认可）
+          sudo apt-get install -y ldid 2>/dev/null || true
+          if ! command -v ldid >/dev/null 2>&1; then
+            ASSET=$(curl -s https://api.github.com/repos/ProcursusTeam/ldid/releases/latest \
+                    | grep -oP '"browser_download_url":\s*"\K[^"]*linux_x86_64[^"]*' | head -1)
+            echo "ldid asset: $ASSET"
+            curl -L -o ldid "$ASSET"
+            chmod +x ldid
+            sudo mv ldid /usr/local/bin/ldid
+          fi
+          ldid -v || true
+
+      - name: Install Theos
+        run: |
+          sudo mkdir -p /opt/theos
+          sudo chown $(whoami) /opt/theos
+          git clone --recursive https://github.com/theos/theos.git /opt/theos
+          rm -rf /opt/theos/sdks
+          git clone --depth 1 --filter=blob:none --sparse https://github.com/theos/sdks.git /opt/theos/sdks
+          cd /opt/theos/sdks && git sparse-checkout set iPhoneOS14.5.sdk
+
+      - name: Build package (rootless)
+        working-directory: WxkbToolbar10
+        env:
+          THEOS: /opt/theos
+        run: |
+          chmod +x layout/DEBIAN/postinst
+          make clean 2>/dev/null || true
+          make package FINALPACKAGE=1
+
+      - name: Stage deb & regenerate metadata
+        run: |
+          set -e
+          mkdir -p debs
+          cp -f WxkbToolbar10/packages/*.deb debs/
+          python3 gen_packages.py
+
+      - name: Commit & push
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no changes to commit"
+            exit 0
+          fi
+          git commit -m "update: WxkbToolbar10（微信输入法键盘扩展工具栏增强）"
+          for i in 1 2 3 4; do
+            if git push origin main; then
+              exit 0
+            fi
+            echo "push rejected (fetch first), rebase & retry #$i"
+            sleep 8
+            git pull --rebase=merges --autostash origin main
+          done
+          echo "push failed after retries" >&2
+          exit 1
