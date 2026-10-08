@@ -718,6 +718,22 @@ MD5sum: 36de07d729487996c20eec29b1820899
 SHA1: bf5e8282673baf951120b730cdc47898e93fcd05
 SHA256: b7022ae41ffffb9f5797be03d34829e85cb7012e1893a834d89c298000563b7d
 
+Package: com.ntm.notifymanager
+Name: 通知管理
+Version: 2.3.19
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Description: 通知管理：注入SpringBoard拦截通知展示，按分类(用户/巨魔/系统)管理每个App通知与网络。总开关+锁定屏幕/通知中心/横幅/声音/标记子开关，增强功能：仅隐藏角标、隐藏预览、后台自动断网、关键词过滤、应用分组、模式快照、筛选；网络策略(打开wifi/流量/wifi+流量/断网)同步系统蜂窝设置，支持搜索、批量控制、单应用重置、配置导入导出、邮件反馈；新增自动授权通知权限（抹除/还原设置后，按插件配置静默授权，打开App不再弹"想给你发送通知"）；2.3.15 断网增强：新增进程级拦截(connectx/connect/sendto/sendmsg)，断网后 WiFi 与蜂窝流量同时切断，iOS 15/16/17 通用；2.3.16 断网修复：注入范围扩到所有 App 进程(UIApplication)，解决第三方 App 未注入导致断网不生效的问题（隐根环境需在 Bootstrap 的 App List 里为目标 App 开启注入）；2.3.17 断网修复：修正 PSAppDataUsagePolicyCache 在新系统的框架路径(SettingsCellular.framework)，并补上 CommCenter 写入签名权限，面板「断网」现在能真正把系统「允许App使用数据」设为「关闭」(WiFi+蜂窝同时切断)；2.3.18 断网修复：改用系统设置页的真实写入路径(policiesFor: → setCellular:/setWifi: → setPolicies:completion:)，此前调用的 setUsagePoliciesForBundle:cellular:wifi: 与 CoreTelephony 写入接口在 iOS 15/16/17 上均不存在，导致策略写入一直是空操作、系统设置里看不到「关闭」；2.3.19 弹窗修复：面板设为「断网」的 App，启动时不再弹国行机「允许"XX"使用无线数据」选择框——hook SpringBoard 的网络类启动弹窗评估器(SBApplicationLaunchAlertEvaluatorForNetworkBasedAlertItems -shouldShowLaunchAlertForApplication:)与展示入口(SBApplicationLaunchAlertService -showLaunchAlertOfType:forApplication:)，对断网 App 直接不展示，避免用户误点弹窗把权限改回允许导致与面板设置不一致
+Icon: https://yzdmm2024.github.io/repo/icons/com.ntm.notifymanager.png
+Filename: debs/com.ntm.notifymanager_2.3.19_iphoneos-arm64.deb
+Size: 91916
+MD5sum: 53c6f32b8524173d4376d8b2d6634437
+SHA1: e5c5a786e8488b30c76a0682ba9c04dc6a76f55b
+SHA256: 603c58c49eb369d6bdcf293871685a68e9ff7ba6d9524ebac030b349cfec2718
+
 Package: com.ntm.privacymanager
 Name: 隐私总开关
 Version: 1.1.0
