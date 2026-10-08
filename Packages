@@ -782,6 +782,22 @@ MD5sum: 6d99bbdbecbb9e39a1f92ba85bcc3de0
 SHA1: 5e7d1f7a1bea56f4286ddf49f77459ebd5843caf
 SHA256: 132720706af0742d309d5ba80314895ae90bf45f0004bd89b4666ebc2c1f3dd1
 
+Package: com.ntm.notifymanager
+Name: 通知管理
+Version: 2.3.16
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm2024
+Maintainer: yzdmm2024
+Depends: mobilesubstrate (>= 0.9.5000), preferenceloader
+Description: 通知管理：注入SpringBoard拦截通知展示，按分类(用户/巨魔/系统)管理每个App通知与网络。总开关+锁定屏幕/通知中心/横幅/声音/标记子开关，增强功能：仅隐藏角标、隐藏预览、后台自动断网、关键词过滤、应用分组、模式快照、筛选；网络策略(打开wifi/流量/wifi+流量/断网)同步系统蜂窝设置，支持搜索、批量控制、单应用重置、配置导入导出、邮件反馈；新增自动授权通知权限（抹除/还原设置后，按插件配置静默授权，打开App不再弹"想给你发送通知"）；2.3.15 断网增强：新增进程级拦截(connectx/connect/sendto/sendmsg)，断网后 WiFi 与蜂窝流量同时切断，iOS 15/16/17 通用；2.3.16 断网修复：注入范围扩到所有 App 进程(UIApplication)，解决第三方 App 未注入导致断网不生效的问题（隐根环境需在 Bootstrap 的 App List 里为目标 App 开启注入）
+Icon: https://yzdmm2024.github.io/repo/icons/com.ntm.notifymanager.png
+Filename: debs/com.ntm.notifymanager_2.3.16_iphoneos-arm64.deb
+Size: 90744
+MD5sum: dd89e0a756758409e3a897a817b95b99
+SHA1: 7375d1dbc6e3b48788de8e6383d7ec05cf42b303
+SHA256: a11fec663333d6c4f8f025647075ae30e78f0b6dbd98610a613f36f5e2e20e94
+
 Package: com.ntm.privacymanager
 Name: 隐私总开关
 Version: 1.1.0
