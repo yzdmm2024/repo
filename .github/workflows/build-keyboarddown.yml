@@ -1,0 +1,72 @@
+name: Build KeyboardDown & update source
+
+# 手动触发：GitHub（macOS + Theos）编译 键盘下移，
+# 把产物 deb 放入本源 debs/ 并用 gen_packages.py 重建 Packages，GitHub Pages 自动刷新。
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Checkout source repo (yzdmm2024/repo)
+        uses: actions/checkout@v4
+
+      - name: Checkout KeyboardDown source
+        uses: actions/checkout@v4
+        with:
+          repository: yzdmm2024/KeyboardDown
+          ref: main
+          path: KeyboardDown
+
+      - name: Install Theos
+        run: |
+          brew install ldid xz 2>/dev/null || true
+          sudo mkdir -p /opt/theos
+          sudo chown $(whoami) /opt/theos
+          git clone --recursive https://github.com/theos/theos.git /opt/theos
+          rm -rf /opt/theos/sdks
+          git clone --depth 1 --filter=blob:none --sparse https://github.com/theos/sdks.git /opt/theos/sdks
+          cd /opt/theos/sdks && git sparse-checkout set iPhoneOS14.5.sdk
+
+      - name: Build package (rootless)
+        working-directory: KeyboardDown
+        env:
+          THEOS: /opt/theos
+        run: |
+          make clean 2>/dev/null || true
+          make package FINALPACKAGE=1
+
+      - name: Stage deb & regenerate metadata
+        run: |
+          set -e
+          mkdir -p debs
+          # 先删旧版本，避免 Packages 同时列新旧版
+          rm -f debs/com.yzdmm2024.keyboarddown_*.deb
+          cp -f KeyboardDown/packages/*.deb debs/
+          python3 gen_packages.py
+
+      - name: Commit & push
+        run: |
+          set -e
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "no changes to commit"
+            exit 0
+          fi
+          git commit -m "update: 键盘下移 KeyboardDown（自定义X键盘底部高度与地球键）"
+          for i in 1 2 3 4; do
+            if git push origin main; then
+              exit 0
+            fi
+            echo "push rejected (fetch first), rebase & retry #$i"
+            sleep 8
+            git pull --rebase=merges --autostash origin main
+          done
+          echo "push failed after retries" >&2
+          exit 1
