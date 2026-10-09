@@ -3204,10 +3204,10 @@ Maintainer: yzdmm
 Depends: mobilesubstrate, preferenceloader
 Description: 微信输入法键盘扩展增强：整键盘透明、自定义键盘背景与按键配色、按键圆角、立体键帽（含彩虹3D键帽/马卡龙浮雕/彩虹键盘帽/电脑键盘风）；工具栏图标增删/顺序请在微信输入法内「定制工具栏」调整
 Filename: debs/com.yzdmm.wxkbtoolbar10_2.4.6_iphoneos-arm64.deb
-Size: 588228
-MD5sum: 3d2710bd7e2ec455917ba5d86d8f987a
-SHA1: 6ec996f1ae90d88cf1bfcfa694471fd9f6ff0dbb
-SHA256: ac20a5aabad95b19ce952199b4be3e1dc9c028d2621430963787c61edfca24c8
+Size: 587534
+MD5sum: a6773ab400d406ab88079ba91f811515
+SHA1: 2375f949b8c9e04ff3d71a05652d5fdd9180b359
+SHA256: 88aa446c0ea39a6e936ba7d4b1ded3a90ab05abb9e9b7f92066a1e2c1b862223
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
