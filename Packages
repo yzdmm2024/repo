@@ -3286,6 +3286,21 @@ SHA256: d51a627753d172ed46792b9e19cecd3733bbded99a536eb33f346bce46a44fb0
 
 Package: com.yzdmm.wxkbtoolbar10
 Name: WxkbToolbar10
+Version: 2.5.14
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: mobilesubstrate, preferenceloader
+Description: 微信输入法键盘扩展增强：整键盘透明、自定义键盘背景与按键配色、按键圆角、立体键帽（含彩虹3D键帽/马卡龙浮雕/彩虹键盘帽/电脑键盘风）；工具栏图标增删/顺序请在微信输入法内「定制工具栏」调整
+Filename: debs/com.yzdmm.wxkbtoolbar10_2.5.14_iphoneos-arm64.deb
+Size: 596588
+MD5sum: 7c4a6371c8482fe37b94706db0b39c9c
+SHA1: 72db206553b2a5d79391c5904618fce9181eb39c
+SHA256: 56d3fad94e1b4f287f3eb16c2f0bfbd04ccbdcfa871a7bc411cc95ca435991a7
+
+Package: com.yzdmm.wxkbtoolbar10
+Name: WxkbToolbar10
 Version: 2.5.1
 Architecture: iphoneos-arm64
 Section: Tweaks
