@@ -41,32 +41,32 @@ jobs:
           make clean 2>/dev/null || true
           make package FINALPACKAGE=1
 
-      - name: Stage deb & regenerate metadata
-        run: |
-          set -e
-          mkdir -p debs
-          cp -f WxkbToolbar10/packages/*.deb debs/
-          python3 gen_packages.py
-
-      - name: Commit & push
+      - name: Commit & push (并发安全)
         run: |
           set -e
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add -A
-          if git diff --cached --quiet; then
-            echo "no changes to commit"
-            exit 0
-          fi
-          git commit -m "update: WxkbToolbar10（微信输入法键盘扩展工具栏增强）"
-          # 其他项目的 workflow 也在往 main 提交，push 被拒时 rebase 后重试
-          for i in 1 2 3 4; do
-            if git push origin main; then
+          # 元数据(Packages/Packages.bz2/Packages.gz/Release)完全由 debs/ 决定，
+          # 因此每次都以远端 main 为基准重置，并用全量 deb 重新生成，
+          # 彻底绕开二进制元数据在 rebase 时的合并冲突。
+          for i in 1 2 3 4 5 6; do
+            git fetch origin main
+            git reset --hard origin/main
+            mkdir -p debs
+            cp -f WxkbToolbar10/packages/*.deb debs/
+            python3 gen_packages.py
+            git add -A
+            if git diff --cached --quiet; then
+              echo "no changes to commit"
               exit 0
             fi
-            echo "push rejected (fetch first), rebase & retry #$i"
-            sleep 8
-            git pull --rebase=merges --autostash origin main
+            git commit -m "update: WxkbToolbar10（微信输入法键盘扩展工具栏增强）"
+            if git push origin main; then
+              echo "pushed on attempt $i"
+              exit 0
+            fi
+            echo "push rejected, retry $i"
+            sleep 6
           done
           echo "push failed after retries" >&2
           exit 1
