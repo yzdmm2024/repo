@@ -3518,10 +3518,10 @@ Description: iOS 16 原生键盘全面美化主题引擎。v1.0.2 修复设置�
  主题预设一键切换。所有 App 通用（备忘录/微信/Safari 等）。
  系统 → 设置 → KBThemer 进入面板。
 Filename: debs/com.yzdmm2024.kbthemer_1.0.2_iphoneos-arm64.deb
-Size: 9982
-MD5sum: 473c04ae0ee4441b20b9c7336bc4cb5a
-SHA1: 87d577bcf77bb834579576d3929b8e715fef8781
-SHA256: dc63caa75bbfddd004ee3f984a895cf4d5eb62863ab6b2fa60b84a0df88f8ab8
+Size: 9976
+MD5sum: 70e7196e7f0ca0dcaee9c49ee00a945f
+SHA1: f07d9a3130705bdca45bb64998b0321f671f1cf7
+SHA256: 4e25ac0d2cf6c405cd1f3bfc0cad065fc299809840063e0a8abe37d5d39507f0
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
