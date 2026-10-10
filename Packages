@@ -3423,6 +3423,21 @@ SHA256: e7497922896c2274a8b082113b4ad00967e74ba6320254feb8bc6d302ee9a4dd
 
 Package: com.yzdmm.wxkbtoolbar10
 Name: WxkbToolbar10
+Version: 3.1.3
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: mobilesubstrate, preferenceloader
+Description: WeChat keyboard enhancer for iOS
+Filename: debs/com.yzdmm.wxkbtoolbar10_3.1.3_iphoneos-arm64.deb
+Size: 563918
+MD5sum: bc4dbfe6972b73330768c05af797c020
+SHA1: f31618ea915ec238018545e6c78c1695db93a206
+SHA256: 8f4e90b614c76dc90a06df212946ac5a449029d76b23d6a42369729ed554bd7f
+
+Package: com.yzdmm.wxkbtoolbar10
+Name: WxkbToolbar10
 Version: 3.1
 Architecture: iphoneos-arm64
 Section: Tweaks
@@ -3684,6 +3699,24 @@ Size: 12910
 MD5sum: ed8cc46f3286ebe2a04d18b8dcb000af
 SHA1: 0675cfdb8c86400452e08f700ac8696b7ef141f8
 SHA256: 537817f5b9d230e1804ec969fc3c9ba67d7a6fdd447610cff91adc3bb68afedc
+
+Package: com.yzdmm2024.kbthemer
+Name: KBThemer - 鍘熺敓閿洏涓婚缇庡寲
+Version: 1.2.2
+Architecture: iphoneos-arm64
+Priority: optional
+Section: Keyboard Mods
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 16.0), preferenceloader, mobilesubstrate (>= 0.9.5000)
+Pre-Depends: rootless-compat (>= 0.9)
+Description: iOS 16 鍘熺敓閿洏涓婚缇庡寲寮曟搸銆倂1.2.2 postinst 鍙岃矾寰勪慨澶嶏細rootless 瓒婄嫳涓?Theos 鎵撳寘鍒?/var/jb/ 浣?PreferenceLoader 鍙兘鎵?/Library/锛屽畨瑁呮椂鑷姩澶嶅埗涓€浠藉埌绯荤粺璺緞纭繚 Settings 杩涚▼鑳借闂€倂1.2.1 淇 PreferenceBundle 璧勬簮鎵撳寘缂哄け + 閰嶇疆 key 涓嶅尮閰嶃€? 鏀寔鑷畾涔夐敭鐩樿儗鏅€佹寜閿厤鑹层€佸舰鐘跺渾瑙掋€佷綅缃昂瀵搞€佸瓧姣嶉敭鍗曠嫭涓婅壊銆? 涓婚棰勮涓€閿垏鎹€傛墍鏈?App 閫氱敤锛堝蹇樺綍/寰俊/Safari 绛夛級銆? 绯荤粺 鈫?璁剧疆 鈫?KBThemer 杩涘叆闈㈡澘銆?
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm2024.kbthemer.png
+Filename: debs/com.yzdmm2024.kbthemer_1.2.2_iphoneos-arm64.deb
+Size: 13654
+MD5sum: eca5aa43be6962913adbd11452b18797
+SHA1: 93d2f10b6f0864a37caf823621411b4bbe7bd324
+SHA256: 95b10ed108b630406ab2b2dd2ea77adf4b0bad1a279d354226317428c8716222
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
