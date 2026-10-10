@@ -1992,22 +1992,6 @@ MD5sum: 59656bfbb4e9ae3ff2bca85367779136
 SHA1: 38b6c4facae847d631a03b9b7e63e3808f08abd8
 SHA256: 7a0bf45f829217122024f021ddde8966ac62c66e533ca424c0aac400130f85e0
 
-Package: com.yzdmm.keyboardstatus
-Name: 键盘下方状态
-Version: 1.3.6
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 15.0), mobilesubstrate, preferenceloader
-Description: 系统键盘底栏加功能按钮（全选/剪切/粘贴/光标移动/剪贴板历史/快捷短语/收起键盘）+ 可选状态条。rootless 适配，逐功能可关，安全不崩。
-Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm.keyboardstatus.png
-Filename: debs/com.yzdmm.keyboardstatus_1.3.6_iphoneos-arm64.deb
-Size: 76344
-MD5sum: 2134a3d420d218eae58ce0dfd0578ff3
-SHA1: 2932e0df2232600ac5204f643d579c0aafca5bd8
-SHA256: 0b5fb872bba83f8f9f0317a252560a8e26a40dc4b16494949b9cb323580dfa03
-
 Package: com.yzdmm.kkgameautologin
 Name: KKGameAutoLogin
 Version: 1.0.16
@@ -2052,21 +2036,6 @@ Size: 9652
 MD5sum: d3ca718d528f545184c7fd66ece13f83
 SHA1: 417f776b11894256324095ed9bcb48cb6350c52d
 SHA256: 7451c132cdb7990bfd38975da3552f4107fab2500efc1cb1a3c73d7e2b7b8a4e
-
-Package: com.yzdmm.qznbp.mylibrary
-Name: QZNBP MyLibrary
-Version: 1.0.4
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: mobilesubstrate (>= 0.9.5000), firmware (>= 16.0), firmware (<< 17.0)
-Description: 注入 com.jygw.qznbp 游戏的 dylib 插件（My_Library），仅在该 App 进程内加载。
-Filename: debs/com.yzdmm.qznbp.mylibrary_1.0.4_iphoneos-arm64.deb
-Size: 472676
-MD5sum: c1fb0391c3ba8d48b9aa204784becb33
-SHA1: 5c2eacd40e467c93de10b13220ad525abbae691b
-SHA256: 4179617646d4301fb0d2f1d406de9bb140b0da35f9bf36d58e95bbec0423f16a
 
 Package: com.yzdmm.wxkbtoolbar10
 Name: WxkbToolbar10
