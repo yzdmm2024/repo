@@ -1962,51 +1962,6 @@ MD5sum: 78dfff368c3c29ce3ea38043380a5463
 SHA1: 4531441fe12bbf968829b6c62d687c35cef5363c
 SHA256: 112cd26425e6d5ecb96558e0ae99654a9dcfb6d143858df0964f23a37fa82e9f
 
-Package: com.yzdmm.kbcustomize
-Name: 键盘自定义
-Version: 0.1.1
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
-Description: 自定义苹果原生键盘：字母键间隔、整体下移、逐键底色与圆角。rootless 适配，参数在「设置-键盘自定义」里实时调节。
-Filename: debs/com.yzdmm.kbcustomize_0.1.1_iphoneos-arm64.deb
-Size: 15668
-MD5sum: 8d529120e6f5154670c8048df6df52ec
-SHA1: a69b04ef7d8de8235c58df429a16194f250cba50
-SHA256: 99186eb6509c7355e6f50eecd1dda377141ae04480d7d49d20ea760ccc00f3cc
-
-Package: com.yzdmm.kbcustomize
-Name: 键盘自定义
-Version: 0.1.2
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
-Description: 自定义苹果原生键盘：字母键间隔、整体下移、逐键底色与圆角。rootless 适配，参数在「设置-键盘自定义」里实时调节。
-Filename: debs/com.yzdmm.kbcustomize_0.1.2_iphoneos-arm64.deb
-Size: 14856
-MD5sum: 59656bfbb4e9ae3ff2bca85367779136
-SHA1: 38b6c4facae847d631a03b9b7e63e3808f08abd8
-SHA256: 7a0bf45f829217122024f021ddde8966ac62c66e533ca424c0aac400130f85e0
-
-Package: com.yzdmm.kbtheme
-Name: 原生输入法增强
-Version: 1.1.0
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: yzdmm
-Maintainer: yzdmm
-Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
-Description: iOS 原生输入法增强（键盘背景/整键盘透明/按键配色/彩虹皮肤/字母渐变/按键形状/工具栏布局）
-Filename: debs/com.yzdmm.kbtheme_1.1.0_iphoneos-arm64.deb
-Size: 481262
-MD5sum: 304c8e4a5db2289b4ccaca8eb709cd5c
-SHA1: da6347535bd78b01bbfc85437963e996bb9ad12d
-SHA256: 285fb856266581ebbbae45ecdc34166a084a1ca68108695a186c05dd67ddf6cd
-
 Package: com.yzdmm.keyboardstatus
 Name: 键盘下方状态
 Version: 1.3.7
