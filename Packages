@@ -3372,6 +3372,21 @@ MD5sum: 2c4b87bc659a0cf4cf1add8d95187b9f
 SHA1: 82bd447a25202c8771aff02740051d5a02fee12f
 SHA256: 54ca7678bebbfb934ee7ea0a6b0c9869f7a5faabbb4d62c3f6b20680d541f85b
 
+Package: com.yzdmm.wxkbtoolbar10
+Name: WxkbToolbar10
+Version: 3.2
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: mobilesubstrate, preferenceloader
+Description: 微信输入法键盘扩展增强：整键盘透明、自定义键盘背景与按键配色、按键圆角、立体键帽（含彩虹3D键帽/马卡龙浮雕/彩虹键盘帽/电脑键盘风）；工具栏图标增删/顺序请在微信输入法内「定制工具栏」调整
+Filename: debs/com.yzdmm.wxkbtoolbar10_3.2_iphoneos-arm64.deb
+Size: 564392
+MD5sum: febba7079ad4ad1270eb0f34f28be82e
+SHA1: 6bb139faaccc7613a2aedc6fcf2c17b7d1aedb04
+SHA256: 2c0ef39ee82986cf6bb118f5166aada7643016df0c3774a1ff17ff3844c77c43
+
 Package: com.yzdmm2024.kbthemer
 Name: KBThemer - 原生键盘主题美化
 Version: 1.0.0
