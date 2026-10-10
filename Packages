@@ -3408,6 +3408,21 @@ SHA256: ef6ae0aefac1cf6bfc7e41cf3e04b9db474bc3149249da84fcd751190caa5b6f
 
 Package: com.yzdmm.wxkbtoolbar10
 Name: WxkbToolbar10
+Version: 3.1.3
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: mobilesubstrate, preferenceloader
+Description: WeChat keyboard enhancer for iOS
+Filename: debs/com.yzdmm.wxkbtoolbar10_3.1.3_iphoneos-arm64.deb
+Size: 563702
+MD5sum: f4452c34f0931e620d69a1dd0234c539
+SHA1: 4f16115ce4ac0063c14c94fc394aea00b1e996b5
+SHA256: ac257489d0a5e3173754da73563c2c2dd2d88486dd7879ac5faf4732ba2eba14
+
+Package: com.yzdmm.wxkbtoolbar10
+Name: WxkbToolbar10
 Version: 3.1
 Architecture: iphoneos-arm64
 Section: Tweaks
