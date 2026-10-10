@@ -3372,6 +3372,21 @@ MD5sum: a5072dc8479277bee345c3718a0a4900
 SHA1: 9214532301df35ff8e5bef08ae3ab16d3f410760
 SHA256: 03d8bfe6bd0eaac70251ddb1b30bc4f1fbcf3a9d819003dbc8e40e846b37b514
 
+Package: com.yzdmm.wxkbtoolbar10
+Name: WxkbToolbar10
+Version: 3.3
+Architecture: iphoneos-arm64
+Section: Tweaks
+Author: yzdmm
+Maintainer: yzdmm
+Depends: mobilesubstrate, preferenceloader
+Description: 微信输入法键盘扩展增强：整键盘透明、自定义键盘背景与按键配色、按键圆角、立体键帽（含彩虹3D键帽/马卡龙浮雕/彩虹键盘帽/电脑键盘风）；工具栏图标增删/顺序请在微信输入法内「定制工具栏」调整
+Filename: debs/com.yzdmm.wxkbtoolbar10_3.3_iphoneos-arm64.deb
+Size: 564758
+MD5sum: 5ee09513df15d37f93e6614690979c46
+SHA1: 2a6c39de7f1e79141e682857ac4f1863b3c158ed
+SHA256: 5afcaac20897ff66b150a4edd06ecd8d10a228ed6b6f513bd9f87d7f2add35e0
+
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.83
