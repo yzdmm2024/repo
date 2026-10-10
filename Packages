@@ -3740,10 +3740,10 @@ Pre-Depends: rootless-compat (>= 0.9)
 Conflicts: re.frida.server64
 Description: Observe and reprogram running programs.
 Filename: debs/re.frida.server_16.2.1_iphoneos-arm64e.deb
-Size: 11902976
-MD5sum: ea6876130a6887d03eb9a89da80564e0
-SHA1: 7d9ae3fbf22c9df1fc90477a538f34b665e6a3ba
-SHA256: c188f57d261bf85432ac05782a40d9562d97924a502f16d1ad52633353f6c8af
+Size: 34856392
+MD5sum: 4840e13525b13287ed3d3f41bd00669a
+SHA1: 01692e0bace53aad70ab3fbe3ec4dcbe257ca52e
+SHA256: cca25d9b866abeaa3042c466f056236ebb8ed860293edcb0a7f83939b01a8805
 
 Package: rootless-compat
 Name: rootless-compat
