@@ -3432,6 +3432,7 @@ Maintainer: yzdmm
 Depends: firmware (>= 16.0), preferenceloader, mobilesubstrate (>= 0.9.5000)
 Pre-Depends: rootless-compat (>= 0.9)
 Description: iOS 16 原生键盘全面美化主题引擎。支持自定义键盘背景、按键配色、形状圆角、位置尺寸、字母键单独上色、主题预设一键切换。所有 App 通用（备忘录/微信/Safari 等）。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm2024.kbthemer.png
 Filename: debs/com.yzdmm2024.kbthemer_1.0.0_iphoneos-arm64.deb
 Size: 5704
 MD5sum: d2585ec9fa8689c01c848eab9f556a6c
@@ -3452,6 +3453,7 @@ Description: iOS 16 原生键盘全面美化主题引擎。v1.0.1 新增系统�
  支持自定义键盘背景、按键配色、形状圆角、位置尺寸、字母键单独上色、
  主题预设一键切换。所有 App 通用（备忘录/微信/Safari 等）。
  系统 → 设置 → KBThemer 进入面板。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm2024.kbthemer.png
 Filename: debs/com.yzdmm2024.kbthemer_1.0.1_iphoneos-arm64.deb
 Size: 9954
 MD5sum: e4be1bd2700bdd48c4d6f22e2bed0f8e
@@ -3472,6 +3474,7 @@ Description: iOS 16 原生键盘全面美化主题引擎。v1.0.2 修复设置�
  支持自定义键盘背景、按键配色、形状圆角、位置尺寸、字母键单独上色、
  主题预设一键切换。所有 App 通用（备忘录/微信/Safari 等）。
  系统 → 设置 → KBThemer 进入面板。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm2024.kbthemer.png
 Filename: debs/com.yzdmm2024.kbthemer_1.0.2_iphoneos-arm64.deb
 Size: 9976
 MD5sum: 70e7196e7f0ca0dcaee9c49ee00a945f
@@ -3492,6 +3495,7 @@ Description: iOS 16 原生键盘主题美化引擎。v1.0.3 重构 PreferenceBun
  支持自定义键盘背景、按键配色、形状圆角、位置尺寸、字母键单独上色、
  主题预设一键切换。所有 App 通用（备忘录/微信/Safari 等）。
  系统 → 设置 → KBThemer 进入面板。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm2024.kbthemer.png
 Filename: debs/com.yzdmm2024.kbthemer_1.0.3_iphoneos-arm64.deb
 Size: 16154
 MD5sum: 40b26c6cdfb04a030b2c4f8bc8662440
@@ -3512,6 +3516,7 @@ Description: iOS 16 原生键盘主题美化引擎。v1.0.3 重构 PreferenceBun
  支持自定义键盘背景、按键配色、形状圆角、位置尺寸、字母键单独上色、
  主题预设一键切换。所有 App 通用（备忘录/微信/Safari 等）。
  系统 → 设置 → KBThemer 进入面板。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm2024.kbthemer.png
 Filename: debs/com.yzdmm2024.kbthemer_1.0.4_iphoneos-arm64.deb
 Size: 16158
 MD5sum: 9c5b6d4b368bb8fa497ceb50668da780
@@ -3532,6 +3537,7 @@ Description: iOS 16 原生键盘主题美化引擎。v1.0.3 重构 PreferenceBun
  支持自定义键盘背景、按键配色、形状圆角、位置尺寸、字母键单独上色、
  主题预设一键切换。所有 App 通用（备忘录/微信/Safari 等）。
  系统 → 设置 → KBThemer 进入面板。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm2024.kbthemer.png
 Filename: debs/com.yzdmm2024.kbthemer_1.0.5_iphoneos-arm64.deb
 Size: 14910
 MD5sum: 18d08d075b972f9306e7c28e5431fbae
@@ -3552,6 +3558,7 @@ Description: iOS 16 原生键盘主题美化引擎。v1.0.3 重构 PreferenceBun
  支持自定义键盘背景、按键配色、形状圆角、位置尺寸、字母键单独上色、
  主题预设一键切换。所有 App 通用（备忘录/微信/Safari 等）。
  系统 → 设置 → KBThemer 进入面板。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm2024.kbthemer.png
 Filename: debs/com.yzdmm2024.kbthemer_1.0.6_iphoneos-arm64.deb
 Size: 15412
 MD5sum: 8c203bf55b7a3f2fbd2ab8f4f7770a97
@@ -3572,6 +3579,7 @@ Description: iOS 16 原生键盘主题美化引擎。v1.0.3 重构 PreferenceBun
  支持自定义键盘背景、按键配色、形状圆角、位置尺寸、字母键单独上色、
  主题预设一键切换。所有 App 通用（备忘录/微信/Safari 等）。
  系统 → 设置 → KBThemer 进入面板。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm2024.kbthemer.png
 Filename: debs/com.yzdmm2024.kbthemer_1.0.7_iphoneos-arm64.deb
 Size: 14900
 MD5sum: e307bbadd9d383f07b0a5032c68cd976
@@ -3592,6 +3600,7 @@ Description: iOS 16 原生键盘主题美化引擎。v1.0.3 重构 PreferenceBun
  支持自定义键盘背景、按键配色、形状圆角、位置尺寸、字母键单独上色、
  主题预设一键切换。所有 App 通用（备忘录/微信/Safari 等）。
  系统 → 设置 → KBThemer 进入面板。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm2024.kbthemer.png
 Filename: debs/com.yzdmm2024.kbthemer_1.0.8_iphoneos-arm64.deb
 Size: 12588
 MD5sum: 87dfba77a7aaa78ae0bb46ace816823b
@@ -3612,6 +3621,7 @@ Description: iOS 16 原生键盘主题美化引擎。v1.0.3 重构 PreferenceBun
  支持自定义键盘背景、按键配色、形状圆角、位置尺寸、字母键单独上色、
  主题预设一键切换。所有 App 通用（备忘录/微信/Safari 等）。
  系统 → 设置 → KBThemer 进入面板。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm2024.kbthemer.png
 Filename: debs/com.yzdmm2024.kbthemer_1.0.9_iphoneos-arm64.deb
 Size: 12820
 MD5sum: 236461ff63538432a311f536346ac9d8
@@ -3632,11 +3642,33 @@ Description: iOS 16 原生键盘主题美化引擎。v1.0.3 重构 PreferenceBun
  支持自定义键盘背景、按键配色、形状圆角、位置尺寸、字母键单独上色、
  主题预设一键切换。所有 App 通用（备忘录/微信/Safari 等）。
  系统 → 设置 → KBThemer 进入面板。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm2024.kbthemer.png
 Filename: debs/com.yzdmm2024.kbthemer_1.1.0_iphoneos-arm64.deb
 Size: 12838
 MD5sum: 774bf58d522201c0adfa5ede5c24b2e1
 SHA1: afe693653bd9afa03a7606cad6be1b13ecb84ccf
 SHA256: 641eb2cdf0381723921e9ddc1e4c2218c9fef75e42ee01248d3c8ef05e71341b
+
+Package: com.yzdmm2024.kbthemer
+Name: KBThemer - 原生键盘主题美化
+Version: 1.2.1
+Architecture: iphoneos-arm64
+Priority: optional
+Section: Keyboard Mods
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 16.0), preferenceloader, mobilesubstrate (>= 0.9.5000)
+Pre-Depends: rootless-compat (>= 0.9)
+Description: iOS 16 原生键盘主题美化引擎。v1.2.1 修复 PreferenceBundle 资源缺失（Root.plist/Info.plist 未打包），资源目录移到项目根目录 KBThemerPrefs.bundle/ 让 Theos 自动发现。同时修复配置 key 与 Root.plist 域不匹配。
+ 支持自定义键盘背景、按键配色、形状圆角、位置尺寸、字母键单独上色、
+ 主题预设一键切换。所有 App 通用（备忘录/微信/Safari 等）。
+ 系统 → 设置 → KBThemer 进入面板。
+Icon: https://yzdmm2024.github.io/repo/icons/com.yzdmm2024.kbthemer.png
+Filename: debs/com.yzdmm2024.kbthemer_1.2.1_iphoneos-arm64.deb
+Size: 12910
+MD5sum: ed8cc46f3286ebe2a04d18b8dcb000af
+SHA1: 0675cfdb8c86400452e08f700ac8696b7ef141f8
+SHA256: 537817f5b9d230e1804ec969fc3c9ba67d7a6fdd447610cff91adc3bb68afedc
 
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
