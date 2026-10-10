@@ -3436,6 +3436,23 @@ MD5sum: fe65f0b9a4696a41012a4e5764cbf30b
 SHA1: 572557c0b053e679079c8b8e413171fb1df5f898
 SHA256: 4a8d32897d06462b66f7737038a22549bdc96c7bdd3042ad73bb5be9462bac2d
 
+Package: com.yzdmm2024.kbthemer
+Name: KBThemer - 原生键盘主题美化
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Priority: optional
+Section: Keyboard Mods
+Author: yzdmm
+Maintainer: yzdmm
+Depends: firmware (>= 16.0), preferenceloader, mobilesubstrate (>= 0.9.5000)
+Pre-Depends: rootless-compat (>= 0.9)
+Description: iOS 16 原生键盘全面美化主题引擎。支持自定义键盘背景、按键配色、形状圆角、位置尺寸、字母键单独上色、主题预设一键切换。所有 App 通用（备忘录/微信/Safari 等）。
+Filename: debs/com.yzdmm2024.kbthemer_1.0.0_iphoneos-arm64.deb
+Size: 5704
+MD5sum: d2585ec9fa8689c01c848eab9f556a6c
+SHA1: b815e517b5216522b41790feda9bc2e8a3178fa9
+SHA256: a6fa37d6ba9b68e3f48674b396bbf29ece38c9c19594199dc1041302059f3532
+
 Package: com.yzdmm2024.myvoice
 Name: 我的语音
 Version: 2.8.83
