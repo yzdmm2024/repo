@@ -3587,7 +3587,15 @@ SHA1: b70717fdec081edec492aa6b044e14bcede0a956
 SHA256: e60962c80ce7abf048965f18628659acdd06e8c49cade86fb73bfdf97fdfc9ee
 
 Package: com.yzdmm.kbtheme
+Name: 原生输入法增强
+Depends: firmware (>= 16.0), mobilesubstrate, preferenceloader
+Maintainer: yzdmm
+Author: yzdmm
+Section: Tweaks
+Description: iOS 原生输入法增强（键盘背景/整键盘透明/按键配色/彩虹皮肤/字母渐变/按键形状/工具栏布局）
+Architecture: iphoneos-arm64
 Version: 1.1.1
+Installed-Size: 860
 Filename: debs/com.yzdmm.kbtheme_1.1.1_iphoneos-arm64.deb
 Size: 475570
 MD5sum: 18b70553d870a09e622db668cc4e08a5
