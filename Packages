@@ -27,23 +27,6 @@ MD5sum: 7fec09c9afa113b5114612f540b3551b
 SHA1: a5caa546b602907e860b55bcac5d001d777f3e7e
 SHA256: 7812d28cc89fc993dcf3b91e2c09ce39dcb35016cb8d8c002199960e8581f078
 
-Package: byg.iosios.net.appdata-rootless
-Name: AppData软件降级-Rootless
-Version: 2.7.3
-Architecture: iphoneos-arm64e
-Section: 越狱后必备
-Author: Fouad Raheb
-Maintainer: 搬运工
-Depends: firmware (>= 11.0), mobilesubstrate, preferenceloader
-Pre-Depends: rootless-compat (>= 0.9)
-Description: 本插件功能非常的强大，可以降级APP软件版本，这是最nice的功能，还可以查看软件所占内存的大小，可以清除APP缓存，修改软件名称，修改角标数量，可以重置APP到刚下载时候的设置！可以查看软件的bundleID，可以直接跳转到软件的缓存及安装路径，可谓越狱必装插件，效果看截图介绍！安装之后去设置里开启插件唤醒的方式，然后注销即可，可以选择长按或者上滑软件，任君选择，搬运工源，永久免费！本插件由iosdump大神修复更新！感谢iosdump！
-Icon: https://chinesebuilding.club/pic/cydia.png
-Filename: debs/byg.iosios.net.appdata-rootless_2.7.3_iphoneos-arm64e.deb
-Size: 2407190
-MD5sum: 9b6e73bc0116e20e357cda4ade0712f5
-SHA1: 20de762f28f1f6a77c69b348a6a48604f104c99a
-SHA256: fea85b23d8e3de2486bb40298360201be00d486a956a7adda2a49e09e92df393
-
 Package: byg.iosios.net.settingsrevamp
 Name: SettingsRevamp-设置归类
 Version: 3.0.1-1
@@ -878,22 +861,6 @@ Size: 7968964
 MD5sum: efccbe998fd12160c561e452acd93cd8
 SHA1: 8b154045a3526a9461d59858f6a09b03b3da8420
 SHA256: 8b92cca16c151410970e6ea66454010ab2d13bfa8dd2243711bc2e2e2853dcb7
-
-Package: com.yzdmm.appdata2
-Name: AppData2
-Version: 1.0.0
-Architecture: iphoneos-arm64
-Section: Tweaks
-Author: Fouad Raheb (original AppData), yzdmm2024 (fork)
-Maintainer: yzdmm2024
-Depends: firmware (>= 14.0), mobilesubstrate (>= 0.9.5000) | com.rpetrich.ellekit
-Description: 查看与管理应用数据（AppData 二改）。新增「Safe Clean 保留登录清理」：清理 Caches/Tmp/Logs 等可弃文件与其它非关键目录，保留登录态（Preferences/Cookies/HTTPStorages/Application Support/WebKit/Accounts），并可选择保留 Documents。
-Icon: file:///var/jb/Library/PreferenceBundles/AppData2Prefs.bundle/AppData2@3x.png
-Filename: debs/com.yzdmm.appdata2_1.0.0_iphoneos-arm64.deb
-Size: 125736
-MD5sum: 3a6071e045cf7e60353799326b88db3d
-SHA1: 7eadab6fa7912cd911294ae90e3cb279ab852000
-SHA256: 481c32d938f676f7444ede4575486cc4d5087b044cbe3bb3afc9abc02d28c599
 
 Package: com.yzdmm.floatingurl
 Name: 悬浮URL
